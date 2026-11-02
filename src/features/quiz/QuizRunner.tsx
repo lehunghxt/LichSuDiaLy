@@ -19,6 +19,8 @@ export function QuizRunner({ quiz, onComplete }: QuizRunnerProps) {
   const [index, setIndex] = useState(0)
   const [answers, setAnswers] = useState<(Answer | undefined)[]>([])
   const [phase, setPhase] = useState<Phase>('answering')
+  // Tăng mỗi lần chơi lại để các câu hỏi có state riêng (ví dụ Ghép đôi) được tạo mới
+  const [round, setRound] = useState(0)
   const reported = useRef(false)
 
   const result = score(questions, answers)
@@ -34,6 +36,7 @@ export function QuizRunner({ quiz, onComplete }: QuizRunnerProps) {
     setIndex(0)
     setAnswers([])
     setPhase('answering')
+    setRound((n) => n + 1)
     reported.current = false
   }
 
@@ -118,6 +121,7 @@ export function QuizRunner({ quiz, onComplete }: QuizRunnerProps) {
 
       <div className="mt-6">
         <QuestionView
+          key={`${round}-${question.id}`}
           question={question}
           answer={answer}
           locked={locked}

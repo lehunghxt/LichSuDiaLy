@@ -2,6 +2,7 @@
 import type { ComponentType } from 'react'
 import type { Question, QuestionType } from '../../types/quiz'
 import type { Answer } from './engine'
+import { Matching } from './questions/Matching'
 import { Pending } from './questions/Pending'
 import { SingleChoice } from './questions/SingleChoice'
 import { TrueFalse } from './questions/TrueFalse'
@@ -19,7 +20,7 @@ export const questionViews: Views = {
   single_choice: SingleChoice,
   true_false: TrueFalse,
   map_locate: Pending,
-  matching: Pending,
+  matching: Matching,
 }
 
 export function QuestionView(props: QuestionViewProps<Question>) {
