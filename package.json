@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "typecheck": "tsc -b",
-    "lint": "oxlint src"
+    "lint": "oxlint src",
+    "images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
     "@fontsource/be-vietnam-pro": "^5.3.0",
@@ -33,6 +34,7 @@
     "@vitejs/plugin-react": "^6.1.2",
     "jsdom": "^28.1.0",
     "oxlint": "^1.89.0",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4.3.3",
     "typescript": "~7.0.2",
     "vite": "^8.3.5",
