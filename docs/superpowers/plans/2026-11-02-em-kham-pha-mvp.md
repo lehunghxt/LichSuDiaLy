@@ -20,7 +20,7 @@
 
 - Static web hoàn toàn: không backend, database, API server, đăng nhập. Build ra `dist/`.
 - Deploy được lên Vercel, Netlify, Cloudflare Pages (SPA fallback cho route lồng nhau).
-- Responsive PC / tablet / điện thoại.
+- **Ưu tiên desktop trước** (≥ 1280px, máy tính, máy chiếu, bảng thông minh). Tablet và điện thoại làm ở giai đoạn sau (Task 13). Trong MVP chỉ cần layout không vỡ khi màn hình hẹp hơn: không có thanh cuộn ngang, nội dung xếp dọc. Chưa tinh chỉnh riêng cho mobile.
 - TypeScript `strict: true`; không `any`, không `as` để ép kiểu dữ liệu JSON.
 - Không hardcode nội dung học tập hay dữ liệu địa lí trong TSX.
 - Không bịa tọa độ, ranh giới, kiến thức lịch sử; nội dung chưa kiểm chứng có `status: "draft"` và **không hiển thị ở bản production**.
@@ -39,7 +39,7 @@
 1. **LocalStorage bị chặn hoặc hỏng** (Safari private, quota, JSON rác): app vẫn chạy với state trong bộ nhớ, không trắng trang. Test đặt trong Task 8.
 2. **URL sai id** (`/vung/abc`, `/dia-danh/xyz`, `/on-tap/zzz`) hoặc refresh trên route lồng nhau ở host tĩnh: hiện trang "Không tìm thấy" thân thiện, có file fallback trong `dist`. Test trong Task 1 và Task 12.
 3. **Ảnh thiếu trong manifest hoặc tải lỗi**: hiện ô placeholder có biểu tượng, không hiện icon ảnh vỡ. Test trong Task 3.
-4. **Bản đồ trên điện thoại "bẫy" thao tác cuộn**: chiều cao bản đồ bị giới hạn, tắt zoom bằng con lăn, trang vẫn cuộn được ngoài vùng bản đồ. Test trong Task 5.
+4. **Bản đồ "bẫy" thao tác cuộn trang**: trên desktop, cuộn chuột trên bản đồ vẫn cuộn trang (tắt zoom bằng con lăn, có nút +/−) và bản đồ có chiều cao giới hạn. Test trong Task 5. Phần thao tác chạm trên mobile để Task 13.
 5. **Nội dung `draft` lọt ra production** (kể cả qua câu hỏi quiz, mục liên quan, phần trăm tiến độ): repository lọc theo một hàm duy nhất. Test trong Task 2 và Task 9.
 
 ---
@@ -154,7 +154,7 @@ test("unknown route shows not found", ...)     // /khong-co → getByText("Khôn
 ```
 
 - [ ] **Step 4:** Chạy `npm test -- router`. Kỳ vọng: FAIL.
-- [ ] **Step 5:** Viết `routes`: mọi page dùng `lazy()` + `Suspense` với `<LoadingState>`. Có `ErrorBoundary` ở layout (fallback là `<ErrorState>`). Header trên desktop; menu mobile dạng nút ☰ mở danh sách link (target chạm ≥ 44px).
+- [ ] **Step 5:** Viết `routes`: mọi page dùng `lazy()` + `Suspense` với `<LoadingState>`. Có `ErrorBoundary` ở layout (fallback là `<ErrorState>`). Header trên desktop; màn hình hẹp có nút ☰ mở danh sách link (đã làm ở mức cơ bản, tinh chỉnh ở Task 13).
 - [ ] **Step 6:** Chạy `npm test && npm run typecheck && npm run lint && npm run build`. Kỳ vọng: tất cả PASS.
 - [ ] **Step 7:** Commit `chore: scaffold app shell and routing`.
 
@@ -337,7 +337,7 @@ test("map container has bounded height class and scrollWheelZoom=false")
   - `RegionLayer`: một `<GeoJSON>` duy nhất, đặt `key` theo phiên bản dữ liệu. Style vùng chọn và hover cập nhật bằng `layer.setStyle` trong `useEffect` theo `regionId` (React Leaflet không áp lại prop `style` sau khi mount). Chọn vùng thì `map.fitBounds(layer.getBounds(), { padding })` và `bringToFront`.
   - `IslandLabels`: nhãn "Quần đảo Hoàng Sa", "Quần đảo Trường Sa", "Biển Đông".
   - `MapControls`: phóng to, thu nhỏ, "Về bản đồ Việt Nam"; mỗi nút có icon + chữ + `aria-label`.
-  - Layout: desktop chia 2 cột (trái: bản đồ + `RegionList`; phải: `MapInfoPanel`), mobile xếp dọc.
+  - Layout desktop: chia 2 cột (trái: bản đồ + `RegionList`; phải: `MapInfoPanel`). Màn hình hẹp chỉ cần xếp dọc, không tối ưu thêm (Task 13).
 - [ ] **Step 4:** Chạy test. Kỳ vọng: PASS. Commit `feat: interactive region map`.
 
 ---
@@ -517,7 +517,7 @@ test("featured region card links to /ban-do/trung-du-mien-nui-bac-bo")
 test("progress summary shows regionCompletion % and links to /tien-do")
 ```
 
-- [ ] **Step 2:** Cài đặt theo ảnh tham khảo (D8). Ảnh hero dùng `priority`. Kiểm tra thủ công ở 3 khổ màn hình: 375, 768 và 1280px.
+- [ ] **Step 2:** Cài đặt theo ảnh tham khảo (D8). Ảnh hero dùng `priority`. Kiểm tra thủ công ở desktop 1280px và 1920px, cùng chế độ trình chiếu (zoom trình duyệt 125–150%).
 - [ ] **Step 3:** Chạy test. Kỳ vọng: PASS. Commit `feat: home page and UI polish`.
 
 ---
@@ -537,5 +537,16 @@ test("progress summary shows regionCompletion % and links to /tien-do")
 
   Gắn vào script `npm run verify` = `typecheck && lint && test && build && node scripts/check-dist.mjs`.
 - [ ] **Step 3:** Chạy `npm run verify`. Kỳ vọng: tất cả PASS.
-- [ ] **Step 4:** `npm run preview`. Mở trực tiếp `/dia-danh/<id>` và refresh; kiểm tra tab Network (ảnh AVIF, chỉ ảnh trong viewport mới tải). Chạy Lighthouse mobile: Performance ≥ 90, Accessibility ≥ 95. Ghi số liệu vào README.
+- [ ] **Step 4:** `npm run preview`. Mở trực tiếp `/dia-danh/<id>` và refresh; kiểm tra tab Network (ảnh AVIF, chỉ ảnh trong viewport mới tải). Chạy Lighthouse desktop: Performance ≥ 90, Accessibility ≥ 95. Ghi số liệu vào README.
 - [ ] **Step 5:** README: cách chạy, thêm nội dung/ảnh/bản đồ, danh sách **đã xong / còn hạn chế** (nội dung còn draft, dữ liệu còn thiếu). Commit `chore: production build and deploy config`.
+
+---
+
+### Task 13 (giai đoạn sau): Tối ưu tablet và điện thoại
+
+Làm sau khi MVP desktop đã ổn định và được duyệt.
+
+- [ ] **Step 1:** Rà lại layout ở 375, 768 và 1024px cho mọi trang; menu ☰ có target chạm ≥ 44px.
+- [ ] **Step 2:** Bản đồ trên mobile: chiều cao khoảng 55vh, kéo bằng một ngón thì cuộn trang, dùng hai ngón để di chuyển bản đồ; thông tin vùng hiện bên dưới bản đồ hoặc trong bottom sheet.
+- [ ] **Step 3:** Thêm test: trên viewport hẹp, panel thông tin nằm sau bản đồ trong DOM, và các nút không bị tràn.
+- [ ] **Step 4:** Chạy Lighthouse mobile: Performance ≥ 90, Accessibility ≥ 95. Commit `feat: tablet and mobile optimization`.

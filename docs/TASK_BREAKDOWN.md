@@ -4,6 +4,8 @@ Chi tiết kỹ thuật từng task (interface, test) nằm trong `docs/superpow
 
 **Nguồn tham khảo chính:** SGK Lịch sử và Địa lí 4: https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172 (viewer JS, phải tra thủ công; chỉ dùng để đối chiếu và diễn đạt lại, không chép ảnh hay lược đồ). Các task có đánh dấu 📖 phải đối chiếu với nguồn này.
 
+**Ưu tiên:** làm desktop trước. Tablet và điện thoại để giai đoạn sau (T13, sau M6).
+
 **Ước lượng:** S ≤ 2 giờ · M ≈ nửa ngày · L ≈ 1 ngày (1 người hoặc agent).
 **Ký hiệu:** 🔒 = bị chặn bởi quyết định chưa chốt (D1–D10, xem plan Task 0).
 
@@ -31,7 +33,8 @@ Làm song song được: **T1 → (T3 ∥ T0)**, sau đó **T2 ∥ T4**, rồi *
 | **M3 Bản đồ** | T5, T6 | Chọn vùng TD&MNBB, xem marker, popup ← **điểm dừng duyệt bản đồ** |
 | **M4 Học tập** | T7, T8 | Xem chủ đề, chi tiết địa danh, tiến độ lưu được |
 | **M5 Trò chơi** | T9, T10 | 4 dạng trò chơi chạy được |
-| **M6 Phát hành** | T11, T12 | Trang chủ hoàn chỉnh, deploy production ← **điểm dừng duyệt nội dung** |
+| **M6 Phát hành** | T11, T12 | Bản desktop hoàn chỉnh, deploy production ← **điểm dừng duyệt nội dung** |
+| **M7 Mobile** (sau) | T13 | Tối ưu cho tablet và điện thoại |
 
 ---
 
@@ -55,7 +58,7 @@ Làm song song được: **T1 → (T3 ∥ T0)**, sau đó **T2 ∥ T4**, rồi *
 | T1.2 | Cài Tailwind v4, font Be Vietnam Pro, token màu, focus ring, reduced-motion | S |
 | T1.3 | Cấu hình ESLint, Vitest, RTL, jsdom; thêm các script npm | S |
 | T1.4 | Router + lazy page + LoadingState + ErrorBoundary + NotFound | M |
-| T1.5 | Layout: Header desktop, menu mobile, footer | M |
+| T1.5 | Layout: Header desktop, menu ☰ cơ bản cho màn hình hẹp, footer | M |
 | T1.6 | UI cơ bản: Button, Card, EmptyState, ErrorState | S |
 | T1.7 | Test router + nav; chạy typecheck, lint, build | S |
 
@@ -103,7 +106,7 @@ Làm song song được: **T1 → (T3 ∥ T0)**, sau đó **T2 ∥ T4**, rồi *
 | T5.4 | `useMapSelection` đồng bộ với URL `/ban-do/:regionId` | M |
 | T5.5 | `RegionList` (bàn phím), `MapControls` (zoom, "Về bản đồ Việt Nam") | M |
 | T5.6 | `MapInfoPanel`: tên vùng, tổng quan, 5 chủ đề; thẻ "Sắp ra mắt" | M |
-| T5.7 | Layout desktop 2 cột, mobile dọc; trạng thái lỗi bản đồ | S |
+| T5.7 | Layout desktop 2 cột; trạng thái lỗi bản đồ | S |
 | T5.8 | Test (mock react-leaflet) | M |
 
 ## T6 — Tỉnh và marker · UC03, UC04, UC06
@@ -166,7 +169,7 @@ Làm song song được: **T1 → (T3 ∥ T0)**, sau đó **T2 ∥ T4**, rồi *
 |---|---|---|
 | T11.1 | Hero, CTA, vùng nổi bật, chủ đề nổi bật, tóm tắt tiến độ | M |
 | T11.2 | Chỉnh giao diện theo ảnh tham khảo (D8) | M |
-| T11.3 | Kiểm tra responsive ở 375, 768, 1280px; kiểm tra điều hướng bằng bàn phím | M |
+| T11.3 | Kiểm tra ở desktop 1280 và 1920px, zoom 125–150% (máy chiếu); kiểm tra điều hướng bằng bàn phím | M |
 | T11.4 | Test | S |
 
 ## T12 — Build và deploy · UC16
@@ -178,6 +181,14 @@ Làm song song được: **T1 → (T3 ∥ T0)**, sau đó **T2 ∥ T4**, rồi *
 | T12.3 | `check-dist.mjs`: ngưỡng bundle, ảnh, Leaflet không vào entry chunk | M |
 | T12.4 | `npm run verify` + Lighthouse (Perf ≥ 90, A11y ≥ 95) | M |
 | T12.5 | README, `DEPLOY.md`, báo cáo đã xong và còn hạn chế | M |
+
+## T13 — Tablet và điện thoại (giai đoạn sau)
+
+| ID | Việc | Cỡ |
+|---|---|---|
+| T13.1 | Rà layout mọi trang ở 375, 768, 1024px; menu ☰, target chạm ≥ 44px | M |
+| T13.2 | Bản đồ mobile: chiều cao giới hạn, kéo hai ngón, panel dưới bản đồ hoặc bottom sheet | L |
+| T13.3 | Test viewport hẹp + Lighthouse mobile | M |
 
 ---
 
@@ -191,4 +202,4 @@ Làm song song được: **T1 → (T3 ∥ T0)**, sau đó **T2 ∥ T4**, rồi *
 | T3 | ~1 ngày | | T10 | ~1.5 ngày |
 | T4 | ~1 ngày | | T11 | ~1 ngày |
 | T5 | ~2 ngày | | T12 | ~1 ngày |
-| T6 | ~1 ngày | | **Tổng** | **~16.5 ngày công**, chưa tính thời gian giáo viên duyệt nội dung |
+| T6 | ~1 ngày | | **Tổng** | **~16.5 ngày công cho bản desktop** (+ ~2 ngày cho T13 mobile), chưa tính thời gian giáo viên duyệt nội dung |
