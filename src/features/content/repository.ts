@@ -5,8 +5,13 @@ import { parseRegionContent, parseRegionList } from './parse'
 import { loadersFromGlob } from './regionFiles'
 
 /** Bản production chỉ hiện nội dung đã được giáo viên duyệt */
+/** Bản xem thử: build PROD vẫn hiện nội dung nháp khi đặt VITE_SHOW_DRAFTS=true */
+export function showDrafts(): boolean {
+  return import.meta.env.VITE_SHOW_DRAFTS === 'true'
+}
+
 export function isPublished(status: ContentStatus): boolean {
-  return import.meta.env.PROD ? status === 'verified' : true
+  return import.meta.env.PROD && !showDrafts() ? status === 'verified' : true
 }
 
 /** Quy ước id: "<regionId>__<slug>" để suy ra vùng mà không phải nạp mọi vùng */
