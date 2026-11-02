@@ -41,4 +41,24 @@ Component `SmartImage` (`src/components/ui/SmartImage.tsx`):
 
 ## 3. Bản đồ
 
-_(Bổ sung ở Task 4: nguồn, phiên bản, ngày tham chiếu hành chính, CRS EPSG:4326, giấy phép, mức đơn giản hoá, hạn chế.)_
+| Mục | Giá trị |
+|---|---|
+| Nguồn | [thanglequoc/vietnamese-provinces-database](https://github.com/thanglequoc/vietnamese-provinces-database), bản phát hành **v4.1.0** (01/08/2026), thư mục `json/geojson/<tỉnh>/<tỉnh>.geojson` |
+| Giấy phép | **MIT**, © 2021 Thang Le Quoc (bản sao: `raw/geo/thanglequoc-v4.1.0/LICENSE`) |
+| Đơn vị hành chính | 34 tỉnh/thành theo sắp xếp năm 2025 (Nghị quyết 202/2025/QH15) |
+| Hệ toạ độ | WGS84 kinh độ/vĩ độ (EPSG:4326) |
+| Hoàng Sa, Trường Sa | Có: là các phần đảo thuộc Đà Nẵng (Hoàng Sa) và Khánh Hòa (Trường Sa). Bản v4.1.0 đã vá phần đảo bị thiếu ở nguồn gốc. Test `geo.test.ts` kiểm tra hai quần đảo không bị mất khi đơn giản hoá |
+| Tỉnh → vùng | `src/data/provinces.json`. 9 tỉnh vùng Trung du và miền núi phía Bắc lấy từ SGK (Hình 3, tr. 25). **Các vùng còn lại chưa đối chiếu lược đồ SGK** (Chủ đề 3–5), cần kiểm tra trước khi mở các vùng đó |
+
+### Quy trình dựng (`npm run geo`)
+
+`scripts/build-geo.mjs` dùng mapshaper:
+1. Ghép 34 file tỉnh, gắn `provinceId`, `name`, `regionId` từ `src/data/provinces.json` (báo lỗi nếu thiếu tỉnh).
+2. Đơn giản hoá 6% (`weighted keep-shapes`, giữ cả đảo nhỏ), làm tròn toạ độ 4 chữ số (~11 m).
+3. Xuất `public/maps/provinces.geojson` (~121 KB) và `public/maps/regions.geojson` (gộp theo vùng, ~61 KB).
+4. Xuất `public/maps/labels.geojson`: điểm đặt nhãn "Quần đảo Hoàng Sa", "Quần đảo Trường Sa" (tâm khung bao các phần đảo, tính từ dữ liệu) và chữ "Biển Đông" (vị trí đặt nhãn).
+
+### Hạn chế đã biết
+
+- Dữ liệu cộng đồng, không phải bản đồ chính thức của cơ quan nhà nước; ranh giới đã được đơn giản hoá để hiển thị cho học sinh, không dùng cho mục đích pháp lí.
+- Bản đồ không dùng lớp nền (tile) trực tuyến; chỉ vẽ ranh giới tỉnh/vùng.
