@@ -1,0 +1,94 @@
+[
+  {
+    "id": "trung-du-mien-nui-phia-bac__khoang-san",
+    "title": "Tài nguyên khoáng sản",
+    "summary": "Trung du và miền núi phía Bắc có tài nguyên khoáng sản phong phú bậc nhất nước ta. Các khoáng sản chính là sắt, a-pa-tít (apatite), đá vôi,…",
+    "highlights": [
+      "Trên lược đồ Hình 2 (Bài 4) còn có: than đá, man-gan, vàng, đồng, thiếc, bô-xít.",
+      "Khai thác khoáng sản là hoạt động kinh tế quan trọng của vùng."
+    ],
+    "keyPoints": [
+      "Trung du và miền núi phía Bắc giàu tài nguyên khoáng sản bậc nhất cả nước."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 2,
+        "page": 19,
+        "caption": "Lược đồ địa hình và một số khoáng sản ở vùng Trung du và miền núi phía Bắc"
+      },
+      {
+        "lesson": 4,
+        "figure": 9,
+        "page": 22,
+        "caption": "Khai thác quặng sắt (tỉnh Thái Nguyên)"
+      },
+      {
+        "lesson": 5,
+        "figure": 6,
+        "page": 27,
+        "caption": "Lược đồ một số nhà máy thuỷ điện và mỏ khai thác khoáng sản ở vùng Trung du và miền núi phía Bắc"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__su-dung-khoang-san"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 19,
+        "note": "tr. 19–21"
+      },
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 26,
+        "note": "tr. 26"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__su-dung-khoang-san",
+    "title": "Khai thác và sử dụng khoáng sản",
+    "summary": "Khoáng sản được khai thác ở các mỏ, sau đó vận chuyển đến nhà máy để chế biến.",
+    "highlights": [
+      "Khoáng sản khai thác được dùng làm nguyên liệu và nhiên liệu cho nhiều ngành công nghiệp.",
+      "Các khoáng sản kim loại dùng để sản xuất kim loại.",
+      "A-pa-tít dùng để sản xuất phân lân.",
+      "Đá vôi dùng làm vật liệu xây dựng."
+    ],
+    "keyPoints": [
+      "A-pa-tít → phân lân; đá vôi → vật liệu xây dựng; khoáng sản kim loại → sản xuất kim loại."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 9,
+        "page": 22,
+        "caption": "Khai thác quặng sắt (tỉnh Thái Nguyên)"
+      },
+      {
+        "lesson": 5,
+        "figure": 6,
+        "page": 27,
+        "caption": "Lược đồ một số nhà máy thuỷ điện và mỏ khai thác khoáng sản ở vùng Trung du và miền núi phía Bắc"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__khoang-san"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 26,
+        "note": "tr. 26–27"
+      }
+    ],
+    "status": "draft"
+  }
+]

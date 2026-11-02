@@ -1,22 +1,37 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router'
+import { useNavigate, useParams, useSearchParams } from 'react-router'
 import { LoadingState } from '../components/ui/states'
-import { repository } from '../features/content/repository'
+import { itemSlug, topicSearch } from '../features/content/links'
+import { getItemsByCategory, repository } from '../features/content/repository'
+import { TopicModal } from '../features/content/TopicModal'
 import { useRegionContent } from '../features/content/useRegionContent'
 import { MapInfoPanel } from '../features/map/MapInfoPanel'
 import { RegionList } from '../features/map/RegionList'
 import { useProgress } from '../features/progress/useProgress'
+import { TOPIC_CATEGORIES, type TopicCategory } from '../types/content'
 
 const VietnamMap = lazy(() => import('../features/map/VietnamMap'))
+
+const isTopic = (v: string | null): v is TopicCategory => TOPIC_CATEGORIES.some((c) => c === v)
 
 export default function MapPage() {
   const { regionId } = useParams()
   const navigate = useNavigate()
+  const [params] = useSearchParams()
   const regions = repository.getRegions()
   const region = regions.find((r) => r.id === regionId) ?? null
   const [provinceId, setProvinceId] = useState<string | null>(null)
   const content = useRegionContent(region?.status === 'active' ? region.id : undefined)
-  const { markRegionVisited } = useProgress()
+  const { markRegionVisited, markItemViewed } = useProgress()
+
+  const topicParam = params.get('chu-de')
+  const topic = isTopic(topicParam) ? topicParam : null
+  const slugParam = params.get('muc')
+  const modalOpen = topic !== null && content.status === 'ready'
+  const shownItem = modalOpen
+    ? (getItemsByCategory(content.content, topic).find((i) => itemSlug(i.id) === slugParam) ??
+      getItemsByCategory(content.content, topic)[0])
+    : undefined
 
   // Đổi vùng thì bỏ chọn tỉnh
   useEffect(() => setProvinceId(null), [regionId])
@@ -25,7 +40,16 @@ export default function MapPage() {
     if (region?.status === 'active') markRegionVisited(region.id)
   }, [region, markRegionVisited])
 
+  const shownItemId = shownItem?.id
+  useEffect(() => {
+    if (shownItemId) markItemViewed(shownItemId)
+  }, [shownItemId, markItemViewed])
+
   const selectRegion = (id: string) => navigate(`/ban-do/${id}`)
+  // Mở modal thêm một mục lịch sử (nút Back của trình duyệt đóng modal); đổi mục bên trong thì thay thế
+  const openTopic = (category: TopicCategory, slug: string | null) =>
+    navigate({ search: topicSearch(category, slug) }, { replace: modalOpen })
+  const closeTopic = () => navigate({ search: '' }, { replace: true })
 
   return (
     <div>
@@ -50,9 +74,13 @@ export default function MapPage() {
             content={content}
             provinceId={provinceId}
             onBack={() => navigate('/ban-do')}
+            onOpen={openTopic}
           />
         </div>
       </div>
+      {modalOpen && (
+        <TopicModal content={content.content} category={topic} itemSlug={slugParam} onSelect={openTopic} onClose={closeTopic} />
+      )}
     </div>
   )
 }

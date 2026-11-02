@@ -1,0 +1,291 @@
+[
+  {
+    "id": "trung-du-mien-nui-phia-bac__on-tap-1",
+    "regionId": "trung-du-mien-nui-phia-bac",
+    "title": "Khám phá Trung du và miền núi phía Bắc",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "single_choice",
+        "prompt": "Đỉnh núi nào cao nhất Việt Nam?",
+        "options": [
+          "Phan-xi-păng",
+          "Tây Côn Lĩnh",
+          "Mẫu Sơn",
+          "Tam Đảo"
+        ],
+        "answerIndex": 0,
+        "explanation": "Phan-xi-păng (tỉnh Lào Cai) cao 3 147 m, là đỉnh núi cao nhất Việt Nam.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 20,
+            "note": "tr. 20"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "prompt": "Vùng Trung du và miền núi phía Bắc có đường bờ biển dài.",
+        "answer": false,
+        "explanation": "Đây là vùng duy nhất của nước ta không giáp biển.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 19,
+            "note": "tr. 19"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q3",
+        "type": "single_choice",
+        "prompt": "Khí hậu của vùng Trung du và miền núi phía Bắc có đặc điểm nổi bật nào?",
+        "options": [
+          "Nắng nóng quanh năm",
+          "Có mùa đông lạnh nhất cả nước",
+          "Không có mùa đông",
+          "Mưa đều tất cả các tháng"
+        ],
+        "answerIndex": 1,
+        "explanation": "Vùng có khí hậu nhiệt đới ẩm gió mùa, với mùa đông lạnh nhất cả nước.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 20,
+            "note": "tr. 20"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q4",
+        "type": "true_false",
+        "prompt": "Sông ở vùng Trung du và miền núi phía Bắc có nhiều thác ghềnh, thuận lợi để làm thủy điện.",
+        "answer": true,
+        "explanation": "Các sông trong vùng nhiều thác ghềnh, có khả năng phát triển thuỷ điện. Nhiều nhà máy thuỷ điện đã được xây dựng.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 21,
+            "note": "tr. 21"
+          },
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 26,
+            "note": "tr. 26"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q5",
+        "type": "single_choice",
+        "prompt": "Người ta dùng a-pa-tít để sản xuất gì?",
+        "options": [
+          "Phân lân",
+          "Vật liệu xây dựng",
+          "Giấy viết",
+          "Vải may áo"
+        ],
+        "answerIndex": 0,
+        "explanation": "A-pa-tít là nguyên liệu để sản xuất phân lân.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 27,
+            "note": "tr. 27"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q6",
+        "type": "single_choice",
+        "prompt": "Lễ hội Lồng Tồng (hội Xuống đồng) là lễ hội truyền thống của dân tộc nào?",
+        "options": [
+          "Mông",
+          "Tày, Nùng",
+          "Chăm",
+          "Ê-đê"
+        ],
+        "answerIndex": 1,
+        "explanation": "Lồng Tồng (hội Xuống đồng) là lễ hội truyền thống của người Tày, Nùng, tổ chức trên những cánh đồng hoặc khu đất rộng.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 29,
+            "note": "tr. 29"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q7",
+        "type": "true_false",
+        "prompt": "Lễ hội Gầu Tào là lễ hội truyền thống của người Mông.",
+        "answer": true,
+        "explanation": "Gầu Tào là lễ hội của người Mông, tổ chức vào đầu năm với nhiều trò chơi như múa khèn, ném pao.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 28,
+            "note": "tr. 28–29"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q8",
+        "type": "single_choice",
+        "prompt": "Lễ giỗ Tổ Hùng Vương được tổ chức vào ngày nào?",
+        "options": [
+          "Ngày 10 tháng Ba âm lịch",
+          "Ngày 1 tháng Giêng âm lịch",
+          "Ngày 15 tháng Tám âm lịch",
+          "Ngày 2 tháng 9"
+        ],
+        "answerIndex": 0,
+        "explanation": "Lễ giỗ Tổ Hùng Vương diễn ra vào ngày 10 tháng Ba âm lịch hằng năm.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 7. Đền Hùng và lễ giỗ Tổ Hùng Vương",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 33,
+            "note": "tr. 33"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q9",
+        "type": "true_false",
+        "prompt": "Làm ruộng bậc thang giúp hạn chế việc phá rừng làm nương rẫy.",
+        "answer": true,
+        "explanation": "Làm ruộng bậc thang giúp đảm bảo nguồn lương thực, hạn chế tình trạng phá rừng làm nương rẫy và thu hút du khách.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 26,
+            "note": "tr. 26"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q10",
+        "type": "single_choice",
+        "prompt": "Việc làm nào giúp phòng chống lũ quét, sạt lở đất?",
+        "options": [
+          "Chặt cây trên sườn đồi",
+          "Làm nhà ở chân núi dễ sạt lở",
+          "Trồng rừng và bảo vệ rừng",
+          "Đổ rác xuống lòng sông"
+        ],
+        "answerIndex": 2,
+        "explanation": "Trồng rừng và bảo vệ rừng là một trong các biện pháp bảo vệ thiên nhiên và phòng, chống thiên tai (Hình 15, Bài 4).",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 23,
+            "note": "tr. 23"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q11",
+        "type": "matching",
+        "prompt": "Ghép mỗi địa danh với tỉnh tương ứng.",
+        "pairs": [
+          {
+            "left": "Khu di tích Đền Hùng",
+            "right": "Phú Thọ"
+          },
+          {
+            "left": "Cột cờ Lũng Cú",
+            "right": "Tuyên Quang"
+          },
+          {
+            "left": "Chợ phiên Bắc Hà",
+            "right": "Lào Cai"
+          },
+          {
+            "left": "Lễ hội Hoa ban",
+            "right": "Điện Biên"
+          }
+        ],
+        "explanation": "Đền Hùng ở Phú Thọ, Cột cờ Lũng Cú ở Tuyên Quang, chợ phiên Bắc Hà ở Lào Cai, lễ hội Hoa ban ở Điện Biên.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 19,
+            "note": "tr. 19"
+          },
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 29,
+            "note": "tr. 29"
+          },
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 31,
+            "note": "tr. 31"
+          },
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 7. Đền Hùng và lễ giỗ Tổ Hùng Vương",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 32,
+            "note": "tr. 32"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q12",
+        "type": "matching",
+        "prompt": "Ghép mỗi khoáng sản với công dụng của nó.",
+        "pairs": [
+          {
+            "left": "A-pa-tít",
+            "right": "Sản xuất phân lân"
+          },
+          {
+            "left": "Đá vôi",
+            "right": "Làm vật liệu xây dựng"
+          },
+          {
+            "left": "Khoáng sản kim loại",
+            "right": "Sản xuất kim loại"
+          }
+        ],
+        "explanation": "A-pa-tít để sản xuất phân lân, đá vôi làm vật liệu xây dựng, các khoáng sản kim loại để sản xuất kim loại.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 27,
+            "note": "tr. 27"
+          }
+        ],
+        "status": "draft"
+      }
+    ]
+  }
+]

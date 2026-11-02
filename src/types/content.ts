@@ -18,6 +18,17 @@ export interface SourceRef {
   url?: string
   /** Ví dụ: "tr. 15" */
   note?: string
+  /** Trang sách (số in trên trang) để mở đúng trang trong trình đọc SGK */
+  page?: number
+}
+
+/** Hình trong SGK (ảnh, lược đồ, sơ đồ): chỉ ghi chú thích và trang, không sao chép hình */
+export interface SgkFigure {
+  /** Số bài, ví dụ 4 cho "Bài 4" (số hình đánh lại từ 1 ở mỗi bài) */
+  lesson: number
+  figure: number
+  page: number
+  caption: string
 }
 
 export interface ImageRef {
@@ -61,6 +72,8 @@ export interface ContentItem {
   location?: ItemLocation
   provinceId?: string
   images: ImageRef[]
+  /** Hình minh hoạ tương ứng trong SGK */
+  figures?: SgkFigure[]
   audio?: MediaRef
   relatedIds: string[]
   sources: SourceRef[]

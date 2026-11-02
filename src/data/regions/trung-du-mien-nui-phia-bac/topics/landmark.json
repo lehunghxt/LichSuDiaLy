@@ -1,0 +1,125 @@
+[
+  {
+    "id": "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang",
+    "title": "Đỉnh Phan-xi-păng",
+    "summary": "Phan-xi-păng là đỉnh núi cao nhất Việt Nam, được mệnh danh là \"nóc nhà Đông Dương\". Đây là đỉnh cao nhất của dãy Hoàng Liên Sơn, ở tỉnh Lào Cai.",
+    "highlights": [
+      "Trước đây, đỉnh núi được ghi nhận cao 3 143 m. Theo đo đạc mới nhất (năm 2019), độ cao của đỉnh núi là 3 147 m.",
+      "Vào các tháng mùa đông, đỉnh núi đôi khi có tuyết rơi."
+    ],
+    "keyPoints": [
+      "Phan-xi-păng là đỉnh núi cao nhất Việt Nam (3 147 m)."
+    ],
+    "provinceId": "lao-cai",
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 1,
+        "page": 18,
+        "caption": "Đỉnh núi Phan-xi-păng (Fansipan)"
+      },
+      {
+        "lesson": 4,
+        "figure": 4,
+        "page": 20,
+        "caption": "Một phần dãy Hoàng Liên Sơn (tỉnh Lào Cai)"
+      },
+      {
+        "lesson": 4,
+        "figure": 6,
+        "page": 20,
+        "caption": "Tuyết rơi ở đỉnh núi Phan-xi-păng (tỉnh Lào Cai) vào mùa đông năm 2021"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__dia-hinh",
+      "trung-du-mien-nui-phia-bac__khi-hau"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 18,
+        "note": "tr. 18–20"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__ruong-bac-thang",
+    "title": "Ruộng bậc thang",
+    "summary": "Để có thể trồng lúa nước trên đất dốc, người dân ở khu vực miền núi đã xẻ sườn núi thành những bậc phẳng, gọi là ruộng bậc thang.",
+    "highlights": [
+      "Làm ruộng bậc thang giúp người dân đảm bảo nguồn lương thực.",
+      "Hạn chế tình trạng phá rừng làm nương rẫy.",
+      "Vẻ đẹp của các khu ruộng bậc thang thu hút nhiều du khách, góp phần thúc đẩy hoạt động du lịch cho vùng."
+    ],
+    "keyPoints": [
+      "Ruộng bậc thang là cách người dân miền núi trồng lúa nước trên đất dốc."
+    ],
+    "funFacts": [
+      "Ruộng bậc thang Mù Cang Chải, Sa Pa (Lào Cai), Hoàng Su Phì (Tuyên Quang) đã được công nhận là danh thắng quốc gia và trở thành địa điểm du lịch nổi tiếng."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 5,
+        "figure": 4,
+        "page": 26,
+        "caption": "Ruộng bậc thang Mù Cang Chải (tỉnh Lào Cai)"
+      },
+      {
+        "lesson": 5,
+        "figure": 1,
+        "page": 25,
+        "caption": "Người Mông"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__dan-toc"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 25,
+        "note": "tr. 25–26, Hình 4"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__cot-co-lung-cu",
+    "title": "Cột cờ Lũng Cú",
+    "summary": "Cột cờ Lũng Cú được xây dựng trên đỉnh núi Rồng thuộc xã Lũng Cú, tỉnh Tuyên Quang; nằm ở địa đầu Tổ quốc.",
+    "highlights": [
+      "Trên đỉnh cột là Quốc kì Việt Nam rộng 54 m², tượng trưng cho 54 dân tộc của nước ta."
+    ],
+    "keyPoints": [
+      "Cột cờ Lũng Cú nằm ở địa đầu Tổ quốc."
+    ],
+    "provinceId": "tuyen-quang",
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 3,
+        "page": 19,
+        "caption": "Cột cờ Lũng Cú (tỉnh Tuyên Quang)"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__vi-tri-dia-li"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 19,
+        "note": "tr. 19, Hình 3"
+      }
+    ],
+    "status": "draft"
+  }
+]

@@ -60,3 +60,21 @@ test('parseRegionList parses array and rejects bad status', () => {
   expect(parseRegionList([region])).toHaveLength(1)
   expectContentError(() => parseRegionList([{ ...region, status: 'hidden' }]), '[0].status')
 })
+
+test('parses SGK figures and source page numbers', () => {
+  const raw = rawRegionContent()
+  raw.items[0] = {
+    ...raw.items[0],
+    figures: [{ lesson: 4, figure: 2, page: 19, caption: 'Lược đồ địa hình' }],
+    sources: [{ title: 'SGK', page: 19 }],
+  }
+  const item = parseRegionContent(raw).items[0]
+  expect(item?.figures).toEqual([{ lesson: 4, figure: 2, page: 19, caption: 'Lược đồ địa hình' }])
+  expect(item?.sources[0]?.page).toBe(19)
+})
+
+test('figure page must be a positive integer', () => {
+  const raw = rawRegionContent()
+  raw.items[0] = { ...raw.items[0], figures: [{ lesson: 4, figure: 2, page: 0, caption: 'x' }] }
+  expectContentError(() => parseRegionContent(raw), 'items[0].figures[0].page')
+})

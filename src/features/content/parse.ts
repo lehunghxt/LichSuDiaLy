@@ -9,6 +9,7 @@ import {
   type MediaRef,
   type RegionContent,
   type RegionMeta,
+  type SgkFigure,
   type SourceRef,
   type TopicCategory,
 } from '../../types/content'
@@ -72,11 +73,32 @@ function oneOf<T extends string>(o: Obj, key: string, path: string, allowed: rea
   return found
 }
 
+function posInt(o: Obj, key: string, path: string): number {
+  const v = num(o, key, path)
+  if (!Number.isInteger(v) || v < 1) throw new ContentError(join(path, key), 'cần là số nguyên dương')
+  return v
+}
+
 const STATUSES: readonly ContentStatus[] = ['draft', 'verified']
 
 function parseSource(v: unknown, path: string): SourceRef {
   const o = obj(v, path)
-  return { title: str(o, 'title', path), url: optStr(o, 'url', path), note: optStr(o, 'note', path) }
+  return {
+    title: str(o, 'title', path),
+    url: optStr(o, 'url', path),
+    note: optStr(o, 'note', path),
+    page: o.page === undefined ? undefined : posInt(o, 'page', path),
+  }
+}
+
+function parseFigure(v: unknown, path: string): SgkFigure {
+  const o = obj(v, path)
+  return {
+    lesson: posInt(o, 'lesson', path),
+    figure: posInt(o, 'figure', path),
+    page: posInt(o, 'page', path),
+    caption: str(o, 'caption', path),
+  }
 }
 
 function parseImage(v: unknown, path: string): ImageRef {
@@ -126,6 +148,7 @@ function parseItem(v: unknown, path: string): ContentItem {
     location: o.location === undefined ? undefined : parseLocation(o.location, join(path, 'location')),
     provinceId: optStr(o, 'provinceId', path),
     images: list(o, 'images', path, parseImage),
+    figures: o.figures === undefined ? undefined : list(o, 'figures', path, parseFigure),
     audio: o.audio === undefined ? undefined : parseMedia(o.audio, join(path, 'audio')),
     relatedIds: strList(o, 'relatedIds', path),
     sources: list(o, 'sources', path, parseSource),

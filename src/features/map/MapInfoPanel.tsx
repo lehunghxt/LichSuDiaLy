@@ -1,7 +1,7 @@
 import { ArrowLeft, Clock, Compass } from 'lucide-react'
-import { Link } from 'react-router'
 import { EmptyState, ErrorState, LoadingState } from '../../components/ui/states'
-import { TOPIC_CATEGORIES, TOPIC_LABELS, type RegionMeta } from '../../types/content'
+import { TOPIC_CATEGORIES, TOPIC_LABELS, type RegionMeta, type TopicCategory } from '../../types/content'
+import { itemSlug } from '../content/links'
 import { getItemsByCategory } from '../content/repository'
 import { TOPIC_ICONS } from '../content/topicIcons'
 import type { RegionContentState } from '../content/useRegionContent'
@@ -13,9 +13,11 @@ interface MapInfoPanelProps {
   content: RegionContentState & { retry(): void }
   provinceId: string | null
   onBack(): void
+  /** Mở modal chủ đề ngay trên trang bản đồ; slug null = mục đầu tiên */
+  onOpen(category: TopicCategory, slug: string | null): void
 }
 
-export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onBack }: MapInfoPanelProps) {
+export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onBack, onOpen }: MapInfoPanelProps) {
   if (!regionIdFromUrl) {
     return (
       <div className="flex flex-col items-center gap-3 rounded-card bg-surface p-8 text-center shadow-sm">
@@ -70,27 +72,34 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onB
                 const count = getItemsByCategory(content.content, cat).length
                 return (
                   <li key={cat}>
-                    <Link
-                      to={`/vung/${region.id}?chu-de=${cat}`}
-                      className="flex min-h-12 items-center gap-3 rounded-2xl border-2 border-line px-4 py-2 font-semibold transition-colors hover:border-primary hover:bg-primary-soft"
+                    <button
+                      type="button"
+                      onClick={() => onOpen(cat, null)}
+                      className="flex min-h-12 w-full items-center gap-3 rounded-2xl border-2 border-line px-4 py-2 text-left font-semibold transition-colors hover:border-primary hover:bg-primary-soft"
                     >
                       <Icon aria-hidden className="size-6 text-primary" />
                       <span className="flex-1">{TOPIC_LABELS[cat]}</span>
                       <span className="text-sm text-muted">{count} mục</span>
-                    </Link>
+                    </button>
                   </li>
                 )
               })}
             </ul>
           </div>
-          {provinceId && <ProvinceItems content={content.content} provinceId={provinceId} />}
+          {provinceId && <ProvinceItems content={content.content} provinceId={provinceId} onOpen={onOpen} />}
         </>
       )}
     </section>
   )
 }
 
-function ProvinceItems({ content, provinceId }: { content: { items: { id: string; title: string; provinceId?: string }[] }; provinceId: string }) {
+interface ProvinceItemsProps {
+  content: { items: { id: string; title: string; category: TopicCategory; provinceId?: string }[] }
+  provinceId: string
+  onOpen(category: TopicCategory, slug: string): void
+}
+
+function ProvinceItems({ content, provinceId, onOpen }: ProvinceItemsProps) {
   const name = provinces.find((p) => p.id === provinceId)?.name ?? provinceId
   const items = content.items.filter((i) => i.provinceId === provinceId)
   return (
@@ -102,12 +111,13 @@ function ProvinceItems({ content, provinceId }: { content: { items: { id: string
         <ul aria-label={`Địa danh ở tỉnh ${name}`} className="mt-2 flex flex-wrap gap-2">
           {items.map((i) => (
             <li key={i.id}>
-              <Link
-                to={`/dia-danh/${i.id}`}
+              <button
+                type="button"
+                onClick={() => onOpen(i.category, itemSlug(i.id))}
                 className="inline-flex min-h-11 items-center rounded-full bg-secondary-soft px-4 font-semibold text-secondary hover:brightness-95"
               >
                 {i.title}
-              </Link>
+              </button>
             </li>
           ))}
         </ul>

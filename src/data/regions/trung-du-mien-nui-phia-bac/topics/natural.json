@@ -1,0 +1,321 @@
+[
+  {
+    "id": "trung-du-mien-nui-phia-bac__vi-tri-dia-li",
+    "title": "Vị trí địa lí",
+    "summary": "Trung du và miền núi phía Bắc là vùng lãnh thổ nằm ở phía bắc của đất nước. Đây là vùng duy nhất của nước ta không giáp biển.",
+    "highlights": [
+      "Quan sát lược đồ Hình 2 (Bài 4): vùng giáp Trung Quốc, Lào, vùng Đồng bằng Bắc Bộ và vùng Bắc Trung Bộ và Nam Trung Bộ.",
+      "Theo lược đồ Hình 3 (Bài 5), vùng gồm 9 tỉnh: Lai Châu, Điện Biên, Sơn La, Lào Cai, Tuyên Quang, Cao Bằng, Thái Nguyên, Lạng Sơn, Phú Thọ."
+    ],
+    "keyPoints": [
+      "Trung du và miền núi phía Bắc là vùng duy nhất của nước ta không giáp biển."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 2,
+        "page": 19,
+        "caption": "Lược đồ địa hình và một số khoáng sản ở vùng Trung du và miền núi phía Bắc"
+      },
+      {
+        "lesson": 5,
+        "figure": 3,
+        "page": 25,
+        "caption": "Lược đồ mật độ dân số theo tỉnh ở vùng Trung du và miền núi phía Bắc năm 2024"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__dia-hinh",
+      "trung-du-mien-nui-phia-bac__cot-co-lung-cu"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 19,
+        "note": "tr. 19"
+      },
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 25,
+        "note": "tr. 25, Hình 3"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__dia-hinh",
+    "title": "Địa hình đồi núi",
+    "summary": "Vùng có địa hình chủ yếu là đồi núi, với nhiều dãy núi lớn. Hoàng Liên Sơn là dãy núi cao và đồ sộ nhất nước ta, đỉnh cao nhất là Phan-xi-păng (3 147 m).",
+    "highlights": [
+      "Trong vùng còn có một số cao nguyên và vùng đồi thấp.",
+      "Các đồi có đặc điểm đỉnh tròn, sườn thoải, nằm ở nơi chuyển tiếp giữa vùng núi và đồng bằng, được gọi là vùng trung du.",
+      "Trên lược đồ Hình 2 có cao nguyên Đồng Văn, cao nguyên Sơn La, cao nguyên Mộc Châu và các cánh cung sông Gâm, Ngân Sơn, Bắc Sơn."
+    ],
+    "keyPoints": [
+      "Địa hình chủ yếu là đồi núi.",
+      "Hoàng Liên Sơn là dãy núi cao và đồ sộ nhất nước ta."
+    ],
+    "funFacts": [
+      "Loại đất chính của vùng là đất phe-ra-lít (feralit), thích hợp trồng nhiều loại cây ăn quả và cây công nghiệp."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 2,
+        "page": 19,
+        "caption": "Lược đồ địa hình và một số khoáng sản ở vùng Trung du và miền núi phía Bắc"
+      },
+      {
+        "lesson": 4,
+        "figure": 4,
+        "page": 20,
+        "caption": "Một phần dãy Hoàng Liên Sơn (tỉnh Lào Cai)"
+      },
+      {
+        "lesson": 4,
+        "figure": 5,
+        "page": 20,
+        "caption": "Vùng trung du (tỉnh Phú Thọ)"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang",
+      "trung-du-mien-nui-phia-bac__khi-hau"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 20,
+        "note": "tr. 20–21"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__khi-hau",
+    "title": "Khí hậu",
+    "summary": "Vùng có khí hậu nhiệt đới ẩm gió mùa với mùa đông lạnh nhất cả nước.",
+    "highlights": [
+      "Khí hậu của vùng chịu ảnh hưởng sâu sắc bởi độ cao địa hình: ở các vùng núi cao, nhiệt độ hạ thấp.",
+      "Vào các tháng mùa đông, đôi khi có tuyết rơi ở đỉnh núi Phan-xi-păng (tỉnh Lào Cai), đỉnh núi Mẫu Sơn (tỉnh Lạng Sơn).",
+      "Người dân gặp khó khăn do thiên tai như sương muối, rét đậm, rét hại."
+    ],
+    "keyPoints": [
+      "Khí hậu nhiệt đới ẩm gió mùa, mùa đông lạnh nhất cả nước."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 6,
+        "page": 20,
+        "caption": "Tuyết rơi ở đỉnh núi Phan-xi-păng (tỉnh Lào Cai) vào mùa đông năm 2021"
+      },
+      {
+        "lesson": 4,
+        "figure": 14,
+        "page": 22,
+        "caption": "Băng giá ở tỉnh Lào Cai năm 2020"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__phong-chong-thien-tai",
+      "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 20,
+        "note": "tr. 20"
+      },
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 22,
+        "note": "tr. 22"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__song-ngoi",
+    "title": "Sông ngòi và thuỷ điện",
+    "summary": "Vùng có nhiều sông lớn như sông Hồng, sông Đà, sông Chảy, sông Lô, sông Gâm. Các sông trong vùng nhiều thác ghềnh, có khả năng phát triển thuỷ điện.",
+    "highlights": [
+      "Nhiều nhà máy thuỷ điện đã được xây dựng, cung cấp điện cho sinh hoạt và sản xuất, đồng thời giảm lũ cho vùng đồng bằng.",
+      "Ví dụ: thuỷ điện Sơn La trên sông Đà (tỉnh Sơn La), thuỷ điện Thác Bà trên sông Chảy (tỉnh Lào Cai)."
+    ],
+    "keyPoints": [
+      "Sông trong vùng nhiều thác ghềnh, có khả năng phát triển thuỷ điện."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 7,
+        "page": 21,
+        "caption": "Đoạn sông Đà chảy qua tỉnh Sơn La"
+      },
+      {
+        "lesson": 4,
+        "figure": 8,
+        "page": 21,
+        "caption": "Đoạn sông Gâm chảy qua tỉnh Tuyên Quang"
+      },
+      {
+        "lesson": 4,
+        "figure": 10,
+        "page": 22,
+        "caption": "Đập thuỷ điện Sơn La trên sông Đà (tỉnh Sơn La)"
+      },
+      {
+        "lesson": 5,
+        "figure": 5,
+        "page": 26,
+        "caption": "Nhà máy thuỷ điện Thác Bà trên sông Chảy (tỉnh Lào Cai)"
+      },
+      {
+        "lesson": 5,
+        "figure": 6,
+        "page": 27,
+        "caption": "Lược đồ một số nhà máy thuỷ điện và mỏ khai thác khoáng sản ở vùng Trung du và miền núi phía Bắc"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__anh-huong-tu-nhien"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 21,
+        "note": "tr. 21–22"
+      },
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 26,
+        "note": "tr. 26–27"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__anh-huong-tu-nhien",
+    "title": "Ảnh hưởng của tự nhiên đến sản xuất và đời sống",
+    "summary": "Điều kiện tự nhiên của vùng tạo thuận lợi để phát triển nhiều ngành kinh tế, nhưng người dân cũng gặp một số khó khăn trong sinh hoạt và sản xuất.",
+    "highlights": [
+      "Thuận lợi: công nghiệp khai thác và chế biến khoáng sản; thuỷ điện; trồng và chế biến cây công nghiệp, cây ăn quả, dược liệu; du lịch.",
+      "Khó khăn: địa hình bị chia cắt; thiên tai như lũ quét, sạt lở đất, sương muối, rét đậm, rét hại."
+    ],
+    "keyPoints": [
+      "Tự nhiên mang lại nhiều thuận lợi cho sản xuất nhưng cũng gây ra khó khăn do địa hình chia cắt và thiên tai."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 9,
+        "page": 22,
+        "caption": "Khai thác quặng sắt (tỉnh Thái Nguyên)"
+      },
+      {
+        "lesson": 4,
+        "figure": 10,
+        "page": 22,
+        "caption": "Đập thuỷ điện Sơn La trên sông Đà (tỉnh Sơn La)"
+      },
+      {
+        "lesson": 4,
+        "figure": 11,
+        "page": 22,
+        "caption": "Thu hoạch chè (tỉnh Phú Thọ)"
+      },
+      {
+        "lesson": 4,
+        "figure": 12,
+        "page": 22,
+        "caption": "Hẻm Tu Sản, sông Nho Quế (tỉnh Tuyên Quang)"
+      },
+      {
+        "lesson": 4,
+        "figure": 13,
+        "page": 22,
+        "caption": "Lũ quét và sạt lở đất ở tỉnh Lai Châu năm 2018"
+      },
+      {
+        "lesson": 4,
+        "figure": 14,
+        "page": 22,
+        "caption": "Băng giá ở tỉnh Lào Cai năm 2020"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__phong-chong-thien-tai",
+      "trung-du-mien-nui-phia-bac__khoang-san"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 22,
+        "note": "tr. 22"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__phong-chong-thien-tai",
+    "title": "Bảo vệ thiên nhiên, phòng chống thiên tai",
+    "summary": "Trung du và miền núi phía Bắc là vùng chịu nhiều ảnh hưởng của thiên tai, gây thiệt hại về người và tài sản. Vì vậy, cần thực hiện các biện pháp để bảo vệ thiên nhiên và phòng, chống thiên tai.",
+    "highlights": [
+      "Trồng rừng và bảo vệ rừng.",
+      "Xây dựng các công trình thuỷ lợi.",
+      "Di chuyển người dân khỏi nơi có nguy cơ xảy ra thiên tai.",
+      "Sử dụng tiết kiệm và hiệu quả tài nguyên thiên nhiên.",
+      "Giáo dục ý thức bảo vệ tài nguyên thiên nhiên và phòng, chống thiên tai."
+    ],
+    "keyPoints": [
+      "Trồng rừng và bảo vệ rừng là một trong các biện pháp bảo vệ thiên nhiên và phòng, chống thiên tai."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 13,
+        "page": 22,
+        "caption": "Lũ quét và sạt lở đất ở tỉnh Lai Châu năm 2018"
+      },
+      {
+        "lesson": 4,
+        "figure": 14,
+        "page": 22,
+        "caption": "Băng giá ở tỉnh Lào Cai năm 2020"
+      },
+      {
+        "lesson": 4,
+        "figure": 15,
+        "page": 23,
+        "caption": "Sơ đồ một số biện pháp bảo vệ thiên nhiên và phòng, chống thiên tai ở vùng Trung du và miền núi phía Bắc"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__anh-huong-tu-nhien"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 23,
+        "note": "tr. 23, Hình 15"
+      }
+    ],
+    "status": "draft"
+  }
+]

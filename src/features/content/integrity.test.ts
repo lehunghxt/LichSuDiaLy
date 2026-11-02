@@ -2,6 +2,7 @@ import { readdirSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { rawRegionContent, SGK_URL, type RawRegionContent } from '../../test/fixtures'
 import { checkIntegrity } from './integrity'
+import { assembleRegionRaw } from './regionFiles'
 import { parseRegionContent, parseRegionList } from './parse'
 
 function fixture() {
@@ -87,11 +88,18 @@ test('real data in src/data passes integrity check', () => {
   const regions = parseRegionList(JSON.parse(readFileSync(path.join(dataDir, 'regions.json'), 'utf8')))
   const manifest: unknown = JSON.parse(readFileSync(path.join(dataDir, 'image-manifest.json'), 'utf8'))
   const manifestIds = new Set(typeof manifest === 'object' && manifest ? Object.keys(manifest) : [])
-  const files = readdirSync(path.join(dataDir, 'regions')).filter((f) => f.endsWith('.json'))
-  const contents = files.map((f) => {
-    const content = parseRegionContent(JSON.parse(readFileSync(path.join(dataDir, 'regions', f), 'utf8')))
-    expect(`${content.region.id}.json`).toBe(f)
-    return content
+  const regionsDir = path.join(dataDir, 'regions')
+  const folders = readdirSync(regionsDir, { withFileTypes: true }).filter((d) => d.isDirectory())
+  const contents = folders.map((dir) => {
+    const meta = regions.find((r) => r.id === dir.name)
+    expect(meta, `thư mục "${dir.name}" chưa khai báo trong regions.json`).toBeDefined()
+    const files = Object.fromEntries(
+      readdirSync(path.join(regionsDir, dir.name), { recursive: true, encoding: 'utf8' })
+        .filter((f) => f.endsWith('.json'))
+        .map((f) => [f.split(path.sep).join('/'), JSON.parse(readFileSync(path.join(regionsDir, dir.name, f), 'utf8')) as unknown]),
+    )
+    return parseRegionContent(assembleRegionRaw(meta, files))
   })
+  expect(contents.length).toBeGreaterThan(0)
   expect(checkIntegrity(contents, regions, manifestIds, SGK_URL)).toEqual([])
 })

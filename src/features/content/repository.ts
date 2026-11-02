@@ -2,6 +2,7 @@ import rawRegions from '../../data/regions.json'
 import type { ContentItem, ContentStatus, RegionContent, RegionMeta, TopicCategory } from '../../types/content'
 import type { Quiz } from '../../types/quiz'
 import { parseRegionContent, parseRegionList } from './parse'
+import { loadersFromGlob } from './regionFiles'
 
 /** Bản production chỉ hiện nội dung đã được giáo viên duyệt */
 export function isPublished(status: ContentStatus): boolean {
@@ -74,9 +75,7 @@ export function createRepository(rawRegionList: unknown, loaders: Record<string,
   }
 }
 
-const regionModules = import.meta.glob('../../data/regions/*.json')
-const loaders = Object.fromEntries(
-  Object.entries(regionModules).map(([file, load]) => [file.replace(/^.*\/(.+)\.json$/, '$1'), load]),
-)
+// Mỗi vùng là một thư mục trong src/data/regions (xem regionFiles.ts)
+const regionModules = import.meta.glob('../../data/regions/**/*.json')
 
-export const repository = createRepository(rawRegions, loaders)
+export const repository = createRepository(rawRegions, loadersFromGlob(rawRegions, regionModules))
