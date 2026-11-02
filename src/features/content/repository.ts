@@ -43,12 +43,13 @@ export function createRepository(rawRegionList: unknown, loaders: Record<string,
     if (!loader) return null
     let pending = cache.get(regionId)
     if (!pending) {
-      pending = loader().then((mod) => publishedOnly(parseRegionContent(moduleDefault(mod))))
+      pending = loader().then((mod) => parseRegionContent(moduleDefault(mod)))
       // Lỗi tải không được cache để "Thử lại" có tác dụng
       pending.catch(() => cache.delete(regionId))
       cache.set(regionId, pending)
     }
-    return pending
+    // Lọc khi trả về (không lọc trong cache) để quy tắc xuất bản luôn áp dụng đúng
+    return publishedOnly(await pending)
   }
 
   async function findItem(itemId: string): Promise<{ item: ContentItem; content: RegionContent } | null> {
