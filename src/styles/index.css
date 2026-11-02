@@ -23,13 +23,17 @@
   --color-line: #e2e8f0;
   --color-sea: #e0f2fe;
 
-  /* Màu từng vùng địa lí (dùng trong regions.json qua tên token) */
+
+  --radius-card: 1.25rem;
+}
+
+/* Màu từng vùng địa lí: khai báo ngoài @theme vì được đọc động
+   (regions.json → var(--color-<token>)), Tailwind không thấy để giữ lại */
+:root {
   --color-region-tdmnpb: #16a34a;
   --color-region-dbbb: #f59e0b;
   --color-region-btbntb: #0ea5e9;
   --color-region-nb: #db2777;
-
-  --radius-card: 1.25rem;
 }
 
 @layer base {
@@ -67,4 +71,35 @@
   100% {
     transform: scale(1);
   }
+}
+
+/* Bản đồ Leaflet */
+div.leaflet-container {
+  font-family: var(--font-sans);
+  background: var(--color-sea);
+}
+.map-tooltip {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.map-label span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #0c4a6e;
+  text-shadow: 0 0 3px #fff, 0 0 3px #fff;
+  pointer-events: none;
+}
+.map-label-sea span {
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  color: #0369a1;
+}
+/* Bấm chuột lên vùng/tỉnh không hiện khung focus; người dùng bàn phím chọn qua danh sách vùng */
+.leaflet-interactive:focus {
+  outline: none;
 }
