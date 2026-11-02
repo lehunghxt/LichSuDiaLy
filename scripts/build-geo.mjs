@@ -50,8 +50,8 @@ function offshoreCenter(provinceId, minLng) {
 const labels = {
   type: 'FeatureCollection',
   features: [
-    { name: 'Quần đảo Hoàng Sa', kind: 'archipelago', coordinates: offshoreCenter('da-nang', 110) },
-    { name: 'Quần đảo Trường Sa', kind: 'archipelago', coordinates: offshoreCenter('khanh-hoa', 111) },
+    { name: 'QĐ. Hoàng Sa (Việt Nam)', kind: 'archipelago', coordinates: offshoreCenter('da-nang', 110) },
+    { name: 'QĐ. Trường Sa (Việt Nam)', kind: 'archipelago', coordinates: offshoreCenter('khanh-hoa', 111) },
     // Vị trí đặt chữ "Biển Đông" (nhãn bản đồ, không phải dữ liệu địa lí)
     { name: 'Biển Đông', kind: 'sea', coordinates: [111.5, 14.5] },
   ].map(({ coordinates, ...properties }) => ({

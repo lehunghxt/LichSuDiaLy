@@ -16,12 +16,12 @@
   --color-secondary-soft: #dcfce7;
   --color-accent: #f59e0b;
   --color-accent-soft: #fef3c7;
-  --color-bg: #f8fafc;
+  --color-bg: #eef6fd;
   --color-ink: #1e293b;
   --color-muted: #475569;
   --color-surface: #ffffff;
   --color-line: #e2e8f0;
-  --color-sea: #e0f2fe;
+  --color-sea: #cfe8fa;
 
 
   --radius-card: 1.25rem;
@@ -30,10 +30,10 @@
 /* Màu từng vùng địa lí: khai báo ngoài @theme vì được đọc động
    (regions.json → var(--color-<token>)), Tailwind không thấy để giữ lại */
 :root {
-  --color-region-tdmnpb: #16a34a;
-  --color-region-dbbb: #f59e0b;
-  --color-region-btbntb: #0ea5e9;
-  --color-region-nb: #db2777;
+  --color-region-tdmnpb: #a78bfa;
+  --color-region-dbbb: #86efac;
+  --color-region-btbntb: #fcd34d;
+  --color-region-nb: #5eead4;
 }
 
 @layer base {
@@ -87,14 +87,16 @@ div.leaflet-container {
   position: absolute;
   transform: translate(-50%, -50%);
   white-space: nowrap;
-  font-size: 0.75rem;
+  text-align: center;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #0c4a6e;
   text-shadow: 0 0 3px #fff, 0 0 3px #fff;
   pointer-events: none;
 }
 .map-label-sea span {
-  font-size: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   font-style: italic;
   letter-spacing: 0.1em;
   color: #0369a1;
@@ -102,4 +104,30 @@ div.leaflet-container {
 /* Bấm chuột lên vùng/tỉnh không hiện khung focus; người dùng bàn phím chọn qua danh sách vùng */
 .leaflet-interactive:focus {
   outline: none;
+}
+
+/* Nhãn vùng đang chọn trên bản đồ (khung bong bóng như hình mẫu) */
+.leaflet-tooltip.region-callout {
+  padding: 0.35rem 0.85rem;
+  border: 2px solid #1e3a8a;
+  border-radius: 0.9rem;
+  background: #fff;
+  color: #1e3a8a;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  white-space: normal;
+  width: max-content;
+  max-width: 13rem;
+  box-shadow: 0 6px 16px rgb(15 23 42 / 0.15);
+}
+.leaflet-tooltip-top.region-callout::before {
+  border-top-color: #1e3a8a;
+}
+.leaflet-control-scale-line {
+  border-color: #1e293b;
+  background: rgb(255 255 255 / 0.7);
+  font-family: var(--font-sans);
 }

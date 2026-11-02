@@ -15,7 +15,7 @@ export function AppLayout() {
           Bỏ qua tới nội dung chính
         </a>
         <Header />
-        <main id="main" className="mx-auto w-full max-w-7xl flex-1 px-4 py-6">
+        <main id="main" className="mx-auto w-full max-w-[1680px] flex-1 px-4 py-5 lg:px-6">
           <Suspense fallback={<LoadingState />}>
             <Outlet />
           </Suspense>

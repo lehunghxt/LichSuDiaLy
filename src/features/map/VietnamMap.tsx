@@ -2,17 +2,18 @@
 // File này được lazy-load: Leaflet và CSS của nó chỉ tải khi mở trang bản đồ.
 import L, { type GeoJSON as GeoJSONLayer, type LatLngBoundsExpression, type Layer, type PathOptions } from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import { Minus, Plus, RotateCcw } from 'lucide-react'
+import { LocateFixed, Minus, Plus } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { GeoJSON, MapContainer, Marker, useMap } from 'react-leaflet'
 import { ErrorState, LoadingState } from '../../components/ui/states'
 import type { RegionMeta } from '../../types/content'
 import { geoLoader, type AreaCollection, type LabelCollection, type ProvinceFeatureProps, type RegionFeatureProps } from './geo'
 
-// Khung nhìn toàn quốc, gồm cả Hoàng Sa và Trường Sa
+// Khung nhìn toàn quốc, gồm cả Hoàng Sa và Trường Sa; mở rộng sang tây để bảng chú giải
+// (đặt nổi góc trái) nằm ngoài lãnh thổ Việt Nam như hình mẫu
 const VIETNAM_BOUNDS: LatLngBoundsExpression = [
-  [7.0, 101.5],
-  [23.6, 118.2],
+  [7.6, 95.8],
+  [23.5, 117.9],
 ]
 
 export interface VietnamMapProps {
@@ -48,12 +49,12 @@ const cssColor = (token: string | undefined) =>
   token ? getComputedStyle(document.documentElement).getPropertyValue(`--color-${token}`).trim() || '#94a3b8' : '#94a3b8'
 
 function regionStyle(color: string, selected: boolean, dimmed: boolean): PathOptions {
-  // Viền cùng màu vùng để các đảo nhỏ (Hoàng Sa, Trường Sa) vẫn thấy rõ màu; vùng đang chọn viền đậm
+  // Viền cùng màu vùng để các đảo nhỏ (Hoàng Sa, Trường Sa) vẫn thấy rõ màu; vùng đang chọn viền trắng dày
   return {
-    color: selected ? '#1e293b' : color,
-    weight: selected ? 2.5 : 1,
+    color: selected ? '#ffffff' : color,
+    weight: selected ? 4 : 1,
     fillColor: color,
-    fillOpacity: dimmed ? 0.25 : selected ? 0.35 : 0.75,
+    fillOpacity: selected ? 1 : dimmed ? 0.55 : 0.9,
   }
 }
 
@@ -77,17 +78,23 @@ function RegionsLayer({ data, regions, selectedRegionId, onSelectRegion }: { dat
   styleRef.current = styleFor
   const style = useCallback((f?: GeoJSON.Feature<GeoJSON.Geometry, RegionFeatureProps>) => (f ? styleFor(f.properties.regionId) : {}), [styleFor])
 
+  // Theo hình mẫu: giữ toàn quốc, vùng đang chọn có nhãn bong bóng phía trên
   useEffect(() => {
-    if (selectedRegionId === null) {
-      map.fitBounds(VIETNAM_BOUNDS)
-      return
-    }
+    if (!selectedRegionId) return
+    let tooltip: L.Tooltip | null = null
     layerRef.current?.eachLayer((l) => {
       if (l instanceof L.Polygon && (l as PathWithFeature<RegionFeatureProps>).feature?.properties.regionId === selectedRegionId) {
-        map.fitBounds(l.getBounds(), { padding: [24, 24] })
+        const b = l.getBounds()
+        tooltip = L.tooltip({ permanent: true, direction: 'top', className: 'region-callout', offset: [0, -6] })
+          .setLatLng([b.getNorth(), b.getCenter().lng])
+          .setContent(nameOf(selectedRegionId))
+        map.openTooltip(tooltip)
       }
     })
-  }, [selectedRegionId, map])
+    return () => {
+      if (tooltip) map.closeTooltip(tooltip)
+    }
+  }, [selectedRegionId, map, nameOf])
 
   const onEachFeature = (feature: GeoJSON.Feature<GeoJSON.Geometry, RegionFeatureProps>, layer: Layer) => {
     const id = feature.properties.regionId
@@ -113,8 +120,8 @@ function ProvincesLayer({ data, regionId, selectedProvinceId, onSelectProvince }
     (f?: GeoJSON.Feature<GeoJSON.Geometry, ProvinceFeatureProps>): PathOptions => {
       const selected = f?.properties.provinceId === selectedProvinceId
       return {
-        color: '#1e293b',
-        weight: selected ? 2.5 : 1,
+        color: '#4c1d95',
+        weight: selected ? 2.5 : 0.8,
         dashArray: selected ? undefined : '4 3',
         fillColor: '#f59e0b',
         fillOpacity: selected ? 0.55 : 0,
@@ -150,10 +157,24 @@ function Labels({ data }: { data: LabelCollection }) {
         position={[lat, lng]}
         interactive={false}
         keyboard={false}
-        icon={L.divIcon({ className: cls, html: `<span>${f.properties.name}</span>`, iconSize: [0, 0] })}
+        icon={L.divIcon({ className: cls, html: `<span>${f.properties.name.replace(' (', '<br>(')}</span>`, iconSize: [0, 0] })}
       />
     )
   })
+}
+
+const FIT_OPTIONS = { padding: [12, 12] as [number, number] }
+
+function FitCountry() {
+  const map = useMap()
+  useEffect(() => {
+    map.fitBounds(VIETNAM_BOUNDS, FIT_OPTIONS)
+    const scale = L.control.scale({ imperial: false, position: 'bottomleft', maxWidth: 160 }).addTo(map)
+    return () => {
+      scale.remove()
+    }
+  }, [map])
+  return null
 }
 
 function Controls() {
@@ -168,8 +189,8 @@ function Controls() {
       <button type="button" aria-label="Thu nhỏ" className={btn} onClick={() => map.zoomOut()}>
         <Minus aria-hidden className="size-5" />
       </button>
-      <button type="button" aria-label="Xem toàn bộ bản đồ" className={btn} onClick={() => map.fitBounds(VIETNAM_BOUNDS)}>
-        <RotateCcw aria-hidden className="size-5" />
+      <button type="button" aria-label="Xem toàn bộ bản đồ" className={`${btn} mt-2`} onClick={() => map.fitBounds(VIETNAM_BOUNDS, FIT_OPTIONS)}>
+        <LocateFixed aria-hidden className="size-5" />
       </button>
     </div>
   )
@@ -183,7 +204,7 @@ export default function VietnamMap(props: VietnamMapProps) {
     return (
       <ErrorState
         title="Chưa tải được bản đồ"
-        description="Em vẫn có thể chọn vùng trong danh sách bên dưới."
+        description="Em vẫn có thể chọn vùng trong bảng các vùng địa lí."
         onRetry={retry}
       />
     )
@@ -204,7 +225,7 @@ export default function VietnamMap(props: VietnamMapProps) {
         scrollWheelZoom={false}
         zoomControl={false}
         attributionControl={false}
-        className="h-[60vh] min-h-[420px] w-full rounded-card bg-sea lg:h-[calc(100vh-11rem)]"
+        className="h-[calc(100vh-8rem)] min-h-[640px] w-full rounded-card bg-sea"
         aria-label="Bản đồ các vùng địa lí Việt Nam"
       >
         <RegionsLayer
@@ -222,9 +243,10 @@ export default function VietnamMap(props: VietnamMapProps) {
           />
         )}
         <Labels data={data.labels} />
+        <FitCountry />
         <Controls />
       </MapContainer>
-      <p className="mt-1 text-right text-xs text-muted">
+      <p className="pointer-events-none absolute bottom-2 right-4 z-[1000] text-xs text-muted">
         Ranh giới: vietnamese-provinces-database (MIT), đã đơn giản hoá để hiển thị.
       </p>
     </div>

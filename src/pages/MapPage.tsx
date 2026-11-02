@@ -53,9 +53,9 @@ export default function MapPage() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold">Bản đồ khám phá</h1>
-      <div className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,3fr)_minmax(340px,2fr)]">
-        <div className="flex flex-col gap-4">
+      <h1 className="sr-only">Bản đồ khám phá</h1>
+      <div className="grid gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(480px,1fr)]">
+        <div className="relative overflow-hidden rounded-card border-4 border-white bg-sea shadow-[0_8px_30px_rgb(15_23_42/0.08)]">
           <Suspense fallback={<LoadingState label="Đang tải bản đồ…" />}>
             <VietnamMap
               regions={regions}
@@ -65,9 +65,11 @@ export default function MapPage() {
               onSelectProvince={setProvinceId}
             />
           </Suspense>
-          <RegionList regions={regions} selectedId={region?.id ?? null} onSelect={selectRegion} />
+          <div className="absolute left-4 top-4 z-[1000]">
+            <RegionList regions={regions} selectedId={region?.id ?? null} onSelect={selectRegion} />
+          </div>
         </div>
-        <div className="lg:sticky lg:top-24 lg:self-start">
+        <div className="lg:sticky lg:top-28 lg:self-start">
           <MapInfoPanel
             region={region}
             regionIdFromUrl={regionId}

@@ -156,3 +156,30 @@ test('unknown region id shows not found message with link back', async () => {
   renderAt('/ban-do/khong-co')
   expect(await screen.findByText('Không tìm thấy vùng này')).toBeInTheDocument()
 })
+
+test('legend card titled "Các vùng địa lí Việt Nam" with a hint for students', async () => {
+  renderAt('/ban-do')
+  expect(await screen.findByRole('heading', { name: 'Các vùng địa lí Việt Nam' })).toBeInTheDocument()
+  expect(screen.getByText('Nhấn vào một vùng trên bản đồ để khám phá thông tin chi tiết.')).toBeInTheDocument()
+})
+
+test('panel lists featured places with province; clicking one opens the modal at that item', async () => {
+  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
+  const places = await within(panel).findByRole('list', { name: 'Một số địa điểm tiêu biểu' })
+  const buttons = within(places).getAllByRole('button')
+  expect(buttons.length).toBeGreaterThan(0)
+  expect(buttons.length).toBeLessThanOrEqual(3)
+  const fansipan = within(places).getByRole('button', { name: /Đỉnh Phan-xi-păng/ })
+  expect(fansipan).toHaveTextContent('Lào Cai')
+  await userEvent.click(fansipan)
+  expect(router.state.location.search).toBe('?chu-de=landmark&muc=dinh-phan-xi-pang')
+  expect(await screen.findByRole('dialog', { name: 'Danh lam thắng cảnh' })).toBeInTheDocument()
+})
+
+test('"Khám phá chi tiết vùng này" opens the modal at the first topic', async () => {
+  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  await userEvent.click(await screen.findByRole('button', { name: /Khám phá chi tiết vùng này/ }))
+  expect(router.state.location.search).toBe('?chu-de=natural')
+  expect(await screen.findByRole('dialog', { name: 'Đặc điểm tự nhiên' })).toBeInTheDocument()
+})
