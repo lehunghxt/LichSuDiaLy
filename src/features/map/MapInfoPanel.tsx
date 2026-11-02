@@ -1,18 +1,11 @@
-import { ArrowLeft, Clock, Compass, Gem, Landmark, Mountain, PartyPopper, type LucideIcon } from 'lucide-react'
+import { ArrowLeft, Clock, Compass } from 'lucide-react'
 import { Link } from 'react-router'
 import { EmptyState, ErrorState, LoadingState } from '../../components/ui/states'
-import { TOPIC_CATEGORIES, TOPIC_LABELS, type RegionMeta, type TopicCategory } from '../../types/content'
+import { TOPIC_CATEGORIES, TOPIC_LABELS, type RegionMeta } from '../../types/content'
 import { getItemsByCategory } from '../content/repository'
+import { TOPIC_ICONS } from '../content/topicIcons'
 import type { RegionContentState } from '../content/useRegionContent'
 import provinces from '../../data/provinces.json'
-
-export const TOPIC_ICONS: Record<TopicCategory, LucideIcon> = {
-  natural: Mountain,
-  culture: PartyPopper,
-  mineral: Gem,
-  landmark: Compass,
-  historical_site: Landmark,
-}
 
 interface MapInfoPanelProps {
   region: RegionMeta | null
