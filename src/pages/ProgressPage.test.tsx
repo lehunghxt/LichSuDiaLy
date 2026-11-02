@@ -10,7 +10,7 @@ function seed() {
     PROGRESS_KEY,
     JSON.stringify({
       version: 1,
-      visitedRegionIds: ['trung-du-mien-nui-bac-bo'],
+      visitedRegionIds: ['trung-du-mien-nui-phia-bac'],
       viewedItemIds: ['a', 'b', 'c'],
       recentItemIds: ['c', 'b', 'a'],
       quizzes: {

@@ -1,7 +1,6 @@
 [
-  { "id": "trung-du-mien-nui-bac-bo", "name": "Trung du và miền núi Bắc Bộ", "shortName": "Trung du và miền núi", "color": "region-tdmnbb", "status": "active" },
+  { "id": "trung-du-mien-nui-phia-bac", "name": "Trung du và miền núi phía Bắc", "shortName": "Trung du và miền núi", "color": "region-tdmnpb", "status": "active" },
   { "id": "dong-bang-bac-bo", "name": "Đồng bằng Bắc Bộ", "shortName": "Đồng bằng Bắc Bộ", "color": "region-dbbb", "status": "coming_soon" },
-  { "id": "duyen-hai-mien-trung", "name": "Duyên hải miền Trung", "shortName": "Duyên hải miền Trung", "color": "region-dhmt", "status": "coming_soon" },
-  { "id": "tay-nguyen", "name": "Tây Nguyên", "shortName": "Tây Nguyên", "color": "region-tn", "status": "coming_soon" },
+  { "id": "bac-trung-bo-va-nam-trung-bo", "name": "Bắc Trung Bộ và Nam Trung Bộ", "shortName": "Bắc Trung Bộ và Nam Trung Bộ", "color": "region-btbntb", "status": "coming_soon" },
   { "id": "nam-bo", "name": "Nam Bộ", "shortName": "Nam Bộ", "color": "region-nb", "status": "coming_soon" }
 ]

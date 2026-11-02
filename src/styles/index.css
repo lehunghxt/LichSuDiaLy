@@ -24,10 +24,9 @@
   --color-sea: #e0f2fe;
 
   /* Màu từng vùng địa lí (dùng trong regions.json qua tên token) */
-  --color-region-tdmnbb: #16a34a;
+  --color-region-tdmnpb: #16a34a;
   --color-region-dbbb: #f59e0b;
-  --color-region-dhmt: #0ea5e9;
-  --color-region-tn: #a16207;
+  --color-region-btbntb: #0ea5e9;
   --color-region-nb: #db2777;
 
   --radius-card: 1.25rem;

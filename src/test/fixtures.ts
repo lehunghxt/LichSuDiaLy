@@ -14,7 +14,7 @@ export interface RawRegionContent {
 
 export function rawRegionContent(): RawRegionContent {
   return {
-    region: { id: 'vung-a', name: 'Vùng A', shortName: 'A', color: 'region-tdmnbb', status: 'active' },
+    region: { id: 'vung-a', name: 'Vùng A', shortName: 'A', color: 'region-tdmnpb', status: 'active' },
     intro: 'Giới thiệu vùng A.',
     items: [
       {
