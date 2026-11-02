@@ -25,6 +25,10 @@
 
 
   --radius-card: 1.25rem;
+
+  --animate-pop: pop 0.35s ease-out;
+  --animate-float: float 5s ease-in-out infinite;
+  --animate-fade-up: fade-up 0.4s ease-out;
 }
 
 /* Màu từng vùng địa lí: khai báo ngoài @theme vì được đọc động
@@ -130,4 +134,25 @@ div.leaflet-container {
   border-color: #1e293b;
   background: rgb(255 255 255 / 0.7);
   font-family: var(--font-sans);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
