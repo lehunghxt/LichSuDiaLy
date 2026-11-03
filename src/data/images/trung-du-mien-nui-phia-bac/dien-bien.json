@@ -1,0 +1,189 @@
+[
+  {
+    "id": "dien-bien__dien-bien-phu",
+    "provider": "wikimedia-commons",
+    "provinceId": "dien-bien",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Thành phố nhỏ, phía sau là cánh đồng rộng và dãy núi",
+    "caption": "Thành phố Điện Biên Phủ và cánh đồng Mường Thanh (tỉnh Điện Biên).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7.JPG/960px-%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7.JPG",
+      "width": 960,
+      "height": 1440,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7.JPG/500px-%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7.JPG/960px-%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Điện Biên Phủ.JPG",
+      "author": "[Tycho]",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "dien-bien__the-victory-monument-of-dien-bien-phu-front",
+    "provider": "wikimedia-commons",
+    "provinceId": "dien-bien",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Tượng đài bằng đồng hình các chiến sĩ giương cờ",
+    "caption": "Tượng đài Chiến thắng Điện Biên Phủ (tỉnh Điện Biên).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Victory_Monument_of_Dien_Bien_Phu_%28front%29.jpg/960px-The_Victory_Monument_of_Dien_Bien_Phu_%28front%29.jpg",
+      "width": 960,
+      "height": 1280,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Victory_Monument_of_Dien_Bien_Phu_%28front%29.jpg/500px-The_Victory_Monument_of_Dien_Bien_Phu_%28front%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Victory_Monument_of_Dien_Bien_Phu_%28front%29.jpg/960px-The_Victory_Monument_of_Dien_Bien_Phu_%28front%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Victory_Monument_of_Dien_Bien_Phu_%28front%29.jpg/1280px-The_Victory_Monument_of_Dien_Bien_Phu_%28front%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:The Victory Monument of Dien Bien Phu (front).jpg",
+      "author": "Ioe2015",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Ioe2015",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Victory_Monument_of_Dien_Bien_Phu_(front).jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "dien-bien__the-museum-of-dien-bien-phu-victory-front-2022",
+    "provider": "wikimedia-commons",
+    "provinceId": "dien-bien",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Tòa nhà tròn có mái lưới đan chéo",
+    "caption": "Bảo tàng Chiến thắng lịch sử Điện Biên Phủ (tỉnh Điện Biên).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/The_Museum_of_Dien_Bien_Phu_Victory_%28front%2C_2022%29.jpg/960px-The_Museum_of_Dien_Bien_Phu_Victory_%28front%2C_2022%29.jpg",
+      "width": 960,
+      "height": 704,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/The_Museum_of_Dien_Bien_Phu_Victory_%28front%2C_2022%29.jpg/500px-The_Museum_of_Dien_Bien_Phu_Victory_%28front%2C_2022%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/The_Museum_of_Dien_Bien_Phu_Victory_%28front%2C_2022%29.jpg/960px-The_Museum_of_Dien_Bien_Phu_Victory_%28front%2C_2022%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/The_Museum_of_Dien_Bien_Phu_Victory_%28front%2C_2022%29.jpg/1280px-The_Museum_of_Dien_Bien_Phu_Victory_%28front%2C_2022%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:The Museum of Dien Bien Phu Victory (front, 2022).jpg",
+      "author": "Ioe2015",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Ioe2015",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Museum_of_Dien_Bien_Phu_Victory_(front,_2022).jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "dien-bien__ambassador-ted-osius-s-visit-to-hiv-aids-programs-in-dien-bi",
+    "provider": "wikimedia-commons",
+    "provinceId": "dien-bien",
+    "category": "culture",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__mua-xoe-thai"
+    ],
+    "alt": "Các cô gái mặc áo cánh, váy đen múa với khăn hồng",
+    "caption": "Một tiết mục múa của người Thái ở Điện Biên (tỉnh Điện Biên).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ambassador_Ted_Osius%E2%80%99s_Visit_to_HIV_AIDS_Programs_in_Dien_Bien_%2829564030532%29.jpg/960px-Ambassador_Ted_Osius%E2%80%99s_Visit_to_HIV_AIDS_Programs_in_Dien_Bien_%2829564030532%29.jpg",
+      "width": 960,
+      "height": 640,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ambassador_Ted_Osius%E2%80%99s_Visit_to_HIV_AIDS_Programs_in_Dien_Bien_%2829564030532%29.jpg/500px-Ambassador_Ted_Osius%E2%80%99s_Visit_to_HIV_AIDS_Programs_in_Dien_Bien_%2829564030532%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ambassador_Ted_Osius%E2%80%99s_Visit_to_HIV_AIDS_Programs_in_Dien_Bien_%2829564030532%29.jpg/960px-Ambassador_Ted_Osius%E2%80%99s_Visit_to_HIV_AIDS_Programs_in_Dien_Bien_%2829564030532%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ambassador_Ted_Osius%E2%80%99s_Visit_to_HIV_AIDS_Programs_in_Dien_Bien_%2829564030532%29.jpg/1280px-Ambassador_Ted_Osius%E2%80%99s_Visit_to_HIV_AIDS_Programs_in_Dien_Bien_%2829564030532%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Ambassador Ted Osius’s Visit to HIV AIDS Programs in Dien Bien (29564030532).jpg",
+      "author": "USAID Vietnam",
+      "authorUrl": "https://www.flickr.com/people/49951534@N08",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ambassador_Ted_Osius%E2%80%99s_Visit_to_HIV_AIDS_Programs_in_Dien_Bien_(29564030532).jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "dien-bien__traditional-thai-dam-house-muong-thanh-valley-dien-bien-phu",
+    "provider": "wikimedia-commons",
+    "provinceId": "dien-bien",
+    "category": "culture",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dan-toc"
+    ],
+    "alt": "Ngôi nhà sàn gỗ mái ngói giữa vườn cây",
+    "caption": "Nhà sàn truyền thống của người Thái Đen ở thung lũng Mường Thanh (tỉnh Điện Biên).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Traditional_Thai_Dam_House_-_Muong_Thanh_Valley_-_Dien_Bien_Phu_-_Vietnam_-_01_%2848178539312%29.jpg/960px-Traditional_Thai_Dam_House_-_Muong_Thanh_Valley_-_Dien_Bien_Phu_-_Vietnam_-_01_%2848178539312%29.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Traditional_Thai_Dam_House_-_Muong_Thanh_Valley_-_Dien_Bien_Phu_-_Vietnam_-_01_%2848178539312%29.jpg/500px-Traditional_Thai_Dam_House_-_Muong_Thanh_Valley_-_Dien_Bien_Phu_-_Vietnam_-_01_%2848178539312%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Traditional_Thai_Dam_House_-_Muong_Thanh_Valley_-_Dien_Bien_Phu_-_Vietnam_-_01_%2848178539312%29.jpg/960px-Traditional_Thai_Dam_House_-_Muong_Thanh_Valley_-_Dien_Bien_Phu_-_Vietnam_-_01_%2848178539312%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Traditional_Thai_Dam_House_-_Muong_Thanh_Valley_-_Dien_Bien_Phu_-_Vietnam_-_01_%2848178539312%29.jpg/1280px-Traditional_Thai_Dam_House_-_Muong_Thanh_Valley_-_Dien_Bien_Phu_-_Vietnam_-_01_%2848178539312%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Traditional Thai Dam House - Muong Thanh Valley - Dien Bien Phu - Vietnam - 01 (48178539312).jpg",
+      "author": "Adam Jones from Kelowna, BC, Canada",
+      "authorUrl": "https://www.flickr.com/people/41000732@N04",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Traditional_Thai_Dam_House_-_Muong_Thanh_Valley_-_Dien_Bien_Phu_-_Vietnam_-_01_(48178539312).jpg"
+    },
+    "status": "draft"
+  }
+]

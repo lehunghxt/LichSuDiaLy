@@ -1,0 +1,113 @@
+[
+  {
+    "id": "thai-nguyen__ba-be-lake-5",
+    "provider": "wikimedia-commons",
+    "provinceId": "thai-nguyen",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Thuyền đậu trên mặt hồ rộng giữa núi đá",
+    "caption": "Hồ Ba Bể (tỉnh Thái Nguyên, trước đây thuộc tỉnh Bắc Kạn).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ba_Be_Lake_5.jpg/960px-Ba_Be_Lake_5.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ba_Be_Lake_5.jpg/500px-Ba_Be_Lake_5.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ba_Be_Lake_5.jpg/960px-Ba_Be_Lake_5.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Ba_Be_Lake_5.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Ba Be Lake 5.jpg",
+      "author": "Pilip",
+      "authorUrl": "https://www.flickr.com/photos/34524741@N00",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ba_Be_Lake_5.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "thai-nguyen__tea-hill-in-thai-nguyen",
+    "provider": "wikimedia-commons",
+    "provinceId": "thai-nguyen",
+    "category": "culture",
+    "itemIds": [],
+    "alt": "Đồi chè xanh xếp thành từng hàng",
+    "caption": "Đồi chè ở xã Vô Tranh (tỉnh Thái Nguyên).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Tea_hill_in_Thai_Nguyen.jpg/960px-Tea_hill_in_Thai_Nguyen.jpg",
+      "width": 960,
+      "height": 540,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Tea_hill_in_Thai_Nguyen.jpg/500px-Tea_hill_in_Thai_Nguyen.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Tea_hill_in_Thai_Nguyen.jpg/960px-Tea_hill_in_Thai_Nguyen.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Tea_hill_in_Thai_Nguyen.jpg/1280px-Tea_hill_in_Thai_Nguyen.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Tea hill in Thai Nguyen.jpg",
+      "author": "Bacthai20",
+      "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:Bacthai20&action=edit&redlink=1",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tea_hill_in_Thai_Nguyen.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "thai-nguyen__atk-dinh-hoa",
+    "provider": "wikimedia-commons",
+    "provinceId": "thai-nguyen",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Tháp chuông mái cong trong khu di tích giữa rừng",
+    "caption": "Khu di tích An toàn khu (ATK) Định Hóa (tỉnh Thái Nguyên).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/ATK_DINH_HOA.JPG/960px-ATK_DINH_HOA.JPG",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/ATK_DINH_HOA.JPG/500px-ATK_DINH_HOA.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/ATK_DINH_HOA.JPG/960px-ATK_DINH_HOA.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/ATK_DINH_HOA.JPG/1280px-ATK_DINH_HOA.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:ATK DINH HOA.JPG",
+      "author": "Minhminh284",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Minhminh284",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ATK_DINH_HOA.JPG"
+    },
+    "status": "draft"
+  }
+]

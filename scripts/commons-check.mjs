@@ -23,22 +23,33 @@ for (const region of regions) {
   }
 }
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 const broken = []
+const unchecked = []
 let next = 0
+// Commons giới hạn tốc độ (HTTP 429): đi chậm, chờ rồi thử lại; vẫn 429 thì báo "chưa kiểm tra được", không tính là hỏng
 async function worker() {
   while (next < checks.length) {
     const c = checks[next++]
     try {
-      const res = await fetch(c.url, { method: 'HEAD', headers: { 'User-Agent': USER_AGENT } })
-      if (!res.ok) broken.push({ ...c, why: `HTTP ${res.status}` })
+      let res
+      for (let attempt = 0; attempt < 4; attempt++) {
+        res = await fetch(c.url, { method: 'HEAD', headers: { 'User-Agent': USER_AGENT } })
+        if (res.status !== 429) break
+        await sleep(5000 * (attempt + 1))
+      }
+      if (res.status === 429) unchecked.push(c)
+      else if (!res.ok) broken.push({ ...c, why: `HTTP ${res.status}` })
     } catch (e) {
       broken.push({ ...c, why: String(e) })
     }
+    await sleep(250)
   }
 }
-await Promise.all(Array.from({ length: 4 }, worker))
+await Promise.all(Array.from({ length: 2 }, worker))
 
 console.log(`Đã kiểm tra ${checks.length} link${only ? ` của vùng ${only}` : ''}.`)
+if (unchecked.length) console.log(`${unchecked.length} link chưa kiểm tra được vì Commons giới hạn tốc độ; chạy lại sau.`)
 if (broken.length) {
   console.log(`${broken.length} link hỏng:`)
   for (const b of broken) console.log(`  - ${b.id}: ${b.why} ${b.url}`)

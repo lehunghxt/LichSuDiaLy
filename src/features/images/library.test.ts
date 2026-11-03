@@ -119,3 +119,14 @@ test('checkImageIntegrity reports wrong province region, unknown items, duplicat
     'e.itemIds: vùng "nam-bo" chưa có nội dung nên không gắn được "nam-bo__x"',
   ])
 })
+
+test('regionCover prefers a landmark tied to an SGK item over an earlier untied landmark', () => {
+  const l = lib()
+  const images = [
+    webImage({ id: 'a', category: 'landmark', itemIds: [] }),
+    webImage({ id: 'b', category: 'natural', itemIds: ['vung-a__x'] }),
+    webImage({ id: 'c', category: 'landmark', itemIds: ['vung-a__y'] }),
+  ]
+  expect(l.regionCover(images)?.id).toBe('c')
+  expect(l.regionCover(images.filter((i) => i.id !== 'c'))?.id).toBe('a')
+})

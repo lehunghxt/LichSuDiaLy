@@ -1,1 +1,473 @@
-[]
+[
+  {
+    "file": "File:Fansipan Summit 3143m aerial wide temple complex sea of clouds Sa Pa Vietnam.jpg",
+    "provinceId": "lao-cai",
+    "category": "landmark",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang"
+    ],
+    "alt": "Khu đỉnh Phan-xi-păng nhìn từ trên cao, phía dưới là biển mây",
+    "caption": "Khu đỉnh Phan-xi-păng trên biển mây, Sa Pa (tỉnh Lào Cai).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Fansipan Summit.jpg",
+    "provinceId": "lao-cai",
+    "category": "landmark",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang"
+    ],
+    "alt": "Chóp mốc bằng đá trên đỉnh Phan-xi-păng giữa sương mù",
+    "caption": "Mốc đỉnh Phan-xi-păng (tỉnh Lào Cai).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Rice terraces in Sa Pa 03.jpg",
+    "provinceId": "lao-cai",
+    "category": "landmark",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__ruong-bac-thang"
+    ],
+    "alt": "Ruộng bậc thang xanh trên sườn đồi ở Sa Pa",
+    "caption": "Ruộng bậc thang giữa Sa Pa và Tả Phìn (tỉnh Lào Cai).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Bac Ha market day, Vietnam.jpg",
+    "provinceId": "lao-cai",
+    "category": "culture",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__cho-phien"
+    ],
+    "alt": "Phụ nữ Mông mặc trang phục sặc sỡ bày hàng ở chợ",
+    "caption": "Một phiên chợ Bắc Hà (tỉnh Lào Cai).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Hmong women in Sa Pa.jpg",
+    "provinceId": "lao-cai",
+    "category": "culture",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dan-toc"
+    ],
+    "alt": "Các phụ nữ Mông mặc áo chàm ngồi khâu vá trước nhà",
+    "caption": "Phụ nữ người Mông ở Sa Pa (tỉnh Lào Cai).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Red Dao.jpg",
+    "provinceId": "lao-cai",
+    "category": "culture",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dan-toc"
+    ],
+    "alt": "Hai phụ nữ Dao đỏ đội khăn đỏ",
+    "caption": "Phụ nữ người Dao đỏ ở Sa Pa (tỉnh Lào Cai).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Mu Cang Chai 02.JPG",
+    "provinceId": "lao-cai",
+    "category": "landmark",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__ruong-bac-thang"
+    ],
+    "alt": "Ruộng bậc thang mùa đổ nước trên sườn núi",
+    "caption": "Ruộng bậc thang mùa đổ nước ở xã Dế Xu Phình, Mù Cang Chải (tỉnh Lào Cai, trước đây thuộc tỉnh Yên Bái).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Hoàng Liên Sơn mountains 04.jpg",
+    "provinceId": "lao-cai",
+    "category": "natural",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dia-hinh"
+    ],
+    "alt": "Đường mòn đá giữa rừng, phía sau là các đỉnh núi đá trong mây",
+    "caption": "Dãy Hoàng Liên Sơn nhìn từ đường mòn lên đỉnh Phan-xi-păng (tỉnh Lào Cai).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Thác Bà lake - panorama.jpg",
+    "provinceId": "lao-cai",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Hồ nước rộng với rất nhiều đảo nhỏ phủ cây xanh",
+    "caption": "Hồ Thác Bà (tỉnh Lào Cai, trước đây thuộc tỉnh Yên Bái).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Bao Ha Temple - P1380679.JPG",
+    "provinceId": "lao-cai",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Cổng tam quan đền Bảo Hà",
+    "caption": "Cổng đền Bảo Hà bên bờ sông Hồng (tỉnh Lào Cai).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Lung Cu flag tower of Ha Giang in 2014 01.jpg",
+    "provinceId": "tuyen-quang",
+    "category": "landmark",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__cot-co-lung-cu"
+    ],
+    "alt": "Cột cờ Lũng Cú cao, trên đỉnh có lá cờ đỏ, chìm trong sương",
+    "caption": "Cột cờ Lũng Cú (tỉnh Tuyên Quang, trước đây thuộc tỉnh Hà Giang).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Sông Nho Quế 2022 - NKS.jpg",
+    "provinceId": "tuyen-quang",
+    "category": "natural",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__song-ngoi"
+    ],
+    "alt": "Dòng sông xanh uốn quanh giữa các dãy núi đá cao",
+    "caption": "Sông Nho Quế chảy giữa vùng núi đá (tỉnh Tuyên Quang, trước đây thuộc tỉnh Hà Giang).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Đèo Mã Pì Lèng.jpg",
+    "provinceId": "tuyen-quang",
+    "category": "landmark",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dia-hinh"
+    ],
+    "alt": "Con đèo vắt ngang sườn núi đá dựng đứng",
+    "caption": "Đèo Mã Pí Lèng, nối Mèo Vạc với Đồng Văn (tỉnh Tuyên Quang, trước đây thuộc tỉnh Hà Giang).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Hmong marketplace in Ha Giang in 2014 08.jpg",
+    "provinceId": "tuyen-quang",
+    "category": "culture",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__cho-phien"
+    ],
+    "alt": "Phụ nữ Mông mua bán vải vóc ở một phiên chợ",
+    "caption": "Một chợ của người Mông ở Hà Giang (tỉnh Tuyên Quang, trước đây thuộc tỉnh Hà Giang).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Đình Tân Trào.jpg",
+    "provinceId": "tuyen-quang",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Ngôi đình mái lá dưới tán cây xanh",
+    "caption": "Đình Tân Trào, xã Tân Trào (tỉnh Tuyên Quang).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Cây Đa lịch sử Tân Trào.JPG",
+    "provinceId": "tuyen-quang",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Cây đa cổ thụ có bộ rễ lớn",
+    "caption": "Cây đa Tân Trào (tỉnh Tuyên Quang).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Ban Gioc - Detian Falls2.jpg",
+    "provinceId": "cao-bang",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Nhiều dòng thác trắng đổ xuống hồ nước xanh giữa rừng",
+    "caption": "Thác Bản Giốc trên biên giới Việt Nam – Trung Quốc (tỉnh Cao Bằng).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Pác Bó.jpg",
+    "provinceId": "cao-bang",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Dòng suối trong chảy qua lòng đá giữa rừng núi",
+    "caption": "Suối Lê-nin trong khu di tích Pác Bó (tỉnh Cao Bằng).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Cốc Bó.jpg",
+    "provinceId": "cao-bang",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Bên trong một hang đá vôi",
+    "caption": "Hang Cốc Bó, khu di tích Pác Bó, nơi Bác Hồ từng sống và làm việc (tỉnh Cao Bằng).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Động Ngườm Ngao.jpg",
+    "provinceId": "cao-bang",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Măng đá, nhũ đá trong hang được chiếu đèn",
+    "caption": "Động Ngườm Ngao ở xã Đàm Thủy (tỉnh Cao Bằng).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Lang van hoa Dan toc Tay, Dam Thuy, Trung khanh, Cao bang, Vietnam - panoramio.jpg",
+    "provinceId": "cao-bang",
+    "category": "culture",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dan-toc"
+    ],
+    "alt": "Nhà sàn bên con suối, phía sau là núi đá",
+    "caption": "Làng văn hóa dân tộc Tày ở Đàm Thủy (tỉnh Cao Bằng).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Ba Be Lake 5.jpg",
+    "provinceId": "thai-nguyen",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Thuyền đậu trên mặt hồ rộng giữa núi đá",
+    "caption": "Hồ Ba Bể (tỉnh Thái Nguyên, trước đây thuộc tỉnh Bắc Kạn).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Tea hill in Thai Nguyen.jpg",
+    "provinceId": "thai-nguyen",
+    "category": "culture",
+    "itemIds": [],
+    "alt": "Đồi chè xanh xếp thành từng hàng",
+    "caption": "Đồi chè ở xã Vô Tranh (tỉnh Thái Nguyên).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:ATK DINH HOA.JPG",
+    "provinceId": "thai-nguyen",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Tháp chuông mái cong trong khu di tích giữa rừng",
+    "caption": "Khu di tích An toàn khu (ATK) Định Hóa (tỉnh Thái Nguyên).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Lạng Sơn - View from Phai Vệ mountain Feb 2024.jpg",
+    "provinceId": "lang-son",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Người đứng trên đỉnh núi đá nhìn xuống phố phường",
+    "caption": "Thành phố Lạng Sơn nhìn từ núi Phai Vệ (tỉnh Lạng Sơn).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Mẫu Sơn.jpg",
+    "provinceId": "lang-son",
+    "category": "natural",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dia-hinh"
+    ],
+    "alt": "Biển mây trắng phủ giữa các dãy núi",
+    "caption": "Núi Mẫu Sơn (tỉnh Lạng Sơn).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Interior of Tam Thanh Cave - Lang Son - Vietnam - 02 (48141776943).jpg",
+    "provinceId": "lang-son",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Nhũ đá rủ xuống trong lòng hang",
+    "caption": "Bên trong động Tam Thanh (tỉnh Lạng Sơn).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Rice Paddies - Bac Son Valley, Northeast Vietnam - 10 Dec. 2013.jpg",
+    "provinceId": "lang-son",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Thung lũng ruộng lúa nằm giữa các núi đá",
+    "caption": "Cánh đồng lúa ở thung lũng Bắc Sơn (tỉnh Lạng Sơn).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Đền Hùng, đền Thượng.jpg",
+    "provinceId": "phu-tho",
+    "category": "historical_site",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__den-hung"
+    ],
+    "alt": "Bậc đá dẫn lên cổng một ngôi đền cổ, có nhiều người tham quan",
+    "caption": "Đền Thượng trong Khu di tích Đền Hùng (tỉnh Phú Thọ).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Đền Hùng, đền Hạ.jpg",
+    "provinceId": "phu-tho",
+    "category": "historical_site",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__den-hung"
+    ],
+    "alt": "Sân đền với ngôi tháp và mái đền cổ",
+    "caption": "Đền Hạ trong Khu di tích Đền Hùng (tỉnh Phú Thọ).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Mausoleum of Hung King.JPG",
+    "provinceId": "phu-tho",
+    "category": "historical_site",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__den-hung"
+    ],
+    "alt": "Lăng nhỏ bằng đá chạm khắc hoa văn",
+    "caption": "Lăng vua Hùng trong Khu di tích Đền Hùng (tỉnh Phú Thọ).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Tam Dao mountain range.jpg",
+    "provinceId": "phu-tho",
+    "category": "natural",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dia-hinh"
+    ],
+    "alt": "Dãy núi phủ rừng xanh với nhiều đỉnh nhọn",
+    "caption": "Dãy núi Tam Đảo (tỉnh Phú Thọ, trước đây thuộc tỉnh Vĩnh Phúc).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Hoa Binh Dam in Vietnam.jpg",
+    "provinceId": "phu-tho",
+    "category": "natural",
+    "itemIds": [],
+    "alt": "Dòng sông chảy giữa hai bờ đồi, bên trái là công trình thủy điện",
+    "caption": "Sông Đà và nhà máy thủy điện Hòa Bình (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Mai Chau 4.jpg",
+    "provinceId": "phu-tho",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Cánh đồng lúa xanh dưới chân núi",
+    "caption": "Đồng lúa ở Mai Châu (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Zen Monastery Truc Lam Tay Thien.JPG",
+    "provinceId": "phu-tho",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Bậc thang dài dẫn lên cổng thiền viện",
+    "caption": "Thiền viện Trúc Lâm Tây Thiên, Tam Đảo (tỉnh Phú Thọ, trước đây thuộc tỉnh Vĩnh Phúc).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Điện Biên Phủ.JPG",
+    "provinceId": "dien-bien",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Thành phố nhỏ, phía sau là cánh đồng rộng và dãy núi",
+    "caption": "Thành phố Điện Biên Phủ và cánh đồng Mường Thanh (tỉnh Điện Biên).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:The Victory Monument of Dien Bien Phu (front).jpg",
+    "provinceId": "dien-bien",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Tượng đài bằng đồng hình các chiến sĩ giương cờ",
+    "caption": "Tượng đài Chiến thắng Điện Biên Phủ (tỉnh Điện Biên).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:The Museum of Dien Bien Phu Victory (front, 2022).jpg",
+    "provinceId": "dien-bien",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Tòa nhà tròn có mái lưới đan chéo",
+    "caption": "Bảo tàng Chiến thắng lịch sử Điện Biên Phủ (tỉnh Điện Biên).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Between Son La and Moc Chau.png",
+    "provinceId": "son-la",
+    "category": "natural",
+    "itemIds": [],
+    "alt": "Hồ nước giữa các dãy núi đá",
+    "caption": "Lòng hồ thủy điện Hòa Bình nhìn từ cao nguyên Mộc Châu (tỉnh Sơn La).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Sơn La Dam reservoir.JPG",
+    "provinceId": "son-la",
+    "category": "natural",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__song-ngoi"
+    ],
+    "alt": "Đập thủy điện lớn chắn ngang lòng hồ rộng",
+    "caption": "Đập và hồ thủy điện Sơn La trên sông Đà (tỉnh Sơn La).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Sơn La Province.JPG",
+    "provinceId": "son-la",
+    "category": "natural",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dia-hinh"
+    ],
+    "alt": "Thung lũng nhỏ giữa các ngọn núi cao",
+    "caption": "Núi rừng huyện Mường La (tỉnh Sơn La).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Laichautown.jpg",
+    "provinceId": "lai-chau",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Quảng trường rộng trước một tòa nhà lớn, phía sau là núi",
+    "caption": "Quảng trường ở thành phố Lai Châu (tỉnh Lai Châu).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Lai Châu City Lake.jpg",
+    "provinceId": "lai-chau",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Hồ nước trong thành phố, xa xa là núi",
+    "caption": "Hồ nước ở thành phố Lai Châu (tỉnh Lai Châu).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:O Quy Ho pass.jpg",
+    "provinceId": null,
+    "category": "natural",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dia-hinh"
+    ],
+    "alt": "Con đèo ngoằn ngoèo giữa các dãy núi cao",
+    "caption": "Đèo Ô Quy Hồ trên dãy Hoàng Liên Sơn, nối tỉnh Lào Cai và tỉnh Lai Châu.",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Ambassador Ted Osius’s Visit to HIV AIDS Programs in Dien Bien (29564030532).jpg",
+    "provinceId": "dien-bien",
+    "category": "culture",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__mua-xoe-thai"
+    ],
+    "alt": "Các cô gái mặc áo cánh, váy đen múa với khăn hồng",
+    "caption": "Một tiết mục múa của người Thái ở Điện Biên (tỉnh Điện Biên).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Traditional Thai Dam House - Muong Thanh Valley - Dien Bien Phu - Vietnam - 01 (48178539312).jpg",
+    "provinceId": "dien-bien",
+    "category": "culture",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dan-toc"
+    ],
+    "alt": "Ngôi nhà sàn gỗ mái ngói giữa vườn cây",
+    "caption": "Nhà sàn truyền thống của người Thái Đen ở thung lũng Mường Thanh (tỉnh Điện Biên).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:A Thai stilt house (4115406064).jpg",
+    "provinceId": "phu-tho",
+    "category": "culture",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dan-toc"
+    ],
+    "alt": "Ngôi nhà sàn gỗ mái lá có cầu thang gỗ",
+    "caption": "Nhà sàn của người Thái ở Mai Châu (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
+    "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  }
+]

@@ -1,0 +1,151 @@
+[
+  {
+    "id": "lang-son__lang-son-view-from-phai-ve-mountain-feb-2024",
+    "provider": "wikimedia-commons",
+    "provinceId": "lang-son",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Người đứng trên đỉnh núi đá nhìn xuống phố phường",
+    "caption": "Thành phố Lạng Sơn nhìn từ núi Phai Vệ (tỉnh Lạng Sơn).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/L%E1%BA%A1ng_S%C6%A1n_-_View_from_Phai_V%E1%BB%87_mountain_Feb_2024.jpg/960px-L%E1%BA%A1ng_S%C6%A1n_-_View_from_Phai_V%E1%BB%87_mountain_Feb_2024.jpg",
+      "width": 960,
+      "height": 540,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/L%E1%BA%A1ng_S%C6%A1n_-_View_from_Phai_V%E1%BB%87_mountain_Feb_2024.jpg/500px-L%E1%BA%A1ng_S%C6%A1n_-_View_from_Phai_V%E1%BB%87_mountain_Feb_2024.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/L%E1%BA%A1ng_S%C6%A1n_-_View_from_Phai_V%E1%BB%87_mountain_Feb_2024.jpg/960px-L%E1%BA%A1ng_S%C6%A1n_-_View_from_Phai_V%E1%BB%87_mountain_Feb_2024.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/L%E1%BA%A1ng_S%C6%A1n_-_View_from_Phai_V%E1%BB%87_mountain_Feb_2024.jpg/1280px-L%E1%BA%A1ng_S%C6%A1n_-_View_from_Phai_V%E1%BB%87_mountain_Feb_2024.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Lạng Sơn - View from Phai Vệ mountain Feb 2024.jpg",
+      "author": "Dominic Nelson",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:BigDom",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%E1%BA%A1ng_S%C6%A1n_-_View_from_Phai_V%E1%BB%87_mountain_Feb_2024.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "lang-son__mau-son",
+    "provider": "wikimedia-commons",
+    "provinceId": "lang-son",
+    "category": "natural",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dia-hinh"
+    ],
+    "alt": "Biển mây trắng phủ giữa các dãy núi",
+    "caption": "Núi Mẫu Sơn (tỉnh Lạng Sơn).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/M%E1%BA%ABu_S%C6%A1n.jpg/960px-M%E1%BA%ABu_S%C6%A1n.jpg",
+      "width": 960,
+      "height": 497,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/M%E1%BA%ABu_S%C6%A1n.jpg/500px-M%E1%BA%ABu_S%C6%A1n.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/M%E1%BA%ABu_S%C6%A1n.jpg/960px-M%E1%BA%ABu_S%C6%A1n.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/M%E1%BA%ABu_S%C6%A1n.jpg/1280px-M%E1%BA%ABu_S%C6%A1n.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Mẫu Sơn.jpg",
+      "author": "Minh Chu",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:M%E1%BA%ABu_S%C6%A1n.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "lang-son__interior-of-tam-thanh-cave-lang-son-vietnam-02-48141776943",
+    "provider": "wikimedia-commons",
+    "provinceId": "lang-son",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Nhũ đá rủ xuống trong lòng hang",
+    "caption": "Bên trong động Tam Thanh (tỉnh Lạng Sơn).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Interior_of_Tam_Thanh_Cave_-_Lang_Son_-_Vietnam_-_02_%2848141776943%29.jpg/960px-Interior_of_Tam_Thanh_Cave_-_Lang_Son_-_Vietnam_-_02_%2848141776943%29.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Interior_of_Tam_Thanh_Cave_-_Lang_Son_-_Vietnam_-_02_%2848141776943%29.jpg/500px-Interior_of_Tam_Thanh_Cave_-_Lang_Son_-_Vietnam_-_02_%2848141776943%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Interior_of_Tam_Thanh_Cave_-_Lang_Son_-_Vietnam_-_02_%2848141776943%29.jpg/960px-Interior_of_Tam_Thanh_Cave_-_Lang_Son_-_Vietnam_-_02_%2848141776943%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Interior_of_Tam_Thanh_Cave_-_Lang_Son_-_Vietnam_-_02_%2848141776943%29.jpg/1280px-Interior_of_Tam_Thanh_Cave_-_Lang_Son_-_Vietnam_-_02_%2848141776943%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Interior of Tam Thanh Cave - Lang Son - Vietnam - 02 (48141776943).jpg",
+      "author": "Adam Jones from Kelowna, BC, Canada",
+      "authorUrl": "https://www.flickr.com/people/41000732@N04",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interior_of_Tam_Thanh_Cave_-_Lang_Son_-_Vietnam_-_02_(48141776943).jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "lang-son__rice-paddies-bac-son-valley-northeast-vietnam-10-dec-2013",
+    "provider": "wikimedia-commons",
+    "provinceId": "lang-son",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Thung lũng ruộng lúa nằm giữa các núi đá",
+    "caption": "Cánh đồng lúa ở thung lũng Bắc Sơn (tỉnh Lạng Sơn).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Rice_Paddies_-_Bac_Son_Valley%2C_Northeast_Vietnam_-_10_Dec._2013.jpg/960px-Rice_Paddies_-_Bac_Son_Valley%2C_Northeast_Vietnam_-_10_Dec._2013.jpg",
+      "width": 960,
+      "height": 308,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Rice_Paddies_-_Bac_Son_Valley%2C_Northeast_Vietnam_-_10_Dec._2013.jpg/500px-Rice_Paddies_-_Bac_Son_Valley%2C_Northeast_Vietnam_-_10_Dec._2013.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Rice_Paddies_-_Bac_Son_Valley%2C_Northeast_Vietnam_-_10_Dec._2013.jpg/960px-Rice_Paddies_-_Bac_Son_Valley%2C_Northeast_Vietnam_-_10_Dec._2013.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Rice_Paddies_-_Bac_Son_Valley%2C_Northeast_Vietnam_-_10_Dec._2013.jpg/1280px-Rice_Paddies_-_Bac_Son_Valley%2C_Northeast_Vietnam_-_10_Dec._2013.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Rice Paddies - Bac Son Valley, Northeast Vietnam - 10 Dec. 2013.jpg",
+      "author": "Hoang Giang Hai from Hanoi, Vietnam",
+      "authorUrl": "https://www.flickr.com/people/52680665@N06",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rice_Paddies_-_Bac_Son_Valley,_Northeast_Vietnam_-_10_Dec._2013.jpg"
+    },
+    "status": "draft"
+  }
+]

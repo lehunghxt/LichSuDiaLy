@@ -1,0 +1,305 @@
+[
+  {
+    "id": "phu-tho__den-hung-den-thuong",
+    "provider": "wikimedia-commons",
+    "provinceId": "phu-tho",
+    "category": "historical_site",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__den-hung"
+    ],
+    "alt": "Bậc đá dẫn lên cổng một ngôi đền cổ, có nhiều người tham quan",
+    "caption": "Đền Thượng trong Khu di tích Đền Hùng (tỉnh Phú Thọ).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_Th%C6%B0%E1%BB%A3ng.jpg/960px-%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_Th%C6%B0%E1%BB%A3ng.jpg",
+      "width": 960,
+      "height": 540,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_Th%C6%B0%E1%BB%A3ng.jpg/500px-%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_Th%C6%B0%E1%BB%A3ng.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_Th%C6%B0%E1%BB%A3ng.jpg/960px-%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_Th%C6%B0%E1%BB%A3ng.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_Th%C6%B0%E1%BB%A3ng.jpg/1280px-%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_Th%C6%B0%E1%BB%A3ng.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Đền Hùng, đền Thượng.jpg",
+      "author": "Thang Nguyen from Nottingham, United Kingdom",
+      "authorUrl": "https://www.flickr.com/people/70209763@N00",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%81n_H%C3%B9ng,_%C4%91%E1%BB%81n_Th%C6%B0%E1%BB%A3ng.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "phu-tho__den-hung-den-ha",
+    "provider": "wikimedia-commons",
+    "provinceId": "phu-tho",
+    "category": "historical_site",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__den-hung"
+    ],
+    "alt": "Sân đền với ngôi tháp và mái đền cổ",
+    "caption": "Đền Hạ trong Khu di tích Đền Hùng (tỉnh Phú Thọ).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_H%E1%BA%A1.jpg/960px-%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_H%E1%BA%A1.jpg",
+      "width": 960,
+      "height": 540,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_H%E1%BA%A1.jpg/500px-%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_H%E1%BA%A1.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_H%E1%BA%A1.jpg/960px-%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_H%E1%BA%A1.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_H%E1%BA%A1.jpg/1280px-%C4%90%E1%BB%81n_H%C3%B9ng%2C_%C4%91%E1%BB%81n_H%E1%BA%A1.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Đền Hùng, đền Hạ.jpg",
+      "author": "Thang Nguyen from Nottingham, United Kingdom",
+      "authorUrl": "https://www.flickr.com/people/70209763@N00",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%81n_H%C3%B9ng,_%C4%91%E1%BB%81n_H%E1%BA%A1.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "phu-tho__mausoleum-of-hung-king",
+    "provider": "wikimedia-commons",
+    "provinceId": "phu-tho",
+    "category": "historical_site",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__den-hung"
+    ],
+    "alt": "Lăng nhỏ bằng đá chạm khắc hoa văn",
+    "caption": "Lăng vua Hùng trong Khu di tích Đền Hùng (tỉnh Phú Thọ).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Mausoleum_of_Hung_King.JPG/960px-Mausoleum_of_Hung_King.JPG",
+      "width": 960,
+      "height": 1280,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Mausoleum_of_Hung_King.JPG/500px-Mausoleum_of_Hung_King.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Mausoleum_of_Hung_King.JPG/960px-Mausoleum_of_Hung_King.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Mausoleum_of_Hung_King.JPG/1280px-Mausoleum_of_Hung_King.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Mausoleum of Hung King.JPG",
+      "author": "Viethavvh at vi.wikipedia",
+      "authorUrl": "https://vi.wikipedia.org/wiki/User:Viethavvh",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mausoleum_of_Hung_King.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "phu-tho__tam-dao-mountain-range",
+    "provider": "wikimedia-commons",
+    "provinceId": "phu-tho",
+    "category": "natural",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dia-hinh"
+    ],
+    "alt": "Dãy núi phủ rừng xanh với nhiều đỉnh nhọn",
+    "caption": "Dãy núi Tam Đảo (tỉnh Phú Thọ, trước đây thuộc tỉnh Vĩnh Phúc).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Tam_Dao_mountain_range.jpg/960px-Tam_Dao_mountain_range.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Tam_Dao_mountain_range.jpg/500px-Tam_Dao_mountain_range.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Tam_Dao_mountain_range.jpg/960px-Tam_Dao_mountain_range.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Tam_Dao_mountain_range.jpg/1280px-Tam_Dao_mountain_range.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Tam Dao mountain range.jpg",
+      "author": "Viethavvh",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Viethavvh",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tam_Dao_mountain_range.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "phu-tho__hoa-binh-dam-in-vietnam",
+    "provider": "wikimedia-commons",
+    "provinceId": "phu-tho",
+    "category": "natural",
+    "itemIds": [],
+    "alt": "Dòng sông chảy giữa hai bờ đồi, bên trái là công trình thủy điện",
+    "caption": "Sông Đà và nhà máy thủy điện Hòa Bình (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Hoa_Binh_Dam_in_Vietnam.jpg/960px-Hoa_Binh_Dam_in_Vietnam.jpg",
+      "width": 960,
+      "height": 719,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Hoa_Binh_Dam_in_Vietnam.jpg/500px-Hoa_Binh_Dam_in_Vietnam.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Hoa_Binh_Dam_in_Vietnam.jpg/960px-Hoa_Binh_Dam_in_Vietnam.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Hoa_Binh_Dam_in_Vietnam.jpg",
+          "width": 1276
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Hoa Binh Dam in Vietnam.jpg",
+      "author": "VN.NguyenDucDuy",
+      "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:VN.NguyenDucDuy&action=edit&redlink=1",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoa_Binh_Dam_in_Vietnam.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "phu-tho__mai-chau-4",
+    "provider": "wikimedia-commons",
+    "provinceId": "phu-tho",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Cánh đồng lúa xanh dưới chân núi",
+    "caption": "Đồng lúa ở Mai Châu (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Mai_Chau_4.jpg/960px-Mai_Chau_4.jpg",
+      "width": 960,
+      "height": 2133,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Mai_Chau_4.jpg/500px-Mai_Chau_4.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Mai_Chau_4.jpg/960px-Mai_Chau_4.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Mai_Chau_4.jpg/1280px-Mai_Chau_4.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Mai Chau 4.jpg",
+      "author": "Shyamal",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Shyamal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mai_Chau_4.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "phu-tho__zen-monastery-truc-lam-tay-thien",
+    "provider": "wikimedia-commons",
+    "provinceId": "phu-tho",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Bậc thang dài dẫn lên cổng thiền viện",
+    "caption": "Thiền viện Trúc Lâm Tây Thiên, Tam Đảo (tỉnh Phú Thọ, trước đây thuộc tỉnh Vĩnh Phúc).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Zen_Monastery_Truc_Lam_Tay_Thien.JPG/960px-Zen_Monastery_Truc_Lam_Tay_Thien.JPG",
+      "width": 960,
+      "height": 723,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Zen_Monastery_Truc_Lam_Tay_Thien.JPG/500px-Zen_Monastery_Truc_Lam_Tay_Thien.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Zen_Monastery_Truc_Lam_Tay_Thien.JPG/960px-Zen_Monastery_Truc_Lam_Tay_Thien.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Zen_Monastery_Truc_Lam_Tay_Thien.JPG/1280px-Zen_Monastery_Truc_Lam_Tay_Thien.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Zen Monastery Truc Lam Tay Thien.JPG",
+      "author": "Phó Nháy",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Ph%C3%B3_Nh%C3%A1y",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zen_Monastery_Truc_Lam_Tay_Thien.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "phu-tho__a-thai-stilt-house-4115406064",
+    "provider": "wikimedia-commons",
+    "provinceId": "phu-tho",
+    "category": "culture",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__dan-toc"
+    ],
+    "alt": "Ngôi nhà sàn gỗ mái lá có cầu thang gỗ",
+    "caption": "Nhà sàn của người Thái ở Mai Châu (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/A_Thai_stilt_house_%284115406064%29.jpg/960px-A_Thai_stilt_house_%284115406064%29.jpg",
+      "width": 960,
+      "height": 638,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/A_Thai_stilt_house_%284115406064%29.jpg/500px-A_Thai_stilt_house_%284115406064%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/A_Thai_stilt_house_%284115406064%29.jpg/960px-A_Thai_stilt_house_%284115406064%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/A_Thai_stilt_house_%284115406064%29.jpg/1280px-A_Thai_stilt_house_%284115406064%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:A Thai stilt house (4115406064).jpg",
+      "author": "Greg Willis from Denver, CO, usa",
+      "authorUrl": "https://www.flickr.com/people/34791752@N08",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Thai_stilt_house_(4115406064).jpg"
+    },
+    "status": "draft"
+  }
+]

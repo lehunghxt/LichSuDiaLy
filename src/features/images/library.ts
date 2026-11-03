@@ -53,7 +53,11 @@ export function createImageLibrary(modules: Record<string, Loader>): ImageLibrar
     loadAll: async () => (await Promise.all([...new Set(files.map((f) => f.regionId))].map(loadRegion))).flat(),
     forItem: (images, itemId) => images.filter((i) => i.itemIds.includes(itemId)),
     forProvince: (images, provinceId) => images.filter((i) => i.provinceId === provinceId),
-    regionCover: (images) => images.find((i) => i.category === 'landmark') ?? images.find((i) => i.category === 'natural'),
+    // Ưu tiên danh thắng có trong bài học (SGK), rồi danh thắng bất kì, rồi ảnh tự nhiên
+    regionCover: (images) =>
+      images.find((i) => i.category === 'landmark' && i.itemIds.length > 0) ??
+      images.find((i) => i.category === 'landmark') ??
+      images.find((i) => i.category === 'natural'),
   }
 }
 
