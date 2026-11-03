@@ -34,7 +34,7 @@
    - Đồng bằng Bắc Bộ (6): Hà Nội, Quảng Ninh, Bắc Ninh, Hải Phòng, Hưng Yên, Ninh Bình.
    - Bắc Trung Bộ và Nam Trung Bộ (11): Thanh Hóa, Nghệ An, Hà Tĩnh, Quảng Trị, Huế, Đà Nẵng, Quảng Ngãi, Gia Lai, Khánh Hòa, Đắk Lắk, Lâm Đồng.
    - Nam Bộ (8): Đồng Nai, TP. Hồ Chí Minh, Tây Ninh, Đồng Tháp, Vĩnh Long, An Giang, Cần Thơ, Cà Mau.
-   - Làm lần lượt theo vùng (Task 4a → 4d). Mỗi vùng là một mốc commit và có thể deploy riêng.
+   - Làm lần lượt theo vùng (Task 7 → 10), mỗi vùng là một task riêng. Xem "Ghi chú triển khai" bên dưới.
    - 3 vùng chưa có nội dung SGK thì ảnh **không có `itemIds`**. Sau này viết nội dung vùng nào thì gắn `itemIds` cho vùng đó.
    - Ước lượng khối lượng: 34 tỉnh × 4 chủ đề × 2–3 ảnh ≈ 270–400 ảnh. Ảnh nào cũng phải xem để xác nhận chủ thể, nên đây là phần tốn thời gian nhất.
 5. **Không bịa:**
@@ -58,13 +58,30 @@
 
 ## Review Focus
 
-1. **Ảnh bị xoá hoặc đổi tên trên Commons** (link 404): khung ảnh hiện "Hình ảnh hiện không tải được", **dòng ghi nguồn và link vẫn còn**, layout không nhảy. Test ở Task 5.
+1. **Ảnh bị xoá hoặc đổi tên trên Commons** (link 404): khung ảnh hiện "Hình ảnh hiện không tải được", **dòng ghi nguồn và link vẫn còn**, layout không nhảy. Test ở Task 4.
 2. **Trường `Artist` của Commons chứa HTML** (link, `<span>`, chữ ký nhiều dòng): JSON chỉ chứa text sạch cùng `authorUrl` tách riêng, không bao giờ render HTML thô. Test ở Task 3.
 3. **Giấy phép lạ** ("CC BY-NC-SA 2.0", "Attribution", "GFDL" đứng một mình, chuỗi rỗng): script bỏ qua ảnh đó và báo lý do, parser ném `ContentError`. Test ở Task 1 và Task 3.
-4. **Ảnh nói về cả vùng** (không thuộc tỉnh nào) và tỉnh chưa có ảnh: card tỉnh không hiện khung ảnh rỗng, modal không hiện tiêu đề "Hình ảnh" khi không có ảnh. Test ở Task 6.
-5. **Ảnh quá dọc hoặc panorama quá ngang** làm vỡ lưới: khung hiển thị khoá tỉ lệ 4:3 với `object-cover`, còn ở lightbox/trang nguồn thì hiện nguyên tỉ lệ. Test ở Task 5.
+4. **Ảnh nói về cả vùng** (không thuộc tỉnh nào) và tỉnh chưa có ảnh: card tỉnh không hiện khung ảnh rỗng, modal không hiện tiêu đề "Hình ảnh" khi không có ảnh. Test ở Task 5.
+5. **Ảnh quá dọc hoặc panorama quá ngang** làm vỡ lưới: khung hiển thị khoá tỉ lệ 4:3 với `object-cover`, còn ở lightbox/trang nguồn thì hiện nguyên tỉ lệ. Test ở Task 4.
+
+## Ghi chú triển khai
+
+- **Hai giai đoạn:**
+  - **Giai đoạn A (Task 1–6): làm khung một lần cho cả nước.** Gồm kiểu dữ liệu, bộ nạp, script lấy metadata, component ảnh, gắn vào giao diện và trang nguồn ảnh. Xong giai đoạn A thì web chạy bình thường với thư viện ảnh rỗng.
+  - **Giai đoạn B (Task 7–10): mỗi vùng là một task độc lập.** Mỗi task chỉ thêm dữ liệu (`image-picks/<regionId>.json` và JSON sinh ra), không sửa code.
+- **Thứ tự vùng:**
+  1. Trung du và miền núi phía Bắc: đã có nội dung SGK, gắn ảnh vào từng mục.
+  2. Đồng bằng Bắc Bộ.
+  3. Bắc Trung Bộ và Nam Trung Bộ.
+  4. Nam Bộ.
+- **Có thể dừng sau bất kỳ vùng nào.** Mỗi task vùng kết thúc bằng commit, test xanh và kiểm tra trên trình duyệt. Deploy là tuỳ chọn và phải được người dùng đồng ý mỗi lần.
+- **Mỗi tỉnh một commit** trong task vùng (`data(images): <tỉnh>`), để dễ xem lại và hoàn tác từng tỉnh.
+- **Ghi tiến độ vào ledger** `.superpowers/sdd/2026-11-03-web-image-library/progress.md`: mỗi tỉnh xong ghi một dòng (số ảnh theo chủ đề, ô trống). Nếu phiên bị ngắt thì tiếp tục từ tỉnh chưa có dòng.
+- **Việc của người dùng sau mỗi vùng:** xem ảnh trên bản xem thử, rồi chuyển `status` của những ảnh đã duyệt sang `verified`. Ảnh `draft` không hiện ở bản chính thức.
 
 ---
+
+## Giai đoạn A: Khung dùng chung (làm một lần)
 
 ### Task 1: Kiểu dữ liệu và parser cho ảnh nhúng
 
@@ -179,32 +196,7 @@
 - [ ] **Step 4:** PASS. Chạy thử thật với 2 ảnh Phan-xi-păng và Đền Hùng. Mở `src.url` trên trình duyệt để xác nhận trả về 200. Kết quả phải qua `parseWebImages`.
 - [ ] **Step 5: Commit** `feat(images): commons metadata fetch script (no hand-typed credits)`.
 
-### Task 4: Tuyển chọn ảnh cho 34 tỉnh, thành phố (task dữ liệu, 4 đợt theo vùng)
-
-**Files (mỗi vùng):**
-- Modify: `image-picks/<regionId>.json`
-- Modify: `docs/IMAGE_GAPS.md`
-- Generated: `src/data/images/<regionId>/*.json`
-
-**Quy trình cho mỗi tỉnh** × chủ đề (`culture` gồm lễ hội, phong tục, trang phục, nghề truyền thống, chợ; `mineral` gồm mỏ và hoạt động khai thác; `landmark`; `historical_site`):
-
-1. Tìm trên Commons theo tên tỉnh mới, **tên các tỉnh cũ đã sáp nhập vào tỉnh đó** (ví dụ Tuyên Quang gồm cả Hà Giang cũ; Lào Cai gồm cả Yên Bái cũ), theo category Commons của tỉnh, và theo tên địa danh mà SGK nhắc tới.
-   - Với vùng đã có nội dung: ưu tiên ảnh minh hoạ trực tiếp các mục SGK. Danh sách ứng viên cũ nằm trong scratchpad `image-candidates.md`.
-2. **Xem ảnh** (thumbnail) và xác nhận đúng chủ thể. Ghi `checked`.
-3. Viết `alt` (thấy gì) và `caption` (một câu, lấy từ mô tả Commons, ghi tên tỉnh mới). Không thêm năm, số liệu hay tên địa điểm mà Commons không ghi.
-4. Mục tiêu 2–3 ảnh mỗi ô tỉnh × chủ đề.
-   - Không phải tỉnh nào cũng có khoáng sản tiêu biểu hay di tích có ảnh tự do. Ô trống là bình thường: ghi vào `IMAGE_GAPS.md` (tỉnh, chủ đề, đã tìm những gì), **không lấy ảnh na ná**.
-5. Ảnh thuộc tỉnh cũ đã chia tách sang nhiều tỉnh mới: chỉ gán khi Commons ghi rõ địa điểm (huyện, xã, tên công trình) để xác định tỉnh mới. Không rõ thì bỏ ảnh.
-
-**Các đợt:**
-- [ ] **4a. Trung du và miền núi phía Bắc (9 tỉnh):** chọn ảnh xong thì chạy `npm run images:fetch trung-du-mien-nui-phia-bac`, rồi `npm test` xanh. Commit `data(images): TDMNPB 9 provinces (draft)`.
-- [ ] **4b. Đồng bằng Bắc Bộ (6):** như trên với `dong-bang-bac-bo`. Commit.
-- [ ] **4c. Bắc Trung Bộ và Nam Trung Bộ (11):** như trên với `bac-trung-bo-va-nam-trung-bo`. Commit.
-- [ ] **4d. Nam Bộ (8):** như trên với `nam-bo`. Commit.
-
-Sau mỗi đợt, bảng ảnh bị bỏ qua của script phải rỗng hoặc đã xử lý hết, và `checkImageIntegrity` trên dữ liệu thật trả về `[]`.
-
-### Task 5: Component `WebImageFigure`
+### Task 4: Component `WebImageFigure`
 
 **Files:**
 - Create: `src/components/ui/WebImageFigure.tsx`, `src/components/ui/ImageCredit.tsx`
@@ -224,7 +216,7 @@ Sau mỗi đợt, bảng ảnh bị bỏ qua của script phải rỗng hoặc �
 - [ ] **Step 2:** FAIL. **Step 3:** cài đặt. **Step 4:** PASS.
 - [ ] **Step 5: Commit** `feat(ui): WebImageFigure with TASL credit and broken-link fallback`.
 
-### Task 6: Gắn ảnh vào giao diện
+### Task 5: Gắn ảnh vào giao diện
 
 **Files:**
 - Create: `src/features/images/useRegionImages.ts` (hook giống `useRegionContent`)
@@ -240,7 +232,7 @@ Sau mỗi đợt, bảng ảnh bị bỏ qua của script phải rỗng hoặc �
 - Test: `src/pages/MapPage.test.tsx`, `src/features/content/TopicModal.test.tsx`
 
 **Interfaces:**
-- Consumes: `imageLibrary`, `WebImageFigure` (Task 2 và Task 5).
+- Consumes: `imageLibrary`, `WebImageFigure` (Task 2 và Task 4).
 - Ảnh SGK (deep-link thẻ hình) vẫn giữ nguyên. Ảnh Commons là phần bổ sung.
 
 - [ ] **Step 1: Test lỗi** (mock `imageLibrary` bằng `vi.mock`, dữ liệu 2 ảnh):
@@ -254,7 +246,7 @@ Sau mỗi đợt, bảng ảnh bị bỏ qua của script phải rỗng hoặc �
 - [ ] **Step 2:** FAIL. **Step 3:** cài đặt. **Step 4:** PASS, cả bộ xanh. Kiểm tra trên Chrome ở 1280px và 1512px.
 - [ ] **Step 5: Commit** `feat: show commons images in modal, province card, featured places, region cover`.
 
-### Task 7: Trang "Nguồn ảnh" và tài liệu
+### Task 6: Trang "Nguồn ảnh" và tài liệu
 
 **Files:**
 - Create: `src/pages/ImageCreditsPage.tsx`, test `src/pages/ImageCreditsPage.test.tsx`
@@ -262,7 +254,7 @@ Sau mỗi đợt, bảng ảnh bị bỏ qua của script phải rỗng hoặc �
   - `src/app/router.tsx`: route `nguon-anh`.
   - `src/components/layout/AppLayout.tsx`: link "Nguồn ảnh" ở footer.
   - `docs/DATA_SOURCES.md`, `docs/CONTENT_GUIDE.md`, `docs/DECISIONS.md`.
-- Create: `scripts/commons-check.mjs` cùng script `"images:check"`. Script gửi HEAD tới mọi `src.url` và `sourceUrl`, rồi in các link hỏng. Chạy tay trước mỗi lần deploy.
+- Create: `scripts/commons-check.mjs` cùng script `"images:check"` (`node scripts/commons-check.mjs [regionId]`; không truyền vùng thì kiểm tra tất cả). Script gửi HEAD tới mọi `src.url` và `sourceUrl`, rồi in các link hỏng. Chạy tay trước mỗi lần deploy.
 
 - [ ] **Step 1: Test lỗi:**
   - `/nguon-anh` có h1 "Nguồn ảnh".
@@ -278,6 +270,134 @@ Sau mỗi đợt, bảng ảnh bị bỏ qua của script phải rỗng hoặc �
 
 ---
 
+## Giai đoạn B: Tuyển ảnh theo từng vùng
+
+### Quy trình tuyển ảnh (dùng chung cho Task 7–10)
+
+**Files mỗi vùng:**
+- Modify: `image-picks/<regionId>.json`
+- Modify: `docs/IMAGE_GAPS.md`
+- Generated: `src/data/images/<regionId>/*.json`
+
+**Quy trình cho mỗi tỉnh** × chủ đề (`culture` gồm lễ hội, phong tục, trang phục, nghề truyền thống, chợ; `mineral` gồm mỏ và hoạt động khai thác; `landmark`; `historical_site`):
+
+1. Tìm trên Commons theo tên tỉnh mới, **tên các tỉnh cũ đã sáp nhập vào tỉnh đó** (ví dụ Tuyên Quang gồm cả Hà Giang cũ; Lào Cai gồm cả Yên Bái cũ), theo category Commons của tỉnh, và theo tên địa danh mà SGK nhắc tới.
+   - Với vùng đã có nội dung: ưu tiên ảnh minh hoạ trực tiếp các mục SGK. Danh sách ứng viên cũ nằm trong scratchpad `image-candidates.md`.
+2. **Xem ảnh** (thumbnail) và xác nhận đúng chủ thể. Ghi `checked`.
+3. Viết `alt` (thấy gì) và `caption` (một câu, lấy từ mô tả Commons, ghi tên tỉnh mới). Không thêm năm, số liệu hay tên địa điểm mà Commons không ghi.
+4. Mục tiêu 2–3 ảnh mỗi ô tỉnh × chủ đề.
+   - Không phải tỉnh nào cũng có khoáng sản tiêu biểu hay di tích có ảnh tự do. Ô trống là bình thường: ghi vào `IMAGE_GAPS.md` (tỉnh, chủ đề, đã tìm những gì), **không lấy ảnh na ná**.
+5. Ảnh thuộc tỉnh cũ đã chia tách sang nhiều tỉnh mới: chỉ gán khi Commons ghi rõ địa điểm (huyện, xã, tên công trình) để xác định tỉnh mới. Không rõ thì bỏ ảnh.
+
+**Tên tỉnh cũ** ghi trong ngoặc ở từng task lấy theo Nghị quyết 202/2025/QH15 về sắp xếp đơn vị hành chính cấp tỉnh. Trước khi tìm ảnh một tỉnh, đối chiếu lại với văn bản này; sai thì sửa plan và ghi `Ruling:` vào ledger.
+
+**Kết thúc mỗi task vùng** (bước chung, ghi lại trong từng task):
+- `npm run images:fetch <regionId>`: bảng ảnh bị bỏ qua phải rỗng hoặc đã xử lý hết.
+- `npm test`: `checkImageIntegrity` trên dữ liệu thật trả về `[]`. Chạy thêm `npm run typecheck`, `npm run build`.
+- `npm run images:check <regionId>` → 0 link hỏng.
+- Xem trên Chrome ở 1280px: panel vùng, chọn từng tỉnh, modal (nếu vùng có nội dung), trang /nguon-anh.
+
+### Task 7: Ảnh vùng Trung du và miền núi phía Bắc (9 tỉnh, thành phố)
+
+**regionId:** `trung-du-mien-nui-phia-bac`
+
+**Interfaces:**
+- Consumes: `images:fetch`, `images:check` (Task 3, Task 6), `checkImageIntegrity` (Task 2). Không sửa code.
+- Produces: `src/data/images/trung-du-mien-nui-phia-bac/<provinceId>.json` cho từng tỉnh và `_toan-vung.json`; các dòng mới trong `docs/IMAGE_GAPS.md`.
+
+**Riêng vùng này:** gắn `itemIds` cho ảnh minh hoạ các mục SGK đã có (Phan-xi-păng, Hoàng Liên Sơn, ruộng bậc thang, Cột cờ Lũng Cú, Đền Hùng, thuỷ điện, chợ phiên, Gầu Tào, Lồng Tồng, hát Then, Xoè Thái…). Ứng viên cũ nằm trong scratchpad `image-candidates.md`. Kiểm tra thêm modal của từng chủ đề.
+
+- [ ] **Step 1: Tuyển ảnh từng tỉnh** theo quy trình chung. Mỗi tỉnh xong thì commit và ghi ledger:
+  - [ ] Lai Châu
+  - [ ] Điện Biên
+  - [ ] Sơn La
+  - [ ] Lào Cai (gồm Yên Bái cũ)
+  - [ ] Tuyên Quang (gồm Hà Giang cũ)
+  - [ ] Cao Bằng
+  - [ ] Thái Nguyên (gồm Bắc Kạn cũ)
+  - [ ] Lạng Sơn
+  - [ ] Phú Thọ (gồm Vĩnh Phúc, Hoà Bình cũ)
+  - [ ] Ảnh chung của vùng (`_toan-vung.json`): cảnh quan, lễ hội và dân tộc tiêu biểu của cả vùng, nếu có ảnh hợp lệ
+- [ ] **Step 2:** `npm run images:fetch trung-du-mien-nui-phia-bac`. Bảng ảnh bị bỏ qua rỗng hoặc đã xử lý.
+- [ ] **Step 3:** `npm test`, `npm run typecheck`, `npm run build` → sạch.
+- [ ] **Step 4:** `npm run images:check trung-du-mien-nui-phia-bac` → 0 link hỏng.
+- [ ] **Step 5:** Kiểm tra trên Chrome ở 1280px như phần "Kết thúc mỗi task vùng".
+- [ ] **Step 6: Commit** `data(images): Trung du và miền núi phía Bắc done (draft)`. Báo người dùng số ảnh theo tỉnh × chủ đề và các ô trống. Hỏi người dùng có muốn deploy bản xem thử không.
+
+### Task 8: Ảnh vùng Đồng bằng Bắc Bộ (6 tỉnh, thành phố)
+
+**regionId:** `dong-bang-bac-bo`
+
+**Interfaces:**
+- Consumes: `images:fetch`, `images:check` (Task 3, Task 6), `checkImageIntegrity` (Task 2). Không sửa code.
+- Produces: `src/data/images/dong-bang-bac-bo/<provinceId>.json` cho từng tỉnh và `_toan-vung.json`; các dòng mới trong `docs/IMAGE_GAPS.md`.
+
+- [ ] **Step 1: Tuyển ảnh từng tỉnh** theo quy trình chung. Mỗi tỉnh xong thì commit và ghi ledger:
+  - [ ] Hà Nội
+  - [ ] Quảng Ninh
+  - [ ] Bắc Ninh (gồm Bắc Giang cũ)
+  - [ ] Hải Phòng (gồm Hải Dương cũ)
+  - [ ] Hưng Yên (gồm Thái Bình cũ)
+  - [ ] Ninh Bình (gồm Hà Nam, Nam Định cũ)
+  - [ ] Ảnh chung của vùng (`_toan-vung.json`): cảnh quan, lễ hội và dân tộc tiêu biểu của cả vùng, nếu có ảnh hợp lệ
+- [ ] **Step 2:** `npm run images:fetch dong-bang-bac-bo`. Bảng ảnh bị bỏ qua rỗng hoặc đã xử lý.
+- [ ] **Step 3:** `npm test`, `npm run typecheck`, `npm run build` → sạch.
+- [ ] **Step 4:** `npm run images:check dong-bang-bac-bo` → 0 link hỏng.
+- [ ] **Step 5:** Kiểm tra trên Chrome ở 1280px như phần "Kết thúc mỗi task vùng".
+- [ ] **Step 6: Commit** `data(images): Đồng bằng Bắc Bộ done (draft)`. Báo người dùng số ảnh theo tỉnh × chủ đề và các ô trống. Hỏi người dùng có muốn deploy bản xem thử không.
+
+### Task 9: Ảnh vùng Bắc Trung Bộ và Nam Trung Bộ (11 tỉnh, thành phố)
+
+**regionId:** `bac-trung-bo-va-nam-trung-bo`
+
+**Interfaces:**
+- Consumes: `images:fetch`, `images:check` (Task 3, Task 6), `checkImageIntegrity` (Task 2). Không sửa code.
+- Produces: `src/data/images/bac-trung-bo-va-nam-trung-bo/<provinceId>.json` cho từng tỉnh và `_toan-vung.json`; các dòng mới trong `docs/IMAGE_GAPS.md`.
+
+- [ ] **Step 1: Tuyển ảnh từng tỉnh** theo quy trình chung. Mỗi tỉnh xong thì commit và ghi ledger:
+  - [ ] Thanh Hóa
+  - [ ] Nghệ An
+  - [ ] Hà Tĩnh
+  - [ ] Quảng Trị (gồm Quảng Bình cũ)
+  - [ ] Huế
+  - [ ] Đà Nẵng (gồm Quảng Nam cũ)
+  - [ ] Quảng Ngãi (gồm Kon Tum cũ)
+  - [ ] Gia Lai (gồm Bình Định cũ)
+  - [ ] Khánh Hòa (gồm Ninh Thuận cũ)
+  - [ ] Đắk Lắk (gồm Phú Yên cũ)
+  - [ ] Lâm Đồng (gồm Đắk Nông, Bình Thuận cũ)
+  - [ ] Ảnh chung của vùng (`_toan-vung.json`): cảnh quan, lễ hội và dân tộc tiêu biểu của cả vùng, nếu có ảnh hợp lệ
+- [ ] **Step 2:** `npm run images:fetch bac-trung-bo-va-nam-trung-bo`. Bảng ảnh bị bỏ qua rỗng hoặc đã xử lý.
+- [ ] **Step 3:** `npm test`, `npm run typecheck`, `npm run build` → sạch.
+- [ ] **Step 4:** `npm run images:check bac-trung-bo-va-nam-trung-bo` → 0 link hỏng.
+- [ ] **Step 5:** Kiểm tra trên Chrome ở 1280px như phần "Kết thúc mỗi task vùng".
+- [ ] **Step 6: Commit** `data(images): Bắc Trung Bộ và Nam Trung Bộ done (draft)`. Báo người dùng số ảnh theo tỉnh × chủ đề và các ô trống. Hỏi người dùng có muốn deploy bản xem thử không.
+
+### Task 10: Ảnh vùng Nam Bộ (8 tỉnh, thành phố)
+
+**regionId:** `nam-bo`
+
+**Interfaces:**
+- Consumes: `images:fetch`, `images:check` (Task 3, Task 6), `checkImageIntegrity` (Task 2). Không sửa code.
+- Produces: `src/data/images/nam-bo/<provinceId>.json` cho từng tỉnh và `_toan-vung.json`; các dòng mới trong `docs/IMAGE_GAPS.md`.
+
+- [ ] **Step 1: Tuyển ảnh từng tỉnh** theo quy trình chung. Mỗi tỉnh xong thì commit và ghi ledger:
+  - [ ] Đồng Nai (gồm Bình Phước cũ)
+  - [ ] TP. Hồ Chí Minh (gồm Bình Dương, Bà Rịa – Vũng Tàu cũ)
+  - [ ] Tây Ninh (gồm Long An cũ)
+  - [ ] Đồng Tháp (gồm Tiền Giang cũ)
+  - [ ] Vĩnh Long (gồm Bến Tre, Trà Vinh cũ)
+  - [ ] An Giang (gồm Kiên Giang cũ)
+  - [ ] Cần Thơ (gồm Sóc Trăng, Hậu Giang cũ)
+  - [ ] Cà Mau (gồm Bạc Liêu cũ)
+  - [ ] Ảnh chung của vùng (`_toan-vung.json`): cảnh quan, lễ hội và dân tộc tiêu biểu của cả vùng, nếu có ảnh hợp lệ
+- [ ] **Step 2:** `npm run images:fetch nam-bo`. Bảng ảnh bị bỏ qua rỗng hoặc đã xử lý.
+- [ ] **Step 3:** `npm test`, `npm run typecheck`, `npm run build` → sạch.
+- [ ] **Step 4:** `npm run images:check nam-bo` → 0 link hỏng.
+- [ ] **Step 5:** Kiểm tra trên Chrome ở 1280px như phần "Kết thúc mỗi task vùng".
+- [ ] **Step 6: Commit** `data(images): Nam Bộ done (draft)`. Báo người dùng số ảnh theo tỉnh × chủ đề và các ô trống. Hỏi người dùng có muốn deploy bản xem thử không.
+
+---
 ## Ngoài phạm vi (ghi lại để không làm lẫn)
 
 - Lightbox phóng to ảnh: làm sau nếu cần.
