@@ -332,3 +332,21 @@ test('compact nav is a single row of four equal tabs with short labels', async (
   expect(within(nav).getAllByRole('link').map((l) => l.textContent)).toEqual(['Trang chủ', 'Bản đồ', 'Trắc nghiệm', 'Tiến độ'])
   expect(within(nav).getByRole('link', { name: 'Bản đồ' })).toHaveAttribute('aria-current', 'page')
 })
+
+test('legend can be collapsed to a small button and expanded again', async () => {
+  renderAt('/ban-do')
+  const toggle = await screen.findByRole('button', { name: 'Thu gọn bảng các vùng' })
+  expect(toggle).toHaveAttribute('aria-expanded', 'true')
+  await userEvent.click(toggle)
+  expect(screen.queryByRole('list', { name: 'Các vùng địa lí' })).not.toBeInTheDocument()
+  const open = screen.getByRole('button', { name: 'Mở bảng các vùng' })
+  expect(open).toHaveAttribute('aria-expanded', 'false')
+  await userEvent.click(open)
+  expect(screen.getByRole('list', { name: 'Các vùng địa lí' })).toBeInTheDocument()
+})
+
+test('hint card is hidden once a region is selected', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  await screen.findByRole('list', { name: 'Các vùng địa lí' })
+  expect(screen.queryByText('Nhấn vào một vùng trên bản đồ để khám phá thông tin chi tiết.')).not.toBeInTheDocument()
+})
