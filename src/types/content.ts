@@ -86,3 +86,21 @@ export interface RegionContent {
   items: ContentItem[]
   quizzes: Quiz[]
 }
+
+/** Ảnh nhúng từ Wikimedia Commons (không lưu file trong repo); ghi nguồn theo TASL */
+export interface WebImage {
+  /** "<provinceId|_toan-vung>__<slug>", duy nhất toàn site */
+  id: string
+  provider: 'wikimedia-commons'
+  /** Gắn từ thư mục chứa file, không ghi trong JSON */
+  regionId: string
+  /** null = ảnh của cả vùng (_toan-vung.json) */
+  provinceId: string | null
+  category: TopicCategory
+  itemIds: string[]
+  alt: string
+  caption: string
+  src: { url: string; width: number; height: number; srcset: { url: string; width: number }[] }
+  attribution: { title: string; author: string; authorUrl?: string; license: string; licenseUrl?: string; sourceUrl: string }
+  status: ContentStatus
+}

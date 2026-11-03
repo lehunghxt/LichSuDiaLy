@@ -24,62 +24,62 @@ export class ContentError extends Error {
   }
 }
 
-type Obj = Record<string, unknown>
+export type Obj = Record<string, unknown>
 
-const join = (path: string, key: string) => (path ? `${path}.${key}` : key)
+export const join = (path: string, key: string) => (path ? `${path}.${key}` : key)
 
-function obj(v: unknown, path: string): Obj {
+export function obj(v: unknown, path: string): Obj {
   if (typeof v !== 'object' || v === null || Array.isArray(v)) throw new ContentError(path, 'cần là object')
   return Object.fromEntries(Object.entries(v))
 }
 
-function arr(v: unknown, path: string): unknown[] {
+export function arr(v: unknown, path: string): unknown[] {
   if (!Array.isArray(v)) throw new ContentError(path, 'cần là mảng')
   return v
 }
 
-function list<T>(o: Obj, key: string, path: string, parseOne: (v: unknown, p: string) => T): T[] {
+export function list<T>(o: Obj, key: string, path: string, parseOne: (v: unknown, p: string) => T): T[] {
   const p = join(path, key)
   return arr(o[key], p).map((v, i) => parseOne(v, `${p}[${i}]`))
 }
 
-function str(o: Obj, key: string, path: string): string {
+export function str(o: Obj, key: string, path: string): string {
   const v = o[key]
   if (typeof v !== 'string' || v.trim() === '') throw new ContentError(join(path, key), 'cần là chuỗi không rỗng')
   return v
 }
 
-function optStr(o: Obj, key: string, path: string): string | undefined {
+export function optStr(o: Obj, key: string, path: string): string | undefined {
   return o[key] === undefined ? undefined : str(o, key, path)
 }
 
-function num(o: Obj, key: string, path: string): number {
+export function num(o: Obj, key: string, path: string): number {
   const v = o[key]
   if (typeof v !== 'number' || !Number.isFinite(v)) throw new ContentError(join(path, key), 'cần là số')
   return v
 }
 
-function strList(o: Obj, key: string, path: string): string[] {
+export function strList(o: Obj, key: string, path: string): string[] {
   return list(o, key, path, (v, p) => {
     if (typeof v !== 'string' || v.trim() === '') throw new ContentError(p, 'cần là chuỗi không rỗng')
     return v
   })
 }
 
-function oneOf<T extends string>(o: Obj, key: string, path: string, allowed: readonly T[]): T {
+export function oneOf<T extends string>(o: Obj, key: string, path: string, allowed: readonly T[]): T {
   const v = o[key]
   const found = allowed.find((a) => a === v)
   if (found === undefined) throw new ContentError(join(path, key), `cần là một trong: ${allowed.join(', ')}`)
   return found
 }
 
-function posInt(o: Obj, key: string, path: string): number {
+export function posInt(o: Obj, key: string, path: string): number {
   const v = num(o, key, path)
   if (!Number.isInteger(v) || v < 1) throw new ContentError(join(path, key), 'cần là số nguyên dương')
   return v
 }
 
-const STATUSES: readonly ContentStatus[] = ['draft', 'verified']
+export const STATUSES: readonly ContentStatus[] = ['draft', 'verified']
 
 function parseSource(v: unknown, path: string): SourceRef {
   const o = obj(v, path)
