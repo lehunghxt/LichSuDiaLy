@@ -1,0 +1,76 @@
+[
+  {
+    "id": "ha-tinh__thiencambeach",
+    "provider": "wikimedia-commons",
+    "provinceId": "ha-tinh",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Bãi biển cát vàng, có ngọn núi nhô ra biển",
+    "caption": "Bãi biển Thiên Cầm (tỉnh Hà Tĩnh).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Thiencambeach.jpg/960px-Thiencambeach.jpg",
+      "width": 960,
+      "height": 540,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Thiencambeach.jpg/500px-Thiencambeach.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Thiencambeach.jpg/960px-Thiencambeach.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Thiencambeach.jpg/1280px-Thiencambeach.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Thiencambeach.jpg",
+      "author": "Khoitran1957",
+      "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:Khoitran1957&action=edit&redlink=1",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thiencambeach.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "ha-tinh__ha-tinh-province-scenery",
+    "provider": "wikimedia-commons",
+    "provinceId": "ha-tinh",
+    "category": "natural",
+    "itemIds": [],
+    "alt": "Cánh đồng lúa trong sương sớm, có người và trâu",
+    "caption": "Đồng ruộng ở tỉnh Hà Tĩnh.",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/H%C3%A0_T%C4%A9nh_Province_scenery.jpg/960px-H%C3%A0_T%C4%A9nh_Province_scenery.jpg",
+      "width": 960,
+      "height": 408,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/H%C3%A0_T%C4%A9nh_Province_scenery.jpg/500px-H%C3%A0_T%C4%A9nh_Province_scenery.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/H%C3%A0_T%C4%A9nh_Province_scenery.jpg/960px-H%C3%A0_T%C4%A9nh_Province_scenery.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/H%C3%A0_T%C4%A9nh_Province_scenery.jpg/1280px-H%C3%A0_T%C4%A9nh_Province_scenery.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Hà Tĩnh Province scenery.jpg",
+      "author": "[Tycho] talk , http://shansov.net",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Shansov.net",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:H%C3%A0_T%C4%A9nh_Province_scenery.jpg"
+    },
+    "status": "draft"
+  }
+]

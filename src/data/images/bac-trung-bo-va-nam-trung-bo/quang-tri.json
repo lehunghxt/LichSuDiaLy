@@ -1,0 +1,105 @@
+[
+  {
+    "id": "quang-tri__dong-hoi-phong-nha-grotten-68776",
+    "provider": "wikimedia-commons",
+    "provinceId": "quang-tri",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Thuyền chở khách đi vào lòng hang có nhiều nhũ đá",
+    "caption": "Động Phong Nha, Vườn quốc gia Phong Nha – Kẻ Bàng (tỉnh Quảng Trị, trước đây thuộc tỉnh Quảng Bình).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Dong_Hoi_Phong_Nha_grotten_%2868776%29.jpg/960px-Dong_Hoi_Phong_Nha_grotten_%2868776%29.jpg",
+      "width": 960,
+      "height": 540,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Dong_Hoi_Phong_Nha_grotten_%2868776%29.jpg/500px-Dong_Hoi_Phong_Nha_grotten_%2868776%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Dong_Hoi_Phong_Nha_grotten_%2868776%29.jpg/960px-Dong_Hoi_Phong_Nha_grotten_%2868776%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Dong_Hoi_Phong_Nha_grotten_%2868776%29.jpg/1280px-Dong_Hoi_Phong_Nha_grotten_%2868776%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Dong Hoi Phong Nha grotten (68776).jpg",
+      "author": "Andre Hospers",
+      "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:Andre_Hospers&action=edit&redlink=1",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dong_Hoi_Phong_Nha_grotten_(68776).jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "quang-tri__son-doong-cave-db-1",
+    "provider": "wikimedia-commons",
+    "provinceId": "quang-tri",
+    "category": "natural",
+    "itemIds": [],
+    "alt": "Những măng đá khổng lồ trong lòng hang rộng",
+    "caption": "Măng đá trong hang Sơn Đoòng (tỉnh Quảng Trị, trước đây thuộc tỉnh Quảng Bình).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Son_Doong_Cave_DB_%281%29.jpg/960px-Son_Doong_Cave_DB_%281%29.jpg",
+      "width": 960,
+      "height": 640,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Son_Doong_Cave_DB_%281%29.jpg/500px-Son_Doong_Cave_DB_%281%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Son_Doong_Cave_DB_%281%29.jpg/960px-Son_Doong_Cave_DB_%281%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Son_Doong_Cave_DB_%281%29.jpg/1280px-Son_Doong_Cave_DB_%281%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Son Doong Cave DB (1).jpg",
+      "author": "Dave Bunnell",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Dave_Bunnell",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Son_Doong_Cave_DB_(1).jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "quang-tri__cau-hien-luong-nhin-tu-bo-nam",
+    "provider": "wikimedia-commons",
+    "provinceId": "quang-tri",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Cây cầu sắt bắc qua sông, cuối cầu có cột cờ",
+    "caption": "Cầu Hiền Lương trên sông Bến Hải, nhìn từ bờ Nam (tỉnh Quảng Trị).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/C%E1%BA%A7u_Hi%E1%BB%81n_L%C6%B0%C6%A1ng_%28nh%C3%ACn_t%E1%BB%AB_b%E1%BB%9D_Nam%29.JPG",
+      "width": 900,
+      "height": 591,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/C%E1%BA%A7u_Hi%E1%BB%81n_L%C6%B0%C6%A1ng_%28nh%C3%ACn_t%E1%BB%AB_b%E1%BB%9D_Nam%29.JPG",
+          "width": 900
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Cầu Hiền Lương (nhìn từ bờ Nam).JPG",
+      "author": "Bút Chiến at Vietnamese Wikipedia",
+      "authorUrl": "https://en.wikipedia.org/wiki/vi:User:B%C3%BAt_Chi%E1%BA%BFn",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:C%E1%BA%A7u_Hi%E1%BB%81n_L%C6%B0%C6%A1ng_(nh%C3%ACn_t%E1%BB%AB_b%E1%BB%9D_Nam).JPG"
+    },
+    "status": "draft"
+  }
+]

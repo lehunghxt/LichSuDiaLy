@@ -1,0 +1,111 @@
+[
+  {
+    "id": "lam-dong__da-lat-train-station-02",
+    "provider": "wikimedia-commons",
+    "provinceId": "lam-dong",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Nhà ga có ba mái nhọn hình tam giác",
+    "caption": "Nhà ga Đà Lạt (tỉnh Lâm Đồng).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Da_Lat_train_station_02.JPG/960px-Da_Lat_train_station_02.JPG",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Da_Lat_train_station_02.JPG/500px-Da_Lat_train_station_02.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Da_Lat_train_station_02.JPG/960px-Da_Lat_train_station_02.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Da_Lat_train_station_02.JPG/1280px-Da_Lat_train_station_02.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Da Lat train station 02.JPG",
+      "author": "Diane Selwyn ( talk )",
+      "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:Diane_Selwyn&action=edit&redlink=1",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Da_Lat_train_station_02.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "lam-dong__da-lat-viet-nam",
+    "provider": "wikimedia-commons",
+    "provinceId": "lam-dong",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Thành phố trên đồi trong sương sớm",
+    "caption": "Thành phố Đà Lạt nhìn từ trên cao (tỉnh Lâm Đồng).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Da_Lat_-_Viet_Nam.jpg/960px-Da_Lat_-_Viet_Nam.jpg",
+      "width": 960,
+      "height": 540,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Da_Lat_-_Viet_Nam.jpg/500px-Da_Lat_-_Viet_Nam.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Da_Lat_-_Viet_Nam.jpg/960px-Da_Lat_-_Viet_Nam.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Da_Lat_-_Viet_Nam.jpg/1280px-Da_Lat_-_Viet_Nam.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Da Lat - Viet Nam.jpg",
+      "author": "Tuong Lam Photos",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Da_Lat_-_Viet_Nam.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "lam-dong__vietnam-mui-ne-sand-dune",
+    "provider": "wikimedia-commons",
+    "provinceId": "lam-dong",
+    "category": "natural",
+    "itemIds": [],
+    "alt": "Đồi cát vàng gợn sóng",
+    "caption": "Đồi cát Mũi Né (tỉnh Lâm Đồng, trước đây thuộc tỉnh Bình Thuận).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Vietnam%2C_Mui_Ne_sand_dune.jpg/960px-Vietnam%2C_Mui_Ne_sand_dune.jpg",
+      "width": 960,
+      "height": 640,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Vietnam%2C_Mui_Ne_sand_dune.jpg/500px-Vietnam%2C_Mui_Ne_sand_dune.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Vietnam%2C_Mui_Ne_sand_dune.jpg/960px-Vietnam%2C_Mui_Ne_sand_dune.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Vietnam%2C_Mui_Ne_sand_dune.jpg/1280px-Vietnam%2C_Mui_Ne_sand_dune.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Vietnam, Mui Ne sand dune.jpg",
+      "author": "Vyacheslav Argenberg",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Argenberg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vietnam,_Mui_Ne_sand_dune.jpg"
+    },
+    "status": "draft"
+  }
+]

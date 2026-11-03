@@ -1,0 +1,149 @@
+[
+  {
+    "id": "khanh-hoa__arriving-in-nha-trang-vietnam",
+    "provider": "wikimedia-commons",
+    "provinceId": "khanh-hoa",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Vịnh biển rộng với đảo và núi, có cầu vồng mờ",
+    "caption": "Vịnh Nha Trang (tỉnh Khánh Hòa).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arriving_in_Nha_Trang_-_Vietnam.jpg/960px-Arriving_in_Nha_Trang_-_Vietnam.jpg",
+      "width": 960,
+      "height": 540,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arriving_in_Nha_Trang_-_Vietnam.jpg/500px-Arriving_in_Nha_Trang_-_Vietnam.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arriving_in_Nha_Trang_-_Vietnam.jpg/960px-Arriving_in_Nha_Trang_-_Vietnam.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Arriving_in_Nha_Trang_-_Vietnam.jpg/1280px-Arriving_in_Nha_Trang_-_Vietnam.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Arriving in Nha Trang - Vietnam.jpg",
+      "author": "bvi4092",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arriving_in_Nha_Trang_-_Vietnam.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "khanh-hoa__thap-ba-ponagar-panoramio",
+    "provider": "wikimedia-commons",
+    "provinceId": "khanh-hoa",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Hai ngôi tháp Chăm bằng gạch đỏ",
+    "caption": "Tháp Bà Pô Na-ga (tỉnh Khánh Hòa).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Th%C3%A1p_B%C3%A0_PONAGAR_-_panoramio.jpg/960px-Th%C3%A1p_B%C3%A0_PONAGAR_-_panoramio.jpg",
+      "width": 960,
+      "height": 525,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Th%C3%A1p_B%C3%A0_PONAGAR_-_panoramio.jpg/500px-Th%C3%A1p_B%C3%A0_PONAGAR_-_panoramio.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Th%C3%A1p_B%C3%A0_PONAGAR_-_panoramio.jpg/960px-Th%C3%A1p_B%C3%A0_PONAGAR_-_panoramio.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Th%C3%A1p_B%C3%A0_PONAGAR_-_panoramio.jpg/1280px-Th%C3%A1p_B%C3%A0_PONAGAR_-_panoramio.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Tháp Bà PONAGAR - panoramio.jpg",
+      "author": "Makarenko Sasha",
+      "authorUrl": "https://web.archive.org/web/20161030163346/http://www.panoramio.com/user/4703286?with_photo_id=123709613",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Th%C3%A1p_B%C3%A0_PONAGAR_-_panoramio.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "khanh-hoa__po-klong-garai-00",
+    "provider": "wikimedia-commons",
+    "provinceId": "khanh-hoa",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Ngôi tháp gạch đỏ chạm khắc cầu kì",
+    "caption": "Tháp Pô Klong Ga-rai (tỉnh Khánh Hòa, trước đây thuộc tỉnh Ninh Thuận).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Po_Klong_Garai_00.jpg/960px-Po_Klong_Garai_00.jpg",
+      "width": 960,
+      "height": 1056,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Po_Klong_Garai_00.jpg/500px-Po_Klong_Garai_00.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Po_Klong_Garai_00.jpg/960px-Po_Klong_Garai_00.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Po_Klong_Garai_00.jpg/1280px-Po_Klong_Garai_00.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Po Klong Garai 00.jpg",
+      "author": "[Tycho] talk , http://shansov.net",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Shansov.net",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Po_Klong_Garai_00.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "khanh-hoa__vuon-nho-o-phan-rang-ninh-thuan",
+    "provider": "wikimedia-commons",
+    "provinceId": "khanh-hoa",
+    "category": "culture",
+    "itemIds": [],
+    "alt": "Giàn nho trĩu những chùm quả",
+    "caption": "Vườn nho ở Phan Rang (tỉnh Khánh Hòa, trước đây thuộc tỉnh Ninh Thuận).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/V%C6%B0%E1%BB%9Dn_Nho_%E1%BB%9F_Phan_Rang%2C_Ninh_Thu%E1%BA%ADn.JPG/960px-V%C6%B0%E1%BB%9Dn_Nho_%E1%BB%9F_Phan_Rang%2C_Ninh_Thu%E1%BA%ADn.JPG",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/V%C6%B0%E1%BB%9Dn_Nho_%E1%BB%9F_Phan_Rang%2C_Ninh_Thu%E1%BA%ADn.JPG/500px-V%C6%B0%E1%BB%9Dn_Nho_%E1%BB%9F_Phan_Rang%2C_Ninh_Thu%E1%BA%ADn.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/V%C6%B0%E1%BB%9Dn_Nho_%E1%BB%9F_Phan_Rang%2C_Ninh_Thu%E1%BA%ADn.JPG/960px-V%C6%B0%E1%BB%9Dn_Nho_%E1%BB%9F_Phan_Rang%2C_Ninh_Thu%E1%BA%ADn.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/V%C6%B0%E1%BB%9Dn_Nho_%E1%BB%9F_Phan_Rang%2C_Ninh_Thu%E1%BA%ADn.JPG/1280px-V%C6%B0%E1%BB%9Dn_Nho_%E1%BB%9F_Phan_Rang%2C_Ninh_Thu%E1%BA%ADn.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Vườn Nho ở Phan Rang, Ninh Thuận.JPG",
+      "author": "Đông Sơn",
+      "authorUrl": "https://vi.wikipedia.org/wiki/User:NDS",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:V%C6%B0%E1%BB%9Dn_Nho_%E1%BB%9F_Phan_Rang,_Ninh_Thu%E1%BA%ADn.JPG"
+    },
+    "status": "draft"
+  }
+]

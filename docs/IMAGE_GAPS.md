@@ -10,3 +10,6 @@ Tỉnh × chủ đề chưa tìm được ảnh hợp lệ trên Wikimedia Commo
 | Đồng bằng Bắc Bộ | Cả 6 tỉnh | Khoáng sản | "Quang Ninh coal mine", "Quang Ninh coal": chỉ có ảnh bảo tàng, không rõ chủ thể than |
 | Đồng bằng Bắc Bộ | Cả 6 tỉnh | Đặc điểm tự nhiên | "Red River delta rice": chỉ có bản đồ vệ tinh |
 | Đồng bằng Bắc Bộ | Bắc Ninh (Bắc Giang cũ) | Danh lam, di tích | "Vinh Nghiem pagoda" trả về chùa cùng tên ở TP.HCM; "Bac Giang" chỉ có ảnh phố |
+| Bắc Trung Bộ và Nam Trung Bộ | Cả 11 tỉnh | Khoáng sản | Chưa tìm được ảnh mỏ đúng tỉnh |
+| Bắc Trung Bộ và Nam Trung Bộ | Thanh Hóa, Nghệ An, Hà Tĩnh, Quảng Trị, Huế, Đà Nẵng, Gia Lai, Lâm Đồng | Lễ hội và văn hóa | Chưa có ảnh lễ hội đúng tỉnh; "Kontum (6353699527)" nhà rông J'rai không rõ tỉnh nên bỏ |
+| Bắc Trung Bộ và Nam Trung Bộ | Đắk Lắk | Danh lam | "Dray Nur waterfall": mô tả không ghi địa điểm (thác nằm giữa Đắk Lắk và Đắk Nông cũ) nên bỏ |

@@ -1,0 +1,113 @@
+[
+  {
+    "id": "quang-ngai__ly-son3",
+    "provider": "wikimedia-commons",
+    "provinceId": "quang-ngai",
+    "category": "culture",
+    "itemIds": [],
+    "alt": "Ruộng trồng hành tỏi bên bờ biển có thuyền đánh cá",
+    "caption": "Ruộng ven biển trên đảo Lý Sơn (tỉnh Quảng Ngãi).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Ly_Son3.jpg/960px-Ly_Son3.jpg",
+      "width": 960,
+      "height": 641,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Ly_Son3.jpg/500px-Ly_Son3.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Ly_Son3.jpg/960px-Ly_Son3.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Ly_Son3.jpg",
+          "width": 1024
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Ly Son3.jpg",
+      "author": "BertholdD",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:BertholdD",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ly_Son3.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "quang-ngai__kontum-wooden-catholic-church",
+    "provider": "wikimedia-commons",
+    "provinceId": "quang-ngai",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Nhà thờ bằng gỗ màu nâu có tháp nhọn",
+    "caption": "Nhà thờ gỗ Kon Tum (tỉnh Quảng Ngãi, trước đây thuộc tỉnh Kon Tum).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Kontum_wooden_catholic_church.jpg/960px-Kontum_wooden_catholic_church.jpg",
+      "width": 960,
+      "height": 636,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Kontum_wooden_catholic_church.jpg/500px-Kontum_wooden_catholic_church.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Kontum_wooden_catholic_church.jpg/960px-Kontum_wooden_catholic_church.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Kontum_wooden_catholic_church.jpg/1280px-Kontum_wooden_catholic_church.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Kontum wooden catholic church.jpg",
+      "author": "Rdavout",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Rdavout",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kontum_wooden_catholic_church.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "quang-ngai__bahnarrong",
+    "provider": "wikimedia-commons",
+    "provinceId": "quang-ngai",
+    "category": "culture",
+    "itemIds": [],
+    "alt": "Ngôi nhà rông mái lá cao vút",
+    "caption": "Nhà rông của người Ba Na ở làng Kon Kơ Tu (tỉnh Quảng Ngãi, trước đây thuộc tỉnh Kon Tum).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/BahnarRong.jpg/960px-BahnarRong.jpg",
+      "width": 960,
+      "height": 1375,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/BahnarRong.jpg/500px-BahnarRong.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/BahnarRong.jpg/960px-BahnarRong.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/BahnarRong.jpg",
+          "width": 1202
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:BahnarRong.jpg",
+      "author": "User:Doron",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Doron",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BahnarRong.jpg"
+    },
+    "status": "draft"
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "id": "da-nang__hoi-an-ancient-town-2020-01-cn-06",
+    "provider": "wikimedia-commons",
+    "provinceId": "da-nang",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Dãy nhà cổ tường vàng bên con phố có đèn lồng",
+    "caption": "Phố cổ Hội An (thành phố Đà Nẵng, trước đây thuộc tỉnh Quảng Nam).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/H%E1%BB%99i_An%2C_Ancient_Town%2C_2020-01_CN-06.jpg/960px-H%E1%BB%99i_An%2C_Ancient_Town%2C_2020-01_CN-06.jpg",
+      "width": 960,
+      "height": 618,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/H%E1%BB%99i_An%2C_Ancient_Town%2C_2020-01_CN-06.jpg/500px-H%E1%BB%99i_An%2C_Ancient_Town%2C_2020-01_CN-06.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/H%E1%BB%99i_An%2C_Ancient_Town%2C_2020-01_CN-06.jpg/960px-H%E1%BB%99i_An%2C_Ancient_Town%2C_2020-01_CN-06.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/H%E1%BB%99i_An%2C_Ancient_Town%2C_2020-01_CN-06.jpg/1280px-H%E1%BB%99i_An%2C_Ancient_Town%2C_2020-01_CN-06.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Hội An, Ancient Town, 2020-01 CN-06.jpg",
+      "author": "Steffen Schmitz ( more photos )",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Carschten",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:H%E1%BB%99i_An,_Ancient_Town,_2020-01_CN-06.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "da-nang__my-son-sanctuary-vietnam-04",
+    "provider": "wikimedia-commons",
+    "provinceId": "da-nang",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Ngôi tháp cổ bằng gạch đỏ giữa cây cỏ",
+    "caption": "Một ngôi tháp ở Khu đền tháp Mỹ Sơn (thành phố Đà Nẵng, trước đây thuộc tỉnh Quảng Nam).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/My_Son_Sanctuary_Vietnam_04.jpg/960px-My_Son_Sanctuary_Vietnam_04.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/My_Son_Sanctuary_Vietnam_04.jpg/500px-My_Son_Sanctuary_Vietnam_04.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/My_Son_Sanctuary_Vietnam_04.jpg/960px-My_Son_Sanctuary_Vietnam_04.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/My_Son_Sanctuary_Vietnam_04.jpg/1280px-My_Son_Sanctuary_Vietnam_04.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:My Son Sanctuary Vietnam 04.jpg",
+      "author": "Philip Nalangan",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:PhilipNalangan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:My_Son_Sanctuary_Vietnam_04.jpg"
+    },
+    "status": "draft"
+  }
+]

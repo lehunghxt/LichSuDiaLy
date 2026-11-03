@@ -1,0 +1,76 @@
+[
+  {
+    "id": "gia-lai__bien-ho-pleiku-gia-lai-viet-nam",
+    "provider": "wikimedia-commons",
+    "provinceId": "gia-lai",
+    "category": "natural",
+    "itemIds": [],
+    "alt": "Mặt hồ xanh nhìn qua hàng thông",
+    "caption": "Biển Hồ ở Pleiku (tỉnh Gia Lai).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bi%E1%BB%83n_H%E1%BB%93_-_Pleiku%2C_Gia_Lai%2C_Vi%E1%BB%87t_Nam.jpg/960px-Bi%E1%BB%83n_H%E1%BB%93_-_Pleiku%2C_Gia_Lai%2C_Vi%E1%BB%87t_Nam.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bi%E1%BB%83n_H%E1%BB%93_-_Pleiku%2C_Gia_Lai%2C_Vi%E1%BB%87t_Nam.jpg/500px-Bi%E1%BB%83n_H%E1%BB%93_-_Pleiku%2C_Gia_Lai%2C_Vi%E1%BB%87t_Nam.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bi%E1%BB%83n_H%E1%BB%93_-_Pleiku%2C_Gia_Lai%2C_Vi%E1%BB%87t_Nam.jpg/960px-Bi%E1%BB%83n_H%E1%BB%93_-_Pleiku%2C_Gia_Lai%2C_Vi%E1%BB%87t_Nam.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bi%E1%BB%83n_H%E1%BB%93_-_Pleiku%2C_Gia_Lai%2C_Vi%E1%BB%87t_Nam.jpg/1280px-Bi%E1%BB%83n_H%E1%BB%93_-_Pleiku%2C_Gia_Lai%2C_Vi%E1%BB%87t_Nam.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Biển Hồ - Pleiku, Gia Lai, Việt Nam.jpg",
+      "author": "Pxchanh",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Pxchanh",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bi%E1%BB%83n_H%E1%BB%93_-_Pleiku,_Gia_Lai,_Vi%E1%BB%87t_Nam.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "gia-lai__0040323-thap-banh-it-complex-nhon-hoa-binh-dinh-vietnam-001",
+    "provider": "wikimedia-commons",
+    "provinceId": "gia-lai",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Những ngôi tháp gạch cổ trên đồi cây xanh",
+    "caption": "Cụm tháp Bánh Ít (tỉnh Gia Lai, trước đây thuộc tỉnh Bình Định).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/0040323_Thap_Banh_It_complex%2C_Nhon_Hoa%2C_Binh_Dinh_Vietnam_001.jpg/960px-0040323_Thap_Banh_It_complex%2C_Nhon_Hoa%2C_Binh_Dinh_Vietnam_001.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/0040323_Thap_Banh_It_complex%2C_Nhon_Hoa%2C_Binh_Dinh_Vietnam_001.jpg/500px-0040323_Thap_Banh_It_complex%2C_Nhon_Hoa%2C_Binh_Dinh_Vietnam_001.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/0040323_Thap_Banh_It_complex%2C_Nhon_Hoa%2C_Binh_Dinh_Vietnam_001.jpg/960px-0040323_Thap_Banh_It_complex%2C_Nhon_Hoa%2C_Binh_Dinh_Vietnam_001.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/0040323_Thap_Banh_It_complex%2C_Nhon_Hoa%2C_Binh_Dinh_Vietnam_001.jpg/1280px-0040323_Thap_Banh_It_complex%2C_Nhon_Hoa%2C_Binh_Dinh_Vietnam_001.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:0040323 Thap Banh It complex, Nhon Hoa, Binh Dinh Vietnam 001.jpg",
+      "author": "Ms Sarah Welch",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Ms_Sarah_Welch",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:0040323_Thap_Banh_It_complex,_Nhon_Hoa,_Binh_Dinh_Vietnam_001.jpg"
+    },
+    "status": "draft"
+  }
+]

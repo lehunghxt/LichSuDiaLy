@@ -1,0 +1,111 @@
+[
+  {
+    "id": "thanh-hoa__ho-dynasty-s-citadel-vietnam",
+    "provider": "wikimedia-commons",
+    "provinceId": "thanh-hoa",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Cổng thành bằng những khối đá lớn, có ba cửa vòm",
+    "caption": "Thành nhà Hồ (tỉnh Thanh Hóa).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ho_dynasty%27s_citadel%2C_Vietnam.jpg/960px-Ho_dynasty%27s_citadel%2C_Vietnam.jpg",
+      "width": 960,
+      "height": 640,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ho_dynasty%27s_citadel%2C_Vietnam.jpg/500px-Ho_dynasty%27s_citadel%2C_Vietnam.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ho_dynasty%27s_citadel%2C_Vietnam.jpg/960px-Ho_dynasty%27s_citadel%2C_Vietnam.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ho_dynasty%27s_citadel%2C_Vietnam.jpg/1280px-Ho_dynasty%27s_citadel%2C_Vietnam.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Ho dynasty's citadel, Vietnam.jpg",
+      "author": "Loi Nguyen Duc",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ho_dynasty%27s_citadel,_Vietnam.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "thanh-hoa__bai-bien-sam-son",
+    "provider": "wikimedia-commons",
+    "provinceId": "thanh-hoa",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Bãi cát rộng, xa xa là biển và núi nhỏ",
+    "caption": "Bãi biển Sầm Sơn (tỉnh Thanh Hóa).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/B%C3%A3i_bi%E1%BB%83n_S%E1%BA%A7m_S%C6%A1n.JPG/960px-B%C3%A3i_bi%E1%BB%83n_S%E1%BA%A7m_S%C6%A1n.JPG",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/B%C3%A3i_bi%E1%BB%83n_S%E1%BA%A7m_S%C6%A1n.JPG/500px-B%C3%A3i_bi%E1%BB%83n_S%E1%BA%A7m_S%C6%A1n.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/B%C3%A3i_bi%E1%BB%83n_S%E1%BA%A7m_S%C6%A1n.JPG/960px-B%C3%A3i_bi%E1%BB%83n_S%E1%BA%A7m_S%C6%A1n.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/B%C3%A3i_bi%E1%BB%83n_S%E1%BA%A7m_S%C6%A1n.JPG/1280px-B%C3%A3i_bi%E1%BB%83n_S%E1%BA%A7m_S%C6%A1n.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Bãi biển Sầm Sơn.JPG",
+      "author": "Nguyễn Thanh Quang",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Nguy%E1%BB%85n_Thanh_Quang",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%C3%A3i_bi%E1%BB%83n_S%E1%BA%A7m_S%C6%A1n.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "thanh-hoa__pu-luong-01",
+    "provider": "wikimedia-commons",
+    "provinceId": "thanh-hoa",
+    "category": "natural",
+    "itemIds": [],
+    "alt": "Những dãy núi phủ rừng xanh dưới trời mây",
+    "caption": "Vùng lõi Khu bảo tồn thiên nhiên Pù Luông (tỉnh Thanh Hóa).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Pu_Luong_01.JPG/960px-Pu_Luong_01.JPG",
+      "width": 960,
+      "height": 638,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Pu_Luong_01.JPG/500px-Pu_Luong_01.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Pu_Luong_01.JPG/960px-Pu_Luong_01.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Pu_Luong_01.JPG/1280px-Pu_Luong_01.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Pu Luong 01.JPG",
+      "author": "Gió Đông ( thảo luận )",
+      "authorUrl": "https://vi.wikipedia.org/wiki/User:Gi%C3%B3_%C4%90%C3%B4ng",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pu_Luong_01.JPG"
+    },
+    "status": "draft"
+  }
+]

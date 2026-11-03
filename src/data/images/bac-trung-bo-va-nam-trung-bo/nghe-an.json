@@ -1,0 +1,113 @@
+[
+  {
+    "id": "nghe-an__kim-lien-monuments-park",
+    "provider": "wikimedia-commons",
+    "provinceId": "nghe-an",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Cây đa lớn trước dãy nhà mái ngói",
+    "caption": "Khu di tích Kim Liên (tỉnh Nghệ An).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kim_Lien_Monuments_Park.JPG/960px-Kim_Lien_Monuments_Park.JPG",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kim_Lien_Monuments_Park.JPG/500px-Kim_Lien_Monuments_Park.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kim_Lien_Monuments_Park.JPG/960px-Kim_Lien_Monuments_Park.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kim_Lien_Monuments_Park.JPG/1280px-Kim_Lien_Monuments_Park.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Kim Lien Monuments Park.JPG",
+      "author": "Liftold at Vietnamese Wikipedia",
+      "authorUrl": "https://en.wikipedia.org/wiki/vi:User:Liftold",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Lien_Monuments_Park.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "nghe-an__bai-bien-cua-lo",
+    "provider": "wikimedia-commons",
+    "provinceId": "nghe-an",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Bãi cát với những chiếc thuyền thúng, xa xa là núi",
+    "caption": "Bãi biển Cửa Lò (tỉnh Nghệ An).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/B%C3%A3i_bi%E1%BB%83n_C%E1%BB%ADa_L%C3%B2..jpg/960px-B%C3%A3i_bi%E1%BB%83n_C%E1%BB%ADa_L%C3%B2..jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/B%C3%A3i_bi%E1%BB%83n_C%E1%BB%ADa_L%C3%B2..jpg/500px-B%C3%A3i_bi%E1%BB%83n_C%E1%BB%ADa_L%C3%B2..jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/B%C3%A3i_bi%E1%BB%83n_C%E1%BB%ADa_L%C3%B2..jpg/960px-B%C3%A3i_bi%E1%BB%83n_C%E1%BB%ADa_L%C3%B2..jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/B%C3%A3i_bi%E1%BB%83n_C%E1%BB%ADa_L%C3%B2..jpg/1280px-B%C3%A3i_bi%E1%BB%83n_C%E1%BB%ADa_L%C3%B2..jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Bãi biển Cửa Lò..jpg",
+      "author": "Bùi Thụy Đào Nguyên",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:B%C3%B9i_Th%E1%BB%A5y_%C4%90%C3%A0o_Nguy%C3%AAn",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%C3%A3i_bi%E1%BB%83n_C%E1%BB%ADa_L%C3%B2..jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "nghe-an__annamite-range-pu-mat-2007-05",
+    "provider": "wikimedia-commons",
+    "provinceId": "nghe-an",
+    "category": "natural",
+    "itemIds": [],
+    "alt": "Nhà sàn mái lá giữa rừng, phía sau là núi",
+    "caption": "Phong cảnh Vườn quốc gia Pù Mát, dãy Trường Sơn (tỉnh Nghệ An).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Annamite_range_pu_mat_2007_05.jpg/960px-Annamite_range_pu_mat_2007_05.jpg",
+      "width": 960,
+      "height": 638,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Annamite_range_pu_mat_2007_05.jpg/500px-Annamite_range_pu_mat_2007_05.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Annamite_range_pu_mat_2007_05.jpg/960px-Annamite_range_pu_mat_2007_05.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Annamite_range_pu_mat_2007_05.jpg/1280px-Annamite_range_pu_mat_2007_05.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Annamite range pu mat 2007 05.jpg",
+      "author": "Rolf Müller ( User:Rolfmueller )",
+      "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:Rolfmueller&action=edit&redlink=1",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annamite_range_pu_mat_2007_05.jpg"
+    },
+    "status": "draft"
+  }
+]
