@@ -1,0 +1,75 @@
+[
+  {
+    "id": "hung-yen__van-mieu-xich-dang-02",
+    "provider": "wikimedia-commons",
+    "provinceId": "hung-yen",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Cổng tam quan cổ ba cửa vòm",
+    "caption": "Văn miếu Xích Đằng (tỉnh Hưng Yên).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/V%C4%83n_mi%E1%BA%BFu_X%C3%ADch_%C4%90%E1%BA%B1ng_02.JPG/960px-V%C4%83n_mi%E1%BA%BFu_X%C3%ADch_%C4%90%E1%BA%B1ng_02.JPG",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/V%C4%83n_mi%E1%BA%BFu_X%C3%ADch_%C4%90%E1%BA%B1ng_02.JPG/500px-V%C4%83n_mi%E1%BA%BFu_X%C3%ADch_%C4%90%E1%BA%B1ng_02.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/V%C4%83n_mi%E1%BA%BFu_X%C3%ADch_%C4%90%E1%BA%B1ng_02.JPG/960px-V%C4%83n_mi%E1%BA%BFu_X%C3%ADch_%C4%90%E1%BA%B1ng_02.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/V%C4%83n_mi%E1%BA%BFu_X%C3%ADch_%C4%90%E1%BA%B1ng_02.JPG/1280px-V%C4%83n_mi%E1%BA%BFu_X%C3%ADch_%C4%90%E1%BA%B1ng_02.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Văn miếu Xích Đằng 02.JPG",
+      "author": "Nguyễn Thanh Quang",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Nguy%E1%BB%85n_Thanh_Quang",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:V%C4%83n_mi%E1%BA%BFu_X%C3%ADch_%C4%90%E1%BA%B1ng_02.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "hung-yen__chua-keo-6",
+    "provider": "wikimedia-commons",
+    "provinceId": "hung-yen",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Ngôi chùa gỗ cổ mái ngói",
+    "caption": "Chùa Keo (tỉnh Hưng Yên, trước đây thuộc tỉnh Thái Bình).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Chua_Keo_6.jpg/960px-Chua_Keo_6.jpg",
+      "width": 960,
+      "height": 691,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Chua_Keo_6.jpg/500px-Chua_Keo_6.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Chua_Keo_6.jpg/960px-Chua_Keo_6.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Chua_Keo_6.jpg/1280px-Chua_Keo_6.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Chua Keo 6.jpg",
+      "author": "Daaé",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Daa%C3%A9",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chua_Keo_6.jpg"
+    },
+    "status": "draft"
+  }
+]

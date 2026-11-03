@@ -1,0 +1,113 @@
+[
+  {
+    "id": "bac-ninh__quan-ho-ensemble",
+    "provider": "wikimedia-commons",
+    "provinceId": "bac-ninh",
+    "category": "culture",
+    "itemIds": [],
+    "alt": "Bốn liền chị mặc áo mớ ba mớ bảy, cầm nón quai thao",
+    "caption": "Các liền chị hát quan họ ở đền Đô (tỉnh Bắc Ninh).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Quan_Ho-Ensemble.JPG/960px-Quan_Ho-Ensemble.JPG",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Quan_Ho-Ensemble.JPG/500px-Quan_Ho-Ensemble.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Quan_Ho-Ensemble.JPG/960px-Quan_Ho-Ensemble.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Quan_Ho-Ensemble.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Quan Ho-Ensemble.JPG",
+      "author": "Chrisvomberg",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Chrisvomberg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quan_Ho-Ensemble.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "bac-ninh__chuadau-toancanh",
+    "provider": "wikimedia-commons",
+    "provinceId": "bac-ninh",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Sân gạch rộng trước chùa, phía sau là tháp gạch cổ",
+    "caption": "Chùa Dâu và tháp Hòa Phong ở Thuận Thành (tỉnh Bắc Ninh).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/ChuaDau_ToanCanh.JPG/960px-ChuaDau_ToanCanh.JPG",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/ChuaDau_ToanCanh.JPG/500px-ChuaDau_ToanCanh.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/ChuaDau_ToanCanh.JPG/960px-ChuaDau_ToanCanh.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/ChuaDau_ToanCanh.JPG/1280px-ChuaDau_ToanCanh.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:ChuaDau ToanCanh.JPG",
+      "author": "Bùi Thế Tâm",
+      "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:B%C3%B9i_Th%E1%BA%BF_T%C3%A2m&action=edit&redlink=1",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ChuaDau_ToanCanh.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "bac-ninh__pentrajoj-en-vilago-dong-ho-01",
+    "provider": "wikimedia-commons",
+    "provinceId": "bac-ninh",
+    "category": "culture",
+    "itemIds": [],
+    "alt": "Bốn bức tranh dân gian treo trên tường",
+    "caption": "Tranh dân gian ở làng Đông Hồ (tỉnh Bắc Ninh).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Pentra%C4%B5oj_en_vila%C4%9Do_%C4%90%C3%B4ng_H%E1%BB%93_01.jpg/960px-Pentra%C4%B5oj_en_vila%C4%9Do_%C4%90%C3%B4ng_H%E1%BB%93_01.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Pentra%C4%B5oj_en_vila%C4%9Do_%C4%90%C3%B4ng_H%E1%BB%93_01.jpg/500px-Pentra%C4%B5oj_en_vila%C4%9Do_%C4%90%C3%B4ng_H%E1%BB%93_01.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Pentra%C4%B5oj_en_vila%C4%9Do_%C4%90%C3%B4ng_H%E1%BB%93_01.jpg/960px-Pentra%C4%B5oj_en_vila%C4%9Do_%C4%90%C3%B4ng_H%E1%BB%93_01.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Pentra%C4%B5oj_en_vila%C4%9Do_%C4%90%C3%B4ng_H%E1%BB%93_01.jpg/1280px-Pentra%C4%B5oj_en_vila%C4%9Do_%C4%90%C3%B4ng_H%E1%BB%93_01.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Pentraĵoj en vilaĝo Đông Hồ 01.jpg",
+      "author": "RG72",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:RG72",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pentra%C4%B5oj_en_vila%C4%9Do_%C4%90%C3%B4ng_H%E1%BB%93_01.jpg"
+    },
+    "status": "draft"
+  }
+]

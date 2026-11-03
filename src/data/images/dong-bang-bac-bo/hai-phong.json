@@ -1,0 +1,142 @@
+[
+  {
+    "id": "hai-phong__skyline-song-cam-hai-phong",
+    "provider": "wikimedia-commons",
+    "provinceId": "hai-phong",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Thành phố bên sông, có cây cầu vòm đỏ",
+    "caption": "Thành phố Hải Phòng bên sông Cấm (thành phố Hải Phòng).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Skyline_s%C3%B4ng_C%E1%BA%A5m_H%E1%BA%A3i_Ph%C3%B2ng.jpg/960px-Skyline_s%C3%B4ng_C%E1%BA%A5m_H%E1%BA%A3i_Ph%C3%B2ng.jpg",
+      "width": 960,
+      "height": 463,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Skyline_s%C3%B4ng_C%E1%BA%A5m_H%E1%BA%A3i_Ph%C3%B2ng.jpg/500px-Skyline_s%C3%B4ng_C%E1%BA%A5m_H%E1%BA%A3i_Ph%C3%B2ng.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Skyline_s%C3%B4ng_C%E1%BA%A5m_H%E1%BA%A3i_Ph%C3%B2ng.jpg/960px-Skyline_s%C3%B4ng_C%E1%BA%A5m_H%E1%BA%A3i_Ph%C3%B2ng.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Skyline_s%C3%B4ng_C%E1%BA%A5m_H%E1%BA%A3i_Ph%C3%B2ng.jpg/1280px-Skyline_s%C3%B4ng_C%E1%BA%A5m_H%E1%BA%A3i_Ph%C3%B2ng.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Skyline sông Cấm Hải Phòng.jpg",
+      "author": "HP1992",
+      "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:HP1992&action=edit&redlink=1",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skyline_s%C3%B4ng_C%E1%BA%A5m_H%E1%BA%A3i_Ph%C3%B2ng.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "hai-phong__view-of-the-sea-from-cannon-fort-park-on-cat-ba-island-vietn",
+    "provider": "wikimedia-commons",
+    "provinceId": "hai-phong",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Vịnh biển với các đảo đá vôi phủ cây xanh",
+    "caption": "Biển và đảo nhìn từ đảo Cát Bà (thành phố Hải Phòng).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/View_of_the_sea_from_Cannon_Fort_Park_on_Cat_Ba_Island%2C_Vietnam%2C_20240130_1601_4441.jpg/960px-View_of_the_sea_from_Cannon_Fort_Park_on_Cat_Ba_Island%2C_Vietnam%2C_20240130_1601_4441.jpg",
+      "width": 960,
+      "height": 641,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/View_of_the_sea_from_Cannon_Fort_Park_on_Cat_Ba_Island%2C_Vietnam%2C_20240130_1601_4441.jpg/500px-View_of_the_sea_from_Cannon_Fort_Park_on_Cat_Ba_Island%2C_Vietnam%2C_20240130_1601_4441.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/View_of_the_sea_from_Cannon_Fort_Park_on_Cat_Ba_Island%2C_Vietnam%2C_20240130_1601_4441.jpg/960px-View_of_the_sea_from_Cannon_Fort_Park_on_Cat_Ba_Island%2C_Vietnam%2C_20240130_1601_4441.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/View_of_the_sea_from_Cannon_Fort_Park_on_Cat_Ba_Island%2C_Vietnam%2C_20240130_1601_4441.jpg/1280px-View_of_the_sea_from_Cannon_Fort_Park_on_Cat_Ba_Island%2C_Vietnam%2C_20240130_1601_4441.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:View of the sea from Cannon Fort Park on Cat Ba Island, Vietnam, 20240130 1601 4441.jpg",
+      "author": "Jakub Hałun",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Jakubhal",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_sea_from_Cannon_Fort_Park_on_Cat_Ba_Island,_Vietnam,_20240130_1601_4441.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "hai-phong__cat-ba-island-vietnam-20240131-1431-4699",
+    "provider": "wikimedia-commons",
+    "provinceId": "hai-phong",
+    "category": "culture",
+    "itemIds": [],
+    "alt": "Nhà nổi và thuyền đánh cá trên mặt nước xanh",
+    "caption": "Làng chài trên biển ven đảo Cát Bà (thành phố Hải Phòng).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cat_Ba_Island%2C_Vietnam%2C_20240131_1431_4699.jpg/960px-Cat_Ba_Island%2C_Vietnam%2C_20240131_1431_4699.jpg",
+      "width": 960,
+      "height": 641,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cat_Ba_Island%2C_Vietnam%2C_20240131_1431_4699.jpg/500px-Cat_Ba_Island%2C_Vietnam%2C_20240131_1431_4699.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cat_Ba_Island%2C_Vietnam%2C_20240131_1431_4699.jpg/960px-Cat_Ba_Island%2C_Vietnam%2C_20240131_1431_4699.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cat_Ba_Island%2C_Vietnam%2C_20240131_1431_4699.jpg/1280px-Cat_Ba_Island%2C_Vietnam%2C_20240131_1431_4699.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Cat Ba Island, Vietnam, 20240131 1431 4699.jpg",
+      "author": "Jakub Hałun",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Jakubhal",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cat_Ba_Island,_Vietnam,_20240131_1431_4699.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "hai-phong__con-son-kiep-bac-haiduong",
+    "provider": "wikimedia-commons",
+    "provinceId": "hai-phong",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Bậc đá dẫn lên ngôi đền giữa rừng cây",
+    "caption": "Khu di tích Côn Sơn – Kiếp Bạc (thành phố Hải Phòng, trước đây thuộc tỉnh Hải Dương).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Con_Son_Kiep_Bac_Haiduong.jpg",
+      "width": 768,
+      "height": 1152,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Con_Son_Kiep_Bac_Haiduong.jpg",
+          "width": 768
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Con Son Kiep Bac Haiduong.jpg",
+      "author": "haiduongtours",
+      "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:Effhaiphong&action=edit&redlink=1",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Con_Son_Kiep_Bac_Haiduong.jpg"
+    },
+    "status": "draft"
+  }
+]

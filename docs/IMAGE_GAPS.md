@@ -7,3 +7,6 @@ Tỉnh × chủ đề chưa tìm được ảnh hợp lệ trên Wikimedia Commo
 | Trung du và miền núi phía Bắc | Cả 9 tỉnh | Khoáng sản | "apatite mine Vietnam", "apatite Lao Cai", "Thai Nguyen iron steel": không có ảnh mỏ, khoáng sản đúng tỉnh |
 | Trung du và miền núi phía Bắc | Lai Châu, Sơn La | Lễ hội và văn hóa | "Lai Chau Dao", "Thai people Son La", "Gau Tao festival", "Long Tong festival": ảnh hiện vật bảo tàng hoặc không đúng chủ thể |
 | Trung du và miền núi phía Bắc | Điện Biên, Cao Bằng, Thái Nguyên, Lạng Sơn | Đặc điểm tự nhiên | Chưa tìm riêng; đã có ảnh danh thắng |
+| Đồng bằng Bắc Bộ | Cả 6 tỉnh | Khoáng sản | "Quang Ninh coal mine", "Quang Ninh coal": chỉ có ảnh bảo tàng, không rõ chủ thể than |
+| Đồng bằng Bắc Bộ | Cả 6 tỉnh | Đặc điểm tự nhiên | "Red River delta rice": chỉ có bản đồ vệ tinh |
+| Đồng bằng Bắc Bộ | Bắc Ninh (Bắc Giang cũ) | Danh lam, di tích | "Vinh Nghiem pagoda" trả về chùa cùng tên ở TP.HCM; "Bac Giang" chỉ có ảnh phố |

@@ -1,0 +1,149 @@
+[
+  {
+    "id": "ninh-binh__trang-an-landscape-complex-ninh-binh-province-vietnam-202402",
+    "provider": "wikimedia-commons",
+    "provinceId": "ninh-binh",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Thuyền nhỏ trên dòng nước giữa các núi đá vôi",
+    "caption": "Quần thể danh thắng Tràng An (tỉnh Ninh Bình).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Trang_An_Landscape_Complex%2C_Ninh_Binh_Province%2C_Vietnam%2C_20240202_1447_5310.jpg/960px-Trang_An_Landscape_Complex%2C_Ninh_Binh_Province%2C_Vietnam%2C_20240202_1447_5310.jpg",
+      "width": 960,
+      "height": 641,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Trang_An_Landscape_Complex%2C_Ninh_Binh_Province%2C_Vietnam%2C_20240202_1447_5310.jpg/500px-Trang_An_Landscape_Complex%2C_Ninh_Binh_Province%2C_Vietnam%2C_20240202_1447_5310.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Trang_An_Landscape_Complex%2C_Ninh_Binh_Province%2C_Vietnam%2C_20240202_1447_5310.jpg/960px-Trang_An_Landscape_Complex%2C_Ninh_Binh_Province%2C_Vietnam%2C_20240202_1447_5310.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Trang_An_Landscape_Complex%2C_Ninh_Binh_Province%2C_Vietnam%2C_20240202_1447_5310.jpg/1280px-Trang_An_Landscape_Complex%2C_Ninh_Binh_Province%2C_Vietnam%2C_20240202_1447_5310.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Trang An Landscape Complex, Ninh Binh Province, Vietnam, 20240202 1447 5310.jpg",
+      "author": "Jakub Hałun",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Jakubhal",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trang_An_Landscape_Complex,_Ninh_Binh_Province,_Vietnam,_20240202_1447_5310.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "ninh-binh__tam-coc-bich-dong-in-ninh-binh-province-2",
+    "provider": "wikimedia-commons",
+    "provinceId": "ninh-binh",
+    "category": "landmark",
+    "itemIds": [],
+    "alt": "Thuyền chở khách trên sông dưới chân núi đá",
+    "caption": "Tam Cốc – Bích Động (tỉnh Ninh Bình).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Tam_C%E1%BB%91c-B%C3%ADch_%C4%90%E1%BB%99ng_in_Ninh_Binh_province_2.jpg/960px-Tam_C%E1%BB%91c-B%C3%ADch_%C4%90%E1%BB%99ng_in_Ninh_Binh_province_2.jpg",
+      "width": 960,
+      "height": 480,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Tam_C%E1%BB%91c-B%C3%ADch_%C4%90%E1%BB%99ng_in_Ninh_Binh_province_2.jpg/500px-Tam_C%E1%BB%91c-B%C3%ADch_%C4%90%E1%BB%99ng_in_Ninh_Binh_province_2.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Tam_C%E1%BB%91c-B%C3%ADch_%C4%90%E1%BB%99ng_in_Ninh_Binh_province_2.jpg/960px-Tam_C%E1%BB%91c-B%C3%ADch_%C4%90%E1%BB%99ng_in_Ninh_Binh_province_2.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Tam_C%E1%BB%91c-B%C3%ADch_%C4%90%E1%BB%99ng_in_Ninh_Binh_province_2.jpg/1280px-Tam_C%E1%BB%91c-B%C3%ADch_%C4%90%E1%BB%99ng_in_Ninh_Binh_province_2.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Tam Cốc-Bích Động in Ninh Binh province 2.jpg",
+      "author": "travel oriented",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tam_C%E1%BB%91c-B%C3%ADch_%C4%90%E1%BB%99ng_in_Ninh_Binh_province_2.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "ninh-binh__tomb-of-the-first-emperor-hoa-lu-ninh-binh-vietnam-20240203",
+    "provider": "wikimedia-commons",
+    "provinceId": "ninh-binh",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Bậc đá dẫn lên một ngôi lăng cổ",
+    "caption": "Lăng vua Đinh Tiên Hoàng ở Hoa Lư (tỉnh Ninh Bình).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tomb_of_the_First_Emperor%2C_Hoa_L%C6%B0%2C_Ninh_B%C3%ACnh%2C_Vietnam%2C_20240203_1515_5695.jpg/960px-Tomb_of_the_First_Emperor%2C_Hoa_L%C6%B0%2C_Ninh_B%C3%ACnh%2C_Vietnam%2C_20240203_1515_5695.jpg",
+      "width": 960,
+      "height": 641,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tomb_of_the_First_Emperor%2C_Hoa_L%C6%B0%2C_Ninh_B%C3%ACnh%2C_Vietnam%2C_20240203_1515_5695.jpg/500px-Tomb_of_the_First_Emperor%2C_Hoa_L%C6%B0%2C_Ninh_B%C3%ACnh%2C_Vietnam%2C_20240203_1515_5695.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tomb_of_the_First_Emperor%2C_Hoa_L%C6%B0%2C_Ninh_B%C3%ACnh%2C_Vietnam%2C_20240203_1515_5695.jpg/960px-Tomb_of_the_First_Emperor%2C_Hoa_L%C6%B0%2C_Ninh_B%C3%ACnh%2C_Vietnam%2C_20240203_1515_5695.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tomb_of_the_First_Emperor%2C_Hoa_L%C6%B0%2C_Ninh_B%C3%ACnh%2C_Vietnam%2C_20240203_1515_5695.jpg/1280px-Tomb_of_the_First_Emperor%2C_Hoa_L%C6%B0%2C_Ninh_B%C3%ACnh%2C_Vietnam%2C_20240203_1515_5695.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Tomb of the First Emperor, Hoa Lư, Ninh Bình, Vietnam, 20240203 1515 5695.jpg",
+      "author": "Jakub Hałun",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Jakubhal",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomb_of_the_First_Emperor,_Hoa_L%C6%B0,_Ninh_B%C3%ACnh,_Vietnam,_20240203_1515_5695.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "ninh-binh__den-tran-nam-dinh",
+    "provider": "wikimedia-commons",
+    "provinceId": "ninh-binh",
+    "category": "historical_site",
+    "itemIds": [],
+    "alt": "Cổng trụ biểu bằng đá trước khu đền",
+    "caption": "Trụ biểu ở khu Đền Trần (tỉnh Ninh Bình, trước đây thuộc tỉnh Nam Định).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Den_Tran_Nam_Dinh.jpg/960px-Den_Tran_Nam_Dinh.jpg",
+      "width": 960,
+      "height": 638,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Den_Tran_Nam_Dinh.jpg/500px-Den_Tran_Nam_Dinh.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Den_Tran_Nam_Dinh.jpg/960px-Den_Tran_Nam_Dinh.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Den_Tran_Nam_Dinh.jpg/1280px-Den_Tran_Nam_Dinh.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Den Tran Nam Dinh.jpg",
+      "author": "Hoangvantoanajc",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Hoangvantoanajc",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Den_Tran_Nam_Dinh.jpg"
+    },
+    "status": "draft"
+  }
+]
