@@ -1,7 +1,7 @@
 import { parseRegionContent } from '../content/parse'
 import { rawRegionContent } from '../../test/fixtures'
 import type { WebImage } from '../../types/content'
-import { checkImageIntegrity, createImageLibrary } from './library'
+import { checkImageIntegrity, createImageLibrary, interleaveByProvince } from './library'
 
 const R = 'trung-du-mien-nui-phia-bac'
 
@@ -129,4 +129,16 @@ test('regionCover prefers a landmark tied to an SGK item over an earlier untied 
   ]
   expect(l.regionCover(images)?.id).toBe('c')
   expect(l.regionCover(images.filter((i) => i.id !== 'c'))?.id).toBe('a')
+})
+
+test('interleaveByProvince takes one image per province in turn, keeping order inside each province', () => {
+  const images = [
+    webImage({ id: 'hn1', provinceId: 'ha-noi' }),
+    webImage({ id: 'hn2', provinceId: 'ha-noi' }),
+    webImage({ id: 'hn3', provinceId: 'ha-noi' }),
+    webImage({ id: 'qn1', provinceId: 'quang-ninh' }),
+    webImage({ id: 'v1', provinceId: null }),
+    webImage({ id: 'qn2', provinceId: 'quang-ninh' }),
+  ]
+  expect(interleaveByProvince(images).map((i) => i.id)).toEqual(['hn1', 'qn1', 'v1', 'hn2', 'qn2', 'hn3'])
 })

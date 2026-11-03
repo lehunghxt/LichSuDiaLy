@@ -61,6 +61,20 @@ export function createImageLibrary(modules: Record<string, Loader>): ImageLibrar
   }
 }
 
+/** Lấy lần lượt mỗi tỉnh một ảnh (giữ thứ tự trong từng tỉnh) để thư viện ảnh vùng không bị một tỉnh chiếm hết */
+export function interleaveByProvince(images: WebImage[]): WebImage[] {
+  const groups = new Map<string | null, WebImage[]>()
+  for (const img of images) groups.set(img.provinceId, [...(groups.get(img.provinceId) ?? []), img])
+  const out: WebImage[] = []
+  for (let round = 0; out.length < images.length; round++) {
+    for (const group of groups.values()) {
+      const img = group[round]
+      if (img) out.push(img)
+    }
+  }
+  return out
+}
+
 export const imageLibrary = createImageLibrary(import.meta.glob('../../data/images/**/*.json'))
 
 /** Kiểm tra tham chiếu giữa thư viện ảnh, danh sách tỉnh và nội dung. Rỗng nghĩa là hợp lệ */

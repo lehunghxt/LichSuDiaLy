@@ -7,7 +7,7 @@ import { TOPIC_CATEGORIES, TOPIC_LABELS, type ContentItem, type RegionContent, t
 import { itemSlug } from '../content/links'
 import { getItemsByCategory } from '../content/repository'
 import { TOPIC_ICONS, TOPIC_TILE } from '../content/topicIcons'
-import { imageLibrary } from '../images/library'
+import { imageLibrary, interleaveByProvince } from '../images/library'
 import type { RegionContentState } from '../content/useRegionContent'
 
 interface MapInfoPanelProps {
@@ -301,7 +301,7 @@ function RegionGallery({ images }: { images: WebImage[] }) {
         Hình ảnh của vùng
       </h3>
       <ul className="grid grid-cols-2 gap-4">
-        {images.slice(0, 8).map((img) => (
+        {interleaveByProvince(images).slice(0, 8).map((img) => (
           <li key={img.id}>
             <WebImageFigure image={img} showCaption sizes="(min-width: 1024px) 18vw, 50vw" />
           </li>
