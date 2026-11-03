@@ -18,9 +18,43 @@ vi.mock('../features/map/VietnamMap', () => ({
       <button type="button" onClick={() => props.onSelectProvince('phu-tho')}>
         polygon-phu-tho
       </button>
+      <button type="button" onClick={() => props.onSelectProvince('lai-chau')}>
+        polygon-lai-chau
+      </button>
+      <button type="button" onClick={() => props.onSelectProvince('can-tho')}>
+        polygon-can-tho
+      </button>
     </div>
   ),
 }))
+
+// Thư viện ảnh giả: 1 ảnh bìa (Lào Cai), 1 ảnh Đền Hùng (Phú Thọ), 1 ảnh Cần Thơ (vùng sắp ra mắt)
+vi.mock('../features/images/library', async (importOriginal) => {
+  const orig = await importOriginal<typeof import('../features/images/library')>()
+  const img = (id: string, provinceId: string, category: string, alt: string, itemIds: string[] = []) => ({
+    id,
+    provider: 'wikimedia-commons',
+    provinceId,
+    category,
+    itemIds,
+    alt,
+    caption: `Chú thích ${alt}`,
+    src: { url: `https://upload.wikimedia.org/wikipedia/commons/${id}.jpg`, width: 4, height: 3, srcset: [] },
+    attribution: { title: `File:${id}.jpg`, author: 'Tác giả', license: 'Public domain', sourceUrl: `https://commons.wikimedia.org/wiki/File:${id}.jpg` },
+    status: 'verified',
+  })
+  const mod = (v: unknown) => () => Promise.resolve({ default: v })
+  return {
+    ...orig,
+    imageLibrary: orig.createImageLibrary({
+      '../../data/images/trung-du-mien-nui-phia-bac/lao-cai.json': mod([img('lao-cai__nui', 'lao-cai', 'landmark', 'Ảnh núi Lào Cai')]),
+      '../../data/images/trung-du-mien-nui-phia-bac/phu-tho.json': mod([
+        img('phu-tho__den', 'phu-tho', 'historical_site', 'Ảnh đền Thượng', ['trung-du-mien-nui-phia-bac__den-hung']),
+      ]),
+      '../../data/images/nam-bo/can-tho.json': mod([img('can-tho__cho', 'can-tho', 'culture', 'Ảnh chợ nổi Cần Thơ')]),
+    }),
+  }
+})
 
 function renderAt(path: string) {
   const router = createMemoryRouter(routes, { initialEntries: [path] })
@@ -207,4 +241,59 @@ test('modal: region-wide item lists the 9 provinces of the region', async () => 
   expect(provinces).toHaveTextContent('Lai Châu')
   expect(provinces).toHaveTextContent('Phú Thọ')
   expect(within(dialog).getByTestId('item-place')).toHaveTextContent('gồm 9 tỉnh')
+})
+
+test('modal shows images of the item with credit', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=historical_site&muc=den-hung')
+  const dialog = await screen.findByRole('dialog', { name: 'Di tích lịch sử' })
+  const gallery = await within(dialog).findByRole('region', { name: 'Hình ảnh' })
+  expect(within(gallery).getByRole('img', { name: 'Ảnh đền Thượng' })).toBeInTheDocument()
+  expect(within(gallery).getByText('Chú thích Ảnh đền Thượng')).toBeInTheDocument()
+  expect(within(gallery).getByRole('link', { name: 'Wikimedia Commons' })).toHaveAttribute('href', 'https://commons.wikimedia.org/wiki/File:phu-tho__den.jpg')
+})
+
+test('modal hides image section when item has none', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=natural')
+  const dialog = await screen.findByRole('dialog', { name: 'Đặc điểm tự nhiên' })
+  await screen.findByRole('img', { name: 'Ảnh núi Lào Cai' })
+  expect(within(dialog).queryByRole('region', { name: 'Hình ảnh' })).not.toBeInTheDocument()
+})
+
+test('region header uses cover image with credit', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
+  expect(await within(panel).findByRole('img', { name: 'Ảnh núi Lào Cai' })).toBeInTheDocument()
+})
+
+test('featured place card uses item image', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const featured = await screen.findByRole('list', { name: 'Một số địa điểm tiêu biểu' })
+  expect(await within(featured).findByRole('img', { name: 'Ảnh đền Thượng' })).toBeInTheDocument()
+})
+
+test('province card shows province images; none → no empty gallery', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  await screen.findByRole('img', { name: 'Ảnh núi Lào Cai' })
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
+  const card = screen.getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })
+  expect(within(card).getByRole('img', { name: 'Ảnh đền Thượng' })).toBeInTheDocument()
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-lai-chau' }))
+  const empty = screen.getByRole('region', { name: 'Tỉnh đang xem: Lai Châu' })
+  expect(within(empty).queryByRole('img')).not.toBeInTheDocument()
+})
+
+test('coming-soon region shows its image gallery and still says content is being prepared', async () => {
+  renderAt('/ban-do/nam-bo')
+  expect(await screen.findByText('Nội dung vùng Nam Bộ đang được chuẩn bị.')).toBeInTheDocument()
+  const gallery = await screen.findByRole('region', { name: 'Hình ảnh của vùng' })
+  expect(within(gallery).getByRole('img', { name: 'Ảnh chợ nổi Cần Thơ' })).toBeInTheDocument()
+})
+
+test('province of a coming-soon region shows its images in the province card', async () => {
+  renderAt('/ban-do/nam-bo')
+  await screen.findByRole('region', { name: 'Hình ảnh của vùng' })
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-can-tho' }))
+  const card = screen.getByRole('region', { name: 'Tỉnh đang xem: Cần Thơ' })
+  expect(within(card).getByRole('img', { name: 'Ảnh chợ nổi Cần Thơ' })).toBeInTheDocument()
+  expect(card).toHaveTextContent('Thuộc vùng Nam Bộ')
 })

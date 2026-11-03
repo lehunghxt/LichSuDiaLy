@@ -1,21 +1,24 @@
 import { BookOpen, ExternalLink, ImageIcon, Lightbulb, MapPin, Sparkles, Star, Volume2 } from 'lucide-react'
 import { useId, useState, type ReactNode } from 'react'
 import { SmartImage } from '../../components/ui/SmartImage'
+import { WebImageFigure } from '../../components/ui/WebImageFigure'
 import { provinceName, provinceNamesOfRegion } from '../../lib/provinces'
 import { SGK_URL, sgkPageUrl } from '../../lib/sources'
-import { TOPIC_LABELS, type ContentItem, type MediaRef, type SourceRef, type TopicCategory } from '../../types/content'
+import { TOPIC_LABELS, type ContentItem, type MediaRef, type SourceRef, type TopicCategory, type WebImage } from '../../types/content'
 import { itemSlug } from './links'
 import { TOPIC_ICONS } from './topicIcons'
 
 interface ItemDetailProps {
   item: ContentItem
   regionName: string
+  /** Ảnh nhúng (Wikimedia Commons) minh hoạ mục này */
+  webImages?: WebImage[]
   related: ContentItem[]
   onSelectRelated(category: TopicCategory, slug: string): void
 }
 
 /** Toàn bộ thông tin một mục nội dung; dùng trong modal chủ đề */
-export function ItemDetail({ item, regionName, related, onSelectRelated }: ItemDetailProps) {
+export function ItemDetail({ item, regionName, webImages = [], related, onSelectRelated }: ItemDetailProps) {
   const Icon = TOPIC_ICONS[item.category]
   const figures = item.figures ?? []
   const province = provinceName(item.provinceId)
@@ -71,6 +74,18 @@ export function ItemDetail({ item, regionName, related, onSelectRelated }: ItemD
             <SmartImage key={img.imageId} image={img} priority={i === 0} showCredit sizes="(min-width: 1024px) 35vw, 50vw" />
           ))}
         </div>
+      )}
+
+      {webImages.length > 0 && (
+        <Section title="Hình ảnh" icon={<ImageIcon aria-hidden className="size-6 text-primary" />}>
+          <ul className="grid gap-4 sm:grid-cols-2">
+            {webImages.map((img, i) => (
+              <li key={img.id}>
+                <WebImageFigure image={img} priority={i === 0} showCaption sizes="(min-width: 1024px) 30vw, 50vw" />
+              </li>
+            ))}
+          </ul>
+        </Section>
       )}
 
       {figures.length > 0 && (

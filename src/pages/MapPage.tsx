@@ -5,6 +5,7 @@ import { itemSlug, topicSearch } from '../features/content/links'
 import { getItemsByCategory, repository } from '../features/content/repository'
 import { TopicModal } from '../features/content/TopicModal'
 import { useRegionContent } from '../features/content/useRegionContent'
+import { useRegionImages } from '../features/images/useRegionImages'
 import { MapInfoPanel } from '../features/map/MapInfoPanel'
 import { RegionList } from '../features/map/RegionList'
 import { useProgress } from '../features/progress/useProgress'
@@ -22,6 +23,7 @@ export default function MapPage() {
   const region = regions.find((r) => r.id === regionId) ?? null
   const [provinceId, setProvinceId] = useState<string | null>(null)
   const content = useRegionContent(region?.status === 'active' ? region.id : undefined)
+  const images = useRegionImages(region?.id)
   const { markRegionVisited, markItemViewed } = useProgress()
 
   const topicParam = params.get('chu-de')
@@ -74,6 +76,7 @@ export default function MapPage() {
             region={region}
             regionIdFromUrl={regionId}
             content={content}
+            images={images}
             provinceId={provinceId}
             onBack={() => navigate('/ban-do')}
             onClearProvince={() => setProvinceId(null)}
@@ -82,7 +85,7 @@ export default function MapPage() {
         </div>
       </div>
       {modalOpen && (
-        <TopicModal content={content.content} category={topic} itemSlug={slugParam} onSelect={openTopic} onClose={closeTopic} />
+        <TopicModal content={content.content} images={images} category={topic} itemSlug={slugParam} onSelect={openTopic} onClose={closeTopic} />
       )}
     </div>
   )

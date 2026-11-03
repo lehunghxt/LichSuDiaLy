@@ -9,15 +9,17 @@ interface WebImageFigureProps {
   sizes: string
   priority?: boolean
   showCaption?: boolean
+  /** Tỉ lệ khung, mặc định 4 / 3 */
+  aspect?: string
   className?: string
 }
 
 /** Ảnh nhúng từ Wikimedia Commons, khung 4:3, luôn kèm dòng ghi nguồn (kể cả khi ảnh lỗi) */
-export function WebImageFigure({ image, sizes, priority = false, showCaption = false, className = '' }: WebImageFigureProps) {
+export function WebImageFigure({ image, sizes, priority = false, showCaption = false, aspect = '4 / 3', className = '' }: WebImageFigureProps) {
   const [failed, setFailed] = useState(false)
   return (
     <figure className={`flex flex-col gap-1.5 ${className}`}>
-      <div data-testid="web-image-frame" className="relative overflow-hidden rounded-2xl bg-line" style={{ aspectRatio: '4 / 3' }}>
+      <div data-testid="web-image-frame" className="relative overflow-hidden rounded-2xl bg-line" style={{ aspectRatio: aspect }}>
         {failed ? (
           <div className="flex size-full flex-col items-center justify-center gap-2 text-muted">
             <ImageOff aria-hidden className="size-8" />

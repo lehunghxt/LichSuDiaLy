@@ -1,17 +1,21 @@
-import { ArrowLeft, BookOpen, ChevronRight, Clock, Compass, MapPin, Mountain, X } from 'lucide-react'
+import { ArrowLeft, BookOpen, ChevronRight, Clock, Compass, ImageIcon, MapPin, Mountain, X } from 'lucide-react'
 import { SmartImage } from '../../components/ui/SmartImage'
+import { WebImageFigure } from '../../components/ui/WebImageFigure'
 import { provinceName } from '../../lib/provinces'
 import { EmptyState, ErrorState, LoadingState } from '../../components/ui/states'
-import { TOPIC_CATEGORIES, TOPIC_LABELS, type ContentItem, type RegionContent, type RegionMeta, type TopicCategory } from '../../types/content'
+import { TOPIC_CATEGORIES, TOPIC_LABELS, type ContentItem, type RegionContent, type RegionMeta, type TopicCategory, type WebImage } from '../../types/content'
 import { itemSlug } from '../content/links'
 import { getItemsByCategory } from '../content/repository'
 import { TOPIC_ICONS, TOPIC_TILE } from '../content/topicIcons'
+import { imageLibrary } from '../images/library'
 import type { RegionContentState } from '../content/useRegionContent'
 
 interface MapInfoPanelProps {
   region: RegionMeta | null
   regionIdFromUrl: string | undefined
   content: RegionContentState & { retry(): void }
+  /** Ảnh nhúng của vùng (Wikimedia Commons) */
+  images: WebImage[]
   provinceId: string | null
   onBack(): void
   onClearProvince(): void
@@ -27,7 +31,7 @@ function featuredPlaces(content: RegionContent): ContentItem[] {
 
 const card = 'rounded-card bg-surface p-6 shadow-[0_8px_30px_rgb(15_23_42/0.08)]'
 
-export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onBack, onClearProvince, onOpen }: MapInfoPanelProps) {
+export function MapInfoPanel({ region, regionIdFromUrl, content, images, provinceId, onBack, onClearProvince, onOpen }: MapInfoPanelProps) {
   if (!regionIdFromUrl) {
     return (
       <div className={`${card} flex flex-col items-center gap-4 py-12 text-center`}>
@@ -57,13 +61,16 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onB
 
   const ready = region.status === 'active' && content.status === 'ready' ? content.content : null
   const cover = ready?.items.find((i) => i.images.length > 0)?.images[0]
+  const webCover = cover ? undefined : imageLibrary.regionCover(images)
 
   return (
     <section aria-label={region.name} className={`${card} flex flex-col gap-6`}>
       <div className="-mb-4 -mt-2 flex justify-end">{back}</div>
 
+      {webCover && <WebImageFigure image={webCover} priority sizes="(min-width: 1024px) 35vw, 100vw" aspect="16 / 7" />}
+
       <header className="flex gap-5">
-        <div className="w-28 shrink-0 2xl:w-36">
+        <div className={`w-28 shrink-0 2xl:w-36 ${webCover ? 'hidden' : ''}`}>
           {cover ? (
             <SmartImage image={cover} sizes="144px" priority className="aspect-square" />
           ) : (
@@ -91,6 +98,10 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onB
           <p>Nội dung vùng {region.name} đang được chuẩn bị.</p>
         </div>
       )}
+      {region.status === 'coming_soon' && provinceId && (
+        <ProvinceCard regionName={region.name} provinceId={provinceId} images={images} onClear={onClearProvince} onOpen={onOpen} />
+      )}
+      {region.status === 'coming_soon' && <RegionGallery images={images} />}
       {region.status === 'active' && content.status === 'loading' && <LoadingState label="Đang tải nội dung vùng…" />}
       {region.status === 'active' && content.status === 'error' && (
         <ErrorState title="Chưa tải được nội dung vùng" onRetry={content.retry} />
@@ -99,7 +110,14 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onB
       {ready && (
         <>
           {provinceId && (
-            <ProvinceCard content={ready} regionName={region.name} provinceId={provinceId} onClear={onClearProvince} onOpen={onOpen} />
+            <ProvinceCard
+              content={ready}
+              regionName={region.name}
+              provinceId={provinceId}
+              images={images}
+              onClear={onClearProvince}
+              onOpen={onOpen}
+            />
           )}
 
           <div className="border-t border-line pt-5">
@@ -129,7 +147,7 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onB
             </ul>
           </div>
 
-          <FeaturedPlaces items={featuredPlaces(ready)} onOpen={onOpen} />
+          <FeaturedPlaces items={featuredPlaces(ready)} images={images} onOpen={onOpen} />
 
           <button
             type="button"
@@ -146,7 +164,13 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onB
   )
 }
 
-function FeaturedPlaces({ items, onOpen }: { items: ContentItem[]; onOpen(category: TopicCategory, slug: string): void }) {
+interface FeaturedPlacesProps {
+  items: ContentItem[]
+  images: WebImage[]
+  onOpen(category: TopicCategory, slug: string): void
+}
+
+function FeaturedPlaces({ items, images, onOpen }: FeaturedPlacesProps) {
   if (items.length === 0) return null
   return (
     <div className="border-t border-line pt-5">
@@ -158,20 +182,23 @@ function FeaturedPlaces({ items, onOpen }: { items: ContentItem[]; onOpen(catego
         {items.map((i) => {
           const Icon = TOPIC_ICONS[i.category]
           const image = i.images[0]
+          const webImage = image ? undefined : imageLibrary.forItem(images, i.id)[0]
           return (
-            <li key={i.id}>
+            <li key={i.id} className="flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-surface shadow-sm">
+              {image ? (
+                <SmartImage image={image} sizes="200px" className="aspect-[4/3] rounded-none" />
+              ) : webImage ? (
+                <WebImageFigure image={webImage} sizes="200px" className="p-1.5" />
+              ) : (
+                <span aria-hidden className={`flex aspect-[4/3] items-center justify-center ${TOPIC_TILE[i.category].tile}`}>
+                  <Icon className={`size-10 ${TOPIC_TILE[i.category].icon}`} strokeWidth={1.75} />
+                </span>
+              )}
               <button
                 type="button"
                 onClick={() => onOpen(i.category, itemSlug(i.id))}
-                className="flex h-full w-full flex-col overflow-hidden rounded-2xl border border-line bg-surface text-left shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                className="mt-auto flex w-full text-left transition-colors hover:bg-primary-soft"
               >
-                {image ? (
-                  <SmartImage image={image} sizes="200px" className="aspect-[4/3] rounded-none" />
-                ) : (
-                  <span aria-hidden className={`flex aspect-[4/3] items-center justify-center ${TOPIC_TILE[i.category].tile}`}>
-                    <Icon className={`size-10 ${TOPIC_TILE[i.category].icon}`} strokeWidth={1.75} />
-                  </span>
-                )}
                 <span className="flex gap-1.5 p-3">
                   <MapPin aria-hidden className="mt-0.5 size-4 shrink-0 text-rose-500" />
                   <span className="text-sm leading-snug">
@@ -189,17 +216,20 @@ function FeaturedPlaces({ items, onOpen }: { items: ContentItem[]; onOpen(catego
 }
 
 interface ProvinceCardProps {
-  content: RegionContent
+  /** Không có khi vùng chưa có nội dung (Sắp ra mắt) */
+  content?: RegionContent
   regionName: string
+  images: WebImage[]
   provinceId: string
   onClear(): void
   onOpen(category: TopicCategory, slug: string): void
 }
 
 /** Tỉnh đang chọn trên bản đồ: tên, vùng, các mục trong bài học gắn với tỉnh */
-function ProvinceCard({ content, regionName, provinceId, onClear, onOpen }: ProvinceCardProps) {
+function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen }: ProvinceCardProps) {
   const name = provinceName(provinceId) ?? provinceId
-  const items = content.items.filter((i) => i.provinceId === provinceId)
+  const items = content?.items.filter((i) => i.provinceId === provinceId) ?? []
+  const photos = imageLibrary.forProvince(images, provinceId).slice(0, 4)
   return (
     <section
       aria-label={`Tỉnh đang xem: ${name}`}
@@ -224,7 +254,16 @@ function ProvinceCard({ content, regionName, provinceId, onClear, onOpen }: Prov
           <X aria-hidden className="size-5" />
         </button>
       </div>
-      {items.length === 0 ? (
+      {photos.length > 0 && (
+        <ul aria-label={`Hình ảnh tỉnh ${name}`} className="grid grid-cols-2 gap-3">
+          {photos.map((img) => (
+            <li key={img.id}>
+              <WebImageFigure image={img} showCaption sizes="(min-width: 1024px) 15vw, 50vw" />
+            </li>
+          ))}
+        </ul>
+      )}
+      {!content ? null : items.length === 0 ? (
         <p className="text-sm text-muted">Bài học chưa có địa danh nào của tỉnh này. Em xem các chủ đề bên dưới nhé!</p>
       ) : (
         <>
@@ -248,6 +287,26 @@ function ProvinceCard({ content, regionName, provinceId, onClear, onOpen }: Prov
           </ul>
         </>
       )}
+    </section>
+  )
+}
+
+/** Ảnh của vùng chưa có nội dung bài học: xem trước cảnh quan, văn hoá theo từng chủ đề */
+function RegionGallery({ images }: { images: WebImage[] }) {
+  if (images.length === 0) return null
+  return (
+    <section aria-label="Hình ảnh của vùng" className="border-t border-line pt-5">
+      <h3 className="mb-4 flex items-center gap-2 text-xl font-bold">
+        <ImageIcon aria-hidden className="size-6 text-primary" />
+        Hình ảnh của vùng
+      </h3>
+      <ul className="grid grid-cols-2 gap-4">
+        {images.slice(0, 8).map((img) => (
+          <li key={img.id}>
+            <WebImageFigure image={img} showCaption sizes="(min-width: 1024px) 18vw, 50vw" />
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }

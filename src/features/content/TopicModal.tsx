@@ -2,7 +2,7 @@ import { MapPin, X } from 'lucide-react'
 import { useEffect, useId, useRef, type KeyboardEvent } from 'react'
 import { EmptyState } from '../../components/ui/states'
 import { provinceName } from '../../lib/provinces'
-import { TOPIC_CATEGORIES, TOPIC_LABELS, type ContentItem, type RegionContent, type TopicCategory } from '../../types/content'
+import { TOPIC_CATEGORIES, TOPIC_LABELS, type ContentItem, type RegionContent, type TopicCategory, type WebImage } from '../../types/content'
 import { ItemDetail } from './ItemDetail'
 import { itemSlug } from './links'
 import { getItemsByCategory } from './repository'
@@ -10,6 +10,8 @@ import { TOPIC_ICONS } from './topicIcons'
 
 interface TopicModalProps {
   content: RegionContent
+  /** Ảnh nhúng của vùng; modal lọc theo mục đang xem */
+  images?: WebImage[]
   category: TopicCategory
   /** Phần sau "__" của id mục; null hoặc không tìm thấy thì hiện mục đầu tiên */
   itemSlug: string | null
@@ -20,7 +22,7 @@ interface TopicModalProps {
 const FOCUSABLE = 'a[href], button:not([disabled]), audio[controls], [tabindex]:not([tabindex="-1"])'
 
 /** Modal toàn màn hình: chọn chủ đề, danh sách mục bên trái, chi tiết mục bên phải */
-export function TopicModal({ content, category, itemSlug: slug, onSelect, onClose }: TopicModalProps) {
+export function TopicModal({ content, images = [], category, itemSlug: slug, onSelect, onClose }: TopicModalProps) {
   const titleId = useId()
   const dialogRef = useRef<HTMLDivElement>(null)
   const closeRef = useRef<HTMLButtonElement>(null)
@@ -159,7 +161,13 @@ export function TopicModal({ content, category, itemSlug: slug, onSelect, onClos
           </aside>
           <div ref={detailRef} className="overflow-y-auto p-8">
             <div className="mx-auto max-w-5xl">
-              <ItemDetail item={selected} regionName={content.region.name} related={related} onSelectRelated={onSelect} />
+              <ItemDetail
+                item={selected}
+                regionName={content.region.name}
+                webImages={images.filter((img) => img.itemIds.includes(selected.id))}
+                related={related}
+                onSelectRelated={onSelect}
+              />
             </div>
           </div>
         </div>
