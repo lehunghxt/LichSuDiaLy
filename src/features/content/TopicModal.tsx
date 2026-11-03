@@ -1,6 +1,7 @@
-import { X } from 'lucide-react'
+import { MapPin, X } from 'lucide-react'
 import { useEffect, useId, useRef, type KeyboardEvent } from 'react'
 import { EmptyState } from '../../components/ui/states'
+import { provinceName } from '../../lib/provinces'
 import { TOPIC_CATEGORIES, TOPIC_LABELS, type ContentItem, type RegionContent, type TopicCategory } from '../../types/content'
 import { ItemDetail } from './ItemDetail'
 import { itemSlug } from './links'
@@ -143,7 +144,13 @@ export function TopicModal({ content, category, itemSlug: slug, onSelect, onClos
                         active ? 'border-primary bg-primary-soft text-primary' : 'border-transparent hover:border-line hover:bg-bg'
                       }`}
                     >
-                      {i.title}
+                      <span className="block">{i.title}</span>
+                      {provinceName(i.provinceId) && (
+                        <span className="mt-0.5 flex items-center gap-1 text-sm font-normal text-muted">
+                          <MapPin aria-hidden className="size-3.5 shrink-0" />
+                          {provinceName(i.provinceId)}
+                        </span>
+                      )}
                     </button>
                   </li>
                 )
@@ -152,7 +159,7 @@ export function TopicModal({ content, category, itemSlug: slug, onSelect, onClos
           </aside>
           <div ref={detailRef} className="overflow-y-auto p-8">
             <div className="mx-auto max-w-5xl">
-              <ItemDetail item={selected} related={related} onSelectRelated={onSelect} />
+              <ItemDetail item={selected} regionName={content.region.name} related={related} onSelectRelated={onSelect} />
             </div>
           </div>
         </div>

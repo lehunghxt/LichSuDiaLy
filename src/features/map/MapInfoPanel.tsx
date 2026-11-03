@@ -1,7 +1,7 @@
 import { ArrowLeft, BookOpen, ChevronRight, Clock, Compass, MapPin, Mountain, X } from 'lucide-react'
 import { SmartImage } from '../../components/ui/SmartImage'
+import { provinceName } from '../../lib/provinces'
 import { EmptyState, ErrorState, LoadingState } from '../../components/ui/states'
-import provinces from '../../data/provinces.json'
 import { TOPIC_CATEGORIES, TOPIC_LABELS, type ContentItem, type RegionContent, type RegionMeta, type TopicCategory } from '../../types/content'
 import { itemSlug } from '../content/links'
 import { getItemsByCategory } from '../content/repository'
@@ -18,8 +18,6 @@ interface MapInfoPanelProps {
   /** Mở modal chủ đề ngay trên trang bản đồ; slug null = mục đầu tiên */
   onOpen(category: TopicCategory, slug: string | null): void
 }
-
-const provinceName = (id: string | undefined) => provinces.find((p) => p.id === id)?.name
 
 /** Địa điểm tiêu biểu: ưu tiên danh lam, di tích gắn với một tỉnh cụ thể; tối đa 3 */
 function featuredPlaces(content: RegionContent): ContentItem[] {

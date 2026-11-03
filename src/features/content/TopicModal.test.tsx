@@ -130,3 +130,29 @@ test('audio error hides player and shows "Chưa nghe được thuyết minh"', (
   expect(screen.getByText('Chưa nghe được thuyết minh')).toBeInTheDocument()
   expect(document.querySelector('audio')).toBeNull()
 })
+
+test('shows the province of an item (in the list and in the detail header)', () => {
+  const c = content()
+  c.items[0] = { ...c.items[0]!, provinceId: 'lao-cai' }
+  render(
+    <MemoryRouter>
+      <TopicModal content={c} category="landmark" itemSlug={null} onSelect={vi.fn()} onClose={vi.fn()} />
+    </MemoryRouter>,
+  )
+  const list = screen.getByRole('list', { name: 'Các mục trong chủ đề' })
+  expect(within(list).getAllByRole('button')[0]).toHaveTextContent('Lào Cai')
+  const place = screen.getByTestId('item-place')
+  expect(place).toHaveTextContent('Tỉnh Lào Cai')
+  expect(place).toHaveTextContent('Vùng A')
+})
+
+test('item not tied to one province says it covers the whole region', () => {
+  const c = content()
+  c.items[0] = { ...c.items[0]!, provinceId: undefined }
+  render(
+    <MemoryRouter>
+      <TopicModal content={c} category="landmark" itemSlug={null} onSelect={vi.fn()} onClose={vi.fn()} />
+    </MemoryRouter>,
+  )
+  expect(screen.getByTestId('item-place')).toHaveTextContent('Toàn vùng Vùng A')
+})

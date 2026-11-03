@@ -1,6 +1,7 @@
 import { BookOpen, ExternalLink, ImageIcon, Lightbulb, MapPin, Sparkles, Star, Volume2 } from 'lucide-react'
 import { useId, useState, type ReactNode } from 'react'
 import { SmartImage } from '../../components/ui/SmartImage'
+import { provinceName } from '../../lib/provinces'
 import { SGK_URL, sgkPageUrl } from '../../lib/sources'
 import { TOPIC_LABELS, type ContentItem, type MediaRef, type SourceRef, type TopicCategory } from '../../types/content'
 import { itemSlug } from './links'
@@ -8,14 +9,16 @@ import { TOPIC_ICONS } from './topicIcons'
 
 interface ItemDetailProps {
   item: ContentItem
+  regionName: string
   related: ContentItem[]
   onSelectRelated(category: TopicCategory, slug: string): void
 }
 
 /** Toàn bộ thông tin một mục nội dung; dùng trong modal chủ đề */
-export function ItemDetail({ item, related, onSelectRelated }: ItemDetailProps) {
+export function ItemDetail({ item, regionName, related, onSelectRelated }: ItemDetailProps) {
   const Icon = TOPIC_ICONS[item.category]
   const figures = item.figures ?? []
+  const province = provinceName(item.provinceId)
   return (
     <article className="flex flex-col gap-6">
       <header className="flex flex-col gap-3">
@@ -26,6 +29,17 @@ export function ItemDetail({ item, related, onSelectRelated }: ItemDetailProps) 
         <h3 tabIndex={-1} data-item-heading className="text-3xl font-bold outline-none">
           {item.title}
         </h3>
+        <p data-testid="item-place" className="flex flex-wrap items-center gap-2 text-muted">
+          <MapPin aria-hidden className="size-5 shrink-0 text-amber-600" />
+          {province ? (
+            <>
+              <span className="rounded-full bg-amber-100 px-3 py-0.5 font-bold text-amber-900">Tỉnh {province}</span>
+              <span>thuộc vùng {regionName}</span>
+            </>
+          ) : (
+            <span className="font-semibold">Toàn vùng {regionName}</span>
+          )}
+        </p>
         {item.location && (
           <p className="flex items-center gap-2 text-muted">
             <MapPin aria-hidden className="size-5 text-secondary" />
