@@ -39,6 +39,32 @@ Component `SmartImage` (`src/components/ui/SmartImage.tsx`):
 |---|---|---|---|
 | _(chưa có)_ | | | |
 
+### Ảnh nhúng từ Wikimedia Commons (thư viện ảnh theo tỉnh)
+
+Web chạy trên gói hosting miễn phí, nên ảnh minh hoạ tỉnh/vùng **không lưu trong repo**: trang nhúng thẳng ảnh từ `upload.wikimedia.org` và ghi nguồn đầy đủ.
+
+**Chỉ dùng Wikimedia Commons.** Ghi nguồn không làm cho việc nhúng ảnh có bản quyền thành hợp pháp. Ảnh trên báo, blog, trang du lịch phần lớn giữ mọi quyền và nhiều trang chặn nhúng (ảnh sẽ vỡ). Commons chỉ nhận ảnh giấy phép tự do, cho phép nhúng, và có API trả sẵn tác giả, giấy phép.
+
+**Giấy phép được nhận:** Public domain, CC0, CC BY *x.y*, CC BY-SA *x.y*. Không nhận NC, ND, GFDL đứng riêng hay "fair use". Parser (`src/features/images/parseWebImages.ts`) và script cùng chặn.
+
+**Dữ liệu:**
+- `image-picks/<regionId>.json`: danh sách ảnh **người chọn** viết tay (file Commons, tỉnh, chủ đề, mục SGK minh hoạ, `alt`, `caption`, `checked`).
+- `src/data/images/<regionId>/<provinceId>.json`, `_toan-vung.json`: **sinh tự động**, không sửa tay (trừ đổi `status` sang `verified`).
+
+**Quy trình thêm ảnh:**
+1. Tìm trên Commons theo tên tỉnh mới, tên các tỉnh cũ đã sáp nhập, tên địa danh. Xem thông tin một file: `node scripts/commons-fetch.mjs --show "File:Tên ảnh.jpg"`.
+2. **Mở xem ảnh**, xác nhận đúng chủ thể. Viết vào `image-picks/<regionId>.json`: `alt` (thấy gì), `caption` (một câu, chỉ dựa trên mô tả Commons; ghi tên tỉnh mới), `checked` (ngày + đã xem). Ảnh không rõ thuộc tỉnh mới nào thì bỏ.
+3. `npm run images:fetch <regionId>`: lấy tác giả, giấy phép, link gốc, các cỡ thumbnail chuẩn (500, 960, 1280px); in bảng số ảnh theo tỉnh × chủ đề và danh sách ảnh bị bỏ qua kèm lý do.
+4. `npm test` (kiểm tra tỉnh thuộc đúng vùng, `itemIds` tồn tại, id không trùng), rồi xem trên trình duyệt.
+5. Giáo viên duyệt trên bản xem thử, đổi `status` sang `verified`. Chạy lại `images:fetch` vẫn giữ `verified` nếu ảnh và thông tin ghi nguồn không đổi.
+6. Tỉnh × chủ đề không tìm được ảnh hợp lệ: ghi vào `docs/IMAGE_GAPS.md`, không lấy ảnh na ná.
+
+**Hiển thị** (`src/components/ui/WebImageFigure.tsx`): khung 4:3, `srcset` theo cỡ chuẩn, `loading="lazy"`, `referrerPolicy="no-referrer"`. Dưới ảnh luôn có "Ảnh: ‹tác giả›, ‹giấy phép›, qua Wikimedia Commons" (link về trang tác giả, giấy phép, trang gốc). Danh sách toàn bộ: trang **/nguon-anh**.
+
+**Link hỏng:** ảnh có thể bị xoá hoặc đổi tên trên Commons. Khi đó khung ảnh hiện "Hình ảnh hiện không tải được" nhưng dòng ghi nguồn vẫn còn. Chạy `npm run images:check [regionId]` trước mỗi lần deploy; thay ảnh hỏng trong `image-picks` rồi chạy lại `images:fetch`.
+
+**Commons chỉ trả thumbnail ở cỡ chuẩn** (500, 960, 1280px…); cỡ khác (ví dụ 700px) trả lỗi 400. API hiện trả link `thumb.wikimedia.org` kèm `utm_*`; script đổi về `upload.wikimedia.org` và bỏ tham số.
+
 ## 3. Bản đồ
 
 | Mục | Giá trị |

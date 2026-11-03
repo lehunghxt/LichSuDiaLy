@@ -13,4 +13,5 @@
 | D8 | Ảnh giao diện tham khảo | Chưa có | — |
 | D9 | Host | Vercel (kèm cấu hình Netlify/Cloudflare) | Mặc định |
 | D10 | Vùng khác | Hiện màu + "Sắp ra mắt" | Mặc định |
+| D12 | Ảnh minh hoạ tỉnh/vùng | Nhúng từ Wikimedia Commons (không lưu file), chỉ PD/CC0/CC BY/CC BY-SA, ghi nguồn TASL dưới mỗi ảnh + trang /nguon-anh; toàn bộ 34 tỉnh, làm theo từng vùng | Chủ dự án, 03/11/2026; plan `docs/superpowers/plans/2026-11-03-web-image-library.md` |
 | D11 | Thiết bị | Ưu tiên desktop; mobile ở Task 13 | Chủ dự án, 02/11/2026 |

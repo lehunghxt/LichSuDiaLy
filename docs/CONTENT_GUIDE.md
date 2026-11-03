@@ -59,6 +59,10 @@ Mọi câu hỏi đều có: `id`, `prompt`, `explanation`, `sources`, `status`,
 3. Mục `verified` bắt buộc có ít nhất một nguồn trỏ tới link SGK.
 4. Chạy `npm test`. Test kiểm tra toàn vẹn dữ liệu sẽ báo lỗi nếu: trùng id, sai tiền tố id, `relatedIds` trỏ tới mục không tồn tại, ảnh chưa có trong manifest, tọa độ nằm ngoài Việt Nam, hoặc mục đã duyệt chưa trích nguồn SGK.
 
+## Ảnh minh hoạ theo tỉnh
+
+Ảnh nhúng từ Wikimedia Commons nằm riêng trong `src/data/images/` (không trộn vào `items[].images`). Gắn ảnh vào một mục bằng `itemIds` trong `image-picks/<regionId>.json`. Quy trình đầy đủ: `docs/DATA_SOURCES.md`, mục "Ảnh nhúng từ Wikimedia Commons".
+
 ## Giọng văn (học sinh lớp 4)
 
 - Câu ngắn, mỗi câu không quá 20 từ; `summary` tối đa 2 câu.

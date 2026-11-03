@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import { Outlet } from 'react-router'
+import { Link, Outlet } from 'react-router'
 import { ProgressProvider } from '../../features/progress/ProgressProvider'
 import { LoadingState } from '../ui/states'
 import { DraftBanner } from './DraftBanner'
@@ -23,7 +23,10 @@ export function AppLayout() {
           </Suspense>
         </main>
         <footer className="border-t border-line bg-surface px-4 py-5 text-center text-sm text-muted">
-          Nội dung học tập bám theo SGK Lịch sử và Địa lí 4. Tiến độ chỉ lưu trên trình duyệt này.
+          Nội dung học tập bám theo SGK Lịch sử và Địa lí 4. Tiến độ chỉ lưu trên trình duyệt này.{' '}
+          <Link to="/nguon-anh" className="font-semibold text-primary hover:underline">
+            Nguồn ảnh
+          </Link>
         </footer>
       </div>
     </ProgressProvider>
