@@ -323,3 +323,12 @@ test('other pages keep the site header and footer', async () => {
   expect(await screen.findByRole('banner')).toBeInTheDocument()
   expect(screen.getByRole('contentinfo')).toBeInTheDocument()
 })
+
+test('compact nav is a single row of four equal tabs with short labels', async () => {
+  renderAt('/ban-do')
+  const nav = await screen.findByRole('navigation', { name: 'Điều hướng chính' })
+  const list = within(nav).getByRole('list')
+  expect(list.className).toContain('grid-cols-4')
+  expect(within(nav).getAllByRole('link').map((l) => l.textContent)).toEqual(['Trang chủ', 'Bản đồ', 'Trắc nghiệm', 'Tiến độ'])
+  expect(within(nav).getByRole('link', { name: 'Bản đồ' })).toHaveAttribute('aria-current', 'page')
+})
