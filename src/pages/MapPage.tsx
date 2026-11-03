@@ -1,4 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
+import { Link } from 'react-router'
+import { CompactNav } from '../components/layout/CompactNav'
 import { useNavigate, useParams, useSearchParams } from 'react-router'
 import { LoadingState } from '../components/ui/states'
 import { itemSlug, topicSearch } from '../features/content/links'
@@ -54,10 +56,10 @@ export default function MapPage() {
   const closeTopic = () => navigate({ search: '' }, { replace: true })
 
   return (
-    <div>
+    <>
       <h1 className="sr-only">Bản đồ khám phá</h1>
-      <div className="grid gap-6 lg:grid-cols-[minmax(0,1.7fr)_minmax(400px,1fr)]">
-        <div data-map-frame className="relative overflow-hidden rounded-card border-4 border-white bg-sea shadow-[0_8px_30px_rgb(15_23_42/0.08)]">
+      <div className="grid lg:h-dvh lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+        <div data-map-frame className="relative h-[65vh] overflow-hidden bg-sea lg:h-full">
           <Suspense fallback={<LoadingState label="Đang tải bản đồ…" />}>
             <VietnamMap
               regions={regions}
@@ -71,7 +73,8 @@ export default function MapPage() {
             <RegionList regions={regions} selectedId={region?.id ?? null} onSelect={selectRegion} />
           </div>
         </div>
-        <div className="lg:sticky lg:top-28 lg:self-start">
+        <aside aria-label="Thông tin bản đồ" className="flex flex-col gap-5 bg-bg p-4 lg:overflow-y-auto lg:overscroll-contain xl:p-5">
+          <CompactNav />
           <MapInfoPanel
             region={region}
             regionIdFromUrl={regionId}
@@ -82,11 +85,17 @@ export default function MapPage() {
             onClearProvince={() => setProvinceId(null)}
             onOpen={openTopic}
           />
-        </div>
+          <p className="mt-auto text-center text-xs text-muted">
+            Nội dung bám theo SGK Lịch sử và Địa lí 4.{' '}
+            <Link to="/nguon-anh" className="font-semibold text-primary hover:underline">
+              Nguồn ảnh
+            </Link>
+          </p>
+        </aside>
       </div>
       {modalOpen && (
         <TopicModal content={content.content} images={images} category={topic} itemSlug={slugParam} onSelect={openTopic} onClose={closeTopic} />
       )}
-    </div>
+    </>
   )
 }

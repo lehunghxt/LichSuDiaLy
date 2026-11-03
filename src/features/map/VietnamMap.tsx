@@ -232,7 +232,7 @@ export default function VietnamMap(props: VietnamMapProps) {
 
   const { data } = state
   return (
-    <div className="relative">
+    <div className="relative h-full">
       <MapContainer
         bounds={VIETNAM_BOUNDS}
         // Rộng về phía tây: phần đó nằm dưới bảng chú giải khi canh toàn quốc
@@ -246,7 +246,7 @@ export default function VietnamMap(props: VietnamMapProps) {
         scrollWheelZoom={false}
         zoomControl={false}
         attributionControl={false}
-        className="h-[calc(100vh-8rem)] min-h-[640px] w-full rounded-card bg-sea"
+        className="h-full w-full bg-sea"
         aria-label="Bản đồ các vùng địa lí Việt Nam"
       >
         <RegionsLayer

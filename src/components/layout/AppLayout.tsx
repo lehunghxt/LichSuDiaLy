@@ -1,11 +1,27 @@
 import { Suspense } from 'react'
-import { Link, Outlet } from 'react-router'
+import { Link, Outlet, useMatch } from 'react-router'
 import { ProgressProvider } from '../../features/progress/ProgressProvider'
 import { LoadingState } from '../ui/states'
 import { DraftBanner } from './DraftBanner'
 import { Header } from './Header'
 
 export function AppLayout() {
+  // Trang bản đồ chiếm trọn màn hình: không header/footer, điều hướng nằm trong khung thông tin bên phải
+  const fullScreen = useMatch('/ban-do/*') !== null
+  if (fullScreen) {
+    return (
+      <ProgressProvider>
+        <div className="flex min-h-dvh flex-col lg:h-dvh">
+          <DraftBanner />
+          <main id="main" className="min-h-0 flex-1">
+            <Suspense fallback={<LoadingState />}>
+              <Outlet />
+            </Suspense>
+          </main>
+        </div>
+      </ProgressProvider>
+    )
+  }
   return (
     <ProgressProvider>
       <div className="flex min-h-dvh flex-col">

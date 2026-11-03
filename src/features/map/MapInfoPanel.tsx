@@ -69,7 +69,7 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, images, provinc
 
       {webCover && <WebImageFigure image={webCover} priority sizes="(min-width: 1024px) 35vw, 100vw" aspect="16 / 7" />}
 
-      <header className="flex gap-5">
+      <div className="flex gap-5">
         <div className={`w-28 shrink-0 2xl:w-36 ${webCover ? 'hidden' : ''}`}>
           {cover ? (
             <SmartImage image={cover} sizes="144px" priority className="aspect-square" />
@@ -90,7 +90,7 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, images, provinc
           </h2>
           {ready && <p className="text-muted">{ready.intro}</p>}
         </div>
-      </header>
+      </div>
 
       {region.status === 'coming_soon' && (
         <div className="flex items-center gap-3 rounded-2xl bg-accent-soft p-4">

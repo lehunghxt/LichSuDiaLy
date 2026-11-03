@@ -297,3 +297,29 @@ test('province of a coming-soon region shows its images in the province card', a
   expect(within(card).getByRole('img', { name: 'Ảnh chợ nổi Cần Thơ' })).toBeInTheDocument()
   expect(card).toHaveTextContent('Thuộc vùng Nam Bộ')
 })
+
+test('map page is full screen: no site header or footer, compact navigation in the side panel', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const panel = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
+  expect(screen.queryByRole('banner')).not.toBeInTheDocument()
+  expect(screen.queryByRole('contentinfo')).not.toBeInTheDocument()
+  const nav = within(panel).getByRole('navigation', { name: 'Điều hướng chính' })
+  expect(within(nav).getByRole('link', { name: 'Trang chủ' })).toHaveAttribute('href', '/')
+  expect(within(nav).getByRole('link', { name: 'Trắc nghiệm' })).toHaveAttribute('href', '/on-tap')
+  expect(within(panel).getByRole('link', { name: 'Nguồn ảnh' })).toHaveAttribute('href', '/nguon-anh')
+})
+
+test('map takes 2/3 and the side panel 1/3; the panel scrolls on its own', async () => {
+  renderAt('/ban-do')
+  const panel = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
+  const layout = panel.parentElement!
+  expect(layout.className).toContain('lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]')
+  expect(layout.className).toContain('lg:h-dvh')
+  expect(panel.className).toContain('lg:overflow-y-auto')
+})
+
+test('other pages keep the site header and footer', async () => {
+  renderAt('/on-tap')
+  expect(await screen.findByRole('banner')).toBeInTheDocument()
+  expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+})
