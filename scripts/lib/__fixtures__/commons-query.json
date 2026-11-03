@@ -1,0 +1,232 @@
+{
+ "batchcomplete": true,
+ "query": {
+  "pages": [
+   {
+    "ns": 6,
+    "title": "File:Khong co file nay abc.jpg",
+    "missing": true,
+    "imagerepository": ""
+   },
+   {
+    "pageid": 26957083,
+    "ns": 6,
+    "title": "File:Fansipan summit new.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 895722,
+      "width": 1267,
+      "height": 1901,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Fansipan_summit_new.jpg/960px-Fansipan_summit_new.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 960,
+      "thumbheight": 1440,
+      "responsiveUrls": {
+       "2": "https://upload.wikimedia.org/wikipedia/commons/5/59/Fansipan_summit_new.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Fansipan_summit_new.jpg/960px-Fansipan_summit_new.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 960,
+       "height": 1440,
+       "srcset": "https://upload.wikimedia.org/wikipedia/commons/5/59/Fansipan_summit_new.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Fansipan_summit_new.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fansipan_summit_new.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=26957083",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2013-06-29 18:53:25",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Fansipan summit new",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Taken with Canon EOS 350D|PD-user|Fansipan summit mark",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "Summit mark on Fansipan",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2010-08",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/vi:User:Th%C3%A1i_Nhi\" class=\"extiw\" title=\"w:vi:User:Thái Nhi\">Thái Nhi</a> at <a href=\"https://en.wikipedia.org/wiki/vi:\" class=\"extiw\" title=\"w:vi:\">Vietnamese Wikipedia</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      }
+     }
+    ]
+   },
+   {
+    "pageid": 88797724,
+    "ns": 6,
+    "title": "File:Hoàng Liên Sơn mountains 04.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 8508044,
+      "width": 5184,
+      "height": 3888,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Ho%C3%A0ng_Li%C3%AAn_S%C6%A1n_mountains_04.jpg/960px-Ho%C3%A0ng_Li%C3%AAn_S%C6%A1n_mountains_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 960,
+      "thumbheight": 720,
+      "responsiveUrls": {
+       "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Ho%C3%A0ng_Li%C3%AAn_S%C6%A1n_mountains_04.jpg/1920px-Ho%C3%A0ng_Li%C3%AAn_S%C6%A1n_mountains_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Ho%C3%A0ng_Li%C3%AAn_S%C6%A1n_mountains_04.jpg/960px-Ho%C3%A0ng_Li%C3%AAn_S%C6%A1n_mountains_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+       "decoding": "async",
+       "loading": "lazy",
+       "width": 960,
+       "height": 720,
+       "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Ho%C3%A0ng_Li%C3%AAn_S%C6%A1n_mountains_04.jpg/1920px-Ho%C3%A0ng_Li%C3%AAn_S%C6%A1n_mountains_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Ho%C3%A0ng_Li%C3%AAn_S%C6%A1n_mountains_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ho%C3%A0ng_Li%C3%AAn_S%C6%A1n_mountains_04.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=88797724",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2020-03-31 09:13:44",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Hoàng Liên Sơn mountains 04",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Hoàng Liên Sơn mountain range|Self-published work|Hiking trails in Vietnam|Files with coordinates missing SDC location of creation|Images by Christophe95/Vietnam|Mountains of Sa Pa",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "GPSLatitude": {
+        "value": "22.308332",
+        "source": "commons-desc-page"
+       },
+       "GPSLongitude": {
+        "value": "103.773148",
+        "source": "commons-desc-page"
+       },
+       "GPSMapDatum": {
+        "value": "WGS-84",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "View of the Hoàng Liên Sơn mountains from trail between the Nui Xe Ranger Station and the Fansipan (near the summit).",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2018-08-10 12:32:13",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Christophe95\" title=\"User:Christophe95\">Christophe95</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Creative Commons Attribution-Share Alike 4.0",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "cc-by-sa-4.0",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      }
+     }
+    ]
+   }
+  ]
+ }
+}
