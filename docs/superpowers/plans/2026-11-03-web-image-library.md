@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Mỗi tỉnh có bộ ảnh minh hoạ cho văn hoá, phong tục, khoáng sản, danh lam thắng cảnh. Ảnh lưu dạng JSON, **nhúng thẳng từ trang gốc** (không chép file ảnh vào repo hay server). Mỗi ảnh hiện đủ tác giả, giấy phép và link về trang gốc.
+**Goal:** Mỗi tỉnh trong 34 tỉnh, thành phố của Việt Nam có bộ ảnh minh hoạ cho văn hoá, phong tục, khoáng sản, danh lam thắng cảnh. Ảnh lưu dạng JSON, **nhúng thẳng từ trang gốc** (không chép file ảnh vào repo hay server). Mỗi ảnh hiện đủ tác giả, giấy phép và link về trang gốc.
 
 **Architecture:**
 - Thư viện ảnh tách riêng khỏi nội dung SGK, đặt tại `src/data/images/<regionId>/<provinceId>.json`. Ảnh nói về cả vùng thì đặt trong `_toan-vung.json`.
@@ -29,8 +29,14 @@
    - Mẫu: "Ảnh: ‹Tác giả›, ‹Giấy phép›, qua Wikimedia Commons".
    - Tác giả, giấy phép và chữ "Wikimedia Commons" đều là link mở tab mới, lần lượt tới trang tác giả (nếu có), trang giấy phép và trang `File:` gốc.
    - Có thêm trang **/nguon-anh** liệt kê toàn bộ ảnh đang dùng.
-4. **Phạm vi đợt này:** 9 tỉnh của vùng Trung du và miền núi phía Bắc, vì đây là vùng đã có nội dung.
-   - Schema và script dùng được cho cả 34 tỉnh. Các vùng khác làm khi vùng đó mở nội dung.
+4. **Phạm vi: toàn bộ 34 tỉnh, thành phố**, chia theo 4 vùng trong `provinces.json`:
+   - Trung du và miền núi phía Bắc (9): Lai Châu, Điện Biên, Sơn La, Lào Cai, Tuyên Quang, Cao Bằng, Thái Nguyên, Lạng Sơn, Phú Thọ.
+   - Đồng bằng Bắc Bộ (6): Hà Nội, Quảng Ninh, Bắc Ninh, Hải Phòng, Hưng Yên, Ninh Bình.
+   - Bắc Trung Bộ và Nam Trung Bộ (11): Thanh Hóa, Nghệ An, Hà Tĩnh, Quảng Trị, Huế, Đà Nẵng, Quảng Ngãi, Gia Lai, Khánh Hòa, Đắk Lắk, Lâm Đồng.
+   - Nam Bộ (8): Đồng Nai, TP. Hồ Chí Minh, Tây Ninh, Đồng Tháp, Vĩnh Long, An Giang, Cần Thơ, Cà Mau.
+   - Làm lần lượt theo vùng (Task 4a → 4d). Mỗi vùng là một mốc commit và có thể deploy riêng.
+   - 3 vùng chưa có nội dung SGK thì ảnh **không có `itemIds`**. Sau này viết nội dung vùng nào thì gắn `itemIds` cho vùng đó.
+   - Ước lượng khối lượng: 34 tỉnh × 4 chủ đề × 2–3 ảnh ≈ 270–400 ảnh. Ảnh nào cũng phải xem để xác nhận chủ thể, nên đây là phần tốn thời gian nhất.
 5. **Không bịa:**
    - Chú thích tiếng Việt chỉ được viết từ mô tả gốc trên Commons, sau khi đã **xem ảnh và xác nhận đúng chủ thể**. Không suy đoán địa điểm khi Commons không ghi.
    - Mọi ảnh vào với `status: "draft"`. Ảnh nháp chỉ hiện ở dev và bản xem thử (`VITE_SHOW_DRAFTS`), giống quy tắc của nội dung.
@@ -104,7 +110,7 @@
 ### Task 2: Nạp thư viện ảnh và kiểm tra toàn vẹn
 
 **Files:**
-- Create: `src/features/images/library.ts`, `src/data/images/trung-du-mien-nui-phia-bac/_toan-vung.json` (`[]`)
+- Create: `src/features/images/library.ts`, `src/data/images/<regionId>/_toan-vung.json` (`[]`) cho cả 4 vùng
 - Modify: `src/features/content/integrity.test.ts` (thêm khối kiểm tra ảnh trên dữ liệu thật)
 - Test: `src/features/images/library.test.ts`
 
@@ -173,24 +179,30 @@
 - [ ] **Step 4:** PASS. Chạy thử thật với 2 ảnh Phan-xi-păng và Đền Hùng. Mở `src.url` trên trình duyệt để xác nhận trả về 200. Kết quả phải qua `parseWebImages`.
 - [ ] **Step 5: Commit** `feat(images): commons metadata fetch script (no hand-typed credits)`.
 
-### Task 4: Tuyển chọn ảnh cho 9 tỉnh (task dữ liệu)
+### Task 4: Tuyển chọn ảnh cho 34 tỉnh, thành phố (task dữ liệu, 4 đợt theo vùng)
 
-**Files:**
-- Modify: `image-picks/trung-du-mien-nui-phia-bac.json`
-- Create: `docs/IMAGE_GAPS.md`
-- Generated: `src/data/images/trung-du-mien-nui-phia-bac/*.json`
+**Files (mỗi vùng):**
+- Modify: `image-picks/<regionId>.json`
+- Modify: `docs/IMAGE_GAPS.md`
+- Generated: `src/data/images/<regionId>/*.json`
 
-**Quy trình cho mỗi tỉnh** (Lai Châu, Điện Biên, Sơn La, Lào Cai, Tuyên Quang, Cao Bằng, Thái Nguyên, Lạng Sơn, Phú Thọ) × chủ đề (`culture` gồm lễ hội, phong tục, trang phục, chợ phiên; `mineral`; `landmark`; thêm `historical_site` khi SGK có):
+**Quy trình cho mỗi tỉnh** × chủ đề (`culture` gồm lễ hội, phong tục, trang phục, nghề truyền thống, chợ; `mineral` gồm mỏ và hoạt động khai thác; `landmark`; `historical_site`):
 
-1. Tìm trên Commons theo tên tỉnh mới và **tên tỉnh cũ đã sáp nhập**, theo category Commons của tỉnh, và theo tên địa danh mà SGK nhắc tới. Ưu tiên ảnh minh hoạ trực tiếp cho các mục SGK đã có (Phan-xi-păng, Hoàng Liên Sơn, Mù Cang Chải, Lũng Cú, Đền Hùng, thuỷ điện Sơn La, Thác Bà, chợ phiên Bắc Hà, người Mông, Xoè Thái…). Danh sách ứng viên cũ nằm trong scratchpad `image-candidates.md`.
+1. Tìm trên Commons theo tên tỉnh mới, **tên các tỉnh cũ đã sáp nhập vào tỉnh đó** (ví dụ Tuyên Quang gồm cả Hà Giang cũ; Lào Cai gồm cả Yên Bái cũ), theo category Commons của tỉnh, và theo tên địa danh mà SGK nhắc tới.
+   - Với vùng đã có nội dung: ưu tiên ảnh minh hoạ trực tiếp các mục SGK. Danh sách ứng viên cũ nằm trong scratchpad `image-candidates.md`.
 2. **Xem ảnh** (thumbnail) và xác nhận đúng chủ thể. Ghi `checked`.
-3. Viết `alt` (thấy gì) và `caption` (một câu, lấy từ mô tả Commons). Không thêm năm, số liệu hay tên địa điểm mà Commons và SGK không ghi.
-4. Mục tiêu 2–4 ảnh mỗi ô tỉnh × chủ đề. Không đạt thì ghi vào `IMAGE_GAPS.md` (tỉnh, chủ đề, đã tìm những gì).
+3. Viết `alt` (thấy gì) và `caption` (một câu, lấy từ mô tả Commons, ghi tên tỉnh mới). Không thêm năm, số liệu hay tên địa điểm mà Commons không ghi.
+4. Mục tiêu 2–3 ảnh mỗi ô tỉnh × chủ đề.
+   - Không phải tỉnh nào cũng có khoáng sản tiêu biểu hay di tích có ảnh tự do. Ô trống là bình thường: ghi vào `IMAGE_GAPS.md` (tỉnh, chủ đề, đã tìm những gì), **không lấy ảnh na ná**.
+5. Ảnh thuộc tỉnh cũ đã chia tách sang nhiều tỉnh mới: chỉ gán khi Commons ghi rõ địa điểm (huyện, xã, tên công trình) để xác định tỉnh mới. Không rõ thì bỏ ảnh.
 
-- [ ] **Step 1:** Tuyển ảnh theo quy trình trên cho 9 tỉnh. Mỗi tỉnh xong thì commit một lần (`data(images): <tỉnh>`).
-- [ ] **Step 2:** `npm run images:fetch trung-du-mien-nui-phia-bac`. Bảng ảnh bị bỏ qua phải rỗng, hoặc mỗi dòng đã được xử lý (thay ảnh hoặc ghi vào GAPS).
-- [ ] **Step 3:** `npm test` (integrity dữ liệu thật) → xanh.
-- [ ] **Step 4: Commit** `data(images): commons picks for 9 provinces of TDMNPB (draft)`.
+**Các đợt:**
+- [ ] **4a. Trung du và miền núi phía Bắc (9 tỉnh):** chọn ảnh xong thì chạy `npm run images:fetch trung-du-mien-nui-phia-bac`, rồi `npm test` xanh. Commit `data(images): TDMNPB 9 provinces (draft)`.
+- [ ] **4b. Đồng bằng Bắc Bộ (6):** như trên với `dong-bang-bac-bo`. Commit.
+- [ ] **4c. Bắc Trung Bộ và Nam Trung Bộ (11):** như trên với `bac-trung-bo-va-nam-trung-bo`. Commit.
+- [ ] **4d. Nam Bộ (8):** như trên với `nam-bo`. Commit.
+
+Sau mỗi đợt, bảng ảnh bị bỏ qua của script phải rỗng hoặc đã xử lý hết, và `checkImageIntegrity` trên dữ liệu thật trả về `[]`.
 
 ### Task 5: Component `WebImageFigure`
 
@@ -224,6 +236,7 @@
     - Thẻ "Một số địa điểm tiêu biểu" lấy ảnh đầu của `forItem`.
     - `ProvinceCard` có dải 3–6 ảnh của tỉnh, nhóm theo chủ đề.
   - `src/pages/MapPage.tsx`: nạp ảnh theo vùng.
+  - `MapInfoPanel` cho **vùng "Sắp ra mắt"**: vẫn giữ thông báo nội dung đang chuẩn bị, thêm khối "Hình ảnh của vùng" (ảnh bìa và lưới ảnh theo chủ đề). Bấm vào một tỉnh của vùng đó thì `ProvinceCard` hiện ảnh của tỉnh.
 - Test: `src/pages/MapPage.test.tsx`, `src/features/content/TopicModal.test.tsx`
 
 **Interfaces:**
@@ -236,6 +249,8 @@
   - `province card shows province images; none → no empty gallery`.
   - `featured place card uses item image`.
   - `region header uses cover image`.
+  - `coming-soon region shows its image gallery and still says content is being prepared`.
+  - `province of a coming-soon region shows its images in the province card`.
 - [ ] **Step 2:** FAIL. **Step 3:** cài đặt. **Step 4:** PASS, cả bộ xanh. Kiểm tra trên Chrome ở 1280px và 1512px.
 - [ ] **Step 5: Commit** `feat: show commons images in modal, province card, featured places, region cover`.
 
@@ -266,5 +281,5 @@
 ## Ngoài phạm vi (ghi lại để không làm lẫn)
 
 - Lightbox phóng to ảnh: làm sau nếu cần.
-- 25 tỉnh của 3 vùng còn lại: chạy lại Task 4 khi vùng đó có nội dung.
+- Viết nội dung SGK cho 3 vùng còn lại: làm riêng. Khi có nội dung thì chỉ cần bổ sung `itemIds` cho ảnh đã có.
 - Thay ảnh minh hoạ SGK bằng ảnh Commons: không làm. Thẻ "Hình minh hoạ trong SGK" giữ nguyên vì đó là đối chiếu sách.
