@@ -54,8 +54,8 @@ export default function MapPage() {
   return (
     <div>
       <h1 className="sr-only">Bản đồ khám phá</h1>
-      <div className="grid gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(480px,1fr)]">
-        <div className="relative overflow-hidden rounded-card border-4 border-white bg-sea shadow-[0_8px_30px_rgb(15_23_42/0.08)]">
+      <div className="grid gap-6 lg:grid-cols-[minmax(0,1.7fr)_minmax(400px,1fr)]">
+        <div data-map-frame className="relative overflow-hidden rounded-card border-4 border-white bg-sea shadow-[0_8px_30px_rgb(15_23_42/0.08)]">
           <Suspense fallback={<LoadingState label="Đang tải bản đồ…" />}>
             <VietnamMap
               regions={regions}
@@ -65,7 +65,7 @@ export default function MapPage() {
               onSelectProvince={setProvinceId}
             />
           </Suspense>
-          <div className="absolute left-4 top-4 z-[1000]">
+          <div data-map-legend className="absolute left-4 top-4 z-[1000]">
             <RegionList regions={regions} selectedId={region?.id ?? null} onSelect={selectRegion} />
           </div>
         </div>
@@ -76,6 +76,7 @@ export default function MapPage() {
             content={content}
             provinceId={provinceId}
             onBack={() => navigate('/ban-do')}
+            onClearProvince={() => setProvinceId(null)}
             onOpen={openTopic}
           />
         </div>

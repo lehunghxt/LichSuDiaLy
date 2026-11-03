@@ -1,4 +1,4 @@
-import { ArrowLeft, BookOpen, ChevronRight, Clock, Compass, MapPin, Mountain } from 'lucide-react'
+import { ArrowLeft, BookOpen, ChevronRight, Clock, Compass, MapPin, Mountain, X } from 'lucide-react'
 import { SmartImage } from '../../components/ui/SmartImage'
 import { EmptyState, ErrorState, LoadingState } from '../../components/ui/states'
 import provinces from '../../data/provinces.json'
@@ -14,6 +14,7 @@ interface MapInfoPanelProps {
   content: RegionContentState & { retry(): void }
   provinceId: string | null
   onBack(): void
+  onClearProvince(): void
   /** Mở modal chủ đề ngay trên trang bản đồ; slug null = mục đầu tiên */
   onOpen(category: TopicCategory, slug: string | null): void
 }
@@ -28,7 +29,7 @@ function featuredPlaces(content: RegionContent): ContentItem[] {
 
 const card = 'rounded-card bg-surface p-6 shadow-[0_8px_30px_rgb(15_23_42/0.08)]'
 
-export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onBack, onOpen }: MapInfoPanelProps) {
+export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onBack, onClearProvince, onOpen }: MapInfoPanelProps) {
   if (!regionIdFromUrl) {
     return (
       <div className={`${card} flex flex-col items-center gap-4 py-12 text-center`}>
@@ -64,7 +65,7 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onB
       <div className="-mb-4 -mt-2 flex justify-end">{back}</div>
 
       <header className="flex gap-5">
-        <div className="w-36 shrink-0">
+        <div className="w-28 shrink-0 2xl:w-36">
           {cover ? (
             <SmartImage image={cover} sizes="144px" priority className="aspect-square" />
           ) : (
@@ -99,12 +100,16 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onB
 
       {ready && (
         <>
+          {provinceId && (
+            <ProvinceCard content={ready} regionName={region.name} provinceId={provinceId} onClear={onClearProvince} onOpen={onOpen} />
+          )}
+
           <div className="border-t border-line pt-5">
             <h3 className="mb-4 flex items-center gap-2 text-xl font-bold">
               <BookOpen aria-hidden className="size-6 text-primary" />
               Khám phá theo chủ đề
             </h3>
-            <ul className="grid grid-cols-5 gap-3">
+            <ul className="grid grid-cols-5 gap-2 2xl:gap-3">
               {TOPIC_CATEGORIES.map((cat) => {
                 const Icon = TOPIC_ICONS[cat]
                 const style = TOPIC_TILE[cat]
@@ -114,19 +119,17 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, provinceId, onB
                     <button
                       type="button"
                       onClick={() => onOpen(cat, null)}
-                      className={`flex h-full w-full flex-col items-center gap-2 rounded-2xl border-2 px-2 py-4 text-center text-sm font-bold shadow-sm transition hover:-translate-y-0.5 hover:shadow-md ${style.tile}`}
+                      className={`flex h-full w-full flex-col items-center gap-1.5 rounded-2xl border-2 px-1 py-3 text-center text-xs font-bold 2xl:gap-2 2xl:px-2 2xl:py-4 2xl:text-sm shadow-sm transition hover:-translate-y-0.5 hover:shadow-md ${style.tile}`}
                     >
-                      <Icon aria-hidden className={`size-10 ${style.icon}`} strokeWidth={1.75} />
+                      <Icon aria-hidden className={`size-8 2xl:size-10 ${style.icon}`} strokeWidth={1.75} />
                       <span className="leading-snug">{TOPIC_LABELS[cat]}</span>
-                      <span className="text-xs font-semibold text-muted">{count} mục</span>
+                      <span className="text-[0.7rem] font-semibold text-muted 2xl:text-xs">{count} mục</span>
                     </button>
                   </li>
                 )
               })}
             </ul>
           </div>
-
-          {provinceId && <ProvinceItems content={ready} provinceId={provinceId} onOpen={onOpen} />}
 
           <FeaturedPlaces items={featuredPlaces(ready)} onOpen={onOpen} />
 
@@ -187,35 +190,66 @@ function FeaturedPlaces({ items, onOpen }: { items: ContentItem[]; onOpen(catego
   )
 }
 
-interface ProvinceItemsProps {
+interface ProvinceCardProps {
   content: RegionContent
+  regionName: string
   provinceId: string
+  onClear(): void
   onOpen(category: TopicCategory, slug: string): void
 }
 
-function ProvinceItems({ content, provinceId, onOpen }: ProvinceItemsProps) {
+/** Tỉnh đang chọn trên bản đồ: tên, vùng, các mục trong bài học gắn với tỉnh */
+function ProvinceCard({ content, regionName, provinceId, onClear, onOpen }: ProvinceCardProps) {
   const name = provinceName(provinceId) ?? provinceId
   const items = content.items.filter((i) => i.provinceId === provinceId)
   return (
-    <div className="rounded-2xl bg-bg p-4">
-      <h3 className="font-bold">Tỉnh {name}</h3>
+    <section
+      aria-label={`Tỉnh đang xem: ${name}`}
+      className="animate-fade-up flex flex-col gap-3 rounded-2xl border-2 border-amber-300 bg-amber-50 p-4"
+    >
+      <div className="flex items-start gap-3">
+        <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-amber-400 text-white shadow-sm">
+          <MapPin aria-hidden className="size-6" />
+        </span>
+        <div className="min-w-0 flex-1">
+          <p className="text-xs font-bold uppercase tracking-wide text-amber-700">Tỉnh đang xem</p>
+          <h3 className="text-xl font-bold leading-tight">Tỉnh {name}</h3>
+          <p className="text-sm text-muted">Thuộc vùng {regionName}</p>
+        </div>
+        <button
+          type="button"
+          onClick={onClear}
+          aria-label="Bỏ chọn tỉnh"
+          title="Bỏ chọn tỉnh"
+          className="flex size-9 shrink-0 items-center justify-center rounded-full text-muted hover:bg-amber-100 hover:text-ink"
+        >
+          <X aria-hidden className="size-5" />
+        </button>
+      </div>
       {items.length === 0 ? (
-        <p className="mt-1 text-muted">Chưa có địa danh nào của tỉnh này. Em xem các chủ đề ở trên nhé!</p>
+        <p className="text-sm text-muted">Bài học chưa có địa danh nào của tỉnh này. Em xem các chủ đề bên dưới nhé!</p>
       ) : (
-        <ul aria-label={`Địa danh ở tỉnh ${name}`} className="mt-2 flex flex-wrap gap-2">
-          {items.map((i) => (
-            <li key={i.id}>
-              <button
-                type="button"
-                onClick={() => onOpen(i.category, itemSlug(i.id))}
-                className="inline-flex min-h-11 items-center rounded-full bg-secondary-soft px-4 font-semibold text-secondary hover:brightness-95"
-              >
-                {i.title}
-              </button>
-            </li>
-          ))}
-        </ul>
+        <>
+          <p className="text-sm font-semibold">Trong bài học có {items.length} mục ở tỉnh {name}:</p>
+          <ul aria-label={`Địa danh ở tỉnh ${name}`} className="flex flex-wrap gap-2">
+            {items.map((i) => {
+              const Icon = TOPIC_ICONS[i.category]
+              return (
+                <li key={i.id}>
+                  <button
+                    type="button"
+                    onClick={() => onOpen(i.category, itemSlug(i.id))}
+                    className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-amber-200 bg-white px-3 text-sm font-semibold shadow-sm hover:border-amber-400"
+                  >
+                    <Icon aria-hidden className={`size-4 ${TOPIC_TILE[i.category].icon}`} />
+                    {i.title}
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+        </>
       )}
-    </div>
+    </section>
   )
 }

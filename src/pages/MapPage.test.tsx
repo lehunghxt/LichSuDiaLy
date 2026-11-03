@@ -146,6 +146,21 @@ test('selecting a province lists items of that province', async () => {
   expect(within(dialog).getByRole('heading', { level: 3, name: 'Khu di tích Đền Hùng' })).toBeInTheDocument()
 })
 
+test('selected province is shown prominently at the top of the panel', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
+  expect(screen.queryByRole('region', { name: /Tỉnh đang xem/ })).not.toBeInTheDocument()
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
+  const card = within(panel).getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })
+  expect(within(card).getByRole('heading', { name: 'Tỉnh Phú Thọ' })).toBeInTheDocument()
+  expect(card).toHaveTextContent('Thuộc vùng Trung du và miền núi phía Bắc')
+  // nằm trên phần "Khám phá theo chủ đề" để em thấy ngay
+  const topics = within(panel).getByRole('heading', { name: 'Khám phá theo chủ đề' })
+  expect(card.compareDocumentPosition(topics) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
+  await userEvent.click(within(card).getByRole('button', { name: 'Bỏ chọn tỉnh' }))
+  expect(screen.queryByRole('region', { name: /Tỉnh đang xem/ })).not.toBeInTheDocument()
+})
+
 test('"Về bản đồ Việt Nam" clears selection', async () => {
   const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   await userEvent.click(await screen.findByRole('button', { name: 'Về bản đồ Việt Nam' }))

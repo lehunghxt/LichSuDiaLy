@@ -44,6 +44,12 @@
   html {
     font-size: 100%;
   }
+  /* Laptop 13–14 inch (khung nhìn ~1280–1536px): thu nhỏ toàn bộ theo rem để chữ không rớt dòng */
+  @media (min-width: 1024px) and (max-width: 1599.98px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
   body {
     @apply bg-bg font-sans text-base text-ink antialiased md:text-lg;
   }
@@ -129,6 +135,32 @@ div.leaflet-container {
 }
 .leaflet-tooltip-top.region-callout::before {
   border-top-color: #1e3a8a;
+}
+.province-pin span {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 0;
+  transform: translateX(-50%);
+  padding: 0.25rem 0.7rem;
+  border: 2px solid #b45309;
+  border-radius: 999px;
+  background: #fffbeb;
+  color: #78350f;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 0.2);
+  pointer-events: none;
+}
+.province-pin span::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border: 6px solid transparent;
+  border-top-color: #b45309;
 }
 .leaflet-control-scale-line {
   border-color: #1e293b;

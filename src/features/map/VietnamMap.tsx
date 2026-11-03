@@ -9,12 +9,18 @@ import { ErrorState, LoadingState } from '../../components/ui/states'
 import type { RegionMeta } from '../../types/content'
 import { geoLoader, type AreaCollection, type LabelCollection, type ProvinceFeatureProps, type RegionFeatureProps } from './geo'
 
-// Khung nhìn toàn quốc, gồm cả Hoàng Sa và Trường Sa; mở rộng sang tây để bảng chú giải
-// (đặt nổi góc trái) nằm ngoài lãnh thổ Việt Nam như hình mẫu
+// Khung nhìn toàn quốc, gồm cả Hoàng Sa và Trường Sa
 const VIETNAM_BOUNDS: LatLngBoundsExpression = [
-  [7.6, 95.8],
+  [7.6, 102.0],
   [23.5, 117.9],
 ]
+
+/** Canh toàn quốc, chừa chỗ cho bảng chú giải nổi góc trái (đo thật vì cỡ chữ đổi theo màn hình) */
+function fitCountry(map: L.Map) {
+  const legend = map.getContainer().closest('[data-map-frame]')?.querySelector<HTMLElement>('[data-map-legend]')
+  const left = legend ? legend.offsetLeft + legend.offsetWidth + 8 : 12
+  map.fitBounds(VIETNAM_BOUNDS, { paddingTopLeft: [left, 12], paddingBottomRight: [12, 12] })
+}
 
 export interface VietnamMapProps {
   regions: RegionMeta[]
@@ -130,19 +136,35 @@ function ProvincesLayer({ data, regionId, selectedProvinceId, onSelectProvince }
     [selectedProvinceId],
   )
 
+  const selected = filtered.features.find((f) => f.properties.provinceId === selectedProvinceId)
+  // Nhãn tên tỉnh cố định ở tâm khung bao của tỉnh đang chọn
+  const pin = useMemo(
+    () =>
+      selected
+        ? {
+            position: L.geoJSON(selected).getBounds().getCenter(),
+            icon: L.divIcon({ className: 'province-pin', html: `<span>${selected.properties.name}</span>`, iconSize: [0, 0] }),
+          }
+        : null,
+    [selected],
+  )
+
   return (
-    <GeoJSON
-      key={regionId}
-      data={filtered}
-      style={style}
-      onEachFeature={(feature, layer) => {
-        layer.bindTooltip(feature.properties.name, { sticky: true, className: 'map-tooltip' })
-        layer.on('click', (e) => {
-          L.DomEvent.stopPropagation(e)
-          select.current(feature.properties.provinceId)
-        })
-      }}
-    />
+    <>
+      <GeoJSON
+        key={regionId}
+        data={filtered}
+        style={style}
+        onEachFeature={(feature, layer) => {
+          layer.bindTooltip(feature.properties.name, { sticky: true, className: 'map-tooltip' })
+          layer.on('click', (e) => {
+            L.DomEvent.stopPropagation(e)
+            select.current(feature.properties.provinceId)
+          })
+        }}
+      />
+      {pin && <Marker position={pin.position} icon={pin.icon} interactive={false} keyboard={false} zIndexOffset={1000} />}
+    </>
   )
 }
 
@@ -163,12 +185,10 @@ function Labels({ data }: { data: LabelCollection }) {
   })
 }
 
-const FIT_OPTIONS = { padding: [12, 12] as [number, number] }
-
 function FitCountry() {
   const map = useMap()
   useEffect(() => {
-    map.fitBounds(VIETNAM_BOUNDS, FIT_OPTIONS)
+    fitCountry(map)
     const scale = L.control.scale({ imperial: false, position: 'bottomleft', maxWidth: 160 }).addTo(map)
     return () => {
       scale.remove()
@@ -189,7 +209,7 @@ function Controls() {
       <button type="button" aria-label="Thu nhỏ" className={btn} onClick={() => map.zoomOut()}>
         <Minus aria-hidden className="size-5" />
       </button>
-      <button type="button" aria-label="Xem toàn bộ bản đồ" className={`${btn} mt-2`} onClick={() => map.fitBounds(VIETNAM_BOUNDS, FIT_OPTIONS)}>
+      <button type="button" aria-label="Xem toàn bộ bản đồ" className={`${btn} mt-2`} onClick={() => fitCountry(map)}>
         <LocateFixed aria-hidden className="size-5" />
       </button>
     </div>
@@ -215,8 +235,9 @@ export default function VietnamMap(props: VietnamMapProps) {
     <div className="relative">
       <MapContainer
         bounds={VIETNAM_BOUNDS}
+        // Rộng về phía tây: phần đó nằm dưới bảng chú giải khi canh toàn quốc
         maxBounds={[
-          [3, 95],
+          [3, 85],
           [27, 123],
         ]}
         minZoom={4}
