@@ -4,6 +4,8 @@ import { rawRegionContent, SGK_URL, type RawRegionContent } from '../../test/fix
 import { checkIntegrity } from './integrity'
 import { assembleRegionRaw } from './regionFiles'
 import { parseRegionContent, parseRegionList } from './parse'
+import { checkImageIntegrity, REGION_WIDE_FILE } from '../images/library'
+import { parseWebImages } from '../images/parseWebImages'
 
 function fixture() {
   const raw = rawRegionContent()
@@ -102,4 +104,35 @@ test('real data in src/data passes integrity check', () => {
   })
   expect(contents.length).toBeGreaterThan(0)
   expect(checkIntegrity(contents, regions, manifestIds, SGK_URL)).toEqual([])
+})
+
+test('real image library in src/data/images passes integrity check', () => {
+  const dataDir = path.resolve(import.meta.dirname, '../../data')
+  const regions = parseRegionList(JSON.parse(readFileSync(path.join(dataDir, 'regions.json'), 'utf8')))
+  const provinces = JSON.parse(readFileSync(path.join(dataDir, 'provinces.json'), 'utf8')) as { id: string; regionId: string }[]
+  const regionsDir = path.join(dataDir, 'regions')
+  const contents = readdirSync(regionsDir, { withFileTypes: true })
+    .filter((d) => d.isDirectory())
+    .map((dir) => {
+      const files = Object.fromEntries(
+        readdirSync(path.join(regionsDir, dir.name), { recursive: true, encoding: 'utf8' })
+          .filter((f) => f.endsWith('.json'))
+          .map((f) => [f.split(path.sep).join('/'), JSON.parse(readFileSync(path.join(regionsDir, dir.name, f), 'utf8')) as unknown]),
+      )
+      return parseRegionContent(assembleRegionRaw(regions.find((r) => r.id === dir.name), files))
+    })
+  const imagesDir = path.join(dataDir, 'images')
+  const images = readdirSync(imagesDir, { withFileTypes: true })
+    .filter((d) => d.isDirectory())
+    .flatMap((dir) => {
+      expect(regions.some((r) => r.id === dir.name), `thư mục ảnh "${dir.name}" không phải vùng`).toBe(true)
+      return readdirSync(path.join(imagesDir, dir.name))
+        .filter((f) => f.endsWith('.json'))
+        .flatMap((f) => {
+          const name = f.slice(0, -'.json'.length)
+          const raw: unknown = JSON.parse(readFileSync(path.join(imagesDir, dir.name, f), 'utf8'))
+          return parseWebImages(raw, dir.name, name === REGION_WIDE_FILE ? null : name, `images/${dir.name}/${f}`)
+        })
+    })
+  expect(checkImageIntegrity(images, contents, provinces)).toEqual([])
 })
