@@ -198,3 +198,13 @@ test('"Khám phá chi tiết vùng này" opens the modal at the first topic', as
   expect(router.state.location.search).toBe('?chu-de=natural')
   expect(await screen.findByRole('dialog', { name: 'Đặc điểm tự nhiên' })).toBeInTheDocument()
 })
+
+test('modal: region-wide item lists the 9 provinces of the region', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=natural')
+  const dialog = await screen.findByRole('dialog', { name: 'Đặc điểm tự nhiên' })
+  const provinces = within(dialog).getByRole('list', { name: 'Các tỉnh trong vùng' })
+  expect(within(provinces).getAllByRole('listitem')).toHaveLength(9)
+  expect(provinces).toHaveTextContent('Lai Châu')
+  expect(provinces).toHaveTextContent('Phú Thọ')
+  expect(within(dialog).getByTestId('item-place')).toHaveTextContent('gồm 9 tỉnh')
+})

@@ -1,7 +1,7 @@
 import { BookOpen, ExternalLink, ImageIcon, Lightbulb, MapPin, Sparkles, Star, Volume2 } from 'lucide-react'
 import { useId, useState, type ReactNode } from 'react'
 import { SmartImage } from '../../components/ui/SmartImage'
-import { provinceName } from '../../lib/provinces'
+import { provinceName, provinceNamesOfRegion } from '../../lib/provinces'
 import { SGK_URL, sgkPageUrl } from '../../lib/sources'
 import { TOPIC_LABELS, type ContentItem, type MediaRef, type SourceRef, type TopicCategory } from '../../types/content'
 import { itemSlug } from './links'
@@ -19,6 +19,7 @@ export function ItemDetail({ item, regionName, related, onSelectRelated }: ItemD
   const Icon = TOPIC_ICONS[item.category]
   const figures = item.figures ?? []
   const province = provinceName(item.provinceId)
+  const regionProvinces = province ? [] : provinceNamesOfRegion(item.regionId)
   return (
     <article className="flex flex-col gap-6">
       <header className="flex flex-col gap-3">
@@ -29,17 +30,31 @@ export function ItemDetail({ item, regionName, related, onSelectRelated }: ItemD
         <h3 tabIndex={-1} data-item-heading className="text-3xl font-bold outline-none">
           {item.title}
         </h3>
-        <p data-testid="item-place" className="flex flex-wrap items-center gap-2 text-muted">
-          <MapPin aria-hidden className="size-5 shrink-0 text-amber-600" />
-          {province ? (
-            <>
-              <span className="rounded-full bg-amber-100 px-3 py-0.5 font-bold text-amber-900">Tỉnh {province}</span>
-              <span>thuộc vùng {regionName}</span>
-            </>
-          ) : (
-            <span className="font-semibold">Toàn vùng {regionName}</span>
+        <div data-testid="item-place" className="flex flex-col gap-2 text-muted">
+          <p className="flex flex-wrap items-center gap-2">
+            <MapPin aria-hidden className="size-5 shrink-0 text-amber-600" />
+            {province ? (
+              <>
+                <span className="rounded-full bg-amber-100 px-3 py-0.5 font-bold text-amber-900">Tỉnh {province}</span>
+                <span>thuộc vùng {regionName}</span>
+              </>
+            ) : (
+              <span>
+                <span className="font-semibold">Toàn vùng {regionName}</span>
+                {regionProvinces.length > 0 && <>, gồm {regionProvinces.length} tỉnh:</>}
+              </span>
+            )}
+          </p>
+          {regionProvinces.length > 0 && (
+            <ul aria-label="Các tỉnh trong vùng" className="flex flex-wrap gap-1.5 pl-7">
+              {regionProvinces.map((name) => (
+                <li key={name} className="rounded-full bg-amber-50 px-2.5 py-0.5 text-sm font-semibold text-amber-900 ring-1 ring-amber-200">
+                  {name}
+                </li>
+              ))}
+            </ul>
           )}
-        </p>
+        </div>
         {item.location && (
           <p className="flex items-center gap-2 text-muted">
             <MapPin aria-hidden className="size-5 text-secondary" />
