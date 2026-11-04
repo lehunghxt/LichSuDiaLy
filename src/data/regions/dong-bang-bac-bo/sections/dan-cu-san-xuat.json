@@ -1,0 +1,203 @@
+[
+  {
+    "id": "dong-bang-bac-bo__dan-cu",
+    "title": "Dân cư",
+    "summary": "Đồng bằng Bắc Bộ có gần 25 triệu người (năm 2024). Đây là vùng có dân cư tập trung đông đúc nhất nước ta.",
+    "highlights": [
+      "Điều kiện tự nhiên thuận lợi cho sinh sống, giao thông và sản xuất nên dân cư tập trung đông.",
+      "Người dân chủ yếu là người Kinh, ngoài ra còn có người Mường, Sán Dìu,…"
+    ],
+    "keyPoints": [
+      "Đồng bằng Bắc Bộ là vùng đông dân nhất nước ta, chủ yếu là người Kinh."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 9,
+        "figure": 1,
+        "page": 42,
+        "caption": "Một khu vực dân cư ở vùng Đồng bằng Bắc Bộ"
+      },
+      {
+        "lesson": 9,
+        "figure": 2,
+        "page": 42,
+        "caption": "Bản đồ mật độ dân số theo tỉnh hoặc thành phố ở vùng Đồng bằng Bắc Bộ năm 2024"
+      }
+    ],
+    "relatedIds": [
+      "dong-bang-bac-bo__nha-o",
+      "dong-bang-bac-bo__lua-nuoc"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 41,
+        "note": "tr. 41–42, Hình 1, 2"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "dong-bang-bac-bo__nha-o",
+    "title": "Nhà ở",
+    "summary": "Trước đây, nhà ở của người dân thường đắp bằng đất hoặc xây gạch, mái lợp lá hay ngói. Ngày nay, nhà ở đã thay đổi theo hướng hiện đại, tiện nghi hơn.",
+    "highlights": [
+      "Nhà truyền thống thường có ba gian hoặc năm gian.",
+      "Gian giữa để thờ cúng và tiếp khách; các gian hai bên làm chỗ ngủ hoặc chứa thóc, gạo, đồ dùng."
+    ],
+    "keyPoints": [
+      "Nhà truyền thống có nhiều gian, gian giữa là nơi thờ cúng, tiếp khách."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 10,
+        "figure": 5,
+        "page": 48,
+        "caption": "Nhà ở truyền thống vùng Đồng bằng Bắc Bộ"
+      },
+      {
+        "lesson": 10,
+        "figure": 6,
+        "page": 48,
+        "caption": "Nhà ở vùng Đồng bằng Bắc Bộ hiện nay"
+      }
+    ],
+    "relatedIds": [
+      "dong-bang-bac-bo__lang-que",
+      "dong-bang-bac-bo__dan-cu"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 48,
+        "note": "tr. 48, Hình 5, 6"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "dong-bang-bac-bo__lua-nuoc",
+    "title": "Trồng lúa nước",
+    "summary": "Trồng lúa nước là hoạt động sản xuất truyền thống của vùng. Đồng bằng Bắc Bộ là vùng trồng lúa lớn thứ hai của nước ta.",
+    "highlights": [
+      "Vùng có đất màu mỡ, nguồn nước dồi dào, người dân giàu kinh nghiệm.",
+      "Các công việc trồng lúa: làm đất, cấy lúa, chăm sóc lúa, thu hoạch."
+    ],
+    "keyPoints": [
+      "Đồng bằng Bắc Bộ là vựa lúa lớn thứ hai cả nước."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 9,
+        "figure": 3,
+        "page": 43,
+        "caption": "Một số công việc trong trồng lúa nước"
+      }
+    ],
+    "relatedIds": [
+      "dong-bang-bac-bo__de-song-hong",
+      "dong-bang-bac-bo__rau-mau",
+      "dong-bang-bac-bo__dan-cu"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 43,
+        "note": "tr. 43, Hình 3"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "dong-bang-bac-bo__rau-mau",
+    "title": "Trồng rau màu và cây ăn quả",
+    "summary": "Ngoài trồng lúa nước, người dân Đồng bằng Bắc Bộ còn trồng nhiều loại rau màu và cây ăn quả.",
+    "highlights": [
+      "Đất phù sa màu mỡ và nguồn nước dồi dào giúp cây trồng phát triển."
+    ],
+    "keyPoints": [
+      "Bên cạnh lúa, vùng còn trồng rau màu và cây ăn quả."
+    ],
+    "images": [],
+    "figures": [],
+    "relatedIds": [
+      "dong-bang-bac-bo__lua-nuoc",
+      "dong-bang-bac-bo__chan-nuoi"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 43,
+        "note": "tr. 43"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "dong-bang-bac-bo__chan-nuoi",
+    "title": "Chăn nuôi và nuôi trồng thuỷ sản",
+    "summary": "Người dân trong vùng chăn nuôi gia súc, gia cầm. Họ còn nuôi trồng thuỷ sản.",
+    "highlights": [
+      "Chăn nuôi là hoạt động sản xuất đi cùng với trồng trọt ở đồng bằng."
+    ],
+    "keyPoints": [
+      "Vùng chăn nuôi gia súc, gia cầm và nuôi trồng thuỷ sản."
+    ],
+    "images": [],
+    "figures": [],
+    "relatedIds": [
+      "dong-bang-bac-bo__rau-mau"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 43,
+        "note": "tr. 43"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "dong-bang-bac-bo__nghe-thu-cong",
+    "title": "Nghề thủ công và làng nghề",
+    "summary": "Vùng có nhiều nghề thủ công truyền thống. Nơi nghề phát triển mạnh đã hình thành các làng nghề, mỗi làng chuyên làm một loại hàng.",
+    "highlights": [
+      "Làng Bát Tràng (Hà Nội) làm gốm; làng Đại Bái (Bắc Ninh) đúc đồng.",
+      "Làng Văn Lâm (Ninh Bình) thêu ren; làng Đồng Xâm (Hưng Yên) chạm bạc.",
+      "Đồ gốm, sứ làm từ đất sét, qua phơi sấy, nung và tráng men.",
+      "Đúc đồng đòi hỏi người thợ có tay nghề cao, khéo léo ở mọi khâu."
+    ],
+    "keyPoints": [
+      "Sản phẩm thủ công được dùng rộng rãi và xuất khẩu ra nhiều nước."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 9,
+        "figure": 4,
+        "page": 44,
+        "caption": "Một số sản phẩm thủ công ở vùng Đồng bằng Bắc Bộ"
+      }
+    ],
+    "relatedIds": [
+      "dong-bang-bac-bo__lang-que"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 44,
+        "note": "tr. 44, Hình 4"
+      }
+    ],
+    "status": "draft"
+  }
+]

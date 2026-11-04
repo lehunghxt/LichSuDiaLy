@@ -1,0 +1,124 @@
+[
+  {
+    "id": "dong-bang-bac-bo__lang-que",
+    "title": "Làng quê truyền thống",
+    "summary": "Làng quê Bắc Bộ thường có luỹ tre xanh, cổng làng, cây đa, giếng nước, sân đình. Một số làng còn có đền, chùa, miếu.",
+    "highlights": [
+      "Cổng làng là cửa ngõ vào làng, nơi người dân nghỉ chân, hóng mát và trẻ em vui chơi.",
+      "Cây đa cho bóng mát, thường ở đầu làng, cuối làng hoặc giữa làng.",
+      "Giếng làng trước đây là nơi lấy nước sinh hoạt chính của dân làng.",
+      "Đình làng thờ Thành hoàng; sân đình là nơi sinh hoạt văn hoá chung."
+    ],
+    "keyPoints": [
+      "Cổng làng, cây đa, giếng nước, sân đình là hình ảnh quen thuộc của làng quê Bắc Bộ."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 10,
+        "figure": 1,
+        "page": 46,
+        "caption": "Một cảnh làng quê truyền thống vùng Đồng bằng Bắc Bộ"
+      },
+      {
+        "lesson": 10,
+        "figure": 2,
+        "page": 47,
+        "caption": "Cổng làng Đường Lâm (thành phố Hà Nội)"
+      },
+      {
+        "lesson": 10,
+        "figure": 3,
+        "page": 47,
+        "caption": "Giếng nước ở Hoa Lư (tỉnh Ninh Bình)"
+      },
+      {
+        "lesson": 10,
+        "figure": 4,
+        "page": 47,
+        "caption": "Đình làng Đình Bảng (tỉnh Bắc Ninh)"
+      }
+    ],
+    "relatedIds": [
+      "dong-bang-bac-bo__nha-o",
+      "dong-bang-bac-bo__le-hoi"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 46,
+        "note": "tr. 46–47, Hình 1, 2, 3, 4"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "dong-bang-bac-bo__le-hoi",
+    "title": "Lễ hội truyền thống",
+    "summary": "Đồng bằng Bắc Bộ có nhiều lễ hội lớn, thường tổ chức vào mùa xuân. Lễ hội để cầu cho mọi người mạnh khoẻ, mùa màng bội thu.",
+    "highlights": [
+      "Một số lễ hội: lễ hội Cổ Loa, hội Lim, hội chùa Hương, hội Gióng, lễ hội Phủ Giày,…",
+      "Người dân mặc trang phục truyền thống, làm lễ tế và tham gia trò chơi.",
+      "Trò chơi dân gian: đánh đu, đấu vật, kéo co, cờ người,…"
+    ],
+    "keyPoints": [
+      "Lễ hội thường diễn ra vào mùa xuân với phần lễ và nhiều trò chơi dân gian."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 10,
+        "figure": 8,
+        "page": 49,
+        "caption": "Trò chơi cờ người trong lễ hội Cổ Loa (thành phố Hà Nội)"
+      }
+    ],
+    "relatedIds": [
+      "dong-bang-bac-bo__hoi-lim",
+      "dong-bang-bac-bo__lang-que"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 48,
+        "note": "tr. 48–49, Hình 8"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "dong-bang-bac-bo__hoi-lim",
+    "title": "Hội Lim và hát Quan họ",
+    "summary": "Hội Lim ở tỉnh Bắc Ninh là một lễ hội nổi tiếng của vùng. Trong hội Lim có hát Quan họ.",
+    "highlights": [
+      "Sách có ảnh các liền anh, liền chị hát Quan họ trên thuyền trong hội Lim."
+    ],
+    "keyPoints": [
+      "Hát Quan họ là nét đặc sắc trong hội Lim (Bắc Ninh)."
+    ],
+    "provinceId": "bac-ninh",
+    "images": [],
+    "figures": [
+      {
+        "lesson": 10,
+        "figure": 7,
+        "page": 49,
+        "caption": "Hát Quan họ trong hội Lim (tỉnh Bắc Ninh)"
+      }
+    ],
+    "relatedIds": [
+      "dong-bang-bac-bo__le-hoi"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 48,
+        "note": "tr. 48–49, Hình 7"
+      }
+    ],
+    "status": "draft"
+  }
+]

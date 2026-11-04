@@ -114,3 +114,25 @@ Không thuộc vùng: Hà Nội, Bắc Ninh, Quảng Ninh (thuộc Đồng bằn
 - **Tọa độ** các địa danh: sách chỉ có lược đồ. Cần nguồn tọa độ tin cậy riêng trước khi đặt marker.
 - **Ranh giới hành chính** dạng GeoJSON cho 34 tỉnh mới.
 - Ảnh minh hoạ: dùng ảnh có giấy phép mở, không dùng ảnh trong SGK.
+
+## Chủ đề 3 — Đồng bằng Bắc Bộ (ghi chép theo bài)
+
+| Bài | Ý chính | Trang |
+|---|---|---|
+| 8 | Vị trí: giáp Trung du và miền núi phía Bắc, Bắc Trung Bộ và Nam Trung Bộ, Trung Quốc; phía đông là biển | 36–37 |
+| 8 | Địa hình phần lớn bằng phẳng, cao trung bình dưới 25 m; đồi núi thấp ở đông bắc | 37 |
+| 8 | Khí hậu nhiệt đới gió mùa, TB năm trên 23°C, mùa đông lạnh ít mưa, mưa 1 500–2 000 mm | 38 |
+| 8 | Hệ thống sông Hồng, sông Thái Bình; nhánh: Đáy, Đuống, Luộc, Trà Lý, Lục Nam | 38 |
+| 8 | Đất phù sa là chính; đồi núi đất phe-ra-lít; ven biển đất phèn, mặn; VQG Cát Bà, Xuân Thuỷ | 38–39 |
+| 8 | Thuận lợi, khó khăn; vấn đề môi trường và biện pháp bảo vệ | 39–40 |
+| 9 | Gần 25 triệu dân (2024), đông nhất cả nước; chủ yếu người Kinh, có Mường, Sán Dìu | 41–42 |
+| 9 | Lúa nước: vùng lúa lớn thứ hai; ô "Em có biết?": rau màu, cây ăn quả, chăn nuôi, thuỷ sản | 43 |
+| 9 | Làng nghề: Bát Tràng (gốm), Đại Bái (đúc đồng), Văn Lâm (thêu ren), Đồng Xâm (chạm bạc) | 44 |
+| 9 | Đê sông Hồng dài hơn 1 000 km, lớn nhất nước | 44–45 |
+| 10 | Làng quê: cổng làng, cây đa, giếng nước, đình (Đường Lâm, Hoa Lư, Đình Bảng); nhà ở 3–5 gian | 46–48 |
+| 10 | Lễ hội: Cổ Loa, hội Lim (hát Quan họ), chùa Hương, Gióng, Phủ Giày; đánh đu, đấu vật, kéo co, cờ người | 48–49 |
+| 11 | Sông Hồng dài ~556 km ở Việt Nam, từ A Mú Sung (Lào Cai) tới cửa Ba Lạt; tên khác Nhị Hà, Hồng Hà, Xích Đằng, Kẻ Chợ, sông Cái | 50 |
+| 11 | Văn minh sông Hồng ~2 700 năm trước: Văn Lang, Âu Lạc, trống đồng Đông Sơn (Ngọc Lũ), thành Cổ Loa; đời sống vật chất, tinh thần người Việt cổ | 51–53 |
+| 12 | Năm 1010 dời đô về Đại La → Thăng Long; tên qua các thời; Thăng Long tứ trấn; sự tích Hồ Gươm; Hoàng Diệu 1882; 2-9-1945; "Điện Biên Phủ trên không" 1972 | 54–57 |
+| 12 | Hà Nội ngày nay: trung tâm chính trị, kinh tế, văn hoá, giáo dục; "Thành phố vì hoà bình" (1999) | 58 |
+| 13 | Văn Miếu – Quốc Tử Giám xây từ thời Lý; Khuê Văn Các; 82 bia Tiến sĩ (UNESCO 2010); Di tích quốc gia đặc biệt (2012) | 59–62 |

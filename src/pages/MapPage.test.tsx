@@ -69,7 +69,7 @@ test('RegionList shows all regions; coming_soon ones labelled "Sắp ra mắt"',
   await screen.findByRole('list', { name: 'Các vùng địa lí' })
   const buttons = within(regionList()).getAllByRole('button')
   expect(buttons).toHaveLength(4)
-  expect(within(regionList()).getByRole('button', { name: /Đồng bằng Bắc Bộ/ })).toHaveTextContent('Sắp ra mắt')
+  expect(within(regionList()).getByRole('button', { name: /Nam Bộ/ })).toHaveTextContent('Sắp ra mắt')
   expect(within(regionList()).getByRole('button', { name: /Trung du và miền núi phía Bắc/ })).not.toHaveTextContent(
     'Sắp ra mắt',
   )

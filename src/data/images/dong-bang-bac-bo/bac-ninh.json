@@ -4,7 +4,9 @@
     "provider": "wikimedia-commons",
     "provinceId": "bac-ninh",
     "section": "van-hoa",
-    "itemIds": [],
+    "itemIds": [
+      "dong-bang-bac-bo__hoi-lim"
+    ],
     "alt": "Bốn liền chị mặc áo mớ ba mớ bảy, cầm nón quai thao",
     "caption": "Các liền chị hát quan họ ở đền Đô (tỉnh Bắc Ninh).",
     "src": {

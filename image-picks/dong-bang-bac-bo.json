@@ -3,7 +3,9 @@
     "file": "File:Constellation of Literature pavilion, Temple of Literature, Hanoi, Vietnam, 20240123 0939 3103.jpg",
     "provinceId": "ha-noi",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "dong-bang-bac-bo__van-mieu"
+    ],
     "alt": "Gác Khuê Văn hai tầng, có cửa sổ tròn",
     "caption": "Khuê Văn Các trong Văn Miếu – Quốc Tử Giám (Thủ đô Hà Nội).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -12,7 +14,9 @@
     "file": "File:Hanoi - Turtle Tower (Tháp Rùa), Hoàn Kiếm Lake.jpg",
     "provinceId": "ha-noi",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "dong-bang-bac-bo__lich-su-thang-long"
+    ],
     "cover": true,
     "alt": "Tháp Rùa nhỏ giữa hồ, phía sau là phố",
     "caption": "Tháp Rùa trên hồ Hoàn Kiếm (Thủ đô Hà Nội).",
@@ -31,7 +35,9 @@
     "file": "File:Central Sector of the Imperial Citadel of Thang Long - Hanoi.jpg",
     "provinceId": "ha-noi",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "dong-bang-bac-bo__thang-long-ten-goi"
+    ],
     "alt": "Cổng thành cổ bằng đá có ba cửa vòm",
     "caption": "Đoan Môn, Khu trung tâm Hoàng thành Thăng Long (Thủ đô Hà Nội).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -49,7 +55,9 @@
     "file": "File:Co Loa drums.JPG",
     "provinceId": "ha-noi",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "dong-bang-bac-bo__van-minh-song-hong"
+    ],
     "alt": "Chiếc trống đồng cổ đặt trên bệ",
     "caption": "Trống đồng Cổ Loa trưng bày ở Bảo tàng Hà Nội (Thủ đô Hà Nội).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -58,7 +66,9 @@
     "file": "File:Bat-Trang-Ceramic-Village1.jpg",
     "provinceId": "ha-noi",
     "section": "van-hoa",
-    "itemIds": [],
+    "itemIds": [
+      "dong-bang-bac-bo__nghe-thu-cong"
+    ],
     "alt": "Người đàn ông dắt xe đạp chở đầy đồ gốm",
     "caption": "Chở hàng gốm ở làng gốm Bát Tràng (Thủ đô Hà Nội).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -112,7 +122,9 @@
     "file": "File:Quan Ho-Ensemble.JPG",
     "provinceId": "bac-ninh",
     "section": "van-hoa",
-    "itemIds": [],
+    "itemIds": [
+      "dong-bang-bac-bo__hoi-lim"
+    ],
     "alt": "Bốn liền chị mặc áo mớ ba mớ bảy, cầm nón quai thao",
     "caption": "Các liền chị hát quan họ ở đền Đô (tỉnh Bắc Ninh).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"

@@ -31,7 +31,7 @@ test('regions section: active region links to the map, others marked "Sắp ra m
   const cards = within(list).getAllByRole('listitem')
   expect(cards).toHaveLength(4)
   expect(within(list).getByRole('link', { name: /Trung du và miền núi phía Bắc/ })).toHaveAttribute('href', `/ban-do/${TDMNPB}`)
-  expect(within(list).getAllByText('Sắp ra mắt')).toHaveLength(3)
+  expect(within(list).getAllByText('Sắp ra mắt')).toHaveLength(2)
 })
 
 test('home page lists the sections of the region outline (no old topic names)', async () => {
