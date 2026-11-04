@@ -136,3 +136,22 @@ Không thuộc vùng: Hà Nội, Bắc Ninh, Quảng Ninh (thuộc Đồng bằn
 | 12 | Năm 1010 dời đô về Đại La → Thăng Long; tên qua các thời; Thăng Long tứ trấn; sự tích Hồ Gươm; Hoàng Diệu 1882; 2-9-1945; "Điện Biên Phủ trên không" 1972 | 54–57 |
 | 12 | Hà Nội ngày nay: trung tâm chính trị, kinh tế, văn hoá, giáo dục; "Thành phố vì hoà bình" (1999) | 58 |
 | 13 | Văn Miếu – Quốc Tử Giám xây từ thời Lý; Khuê Văn Các; 82 bia Tiến sĩ (UNESCO 2010); Di tích quốc gia đặc biệt (2012) | 59–62 |
+
+## Chủ đề 4 — Bắc Trung Bộ và Nam Trung Bộ (ghi chép theo bài)
+
+| Bài | Ý chính | Trang |
+|---|---|---|
+| 15 | Vị trí giữa lãnh thổ, cầu nối Bắc – Nam; biển rộng, quần đảo Hoàng Sa, Trường Sa | 65–66 |
+| 15 | Địa hình tây núi, cao nguyên xếp tầng (Bảng 1: Kon Tum 500, Pleiku 800, Đắk Lắk 500, Mơ Nông 800, Lâm Viên 1 500, Di Linh 1 000 m); đông đồng bằng hẹp, cồn cát, đầm phá; phá Tam Giang – Cầu Hai | 66–67 |
+| 15 | Khí hậu: Bạch Mã chắn gió mùa Đông Bắc; mưa bão tháng 9–12; sông ngắn dốc; đất phù sa / phe-ra-lít | 68 |
+| 15 | Rừng: rậm nhiệt đới, khộp, ngập mặn; vai trò, bảo vệ | 69 |
+| 15 | Thuận lợi, thiên tai và biện pháp phòng chống; Bảng 2 Buôn Ma Thuột | 70–71 |
+| 16 | Hơn 27 triệu dân (2024); Kinh, Chăm, Thái, Mường, Gia Rai, Ê Đê, Ba Na | 72–73 |
+| 16 | Kinh tế biển (Bảng 1): làm muối, đánh bắt – nuôi trồng hải sản, du lịch, cảng biển | 73–74 |
+| 16 | Cây công nghiệp (cà phê, hồ tiêu, cao su, chè); chăn nuôi lợn, bò; thuỷ điện Ialy, điện gió, mặt trời | 75–77 |
+| 17 | Di sản thế giới: Thành nhà Hồ, Phong Nha – Kẻ Bàng, Huế, Hội An, Nhã nhạc, Mộc bản Triều Nguyễn, Cồng chiêng, Mỹ Sơn, Bài chòi | 78–80 |
+| 17 | Lễ hội: Rước cá Ông, Ka-tê, Khao lề thế lính Hoàng Sa, Đua voi; nhà ở, nhà rông, nhà dài | 80–83 |
+| 18 | Truyền thống yêu nước: Hương Khê, Duy tân, chống thuế, Xô viết Nghệ – Tĩnh; Huỳnh Thúc Kháng, Nguyễn Ái Quốc – Hồ Chí Minh, Anh hùng Núp, N'Trang Lơng | 84–87 |
+| 19 | Cố đô Huế: sông Hương, núi Ngự Bình, Thiên Mụ, Kinh thành ba vòng; Tôn Thất Thuyết 1885; CMT8 ở Huế; bảo tồn | 88–91 |
+| 20 | Phố cổ Hội An: nhà cổ, hội quán người Hoa, Chùa Cầu; bảo tồn | 92–95 |
+| 21 | Không gian văn hoá Cồng chiêng Tây Nguyên (UNESCO 2005); lễ hội Cồng chiêng | 96–98 |

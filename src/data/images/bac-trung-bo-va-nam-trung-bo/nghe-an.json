@@ -4,7 +4,9 @@
     "provider": "wikimedia-commons",
     "provinceId": "nghe-an",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__nguyen-ai-quoc"
+    ],
     "alt": "Cây đa lớn trước dãy nhà mái ngói",
     "caption": "Khu di tích Kim Liên (tỉnh Nghệ An).",
     "src": {
@@ -41,7 +43,9 @@
     "provider": "wikimedia-commons",
     "provinceId": "nghe-an",
     "section": "thien-nhien",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__bai-bien"
+    ],
     "alt": "Bãi cát với những chiếc thuyền thúng, xa xa là núi",
     "caption": "Bãi biển Cửa Lò (tỉnh Nghệ An).",
     "src": {
@@ -78,7 +82,9 @@
     "provider": "wikimedia-commons",
     "provinceId": "nghe-an",
     "section": "thien-nhien",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__truong-son"
+    ],
     "alt": "Nhà sàn mái lá giữa rừng, phía sau là núi",
     "caption": "Phong cảnh Vườn quốc gia Pù Mát, dãy Trường Sơn (tỉnh Nghệ An).",
     "src": {

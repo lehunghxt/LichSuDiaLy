@@ -4,7 +4,9 @@
     "provider": "wikimedia-commons",
     "provinceId": "quang-tri",
     "section": "thien-nhien",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__phong-nha"
+    ],
     "alt": "Thuyền chở khách đi vào lòng hang có nhiều nhũ đá",
     "caption": "Động Phong Nha, Vườn quốc gia Phong Nha – Kẻ Bàng (tỉnh Quảng Trị, trước đây thuộc tỉnh Quảng Bình).",
     "src": {
@@ -41,7 +43,9 @@
     "provider": "wikimedia-commons",
     "provinceId": "quang-tri",
     "section": "thien-nhien",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__phong-nha"
+    ],
     "alt": "Những măng đá khổng lồ trong lòng hang rộng",
     "caption": "Măng đá trong hang Sơn Đoòng (tỉnh Quảng Trị, trước đây thuộc tỉnh Quảng Bình).",
     "src": {

@@ -4,7 +4,9 @@
     "provider": "wikimedia-commons",
     "provinceId": "hue",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__co-do-hue"
+    ],
     "alt": "Cổng thành lớn có lầu mái vàng, phía trước là cầu đá",
     "caption": "Cổng chính vào Hoàng thành Huế (thành phố Huế).",
     "src": {
@@ -41,7 +43,9 @@
     "provider": "wikimedia-commons",
     "provinceId": "hue",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__co-do-hue"
+    ],
     "alt": "Tháp bảy tầng phía sau ngôi chùa giữa vườn cây",
     "caption": "Chùa Thiên Mụ (thành phố Huế).",
     "src": {
@@ -78,7 +82,9 @@
     "provider": "wikimedia-commons",
     "provinceId": "hue",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__co-do-hue"
+    ],
     "alt": "Bậc thang lớn dẫn lên lăng có trụ cao",
     "caption": "Lăng vua Khải Định (thành phố Huế).",
     "src": {

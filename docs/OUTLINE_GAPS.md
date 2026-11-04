@@ -13,3 +13,7 @@ Theo quy tắc "không bịa nội dung", các mục này hiện "Nội dung đa
 | Đồng bằng Bắc Bộ | Văn hóa → Trang phục truyền thống (áo tứ thân, nón quai thao) | Bài 10, tr. 48 | Sách chỉ nói người dân mặc trang phục truyền thống khi dự lễ hội; không tả áo tứ thân, nón quai thao. |
 | Đồng bằng Bắc Bộ | Văn hóa → Ẩm thực truyền thống | Bài 8–13 | Không có đoạn nào về món ăn của vùng. |
 | Đồng bằng Bắc Bộ | Dân cư và hoạt động sản xuất → Trồng rau màu và cây vụ đông | Bài 9, tr. 43 | Đã viết mục ngắn theo ô "Em có biết?" (rau màu, cây ăn quả); sách không nhắc "cây vụ đông". |
+| Bắc Trung Bộ và Nam Trung Bộ | Dân cư và hoạt động sản xuất → Nuôi trồng thủy sản | Bài 16, tr. 74 | Sách gộp "đánh bắt và nuôi trồng hải sản" thành một dòng trong Bảng 1; nội dung đã nằm ở mục "Đánh bắt hải sản". |
+| Bắc Trung Bộ và Nam Trung Bộ | Văn hóa → Dân ca Ví, Giặm Nghệ Tĩnh | Bài 17, tr. 79 | Chỉ có tên trong chú giải bản đồ di sản (Hình 2), không có đoạn mô tả. |
+| Bắc Trung Bộ và Nam Trung Bộ | Văn hóa → Trang phục truyền thống | Bài 15–21 | Sách không có đoạn nào về trang phục của vùng. |
+| Bắc Trung Bộ và Nam Trung Bộ | Văn hóa → Ẩm thực miền Trung | Bài 15–21 | Sách không có đoạn nào về món ăn của vùng. |

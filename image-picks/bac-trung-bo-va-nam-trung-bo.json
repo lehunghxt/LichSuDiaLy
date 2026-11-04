@@ -2,8 +2,10 @@
   {
     "file": "File:Ho dynasty's citadel, Vietnam.jpg",
     "provinceId": "thanh-hoa",
-    "section": "lich-su",
-    "itemIds": [],
+    "section": "van-hoa",
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__di-san-the-gioi"
+    ],
     "alt": "Cổng thành bằng những khối đá lớn, có ba cửa vòm",
     "caption": "Thành nhà Hồ (tỉnh Thanh Hóa).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -12,7 +14,9 @@
     "file": "File:Bãi biển Sầm Sơn.JPG",
     "provinceId": "thanh-hoa",
     "section": "thien-nhien",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__bai-bien"
+    ],
     "cover": true,
     "alt": "Bãi cát rộng, xa xa là biển và núi nhỏ",
     "caption": "Bãi biển Sầm Sơn (tỉnh Thanh Hóa).",
@@ -31,7 +35,9 @@
     "file": "File:Kim Lien Monuments Park.JPG",
     "provinceId": "nghe-an",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__nguyen-ai-quoc"
+    ],
     "alt": "Cây đa lớn trước dãy nhà mái ngói",
     "caption": "Khu di tích Kim Liên (tỉnh Nghệ An).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -40,7 +46,9 @@
     "file": "File:Bãi biển Cửa Lò..jpg",
     "provinceId": "nghe-an",
     "section": "thien-nhien",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__bai-bien"
+    ],
     "alt": "Bãi cát với những chiếc thuyền thúng, xa xa là núi",
     "caption": "Bãi biển Cửa Lò (tỉnh Nghệ An).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -49,7 +57,9 @@
     "file": "File:Annamite range pu mat 2007 05.jpg",
     "provinceId": "nghe-an",
     "section": "thien-nhien",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__truong-son"
+    ],
     "alt": "Nhà sàn mái lá giữa rừng, phía sau là núi",
     "caption": "Phong cảnh Vườn quốc gia Pù Mát, dãy Trường Sơn (tỉnh Nghệ An).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -58,7 +68,9 @@
     "file": "File:Thiencambeach.jpg",
     "provinceId": "ha-tinh",
     "section": "thien-nhien",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__bai-bien"
+    ],
     "alt": "Bãi biển cát vàng, có ngọn núi nhô ra biển",
     "caption": "Bãi biển Thiên Cầm (tỉnh Hà Tĩnh).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -67,7 +79,9 @@
     "file": "File:Dong Hoi Phong Nha grotten (68776).jpg",
     "provinceId": "quang-tri",
     "section": "thien-nhien",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__phong-nha"
+    ],
     "alt": "Thuyền chở khách đi vào lòng hang có nhiều nhũ đá",
     "caption": "Động Phong Nha, Vườn quốc gia Phong Nha – Kẻ Bàng (tỉnh Quảng Trị, trước đây thuộc tỉnh Quảng Bình).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -76,7 +90,9 @@
     "file": "File:Son Doong Cave DB (1).jpg",
     "provinceId": "quang-tri",
     "section": "thien-nhien",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__phong-nha"
+    ],
     "alt": "Những măng đá khổng lồ trong lòng hang rộng",
     "caption": "Măng đá trong hang Sơn Đoòng (tỉnh Quảng Trị, trước đây thuộc tỉnh Quảng Bình).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -93,8 +109,10 @@
   {
     "file": "File:Hà Tĩnh Province scenery.jpg",
     "provinceId": "ha-tinh",
-    "section": "thien-nhien",
-    "itemIds": [],
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__cay-trong"
+    ],
     "alt": "Cánh đồng lúa trong sương sớm, có người và trâu",
     "caption": "Đồng ruộng ở tỉnh Hà Tĩnh.",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -103,7 +121,9 @@
     "file": "File:Hue Vietnam Citadel-of-Huế-01.jpg",
     "provinceId": "hue",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__co-do-hue"
+    ],
     "alt": "Cổng thành lớn có lầu mái vàng, phía trước là cầu đá",
     "caption": "Cổng chính vào Hoàng thành Huế (thành phố Huế).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -112,7 +132,9 @@
     "file": "File:Hue Vietnam Thien-Mu-Temple-and-Pagoda-01.jpg",
     "provinceId": "hue",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__co-do-hue"
+    ],
     "alt": "Tháp bảy tầng phía sau ngôi chùa giữa vườn cây",
     "caption": "Chùa Thiên Mụ (thành phố Huế).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -121,7 +143,9 @@
     "file": "File:Emperor Khai Dinh in Hue (39543600561).jpg",
     "provinceId": "hue",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__co-do-hue"
+    ],
     "alt": "Bậc thang lớn dẫn lên lăng có trụ cao",
     "caption": "Lăng vua Khải Định (thành phố Huế).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -130,7 +154,9 @@
     "file": "File:Hội An, Ancient Town, 2020-01 CN-06.jpg",
     "provinceId": "da-nang",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__hoi-an"
+    ],
     "alt": "Dãy nhà cổ tường vàng bên con phố có đèn lồng",
     "caption": "Phố cổ Hội An (thành phố Đà Nẵng, trước đây thuộc tỉnh Quảng Nam).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -138,8 +164,10 @@
   {
     "file": "File:My Son Sanctuary Vietnam 04.jpg",
     "provinceId": "da-nang",
-    "section": "lich-su",
-    "itemIds": [],
+    "section": "van-hoa",
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__my-son"
+    ],
     "alt": "Ngôi tháp cổ bằng gạch đỏ giữa cây cỏ",
     "caption": "Một ngôi tháp ở Khu đền tháp Mỹ Sơn (thành phố Đà Nẵng, trước đây thuộc tỉnh Quảng Nam).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -166,7 +194,9 @@
     "file": "File:BahnarRong.jpg",
     "provinceId": "quang-ngai",
     "section": "van-hoa",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__nha-o"
+    ],
     "alt": "Ngôi nhà rông mái lá cao vút",
     "caption": "Nhà rông của người Ba Na ở làng Kon Kơ Tu (tỉnh Quảng Ngãi, trước đây thuộc tỉnh Kon Tum).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -193,7 +223,9 @@
     "file": "File:Arriving in Nha Trang - Vietnam.jpg",
     "provinceId": "khanh-hoa",
     "section": "thien-nhien",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__bai-bien"
+    ],
     "alt": "Vịnh biển rộng với đảo và núi, có cầu vồng mờ",
     "caption": "Vịnh Nha Trang (tỉnh Khánh Hòa).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -247,7 +279,9 @@
     "file": "File:Congchieng01.JPG",
     "provinceId": "dak-lak",
     "section": "van-hoa",
-    "itemIds": [],
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng"
+    ],
     "alt": "Sân khấu biểu diễn cồng chiêng về đêm, đông người xem",
     "caption": "Lễ hội Cồng chiêng ở Đắk Lắk (tỉnh Đắk Lắk).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
