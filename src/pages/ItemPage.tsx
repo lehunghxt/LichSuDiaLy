@@ -2,7 +2,7 @@ import { ArrowLeft } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router'
 import { EmptyState, ErrorState, LoadingState } from '../components/ui/states'
-import { itemSlug, topicSearch } from '../features/content/links'
+import { itemSlug } from '../features/content/links'
 import { repository } from '../features/content/repository'
 import type { ContentItem } from '../types/content'
 
@@ -48,5 +48,6 @@ export default function ItemPage() {
     )
   }
   const { item } = state
-  return <Navigate replace to={`/ban-do/${item.regionId}${topicSearch(item.section, itemSlug(item.id))}`} />
+  // Dạng link cũ: trang bản đồ tự tìm mục dàn ý chứa mục nội dung này
+  return <Navigate replace to={`/ban-do/${item.regionId}?chu-de=${item.section}&muc=${itemSlug(item.id)}`} />
 }

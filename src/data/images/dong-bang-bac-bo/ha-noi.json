@@ -42,6 +42,7 @@
     "provinceId": "ha-noi",
     "section": "lich-su",
     "itemIds": [],
+    "cover": true,
     "alt": "Tháp Rùa nhỏ giữa hồ, phía sau là phố",
     "caption": "Tháp Rùa trên hồ Hoàn Kiếm (Thủ đô Hà Nội).",
     "src": {

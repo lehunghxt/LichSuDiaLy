@@ -105,3 +105,8 @@ test('mergeStatus keeps verified when attribution and file are unchanged', () =>
   const changed = { ...image, status: 'verified', attribution: { ...image.attribution, license: 'CC BY-SA 3.0' } }
   expect(mergeStatus(image, [changed]).status).toBe('draft')
 })
+
+test('toWebImage keeps the cover flag only when the pick sets it', () => {
+  expect(toWebImage({ ...pick(), cover: true }, page('File:Hoàng Liên Sơn mountains 04.jpg')).image.cover).toBe(true)
+  expect(toWebImage(pick(), page('File:Hoàng Liên Sơn mountains 04.jpg')).image).not.toHaveProperty('cover')
+})

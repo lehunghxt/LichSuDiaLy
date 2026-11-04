@@ -117,6 +117,8 @@ export interface WebImage {
   provinceId: string | null
   section: SectionId
   itemIds: string[]
+  /** Ảnh bìa của vùng (đặt trong image-picks); không có thì chọn theo quy tắc trong library.regionCover */
+  cover?: true
   alt: string
   caption: string
   src: { url: string; width: number; height: number; srcset: { url: string; width: number }[] }

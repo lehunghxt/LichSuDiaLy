@@ -80,34 +80,22 @@ test('without selection, panel invites the student to choose a region', async ()
   expect(await screen.findByText('Em hãy chọn một vùng trên bản đồ để bắt đầu khám phá nhé!')).toBeInTheDocument()
 })
 
-test('clicking region button navigates and panel shows region name, intro and 5 topic buttons', async () => {
+test('clicking region button navigates and panel shows region name, intro and its outline', async () => {
   const router = renderAt('/ban-do')
   await userEvent.click(await screen.findByRole('button', { name: /Trung du và miền núi phía Bắc/ }))
   expect(router.state.location.pathname).toBe('/ban-do/trung-du-mien-nui-phia-bac')
   const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
   expect(within(panel).getByText(/vùng duy nhất của nước ta không giáp biển/)).toBeInTheDocument()
-  for (const label of ['Thiên nhiên', 'Dân cư và hoạt động sản xuất', 'Văn hóa', 'Lịch sử và di tích']) {
-    expect(within(panel).getByRole('button', { name: new RegExp(label) })).toBeInTheDocument()
-  }
+  expect(await within(panel).findByRole('navigation', { name: 'Dàn ý vùng' })).toBeInTheDocument()
   expect(screen.getByTestId('map')).toHaveAttribute('data-selected', 'trung-du-mien-nui-phia-bac')
 })
 
-test('clicking a topic stays on the map page and opens the fullscreen topic modal', async () => {
-  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
-  const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
-  await userEvent.click(await within(panel).findByRole('button', { name: /Dân cư và hoạt động sản xuất/ }))
-  expect(router.state.location.pathname).toBe('/ban-do/trung-du-mien-nui-phia-bac')
-  expect(router.state.location.search).toBe('?chu-de=dan-cu-san-xuat')
-  const dialog = await screen.findByRole('dialog', { name: 'Dân cư và hoạt động sản xuất' })
-  expect(within(dialog).getByRole('heading', { level: 3, name: 'Dân cư và các dân tộc' })).toBeInTheDocument()
-})
-
 test('selecting another item in the modal updates ?muc= and the detail', async () => {
-  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=dan-cu-san-xuat')
+  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac?phan=dan-cu-san-xuat&muc=cac-dan-toc')
   const dialog = await screen.findByRole('dialog', { name: 'Dân cư và hoạt động sản xuất' })
   const list = within(dialog).getByRole('list', { name: 'Các mục trong chủ đề' })
   await userEvent.click(within(list).getByRole('button', { name: 'Khai thác và sử dụng khoáng sản' }))
-  expect(router.state.location.search).toBe('?chu-de=dan-cu-san-xuat&muc=su-dung-khoang-san')
+  expect(router.state.location.search).toBe('?phan=dan-cu-san-xuat&muc=khai-thac-khoang-san&bai=su-dung-khoang-san')
   expect(within(dialog).getByRole('heading', { level: 3, name: 'Khai thác và sử dụng khoáng sản' })).toBeInTheDocument()
 })
 
@@ -143,7 +131,7 @@ test('old /dia-danh link redirects to the map with that item open', async () => 
   const router = renderAt('/dia-danh/trung-du-mien-nui-phia-bac__cot-co-lung-cu')
   const dialog = await screen.findByRole('dialog', { name: 'Thiên nhiên' })
   expect(within(dialog).getByRole('heading', { level: 3, name: 'Cột cờ Lũng Cú' })).toBeInTheDocument()
-  expect(router.state.location.search).toBe('?chu-de=thien-nhien&muc=cot-co-lung-cu')
+  await waitFor(() => expect(router.state.location.search).toBe('?phan=thien-nhien&muc=vi-tri-dia-li-va-ban-do-vung&bai=cot-co-lung-cu'))
 })
 
 test('unknown /dia-danh id shows not found with link to the map', async () => {
@@ -187,8 +175,8 @@ test('selected province is shown prominently at the top of the panel', async () 
   const card = within(panel).getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })
   expect(within(card).getByRole('heading', { name: 'Tỉnh Phú Thọ' })).toBeInTheDocument()
   expect(card).toHaveTextContent('Thuộc vùng Trung du và miền núi phía Bắc')
-  // nằm trên phần "Khám phá theo chủ đề" để em thấy ngay
-  const topics = within(panel).getByRole('heading', { name: 'Khám phá theo chủ đề' })
+  // nằm trên dàn ý vùng để em thấy ngay
+  const topics = within(panel).getByRole('navigation', { name: 'Dàn ý vùng' })
   expect(card.compareDocumentPosition(topics) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
   await userEvent.click(within(card).getByRole('button', { name: 'Bỏ chọn tỉnh' }))
   expect(screen.queryByRole('region', { name: /Tỉnh đang xem/ })).not.toBeInTheDocument()
@@ -221,14 +209,15 @@ test('panel lists featured places with province; clicking one opens the modal at
   const fansipan = within(places).getByRole('button', { name: /Đỉnh Phan-xi-păng/ })
   expect(fansipan).toHaveTextContent('Lào Cai')
   await userEvent.click(fansipan)
-  expect(router.state.location.search).toBe('?chu-de=thien-nhien&muc=dinh-phan-xi-pang')
-  expect(await screen.findByRole('dialog', { name: 'Thiên nhiên' })).toBeInTheDocument()
+  expect(router.state.location.search).toBe('?phan=thien-nhien&muc=dia-hinh&bai=dinh-phan-xi-pang')
+  const dialog = await screen.findByRole('dialog', { name: 'Thiên nhiên' })
+  expect(within(dialog).getByRole('heading', { level: 3, name: 'Đỉnh Phan-xi-păng' })).toBeInTheDocument()
 })
 
 test('"Khám phá chi tiết vùng này" opens the modal at the first topic', async () => {
   const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   await userEvent.click(await screen.findByRole('button', { name: /Khám phá chi tiết vùng này/ }))
-  expect(router.state.location.search).toBe('?chu-de=thien-nhien')
+  expect(router.state.location.search).toBe('?phan=thien-nhien&muc=vi-tri-dia-li-va-ban-do-vung')
   expect(await screen.findByRole('dialog', { name: 'Thiên nhiên' })).toBeInTheDocument()
 })
 
@@ -348,4 +337,60 @@ test('hint card is hidden once a region is selected', async () => {
   renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   await screen.findByRole('list', { name: 'Các vùng địa lí' })
   expect(screen.queryByText('Nhấn vào một vùng trên bản đồ để khám phá thông tin chi tiết.')).not.toBeInTheDocument()
+})
+
+const outlineNav = async () => screen.findByRole('navigation', { name: 'Dàn ý vùng' })
+
+test('region panel shows the outline sections in doc order with their topics', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const nav = await outlineNav()
+  expect(within(nav).getAllByRole('heading', { level: 3 }).map((h) => h.textContent)).toEqual([
+    'Thiên nhiên',
+    'Dân cư và hoạt động sản xuất',
+    'Văn hóa',
+    'Lịch sử và di tích',
+  ])
+  const nature = within(nav).getByRole('list', { name: 'Thiên nhiên' })
+  expect(within(nature).getAllByRole('button').map((b) => b.dataset.topic)).toEqual([
+    'vi-tri-dia-li-va-ban-do-vung',
+    'dia-hinh',
+    'khi-hau',
+    'song-ngoi',
+    'khoang-san',
+    'thien-nhien-va-canh-quan-tieu-bieu',
+  ])
+  expect(screen.queryByText('Khám phá theo chủ đề')).not.toBeInTheDocument()
+})
+
+test('topic without content is shown greyed with "đang cập nhật"', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const nav = await outlineNav()
+  const people = within(nav).getByRole('list', { name: 'Dân cư và hoạt động sản xuất' })
+  expect(within(people).getByRole('button', { name: /Trang phục truyền thống/ })).toHaveTextContent('đang cập nhật')
+  expect(within(people).getByRole('button', { name: /Các dân tộc/ })).not.toHaveTextContent('đang cập nhật')
+})
+
+test('clicking a topic opens the modal on that topic', async () => {
+  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const nav = await outlineNav()
+  await userEvent.click(within(nav).getByRole('button', { name: /^Địa hình/ }))
+  expect(router.state.location.search).toBe('?phan=thien-nhien&muc=dia-hinh')
+  const dialog = await screen.findByRole('dialog', { name: 'Thiên nhiên' })
+  expect(within(dialog).getByRole('heading', { level: 3, name: 'Địa hình đồi núi' })).toBeInTheDocument()
+})
+
+test('coming-soon region shows its outline greyed and the image gallery', async () => {
+  renderAt('/ban-do/nam-bo')
+  const nav = await outlineNav()
+  const buttons = within(nav).getAllByRole('button')
+  expect(buttons.length).toBe(25)
+  for (const b of buttons) expect(b).toHaveTextContent('đang cập nhật')
+  expect(await screen.findByRole('region', { name: 'Hình ảnh của vùng' })).toBeInTheDocument()
+})
+
+test('legacy ?chu-de=landmark&muc=dinh-phan-xi-pang opens the matching section and topic', async () => {
+  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=landmark&muc=dinh-phan-xi-pang')
+  const dialog = await screen.findByRole('dialog', { name: 'Thiên nhiên' })
+  expect(within(dialog).getByRole('heading', { level: 3, name: 'Đỉnh Phan-xi-păng' })).toBeInTheDocument()
+  await waitFor(() => expect(router.state.location.search).toBe('?phan=thien-nhien&muc=dia-hinh&bai=dinh-phan-xi-pang'))
 })

@@ -4,18 +4,18 @@ import { CompactNav } from '../components/layout/CompactNav'
 import { useNavigate, useParams, useSearchParams } from 'react-router'
 import { LoadingState } from '../components/ui/states'
 import { itemSlug, topicSearch } from '../features/content/links'
-import { getItemsBySection, repository } from '../features/content/repository'
+import { findTopic, isSection, legacyTarget, topicOfItem } from '../features/content/outlineNav'
+import { repository } from '../features/content/repository'
 import { TopicModal } from '../features/content/TopicModal'
 import { useRegionContent } from '../features/content/useRegionContent'
+import { useRegionOutline } from '../features/content/useRegionOutline'
 import { useRegionImages } from '../features/images/useRegionImages'
 import { MapInfoPanel } from '../features/map/MapInfoPanel'
 import { RegionList } from '../features/map/RegionList'
 import { useProgress } from '../features/progress/useProgress'
-import { SECTIONS, type SectionId } from '../types/content'
+import type { ContentItem, SectionId } from '../types/content'
 
 const VietnamMap = lazy(() => import('../features/map/VietnamMap'))
-
-const isTopic = (v: string | null): v is SectionId => SECTIONS.some((c) => c === v)
 
 export default function MapPage() {
   const { regionId } = useParams()
@@ -26,16 +26,24 @@ export default function MapPage() {
   const [provinceId, setProvinceId] = useState<string | null>(null)
   const content = useRegionContent(region?.status === 'active' ? region.id : undefined)
   const images = useRegionImages(region?.id)
+  const outline = useRegionOutline(region?.id)
   const { markRegionVisited, markItemViewed } = useProgress()
 
-  const topicParam = params.get('chu-de')
-  const topic = isTopic(topicParam) ? topicParam : null
-  const slugParam = params.get('muc')
-  const modalOpen = topic !== null && content.status === 'ready'
-  const shownItem = modalOpen
-    ? (getItemsBySection(content.content, topic).find((i) => itemSlug(i.id) === slugParam) ??
-      getItemsBySection(content.content, topic)[0])
-    : undefined
+  const sectionParam = params.get('phan')
+  const section = isSection(sectionParam) ? sectionParam : null
+  const topic = section && outline ? findTopic(outline, section, params.get('muc')) : undefined
+  const modalOpen = section !== null && topic !== undefined && content.status === 'ready'
+  const topicItems = modalOpen ? content.content.items.filter((i) => topic.itemIds.includes(i.id)) : []
+  const shownItem = topicItems.find((i) => itemSlug(i.id) === params.get('bai')) ?? topicItems[0]
+
+  // Link cũ ?chu-de=<chủ đề>&muc=<slug mục> → vị trí tương ứng trong dàn ý
+  const legacyTopic = params.get('chu-de')
+  const legacySlug = legacyTopic === null ? null : params.get('muc')
+  useEffect(() => {
+    if (legacyTopic === null || !outline) return
+    const t = legacyTarget(outline, legacyTopic, legacySlug)
+    navigate({ search: t ? topicSearch(t.section, t.topicId, t.slug) : '' }, { replace: true })
+  }, [legacyTopic, legacySlug, outline, navigate])
 
   // Đổi vùng thì bỏ chọn tỉnh
   useEffect(() => setProvinceId(null), [regionId])
@@ -51,8 +59,15 @@ export default function MapPage() {
 
   const selectRegion = (id: string) => navigate(`/ban-do/${id}`)
   // Mở modal thêm một mục lịch sử (nút Back của trình duyệt đóng modal); đổi mục bên trong thì thay thế
-  const openTopic = (section: SectionId, slug: string | null) =>
-    navigate({ search: topicSearch(section, slug) }, { replace: modalOpen })
+  const openTopic = (s: SectionId, topicId: string | null, slug?: string | null) =>
+    navigate({ search: topicSearch(s, topicId ?? (outline ? (findTopic(outline, s, null)?.id ?? null) : null), slug) }, { replace: modalOpen })
+  const openItem = (item: Pick<ContentItem, 'id' | 'section'>) => {
+    const at = outline ? topicOfItem(outline, item.id) : null
+    openTopic(at?.section ?? item.section, at?.topicId ?? null, itemSlug(item.id))
+  }
+  // Modal cũ (tới Task 4) gọi lại theo phần + slug mục nội dung
+  const selectInModal = (s: SectionId, slug: string | null) =>
+    slug && region ? openItem({ id: `${region.id}__${slug}`, section: s }) : openTopic(s, null)
   const closeTopic = () => navigate({ search: '' }, { replace: true })
 
   return (
@@ -80,10 +95,12 @@ export default function MapPage() {
             regionIdFromUrl={regionId}
             content={content}
             images={images}
+            outline={outline}
             provinceId={provinceId}
             onBack={() => navigate('/ban-do')}
             onClearProvince={() => setProvinceId(null)}
-            onOpen={openTopic}
+            onOpenTopic={openTopic}
+            onOpenItem={openItem}
           />
           <p className="mt-auto text-center text-xs text-muted">
             Nội dung bám theo SGK Lịch sử và Địa lí 4.{' '}
@@ -94,7 +111,14 @@ export default function MapPage() {
         </aside>
       </div>
       {modalOpen && (
-        <TopicModal content={content.content} images={images} section={topic} itemSlug={slugParam} onSelect={openTopic} onClose={closeTopic} />
+        <TopicModal
+          content={content.content}
+          images={images}
+          section={section}
+          itemSlug={shownItem ? itemSlug(shownItem.id) : null}
+          onSelect={selectInModal}
+          onClose={closeTopic}
+        />
       )}
     </>
   )

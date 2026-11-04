@@ -95,3 +95,9 @@ test('region-wide file requires provinceId null', () => {
 test('section must be a topic section', () => {
   expect(errorPath(() => parse(raw({ section: 'phong-tuc' })))).toBe(`${FILE}[0].section`)
 })
+
+test('optional cover flag must be true when present', () => {
+  expect(parse(raw())[0]?.cover).toBeUndefined()
+  expect(parse(raw({ cover: true }))[0]?.cover).toBe(true)
+  expect(() => parse(raw({ cover: 'yes' }))).toThrow(ContentError)
+})

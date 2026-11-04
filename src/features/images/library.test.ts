@@ -142,3 +142,12 @@ test('interleaveByProvince takes one image per province in turn, keeping order i
   ]
   expect(interleaveByProvince(images).map((i) => i.id)).toEqual(['hn1', 'qn1', 'v1', 'hn2', 'qn2', 'hn3'])
 })
+
+test('regionCover uses the image marked as cover first', () => {
+  const l = createImageLibrary({})
+  const images = [
+    webImage({ id: 'a', section: 'thien-nhien', itemIds: ['vung-a__x'] }),
+    webImage({ id: 'b', section: 'van-hoa', cover: true }),
+  ]
+  expect(l.regionCover(images)?.id).toBe('b')
+})

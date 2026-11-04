@@ -110,6 +110,7 @@ export function toWebImage(pick, page) {
       provinceId: pick.provinceId ?? null,
       section: pick.section,
       itemIds: pick.itemIds ?? [],
+      ...(pick.cover ? { cover: true } : {}),
       alt: pick.alt,
       caption: pick.caption,
       src: { url: main.url, width: main.width, height: Math.round((ii.height * main.width) / ii.width), srcset: set },

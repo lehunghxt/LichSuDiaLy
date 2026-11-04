@@ -3,8 +3,15 @@ import { SmartImage } from '../../components/ui/SmartImage'
 import { WebImageFigure } from '../../components/ui/WebImageFigure'
 import { provinceName } from '../../lib/provinces'
 import { EmptyState, ErrorState, LoadingState } from '../../components/ui/states'
-import { SECTIONS, SECTION_LABELS, type ContentItem, type RegionContent, type RegionMeta, type SectionId, type WebImage } from '../../types/content'
-import { itemSlug } from '../content/links'
+import {
+  SECTION_LABELS,
+  type ContentItem,
+  type RegionContent,
+  type RegionMeta,
+  type RegionOutline,
+  type SectionId,
+  type WebImage,
+} from '../../types/content'
 import { getItemsBySection } from '../content/repository'
 import { SECTION_ICONS, SECTION_TILE } from '../content/sectionIcons'
 import { imageLibrary, interleaveByProvince } from '../images/library'
@@ -16,11 +23,15 @@ interface MapInfoPanelProps {
   content: RegionContentState & { retry(): void }
   /** Ảnh nhúng của vùng (Wikimedia Commons) */
   images: WebImage[]
+  /** Dàn ý vùng (doc.md); null khi đang tải hoặc vùng chưa có */
+  outline: RegionOutline | null
   provinceId: string | null
   onBack(): void
   onClearProvince(): void
-  /** Mở modal chủ đề ngay trên trang bản đồ; slug null = mục đầu tiên */
-  onOpen(section: SectionId, slug: string | null): void
+  /** Mở modal dàn ý ngay trên trang bản đồ; topicId null = mục đầu tiên của phần */
+  onOpenTopic(section: SectionId, topicId: string | null): void
+  /** Mở modal tại mục dàn ý chứa mục nội dung này */
+  onOpenItem(item: ContentItem): void
 }
 
 /** Địa điểm tiêu biểu: mục gắn với một tỉnh cụ thể, lấy lần lượt mỗi phần một mục; tối đa 3 */
@@ -39,7 +50,8 @@ function featuredPlaces(content: RegionContent): ContentItem[] {
 
 const card = 'rounded-card bg-surface p-6 shadow-[0_8px_30px_rgb(15_23_42/0.08)]'
 
-export function MapInfoPanel({ region, regionIdFromUrl, content, images, provinceId, onBack, onClearProvince, onOpen }: MapInfoPanelProps) {
+export function MapInfoPanel(props: MapInfoPanelProps) {
+  const { region, regionIdFromUrl, content, images, outline, provinceId, onBack, onClearProvince, onOpenTopic, onOpenItem } = props
   if (!regionIdFromUrl) {
     return (
       <div className={`${card} flex flex-col items-center gap-4 py-12 text-center`}>
@@ -107,8 +119,9 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, images, provinc
         </div>
       )}
       {region.status === 'coming_soon' && provinceId && (
-        <ProvinceCard regionName={region.name} provinceId={provinceId} images={images} onClear={onClearProvince} onOpen={onOpen} />
+        <ProvinceCard regionName={region.name} provinceId={provinceId} images={images} onClear={onClearProvince} onOpen={onOpenItem} />
       )}
+      {region.status === 'coming_soon' && outline && <OutlineSections outline={outline} items={[]} onOpen={onOpenTopic} />}
       {region.status === 'coming_soon' && <RegionGallery images={images} />}
       {region.status === 'active' && content.status === 'loading' && <LoadingState label="Đang tải nội dung vùng…" />}
       {region.status === 'active' && content.status === 'error' && (
@@ -124,42 +137,17 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, images, provinc
               provinceId={provinceId}
               images={images}
               onClear={onClearProvince}
-              onOpen={onOpen}
+              onOpen={onOpenItem}
             />
           )}
 
-          <div className="border-t border-line pt-5">
-            <h3 className="mb-4 flex items-center gap-2 text-xl font-bold">
-              <BookOpen aria-hidden className="size-6 text-primary" />
-              Khám phá theo chủ đề
-            </h3>
-            <ul className="grid grid-cols-5 gap-2 2xl:gap-3">
-              {SECTIONS.map((cat) => {
-                const Icon = SECTION_ICONS[cat]
-                const style = SECTION_TILE[cat]
-                const count = getItemsBySection(ready, cat).length
-                return (
-                  <li key={cat}>
-                    <button
-                      type="button"
-                      onClick={() => onOpen(cat, null)}
-                      className={`flex h-full w-full flex-col items-center gap-1.5 rounded-2xl border-2 px-1 py-3 text-center text-xs font-bold 2xl:gap-2 2xl:px-2 2xl:py-4 2xl:text-sm shadow-sm transition hover:-translate-y-0.5 hover:shadow-md ${style.tile}`}
-                    >
-                      <Icon aria-hidden className={`size-8 2xl:size-10 ${style.icon}`} strokeWidth={1.75} />
-                      <span className="leading-snug">{SECTION_LABELS[cat]}</span>
-                      <span className="text-[0.7rem] font-semibold text-muted 2xl:text-xs">{count} mục</span>
-                    </button>
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
+          {outline && <OutlineSections outline={outline} items={ready.items} onOpen={onOpenTopic} />}
 
-          <FeaturedPlaces items={featuredPlaces(ready)} images={images} onOpen={onOpen} />
+          <FeaturedPlaces items={featuredPlaces(ready)} images={images} onOpen={onOpenItem} />
 
           <button
             type="button"
-            onClick={() => onOpen('thien-nhien', null)}
+            onClick={() => onOpenTopic('thien-nhien', null)}
             className="mx-auto inline-flex min-h-14 items-center gap-3 rounded-full bg-primary-dark px-8 text-lg font-bold text-white shadow-lg transition hover:bg-primary"
           >
             <BookOpen aria-hidden className="size-6" />
@@ -175,7 +163,7 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, images, provinc
 interface FeaturedPlacesProps {
   items: ContentItem[]
   images: WebImage[]
-  onOpen(section: SectionId, slug: string): void
+  onOpen(item: ContentItem): void
 }
 
 function FeaturedPlaces({ items, images, onOpen }: FeaturedPlacesProps) {
@@ -204,7 +192,7 @@ function FeaturedPlaces({ items, images, onOpen }: FeaturedPlacesProps) {
               )}
               <button
                 type="button"
-                onClick={() => onOpen(i.section, itemSlug(i.id))}
+                onClick={() => onOpen(i)}
                 className="mt-auto flex w-full text-left transition-colors hover:bg-primary-soft"
               >
                 <span className="flex gap-1.5 p-3">
@@ -230,7 +218,7 @@ interface ProvinceCardProps {
   images: WebImage[]
   provinceId: string
   onClear(): void
-  onOpen(section: SectionId, slug: string): void
+  onOpen(item: ContentItem): void
 }
 
 /** Tỉnh đang chọn trên bản đồ: tên, vùng, các mục trong bài học gắn với tỉnh */
@@ -272,7 +260,7 @@ function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen
         </ul>
       )}
       {!content ? null : items.length === 0 ? (
-        <p className="text-sm text-muted">Bài học chưa có địa danh nào của tỉnh này. Em xem các chủ đề bên dưới nhé!</p>
+        <p className="text-sm text-muted">Bài học chưa có địa danh nào của tỉnh này. Em xem các phần bên dưới nhé!</p>
       ) : (
         <>
           <p className="text-sm font-semibold">Trong bài học có {items.length} mục ở tỉnh {name}:</p>
@@ -283,7 +271,7 @@ function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen
                 <li key={i.id}>
                   <button
                     type="button"
-                    onClick={() => onOpen(i.section, itemSlug(i.id))}
+                    onClick={() => onOpen(i)}
                     className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-amber-200 bg-white px-3 text-sm font-semibold shadow-sm hover:border-amber-400"
                   >
                     <Icon aria-hidden className={`size-4 ${SECTION_TILE[i.section].icon}`} />
@@ -296,6 +284,66 @@ function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen
         </>
       )}
     </section>
+  )
+}
+
+interface OutlineSectionsProps {
+  outline: RegionOutline
+  /** Mục nội dung đã tải (đã lọc theo quy tắc xuất bản); mục dàn ý không có mục nào ở đây là "đang cập nhật" */
+  items: ContentItem[]
+  onOpen(section: SectionId, topicId: string): void
+}
+
+/** Dàn ý vùng: mỗi phần một thẻ, liệt kê các mục; mục chưa có nội dung màu xám */
+function OutlineSections({ outline, items, onOpen }: OutlineSectionsProps) {
+  const ids = new Set(items.map((i) => i.id))
+  return (
+    <nav aria-label="Dàn ý vùng" className="flex flex-col gap-3 border-t border-line pt-5">
+      {outline.sections.map((section) => {
+        const Icon = SECTION_ICONS[section.id]
+        const style = SECTION_TILE[section.id]
+        const label = SECTION_LABELS[section.id]
+        const filled = section.topics.filter((t) => t.itemIds.some((id) => ids.has(id))).length
+        return (
+          <div key={section.id} className={`rounded-2xl border-2 p-3 ${style.tile}`}>
+            <div className="mb-2 flex items-center gap-2">
+              <Icon aria-hidden className={`size-6 shrink-0 ${style.icon}`} strokeWidth={1.75} />
+              <h3 className="flex-1 text-base font-bold leading-snug">{label}</h3>
+              <p className="shrink-0 text-xs font-semibold text-muted">
+                {filled}/{section.topics.length} mục có nội dung
+              </p>
+            </div>
+            {section.topics.length === 0 ? (
+              <p className="text-sm text-muted">Nội dung đang được cập nhật.</p>
+            ) : (
+              <ul aria-label={label} className="flex flex-wrap gap-1.5">
+                {section.topics.map((t) => {
+                  const empty = !t.itemIds.some((id) => ids.has(id))
+                  return (
+                    <li key={t.id}>
+                      <button
+                        type="button"
+                        data-topic={t.id}
+                        title={t.hint ? `${t.title} ${t.hint}` : t.title}
+                        onClick={() => onOpen(section.id, t.id)}
+                        className={`inline-flex min-h-9 items-center gap-1.5 rounded-full border px-3 text-left text-sm leading-snug transition-colors ${
+                          empty
+                            ? 'border-dashed border-line bg-white/60 text-muted hover:bg-white'
+                            : 'border-transparent bg-white font-semibold shadow-sm hover:border-current'
+                        }`}
+                      >
+                        {t.title}
+                        {empty && <span className="whitespace-nowrap text-xs font-normal italic">(đang cập nhật)</span>}
+                      </button>
+                    </li>
+                  )
+                })}
+              </ul>
+            )}
+          </div>
+        )
+      })}
+    </nav>
   )
 }
 

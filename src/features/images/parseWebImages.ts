@@ -45,6 +45,12 @@ function parseAttribution(v: unknown, path: string): WebImage['attribution'] {
 }
 
 /** fileProvinceId: tỉnh suy ra từ tên file; null với _toan-vung.json */
+function parseCover(v: unknown, path: string): true | undefined {
+  if (v === undefined) return undefined
+  if (v !== true) throw new ContentError(path, 'chỉ ghi "cover": true hoặc bỏ trống')
+  return true
+}
+
 export function parseWebImages(raw: unknown, regionId: string, fileProvinceId: string | null, path: string): WebImage[] {
   return list({ images: raw }, 'images', '', (v, p) => {
     const at = path + p.slice('images'.length)
@@ -59,6 +65,7 @@ export function parseWebImages(raw: unknown, regionId: string, fileProvinceId: s
       provinceId: fileProvinceId,
       section: oneOf(o, 'section', at, SECTIONS),
       itemIds: strList(o, 'itemIds', at),
+      cover: parseCover(o.cover, join(at, 'cover')),
       alt: str(o, 'alt', at),
       caption: str(o, 'caption', at),
       src: parseSrc(o.src, join(at, 'src')),
