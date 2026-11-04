@@ -17,3 +17,14 @@ Theo quy tắc "không bịa nội dung", các mục này hiện "Nội dung đa
 | Bắc Trung Bộ và Nam Trung Bộ | Văn hóa → Dân ca Ví, Giặm Nghệ Tĩnh | Bài 17, tr. 79 | Chỉ có tên trong chú giải bản đồ di sản (Hình 2), không có đoạn mô tả. |
 | Bắc Trung Bộ và Nam Trung Bộ | Văn hóa → Trang phục truyền thống | Bài 15–21 | Sách không có đoạn nào về trang phục của vùng. |
 | Bắc Trung Bộ và Nam Trung Bộ | Văn hóa → Ẩm thực miền Trung | Bài 15–21 | Sách không có đoạn nào về món ăn của vùng. |
+| Nam Bộ | Thiên nhiên → Kênh rạch và sông nước | Bài 22–24 | Sách nói "sông ngòi dày đặc" và vận tải đường sông, không có đoạn riêng về kênh rạch. |
+| Nam Bộ | Thiên nhiên → Rừng ngập mặn | Bài 22 | Không có đoạn nào. |
+| Nam Bộ | Thiên nhiên → Rừng tràm và cảnh quan thiên nhiên | Bài 22 | Không có đoạn nào. |
+| Nam Bộ | Thiên nhiên → Biển và đảo (Phú Quốc, Côn Đảo) | Bài 22, 25 | Chỉ một câu "vùng biển rộng lớn, nhiều tiềm năng"; Côn Đảo chỉ có ảnh trại tù Phú Sơn (Bài 25, Hình 8). |
+| Nam Bộ | Dân cư và hoạt động sản xuất → Chợ nổi | Bài 24, tr. 108 | Sách đặt chợ nổi trong phần văn hoá; nội dung nằm ở mục "Chợ nổi Cái Răng" (Văn hóa). |
+| Nam Bộ | Văn hóa → Lễ hội Ok Om Bok | Bài 22–26 | Không có đoạn nào. |
+| Nam Bộ | Văn hóa → Lễ hội đua ghe ngo | Bài 22–26 | Không có đoạn nào. |
+| Nam Bộ | Văn hóa → Lễ hội Bà Chúa Xứ núi Sam | Bài 22–26 | Không có đoạn nào. |
+| Nam Bộ | Văn hóa → Đờn ca tài tử Nam Bộ | Bài 22–26 | Không có đoạn nào. |
+| Nam Bộ | Văn hóa → Ẩm thực Nam Bộ | Bài 22–26 | Không có đoạn nào. |
+| Nam Bộ | Văn hóa → Văn hóa miệt vườn | Bài 24, tr. 107 | Chỉ nhắc "ở các miệt vườn, chủ yếu là nhà lợp bằng lá" (đã ở mục Nhà ở). |

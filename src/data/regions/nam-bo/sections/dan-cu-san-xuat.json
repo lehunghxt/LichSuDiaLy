@@ -1,0 +1,301 @@
+[
+  {
+    "id": "nam-bo__dan-cu",
+    "title": "Dân cư và các dân tộc",
+    "summary": "Nam Bộ là vùng đông dân, có gần 37 triệu người (năm 2024). Các dân tộc sinh sống chủ yếu là Kinh, Khơ-me (Khmer), Hoa, Chăm,…",
+    "highlights": [],
+    "keyPoints": [
+      "Nam Bộ đông dân, có nhiều dân tộc cùng sinh sống."
+    ],
+    "images": [],
+    "figures": [],
+    "relatedIds": [
+      "nam-bo__nha-o"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 103,
+        "note": "tr. 103"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__nha-o",
+    "title": "Nhà ở",
+    "summary": "Nhà ở truyền thống của người dân Nam Bộ có nhiều loại khác nhau. Ở vùng sông nước, phổ biến là nhà sàn, nhà nổi; ở các miệt vườn, chủ yếu là nhà lợp bằng lá.",
+    "highlights": [
+      "Ngày nay, nhà ở được xây dựng kiên cố, hiện đại hơn.",
+      "Ở một số nơi, những ngôi nhà cổ vẫn còn được lưu giữ."
+    ],
+    "keyPoints": [
+      "Nhà ở Nam Bộ thích nghi với vùng sông nước."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 24,
+        "figure": 1,
+        "page": 107,
+        "caption": "Nhà nổi ở Châu Đốc (tỉnh An Giang)"
+      },
+      {
+        "lesson": 24,
+        "figure": 2,
+        "page": 108,
+        "caption": "Một ngôi nhà cổ được xây dựng từ cuối thế kỉ XIX ở phường Bình Thuỷ (thành phố Cần Thơ)"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__van-tai-duong-song",
+      "nam-bo__dan-cu"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 107,
+        "note": "tr. 107–108, Hình 1, 2"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__van-tai-duong-song",
+    "title": "Vận tải đường sông",
+    "summary": "Giao thông đường thuỷ rất quan trọng với người dân Nam Bộ. Ghe, xuồng,… là phương tiện đi lại, chở hàng hoá chủ yếu ở đây.",
+    "highlights": [],
+    "keyPoints": [
+      "Ghe, xuồng gắn bó với cuộc sống hằng ngày của người Nam Bộ."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 24,
+        "figure": 4,
+        "page": 108,
+        "caption": "Ghe, xuồng được người dân Nam Bộ sử dụng trong cuộc sống hằng ngày"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__nha-o",
+      "nam-bo__cho-noi",
+      "nam-bo__song-ngoi"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 108,
+        "note": "tr. 108, Hình 4"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__trong-lua",
+    "title": "Trồng lúa",
+    "summary": "Nam Bộ có nhiều điều kiện tự nhiên thuận lợi cho nông nghiệp. Đây là vùng trồng lúa lớn nhất nước ta.",
+    "highlights": [
+      "Lúa được trồng trên những cánh đồng lớn.",
+      "Người dân dùng nhiều máy móc hiện đại nên năng suất cao, chất lượng tốt."
+    ],
+    "keyPoints": [
+      "Nam Bộ là vựa lúa lớn nhất cả nước."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 23,
+        "figure": 1,
+        "page": 104,
+        "caption": "Bản đồ nông nghiệp vùng Nam Bộ năm 2024"
+      },
+      {
+        "lesson": 23,
+        "figure": 2,
+        "page": 104,
+        "caption": "Thu hoạch lúa (thành phố Cần Thơ)"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__cay-an-qua",
+      "nam-bo__dat"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 103,
+        "note": "tr. 103–104, Hình 1, 2"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__cay-an-qua",
+    "title": "Trồng cây ăn quả",
+    "summary": "Nam Bộ là vùng trồng cây ăn quả lớn trong cả nước, như sầu riêng, chôm chôm, xoài, dừa, cam, quýt,…",
+    "highlights": [
+      "Sản phẩm nông nghiệp vừa phục vụ trong nước, vừa là hàng xuất khẩu có giá trị."
+    ],
+    "keyPoints": [
+      "Vùng trồng nhiều loại cây ăn quả."
+    ],
+    "images": [],
+    "figures": [],
+    "relatedIds": [
+      "nam-bo__trong-lua",
+      "nam-bo__cay-cong-nghiep"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 103,
+        "note": "tr. 103–105"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__cay-cong-nghiep",
+    "title": "Trồng cây công nghiệp",
+    "summary": "Nam Bộ là vùng trồng cây công nghiệp lớn trong cả nước, như cao su, điều, hồ tiêu,…",
+    "highlights": [
+      "Đất xám, đất badan thích hợp cho các cây công nghiệp này."
+    ],
+    "keyPoints": [
+      "Cao su, điều, hồ tiêu là cây công nghiệp chính của vùng."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 23,
+        "figure": 4,
+        "page": 102,
+        "caption": "Rừng trồng cao su (tỉnh Đồng Nai)"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__dat",
+      "nam-bo__cay-an-qua"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 103,
+        "note": "tr. 103, Hình 4"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__chan-nuoi",
+    "title": "Chăn nuôi",
+    "summary": "Chăn nuôi ở vùng Nam Bộ cũng phát triển. Vật nuôi chủ yếu là lợn, gà, vịt,…",
+    "highlights": [],
+    "keyPoints": [
+      "Lợn, gà, vịt là những vật nuôi chính."
+    ],
+    "images": [],
+    "figures": [],
+    "relatedIds": [
+      "nam-bo__trong-lua"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 103,
+        "note": "tr. 103"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__thuy-san",
+    "title": "Đánh bắt và nuôi trồng thuỷ sản",
+    "summary": "Vùng Nam Bộ có nhiều điều kiện thuận lợi để đánh bắt, nuôi trồng thuỷ sản. Đây là vùng có sản lượng thuỷ sản lớn nhất cả nước.",
+    "highlights": [
+      "Sản phẩm nuôi trồng đặc trưng: cá tra, cá ba sa, tôm,…"
+    ],
+    "keyPoints": [
+      "Nam Bộ dẫn đầu cả nước về thuỷ sản."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 23,
+        "figure": 3,
+        "page": 104,
+        "caption": "Trang trại nuôi tôm (tỉnh An Giang)"
+      },
+      {
+        "lesson": 23,
+        "figure": 5,
+        "page": 102,
+        "caption": "Bè nuôi cá ven biển (Thành phố Hồ Chí Minh)"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__song-ngoi"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 104,
+        "note": "tr. 104, Hình 3, 5"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__cong-nghiep",
+    "title": "Công nghiệp",
+    "summary": "Ngành công nghiệp ở vùng Nam Bộ phát triển nhất nước ta. Các hoạt động công nghiệp tập trung chủ yếu ở Đông Nam Bộ.",
+    "highlights": [
+      "Một số ngành chính: khai thác dầu khí, sản xuất điện, điện tử – tin học, dệt may, hoá chất, chế biến lương thực,…"
+    ],
+    "keyPoints": [
+      "Nam Bộ là vùng công nghiệp phát triển nhất cả nước."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 23,
+        "figure": 4,
+        "page": 105,
+        "caption": "Bản đồ công nghiệp vùng Nam Bộ năm 2024"
+      },
+      {
+        "lesson": 23,
+        "figure": 5,
+        "page": 106,
+        "caption": "Sản xuất linh kiện điện tử (Thành phố Hồ Chí Minh)"
+      },
+      {
+        "lesson": 23,
+        "figure": 6,
+        "page": 106,
+        "caption": "Sản xuất hàng may mặc (Thành phố Hồ Chí Minh)"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__tphcm-ngay-nay"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 105,
+        "note": "tr. 105–106, Hình 4, 5, 6"
+      }
+    ],
+    "status": "draft"
+  }
+]

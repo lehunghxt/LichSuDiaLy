@@ -25,13 +25,14 @@ test('journey section shows 3 steps', async () => {
   expect(within(steps).getAllByRole('listitem')).toHaveLength(3)
 })
 
-test('regions section: active region links to the map, others marked "Sắp ra mắt"', async () => {
+test('regions section: every region has content and links to the map', async () => {
   renderHome()
   const list = await screen.findByRole('list', { name: 'Bốn vùng đất của Tổ quốc' })
   const cards = within(list).getAllByRole('listitem')
   expect(cards).toHaveLength(4)
   expect(within(list).getByRole('link', { name: /Trung du và miền núi phía Bắc/ })).toHaveAttribute('href', `/ban-do/${TDMNPB}`)
-  expect(within(list).getAllByText('Sắp ra mắt')).toHaveLength(1)
+  expect(within(list).getByRole('link', { name: /Nam Bộ/ })).toHaveAttribute('href', '/ban-do/nam-bo')
+  expect(within(list).queryByText('Sắp ra mắt')).not.toBeInTheDocument()
 })
 
 test('home page lists the sections of the region outline (no old topic names)', async () => {

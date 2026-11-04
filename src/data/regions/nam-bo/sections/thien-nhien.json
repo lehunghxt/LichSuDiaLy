@@ -1,0 +1,239 @@
+[
+  {
+    "id": "nam-bo__vi-tri-dia-li",
+    "title": "Vị trí địa lí",
+    "summary": "Vùng Nam Bộ nằm ở phía nam đất nước, gồm Đông Nam Bộ và Tây Nam Bộ (còn gọi là đồng bằng sông Cửu Long).",
+    "highlights": [
+      "Vùng Nam Bộ có vùng biển rộng lớn, nhiều tiềm năng.",
+      "Vùng giáp vùng Bắc Trung Bộ và Nam Trung Bộ, giáp Cam-pu-chia, Biển Đông và vịnh Thái Lan."
+    ],
+    "keyPoints": [
+      "Nam Bộ gồm hai phần: Đông Nam Bộ và Tây Nam Bộ."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 22,
+        "figure": 1,
+        "page": 100,
+        "caption": "Bản đồ địa hình vùng Nam Bộ"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__dia-hinh-dong-nam-bo",
+      "nam-bo__dong-bang-cuu-long"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 99,
+        "note": "tr. 99–100, Hình 1"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__dia-hinh-dong-nam-bo",
+    "title": "Địa hình Đông Nam Bộ",
+    "summary": "Vùng Nam Bộ chủ yếu là đồng bằng thấp, tương đối bằng phẳng. Riêng phía bắc của Đông Nam Bộ có đồi núi thấp.",
+    "highlights": [
+      "Núi Bà Đen (tỉnh Tây Ninh) cao 986 m, là đỉnh núi cao nhất Nam Bộ."
+    ],
+    "keyPoints": [
+      "Phía bắc Đông Nam Bộ có đồi núi thấp, còn lại là đồng bằng."
+    ],
+    "funFacts": [
+      "Cụm núi Bà Đen gồm ba ngọn núi: núi Heo, núi Phụng và núi Bà Đen."
+    ],
+    "provinceId": "tay-ninh",
+    "images": [],
+    "figures": [
+      {
+        "lesson": 22,
+        "figure": 2,
+        "page": 101,
+        "caption": "Núi Bà Đen"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__dong-bang-cuu-long"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 100,
+        "note": "tr. 100–101, Hình 2"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__dong-bang-cuu-long",
+    "title": "Đồng bằng sông Cửu Long",
+    "summary": "Đồng bằng sông Cửu Long thấp và bằng phẳng. Ở đây có nhiều vùng trũng dễ ngập nước.",
+    "highlights": [
+      "Vùng trũng lớn: Đồng Tháp Mười và một số nơi ở các tỉnh An Giang, Cà Mau.",
+      "Ca dao Nam Bộ kể về Tháp Mười nước mặn, đồng chua, nửa năm nắng cháy, nửa năm nước dâng."
+    ],
+    "keyPoints": [
+      "Đồng bằng sông Cửu Long có nhiều vùng trũng."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 22,
+        "figure": 3,
+        "page": 101,
+        "caption": "Một góc đồng bằng sông Cửu Long"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__dia-hinh-dong-nam-bo",
+      "nam-bo__song-ngoi"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 99,
+        "note": "tr. 99–101, Hình 3"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__khi-hau",
+    "title": "Khí hậu",
+    "summary": "Vùng Nam Bộ nóng quanh năm, nhiệt độ trung bình năm trên 27°C. Khí hậu chia thành hai mùa rõ rệt: mùa mưa và mùa khô.",
+    "highlights": [
+      "Mùa mưa từ tháng 5 đến tháng 11.",
+      "Mùa khô từ tháng 12 đến tháng 4 năm sau; mùa khô ít mưa nên thường thiếu nước cho sinh hoạt và sản xuất."
+    ],
+    "keyPoints": [
+      "Nam Bộ có hai mùa: mùa mưa và mùa khô."
+    ],
+    "images": [],
+    "figures": [],
+    "relatedIds": [
+      "nam-bo__thuan-loi-kho-khan"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 101,
+        "note": "tr. 101"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__song-ngoi",
+    "title": "Sông Đồng Nai và sông Mê Công",
+    "summary": "Vùng Nam Bộ có hệ thống sông ngòi dày đặc. Các sông lớn là sông Đồng Nai (Đông Nam Bộ), sông Tiền, sông Hậu (đồng bằng sông Cửu Long),…",
+    "highlights": [
+      "Sông ngòi cung cấp nước, phù sa và thuỷ sản.",
+      "Sông là đường giao thông quan trọng của vùng."
+    ],
+    "keyPoints": [
+      "Sông ngòi dày đặc mang lại nhiều lợi ích cho Nam Bộ."
+    ],
+    "funFacts": [
+      "Sông Mê Công chảy về đồng bằng thì chia thành sông Tiền và sông Hậu. Trước kia sông đổ ra biển qua chín cửa nên còn gọi là sông Cửu Long (chín con rồng); nay một cửa (Bát Xắc) đã bị phù sa bồi lấp."
+    ],
+    "images": [],
+    "figures": [],
+    "relatedIds": [
+      "nam-bo__dong-bang-cuu-long",
+      "nam-bo__van-tai-duong-song"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 101,
+        "note": "tr. 101"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__dat",
+    "title": "Đất",
+    "summary": "Vùng Nam Bộ có ba loại đất chính: đất xám, đất badan và đất phù sa.",
+    "highlights": [
+      "Đất xám, đất badan (nhiều ở phía bắc Đông Nam Bộ) thích hợp trồng cây công nghiệp như cao su, điều, hồ tiêu,…",
+      "Đất phù sa (ở các khu vực đồng bằng) thích hợp trồng lúa, rau, cây ăn quả,…"
+    ],
+    "keyPoints": [
+      "Mỗi loại đất phù hợp với những cây trồng khác nhau."
+    ],
+    "images": [],
+    "figures": [],
+    "relatedIds": [
+      "nam-bo__cay-cong-nghiep",
+      "nam-bo__trong-lua"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 101,
+        "note": "tr. 101"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__thuan-loi-kho-khan",
+    "title": "Thuận lợi và khó khăn",
+    "summary": "Thiên nhiên vùng Nam Bộ có nhiều điều kiện thuận lợi cho sinh hoạt và sản xuất, nhất là sản xuất nông nghiệp.",
+    "highlights": [
+      "Khó khăn: lũ lụt; sạt lở đất ven sông, ven biển; đất bị nhiễm mặn; thiếu nước vào mùa khô,…"
+    ],
+    "keyPoints": [
+      "Người dân cần tìm cách khắc phục khó khăn do thiên nhiên gây ra."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 22,
+        "figure": 4,
+        "page": 102,
+        "caption": "Rừng trồng cao su (tỉnh Đồng Nai)"
+      },
+      {
+        "lesson": 22,
+        "figure": 5,
+        "page": 102,
+        "caption": "Bè nuôi cá ven biển (Thành phố Hồ Chí Minh)"
+      },
+      {
+        "lesson": 22,
+        "figure": 6,
+        "page": 102,
+        "caption": "Sạt lở đất ven sông (tỉnh An Giang)"
+      },
+      {
+        "lesson": 22,
+        "figure": 7,
+        "page": 102,
+        "caption": "Kênh bị cạn nước vào mùa khô (tỉnh Đồng Tháp)"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__khi-hau"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 102,
+        "note": "tr. 102, Hình 4, 5, 6, 7"
+      }
+    ],
+    "status": "draft"
+  }
+]

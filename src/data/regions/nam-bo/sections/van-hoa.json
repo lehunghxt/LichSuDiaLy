@@ -1,0 +1,63 @@
+[
+  {
+    "id": "nam-bo__cho-noi",
+    "title": "Chợ nổi",
+    "summary": "Một phần hoạt động mua bán, trao đổi hàng hoá của người dân Nam Bộ diễn ra tại chợ nổi trên sông.",
+    "highlights": [
+      "Hàng hoá bán trên ghe, xuồng, chủ yếu là nông sản và đồ dùng cần thiết.",
+      "Trên mỗi ghe, xuồng có treo những loại hàng hoá cần bán.",
+      "Một số chợ nổi lớn: Cái Răng, Phong Điền, Phụng Hiệp, Ngã Năm (thành phố Cần Thơ); Cái Bè (tỉnh Đồng Tháp); Trà Ôn (tỉnh Vĩnh Long);…"
+    ],
+    "keyPoints": [
+      "Chợ nổi thể hiện cuộc sống hài hoà với sông nước của người Nam Bộ."
+    ],
+    "provinceId": "can-tho",
+    "images": [],
+    "figures": [
+      {
+        "lesson": 24,
+        "figure": 3,
+        "page": 108,
+        "caption": "Chợ nổi Ngã Năm (thành phố Cần Thơ)"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__van-tai-duong-song",
+      "nam-bo__trang-phuc"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 108,
+        "note": "tr. 108, Hình 3"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__trang-phuc",
+    "title": "Trang phục",
+    "summary": "Trước đây, trang phục phổ biến của người dân Nam Bộ là áo bà ba và khăn rằn.",
+    "highlights": [
+      "Ngày nay, áo bà ba và khăn rằn vẫn được chọn làm trang phục chính trong những dịp lễ, tết,…"
+    ],
+    "keyPoints": [
+      "Áo bà ba, khăn rằn thể hiện nét văn hoá miền sông nước Nam Bộ."
+    ],
+    "images": [],
+    "figures": [],
+    "relatedIds": [
+      "nam-bo__cho-noi"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 109,
+        "note": "tr. 109"
+      }
+    ],
+    "status": "draft"
+  }
+]

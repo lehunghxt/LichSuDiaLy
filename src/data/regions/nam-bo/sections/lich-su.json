@@ -1,0 +1,316 @@
+[
+  {
+    "id": "nam-bo__truyen-thong-yeu-nuoc",
+    "title": "Truyền thống yêu nước, cách mạng",
+    "summary": "Nhân dân Nam Bộ có truyền thống yêu nước, đấu tranh chống ngoại xâm với nhiều tấm gương anh dũng như Trương Định, Nguyễn Trung Trực, Nguyễn Thị Định,…",
+    "highlights": [
+      "Vì thế, Bác Hồ đã tặng quân và dân Nam Bộ danh hiệu \"Thành đồng Tổ quốc\"."
+    ],
+    "keyPoints": [
+      "Nam Bộ được Bác Hồ tặng danh hiệu \"Thành đồng Tổ quốc\"."
+    ],
+    "funFacts": [
+      "Nguyễn Trung Trực là người chỉ huy nghĩa quân đốt cháy tàu Ét-pê-răng (tàu Hi Vọng) của Pháp trên sông Nhật Tảo.",
+      "Ông có câu nói nổi tiếng: \"Bao giờ người Tây nhổ hết cỏ nước Nam thì mới hết người Nam đánh Tây\"."
+    ],
+    "images": [],
+    "figures": [],
+    "relatedIds": [
+      "nam-bo__truong-dinh",
+      "nam-bo__nguyen-thi-dinh"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 109,
+        "note": "tr. 109"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__truong-dinh",
+    "title": "\"Bình Tây Đại Nguyên soái\" Trương Định",
+    "summary": "Trương Định quê ở xã Tịnh Khê, tỉnh Quảng Ngãi. Khi thực dân Pháp đánh chiếm Gia Định, ông chỉ huy nghĩa quân cùng quan quân triều đình anh dũng chống giặc.",
+    "highlights": [
+      "Cuộc khởi nghĩa thu hút đông đảo nhân dân và quan quân triều đình có tinh thần chống Pháp.",
+      "Năm 1862, ông khước từ chức Lãnh binh ở An Giang để ở lại cùng nhân dân chống Pháp.",
+      "Nhân dân suy tôn ông là \"Bình Tây Đại Nguyên soái\".",
+      "Trong một trận chiến, bị thương nặng, ông đã tự sát để giữ trọn khí tiết."
+    ],
+    "keyPoints": [
+      "Trương Định là tấm gương yêu nước tiêu biểu của Nam Bộ."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 24,
+        "figure": 5,
+        "page": 109,
+        "caption": "Trương Định được suy tôn là Bình Tây Đại Nguyên soái (tranh vẽ trưng bày tại Bảo tàng Lịch sử quốc gia)"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__truyen-thong-yeu-nuoc"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 109,
+        "note": "tr. 109, Hình 5"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__nguyen-thi-dinh",
+    "title": "Nguyễn Thị Định",
+    "summary": "Trong cuộc kháng chiến chống Mỹ, cứu nước, bà Nguyễn Thị Định là người khởi xướng và lãnh đạo chủ chốt của phong trào Đồng khởi ở Bến Tre (nay thuộc tỉnh Vĩnh Long).",
+    "highlights": [
+      "Sau đó, bà giữ chức Phó Tư lệnh các lực lượng vũ trang giải phóng miền Nam Việt Nam.",
+      "Bà có nhiều đóng góp cho thắng lợi của cuộc kháng chiến chống Mỹ, cứu nước."
+    ],
+    "keyPoints": [
+      "Nguyễn Thị Định là nữ anh hùng của phong trào Đồng khởi."
+    ],
+    "provinceId": "vinh-long",
+    "images": [],
+    "figures": [
+      {
+        "lesson": 24,
+        "figure": 6,
+        "page": 110,
+        "caption": "Nguyễn Thị Định"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__truyen-thong-yeu-nuoc"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 110,
+        "note": "tr. 110, Hình 6"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__tphcm-ten-goi",
+    "title": "Vị trí và tên gọi Thành phố Hồ Chí Minh",
+    "summary": "Thành phố Hồ Chí Minh là đô thị lớn nhất nước ta, thuộc khu vực Đông Nam Bộ.",
+    "highlights": [
+      "Qua thời gian, thành phố có nhiều tên gọi: Gia Định, Sài Gòn, Sài Gòn – Chợ Lớn, Sài Gòn – Gia Định; năm 1976 được đổi tên là Thành phố Hồ Chí Minh.",
+      "Từ tháng 7 – 2025, thành phố được mở rộng sau khi sáp nhập thêm tỉnh Bình Dương và tỉnh Bà Rịa – Vũng Tàu."
+    ],
+    "keyPoints": [
+      "Thành phố mang tên Bác là đô thị lớn nhất cả nước."
+    ],
+    "provinceId": "ho-chi-minh",
+    "images": [],
+    "figures": [
+      {
+        "lesson": 25,
+        "figure": 1,
+        "page": 111,
+        "caption": "Một góc Thành phố Hồ Chí Minh ngày nay"
+      },
+      {
+        "lesson": 25,
+        "figure": 2,
+        "page": 112,
+        "caption": "Lược đồ thể hiện vị trí địa lí của Thành phố Hồ Chí Minh"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__su-kien-tphcm",
+      "nam-bo__tphcm-ngay-nay"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 25. Thành phố Hồ Chí Minh",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 111,
+        "note": "tr. 111–112, Hình 1, 2"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__su-kien-tphcm",
+    "title": "Sự kiện lịch sử ở Thành phố Hồ Chí Minh",
+    "summary": "Với hơn 300 năm hình thành và phát triển, Thành phố Hồ Chí Minh là nơi diễn ra nhiều sự kiện lịch sử quan trọng.",
+    "highlights": [
+      "Ngày 5 – 6 – 1911, Nguyễn Tất Thành lấy tên Văn Ba, làm phụ bếp trên tàu Đô đốc La-tu-sơ Tơ-rê-vin, rời Bến Nhà Rồng ra đi tìm đường cứu nước.",
+      "Tháng Tám năm 1945, nhân dân thành phố khởi nghĩa giành chính quyền.",
+      "Ngày 30 – 4 – 1975, xe tăng Quân giải phóng húc đổ cổng chính Dinh Độc Lập; đúng 11 giờ 30 phút, lá cờ cách mạng tung bay trên nóc Dinh."
+    ],
+    "keyPoints": [
+      "Thành phố gắn với nhiều sự kiện lớn của lịch sử dân tộc."
+    ],
+    "funFacts": [
+      "Đồng chí Bùi Quang Thận, chỉ huy xe tăng 843, là người cắm lá cờ cách mạng trên nóc Dinh Độc Lập."
+    ],
+    "provinceId": "ho-chi-minh",
+    "images": [],
+    "figures": [
+      {
+        "lesson": 25,
+        "figure": 3,
+        "page": 113,
+        "caption": "Tàu Đô đốc La-tu-sơ Tơ-rê-vin"
+      },
+      {
+        "lesson": 25,
+        "figure": 4,
+        "page": 114,
+        "caption": "Xe tăng Quân giải phóng húc đổ cổng Dinh Độc Lập"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__tphcm-ten-goi"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 25. Thành phố Hồ Chí Minh",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 113,
+        "note": "tr. 113–114, Hình 3, 4"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__tphcm-ngay-nay",
+    "title": "Trung tâm kinh tế, văn hoá, giáo dục",
+    "summary": "Thành phố Hồ Chí Minh là trung tâm kinh tế hàng đầu của đất nước, với nhiều ngân hàng, trung tâm thương mại lớn và Trung tâm tài chính quốc tế lớn nhất Việt Nam.",
+    "highlights": [
+      "Thành phố tập trung nhiều khu công nghiệp, khu công nghệ cao, cảng biển lớn,…",
+      "Đây là một trong hai trung tâm giáo dục, khoa học và công nghệ lớn nhất cả nước, với nhiều trường đại học, viện nghiên cứu.",
+      "Thành phố có nhiều di tích lịch sử – văn hoá, bảo tàng, trung tâm điện ảnh, âm nhạc và khu du lịch, vui chơi giải trí."
+    ],
+    "keyPoints": [
+      "Thành phố Hồ Chí Minh là trung tâm kinh tế, văn hoá, giáo dục lớn của cả nước."
+    ],
+    "provinceId": "ho-chi-minh",
+    "images": [],
+    "figures": [
+      {
+        "lesson": 25,
+        "figure": 5,
+        "page": 114,
+        "caption": "Vận chuyển hàng hoá ở Cảng quốc tế Tân Cảng – Cái Mép, Thành phố Hồ Chí Minh"
+      },
+      {
+        "lesson": 25,
+        "figure": 7,
+        "page": 115,
+        "caption": "Đại học Quốc gia Thành phố Hồ Chí Minh"
+      },
+      {
+        "lesson": 25,
+        "figure": 8,
+        "page": 115,
+        "caption": "Trại tù Phú Sơn trong Di tích Nhà tù Côn Đảo (đặc khu Côn Đảo)"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__cong-nghiep",
+      "nam-bo__tphcm-ten-goi"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 25. Thành phố Hồ Chí Minh",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 114,
+        "note": "tr. 114–115, Hình 5, 7, 8"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__dia-dao",
+    "title": "Địa đạo Củ Chi",
+    "summary": "Địa đạo Củ Chi là hệ thống phòng thủ, căn cứ bí mật nằm sâu dưới lòng đất từ 3 m đến 12 m, dài khoảng 250 km, thuộc Thành phố Hồ Chí Minh.",
+    "highlights": [
+      "Hiện nay, di tích được bảo tồn ở Địa đạo Bến Dược (xã An Nhơn Tây) và Địa đạo Bến Đình (xã Nhuận Đức).",
+      "Địa đạo có ba tầng, từ đường chính toả ra các nhánh dài, ngắn thông với nhau; giữa các tầng có nắp hầm bí mật.",
+      "Trong địa đạo có hầm nghỉ ngơi, hầm cứu thương, nơi cất vũ khí và lương thực, giếng nước, bếp Hoàng Cầm, hầm chỉ huy,…",
+      "Bếp Hoàng Cầm đào dưới đất, có hố đun và rãnh dẫn khói, tản khói nên nấu ăn mà địch không phát hiện được."
+    ],
+    "keyPoints": [
+      "Địa đạo Củ Chi là công trình độc đáo trong kháng chiến chống Mỹ."
+    ],
+    "location": {
+      "lat": 11.1433,
+      "lng": 106.4627,
+      "placeName": "Địa đạo Bến Dược, Củ Chi"
+    },
+    "provinceId": "ho-chi-minh",
+    "images": [],
+    "figures": [
+      {
+        "lesson": 26,
+        "figure": 1,
+        "page": 117,
+        "caption": "Lược đồ thể hiện vị trí địa lí của Địa đạo Củ Chi"
+      },
+      {
+        "lesson": 26,
+        "figure": 2,
+        "page": 118,
+        "caption": "Hầm cứu thương"
+      },
+      {
+        "lesson": 26,
+        "figure": 3,
+        "page": 118,
+        "caption": "Bếp Hoàng Cầm"
+      }
+    ],
+    "relatedIds": [
+      "nam-bo__chuyen-dia-dao"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 26. Địa đạo Củ Chi",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 117,
+        "note": "tr. 117–118, Hình 1, 2, 3"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__chuyen-dia-dao",
+    "title": "Chuyện về Địa đạo Củ Chi",
+    "summary": "Quân và dân Củ Chi đào địa đạo bằng những dụng cụ thô sơ và kiên cường chiến đấu chống quân Mỹ càn quét.",
+    "highlights": [
+      "Người ta đào một cái giếng rộng 0,6 m, sâu 3 m, rồi dùng cuốc khoét ngang tạo đường hầm; cứ khoảng 16 m lại đào thêm một giếng.",
+      "Hai đội đào ngược hướng nhau, nghe tiếng đục dưới đất để tìm đúng hướng; đất đào lên được đổ xuống sông hoặc rải khắp rừng.",
+      "Địch dùng nhiều tấn bom, chất độc hoá học để phá huỷ, nhưng du kích và nhân dân vẫn bám trụ với tinh thần \"một tấc không đi, một li không rời\".",
+      "Để tiếp tế lương thực, người dân giấu gạo trong búi tóc, trong cán cuốc rỗng,…"
+    ],
+    "keyPoints": [
+      "Củ Chi xứng đáng với danh hiệu \"Đất thép thành đồng\"."
+    ],
+    "provinceId": "ho-chi-minh",
+    "images": [],
+    "figures": [],
+    "relatedIds": [
+      "nam-bo__dia-dao"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 26. Địa đạo Củ Chi",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 118,
+        "note": "tr. 118–119"
+      }
+    ],
+    "status": "draft"
+  }
+]

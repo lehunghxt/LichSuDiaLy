@@ -28,6 +28,12 @@ vi.mock('../features/map/VietnamMap', () => ({
   ),
 }))
 
+// Mọi vùng thật đều đã có nội dung; giả lập Nam Bộ "sắp ra mắt" để giữ test cho trạng thái này
+vi.mock('../data/regions.json', async (importOriginal) => {
+  const orig = await importOriginal<{ default: { id: string; status: string }[] }>()
+  return { default: orig.default.map((r) => (r.id === 'nam-bo' ? { ...r, status: 'coming_soon' } : r)) }
+})
+
 // Thư viện ảnh giả: 1 ảnh bìa (Lào Cai), 1 ảnh Đền Hùng (Phú Thọ), 1 ảnh Cần Thơ (vùng sắp ra mắt)
 vi.mock('../features/images/library', async (importOriginal) => {
   const orig = await importOriginal<typeof import('../features/images/library')>()
@@ -383,7 +389,7 @@ test('coming-soon region shows its outline greyed and the image gallery', async 
   renderAt('/ban-do/nam-bo')
   const nav = await outlineNav()
   const buttons = within(nav).getAllByRole('button')
-  expect(buttons.length).toBe(25)
+  expect(buttons.length).toBe(31)
   for (const b of buttons) expect(b).toHaveTextContent('đang cập nhật')
   expect(await screen.findByRole('region', { name: 'Hình ảnh của vùng' })).toBeInTheDocument()
 })

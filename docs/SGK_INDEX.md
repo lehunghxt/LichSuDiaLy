@@ -155,3 +155,18 @@ Không thuộc vùng: Hà Nội, Bắc Ninh, Quảng Ninh (thuộc Đồng bằn
 | 19 | Cố đô Huế: sông Hương, núi Ngự Bình, Thiên Mụ, Kinh thành ba vòng; Tôn Thất Thuyết 1885; CMT8 ở Huế; bảo tồn | 88–91 |
 | 20 | Phố cổ Hội An: nhà cổ, hội quán người Hoa, Chùa Cầu; bảo tồn | 92–95 |
 | 21 | Không gian văn hoá Cồng chiêng Tây Nguyên (UNESCO 2005); lễ hội Cồng chiêng | 96–98 |
+
+## Chủ đề 5 — Nam Bộ (ghi chép theo bài)
+
+| Bài | Ý chính | Trang |
+|---|---|---|
+| 22 | Vị trí: Đông Nam Bộ và Tây Nam Bộ (ĐBSCL); biển rộng | 99–100 |
+| 22 | Địa hình đồng bằng thấp, đồi núi thấp ở bắc ĐNB; núi Bà Đen 986 m; vùng trũng Đồng Tháp Mười, An Giang, Cà Mau | 100–101 |
+| 22 | Khí hậu TB năm trên 27°C, mưa tháng 5–11, khô 12–4; sông Đồng Nai, Tiền, Hậu (Cửu Long, cửa Bát Xắc bồi lấp); đất xám, badan, phù sa | 101 |
+| 22 | Thuận lợi; khó khăn: lũ lụt, sạt lở, nhiễm mặn, thiếu nước mùa khô | 102 |
+| 23 | Gần 37 triệu dân (2024); Kinh, Khmer, Hoa, Chăm; lúa lớn nhất; cây ăn quả, cây công nghiệp; lợn, gà, vịt; thuỷ sản lớn nhất (cá tra, ba sa, tôm) | 103–104 |
+| 23 | Công nghiệp phát triển nhất: dầu khí, điện, điện tử – tin học, dệt may, hoá chất, chế biến lương thực; tập trung ĐNB | 105–106 |
+| 24 | Nhà sàn, nhà nổi, nhà lá miệt vườn; chợ nổi (Cái Răng, Phong Điền, Phụng Hiệp, Ngã Năm, Cái Bè, Trà Ôn); ghe xuồng; áo bà ba, khăn rằn | 107–109 |
+| 24 | Truyền thống yêu nước: Trương Định, Nguyễn Trung Trực, Nguyễn Thị Định; "Thành đồng Tổ quốc" | 109–110 |
+| 25 | TP. Hồ Chí Minh: tên gọi, mở rộng 7-2025; 5-6-1911 Bến Nhà Rồng; 30-4-1975 Dinh Độc Lập; trung tâm kinh tế, văn hoá, giáo dục | 111–116 |
+| 26 | Địa đạo Củ Chi: sâu 3–12 m, dài ~250 km, ba tầng, bếp Hoàng Cầm; Bến Dược, Bến Đình; "Đất thép thành đồng" | 117–119 |
