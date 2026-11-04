@@ -10,11 +10,11 @@
 
 **Spec:** `doc.md` (dàn ý do chủ dự án đưa, 04/11/2026) + `docs/SGK_INDEX.md` (nguồn nội dung). Không có tài liệu thiết kế riêng: chủ dự án yêu cầu lên plan ngay; các quyết định chưa được hỏi ghi ở mục "Cần chốt".
 
-## Cần chốt (mặc định đã chọn, đổi được trước khi làm)
+## Đã chốt (chủ dự án, 04/11/2026)
 
-1. **Phần thứ 4 "Lịch sử và di tích"** — `doc.md` không có, nhưng SGK có bài lịch sử ở mỗi vùng (TDMNPB: Bài 7 Đền Hùng và lễ giỗ Tổ). *Mặc định: giữ thành phần thứ 4*, để không mất nội dung SGK đang có (3 mục Đền Hùng).
-2. **Mục SGK không có** (ví dụ "Ẩm thực truyền thống", "Nghề dệt lụa Vạn Phúc" nếu sách không nhắc) — *Mặc định: vẫn hiện tên mục, ghi "Nội dung đang được cập nhật"*, không tự viết từ nguồn ngoài; liệt kê trong `docs/OUTLINE_GAPS.md` để giáo viên quyết.
-3. **Vùng "Sắp ra mắt"** — *Mặc định: hiện luôn dàn ý (tên phần, tên mục, xám) cùng thư viện ảnh*, nội dung từng mục mở dần khi soạn xong.
+1. **Giữ phần thứ 4 "Lịch sử và di tích"** — `doc.md` không có, nhưng SGK có bài lịch sử ở mỗi vùng (TDMNPB: Bài 7 Đền Hùng và lễ giỗ Tổ). Giữ để không mất nội dung SGK đang có (3 mục Đền Hùng); các vùng khác lấy tên bài lịch sử trong SGK.
+2. **Mục SGK không có** (ví dụ "Ẩm thực truyền thống", "Nghề dệt lụa Vạn Phúc" nếu sách không nhắc) — vẫn hiện tên mục, ghi "Nội dung đang được cập nhật"; không tự viết từ nguồn ngoài; liệt kê trong `docs/OUTLINE_GAPS.md` để giáo viên quyết.
+3. **Vùng "Sắp ra mắt"** — hiện luôn dàn ý (tên phần, tên mục, màu xám) cùng thư viện ảnh; nội dung từng mục mở dần khi soạn xong.
 
 ## Global Constraints
 
