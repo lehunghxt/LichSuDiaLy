@@ -34,10 +34,21 @@ test('regions section: active region links to the map, others marked "Sắp ra m
   expect(within(list).getAllByText('Sắp ra mắt')).toHaveLength(3)
 })
 
-test('topic tiles open the topic modal of the active region', async () => {
+test('home page lists the sections of the region outline (no old topic names)', async () => {
   renderHome()
-  const topics = await screen.findByRole('list', { name: '5 chủ đề khám phá' })
-  expect(within(topics).getByRole('link', { name: /Văn hóa/ })).toHaveAttribute('href', `/ban-do/${TDMNPB}?chu-de=van-hoa`)
+  const parts = await screen.findByRole('list', { name: 'Các phần khám phá' })
+  const links = within(parts).getAllByRole('link')
+  expect(links.map((l) => l.querySelector('[data-label]')?.textContent)).toEqual([
+    'Thiên nhiên',
+    'Dân cư và hoạt động sản xuất',
+    'Văn hóa',
+    'Lịch sử và di tích',
+  ])
+  expect(within(parts).getByRole('link', { name: /Văn hóa/ })).toHaveAttribute('href', `/ban-do/${TDMNPB}?phan=van-hoa`)
+  expect(await within(parts).findByText('6/6 mục có nội dung')).toBeInTheDocument()
+  for (const old of ['Đặc điểm tự nhiên', 'Lễ hội và văn hóa', 'Danh lam thắng cảnh', 'Di tích lịch sử', '5 chủ đề khám phá']) {
+    expect(screen.queryByText(old)).toBeNull()
+  }
 })
 
 test('"Em có biết?" shows a fun fact from the SGK content and cycles to another', async () => {

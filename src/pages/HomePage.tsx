@@ -19,9 +19,10 @@ import { Link } from 'react-router'
 import { repository } from '../features/content/repository'
 import { SECTION_ICONS, SECTION_TILE } from '../features/content/sectionIcons'
 import { useRegionContent } from '../features/content/useRegionContent'
+import { useRegionOutline } from '../features/content/useRegionOutline'
 import { MiniVietnamMap } from '../features/map/MiniVietnamMap'
 import { useProgress } from '../features/progress/useProgress'
-import { SECTIONS, SECTION_LABELS, type ContentItem, type RegionContent } from '../types/content'
+import { SECTION_LABELS, type ContentItem, type RegionContent } from '../types/content'
 
 const card = 'rounded-card bg-surface shadow-[0_8px_30px_rgb(15_23_42/0.08)]'
 
@@ -29,6 +30,7 @@ export default function HomePage() {
   const regions = repository.getRegions()
   const active = regions.find((r) => r.status === 'active')
   const content = useRegionContent(active?.id)
+  const outline = useRegionOutline(active?.id)
   const ready = content.status === 'ready' ? content.content : null
 
   return (
@@ -46,24 +48,31 @@ export default function HomePage() {
         <ProgressCard content={ready} regionCount={regions.length} />
       </div>
 
-      {active && (
+      {active && outline && (
         <section aria-labelledby="topics-title">
-          <SectionTitle id="topics-title" icon={Search} title="5 chủ đề khám phá" subtitle={active.name} />
-          <ul aria-label="5 chủ đề khám phá" className="grid grid-cols-2 gap-4 md:grid-cols-5">
-            {SECTIONS.map((c) => {
+          <SectionTitle id="topics-title" icon={Search} title="Các phần khám phá" subtitle={active.name} />
+          <ul aria-label="Các phần khám phá" className="grid grid-cols-2 gap-4 md:grid-cols-4">
+            {outline.sections.map((section) => {
+              const c = section.id
               const Icon = SECTION_ICONS[c]
               const style = SECTION_TILE[c]
+              const ids = new Set(ready?.items.map((i) => i.id))
+              const filled = section.topics.filter((t) => t.itemIds.some((id) => ids.has(id))).length
               return (
                 <li key={c}>
                   <Link
-                    to={`/ban-do/${active.id}?chu-de=${c}`}
+                    to={`/ban-do/${active.id}?phan=${c}`}
                     className={`group flex h-full flex-col items-center gap-3 rounded-card border-2 p-6 text-center font-bold shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${style.tile}`}
                   >
                     <span className="flex size-16 items-center justify-center rounded-full bg-white shadow-sm transition group-hover:scale-110">
                       <Icon aria-hidden className={`size-9 ${style.icon}`} strokeWidth={1.75} />
                     </span>
-                    {SECTION_LABELS[c]}
-                    {ready && <span className="text-sm font-semibold text-muted">{ready.items.filter((i) => i.section === c).length} mục</span>}
+                    <span data-label>{SECTION_LABELS[c]}</span>
+                    {ready && (
+                      <span className="text-sm font-semibold text-muted">
+                        {filled}/{section.topics.length} mục có nội dung
+                      </span>
+                    )}
                   </Link>
                 </li>
               )
@@ -189,7 +198,7 @@ function Decor() {
 
 const STEPS: { icon: LucideIcon; title: string; text: string; tone: string }[] = [
   { icon: MapIcon, title: 'Chọn vùng trên bản đồ', text: 'Bấm vào một vùng để xem vị trí, các tỉnh và những địa điểm tiêu biểu.', tone: 'bg-sky-100 text-sky-600' },
-  { icon: Search, title: 'Khám phá 5 chủ đề', text: 'Thiên nhiên, lễ hội, khoáng sản, danh thắng và di tích, có hình trong SGK.', tone: 'bg-emerald-100 text-emerald-600' },
+  { icon: Search, title: 'Khám phá theo dàn ý', text: 'Thiên nhiên, dân cư và sản xuất, văn hóa, lịch sử của từng vùng, có hình trong SGK.', tone: 'bg-emerald-100 text-emerald-600' },
   { icon: BookOpenCheck, title: 'Ôn tập vui', text: 'Trả lời câu hỏi, ghép đôi và xem lại câu sai để nhớ bài lâu hơn.', tone: 'bg-amber-100 text-amber-600' },
 ]
 

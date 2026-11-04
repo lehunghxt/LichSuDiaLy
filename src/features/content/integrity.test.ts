@@ -6,6 +6,7 @@ import { assembleRegionRaw } from './regionFiles'
 import { parseRegionContent, parseRegionList } from './parse'
 import { checkOutlineIntegrity, parseOutline } from './parseOutline'
 import type { SectionId } from '../../types/content'
+import { INITIAL_PROGRESS, regionCompletion } from '../progress/progress'
 import { checkImageIntegrity, REGION_WIDE_FILE } from '../images/library'
 import { parseWebImages } from '../images/parseWebImages'
 
@@ -168,4 +169,21 @@ test('every TDMNPB item appears in exactly one outline topic', () => {
   const ids = outline.sections.flatMap((s) => s.topics.flatMap((t) => t.itemIds))
   expect(new Set(ids).size).toBe(ids.length)
   expect(ids.length).toBe(21)
+})
+
+test('progress saved under old item ids still counts', () => {
+  const dataDir = path.resolve(import.meta.dirname, '../../data')
+  const regions = parseRegionList(JSON.parse(readFileSync(path.join(dataDir, 'regions.json'), 'utf8')))
+  const dir = path.join(dataDir, 'regions', 'trung-du-mien-nui-phia-bac')
+  const files = Object.fromEntries(
+    readdirSync(dir, { recursive: true, encoding: 'utf8' })
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => [f.split(path.sep).join('/'), JSON.parse(readFileSync(path.join(dir, f), 'utf8')) as unknown]),
+  )
+  const content = parseRegionContent(assembleRegionRaw(regions[0], files))
+  // id mục lưu trong LocalStorage trước khi có dàn ý (topics/<chủ đề>.json)
+  const oldIds = ['den-hung', 'khoang-san', 'cot-co-lung-cu', 'le-hoi', 'ruong-bac-thang'].map((s) => `trung-du-mien-nui-phia-bac__${s}`)
+  const ids = new Set(content.items.map((i) => i.id))
+  for (const id of oldIds) expect(ids.has(id), id).toBe(true)
+  expect(regionCompletion({ ...INITIAL_PROGRESS, viewedItemIds: oldIds }, content)).toBeGreaterThan(0)
 })

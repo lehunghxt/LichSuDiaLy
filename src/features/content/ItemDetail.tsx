@@ -16,7 +16,7 @@ interface ItemDetailProps {
   onSelectRelated(item: ContentItem): void
 }
 
-/** Toàn bộ thông tin một mục nội dung; dùng trong modal chủ đề */
+/** Toàn bộ thông tin một mục nội dung; dùng trong modal dàn ý */
 export function ItemDetail({ item, regionName, webImages = [], related, onSelectRelated }: ItemDetailProps) {
   const Icon = SECTION_ICONS[item.section]
   const figures = item.figures ?? []
