@@ -2,7 +2,6 @@ import { Suspense } from 'react'
 import { Link, Outlet, useMatch } from 'react-router'
 import { ProgressProvider } from '../../features/progress/ProgressProvider'
 import { LoadingState } from '../ui/states'
-import { DraftBanner } from './DraftBanner'
 import { Header } from './Header'
 
 export function AppLayout() {
@@ -12,7 +11,6 @@ export function AppLayout() {
     return (
       <ProgressProvider>
         <div className="flex min-h-dvh flex-col lg:h-dvh">
-          <DraftBanner />
           <main id="main" className="min-h-0 flex-1">
             <Suspense fallback={<LoadingState />}>
               <Outlet />
@@ -31,7 +29,6 @@ export function AppLayout() {
         >
           Bỏ qua tới nội dung chính
         </a>
-        <DraftBanner />
         <Header />
         <main id="main" className="mx-auto w-full max-w-[1680px] flex-1 px-4 py-5 lg:px-6">
           <Suspense fallback={<LoadingState />}>

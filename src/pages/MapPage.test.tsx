@@ -209,7 +209,8 @@ test('panel lists featured places with province; clicking one opens the modal at
   const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
   const places = await within(panel).findByRole('list', { name: 'Một số địa điểm tiêu biểu' })
-  const buttons = within(places).getAllByRole('button')
+  // Bỏ qua nút phóng to ảnh, chỉ đếm nút mở địa điểm
+  const buttons = within(places).getAllByRole('button').filter((b) => !b.getAttribute('aria-label')?.startsWith('Xem ảnh lớn'))
   expect(buttons.length).toBeGreaterThan(0)
   expect(buttons.length).toBeLessThanOrEqual(3)
   const fansipan = within(places).getByRole('button', { name: /Đỉnh Phan-xi-păng/ })
