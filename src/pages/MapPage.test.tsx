@@ -366,7 +366,7 @@ test('topic without content is shown greyed with "đang cập nhật"', async ()
   renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   const nav = await outlineNav()
   const people = within(nav).getByRole('list', { name: 'Dân cư và hoạt động sản xuất' })
-  expect(within(people).getByRole('button', { name: /Trang phục truyền thống/ })).toHaveTextContent('đang cập nhật')
+  expect(within(people).getByRole('button', { name: /Nhà ở và bản làng/ })).toHaveTextContent('đang cập nhật')
   expect(within(people).getByRole('button', { name: /Các dân tộc/ })).not.toHaveTextContent('đang cập nhật')
 })
 

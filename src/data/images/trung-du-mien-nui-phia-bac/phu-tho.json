@@ -157,8 +157,10 @@
     "id": "phu-tho__hoa-binh-dam-in-vietnam",
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
-    "section": "thien-nhien",
-    "itemIds": [],
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__thuy-dien"
+    ],
     "alt": "Dòng sông chảy giữa hai bờ đồi, bên trái là công trình thủy điện",
     "caption": "Sông Đà và nhà máy thủy điện Hòa Bình (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
     "src": {

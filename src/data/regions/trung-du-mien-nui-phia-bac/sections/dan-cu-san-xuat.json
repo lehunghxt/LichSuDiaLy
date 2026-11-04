@@ -127,5 +127,155 @@
       }
     ],
     "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__trang-phuc",
+    "title": "Trang phục truyền thống",
+    "summary": "Mỗi dân tộc trong vùng có trang phục truyền thống riêng. Cùng với tiếng nói và tập quán, trang phục làm nên sự đa dạng văn hoá của vùng.",
+    "highlights": [
+      "Vùng là nơi sinh sống của nhiều dân tộc như Mường, Thái, Dao, Mông, Tày, Nùng, Kinh,…",
+      "Nhìn trang phục, em có thể nhận ra nét riêng của từng dân tộc."
+    ],
+    "keyPoints": [
+      "Mỗi dân tộc có tiếng nói, tập quán sinh hoạt và trang phục truyền thống riêng."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 5,
+        "figure": 1,
+        "page": 25,
+        "caption": "Người Mông"
+      },
+      {
+        "lesson": 5,
+        "figure": 2,
+        "page": 25,
+        "caption": "Người Tày"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__dan-toc",
+      "trung-du-mien-nui-phia-bac__cho-phien"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 24,
+        "note": "tr. 24–25, Hình 1, 2"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__trong-che-cay-an-qua",
+    "title": "Trồng chè và cây ăn quả",
+    "summary": "Đất chính của vùng là đất phe-ra-lít (feralit). Loại đất này hợp với nhiều loại cây ăn quả và cây công nghiệp như cây chè.",
+    "highlights": [
+      "Thiên nhiên của vùng thuận lợi cho trồng và chế biến cây công nghiệp, cây ăn quả, cây dược liệu.",
+      "Sách có ảnh người dân thu hoạch chè ở tỉnh Phú Thọ."
+    ],
+    "keyPoints": [
+      "Đất phe-ra-lít của vùng thích hợp trồng cây ăn quả và cây công nghiệp."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 11,
+        "page": 22,
+        "caption": "Thu hoạch chè (tỉnh Phú Thọ)"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__anh-huong-tu-nhien",
+      "trung-du-mien-nui-phia-bac__ruong-bac-thang"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 21,
+        "note": "tr. 21–22, Hình 11"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__thuy-dien",
+    "title": "Sản xuất thủy điện",
+    "summary": "Sông ở vùng nhiều thác ghềnh nên có tiềm năng lớn để làm thuỷ điện. Nhiều nhà máy thuỷ điện đã được xây dựng ở đây.",
+    "highlights": [
+      "Nhà máy thuỷ điện cung cấp điện cho sinh hoạt và sản xuất.",
+      "Các hồ thuỷ điện còn giúp giảm lũ cho vùng đồng bằng phía dưới.",
+      "Lược đồ trong sách có các nhà máy thuỷ điện: Lai Châu, Sơn La, Hoà Bình (trên sông Đà), Thác Bà (trên sông Chảy), Tuyên Quang (trên sông Gâm)."
+    ],
+    "keyPoints": [
+      "Xây dựng nhà máy thuỷ điện là một cách khai thác tự nhiên của vùng.",
+      "Thuỷ điện cung cấp điện và góp phần giảm lũ cho đồng bằng."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 5,
+        "figure": 5,
+        "page": 26,
+        "caption": "Nhà máy thuỷ điện Thác Bà trên sông Chảy (tỉnh Lào Cai)"
+      },
+      {
+        "lesson": 5,
+        "figure": 6,
+        "page": 27,
+        "caption": "Lược đồ một số nhà máy thuỷ điện và mỏ khai thác khoáng sản ở vùng Trung du và miền núi phía Bắc"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__song-ngoi",
+      "trung-du-mien-nui-phia-bac__su-dung-khoang-san"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 26,
+        "note": "tr. 26–27, Hình 5, 6"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__nghe-thu-cong",
+    "title": "Nghề thủ công truyền thống",
+    "summary": "Người dân vùng cao tự làm ra nhiều sản phẩm, nhiều nhất là hàng thổ cẩm. Các sản phẩm này được mang ra bán ở chợ phiên.",
+    "highlights": [
+      "Ở chợ phiên, hàng hoá phần lớn do người dân địa phương làm ra.",
+      "Bên cạnh thổ cẩm còn có công cụ sản xuất."
+    ],
+    "keyPoints": [
+      "Thổ cẩm là sản phẩm nổi bật của người dân vùng cao, thường bày bán ở chợ phiên."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 6,
+        "figure": 6,
+        "page": 30,
+        "caption": "Chợ phiên ở xã Đồng Văn (tỉnh Tuyên Quang)"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__cho-phien",
+      "trung-du-mien-nui-phia-bac__trang-phuc"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 30,
+        "note": "tr. 30, Hình 6"
+      }
+    ],
+    "status": "draft"
   }
 ]

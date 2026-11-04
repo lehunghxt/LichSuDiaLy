@@ -223,5 +223,37 @@
       }
     ],
     "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__am-thuc",
+    "title": "Ẩm thực truyền thống",
+    "summary": "Vùng có những món ăn đặc trưng như thắng cố, cơm lam. Em có thể gặp các món này ở chợ phiên vùng cao.",
+    "highlights": [
+      "Chợ phiên ngoài mua bán hàng hoá còn là nơi người dân thưởng thức món ăn của vùng."
+    ],
+    "keyPoints": [
+      "Thắng cố, cơm lam là món ăn đặc trưng của vùng."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 6,
+        "figure": 6,
+        "page": 30,
+        "caption": "Chợ phiên ở xã Đồng Văn (tỉnh Tuyên Quang)"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__cho-phien"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 30,
+        "note": "tr. 30"
+      }
+    ],
+    "status": "draft"
   }
 ]

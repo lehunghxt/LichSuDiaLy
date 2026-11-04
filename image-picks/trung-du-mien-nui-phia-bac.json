@@ -227,8 +227,10 @@
   {
     "file": "File:Tea hill in Thai Nguyen.jpg",
     "provinceId": "thai-nguyen",
-    "section": "van-hoa",
-    "itemIds": [],
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__trong-che-cay-an-qua"
+    ],
     "alt": "Đồi chè xanh xếp thành từng hàng",
     "caption": "Đồi chè ở xã Vô Tranh (tỉnh Thái Nguyên).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -327,8 +329,10 @@
   {
     "file": "File:Hoa Binh Dam in Vietnam.jpg",
     "provinceId": "phu-tho",
-    "section": "thien-nhien",
-    "itemIds": [],
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__thuy-dien"
+    ],
     "alt": "Dòng sông chảy giữa hai bờ đồi, bên trái là công trình thủy điện",
     "caption": "Sông Đà và nhà máy thủy điện Hòa Bình (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -392,7 +396,8 @@
     "provinceId": "son-la",
     "section": "thien-nhien",
     "itemIds": [
-      "trung-du-mien-nui-phia-bac__song-ngoi"
+      "trung-du-mien-nui-phia-bac__song-ngoi",
+      "trung-du-mien-nui-phia-bac__thuy-dien"
     ],
     "alt": "Đập thủy điện lớn chắn ngang lòng hồ rộng",
     "caption": "Đập và hồ thủy điện Sơn La trên sông Đà (tỉnh Sơn La).",

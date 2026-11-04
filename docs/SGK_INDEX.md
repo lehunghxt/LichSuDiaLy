@@ -73,10 +73,12 @@ Không thuộc vùng: Hà Nội, Bắc Ninh, Quảng Ninh (thuộc Đồng bằn
 | Ý chính | Trang |
 |---|---|
 | Dân số gần 13 triệu người (2024); dân tộc: Mường, Thái, Dao, Mông, Tày, Nùng, Kinh… | 24 |
+| Mỗi dân tộc có tiếng nói, tập quán sinh hoạt và trang phục truyền thống riêng (Hình 1 Người Mông, Hình 2 Người Tày) | 24–25 |
 | Diện tích rộng, ít dân; phân bố khác nhau giữa các tỉnh, giữa miền núi và trung du | 25 |
 | Ruộng bậc thang: xẻ sườn núi thành bậc để trồng lúa nước; đảm bảo lương thực, hạn chế phá rừng làm nương rẫy, thu hút du lịch | 26 |
 | Ruộng bậc thang Mù Cang Chải, Sa Pa (Lào Cai), Hoàng Su Phì (Tuyên Quang) là danh thắng quốc gia | 26 |
 | Thuỷ điện: sông có tiềm năng lớn; nhà máy cung cấp điện, giảm lũ cho đồng bằng (ảnh: thuỷ điện Thác Bà trên sông Chảy, Lào Cai) | 26 |
+| Hình 6 (lược đồ): nhà máy thuỷ điện Lai Châu, Sơn La, Hoà Bình (sông Đà), Thác Bà (sông Chảy), Tuyên Quang (sông Gâm) | 27 |
 | Khai thác khoáng sản là hoạt động kinh tế quan trọng; khoáng sản kim loại → luyện kim; a-pa-tít → phân lân; đá vôi → vật liệu xây dựng | 26–27 |
 
 ### Bài 6. Một số nét văn hoá (tr. 28–31)

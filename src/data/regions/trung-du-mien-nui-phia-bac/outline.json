@@ -69,7 +69,9 @@
         {
           "id": "trang-phuc-truyen-thong",
           "title": "Trang phục truyền thống",
-          "itemIds": []
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__trang-phuc"
+          ]
         },
         {
           "id": "nha-o-va-ban-lang",
@@ -86,7 +88,9 @@
         {
           "id": "trong-che-va-cay-an-qua",
           "title": "Trồng chè và cây ăn quả",
-          "itemIds": []
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__trong-che-cay-an-qua"
+          ]
         },
         {
           "id": "khai-thac-khoang-san",
@@ -99,12 +103,16 @@
           "id": "san-xuat-thuy-dien",
           "title": "Sản xuất thủy điện",
           "hint": "(Hòa Bình, Sơn La)",
-          "itemIds": []
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__thuy-dien"
+          ]
         },
         {
           "id": "nghe-thu-cong-truyen-thong",
           "title": "Nghề thủ công truyền thống",
-          "itemIds": []
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__nghe-thu-cong"
+          ]
         }
       ]
     },
@@ -150,7 +158,9 @@
         {
           "id": "am-thuc-truyen-thong",
           "title": "Ẩm thực truyền thống",
-          "itemIds": []
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__am-thuc"
+          ]
         }
       ]
     },
