@@ -37,6 +37,10 @@ export function AppLayout() {
         </main>
         <footer className="border-t border-line bg-surface px-4 py-5 text-center text-sm text-muted">
           Nội dung học tập bám theo SGK Lịch sử và Địa lí 4. Tiến độ chỉ lưu trên trình duyệt này.{' '}
+          <Link to="/nguon-tham-khao" className="font-semibold text-primary hover:underline">
+            Nguồn tham khảo
+          </Link>
+          {' · '}
           <Link to="/nguon-anh" className="font-semibold text-primary hover:underline">
             Nguồn ảnh
           </Link>

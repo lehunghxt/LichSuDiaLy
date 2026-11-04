@@ -104,6 +104,10 @@ export default function MapPage() {
           />
           <p className="mt-auto text-center text-xs text-muted">
             Nội dung bám theo SGK Lịch sử và Địa lí 4.{' '}
+            <Link to="/nguon-tham-khao" className="font-semibold text-primary hover:underline">
+              Nguồn tham khảo
+            </Link>
+            {' · '}
             <Link to="/nguon-anh" className="font-semibold text-primary hover:underline">
               Nguồn ảnh
             </Link>

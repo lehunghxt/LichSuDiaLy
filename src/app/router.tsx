@@ -11,6 +11,7 @@ const QuizListPage = lazy(() => import('../pages/QuizListPage'))
 const QuizPage = lazy(() => import('../pages/QuizPage'))
 const ProgressPage = lazy(() => import('../pages/ProgressPage'))
 const ImageCreditsPage = lazy(() => import('../pages/ImageCreditsPage'))
+const SourcesPage = lazy(() => import('../pages/SourcesPage'))
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage'))
 
 export const routes: RouteObject[] = [
@@ -27,6 +28,7 @@ export const routes: RouteObject[] = [
       { path: 'on-tap/:quizId', element: <QuizPage /> },
       { path: 'tien-do', element: <ProgressPage /> },
       { path: 'nguon-anh', element: <ImageCreditsPage /> },
+      { path: 'nguon-tham-khao', element: <SourcesPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },
