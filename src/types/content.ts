@@ -11,6 +11,36 @@ export const TOPIC_LABELS: Record<TopicCategory, string> = {
   historical_site: 'Di tích lịch sử',
 }
 
+/** Các phần trong dàn ý vùng (doc.md); "lich-su" giữ theo bài lịch sử của SGK */
+export const SECTIONS = ['thien-nhien', 'dan-cu-san-xuat', 'van-hoa', 'lich-su'] as const
+export type SectionId = (typeof SECTIONS)[number]
+
+export const SECTION_LABELS: Record<SectionId, string> = {
+  'thien-nhien': 'Thiên nhiên',
+  'dan-cu-san-xuat': 'Dân cư và hoạt động sản xuất',
+  'van-hoa': 'Văn hóa',
+  'lich-su': 'Lịch sử và di tích',
+}
+
+/** Một mục trong dàn ý; nội dung là các ContentItem theo thứ tự itemIds (rỗng = đang cập nhật) */
+export interface OutlineTopic {
+  id: string
+  title: string
+  /** Phần trong ngoặc của doc.md, ví dụ "(sông Hồng, sông Đà, sông Lô)" */
+  hint?: string
+  itemIds: string[]
+}
+
+export interface OutlineSection {
+  id: SectionId
+  topics: OutlineTopic[]
+}
+
+export interface RegionOutline {
+  regionId: string
+  sections: OutlineSection[]
+}
+
 export type ContentStatus = 'draft' | 'verified'
 
 export interface SourceRef {
