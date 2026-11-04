@@ -1,13 +1,37 @@
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
-import { createGeoLoader, isProvinceCollection, isRegionCollection } from './geo'
+import {
+  createGeoLoader,
+  isProvinceCollection,
+  isRegionCollection,
+  splitOffshore,
+  type AreaCollection,
+  type ProvinceFeatureProps,
+  type RegionFeatureProps,
+} from './geo'
 
 const mapsDir = path.resolve(import.meta.dirname, '../../../public/maps')
 const readJson = (f: string): unknown => JSON.parse(readFileSync(path.join(mapsDir, f), 'utf8'))
 
 const regionFc = {
   type: 'FeatureCollection',
-  features: [{ type: 'Feature', properties: { regionId: 'vung-a' }, geometry: { type: 'Polygon', coordinates: [[[0, 0], [1, 0], [1, 1], [0, 0]]] } }],
+  features: [
+    {
+      type: 'Feature',
+      properties: { regionId: 'vung-a' },
+      geometry: {
+        type: 'Polygon',
+        coordinates: [
+          [
+            [0, 0],
+            [1, 0],
+            [1, 1],
+            [0, 0],
+          ],
+        ],
+      },
+    },
+  ],
 }
 
 function fetchOk(body: unknown) {
@@ -76,4 +100,52 @@ test('provinces data keeps Hoàng Sa and Trường Sa islands', () => {
   }
   expect(offshore('da-nang')).toBeGreaterThan(0)
   expect(offshore('khanh-hoa')).toBeGreaterThan(0)
+})
+
+const sq = (lng: number, lat: number, d = 0.1) => [
+  [
+    [lng, lat],
+    [lng + d, lat],
+    [lng + d, lat + d],
+    [lng, lat + d],
+    [lng, lat],
+  ],
+]
+
+test('splitOffshore moves archipelago parts into their own feature, keeping mainland and coastal islands together', () => {
+  const fc: AreaCollection<RegionFeatureProps> = {
+    type: 'FeatureCollection',
+    features: [
+      {
+        type: 'Feature',
+        properties: { regionId: 'r' },
+        geometry: {
+          type: 'MultiPolygon',
+          // đất liền, đảo ven bờ (Phú Quý), Trường Sa (đông 109,6°), bãi phía nam (đông 109°, nam 10°)
+          coordinates: [sq(108.5, 12, 0.9), sq(108.9, 10.5), sq(114, 9), sq(109.5, 7.3)],
+        },
+      },
+    ],
+  }
+  const out = splitOffshore(fc)
+  expect(out.features.map((f) => [f.properties.regionId, f.properties.offshore, f.geometry.coordinates.length])).toEqual([
+    ['r', false, 2],
+    ['r', true, 2],
+  ])
+})
+
+test('splitOffshore leaves features without offshore parts as a single mainland feature', () => {
+  const fc: AreaCollection<RegionFeatureProps> = {
+    type: 'FeatureCollection',
+    features: [{ type: 'Feature', properties: { regionId: 'a' }, geometry: { type: 'Polygon', coordinates: sq(105, 21) } }],
+  }
+  expect(splitOffshore(fc).features).toEqual([
+    { type: 'Feature', properties: { regionId: 'a', offshore: false }, geometry: { type: 'MultiPolygon', coordinates: [sq(105, 21)] } },
+  ])
+})
+
+test('real map data: Hoàng Sa and Trường Sa are split off from Đà Nẵng and Khánh Hòa, nothing else is', () => {
+  const provinces = readJson('provinces.geojson') as AreaCollection<ProvinceFeatureProps>
+  const offshore = splitOffshore(provinces).features.filter((f) => f.properties.offshore)
+  expect(offshore.map((f) => f.properties.provinceId).sort()).toEqual(['da-nang', 'khanh-hoa'])
 })

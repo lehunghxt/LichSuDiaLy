@@ -9,7 +9,15 @@ import { ErrorState, LoadingState } from '../../components/ui/states'
 import type { RegionMeta } from '../../types/content'
 import { LocationMarkers } from './LocationMarkers'
 import type { Place } from './places'
-import { geoLoader, type AreaCollection, type LabelCollection, type ProvinceFeatureProps, type RegionFeatureProps } from './geo'
+import {
+  geoLoader,
+  splitOffshore,
+  type AreaCollection,
+  type LabelCollection,
+  type ProvinceFeatureProps,
+  type RegionFeatureProps,
+  type WithOffshore,
+} from './geo'
 
 // Khung nhìn toàn quốc, gồm cả Hoàng Sa và Trường Sa
 const VIETNAM_BOUNDS: LatLngBoundsExpression = [
@@ -47,7 +55,9 @@ function useMapData() {
     setState({ status: 'loading' })
     Promise.all([geoLoader.loadRegions(), geoLoader.loadProvinces(), geoLoader.loadLabels()]).then(([r, p, l]) => {
       if (cancelled) return
-      setState(r.ok && p.ok && l.ok ? { status: 'ready', data: { regions: r.data, provinces: p.data, labels: l.data } } : { status: 'error' })
+      setState(
+        r.ok && p.ok && l.ok ? { status: 'ready', data: { regions: r.data, provinces: p.data, labels: l.data } } : { status: 'error' },
+      )
     })
     return () => {
       cancelled = true
@@ -59,7 +69,9 @@ function useMapData() {
 const cssColor = (token: string | undefined) =>
   token ? getComputedStyle(document.documentElement).getPropertyValue(`--color-${token}`).trim() || '#94a3b8' : '#94a3b8'
 
-function regionStyle(color: string, selected: boolean, dimmed: boolean): PathOptions {
+function regionStyle(color: string, selected: boolean, dimmed: boolean, offshore = false): PathOptions {
+  // Hoàng Sa, Trường Sa: không viền để các mảnh đảo, bãi đá giữ đúng kích thước
+  if (offshore) return { stroke: false, fillColor: color, fillOpacity: selected ? 1 : dimmed ? 0.55 : 0.9 }
   // Viền cùng màu vùng để các đảo nhỏ (Hoàng Sa, Trường Sa) vẫn thấy rõ màu; vùng đang chọn viền trắng dày
   return {
     color: selected ? '#ffffff' : color,
@@ -71,9 +83,15 @@ function regionStyle(color: string, selected: boolean, dimmed: boolean): PathOpt
 
 type PathWithFeature<P> = L.Path & { feature?: GeoJSON.Feature<GeoJSON.Geometry, P> }
 
-function RegionsLayer({ data, regions, selectedRegionId, onSelectRegion }: { data: AreaCollection<RegionFeatureProps> } & Pick<VietnamMapProps, 'regions' | 'selectedRegionId' | 'onSelectRegion'>) {
+function RegionsLayer({
+  data,
+  regions,
+  selectedRegionId,
+  onSelectRegion,
+}: { data: AreaCollection<RegionFeatureProps> } & Pick<VietnamMapProps, 'regions' | 'selectedRegionId' | 'onSelectRegion'>) {
   const map = useMap()
   const layerRef = useRef<GeoJSONLayer>(null)
+  const areas = useMemo(() => splitOffshore(data), [data])
   const colorOf = useCallback((id: string) => cssColor(regions.find((r) => r.id === id)?.color), [regions])
   const nameOf = useCallback((id: string) => regions.find((r) => r.id === id)?.name ?? id, [regions])
   const select = useRef(onSelectRegion)
@@ -81,20 +99,26 @@ function RegionsLayer({ data, regions, selectedRegionId, onSelectRegion }: { dat
 
   // React Leaflet gọi lại setStyle khi prop style đổi → style là hàm ổn định, chỉ đổi khi vùng chọn đổi
   const styleFor = useCallback(
-    (id: string): PathOptions =>
-      regionStyle(colorOf(id), id === selectedRegionId, selectedRegionId !== null && id !== selectedRegionId),
+    (id: string, offshore = false): PathOptions =>
+      regionStyle(colorOf(id), id === selectedRegionId, selectedRegionId !== null && id !== selectedRegionId, offshore),
     [colorOf, selectedRegionId],
   )
   const styleRef = useRef(styleFor)
   styleRef.current = styleFor
-  const style = useCallback((f?: GeoJSON.Feature<GeoJSON.Geometry, RegionFeatureProps>) => (f ? styleFor(f.properties.regionId) : {}), [styleFor])
+  const style = useCallback(
+    (f?: GeoJSON.Feature<GeoJSON.Geometry, WithOffshore<RegionFeatureProps>>) =>
+      f ? styleFor(f.properties.regionId, f.properties.offshore) : {},
+    [styleFor],
+  )
 
   // Theo hình mẫu: giữ toàn quốc, vùng đang chọn có nhãn bong bóng phía trên
   useEffect(() => {
     if (!selectedRegionId) return
     let tooltip: L.Tooltip | null = null
     layerRef.current?.eachLayer((l) => {
-      if (l instanceof L.Polygon && (l as PathWithFeature<RegionFeatureProps>).feature?.properties.regionId === selectedRegionId) {
+      const props = (l as PathWithFeature<WithOffshore<RegionFeatureProps>>).feature?.properties
+      // Nhãn đặt trên phần đất liền, không tính quần đảo xa bờ
+      if (l instanceof L.Polygon && props?.regionId === selectedRegionId && !props.offshore) {
         const b = l.getBounds()
         tooltip = L.tooltip({ permanent: true, direction: 'top', className: 'region-callout', offset: [0, -6] })
           .setLatLng([b.getNorth(), b.getCenter().lng])
@@ -107,29 +131,35 @@ function RegionsLayer({ data, regions, selectedRegionId, onSelectRegion }: { dat
     }
   }, [selectedRegionId, map, nameOf])
 
-  const onEachFeature = (feature: GeoJSON.Feature<GeoJSON.Geometry, RegionFeatureProps>, layer: Layer) => {
-    const id = feature.properties.regionId
+  const onEachFeature = (feature: GeoJSON.Feature<GeoJSON.Geometry, WithOffshore<RegionFeatureProps>>, layer: Layer) => {
+    const { regionId: id, offshore } = feature.properties
     layer.bindTooltip(nameOf(id), { sticky: true, className: 'map-tooltip' })
     layer.on({
       click: () => select.current(id),
-      mouseover: (e) => (e.target as L.Path).setStyle({ weight: 3 }),
-      mouseout: (e) => (e.target as L.Path).setStyle(styleRef.current(id)),
+      mouseover: (e) => !offshore && (e.target as L.Path).setStyle({ weight: 3 }),
+      mouseout: (e) => (e.target as L.Path).setStyle(styleRef.current(id, offshore)),
     })
   }
 
-  return <GeoJSON ref={layerRef} data={data} style={style} onEachFeature={onEachFeature} />
+  return <GeoJSON ref={layerRef} data={areas} style={style} onEachFeature={onEachFeature} />
 }
 
-function ProvincesLayer({ data, regionId, selectedProvinceId, onSelectProvince }: { data: AreaCollection<ProvinceFeatureProps>; regionId: string } & Pick<VietnamMapProps, 'selectedProvinceId' | 'onSelectProvince'>) {
+function ProvincesLayer({
+  data,
+  regionId,
+  selectedProvinceId,
+  onSelectProvince,
+}: { data: AreaCollection<ProvinceFeatureProps>; regionId: string } & Pick<VietnamMapProps, 'selectedProvinceId' | 'onSelectProvince'>) {
   const select = useRef(onSelectProvince)
   select.current = onSelectProvince
-  const filtered = useMemo<AreaCollection<ProvinceFeatureProps>>(
-    () => ({ ...data, features: data.features.filter((f) => f.properties.regionId === regionId) }),
+  const filtered = useMemo(
+    () => splitOffshore({ ...data, features: data.features.filter((f) => f.properties.regionId === regionId) }),
     [data, regionId],
   )
   const style = useCallback(
-    (f?: GeoJSON.Feature<GeoJSON.Geometry, ProvinceFeatureProps>): PathOptions => {
+    (f?: GeoJSON.Feature<GeoJSON.Geometry, WithOffshore<ProvinceFeatureProps>>): PathOptions => {
       const selected = f?.properties.provinceId === selectedProvinceId
+      if (f?.properties.offshore) return { stroke: false, fillColor: '#f59e0b', fillOpacity: selected ? 0.55 : 0 }
       return {
         color: '#4c1d95',
         weight: selected ? 2.5 : 0.8,
@@ -141,7 +171,8 @@ function ProvincesLayer({ data, regionId, selectedProvinceId, onSelectProvince }
     [selectedProvinceId],
   )
 
-  const selected = filtered.features.find((f) => f.properties.provinceId === selectedProvinceId)
+  // Ghim tên tỉnh đặt giữa phần đất liền (Khánh Hòa, Đà Nẵng không bị kéo ra quần đảo)
+  const selected = filtered.features.find((f) => f.properties.provinceId === selectedProvinceId && !f.properties.offshore)
   // Nhãn tên tỉnh cố định ở tâm khung bao của tỉnh đang chọn
   const pin = useMemo(
     () =>
@@ -226,13 +257,7 @@ export default function VietnamMap(props: VietnamMapProps) {
 
   if (state.status === 'loading') return <LoadingState label="Đang tải bản đồ…" />
   if (state.status === 'error') {
-    return (
-      <ErrorState
-        title="Chưa tải được bản đồ"
-        description="Em vẫn có thể chọn vùng trong bảng các vùng địa lí."
-        onRetry={retry}
-      />
-    )
+    return <ErrorState title="Chưa tải được bản đồ" description="Em vẫn có thể chọn vùng trong bảng các vùng địa lí." onRetry={retry} />
   }
 
   const { data } = state

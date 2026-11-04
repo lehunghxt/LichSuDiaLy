@@ -54,10 +54,8 @@ function isLabelFeature(f: unknown): f is Feature<Point, LabelFeatureProps> {
   )
 }
 
-export const isRegionCollection = (raw: unknown): raw is AreaCollection<RegionFeatureProps> =>
-  isCollectionOf(raw, isRegionFeature)
-export const isProvinceCollection = (raw: unknown): raw is AreaCollection<ProvinceFeatureProps> =>
-  isCollectionOf(raw, isProvinceFeature)
+export const isRegionCollection = (raw: unknown): raw is AreaCollection<RegionFeatureProps> => isCollectionOf(raw, isRegionFeature)
+export const isProvinceCollection = (raw: unknown): raw is AreaCollection<ProvinceFeatureProps> => isCollectionOf(raw, isProvinceFeature)
 export const isLabelCollection = (raw: unknown): raw is LabelCollection => isCollectionOf(raw, isLabelFeature)
 
 type Fetcher = (url: string) => Promise<Response>
@@ -89,3 +87,33 @@ export function createGeoLoader(fetcher: Fetcher, base = '/') {
 }
 
 export const geoLoader = createGeoLoader((url) => fetch(url), import.meta.env.BASE_URL)
+
+export type WithOffshore<P> = P & { offshore: boolean }
+
+// Bờ đông xa nhất của đất liền là Mũi Đôi (Khánh Hòa, ~109,46°E). Phần nằm hẳn phía đông 109,6°E,
+// hoặc phía đông 109°E mà phía nam 10°N (các bãi rìa tây nam Trường Sa), thuộc quần đảo xa bờ.
+const isOffshorePart = (poly: Polygon['coordinates']) => {
+  const ring = poly[0] ?? []
+  const minLng = Math.min(...ring.map((c) => c[0] ?? 0))
+  const maxLat = Math.max(...ring.map((c) => c[1] ?? 0))
+  return minLng > 109.6 || (minLng > 109 && maxLat < 10)
+}
+
+/**
+ * Tách Hoàng Sa, Trường Sa ra feature riêng (offshore: true) để vẽ không viền: dữ liệu gốc vẽ cả bãi đá, rạn san hô
+ * thành nhiều mảnh nhỏ, thêm viền thì các mảnh bị phình to so với thực tế.
+ */
+export function splitOffshore<P>(data: AreaCollection<P>): AreaCollection<WithOffshore<P>> {
+  const features = data.features.flatMap((f) => {
+    const polys = f.geometry.type === 'MultiPolygon' ? f.geometry.coordinates : [f.geometry.coordinates]
+    const offshore = polys.filter(isOffshorePart)
+    const mainland = polys.filter((p) => !isOffshorePart(p))
+    const part = (coordinates: Polygon['coordinates'][], isOff: boolean): Feature<MultiPolygon, WithOffshore<P>> => ({
+      type: 'Feature',
+      properties: { ...f.properties, offshore: isOff },
+      geometry: { type: 'MultiPolygon', coordinates },
+    })
+    return [...(mainland.length ? [part(mainland, false)] : []), ...(offshore.length ? [part(offshore, true)] : [])]
+  })
+  return { ...data, features }
+}
