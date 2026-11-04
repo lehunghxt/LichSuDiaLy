@@ -108,7 +108,7 @@ export function toWebImage(pick, page) {
       id: `${pick.provinceId ?? '_toan-vung'}__${pick.slug ?? slugify(page.title)}`,
       provider: 'wikimedia-commons',
       provinceId: pick.provinceId ?? null,
-      category: pick.category,
+      section: pick.section,
       itemIds: pick.itemIds ?? [],
       alt: pick.alt,
       caption: pick.caption,

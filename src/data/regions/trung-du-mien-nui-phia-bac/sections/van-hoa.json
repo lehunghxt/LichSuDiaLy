@@ -1,45 +1,42 @@
 [
   {
-    "id": "trung-du-mien-nui-phia-bac__dan-toc",
-    "title": "Dân cư và các dân tộc",
-    "summary": "Vùng có số dân gần 13 triệu người (năm 2024). Đây là nơi sinh sống của một số dân tộc như: Mường, Thái, Dao, Mông, Tày, Nùng, Kinh,…",
+    "id": "trung-du-mien-nui-phia-bac__cho-phien",
+    "title": "Chợ phiên vùng cao",
+    "summary": "Chợ phiên ở vùng Trung du và miền núi phía Bắc thường họp vào những ngày nhất định.",
     "highlights": [
-      "Mỗi dân tộc có tiếng nói, tập quán sinh hoạt và trang phục truyền thống riêng, tạo nên sự đa dạng về văn hoá của vùng.",
-      "Vùng có diện tích rộng, ít dân. Dân cư phân bố khác nhau giữa các tỉnh, giữa khu vực miền núi và khu vực trung du."
+      "Hàng hoá phần lớn là những sản phẩm của người dân địa phương, nhiều nhất là hàng thổ cẩm, công cụ sản xuất, một số món ăn đặc trưng như: thắng cố, cơm lam,…",
+      "Chợ phiên còn là nơi giao lưu và gặp gỡ của người dân sau những giờ lao động vất vả, nơi kết bạn của các nam nữ thanh niên."
     ],
     "keyPoints": [
-      "Nhiều dân tộc cùng sinh sống tạo nên sự đa dạng về văn hoá của vùng."
+      "Chợ phiên vừa là nơi mua bán, vừa là nơi giao lưu, gặp gỡ của người dân vùng cao."
+    ],
+    "funFacts": [
+      "Chợ phiên Bắc Hà (tỉnh Lào Cai) nổi tiếng ở vùng Tây Bắc, họp vào Chủ nhật hằng tuần. Chợ còn giữ được nhiều nét truyền thống của chợ phiên miền núi nên được nhiều du khách trong và ngoài nước ghé thăm."
     ],
     "images": [],
     "figures": [
       {
-        "lesson": 5,
-        "figure": 1,
-        "page": 25,
-        "caption": "Người Mông"
+        "lesson": 6,
+        "figure": 6,
+        "page": 30,
+        "caption": "Chợ phiên ở xã Đồng Văn (tỉnh Tuyên Quang)"
       },
       {
-        "lesson": 5,
-        "figure": 2,
-        "page": 25,
-        "caption": "Người Tày"
-      },
-      {
-        "lesson": 5,
-        "figure": 3,
-        "page": 25,
-        "caption": "Lược đồ mật độ dân số theo tỉnh ở vùng Trung du và miền núi phía Bắc năm 2024"
+        "lesson": 6,
+        "figure": 7,
+        "page": 31,
+        "caption": "Khu vực bán gia súc ở chợ phiên Bắc Hà (tỉnh Lào Cai)"
       }
     ],
     "relatedIds": [
-      "trung-du-mien-nui-phia-bac__le-hoi"
+      "trung-du-mien-nui-phia-bac__dan-toc"
     ],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
-        "page": 24,
-        "note": "tr. 24–25"
+        "page": 30,
+        "note": "tr. 30–31"
       }
     ],
     "status": "draft"
@@ -158,41 +155,6 @@
     "status": "draft"
   },
   {
-    "id": "trung-du-mien-nui-phia-bac__hat-then",
-    "title": "Hát Then",
-    "summary": "Hát Then là một loại hình diễn xướng âm nhạc dân gian của các dân tộc Tày, Nùng, Thái, thường được tổ chức vào những dịp lễ quan trọng.",
-    "highlights": [
-      "Thông qua các làn điệu khác nhau của Then, người dân mong muốn những điều may mắn và cuộc sống tốt lành."
-    ],
-    "keyPoints": [
-      "Hát Then là loại hình âm nhạc dân gian của người Tày, Nùng, Thái."
-    ],
-    "funFacts": [
-      "Thực hành Then của người Tày, Nùng, Thái được UNESCO ghi danh là Di sản văn hoá phi vật thể đại diện của nhân loại vào năm 2019."
-    ],
-    "images": [],
-    "figures": [
-      {
-        "lesson": 6,
-        "figure": 4,
-        "page": 29,
-        "caption": "Hát Then trong lễ hội Lồng Tồng ở phường Lương Văn Tri (tỉnh Lạng Sơn)"
-      }
-    ],
-    "relatedIds": [
-      "trung-du-mien-nui-phia-bac__mua-xoe-thai"
-    ],
-    "sources": [
-      {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
-        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
-        "page": 29,
-        "note": "tr. 29–30"
-      }
-    ],
-    "status": "draft"
-  },
-  {
     "id": "trung-du-mien-nui-phia-bac__mua-xoe-thai",
     "title": "Múa Xoè Thái",
     "summary": "Xoè Thái là loại hình múa truyền thống đặc sắc của người Thái, được biểu diễn trong các dịp lễ, tết, ngày vui của gia đình, dòng họ, bản mường,…",
@@ -228,43 +190,36 @@
     "status": "draft"
   },
   {
-    "id": "trung-du-mien-nui-phia-bac__cho-phien",
-    "title": "Chợ phiên vùng cao",
-    "summary": "Chợ phiên ở vùng Trung du và miền núi phía Bắc thường họp vào những ngày nhất định.",
+    "id": "trung-du-mien-nui-phia-bac__hat-then",
+    "title": "Hát Then",
+    "summary": "Hát Then là một loại hình diễn xướng âm nhạc dân gian của các dân tộc Tày, Nùng, Thái, thường được tổ chức vào những dịp lễ quan trọng.",
     "highlights": [
-      "Hàng hoá phần lớn là những sản phẩm của người dân địa phương, nhiều nhất là hàng thổ cẩm, công cụ sản xuất, một số món ăn đặc trưng như: thắng cố, cơm lam,…",
-      "Chợ phiên còn là nơi giao lưu và gặp gỡ của người dân sau những giờ lao động vất vả, nơi kết bạn của các nam nữ thanh niên."
+      "Thông qua các làn điệu khác nhau của Then, người dân mong muốn những điều may mắn và cuộc sống tốt lành."
     ],
     "keyPoints": [
-      "Chợ phiên vừa là nơi mua bán, vừa là nơi giao lưu, gặp gỡ của người dân vùng cao."
+      "Hát Then là loại hình âm nhạc dân gian của người Tày, Nùng, Thái."
     ],
     "funFacts": [
-      "Chợ phiên Bắc Hà (tỉnh Lào Cai) nổi tiếng ở vùng Tây Bắc, họp vào Chủ nhật hằng tuần. Chợ còn giữ được nhiều nét truyền thống của chợ phiên miền núi nên được nhiều du khách trong và ngoài nước ghé thăm."
+      "Thực hành Then của người Tày, Nùng, Thái được UNESCO ghi danh là Di sản văn hoá phi vật thể đại diện của nhân loại vào năm 2019."
     ],
     "images": [],
     "figures": [
       {
         "lesson": 6,
-        "figure": 6,
-        "page": 30,
-        "caption": "Chợ phiên ở xã Đồng Văn (tỉnh Tuyên Quang)"
-      },
-      {
-        "lesson": 6,
-        "figure": 7,
-        "page": 31,
-        "caption": "Khu vực bán gia súc ở chợ phiên Bắc Hà (tỉnh Lào Cai)"
+        "figure": 4,
+        "page": 29,
+        "caption": "Hát Then trong lễ hội Lồng Tồng ở phường Lương Văn Tri (tỉnh Lạng Sơn)"
       }
     ],
     "relatedIds": [
-      "trung-du-mien-nui-phia-bac__dan-toc"
+      "trung-du-mien-nui-phia-bac__mua-xoe-thai"
     ],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
-        "page": 30,
-        "note": "tr. 30–31"
+        "page": 29,
+        "note": "tr. 29–30"
       }
     ],
     "status": "draft"

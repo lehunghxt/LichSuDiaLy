@@ -37,7 +37,7 @@ test('regions section: active region links to the map, others marked "Sắp ra m
 test('topic tiles open the topic modal of the active region', async () => {
   renderHome()
   const topics = await screen.findByRole('list', { name: '5 chủ đề khám phá' })
-  expect(within(topics).getByRole('link', { name: /Lễ hội và văn hóa/ })).toHaveAttribute('href', `/ban-do/${TDMNPB}?chu-de=culture`)
+  expect(within(topics).getByRole('link', { name: /Văn hóa/ })).toHaveAttribute('href', `/ban-do/${TDMNPB}?chu-de=van-hoa`)
 })
 
 test('"Em có biết?" shows a fun fact from the SGK content and cycles to another', async () => {

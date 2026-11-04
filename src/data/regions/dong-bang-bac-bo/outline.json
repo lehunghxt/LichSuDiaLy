@@ -1,0 +1,126 @@
+{
+  "sections": [
+    {
+      "id": "thien-nhien",
+      "topics": [
+        {
+          "id": "vi-tri-dia-li-va-ban-do-vung",
+          "title": "Vị trí địa lí và bản đồ vùng",
+          "itemIds": []
+        },
+        {
+          "id": "dia-hinh-dong-bang",
+          "title": "Địa hình đồng bằng",
+          "itemIds": []
+        },
+        {
+          "id": "khi-hau",
+          "title": "Khí hậu",
+          "hint": "(bốn mùa, mùa đông lạnh)",
+          "itemIds": []
+        },
+        {
+          "id": "song-hong-va-song-thai-binh",
+          "title": "Sông Hồng và sông Thái Bình",
+          "itemIds": []
+        },
+        {
+          "id": "he-thong-de-song-hong",
+          "title": "Hệ thống đê sông Hồng",
+          "itemIds": []
+        },
+        {
+          "id": "dat-phu-sa-va-canh-quan-dong-bang",
+          "title": "Đất phù sa và cảnh quan đồng bằng",
+          "itemIds": []
+        }
+      ]
+    },
+    {
+      "id": "dan-cu-san-xuat",
+      "topics": [
+        {
+          "id": "dan-cu-va-lang-que-bac-bo",
+          "title": "Dân cư và làng quê Bắc Bộ",
+          "itemIds": []
+        },
+        {
+          "id": "trong-lua-nuoc",
+          "title": "Trồng lúa nước",
+          "itemIds": []
+        },
+        {
+          "id": "trong-rau-mau-va-cay-vu-dong",
+          "title": "Trồng rau màu và cây vụ đông",
+          "itemIds": []
+        },
+        {
+          "id": "chan-nuoi",
+          "title": "Chăn nuôi",
+          "itemIds": []
+        },
+        {
+          "id": "nghe-lam-gom-bat-trang",
+          "title": "Nghề làm gốm Bát Tràng",
+          "itemIds": []
+        },
+        {
+          "id": "nghe-lam-tranh-dong-ho",
+          "title": "Nghề làm tranh Đông Hồ",
+          "itemIds": []
+        },
+        {
+          "id": "nghe-det-lua-van-phuc",
+          "title": "Nghề dệt lụa Vạn Phúc",
+          "itemIds": []
+        }
+      ]
+    },
+    {
+      "id": "van-hoa",
+      "topics": [
+        {
+          "id": "lang-que-truyen-thong",
+          "title": "Làng quê truyền thống",
+          "hint": "(đình làng, cây đa, giếng nước)",
+          "itemIds": []
+        },
+        {
+          "id": "le-hoi-truyen-thong",
+          "title": "Lễ hội truyền thống",
+          "itemIds": []
+        },
+        {
+          "id": "hoi-lim-va-dan-ca-quan-ho",
+          "title": "Hội Lim và dân ca Quan họ",
+          "itemIds": []
+        },
+        {
+          "id": "hoi-giong",
+          "title": "Hội Gióng",
+          "itemIds": []
+        },
+        {
+          "id": "le-hoi-chua-huong",
+          "title": "Lễ hội chùa Hương",
+          "itemIds": []
+        },
+        {
+          "id": "trang-phuc-truyen-thong",
+          "title": "Trang phục truyền thống",
+          "hint": "(áo tứ thân, nón quai thao)",
+          "itemIds": []
+        },
+        {
+          "id": "am-thuc-truyen-thong",
+          "title": "Ẩm thực truyền thống",
+          "itemIds": []
+        }
+      ]
+    },
+    {
+      "id": "lich-su",
+      "topics": []
+    }
+  ]
+}

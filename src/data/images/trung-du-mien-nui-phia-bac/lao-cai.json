@@ -3,7 +3,7 @@
     "id": "lao-cai__fansipan-summit-3143m-aerial-wide-temple-complex-sea-of-clou",
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang"
     ],
@@ -42,7 +42,7 @@
     "id": "lao-cai__fansipan-summit",
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang"
     ],
@@ -81,7 +81,7 @@
     "id": "lao-cai__rice-terraces-in-sa-pa-03",
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
-    "category": "landmark",
+    "section": "dan-cu-san-xuat",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__ruong-bac-thang"
     ],
@@ -120,7 +120,7 @@
     "id": "lao-cai__bac-ha-market-day-vietnam",
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
-    "category": "culture",
+    "section": "van-hoa",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__cho-phien"
     ],
@@ -159,7 +159,7 @@
     "id": "lao-cai__hmong-women-in-sa-pa",
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
-    "category": "culture",
+    "section": "dan-cu-san-xuat",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__dan-toc"
     ],
@@ -198,7 +198,7 @@
     "id": "lao-cai__red-dao",
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
-    "category": "culture",
+    "section": "dan-cu-san-xuat",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__dan-toc"
     ],
@@ -237,7 +237,7 @@
     "id": "lao-cai__mu-cang-chai-02",
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
-    "category": "landmark",
+    "section": "dan-cu-san-xuat",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__ruong-bac-thang"
     ],
@@ -275,7 +275,7 @@
     "id": "lao-cai__hoang-lien-son-mountains-04",
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__dia-hinh"
     ],
@@ -314,7 +314,7 @@
     "id": "lao-cai__thac-ba-lake-panorama",
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Hồ nước rộng với rất nhiều đảo nhỏ phủ cây xanh",
     "caption": "Hồ Thác Bà (tỉnh Lào Cai, trước đây thuộc tỉnh Yên Bái).",
@@ -351,7 +351,7 @@
     "id": "lao-cai__bao-ha-temple-p1380679",
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Cổng tam quan đền Bảo Hà",
     "caption": "Cổng đền Bảo Hà bên bờ sông Hồng (tỉnh Lào Cai).",

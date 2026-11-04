@@ -31,11 +31,11 @@ vi.mock('../features/map/VietnamMap', () => ({
 // Thư viện ảnh giả: 1 ảnh bìa (Lào Cai), 1 ảnh Đền Hùng (Phú Thọ), 1 ảnh Cần Thơ (vùng sắp ra mắt)
 vi.mock('../features/images/library', async (importOriginal) => {
   const orig = await importOriginal<typeof import('../features/images/library')>()
-  const img = (id: string, provinceId: string, category: string, alt: string, itemIds: string[] = []) => ({
+  const img = (id: string, provinceId: string, section: string, alt: string, itemIds: string[] = []) => ({
     id,
     provider: 'wikimedia-commons',
     provinceId,
-    category,
+    section,
     itemIds,
     alt,
     caption: `Chú thích ${alt}`,
@@ -47,11 +47,11 @@ vi.mock('../features/images/library', async (importOriginal) => {
   return {
     ...orig,
     imageLibrary: orig.createImageLibrary({
-      '../../data/images/trung-du-mien-nui-phia-bac/lao-cai.json': mod([img('lao-cai__nui', 'lao-cai', 'landmark', 'Ảnh núi Lào Cai')]),
+      '../../data/images/trung-du-mien-nui-phia-bac/lao-cai.json': mod([img('lao-cai__nui', 'lao-cai', 'thien-nhien', 'Ảnh núi Lào Cai')]),
       '../../data/images/trung-du-mien-nui-phia-bac/phu-tho.json': mod([
-        img('phu-tho__den', 'phu-tho', 'historical_site', 'Ảnh đền Thượng', ['trung-du-mien-nui-phia-bac__den-hung']),
+        img('phu-tho__den', 'phu-tho', 'lich-su', 'Ảnh đền Thượng', ['trung-du-mien-nui-phia-bac__den-hung']),
       ]),
-      '../../data/images/nam-bo/can-tho.json': mod([img('can-tho__cho', 'can-tho', 'culture', 'Ảnh chợ nổi Cần Thơ')]),
+      '../../data/images/nam-bo/can-tho.json': mod([img('can-tho__cho', 'can-tho', 'van-hoa', 'Ảnh chợ nổi Cần Thơ')]),
     }),
   }
 })
@@ -86,7 +86,7 @@ test('clicking region button navigates and panel shows region name, intro and 5 
   expect(router.state.location.pathname).toBe('/ban-do/trung-du-mien-nui-phia-bac')
   const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
   expect(within(panel).getByText(/vùng duy nhất của nước ta không giáp biển/)).toBeInTheDocument()
-  for (const label of ['Đặc điểm tự nhiên', 'Lễ hội và văn hóa', 'Khoáng sản', 'Danh lam thắng cảnh', 'Di tích lịch sử']) {
+  for (const label of ['Thiên nhiên', 'Dân cư và hoạt động sản xuất', 'Văn hóa', 'Lịch sử và di tích']) {
     expect(within(panel).getByRole('button', { name: new RegExp(label) })).toBeInTheDocument()
   }
   expect(screen.getByTestId('map')).toHaveAttribute('data-selected', 'trung-du-mien-nui-phia-bac')
@@ -95,26 +95,25 @@ test('clicking region button navigates and panel shows region name, intro and 5 
 test('clicking a topic stays on the map page and opens the fullscreen topic modal', async () => {
   const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
-  await userEvent.click(await within(panel).findByRole('button', { name: /Khoáng sản/ }))
+  await userEvent.click(await within(panel).findByRole('button', { name: /Dân cư và hoạt động sản xuất/ }))
   expect(router.state.location.pathname).toBe('/ban-do/trung-du-mien-nui-phia-bac')
-  expect(router.state.location.search).toBe('?chu-de=mineral')
-  const dialog = await screen.findByRole('dialog', { name: 'Khoáng sản' })
-  expect(within(dialog).getByRole('heading', { level: 3, name: 'Tài nguyên khoáng sản' })).toBeInTheDocument()
-  expect(within(dialog).getByText(/sắt, a-pa-tít \(apatite\), đá vôi/)).toBeInTheDocument()
+  expect(router.state.location.search).toBe('?chu-de=dan-cu-san-xuat')
+  const dialog = await screen.findByRole('dialog', { name: 'Dân cư và hoạt động sản xuất' })
+  expect(within(dialog).getByRole('heading', { level: 3, name: 'Dân cư và các dân tộc' })).toBeInTheDocument()
 })
 
 test('selecting another item in the modal updates ?muc= and the detail', async () => {
-  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=mineral')
-  const dialog = await screen.findByRole('dialog', { name: 'Khoáng sản' })
+  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=dan-cu-san-xuat')
+  const dialog = await screen.findByRole('dialog', { name: 'Dân cư và hoạt động sản xuất' })
   const list = within(dialog).getByRole('list', { name: 'Các mục trong chủ đề' })
   await userEvent.click(within(list).getByRole('button', { name: 'Khai thác và sử dụng khoáng sản' }))
-  expect(router.state.location.search).toBe('?chu-de=mineral&muc=su-dung-khoang-san')
+  expect(router.state.location.search).toBe('?chu-de=dan-cu-san-xuat&muc=su-dung-khoang-san')
   expect(within(dialog).getByRole('heading', { level: 3, name: 'Khai thác và sử dụng khoáng sản' })).toBeInTheDocument()
 })
 
 test('closing the modal returns to the region on the map', async () => {
-  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=natural')
-  await screen.findByRole('dialog', { name: 'Đặc điểm tự nhiên' })
+  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=thien-nhien')
+  await screen.findByRole('dialog', { name: 'Thiên nhiên' })
   await userEvent.click(screen.getByRole('button', { name: 'Đóng' }))
   expect(screen.queryByRole('dialog')).toBeNull()
   expect(router.state.location.pathname).toBe('/ban-do/trung-du-mien-nui-phia-bac')
@@ -122,8 +121,8 @@ test('closing the modal returns to the region on the map', async () => {
 })
 
 test('deep link with ?muc= opens that item and records it as viewed', async () => {
-  renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=historical_site&muc=den-hung')
-  const dialog = await screen.findByRole('dialog', { name: 'Di tích lịch sử' })
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=lich-su&muc=den-hung')
+  const dialog = await screen.findByRole('dialog', { name: 'Lịch sử và di tích' })
   expect(within(dialog).getByRole('heading', { level: 3, name: 'Khu di tích Đền Hùng' })).toBeInTheDocument()
   await waitFor(() => expect(localStorage.getItem(PROGRESS_KEY)).toContain('trung-du-mien-nui-phia-bac__den-hung'))
 })
@@ -135,16 +134,16 @@ test('unknown ?chu-de= does not open a modal', async () => {
 })
 
 test('old /vung link redirects to the map with the topic modal open', async () => {
-  const router = renderAt('/vung/trung-du-mien-nui-phia-bac?chu-de=culture')
-  expect(await screen.findByRole('dialog', { name: 'Lễ hội và văn hóa' })).toBeInTheDocument()
+  const router = renderAt('/vung/trung-du-mien-nui-phia-bac?chu-de=van-hoa')
+  expect(await screen.findByRole('dialog', { name: 'Văn hóa' })).toBeInTheDocument()
   expect(router.state.location.pathname).toBe('/ban-do/trung-du-mien-nui-phia-bac')
 })
 
 test('old /dia-danh link redirects to the map with that item open', async () => {
   const router = renderAt('/dia-danh/trung-du-mien-nui-phia-bac__cot-co-lung-cu')
-  const dialog = await screen.findByRole('dialog', { name: 'Danh lam thắng cảnh' })
+  const dialog = await screen.findByRole('dialog', { name: 'Thiên nhiên' })
   expect(within(dialog).getByRole('heading', { level: 3, name: 'Cột cờ Lũng Cú' })).toBeInTheDocument()
-  expect(router.state.location.search).toBe('?chu-de=landmark&muc=cot-co-lung-cu')
+  expect(router.state.location.search).toBe('?chu-de=thien-nhien&muc=cot-co-lung-cu')
 })
 
 test('unknown /dia-danh id shows not found with link to the map', async () => {
@@ -176,7 +175,7 @@ test('selecting a province lists items of that province', async () => {
   await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
   const list = screen.getByRole('list', { name: 'Địa danh ở tỉnh Phú Thọ' })
   await userEvent.click(within(list).getByRole('button', { name: 'Khu di tích Đền Hùng' }))
-  const dialog = await screen.findByRole('dialog', { name: 'Di tích lịch sử' })
+  const dialog = await screen.findByRole('dialog', { name: 'Lịch sử và di tích' })
   expect(within(dialog).getByRole('heading', { level: 3, name: 'Khu di tích Đền Hùng' })).toBeInTheDocument()
 })
 
@@ -222,20 +221,20 @@ test('panel lists featured places with province; clicking one opens the modal at
   const fansipan = within(places).getByRole('button', { name: /Đỉnh Phan-xi-păng/ })
   expect(fansipan).toHaveTextContent('Lào Cai')
   await userEvent.click(fansipan)
-  expect(router.state.location.search).toBe('?chu-de=landmark&muc=dinh-phan-xi-pang')
-  expect(await screen.findByRole('dialog', { name: 'Danh lam thắng cảnh' })).toBeInTheDocument()
+  expect(router.state.location.search).toBe('?chu-de=thien-nhien&muc=dinh-phan-xi-pang')
+  expect(await screen.findByRole('dialog', { name: 'Thiên nhiên' })).toBeInTheDocument()
 })
 
 test('"Khám phá chi tiết vùng này" opens the modal at the first topic', async () => {
   const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   await userEvent.click(await screen.findByRole('button', { name: /Khám phá chi tiết vùng này/ }))
-  expect(router.state.location.search).toBe('?chu-de=natural')
-  expect(await screen.findByRole('dialog', { name: 'Đặc điểm tự nhiên' })).toBeInTheDocument()
+  expect(router.state.location.search).toBe('?chu-de=thien-nhien')
+  expect(await screen.findByRole('dialog', { name: 'Thiên nhiên' })).toBeInTheDocument()
 })
 
 test('modal: region-wide item lists the 9 provinces of the region', async () => {
-  renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=natural')
-  const dialog = await screen.findByRole('dialog', { name: 'Đặc điểm tự nhiên' })
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=thien-nhien')
+  const dialog = await screen.findByRole('dialog', { name: 'Thiên nhiên' })
   const provinces = within(dialog).getByRole('list', { name: 'Các tỉnh trong vùng' })
   expect(within(provinces).getAllByRole('listitem')).toHaveLength(9)
   expect(provinces).toHaveTextContent('Lai Châu')
@@ -244,8 +243,8 @@ test('modal: region-wide item lists the 9 provinces of the region', async () => 
 })
 
 test('modal shows images of the item with credit', async () => {
-  renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=historical_site&muc=den-hung')
-  const dialog = await screen.findByRole('dialog', { name: 'Di tích lịch sử' })
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=lich-su&muc=den-hung')
+  const dialog = await screen.findByRole('dialog', { name: 'Lịch sử và di tích' })
   const gallery = await within(dialog).findByRole('region', { name: 'Hình ảnh' })
   expect(within(gallery).getByRole('img', { name: 'Ảnh đền Thượng' })).toBeInTheDocument()
   expect(within(gallery).getByText('Chú thích Ảnh đền Thượng')).toBeInTheDocument()
@@ -253,8 +252,8 @@ test('modal shows images of the item with credit', async () => {
 })
 
 test('modal hides image section when item has none', async () => {
-  renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=natural')
-  const dialog = await screen.findByRole('dialog', { name: 'Đặc điểm tự nhiên' })
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac?chu-de=thien-nhien')
+  const dialog = await screen.findByRole('dialog', { name: 'Thiên nhiên' })
   await screen.findByRole('img', { name: 'Ảnh núi Lào Cai' })
   expect(within(dialog).queryByRole('region', { name: 'Hình ảnh' })).not.toBeInTheDocument()
 })

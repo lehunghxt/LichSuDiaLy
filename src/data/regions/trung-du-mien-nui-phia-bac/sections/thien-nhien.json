@@ -46,6 +46,39 @@
     "status": "draft"
   },
   {
+    "id": "trung-du-mien-nui-phia-bac__cot-co-lung-cu",
+    "title": "Cột cờ Lũng Cú",
+    "summary": "Cột cờ Lũng Cú được xây dựng trên đỉnh núi Rồng thuộc xã Lũng Cú, tỉnh Tuyên Quang; nằm ở địa đầu Tổ quốc.",
+    "highlights": [
+      "Trên đỉnh cột là Quốc kì Việt Nam rộng 54 m², tượng trưng cho 54 dân tộc của nước ta."
+    ],
+    "keyPoints": [
+      "Cột cờ Lũng Cú nằm ở địa đầu Tổ quốc."
+    ],
+    "provinceId": "tuyen-quang",
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 3,
+        "page": 19,
+        "caption": "Cột cờ Lũng Cú (tỉnh Tuyên Quang)"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__vi-tri-dia-li"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 19,
+        "note": "tr. 19, Hình 3"
+      }
+    ],
+    "status": "draft"
+  },
+  {
     "id": "trung-du-mien-nui-phia-bac__dia-hinh",
     "title": "Địa hình đồi núi",
     "summary": "Vùng có địa hình chủ yếu là đồi núi, với nhiều dãy núi lớn. Hoàng Liên Sơn là dãy núi cao và đồ sộ nhất nước ta, đỉnh cao nhất là Phan-xi-păng (3 147 m).",
@@ -92,6 +125,53 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 20,
         "note": "tr. 20–21"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang",
+    "title": "Đỉnh Phan-xi-păng",
+    "summary": "Phan-xi-păng là đỉnh núi cao nhất Việt Nam, được mệnh danh là \"nóc nhà Đông Dương\". Đây là đỉnh cao nhất của dãy Hoàng Liên Sơn, ở tỉnh Lào Cai.",
+    "highlights": [
+      "Trước đây, đỉnh núi được ghi nhận cao 3 143 m. Theo đo đạc mới nhất (năm 2019), độ cao của đỉnh núi là 3 147 m.",
+      "Vào các tháng mùa đông, đỉnh núi đôi khi có tuyết rơi."
+    ],
+    "keyPoints": [
+      "Phan-xi-păng là đỉnh núi cao nhất Việt Nam (3 147 m)."
+    ],
+    "provinceId": "lao-cai",
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 1,
+        "page": 18,
+        "caption": "Đỉnh núi Phan-xi-păng (Fansipan)"
+      },
+      {
+        "lesson": 4,
+        "figure": 4,
+        "page": 20,
+        "caption": "Một phần dãy Hoàng Liên Sơn (tỉnh Lào Cai)"
+      },
+      {
+        "lesson": 4,
+        "figure": 6,
+        "page": 20,
+        "caption": "Tuyết rơi ở đỉnh núi Phan-xi-păng (tỉnh Lào Cai) vào mùa đông năm 2021"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__dia-hinh",
+      "trung-du-mien-nui-phia-bac__khi-hau"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 18,
+        "note": "tr. 18–20"
       }
     ],
     "status": "draft"
@@ -202,6 +282,57 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 26,
         "note": "tr. 26–27"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__khoang-san",
+    "title": "Tài nguyên khoáng sản",
+    "summary": "Trung du và miền núi phía Bắc có tài nguyên khoáng sản phong phú bậc nhất nước ta. Các khoáng sản chính là sắt, a-pa-tít (apatite), đá vôi,…",
+    "highlights": [
+      "Trên lược đồ Hình 2 (Bài 4) còn có: than đá, man-gan, vàng, đồng, thiếc, bô-xít.",
+      "Khai thác khoáng sản là hoạt động kinh tế quan trọng của vùng."
+    ],
+    "keyPoints": [
+      "Trung du và miền núi phía Bắc giàu tài nguyên khoáng sản bậc nhất cả nước."
+    ],
+    "images": [],
+    "figures": [
+      {
+        "lesson": 4,
+        "figure": 2,
+        "page": 19,
+        "caption": "Lược đồ địa hình và một số khoáng sản ở vùng Trung du và miền núi phía Bắc"
+      },
+      {
+        "lesson": 4,
+        "figure": 9,
+        "page": 22,
+        "caption": "Khai thác quặng sắt (tỉnh Thái Nguyên)"
+      },
+      {
+        "lesson": 5,
+        "figure": 6,
+        "page": 27,
+        "caption": "Lược đồ một số nhà máy thuỷ điện và mỏ khai thác khoáng sản ở vùng Trung du và miền núi phía Bắc"
+      }
+    ],
+    "relatedIds": [
+      "trung-du-mien-nui-phia-bac__su-dung-khoang-san"
+    ],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 19,
+        "note": "tr. 19–21"
+      },
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 5. Dân cư và hoạt động sản xuất ở vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 26,
+        "note": "tr. 26"
       }
     ],
     "status": "draft"

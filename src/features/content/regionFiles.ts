@@ -1,24 +1,25 @@
 // Nội dung mỗi vùng là một thư mục, mở rộng ra cả nước bằng cách thêm thư mục mới:
 //
 //   src/data/regions/<regionId>/
-//     region.json              { "intro": "..." }
-//     topics/natural.json      [ mục... ]   Đặc điểm tự nhiên
-//     topics/culture.json      [ mục... ]   Lễ hội và văn hóa
-//     topics/mineral.json      [ mục... ]   Khoáng sản
-//     topics/landmark.json     [ mục... ]   Danh lam thắng cảnh
-//     topics/historical_site.json           Di tích lịch sử
-//     quizzes.json             [ bài ôn tập... ]
+//     outline.json                    dàn ý vùng (phần → mục → itemIds), đọc riêng qua repository.loadOutline
+//     region.json                     { "intro": "..." }
+//     sections/thien-nhien.json       [ mục... ]   Thiên nhiên
+//     sections/dan-cu-san-xuat.json   [ mục... ]   Dân cư và hoạt động sản xuất
+//     sections/van-hoa.json           [ mục... ]   Văn hóa
+//     sections/lich-su.json           [ mục... ]   Lịch sử và di tích
+//     quizzes.json                    [ bài ôn tập... ]
 //
-// Mục trong topics/<chủ đề>.json không cần ghi "category" và "regionId": lấy từ tên file và thư mục.
-// File chủ đề hoặc quizzes.json có thể chưa có (coi như rỗng).
-import { TOPIC_CATEGORIES } from '../../types/content'
+// Mục trong sections/<phần>.json không cần ghi "section" và "regionId": lấy từ tên file và thư mục.
+// File phần hoặc quizzes.json có thể chưa có (coi như rỗng). Vùng chưa có nội dung chỉ có outline.json.
+import { SECTIONS } from '../../types/content'
 import { ContentError } from './parse'
 
 type Obj = Record<string, unknown>
 const isObj = (v: unknown): v is Obj => typeof v === 'object' && v !== null && !Array.isArray(v)
 
-const topicFile = (c: string) => `topics/${c}.json`
-const KNOWN_FILES = new Set(['region.json', 'quizzes.json', ...TOPIC_CATEGORIES.map(topicFile)])
+const sectionFile = (c: string) => `sections/${c}.json`
+export const OUTLINE_FILE = 'outline.json'
+const KNOWN_FILES = new Set(['region.json', 'quizzes.json', OUTLINE_FILE, ...SECTIONS.map(sectionFile)])
 
 /** Ghép các file của một vùng thành một object thô để parseRegionContent kiểm tra */
 export function assembleRegionRaw(region: unknown, files: Record<string, unknown>): unknown {
@@ -27,17 +28,17 @@ export function assembleRegionRaw(region: unknown, files: Record<string, unknown
     if (!KNOWN_FILES.has(name)) throw new ContentError(`${String(regionId)}/${name}`, 'tên file không đúng quy ước')
   }
 
-  const items = TOPIC_CATEGORIES.flatMap((category) => {
-    const file = topicFile(category)
+  const items = SECTIONS.flatMap((section) => {
+    const file = sectionFile(section)
     const list = files[file]
     if (list === undefined) return []
     if (!Array.isArray(list)) throw new ContentError(`${String(regionId)}/${file}`, 'cần là mảng')
     return list.map((item: unknown, i) => {
       if (!isObj(item)) return item
-      if (item.category !== undefined && item.category !== category) {
-        throw new ContentError(`${String(regionId)}/${file}[${i}].category`, `mục nằm trong file "${category}"`)
+      if (item.section !== undefined && item.section !== section) {
+        throw new ContentError(`${String(regionId)}/${file}[${i}].section`, `mục nằm trong file "${section}"`)
       }
-      return { ...item, category, regionId }
+      return { ...item, section, regionId }
     })
   })
 
@@ -63,9 +64,11 @@ export function loadersFromGlob(regions: unknown[], modules: Record<string, Load
   for (const region of regions) {
     if (!isObj(region) || typeof region.id !== 'string') continue
     const prefix = `/regions/${region.id}/`
+    // outline.json nạp riêng (vùng chưa có nội dung vẫn có dàn ý)
     const own = Object.entries(modules).flatMap(([file, load]) => {
       const at = file.indexOf(prefix)
-      return at === -1 ? [] : [[file.slice(at + prefix.length), load] as const]
+      const name = file.slice(at + prefix.length)
+      return at === -1 || name === OUTLINE_FILE ? [] : [[name, load] as const]
     })
     if (own.length === 0) continue
     loaders[region.id] = async () => {

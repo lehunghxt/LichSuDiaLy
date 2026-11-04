@@ -9,7 +9,7 @@ const page = (title) => fixture.query.pages.find((p) => p.title === title)
 const pick = (over = {}) => ({
   file: 'File:Hoàng Liên Sơn mountains 04.jpg',
   provinceId: 'lao-cai',
-  category: 'natural',
+  section: 'thien-nhien',
   itemIds: ['trung-du-mien-nui-phia-bac__dia-hinh-doi-nui'],
   alt: 'Dãy núi Hoàng Liên Sơn nhìn từ đường mòn',
   caption: 'Dãy Hoàng Liên Sơn (tỉnh Lào Cai).',

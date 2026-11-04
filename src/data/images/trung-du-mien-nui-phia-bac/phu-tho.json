@@ -3,7 +3,7 @@
     "id": "phu-tho__den-hung-den-thuong",
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__den-hung"
     ],
@@ -42,7 +42,7 @@
     "id": "phu-tho__den-hung-den-ha",
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__den-hung"
     ],
@@ -81,7 +81,7 @@
     "id": "phu-tho__mausoleum-of-hung-king",
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__den-hung"
     ],
@@ -119,7 +119,7 @@
     "id": "phu-tho__tam-dao-mountain-range",
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__dia-hinh"
     ],
@@ -157,7 +157,7 @@
     "id": "phu-tho__hoa-binh-dam-in-vietnam",
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Dòng sông chảy giữa hai bờ đồi, bên trái là công trình thủy điện",
     "caption": "Sông Đà và nhà máy thủy điện Hòa Bình (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
@@ -194,7 +194,7 @@
     "id": "phu-tho__mai-chau-4",
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Cánh đồng lúa xanh dưới chân núi",
     "caption": "Đồng lúa ở Mai Châu (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
@@ -231,7 +231,7 @@
     "id": "phu-tho__zen-monastery-truc-lam-tay-thien",
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
-    "category": "landmark",
+    "section": "van-hoa",
     "itemIds": [],
     "alt": "Bậc thang dài dẫn lên cổng thiền viện",
     "caption": "Thiền viện Trúc Lâm Tây Thiên, Tam Đảo (tỉnh Phú Thọ, trước đây thuộc tỉnh Vĩnh Phúc).",
@@ -267,7 +267,7 @@
     "id": "phu-tho__a-thai-stilt-house-4115406064",
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
-    "category": "culture",
+    "section": "dan-cu-san-xuat",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__dan-toc"
     ],

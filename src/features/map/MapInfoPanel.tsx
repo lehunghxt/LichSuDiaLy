@@ -3,10 +3,10 @@ import { SmartImage } from '../../components/ui/SmartImage'
 import { WebImageFigure } from '../../components/ui/WebImageFigure'
 import { provinceName } from '../../lib/provinces'
 import { EmptyState, ErrorState, LoadingState } from '../../components/ui/states'
-import { TOPIC_CATEGORIES, TOPIC_LABELS, type ContentItem, type RegionContent, type RegionMeta, type TopicCategory, type WebImage } from '../../types/content'
+import { SECTIONS, SECTION_LABELS, type ContentItem, type RegionContent, type RegionMeta, type SectionId, type WebImage } from '../../types/content'
 import { itemSlug } from '../content/links'
-import { getItemsByCategory } from '../content/repository'
-import { TOPIC_ICONS, TOPIC_TILE } from '../content/topicIcons'
+import { getItemsBySection } from '../content/repository'
+import { SECTION_ICONS, SECTION_TILE } from '../content/sectionIcons'
 import { imageLibrary, interleaveByProvince } from '../images/library'
 import type { RegionContentState } from '../content/useRegionContent'
 
@@ -20,13 +20,21 @@ interface MapInfoPanelProps {
   onBack(): void
   onClearProvince(): void
   /** Mở modal chủ đề ngay trên trang bản đồ; slug null = mục đầu tiên */
-  onOpen(category: TopicCategory, slug: string | null): void
+  onOpen(section: SectionId, slug: string | null): void
 }
 
-/** Địa điểm tiêu biểu: ưu tiên danh lam, di tích gắn với một tỉnh cụ thể; tối đa 3 */
+/** Địa điểm tiêu biểu: mục gắn với một tỉnh cụ thể, lấy lần lượt mỗi phần một mục; tối đa 3 */
 function featuredPlaces(content: RegionContent): ContentItem[] {
-  const order: TopicCategory[] = ['landmark', 'historical_site', 'culture', 'natural', 'mineral']
-  return order.flatMap((c) => getItemsByCategory(content, c).filter((i) => i.provinceId)).slice(0, 3)
+  const order: SectionId[] = ['thien-nhien', 'lich-su', 'van-hoa', 'dan-cu-san-xuat']
+  const groups = order.map((s) => getItemsBySection(content, s).filter((i) => i.provinceId))
+  const out: ContentItem[] = []
+  for (let round = 0; out.length < 3 && groups.some((g) => g[round]); round++) {
+    for (const g of groups) {
+      const item = g[round]
+      if (item && out.length < 3) out.push(item)
+    }
+  }
+  return out
 }
 
 const card = 'rounded-card bg-surface p-6 shadow-[0_8px_30px_rgb(15_23_42/0.08)]'
@@ -126,10 +134,10 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, images, provinc
               Khám phá theo chủ đề
             </h3>
             <ul className="grid grid-cols-5 gap-2 2xl:gap-3">
-              {TOPIC_CATEGORIES.map((cat) => {
-                const Icon = TOPIC_ICONS[cat]
-                const style = TOPIC_TILE[cat]
-                const count = getItemsByCategory(ready, cat).length
+              {SECTIONS.map((cat) => {
+                const Icon = SECTION_ICONS[cat]
+                const style = SECTION_TILE[cat]
+                const count = getItemsBySection(ready, cat).length
                 return (
                   <li key={cat}>
                     <button
@@ -138,7 +146,7 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, images, provinc
                       className={`flex h-full w-full flex-col items-center gap-1.5 rounded-2xl border-2 px-1 py-3 text-center text-xs font-bold 2xl:gap-2 2xl:px-2 2xl:py-4 2xl:text-sm shadow-sm transition hover:-translate-y-0.5 hover:shadow-md ${style.tile}`}
                     >
                       <Icon aria-hidden className={`size-8 2xl:size-10 ${style.icon}`} strokeWidth={1.75} />
-                      <span className="leading-snug">{TOPIC_LABELS[cat]}</span>
+                      <span className="leading-snug">{SECTION_LABELS[cat]}</span>
                       <span className="text-[0.7rem] font-semibold text-muted 2xl:text-xs">{count} mục</span>
                     </button>
                   </li>
@@ -151,7 +159,7 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, images, provinc
 
           <button
             type="button"
-            onClick={() => onOpen('natural', null)}
+            onClick={() => onOpen('thien-nhien', null)}
             className="mx-auto inline-flex min-h-14 items-center gap-3 rounded-full bg-primary-dark px-8 text-lg font-bold text-white shadow-lg transition hover:bg-primary"
           >
             <BookOpen aria-hidden className="size-6" />
@@ -167,7 +175,7 @@ export function MapInfoPanel({ region, regionIdFromUrl, content, images, provinc
 interface FeaturedPlacesProps {
   items: ContentItem[]
   images: WebImage[]
-  onOpen(category: TopicCategory, slug: string): void
+  onOpen(section: SectionId, slug: string): void
 }
 
 function FeaturedPlaces({ items, images, onOpen }: FeaturedPlacesProps) {
@@ -180,7 +188,7 @@ function FeaturedPlaces({ items, images, onOpen }: FeaturedPlacesProps) {
       </h3>
       <ul aria-label="Một số địa điểm tiêu biểu" className="grid grid-cols-3 gap-3">
         {items.map((i) => {
-          const Icon = TOPIC_ICONS[i.category]
+          const Icon = SECTION_ICONS[i.section]
           const image = i.images[0]
           const webImage = image ? undefined : imageLibrary.forItem(images, i.id)[0]
           return (
@@ -190,13 +198,13 @@ function FeaturedPlaces({ items, images, onOpen }: FeaturedPlacesProps) {
               ) : webImage ? (
                 <WebImageFigure image={webImage} sizes="200px" className="p-1.5" />
               ) : (
-                <span aria-hidden className={`flex aspect-[4/3] items-center justify-center ${TOPIC_TILE[i.category].tile}`}>
-                  <Icon className={`size-10 ${TOPIC_TILE[i.category].icon}`} strokeWidth={1.75} />
+                <span aria-hidden className={`flex aspect-[4/3] items-center justify-center ${SECTION_TILE[i.section].tile}`}>
+                  <Icon className={`size-10 ${SECTION_TILE[i.section].icon}`} strokeWidth={1.75} />
                 </span>
               )}
               <button
                 type="button"
-                onClick={() => onOpen(i.category, itemSlug(i.id))}
+                onClick={() => onOpen(i.section, itemSlug(i.id))}
                 className="mt-auto flex w-full text-left transition-colors hover:bg-primary-soft"
               >
                 <span className="flex gap-1.5 p-3">
@@ -222,7 +230,7 @@ interface ProvinceCardProps {
   images: WebImage[]
   provinceId: string
   onClear(): void
-  onOpen(category: TopicCategory, slug: string): void
+  onOpen(section: SectionId, slug: string): void
 }
 
 /** Tỉnh đang chọn trên bản đồ: tên, vùng, các mục trong bài học gắn với tỉnh */
@@ -270,15 +278,15 @@ function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen
           <p className="text-sm font-semibold">Trong bài học có {items.length} mục ở tỉnh {name}:</p>
           <ul aria-label={`Địa danh ở tỉnh ${name}`} className="flex flex-wrap gap-2">
             {items.map((i) => {
-              const Icon = TOPIC_ICONS[i.category]
+              const Icon = SECTION_ICONS[i.section]
               return (
                 <li key={i.id}>
                   <button
                     type="button"
-                    onClick={() => onOpen(i.category, itemSlug(i.id))}
+                    onClick={() => onOpen(i.section, itemSlug(i.id))}
                     className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-amber-200 bg-white px-3 text-sm font-semibold shadow-sm hover:border-amber-400"
                   >
-                    <Icon aria-hidden className={`size-4 ${TOPIC_TILE[i.category].icon}`} />
+                    <Icon aria-hidden className={`size-4 ${SECTION_TILE[i.section].icon}`} />
                     {i.title}
                   </button>
                 </li>

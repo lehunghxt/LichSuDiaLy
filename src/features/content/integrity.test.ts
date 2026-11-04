@@ -1,9 +1,11 @@
-import { readdirSync, readFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { rawRegionContent, SGK_URL, type RawRegionContent } from '../../test/fixtures'
 import { checkIntegrity } from './integrity'
 import { assembleRegionRaw } from './regionFiles'
 import { parseRegionContent, parseRegionList } from './parse'
+import { checkOutlineIntegrity, parseOutline } from './parseOutline'
+import type { SectionId } from '../../types/content'
 import { checkImageIntegrity, REGION_WIDE_FILE } from '../images/library'
 import { parseWebImages } from '../images/parseWebImages'
 
@@ -91,7 +93,10 @@ test('real data in src/data passes integrity check', () => {
   const manifest: unknown = JSON.parse(readFileSync(path.join(dataDir, 'image-manifest.json'), 'utf8'))
   const manifestIds = new Set(typeof manifest === 'object' && manifest ? Object.keys(manifest) : [])
   const regionsDir = path.join(dataDir, 'regions')
-  const folders = readdirSync(regionsDir, { withFileTypes: true }).filter((d) => d.isDirectory())
+  // Vùng chưa có nội dung chỉ có outline.json (kiểm tra ở test dàn ý bên dưới)
+  const folders = readdirSync(regionsDir, { withFileTypes: true }).filter(
+    (d) => d.isDirectory() && existsSync(path.join(regionsDir, d.name, 'region.json')),
+  )
   const contents = folders.map((dir) => {
     const meta = regions.find((r) => r.id === dir.name)
     expect(meta, `thư mục "${dir.name}" chưa khai báo trong regions.json`).toBeDefined()
@@ -112,7 +117,7 @@ test('real image library in src/data/images passes integrity check', () => {
   const provinces = JSON.parse(readFileSync(path.join(dataDir, 'provinces.json'), 'utf8')) as { id: string; regionId: string }[]
   const regionsDir = path.join(dataDir, 'regions')
   const contents = readdirSync(regionsDir, { withFileTypes: true })
-    .filter((d) => d.isDirectory())
+    .filter((d) => d.isDirectory() && existsSync(path.join(regionsDir, d.name, 'region.json')))
     .map((dir) => {
       const files = Object.fromEntries(
         readdirSync(path.join(regionsDir, dir.name), { recursive: true, encoding: 'utf8' })
@@ -135,4 +140,32 @@ test('real image library in src/data/images passes integrity check', () => {
         })
     })
   expect(checkImageIntegrity(images, contents, provinces)).toEqual([])
+})
+
+test('real outlines in src/data/regions pass integrity', () => {
+  const dataDir = path.resolve(import.meta.dirname, '../../data')
+  const regions = parseRegionList(JSON.parse(readFileSync(path.join(dataDir, 'regions.json'), 'utf8')))
+  for (const region of regions) {
+    const dir = path.join(dataDir, 'regions', region.id)
+    const outline = parseOutline(JSON.parse(readFileSync(path.join(dir, 'outline.json'), 'utf8')), region.id, `${region.id}/outline.json`)
+    expect(outline.sections.map((s) => s.id)).toEqual(['thien-nhien', 'dan-cu-san-xuat', 'van-hoa', 'lich-su'])
+    let items: { id: string; section: SectionId }[] = []
+    if (existsSync(path.join(dir, 'region.json'))) {
+      const files = Object.fromEntries(
+        readdirSync(dir, { recursive: true, encoding: 'utf8' })
+          .filter((f) => f.endsWith('.json'))
+          .map((f) => [f.split(path.sep).join('/'), JSON.parse(readFileSync(path.join(dir, f), 'utf8')) as unknown]),
+      )
+      items = parseRegionContent(assembleRegionRaw(region, files)).items
+    }
+    expect(checkOutlineIntegrity(outline, items)).toEqual([])
+  }
+})
+
+test('every TDMNPB item appears in exactly one outline topic', () => {
+  const dir = path.resolve(import.meta.dirname, '../../data/regions/trung-du-mien-nui-phia-bac')
+  const outline = parseOutline(JSON.parse(readFileSync(path.join(dir, 'outline.json'), 'utf8')), 'trung-du-mien-nui-phia-bac', 'o')
+  const ids = outline.sections.flatMap((s) => s.topics.flatMap((t) => t.itemIds))
+  expect(new Set(ids).size).toBe(ids.length)
+  expect(ids.length).toBe(21)
 })

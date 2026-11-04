@@ -10,7 +10,7 @@ function raw(over: Record<string, unknown> = {}, attribution: Record<string, unk
       id: 'lao-cai__fansipan',
       provider: 'wikimedia-commons',
       provinceId: 'lao-cai',
-      category: 'landmark',
+      section: 'thien-nhien',
       itemIds: ['trung-du-mien-nui-phia-bac__dinh-phan-xi-pang'],
       alt: 'Chóp đỉnh Phan-xi-păng',
       caption: 'Đỉnh Phan-xi-păng (tỉnh Lào Cai).',
@@ -92,6 +92,6 @@ test('region-wide file requires provinceId null', () => {
   expect(errorPath(() => parse(raw(), null))).toBe(`${FILE}[0].provinceId`)
 })
 
-test('category must be a topic category', () => {
-  expect(errorPath(() => parse(raw({ category: 'phong-tuc' })))).toBe(`${FILE}[0].category`)
+test('section must be a topic section', () => {
+  expect(errorPath(() => parse(raw({ section: 'phong-tuc' })))).toBe(`${FILE}[0].section`)
 })

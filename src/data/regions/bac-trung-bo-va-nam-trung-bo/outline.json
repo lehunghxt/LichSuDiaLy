@@ -1,0 +1,137 @@
+{
+  "sections": [
+    {
+      "id": "thien-nhien",
+      "topics": [
+        {
+          "id": "vi-tri-dia-li-va-ban-do-vung",
+          "title": "Vị trí địa lí và bản đồ vùng",
+          "itemIds": []
+        },
+        {
+          "id": "dia-hinh",
+          "title": "Địa hình",
+          "hint": "(núi, đồng bằng ven biển)",
+          "itemIds": []
+        },
+        {
+          "id": "day-truong-son",
+          "title": "Dãy Trường Sơn",
+          "itemIds": []
+        },
+        {
+          "id": "khi-hau",
+          "title": "Khí hậu",
+          "hint": "(gió Lào, bão, hạn hán)",
+          "itemIds": []
+        },
+        {
+          "id": "song-ngoi",
+          "title": "Sông ngòi",
+          "itemIds": []
+        },
+        {
+          "id": "bien-dao-va-vinh-bien",
+          "title": "Biển, đảo và vịnh biển",
+          "itemIds": []
+        },
+        {
+          "id": "bai-bien-dep",
+          "title": "Bãi biển đẹp",
+          "hint": "(Sầm Sơn, Cửa Lò, Mỹ Khê, Nha Trang)",
+          "itemIds": []
+        },
+        {
+          "id": "canh-quan-thien-nhien",
+          "title": "Cảnh quan thiên nhiên",
+          "hint": "(động Phong Nha, đèo Hải Vân)",
+          "itemIds": []
+        }
+      ]
+    },
+    {
+      "id": "dan-cu-san-xuat",
+      "topics": [
+        {
+          "id": "cac-dan-toc-va-doi-song-dan-cu",
+          "title": "Các dân tộc và đời sống dân cư",
+          "itemIds": []
+        },
+        {
+          "id": "trong-lua-va-cay-cong-nghiep",
+          "title": "Trồng lúa và cây công nghiệp",
+          "itemIds": []
+        },
+        {
+          "id": "danh-bat-hai-san",
+          "title": "Đánh bắt hải sản",
+          "itemIds": []
+        },
+        {
+          "id": "nuoi-trong-thuy-san",
+          "title": "Nuôi trồng thủy sản",
+          "itemIds": []
+        },
+        {
+          "id": "lam-muoi",
+          "title": "Làm muối",
+          "itemIds": []
+        },
+        {
+          "id": "du-lich-bien",
+          "title": "Du lịch biển",
+          "itemIds": []
+        },
+        {
+          "id": "nghe-thu-cong-truyen-thong",
+          "title": "Nghề thủ công truyền thống",
+          "itemIds": []
+        }
+      ]
+    },
+    {
+      "id": "van-hoa",
+      "topics": [
+        {
+          "id": "le-hoi-cau-ngu",
+          "title": "Lễ hội Cầu ngư",
+          "itemIds": []
+        },
+        {
+          "id": "le-hoi-ka-te-cua-nguoi-cham",
+          "title": "Lễ hội Ka-tê của người Chăm",
+          "itemIds": []
+        },
+        {
+          "id": "thap-cham-va-van-hoa-cham",
+          "title": "Tháp Chăm và văn hóa Chăm",
+          "itemIds": []
+        },
+        {
+          "id": "nghe-thuat-bai-choi",
+          "title": "Nghệ thuật Bài chòi",
+          "itemIds": []
+        },
+        {
+          "id": "dan-ca-vi-giam-nghe-tinh",
+          "title": "Dân ca Ví, Giặm Nghệ Tĩnh",
+          "itemIds": []
+        },
+        {
+          "id": "trang-phuc-truyen-thong",
+          "title": "Trang phục truyền thống",
+          "itemIds": []
+        },
+        {
+          "id": "am-thuc-mien-trung",
+          "title": "Ẩm thực miền Trung",
+          "itemIds": []
+        }
+      ]
+    },
+    {
+      "id": "lich-su",
+      "topics": []
+    }
+  ]
+}

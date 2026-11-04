@@ -1,0 +1,153 @@
+{
+  "sections": [
+    {
+      "id": "thien-nhien",
+      "topics": [
+        {
+          "id": "vi-tri-dia-li-va-ban-do-vung",
+          "title": "Vị trí địa lí và bản đồ vùng",
+          "itemIds": []
+        },
+        {
+          "id": "dia-hinh-dong-nam-bo",
+          "title": "Địa hình Đông Nam Bộ",
+          "itemIds": []
+        },
+        {
+          "id": "dia-hinh-dong-bang-song-cuu-long",
+          "title": "Địa hình Đồng bằng sông Cửu Long",
+          "itemIds": []
+        },
+        {
+          "id": "khi-hau",
+          "title": "Khí hậu",
+          "hint": "(mùa mưa và mùa khô)",
+          "itemIds": []
+        },
+        {
+          "id": "song-dong-nai-va-song-me-cong",
+          "title": "Sông Đồng Nai và sông Mê Công",
+          "itemIds": []
+        },
+        {
+          "id": "kenh-rach-va-song-nuoc",
+          "title": "Kênh rạch và sông nước",
+          "itemIds": []
+        },
+        {
+          "id": "rung-ngap-man",
+          "title": "Rừng ngập mặn",
+          "itemIds": []
+        },
+        {
+          "id": "rung-tram-va-canh-quan-thien-nhien",
+          "title": "Rừng tràm và cảnh quan thiên nhiên",
+          "itemIds": []
+        },
+        {
+          "id": "bien-va-dao",
+          "title": "Biển và đảo",
+          "hint": "(Phú Quốc, Côn Đảo)",
+          "itemIds": []
+        }
+      ]
+    },
+    {
+      "id": "dan-cu-san-xuat",
+      "topics": [
+        {
+          "id": "cac-dan-toc",
+          "title": "Các dân tộc",
+          "hint": "(Kinh, Khmer, Hoa, Chăm)",
+          "itemIds": []
+        },
+        {
+          "id": "nha-o-va-doi-song-song-nuoc",
+          "title": "Nhà ở và đời sống sông nước",
+          "itemIds": []
+        },
+        {
+          "id": "trong-lua",
+          "title": "Trồng lúa",
+          "itemIds": []
+        },
+        {
+          "id": "trong-cay-an-qua",
+          "title": "Trồng cây ăn quả",
+          "itemIds": []
+        },
+        {
+          "id": "trong-cay-cong-nghiep",
+          "title": "Trồng cây công nghiệp",
+          "hint": "(cao su, điều, hồ tiêu)",
+          "itemIds": []
+        },
+        {
+          "id": "nuoi-trong-va-danh-bat-thuy-san",
+          "title": "Nuôi trồng và đánh bắt thủy sản",
+          "itemIds": []
+        },
+        {
+          "id": "cho-noi",
+          "title": "Chợ nổi",
+          "itemIds": []
+        },
+        {
+          "id": "cong-nghiep-va-hoat-dong-thuong-mai",
+          "title": "Công nghiệp và hoạt động thương mại",
+          "itemIds": []
+        }
+      ]
+    },
+    {
+      "id": "van-hoa",
+      "topics": [
+        {
+          "id": "cho-noi-cai-rang",
+          "title": "Chợ nổi Cái Răng",
+          "itemIds": []
+        },
+        {
+          "id": "le-hoi-ok-om-bok",
+          "title": "Lễ hội Ok Om Bok",
+          "itemIds": []
+        },
+        {
+          "id": "le-hoi-dua-ghe-ngo",
+          "title": "Lễ hội đua ghe Ngo",
+          "itemIds": []
+        },
+        {
+          "id": "le-hoi-ba-chua-xu-nui-sam",
+          "title": "Lễ hội Bà Chúa Xứ núi Sam",
+          "itemIds": []
+        },
+        {
+          "id": "don-ca-tai-tu-nam-bo",
+          "title": "Đờn ca tài tử Nam Bộ",
+          "itemIds": []
+        },
+        {
+          "id": "trang-phuc-truyen-thong",
+          "title": "Trang phục truyền thống",
+          "hint": "(áo bà ba, khăn rằn)",
+          "itemIds": []
+        },
+        {
+          "id": "am-thuc-nam-bo",
+          "title": "Ẩm thực Nam Bộ",
+          "itemIds": []
+        },
+        {
+          "id": "van-hoa-miet-vuon",
+          "title": "Văn hóa miệt vườn",
+          "itemIds": []
+        }
+      ]
+    },
+    {
+      "id": "lich-su",
+      "topics": []
+    }
+  ]
+}

@@ -3,7 +3,7 @@
     "id": "son-la__between-son-la-and-moc-chau",
     "provider": "wikimedia-commons",
     "provinceId": "son-la",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Hồ nước giữa các dãy núi đá",
     "caption": "Lòng hồ thủy điện Hòa Bình nhìn từ cao nguyên Mộc Châu (tỉnh Sơn La).",
@@ -40,7 +40,7 @@
     "id": "son-la__son-la-dam-reservoir",
     "provider": "wikimedia-commons",
     "provinceId": "son-la",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__song-ngoi"
     ],
@@ -79,7 +79,7 @@
     "id": "son-la__son-la-province",
     "provider": "wikimedia-commons",
     "provinceId": "son-la",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__dia-hinh"
     ],

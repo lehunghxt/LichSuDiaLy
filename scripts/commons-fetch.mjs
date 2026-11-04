@@ -98,7 +98,7 @@ async function build(regionId) {
   console.log(['Tỉnh'.padEnd(18), ...cats.map((c) => c.slice(0, 8).padStart(9))].join(''))
   for (const name of [...provinces.map((p) => p.id), '_toan-vung']) {
     const list = groups.get(name) ?? []
-    console.log([name.padEnd(18), ...cats.map((c) => String(list.filter((i) => i.category === c).length).padStart(9))].join(''))
+    console.log([name.padEnd(18), ...cats.map((c) => String(list.filter((i) => i.section === c).length).padStart(9))].join(''))
   }
   if (skipped.length) {
     console.log(`\nBỏ qua ${skipped.length} ảnh:`)

@@ -4,9 +4,9 @@ import { SmartImage } from '../../components/ui/SmartImage'
 import { WebImageFigure } from '../../components/ui/WebImageFigure'
 import { provinceName, provinceNamesOfRegion } from '../../lib/provinces'
 import { SGK_URL, sgkPageUrl } from '../../lib/sources'
-import { TOPIC_LABELS, type ContentItem, type MediaRef, type SourceRef, type TopicCategory, type WebImage } from '../../types/content'
+import { SECTION_LABELS, type ContentItem, type MediaRef, type SourceRef, type SectionId, type WebImage } from '../../types/content'
 import { itemSlug } from './links'
-import { TOPIC_ICONS } from './topicIcons'
+import { SECTION_ICONS } from './sectionIcons'
 
 interface ItemDetailProps {
   item: ContentItem
@@ -14,12 +14,12 @@ interface ItemDetailProps {
   /** Ảnh nhúng (Wikimedia Commons) minh hoạ mục này */
   webImages?: WebImage[]
   related: ContentItem[]
-  onSelectRelated(category: TopicCategory, slug: string): void
+  onSelectRelated(section: SectionId, slug: string): void
 }
 
 /** Toàn bộ thông tin một mục nội dung; dùng trong modal chủ đề */
 export function ItemDetail({ item, regionName, webImages = [], related, onSelectRelated }: ItemDetailProps) {
-  const Icon = TOPIC_ICONS[item.category]
+  const Icon = SECTION_ICONS[item.section]
   const figures = item.figures ?? []
   const province = provinceName(item.provinceId)
   const regionProvinces = province ? [] : provinceNamesOfRegion(item.regionId)
@@ -28,7 +28,7 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
       <header className="flex flex-col gap-3">
         <span className="inline-flex w-fit items-center gap-2 rounded-full bg-primary-soft px-3 py-1 text-sm font-semibold text-primary">
           <Icon aria-hidden className="size-4" />
-          {TOPIC_LABELS[item.category]}
+          {SECTION_LABELS[item.section]}
         </span>
         <h3 tabIndex={-1} data-item-heading className="text-3xl font-bold outline-none">
           {item.title}
@@ -162,12 +162,12 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
         <Section title="Khám phá thêm">
           <ul className="flex flex-wrap gap-2">
             {related.map((r) => {
-              const RIcon = TOPIC_ICONS[r.category]
+              const RIcon = SECTION_ICONS[r.section]
               return (
                 <li key={r.id}>
                   <button
                     type="button"
-                    onClick={() => onSelectRelated(r.category, itemSlug(r.id))}
+                    onClick={() => onSelectRelated(r.section, itemSlug(r.id))}
                     className="inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-line px-4 font-semibold hover:border-primary hover:bg-primary-soft"
                   >
                     <RIcon aria-hidden className="size-5 text-primary" />

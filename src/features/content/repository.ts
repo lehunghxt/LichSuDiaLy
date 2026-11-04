@@ -1,7 +1,8 @@
 import rawRegions from '../../data/regions.json'
-import type { ContentItem, ContentStatus, RegionContent, RegionMeta, TopicCategory } from '../../types/content'
+import type { ContentItem, ContentStatus, RegionContent, RegionMeta, RegionOutline, SectionId } from '../../types/content'
 import type { Quiz } from '../../types/quiz'
 import { parseRegionContent, parseRegionList } from './parse'
+import { parseOutline } from './parseOutline'
 import { loadersFromGlob } from './regionFiles'
 
 /** Bản production chỉ hiện nội dung đã được giáo viên duyệt */
@@ -30,8 +31,8 @@ function publishedOnly(content: RegionContent): RegionContent {
   }
 }
 
-export function getItemsByCategory(content: RegionContent, category: TopicCategory): ContentItem[] {
-  return content.items.filter((i) => i.category === category)
+export function getItemsBySection(content: RegionContent, section: SectionId): ContentItem[] {
+  return content.items.filter((i) => i.section === section)
 }
 
 type Loader = () => Promise<unknown>
@@ -40,7 +41,7 @@ function moduleDefault(mod: unknown): unknown {
   return typeof mod === 'object' && mod !== null && 'default' in mod ? mod.default : mod
 }
 
-export function createRepository(rawRegionList: unknown, loaders: Record<string, Loader>) {
+export function createRepository(rawRegionList: unknown, loaders: Record<string, Loader>, outlineLoaders: Record<string, Loader> = {}) {
   const regions = parseRegionList(rawRegionList)
   const cache = new Map<string, Promise<RegionContent>>()
 
@@ -72,9 +73,16 @@ export function createRepository(rawRegionList: unknown, loaders: Record<string,
     return content && quiz ? { quiz, content } : null
   }
 
+  /** Dàn ý vùng (phần → mục); vùng chưa có outline.json → null */
+  async function loadOutline(regionId: string): Promise<RegionOutline | null> {
+    const loader = outlineLoaders[regionId]
+    return loader ? parseOutline(moduleDefault(await loader()), regionId, `${regionId}/outline.json`) : null
+  }
+
   return {
     getRegions: (): RegionMeta[] => regions,
     loadRegionContent,
+    loadOutline,
     findItem,
     findQuiz,
   }
@@ -82,5 +90,9 @@ export function createRepository(rawRegionList: unknown, loaders: Record<string,
 
 // Mỗi vùng là một thư mục trong src/data/regions (xem regionFiles.ts)
 const regionModules = import.meta.glob('../../data/regions/**/*.json')
+const outlineModules = import.meta.glob('../../data/regions/*/outline.json')
+const outlineLoaders = Object.fromEntries(
+  Object.entries(outlineModules).map(([file, load]) => [file.split('/').at(-2) ?? file, load] as const),
+)
 
-export const repository = createRepository(rawRegions, loadersFromGlob(rawRegions, regionModules))
+export const repository = createRepository(rawRegions, loadersFromGlob(rawRegions, regionModules), outlineLoaders)

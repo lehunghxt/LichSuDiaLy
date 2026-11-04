@@ -1,7 +1,7 @@
 // Chuyển JSON (unknown) thành dữ liệu có kiểu. Sai cấu trúc thì ném ContentError
 // kèm đường dẫn trường lỗi, ví dụ "items[0].title".
 import {
-  TOPIC_CATEGORIES,
+  SECTIONS,
   type ContentItem,
   type ContentStatus,
   type ImageRef,
@@ -11,7 +11,7 @@ import {
   type RegionMeta,
   type SgkFigure,
   type SourceRef,
-  type TopicCategory,
+  type SectionId,
 } from '../../types/content'
 import type { Question, Quiz } from '../../types/quiz'
 
@@ -135,11 +135,11 @@ function parseRegionMeta(v: unknown, path: string): RegionMeta {
 
 function parseItem(v: unknown, path: string): ContentItem {
   const o = obj(v, path)
-  const category: TopicCategory = oneOf(o, 'category', path, TOPIC_CATEGORIES)
+  const section: SectionId = oneOf(o, 'section', path, SECTIONS)
   return {
     id: str(o, 'id', path),
     regionId: str(o, 'regionId', path),
-    category,
+    section,
     title: str(o, 'title', path),
     summary: str(o, 'summary', path),
     highlights: strList(o, 'highlights', path),

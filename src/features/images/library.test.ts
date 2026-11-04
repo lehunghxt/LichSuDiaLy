@@ -10,7 +10,7 @@ function img(id: string, provinceId: string | null, over: Partial<Record<string,
     id,
     provider: 'wikimedia-commons',
     provinceId,
-    category: 'landmark',
+    section: 'thien-nhien',
     itemIds: [],
     alt: 'a',
     caption: 'c',
@@ -30,9 +30,9 @@ const mod = (v: unknown) => () => Promise.resolve({ default: v })
 
 function lib() {
   return createImageLibrary({
-    [`../../data/images/${R}/_toan-vung.json`]: mod([img('_toan-vung__a', null, { category: 'culture' })]),
-    [`../../data/images/${R}/phu-tho.json`]: mod([img('phu-tho__a', 'phu-tho', { itemIds: [`${R}__den-hung`], category: 'historical_site' })]),
-    [`../../data/images/${R}/lao-cai.json`]: mod([img('lao-cai__a', 'lao-cai', { status: 'draft', category: 'natural' }), img('lao-cai__b', 'lao-cai')]),
+    [`../../data/images/${R}/_toan-vung.json`]: mod([img('_toan-vung__a', null, { section: 'van-hoa' })]),
+    [`../../data/images/${R}/phu-tho.json`]: mod([img('phu-tho__a', 'phu-tho', { itemIds: [`${R}__den-hung`], section: 'lich-su' })]),
+    [`../../data/images/${R}/lao-cai.json`]: mod([img('lao-cai__a', 'lao-cai', { status: 'draft', section: 'van-hoa' }), img('lao-cai__b', 'lao-cai')]),
     '../../data/images/nam-bo/can-tho.json': mod([img('can-tho__a', 'can-tho')]),
   })
 }
@@ -70,7 +70,7 @@ test('forItem, forProvince and regionCover', async () => {
   const images = await l.loadRegion(R)
   expect(l.forItem(images, `${R}__den-hung`).map((i) => i.id)).toEqual(['phu-tho__a'])
   expect(l.forProvince(images, 'lao-cai').map((i) => i.id)).toEqual(['lao-cai__a', 'lao-cai__b'])
-  // ưu tiên danh lam thắng cảnh, rồi đặc điểm tự nhiên
+  // ưu tiên ảnh thiên nhiên, rồi ảnh bất kì
   expect(l.regionCover(images)?.id).toBe('lao-cai__b')
   expect(l.regionCover(images.filter((i) => i.id !== 'lao-cai__b'))?.id).toBe('lao-cai__a')
 })
@@ -86,7 +86,7 @@ function webImage(over: Partial<WebImage>): WebImage {
     provider: 'wikimedia-commons',
     regionId: 'vung-a',
     provinceId: null,
-    category: 'landmark',
+    section: 'thien-nhien',
     itemIds: [],
     alt: 'a',
     caption: 'c',
@@ -120,12 +120,12 @@ test('checkImageIntegrity reports wrong province region, unknown items, duplicat
   ])
 })
 
-test('regionCover prefers a landmark tied to an SGK item over an earlier untied landmark', () => {
+test('regionCover prefers a nature image tied to an SGK item over an earlier untied one', () => {
   const l = lib()
   const images = [
-    webImage({ id: 'a', category: 'landmark', itemIds: [] }),
-    webImage({ id: 'b', category: 'natural', itemIds: ['vung-a__x'] }),
-    webImage({ id: 'c', category: 'landmark', itemIds: ['vung-a__y'] }),
+    webImage({ id: 'a', section: 'thien-nhien', itemIds: [] }),
+    webImage({ id: 'b', section: 'van-hoa', itemIds: ['vung-a__x'] }),
+    webImage({ id: 'c', section: 'thien-nhien', itemIds: ['vung-a__y'] }),
   ]
   expect(l.regionCover(images)?.id).toBe('c')
   expect(l.regionCover(images.filter((i) => i.id !== 'c'))?.id).toBe('a')

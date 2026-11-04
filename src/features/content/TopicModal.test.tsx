@@ -25,7 +25,7 @@ function setup(props: Partial<Parameters<typeof TopicModal>[0]> = {}) {
   render(
     <MemoryRouter>
       <button type="button">trigger</button>
-      <TopicModal content={content()} category="landmark" itemSlug={null} onSelect={onSelect} onClose={onClose} {...props} />
+      <TopicModal content={content()} section="thien-nhien" itemSlug={null} onSelect={onSelect} onClose={onClose} {...props} />
     </MemoryRouter>,
   )
   return { onSelect, onClose }
@@ -33,12 +33,12 @@ function setup(props: Partial<Parameters<typeof TopicModal>[0]> = {}) {
 
 test('fullscreen dialog named after the topic, with region name and topic switcher', () => {
   setup()
-  const dialog = screen.getByRole('dialog', { name: 'Danh lam thắng cảnh' })
+  const dialog = screen.getByRole('dialog', { name: 'Thiên nhiên' })
   expect(dialog).toHaveAttribute('aria-modal', 'true')
   expect(within(dialog).getByText('Vùng A')).toBeInTheDocument()
   const topics = within(dialog).getByRole('navigation', { name: 'Chủ đề' })
-  expect(within(topics).getAllByRole('button')).toHaveLength(5)
-  expect(within(topics).getByRole('button', { name: /Danh lam thắng cảnh/ })).toHaveAttribute('aria-pressed', 'true')
+  expect(within(topics).getAllByRole('button')).toHaveLength(4)
+  expect(within(topics).getByRole('button', { name: /Thiên nhiên/ })).toHaveAttribute('aria-pressed', 'true')
 })
 
 test('lists items of the topic and shows the first one when no item selected', () => {
@@ -54,12 +54,12 @@ test('itemSlug selects that item', () => {
   expect(screen.getByRole('heading', { level: 3, name: 'Địa danh 2' })).toBeInTheDocument()
 })
 
-test('clicking an item or a topic calls onSelect(category, slug)', async () => {
+test('clicking an item or a topic calls onSelect(section, slug)', async () => {
   const { onSelect } = setup()
   await userEvent.click(screen.getByRole('button', { name: 'Địa danh 2' }))
-  expect(onSelect).toHaveBeenLastCalledWith('landmark', 'dia-danh-2')
-  await userEvent.click(within(screen.getByRole('navigation', { name: 'Chủ đề' })).getByRole('button', { name: /Khoáng sản/ }))
-  expect(onSelect).toHaveBeenLastCalledWith('mineral', null)
+  expect(onSelect).toHaveBeenLastCalledWith('thien-nhien', 'dia-danh-2')
+  await userEvent.click(within(screen.getByRole('navigation', { name: 'Chủ đề' })).getByRole('button', { name: /Dân cư/ }))
+  expect(onSelect).toHaveBeenLastCalledWith('dan-cu-san-xuat', null)
 })
 
 test('detail shows summary, highlights, fun facts, key points and location', () => {
@@ -88,10 +88,10 @@ test('SGK source with page links to that page', () => {
   expect(within(sources).getByText('tr. 19')).toBeInTheDocument()
 })
 
-test('related item in another topic calls onSelect with its category', async () => {
+test('related item in another topic calls onSelect with its section', async () => {
   const { onSelect } = setup()
   await userEvent.click(within(screen.getByRole('region', { name: 'Khám phá thêm' })).getByRole('button', { name: /Khoáng sản 1/ }))
-  expect(onSelect).toHaveBeenLastCalledWith('mineral', 'khoang-san-1')
+  expect(onSelect).toHaveBeenLastCalledWith('dan-cu-san-xuat', 'khoang-san-1')
 })
 
 test('item without location hides the location row', () => {
@@ -100,7 +100,7 @@ test('item without location hides the location row', () => {
 })
 
 test('empty topic shows "Nội dung đang được cập nhật"', () => {
-  setup({ category: 'historical_site' })
+  setup({ section: 'lich-su' })
   expect(screen.getByText('Nội dung đang được cập nhật')).toBeInTheDocument()
 })
 
@@ -136,7 +136,7 @@ test('shows the province of an item (in the list and in the detail header)', () 
   c.items[0] = { ...c.items[0]!, provinceId: 'lao-cai' }
   render(
     <MemoryRouter>
-      <TopicModal content={c} category="landmark" itemSlug={null} onSelect={vi.fn()} onClose={vi.fn()} />
+      <TopicModal content={c} section="thien-nhien" itemSlug={null} onSelect={vi.fn()} onClose={vi.fn()} />
     </MemoryRouter>,
   )
   const list = screen.getByRole('list', { name: 'Các mục trong chủ đề' })
@@ -151,7 +151,7 @@ test('item not tied to one province says it covers the whole region', () => {
   c.items[0] = { ...c.items[0]!, provinceId: undefined }
   render(
     <MemoryRouter>
-      <TopicModal content={c} category="landmark" itemSlug={null} onSelect={vi.fn()} onClose={vi.fn()} />
+      <TopicModal content={c} section="thien-nhien" itemSlug={null} onSelect={vi.fn()} onClose={vi.fn()} />
     </MemoryRouter>,
   )
   expect(screen.getByTestId('item-place')).toHaveTextContent('Toàn vùng Vùng A')

@@ -2,7 +2,7 @@
   {
     "file": "File:Ho dynasty's citadel, Vietnam.jpg",
     "provinceId": "thanh-hoa",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Cổng thành bằng những khối đá lớn, có ba cửa vòm",
     "caption": "Thành nhà Hồ (tỉnh Thanh Hóa).",
@@ -11,7 +11,7 @@
   {
     "file": "File:Bãi biển Sầm Sơn.JPG",
     "provinceId": "thanh-hoa",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Bãi cát rộng, xa xa là biển và núi nhỏ",
     "caption": "Bãi biển Sầm Sơn (tỉnh Thanh Hóa).",
@@ -20,7 +20,7 @@
   {
     "file": "File:Pu Luong 01.JPG",
     "provinceId": "thanh-hoa",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Những dãy núi phủ rừng xanh dưới trời mây",
     "caption": "Vùng lõi Khu bảo tồn thiên nhiên Pù Luông (tỉnh Thanh Hóa).",
@@ -29,7 +29,7 @@
   {
     "file": "File:Kim Lien Monuments Park.JPG",
     "provinceId": "nghe-an",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Cây đa lớn trước dãy nhà mái ngói",
     "caption": "Khu di tích Kim Liên (tỉnh Nghệ An).",
@@ -38,7 +38,7 @@
   {
     "file": "File:Bãi biển Cửa Lò..jpg",
     "provinceId": "nghe-an",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Bãi cát với những chiếc thuyền thúng, xa xa là núi",
     "caption": "Bãi biển Cửa Lò (tỉnh Nghệ An).",
@@ -47,7 +47,7 @@
   {
     "file": "File:Annamite range pu mat 2007 05.jpg",
     "provinceId": "nghe-an",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Nhà sàn mái lá giữa rừng, phía sau là núi",
     "caption": "Phong cảnh Vườn quốc gia Pù Mát, dãy Trường Sơn (tỉnh Nghệ An).",
@@ -56,7 +56,7 @@
   {
     "file": "File:Thiencambeach.jpg",
     "provinceId": "ha-tinh",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Bãi biển cát vàng, có ngọn núi nhô ra biển",
     "caption": "Bãi biển Thiên Cầm (tỉnh Hà Tĩnh).",
@@ -65,7 +65,7 @@
   {
     "file": "File:Dong Hoi Phong Nha grotten (68776).jpg",
     "provinceId": "quang-tri",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Thuyền chở khách đi vào lòng hang có nhiều nhũ đá",
     "caption": "Động Phong Nha, Vườn quốc gia Phong Nha – Kẻ Bàng (tỉnh Quảng Trị, trước đây thuộc tỉnh Quảng Bình).",
@@ -74,7 +74,7 @@
   {
     "file": "File:Son Doong Cave DB (1).jpg",
     "provinceId": "quang-tri",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Những măng đá khổng lồ trong lòng hang rộng",
     "caption": "Măng đá trong hang Sơn Đoòng (tỉnh Quảng Trị, trước đây thuộc tỉnh Quảng Bình).",
@@ -83,7 +83,7 @@
   {
     "file": "File:Cầu Hiền Lương (nhìn từ bờ Nam).JPG",
     "provinceId": "quang-tri",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Cây cầu sắt bắc qua sông, cuối cầu có cột cờ",
     "caption": "Cầu Hiền Lương trên sông Bến Hải, nhìn từ bờ Nam (tỉnh Quảng Trị).",
@@ -92,7 +92,7 @@
   {
     "file": "File:Hà Tĩnh Province scenery.jpg",
     "provinceId": "ha-tinh",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Cánh đồng lúa trong sương sớm, có người và trâu",
     "caption": "Đồng ruộng ở tỉnh Hà Tĩnh.",
@@ -101,7 +101,7 @@
   {
     "file": "File:Hue Vietnam Citadel-of-Huế-01.jpg",
     "provinceId": "hue",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Cổng thành lớn có lầu mái vàng, phía trước là cầu đá",
     "caption": "Cổng chính vào Hoàng thành Huế (thành phố Huế).",
@@ -110,7 +110,7 @@
   {
     "file": "File:Hue Vietnam Thien-Mu-Temple-and-Pagoda-01.jpg",
     "provinceId": "hue",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Tháp bảy tầng phía sau ngôi chùa giữa vườn cây",
     "caption": "Chùa Thiên Mụ (thành phố Huế).",
@@ -119,7 +119,7 @@
   {
     "file": "File:Emperor Khai Dinh in Hue (39543600561).jpg",
     "provinceId": "hue",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Bậc thang lớn dẫn lên lăng có trụ cao",
     "caption": "Lăng vua Khải Định (thành phố Huế).",
@@ -128,7 +128,7 @@
   {
     "file": "File:Hội An, Ancient Town, 2020-01 CN-06.jpg",
     "provinceId": "da-nang",
-    "category": "landmark",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Dãy nhà cổ tường vàng bên con phố có đèn lồng",
     "caption": "Phố cổ Hội An (thành phố Đà Nẵng, trước đây thuộc tỉnh Quảng Nam).",
@@ -137,7 +137,7 @@
   {
     "file": "File:My Son Sanctuary Vietnam 04.jpg",
     "provinceId": "da-nang",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Ngôi tháp cổ bằng gạch đỏ giữa cây cỏ",
     "caption": "Một ngôi tháp ở Khu đền tháp Mỹ Sơn (thành phố Đà Nẵng, trước đây thuộc tỉnh Quảng Nam).",
@@ -146,7 +146,7 @@
   {
     "file": "File:Ly Son3.jpg",
     "provinceId": "quang-ngai",
-    "category": "culture",
+    "section": "van-hoa",
     "itemIds": [],
     "alt": "Ruộng trồng hành tỏi bên bờ biển có thuyền đánh cá",
     "caption": "Ruộng ven biển trên đảo Lý Sơn (tỉnh Quảng Ngãi).",
@@ -155,7 +155,7 @@
   {
     "file": "File:Kontum wooden catholic church.jpg",
     "provinceId": "quang-ngai",
-    "category": "landmark",
+    "section": "van-hoa",
     "itemIds": [],
     "alt": "Nhà thờ bằng gỗ màu nâu có tháp nhọn",
     "caption": "Nhà thờ gỗ Kon Tum (tỉnh Quảng Ngãi, trước đây thuộc tỉnh Kon Tum).",
@@ -164,7 +164,7 @@
   {
     "file": "File:BahnarRong.jpg",
     "provinceId": "quang-ngai",
-    "category": "culture",
+    "section": "van-hoa",
     "itemIds": [],
     "alt": "Ngôi nhà rông mái lá cao vút",
     "caption": "Nhà rông của người Ba Na ở làng Kon Kơ Tu (tỉnh Quảng Ngãi, trước đây thuộc tỉnh Kon Tum).",
@@ -173,7 +173,7 @@
   {
     "file": "File:Biển Hồ - Pleiku, Gia Lai, Việt Nam.jpg",
     "provinceId": "gia-lai",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Mặt hồ xanh nhìn qua hàng thông",
     "caption": "Biển Hồ ở Pleiku (tỉnh Gia Lai).",
@@ -182,7 +182,7 @@
   {
     "file": "File:0040323 Thap Banh It complex, Nhon Hoa, Binh Dinh Vietnam 001.jpg",
     "provinceId": "gia-lai",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Những ngôi tháp gạch cổ trên đồi cây xanh",
     "caption": "Cụm tháp Bánh Ít (tỉnh Gia Lai, trước đây thuộc tỉnh Bình Định).",
@@ -191,7 +191,7 @@
   {
     "file": "File:Arriving in Nha Trang - Vietnam.jpg",
     "provinceId": "khanh-hoa",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Vịnh biển rộng với đảo và núi, có cầu vồng mờ",
     "caption": "Vịnh Nha Trang (tỉnh Khánh Hòa).",
@@ -200,7 +200,7 @@
   {
     "file": "File:Tháp Bà PONAGAR - panoramio.jpg",
     "provinceId": "khanh-hoa",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Hai ngôi tháp Chăm bằng gạch đỏ",
     "caption": "Tháp Bà Pô Na-ga (tỉnh Khánh Hòa).",
@@ -209,7 +209,7 @@
   {
     "file": "File:Po Klong Garai 00.jpg",
     "provinceId": "khanh-hoa",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Ngôi tháp gạch đỏ chạm khắc cầu kì",
     "caption": "Tháp Pô Klong Ga-rai (tỉnh Khánh Hòa, trước đây thuộc tỉnh Ninh Thuận).",
@@ -218,7 +218,7 @@
   {
     "file": "File:Vườn Nho ở Phan Rang, Ninh Thuận.JPG",
     "provinceId": "khanh-hoa",
-    "category": "culture",
+    "section": "van-hoa",
     "itemIds": [],
     "alt": "Giàn nho trĩu những chùm quả",
     "caption": "Vườn nho ở Phan Rang (tỉnh Khánh Hòa, trước đây thuộc tỉnh Ninh Thuận).",
@@ -227,7 +227,7 @@
   {
     "file": "File:Gành Đá Đĩa - Phú Yên.jpg",
     "provinceId": "dak-lak",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Những cột đá xếp sát nhau bên bờ biển",
     "caption": "Gành Đá Đĩa (tỉnh Đắk Lắk, trước đây thuộc tỉnh Phú Yên).",
@@ -236,7 +236,7 @@
   {
     "file": "File:Buôn Ma Thuột - buildings at Exile House former prison Apr 2024 06.jpg",
     "provinceId": "dak-lak",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Miếu nhỏ màu vàng trong khuôn viên di tích",
     "caption": "Một góc di tích Nhà đày Buôn Ma Thuột (tỉnh Đắk Lắk).",
@@ -245,7 +245,7 @@
   {
     "file": "File:Congchieng01.JPG",
     "provinceId": "dak-lak",
-    "category": "culture",
+    "section": "van-hoa",
     "itemIds": [],
     "alt": "Sân khấu biểu diễn cồng chiêng về đêm, đông người xem",
     "caption": "Lễ hội Cồng chiêng ở Đắk Lắk (tỉnh Đắk Lắk).",
@@ -254,7 +254,7 @@
   {
     "file": "File:Da Lat train station 02.JPG",
     "provinceId": "lam-dong",
-    "category": "landmark",
+    "section": "dan-cu-san-xuat",
     "itemIds": [],
     "alt": "Nhà ga có ba mái nhọn hình tam giác",
     "caption": "Nhà ga Đà Lạt (tỉnh Lâm Đồng).",
@@ -263,7 +263,7 @@
   {
     "file": "File:Da Lat - Viet Nam.jpg",
     "provinceId": "lam-dong",
-    "category": "landmark",
+    "section": "dan-cu-san-xuat",
     "itemIds": [],
     "alt": "Thành phố trên đồi trong sương sớm",
     "caption": "Thành phố Đà Lạt nhìn từ trên cao (tỉnh Lâm Đồng).",
@@ -272,7 +272,7 @@
   {
     "file": "File:Vietnam, Mui Ne sand dune.jpg",
     "provinceId": "lam-dong",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Đồi cát vàng gợn sóng",
     "caption": "Đồi cát Mũi Né (tỉnh Lâm Đồng, trước đây thuộc tỉnh Bình Thuận).",

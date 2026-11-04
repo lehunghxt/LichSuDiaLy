@@ -20,7 +20,7 @@ export function rawRegionContent(): RawRegionContent {
       {
         id: 'vung-a__dia-danh-1',
         regionId: 'vung-a',
-        category: 'landmark',
+        section: 'thien-nhien',
         title: 'Địa danh 1',
         summary: 'Tóm tắt 1.',
         highlights: ['Nổi bật 1'],
@@ -34,7 +34,7 @@ export function rawRegionContent(): RawRegionContent {
       {
         id: 'vung-a__khoang-san-1',
         regionId: 'vung-a',
-        category: 'mineral',
+        section: 'dan-cu-san-xuat',
         title: 'Khoáng sản 1',
         summary: 'Tóm tắt 2.',
         highlights: [],

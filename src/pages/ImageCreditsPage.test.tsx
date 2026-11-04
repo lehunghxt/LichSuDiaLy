@@ -8,7 +8,7 @@ vi.mock('../features/images/library', async (importOriginal) => {
     id: 'can-tho__cho',
     provider: 'wikimedia-commons',
     provinceId: 'can-tho',
-    category: 'culture',
+    section: 'van-hoa',
     itemIds: [],
     alt: 'Chợ nổi',
     caption: 'Chợ nổi Cái Răng (TP. Cần Thơ).',

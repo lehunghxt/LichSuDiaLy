@@ -39,10 +39,10 @@ test('rejects answerIndex outside 0..3', () => {
   expectContentError(() => parseRegionContent(raw), 'quizzes[0].questions[0].answerIndex')
 })
 
-test('rejects unknown category', () => {
+test('rejects unknown section', () => {
   const raw = rawRegionContent()
-  raw.items[1] = { ...raw.items[1]!, category: 'food' }
-  expectContentError(() => parseRegionContent(raw), 'items[1].category')
+  raw.items[1] = { ...raw.items[1]!, section: 'food' }
+  expectContentError(() => parseRegionContent(raw), 'items[1].section')
 })
 
 test('rejects unknown question type', () => {

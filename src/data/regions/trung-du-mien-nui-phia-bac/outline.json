@@ -1,0 +1,172 @@
+{
+  "sections": [
+    {
+      "id": "thien-nhien",
+      "topics": [
+        {
+          "id": "vi-tri-dia-li-va-ban-do-vung",
+          "title": "Vị trí địa lí và bản đồ vùng",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__vi-tri-dia-li",
+            "trung-du-mien-nui-phia-bac__cot-co-lung-cu"
+          ]
+        },
+        {
+          "id": "dia-hinh",
+          "title": "Địa hình",
+          "hint": "(dãy Hoàng Liên Sơn, đỉnh Phan-xi-păng, đồi trung du)",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__dia-hinh",
+            "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang"
+          ]
+        },
+        {
+          "id": "khi-hau",
+          "title": "Khí hậu",
+          "hint": "(mùa đông lạnh, tuyết và băng giá ở vùng núi cao)",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__khi-hau"
+          ]
+        },
+        {
+          "id": "song-ngoi",
+          "title": "Sông ngòi",
+          "hint": "(sông Hồng, sông Đà, sông Lô)",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__song-ngoi"
+          ]
+        },
+        {
+          "id": "khoang-san",
+          "title": "Khoáng sản",
+          "hint": "(than, sắt, a-pa-tít, đồng)",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__khoang-san"
+          ]
+        },
+        {
+          "id": "thien-nhien-va-canh-quan-tieu-bieu",
+          "title": "Thiên nhiên và cảnh quan tiêu biểu",
+          "hint": "(ruộng bậc thang, cao nguyên đá Đồng Văn, hồ Ba Bể)",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__anh-huong-tu-nhien",
+            "trung-du-mien-nui-phia-bac__phong-chong-thien-tai"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dan-cu-san-xuat",
+      "topics": [
+        {
+          "id": "cac-dan-toc",
+          "title": "Các dân tộc",
+          "hint": "(Mông, Dao, Thái, Mường, Tày, Nùng...)",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__dan-toc"
+          ]
+        },
+        {
+          "id": "trang-phuc-truyen-thong",
+          "title": "Trang phục truyền thống",
+          "itemIds": []
+        },
+        {
+          "id": "nha-o-va-ban-lang",
+          "title": "Nhà ở và bản làng",
+          "itemIds": []
+        },
+        {
+          "id": "lam-ruong-bac-thang",
+          "title": "Làm ruộng bậc thang",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__ruong-bac-thang"
+          ]
+        },
+        {
+          "id": "trong-che-va-cay-an-qua",
+          "title": "Trồng chè và cây ăn quả",
+          "itemIds": []
+        },
+        {
+          "id": "khai-thac-khoang-san",
+          "title": "Khai thác khoáng sản",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__su-dung-khoang-san"
+          ]
+        },
+        {
+          "id": "san-xuat-thuy-dien",
+          "title": "Sản xuất thủy điện",
+          "hint": "(Hòa Bình, Sơn La)",
+          "itemIds": []
+        },
+        {
+          "id": "nghe-thu-cong-truyen-thong",
+          "title": "Nghề thủ công truyền thống",
+          "itemIds": []
+        }
+      ]
+    },
+    {
+      "id": "van-hoa",
+      "topics": [
+        {
+          "id": "cho-phien-vung-cao",
+          "title": "Chợ phiên vùng cao",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__cho-phien"
+          ]
+        },
+        {
+          "id": "le-hoi-gau-tao",
+          "title": "Lễ hội Gầu Tào",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__le-hoi",
+            "trung-du-mien-nui-phia-bac__le-hoi-gau-tao"
+          ]
+        },
+        {
+          "id": "le-hoi-long-tong",
+          "title": "Lễ hội Lồng Tồng",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__le-hoi-long-tong"
+          ]
+        },
+        {
+          "id": "mua-xoe-thai",
+          "title": "Múa xòe Thái",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__mua-xoe-thai"
+          ]
+        },
+        {
+          "id": "hat-then-va-dan-tinh",
+          "title": "Hát Then và đàn tính",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__hat-then"
+          ]
+        },
+        {
+          "id": "am-thuc-truyen-thong",
+          "title": "Ẩm thực truyền thống",
+          "itemIds": []
+        }
+      ]
+    },
+    {
+      "id": "lich-su",
+      "topics": [
+        {
+          "id": "den-hung-va-le-gio-to-hung-vuong",
+          "title": "Đền Hùng và lễ giỗ Tổ Hùng Vương",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__den-hung",
+            "trung-du-mien-nui-phia-bac__le-gio-to",
+            "trung-du-mien-nui-phia-bac__truyen-thuyet-hung-vuong"
+          ]
+        }
+      ]
+    }
+  ]
+}

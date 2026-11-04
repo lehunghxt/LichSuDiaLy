@@ -10,7 +10,7 @@ function image(over: Partial<WebImage['attribution']> = {}): WebImage {
     provider: 'wikimedia-commons',
     regionId: 'r',
     provinceId: 'lao-cai',
-    category: 'landmark',
+    section: 'thien-nhien',
     itemIds: [],
     alt: 'Đỉnh núi trong mây',
     caption: 'Đỉnh Phan-xi-păng (tỉnh Lào Cai).',

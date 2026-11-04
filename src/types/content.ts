@@ -1,16 +1,5 @@
 import type { Quiz } from './quiz'
 
-export const TOPIC_CATEGORIES = ['natural', 'culture', 'mineral', 'landmark', 'historical_site'] as const
-export type TopicCategory = (typeof TOPIC_CATEGORIES)[number]
-
-export const TOPIC_LABELS: Record<TopicCategory, string> = {
-  natural: 'Đặc điểm tự nhiên',
-  culture: 'Lễ hội và văn hóa',
-  mineral: 'Khoáng sản',
-  landmark: 'Danh lam thắng cảnh',
-  historical_site: 'Di tích lịch sử',
-}
-
 /** Các phần trong dàn ý vùng (doc.md); "lich-su" giữ theo bài lịch sử của SGK */
 export const SECTIONS = ['thien-nhien', 'dan-cu-san-xuat', 'van-hoa', 'lich-su'] as const
 export type SectionId = (typeof SECTIONS)[number]
@@ -93,7 +82,7 @@ export interface ItemLocation {
 export interface ContentItem {
   id: string
   regionId: string
-  category: TopicCategory
+  section: SectionId
   title: string
   summary: string
   highlights: string[]
@@ -126,7 +115,7 @@ export interface WebImage {
   regionId: string
   /** null = ảnh của cả vùng (_toan-vung.json) */
   provinceId: string | null
-  category: TopicCategory
+  section: SectionId
   itemIds: string[]
   alt: string
   caption: string

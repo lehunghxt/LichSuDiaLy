@@ -3,7 +3,7 @@
     "id": "tuyen-quang__lung-cu-flag-tower-of-ha-giang-in-2014-01",
     "provider": "wikimedia-commons",
     "provinceId": "tuyen-quang",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__cot-co-lung-cu"
     ],
@@ -42,7 +42,7 @@
     "id": "tuyen-quang__song-nho-que-2022-nks",
     "provider": "wikimedia-commons",
     "provinceId": "tuyen-quang",
-    "category": "natural",
+    "section": "thien-nhien",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__song-ngoi"
     ],
@@ -81,7 +81,7 @@
     "id": "tuyen-quang__deo-ma-pi-leng",
     "provider": "wikimedia-commons",
     "provinceId": "tuyen-quang",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__dia-hinh"
     ],
@@ -112,7 +112,7 @@
     "id": "tuyen-quang__hmong-marketplace-in-ha-giang-in-2014-08",
     "provider": "wikimedia-commons",
     "provinceId": "tuyen-quang",
-    "category": "culture",
+    "section": "van-hoa",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__cho-phien"
     ],
@@ -151,7 +151,7 @@
     "id": "tuyen-quang__dinh-tan-trao",
     "provider": "wikimedia-commons",
     "provinceId": "tuyen-quang",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Ngôi đình mái lá dưới tán cây xanh",
     "caption": "Đình Tân Trào, xã Tân Trào (tỉnh Tuyên Quang).",
@@ -188,7 +188,7 @@
     "id": "tuyen-quang__cay-da-lich-su-tan-trao",
     "provider": "wikimedia-commons",
     "provinceId": "tuyen-quang",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Cây đa cổ thụ có bộ rễ lớn",
     "caption": "Cây đa Tân Trào (tỉnh Tuyên Quang).",

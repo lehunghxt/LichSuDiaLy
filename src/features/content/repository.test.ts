@@ -1,5 +1,5 @@
 import { rawRegionContent } from '../../test/fixtures'
-import { createRepository, getItemsByCategory, isPublished } from './repository'
+import { createRepository, getItemsBySection, isPublished } from './repository'
 
 const regionList = [rawRegionContent().region]
 
@@ -53,10 +53,10 @@ test('draft items and questions are filtered out in PROD', async () => {
   expect(content?.items[0]?.relatedIds).toEqual([])
 })
 
-test('getItemsByCategory returns [] for empty category', async () => {
+test('getItemsBySection returns [] for empty section', async () => {
   const content = await repo().loadRegionContent('vung-a')
   expect(content).not.toBeNull()
-  if (content) expect(getItemsByCategory(content, 'historical_site')).toEqual([])
+  if (content) expect(getItemsBySection(content, 'lich-su')).toEqual([])
 })
 
 test('findItem resolves region from id prefix', async () => {
@@ -80,4 +80,12 @@ test('loader failure rejects with error (caller shows ErrorState)', async () => 
     throw new Error('network')
   })
   await expect(r.loadRegionContent('vung-a')).rejects.toThrow('network')
+})
+
+test('loadOutline parses the region outline; region without one gives null', async () => {
+  const outline = { sections: [{ id: 'thien-nhien', topics: [{ id: 'dia-hinh', title: 'Địa hình', itemIds: ['vung-a__dia-danh-1'] }] }] }
+  const repo = createRepository([rawRegionContent().region], {}, { 'vung-a': () => Promise.resolve({ default: outline }) })
+  const o = await repo.loadOutline('vung-a')
+  expect(o?.sections[0]?.topics[0]?.title).toBe('Địa hình')
+  expect(await repo.loadOutline('vung-b')).toBeNull()
 })

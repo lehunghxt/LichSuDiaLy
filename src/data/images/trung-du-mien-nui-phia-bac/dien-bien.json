@@ -3,7 +3,7 @@
     "id": "dien-bien__dien-bien-phu",
     "provider": "wikimedia-commons",
     "provinceId": "dien-bien",
-    "category": "landmark",
+    "section": "dan-cu-san-xuat",
     "itemIds": [],
     "alt": "Thành phố nhỏ, phía sau là cánh đồng rộng và dãy núi",
     "caption": "Thành phố Điện Biên Phủ và cánh đồng Mường Thanh (tỉnh Điện Biên).",
@@ -39,7 +39,7 @@
     "id": "dien-bien__the-victory-monument-of-dien-bien-phu-front",
     "provider": "wikimedia-commons",
     "provinceId": "dien-bien",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Tượng đài bằng đồng hình các chiến sĩ giương cờ",
     "caption": "Tượng đài Chiến thắng Điện Biên Phủ (tỉnh Điện Biên).",
@@ -76,7 +76,7 @@
     "id": "dien-bien__the-museum-of-dien-bien-phu-victory-front-2022",
     "provider": "wikimedia-commons",
     "provinceId": "dien-bien",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Tòa nhà tròn có mái lưới đan chéo",
     "caption": "Bảo tàng Chiến thắng lịch sử Điện Biên Phủ (tỉnh Điện Biên).",
@@ -113,7 +113,7 @@
     "id": "dien-bien__ambassador-ted-osius-s-visit-to-hiv-aids-programs-in-dien-bi",
     "provider": "wikimedia-commons",
     "provinceId": "dien-bien",
-    "category": "culture",
+    "section": "van-hoa",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__mua-xoe-thai"
     ],
@@ -151,7 +151,7 @@
     "id": "dien-bien__traditional-thai-dam-house-muong-thanh-valley-dien-bien-phu",
     "provider": "wikimedia-commons",
     "provinceId": "dien-bien",
-    "category": "culture",
+    "section": "dan-cu-san-xuat",
     "itemIds": [
       "trung-du-mien-nui-phia-bac__dan-toc"
     ],

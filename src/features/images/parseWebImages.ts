@@ -1,6 +1,6 @@
 // Parser cho thư viện ảnh nhúng: chỉ nhận ảnh trên Wikimedia Commons với giấy phép tự do,
 // để mọi ảnh hiện trên web đều được phép nhúng và ghi nguồn đầy đủ.
-import { TOPIC_CATEGORIES, type WebImage } from '../../types/content'
+import { SECTIONS, type WebImage } from '../../types/content'
 import { ContentError, STATUSES, join, list, num, obj, oneOf, optStr, str, strList, type Obj } from '../content/parse'
 
 /** Public domain, CC0, CC BY, CC BY-SA. Không nhận NC, ND hay giấy phép khác */
@@ -57,7 +57,7 @@ export function parseWebImages(raw: unknown, regionId: string, fileProvinceId: s
       provider: oneOf(o, 'provider', at, ['wikimedia-commons'] as const),
       regionId,
       provinceId: fileProvinceId,
-      category: oneOf(o, 'category', at, TOPIC_CATEGORIES),
+      section: oneOf(o, 'section', at, SECTIONS),
       itemIds: strList(o, 'itemIds', at),
       alt: str(o, 'alt', at),
       caption: str(o, 'caption', at),

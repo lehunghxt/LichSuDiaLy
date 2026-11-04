@@ -2,7 +2,7 @@
   {
     "file": "File:Constellation of Literature pavilion, Temple of Literature, Hanoi, Vietnam, 20240123 0939 3103.jpg",
     "provinceId": "ha-noi",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Gác Khuê Văn hai tầng, có cửa sổ tròn",
     "caption": "Khuê Văn Các trong Văn Miếu – Quốc Tử Giám (Thủ đô Hà Nội).",
@@ -11,7 +11,7 @@
   {
     "file": "File:Hanoi - Turtle Tower (Tháp Rùa), Hoàn Kiếm Lake.jpg",
     "provinceId": "ha-noi",
-    "category": "landmark",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Tháp Rùa nhỏ giữa hồ, phía sau là phố",
     "caption": "Tháp Rùa trên hồ Hoàn Kiếm (Thủ đô Hà Nội).",
@@ -20,7 +20,7 @@
   {
     "file": "File:One Pillar Pagoda, Hanoi, Vietnam, 20240123 1122 3219.jpg",
     "provinceId": "ha-noi",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Ngôi chùa nhỏ đặt trên một cột đá giữa hồ",
     "caption": "Chùa Một Cột (Thủ đô Hà Nội).",
@@ -29,7 +29,7 @@
   {
     "file": "File:Central Sector of the Imperial Citadel of Thang Long - Hanoi.jpg",
     "provinceId": "ha-noi",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Cổng thành cổ bằng đá có ba cửa vòm",
     "caption": "Đoan Môn, Khu trung tâm Hoàng thành Thăng Long (Thủ đô Hà Nội).",
@@ -38,7 +38,7 @@
   {
     "file": "File:Hanoi Vietnam Mausoleum-of-Ho-Chi-Minh-03.jpg",
     "provinceId": "ha-noi",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Lăng lớn bằng đá có hàng cột, phía trước là vườn cây",
     "caption": "Lăng Chủ tịch Hồ Chí Minh (Thủ đô Hà Nội).",
@@ -47,7 +47,7 @@
   {
     "file": "File:Co Loa drums.JPG",
     "provinceId": "ha-noi",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Chiếc trống đồng cổ đặt trên bệ",
     "caption": "Trống đồng Cổ Loa trưng bày ở Bảo tàng Hà Nội (Thủ đô Hà Nội).",
@@ -56,7 +56,7 @@
   {
     "file": "File:Bat-Trang-Ceramic-Village1.jpg",
     "provinceId": "ha-noi",
-    "category": "culture",
+    "section": "van-hoa",
     "itemIds": [],
     "alt": "Người đàn ông dắt xe đạp chở đầy đồ gốm",
     "caption": "Chở hàng gốm ở làng gốm Bát Tràng (Thủ đô Hà Nội).",
@@ -65,7 +65,7 @@
   {
     "file": "File:Huong Pagoda - Huong1550.jpg",
     "provinceId": "ha-noi",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Bàn thờ trước khối nhũ đá phủ rêu trong hang",
     "caption": "Trong động Hương Tích, chùa Hương (Thủ đô Hà Nội).",
@@ -74,7 +74,7 @@
   {
     "file": "File:Halong Bay in Vietnam.jpg",
     "provinceId": "quang-ninh",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Những đảo đá vôi nhô lên giữa mặt nước xanh",
     "caption": "Vịnh Hạ Long (tỉnh Quảng Ninh).",
@@ -83,7 +83,7 @@
   {
     "file": "File:Bai Tu Long Bay - Quang Ninh - Vietnam (35892945123).jpg",
     "provinceId": "quang-ninh",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Dãy đảo đá vôi nhỏ dưới trời xanh mây trắng",
     "caption": "Vịnh Bái Tử Long (tỉnh Quảng Ninh).",
@@ -92,7 +92,7 @@
   {
     "file": "File:Phong cảnh núi Yên Tử.jpg",
     "provinceId": "quang-ninh",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Chùa trên đỉnh núi, xung quanh là mây núi",
     "caption": "Đỉnh núi Yên Tử (tỉnh Quảng Ninh).",
@@ -101,7 +101,7 @@
   {
     "file": "File:Cua Van Floating Village.jpg",
     "provinceId": "quang-ninh",
-    "category": "culture",
+    "section": "van-hoa",
     "itemIds": [],
     "alt": "Nhà nổi và thuyền dưới chân núi đá",
     "caption": "Làng chài Cửa Vạn trên vịnh Hạ Long (tỉnh Quảng Ninh).",
@@ -110,7 +110,7 @@
   {
     "file": "File:Quan Ho-Ensemble.JPG",
     "provinceId": "bac-ninh",
-    "category": "culture",
+    "section": "van-hoa",
     "itemIds": [],
     "alt": "Bốn liền chị mặc áo mớ ba mớ bảy, cầm nón quai thao",
     "caption": "Các liền chị hát quan họ ở đền Đô (tỉnh Bắc Ninh).",
@@ -119,7 +119,7 @@
   {
     "file": "File:ChuaDau ToanCanh.JPG",
     "provinceId": "bac-ninh",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Sân gạch rộng trước chùa, phía sau là tháp gạch cổ",
     "caption": "Chùa Dâu và tháp Hòa Phong ở Thuận Thành (tỉnh Bắc Ninh).",
@@ -128,7 +128,7 @@
   {
     "file": "File:Skyline sông Cấm Hải Phòng.jpg",
     "provinceId": "hai-phong",
-    "category": "landmark",
+    "section": "dan-cu-san-xuat",
     "itemIds": [],
     "alt": "Thành phố bên sông, có cây cầu vòm đỏ",
     "caption": "Thành phố Hải Phòng bên sông Cấm (thành phố Hải Phòng).",
@@ -137,7 +137,7 @@
   {
     "file": "File:View of the sea from Cannon Fort Park on Cat Ba Island, Vietnam, 20240130 1601 4441.jpg",
     "provinceId": "hai-phong",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Vịnh biển với các đảo đá vôi phủ cây xanh",
     "caption": "Biển và đảo nhìn từ đảo Cát Bà (thành phố Hải Phòng).",
@@ -146,7 +146,7 @@
   {
     "file": "File:Cat Ba Island, Vietnam, 20240131 1431 4699.jpg",
     "provinceId": "hai-phong",
-    "category": "culture",
+    "section": "van-hoa",
     "itemIds": [],
     "alt": "Nhà nổi và thuyền đánh cá trên mặt nước xanh",
     "caption": "Làng chài trên biển ven đảo Cát Bà (thành phố Hải Phòng).",
@@ -155,7 +155,7 @@
   {
     "file": "File:Con Son Kiep Bac Haiduong.jpg",
     "provinceId": "hai-phong",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Bậc đá dẫn lên ngôi đền giữa rừng cây",
     "caption": "Khu di tích Côn Sơn – Kiếp Bạc (thành phố Hải Phòng, trước đây thuộc tỉnh Hải Dương).",
@@ -164,7 +164,7 @@
   {
     "file": "File:Trang An Landscape Complex, Ninh Binh Province, Vietnam, 20240202 1447 5310.jpg",
     "provinceId": "ninh-binh",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Thuyền nhỏ trên dòng nước giữa các núi đá vôi",
     "caption": "Quần thể danh thắng Tràng An (tỉnh Ninh Bình).",
@@ -173,7 +173,7 @@
   {
     "file": "File:Tam Cốc-Bích Động in Ninh Binh province 2.jpg",
     "provinceId": "ninh-binh",
-    "category": "landmark",
+    "section": "thien-nhien",
     "itemIds": [],
     "alt": "Thuyền chở khách trên sông dưới chân núi đá",
     "caption": "Tam Cốc – Bích Động (tỉnh Ninh Bình).",
@@ -182,7 +182,7 @@
   {
     "file": "File:Tomb of the First Emperor, Hoa Lư, Ninh Bình, Vietnam, 20240203 1515 5695.jpg",
     "provinceId": "ninh-binh",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Bậc đá dẫn lên một ngôi lăng cổ",
     "caption": "Lăng vua Đinh Tiên Hoàng ở Hoa Lư (tỉnh Ninh Bình).",
@@ -191,7 +191,7 @@
   {
     "file": "File:Den Tran Nam Dinh.jpg",
     "provinceId": "ninh-binh",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Cổng trụ biểu bằng đá trước khu đền",
     "caption": "Trụ biểu ở khu Đền Trần (tỉnh Ninh Bình, trước đây thuộc tỉnh Nam Định).",
@@ -200,7 +200,7 @@
   {
     "file": "File:Văn miếu Xích Đằng 02.JPG",
     "provinceId": "hung-yen",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Cổng tam quan cổ ba cửa vòm",
     "caption": "Văn miếu Xích Đằng (tỉnh Hưng Yên).",
@@ -209,7 +209,7 @@
   {
     "file": "File:Chua Keo 6.jpg",
     "provinceId": "hung-yen",
-    "category": "historical_site",
+    "section": "lich-su",
     "itemIds": [],
     "alt": "Ngôi chùa gỗ cổ mái ngói",
     "caption": "Chùa Keo (tỉnh Hưng Yên, trước đây thuộc tỉnh Thái Bình).",
@@ -218,7 +218,7 @@
   {
     "file": "File:Pentraĵoj en vilaĝo Đông Hồ 01.jpg",
     "provinceId": "bac-ninh",
-    "category": "culture",
+    "section": "van-hoa",
     "itemIds": [],
     "alt": "Bốn bức tranh dân gian treo trên tường",
     "caption": "Tranh dân gian ở làng Đông Hồ (tỉnh Bắc Ninh).",

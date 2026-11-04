@@ -17,11 +17,11 @@ import {
 import { useState } from 'react'
 import { Link } from 'react-router'
 import { repository } from '../features/content/repository'
-import { TOPIC_ICONS, TOPIC_TILE } from '../features/content/topicIcons'
+import { SECTION_ICONS, SECTION_TILE } from '../features/content/sectionIcons'
 import { useRegionContent } from '../features/content/useRegionContent'
 import { MiniVietnamMap } from '../features/map/MiniVietnamMap'
 import { useProgress } from '../features/progress/useProgress'
-import { TOPIC_CATEGORIES, TOPIC_LABELS, type ContentItem, type RegionContent } from '../types/content'
+import { SECTIONS, SECTION_LABELS, type ContentItem, type RegionContent } from '../types/content'
 
 const card = 'rounded-card bg-surface shadow-[0_8px_30px_rgb(15_23_42/0.08)]'
 
@@ -50,9 +50,9 @@ export default function HomePage() {
         <section aria-labelledby="topics-title">
           <SectionTitle id="topics-title" icon={Search} title="5 chủ đề khám phá" subtitle={active.name} />
           <ul aria-label="5 chủ đề khám phá" className="grid grid-cols-2 gap-4 md:grid-cols-5">
-            {TOPIC_CATEGORIES.map((c) => {
-              const Icon = TOPIC_ICONS[c]
-              const style = TOPIC_TILE[c]
+            {SECTIONS.map((c) => {
+              const Icon = SECTION_ICONS[c]
+              const style = SECTION_TILE[c]
               return (
                 <li key={c}>
                   <Link
@@ -62,8 +62,8 @@ export default function HomePage() {
                     <span className="flex size-16 items-center justify-center rounded-full bg-white shadow-sm transition group-hover:scale-110">
                       <Icon aria-hidden className={`size-9 ${style.icon}`} strokeWidth={1.75} />
                     </span>
-                    {TOPIC_LABELS[c]}
-                    {ready && <span className="text-sm font-semibold text-muted">{ready.items.filter((i) => i.category === c).length} mục</span>}
+                    {SECTION_LABELS[c]}
+                    {ready && <span className="text-sm font-semibold text-muted">{ready.items.filter((i) => i.section === c).length} mục</span>}
                   </Link>
                 </li>
               )

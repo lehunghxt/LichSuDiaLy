@@ -48,5 +48,5 @@ export default function ItemPage() {
     )
   }
   const { item } = state
-  return <Navigate replace to={`/ban-do/${item.regionId}${topicSearch(item.category, itemSlug(item.id))}`} />
+  return <Navigate replace to={`/ban-do/${item.regionId}${topicSearch(item.section, itemSlug(item.id))}`} />
 }

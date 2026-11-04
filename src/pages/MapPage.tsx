@@ -4,18 +4,18 @@ import { CompactNav } from '../components/layout/CompactNav'
 import { useNavigate, useParams, useSearchParams } from 'react-router'
 import { LoadingState } from '../components/ui/states'
 import { itemSlug, topicSearch } from '../features/content/links'
-import { getItemsByCategory, repository } from '../features/content/repository'
+import { getItemsBySection, repository } from '../features/content/repository'
 import { TopicModal } from '../features/content/TopicModal'
 import { useRegionContent } from '../features/content/useRegionContent'
 import { useRegionImages } from '../features/images/useRegionImages'
 import { MapInfoPanel } from '../features/map/MapInfoPanel'
 import { RegionList } from '../features/map/RegionList'
 import { useProgress } from '../features/progress/useProgress'
-import { TOPIC_CATEGORIES, type TopicCategory } from '../types/content'
+import { SECTIONS, type SectionId } from '../types/content'
 
 const VietnamMap = lazy(() => import('../features/map/VietnamMap'))
 
-const isTopic = (v: string | null): v is TopicCategory => TOPIC_CATEGORIES.some((c) => c === v)
+const isTopic = (v: string | null): v is SectionId => SECTIONS.some((c) => c === v)
 
 export default function MapPage() {
   const { regionId } = useParams()
@@ -33,8 +33,8 @@ export default function MapPage() {
   const slugParam = params.get('muc')
   const modalOpen = topic !== null && content.status === 'ready'
   const shownItem = modalOpen
-    ? (getItemsByCategory(content.content, topic).find((i) => itemSlug(i.id) === slugParam) ??
-      getItemsByCategory(content.content, topic)[0])
+    ? (getItemsBySection(content.content, topic).find((i) => itemSlug(i.id) === slugParam) ??
+      getItemsBySection(content.content, topic)[0])
     : undefined
 
   // Đổi vùng thì bỏ chọn tỉnh
@@ -51,8 +51,8 @@ export default function MapPage() {
 
   const selectRegion = (id: string) => navigate(`/ban-do/${id}`)
   // Mở modal thêm một mục lịch sử (nút Back của trình duyệt đóng modal); đổi mục bên trong thì thay thế
-  const openTopic = (category: TopicCategory, slug: string | null) =>
-    navigate({ search: topicSearch(category, slug) }, { replace: modalOpen })
+  const openTopic = (section: SectionId, slug: string | null) =>
+    navigate({ search: topicSearch(section, slug) }, { replace: modalOpen })
   const closeTopic = () => navigate({ search: '' }, { replace: true })
 
   return (
@@ -94,7 +94,7 @@ export default function MapPage() {
         </aside>
       </div>
       {modalOpen && (
-        <TopicModal content={content.content} images={images} category={topic} itemSlug={slugParam} onSelect={openTopic} onClose={closeTopic} />
+        <TopicModal content={content.content} images={images} section={topic} itemSlug={slugParam} onSelect={openTopic} onClose={closeTopic} />
       )}
     </>
   )

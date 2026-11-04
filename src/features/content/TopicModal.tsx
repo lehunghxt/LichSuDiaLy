@@ -2,27 +2,27 @@ import { MapPin, X } from 'lucide-react'
 import { useEffect, useId, useRef, type KeyboardEvent } from 'react'
 import { EmptyState } from '../../components/ui/states'
 import { provinceName } from '../../lib/provinces'
-import { TOPIC_CATEGORIES, TOPIC_LABELS, type ContentItem, type RegionContent, type TopicCategory, type WebImage } from '../../types/content'
+import { SECTIONS, SECTION_LABELS, type ContentItem, type RegionContent, type SectionId, type WebImage } from '../../types/content'
 import { ItemDetail } from './ItemDetail'
 import { itemSlug } from './links'
-import { getItemsByCategory } from './repository'
-import { TOPIC_ICONS } from './topicIcons'
+import { getItemsBySection } from './repository'
+import { SECTION_ICONS } from './sectionIcons'
 
 interface TopicModalProps {
   content: RegionContent
   /** Ảnh nhúng của vùng; modal lọc theo mục đang xem */
   images?: WebImage[]
-  category: TopicCategory
+  section: SectionId
   /** Phần sau "__" của id mục; null hoặc không tìm thấy thì hiện mục đầu tiên */
   itemSlug: string | null
-  onSelect(category: TopicCategory, slug: string | null): void
+  onSelect(section: SectionId, slug: string | null): void
   onClose(): void
 }
 
 const FOCUSABLE = 'a[href], button:not([disabled]), audio[controls], [tabindex]:not([tabindex="-1"])'
 
 /** Modal toàn màn hình: chọn chủ đề, danh sách mục bên trái, chi tiết mục bên phải */
-export function TopicModal({ content, images = [], category, itemSlug: slug, onSelect, onClose }: TopicModalProps) {
+export function TopicModal({ content, images = [], section, itemSlug: slug, onSelect, onClose }: TopicModalProps) {
   const titleId = useId()
   const dialogRef = useRef<HTMLDivElement>(null)
   const closeRef = useRef<HTMLButtonElement>(null)
@@ -32,7 +32,7 @@ export function TopicModal({ content, images = [], category, itemSlug: slug, onS
     closeCb.current = onClose
   }, [onClose])
 
-  const items = getItemsByCategory(content, category)
+  const items = getItemsBySection(content, section)
   const selected = items.find((i) => itemSlug(i.id) === slug) ?? items[0]
   const related = (selected?.relatedIds ?? [])
     .map((id) => content.items.find((i) => i.id === id))
@@ -92,13 +92,13 @@ export function TopicModal({ content, images = [], category, itemSlug: slug, onS
             {content.region.name}
           </p>
           <h2 id={titleId} className="text-2xl font-bold">
-            {TOPIC_LABELS[category]}
+            {SECTION_LABELS[section]}
           </h2>
         </div>
         <nav aria-label="Chủ đề" className="flex flex-wrap gap-2">
-          {TOPIC_CATEGORIES.map((c) => {
-            const Icon = TOPIC_ICONS[c]
-            const active = c === category
+          {SECTIONS.map((c) => {
+            const Icon = SECTION_ICONS[c]
+            const active = c === section
             return (
               <button
                 key={c}
@@ -110,7 +110,7 @@ export function TopicModal({ content, images = [], category, itemSlug: slug, onS
                 }`}
               >
                 <Icon aria-hidden className="size-4" />
-                {TOPIC_LABELS[c]}
+                {SECTION_LABELS[c]}
               </button>
             )
           })}
@@ -141,7 +141,7 @@ export function TopicModal({ content, images = [], category, itemSlug: slug, onS
                     <button
                       type="button"
                       aria-current={active ? 'true' : undefined}
-                      onClick={() => onSelect(category, itemSlug(i.id))}
+                      onClick={() => onSelect(section, itemSlug(i.id))}
                       className={`w-full rounded-2xl border-2 px-4 py-3 text-left font-semibold transition-colors ${
                         active ? 'border-primary bg-primary-soft text-primary' : 'border-transparent hover:border-line hover:bg-bg'
                       }`}
