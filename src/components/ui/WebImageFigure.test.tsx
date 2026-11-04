@@ -148,3 +148,17 @@ test('full-screen viewer shows a skeleton until the large image loads', () => {
   fireEvent.load(within(viewer).getByRole('img'))
   expect(within(viewer).queryByTestId('image-skeleton')).not.toBeInTheDocument()
 })
+
+test('Tab and Shift+Tab stay inside the image viewer', () => {
+  render(<WebImageFigure image={image()} sizes="50vw" />)
+  fireEvent.click(screen.getByRole('button', { name: 'Xem ảnh lớn: Đỉnh núi trong mây' }))
+  const viewer = screen.getByRole('dialog', { name: 'Đỉnh núi trong mây' })
+  const close = within(viewer).getByRole('button', { name: 'Đóng ảnh' })
+  const links = within(viewer).getAllByRole('link')
+  const last = links[links.length - 1]!
+  expect(close).toHaveFocus()
+  fireEvent.keyDown(close, { key: 'Tab', shiftKey: true })
+  expect(last).toHaveFocus()
+  fireEvent.keyDown(last, { key: 'Tab' })
+  expect(close).toHaveFocus()
+})
