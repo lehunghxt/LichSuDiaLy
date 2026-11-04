@@ -75,6 +75,17 @@ export function markRegionVisited(s: ProgressState, regionId: string): ProgressS
   return s.visitedRegionIds.includes(regionId) ? s : { ...s, visitedRegionIds: [...s.visitedRegionIds, regionId] }
 }
 
+/** Đánh dấu nhiều mục cùng lúc (các mục hiện chung một mục dàn ý); id đầu tiên là mục xem gần nhất. Gọi lại không đổi gì */
+export function markItemsViewed(s: ProgressState, itemIds: string[]): ProgressState {
+  const fresh = itemIds.filter((id) => !s.viewedItemIds.includes(id))
+  if (fresh.length === 0 && itemIds.every((id, i) => s.recentItemIds[i] === id)) return s
+  return {
+    ...s,
+    viewedItemIds: [...s.viewedItemIds, ...fresh],
+    recentItemIds: [...itemIds, ...s.recentItemIds.filter((id) => !itemIds.includes(id))].slice(0, RECENT_LIMIT),
+  }
+}
+
 export function markItemViewed(s: ProgressState, itemId: string): ProgressState {
   const viewed = s.viewedItemIds.includes(itemId)
   if (viewed && s.recentItemIds[0] === itemId) return s

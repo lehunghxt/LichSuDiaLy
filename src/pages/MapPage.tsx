@@ -6,7 +6,7 @@ import { LoadingState } from '../components/ui/states'
 import { itemSlug, topicSearch } from '../features/content/links'
 import { findTopic, isSection, legacyTarget, topicOfItem } from '../features/content/outlineNav'
 import { repository } from '../features/content/repository'
-import { TopicModal } from '../features/content/TopicModal'
+import { SectionModal } from '../features/content/SectionModal'
 import { useRegionContent } from '../features/content/useRegionContent'
 import { useRegionOutline } from '../features/content/useRegionOutline'
 import { useRegionImages } from '../features/images/useRegionImages'
@@ -27,14 +27,16 @@ export default function MapPage() {
   const content = useRegionContent(region?.status === 'active' ? region.id : undefined)
   const images = useRegionImages(region?.id)
   const outline = useRegionOutline(region?.id)
-  const { markRegionVisited, markItemViewed } = useProgress()
+  const { markRegionVisited, markItemsViewed } = useProgress()
 
   const sectionParam = params.get('phan')
   const section = isSection(sectionParam) ? sectionParam : null
   const topic = section && outline ? findTopic(outline, section, params.get('muc')) : undefined
-  const modalOpen = section !== null && topic !== undefined && content.status === 'ready'
-  const topicItems = modalOpen ? content.content.items.filter((i) => topic.itemIds.includes(i.id)) : []
-  const shownItem = topicItems.find((i) => itemSlug(i.id) === params.get('bai')) ?? topicItems[0]
+  // Vùng chưa có nội dung vẫn mở được modal (mọi mục "đang cập nhật")
+  const items = content.status === 'ready' ? content.content.items : []
+  const contentSettled = region?.status === 'coming_soon' || content.status === 'ready'
+  const modalOpen = section !== null && outline !== null && region !== null && contentSettled
+  const topicItemIds = topic ? items.filter((i) => topic.itemIds.includes(i.id)).map((i) => i.id) : []
 
   // Link cũ ?chu-de=<chủ đề>&muc=<slug mục> → vị trí tương ứng trong dàn ý
   const legacyTopic = params.get('chu-de')
@@ -52,10 +54,11 @@ export default function MapPage() {
     if (region?.status === 'active') markRegionVisited(region.id)
   }, [region, markRegionVisited])
 
-  const shownItemId = shownItem?.id
+  // Mở một mục dàn ý: em đã xem mọi mục nội dung hiện trong đó
+  const shownKey = modalOpen ? topicItemIds.join(' ') : ''
   useEffect(() => {
-    if (shownItemId) markItemViewed(shownItemId)
-  }, [shownItemId, markItemViewed])
+    if (shownKey) markItemsViewed(shownKey.split(' '))
+  }, [shownKey, markItemsViewed])
 
   const selectRegion = (id: string) => navigate(`/ban-do/${id}`)
   // Mở modal thêm một mục lịch sử (nút Back của trình duyệt đóng modal); đổi mục bên trong thì thay thế
@@ -65,9 +68,6 @@ export default function MapPage() {
     const at = outline ? topicOfItem(outline, item.id) : null
     openTopic(at?.section ?? item.section, at?.topicId ?? null, itemSlug(item.id))
   }
-  // Modal cũ (tới Task 4) gọi lại theo phần + slug mục nội dung
-  const selectInModal = (s: SectionId, slug: string | null) =>
-    slug && region ? openItem({ id: `${region.id}__${slug}`, section: s }) : openTopic(s, null)
   const closeTopic = () => navigate({ search: '' }, { replace: true })
 
   return (
@@ -111,12 +111,16 @@ export default function MapPage() {
         </aside>
       </div>
       {modalOpen && (
-        <TopicModal
-          content={content.content}
+        <SectionModal
+          region={region}
+          outline={outline}
+          items={items}
           images={images}
           section={section}
-          itemSlug={shownItem ? itemSlug(shownItem.id) : null}
-          onSelect={selectInModal}
+          topicId={topic?.id ?? null}
+          itemSlug={params.get('bai')}
+          onSelect={openTopic}
+          onSelectItem={openItem}
           onClose={closeTopic}
         />
       )}

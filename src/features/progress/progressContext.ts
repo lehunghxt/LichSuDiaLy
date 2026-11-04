@@ -7,6 +7,7 @@ export interface ProgressContextValue {
   persisted: boolean
   markRegionVisited(regionId: string): void
   markItemViewed(itemId: string): void
+  markItemsViewed(itemIds: string[]): void
   recordQuiz(quizId: string, score: number, total: number): void
   reset(): void
 }

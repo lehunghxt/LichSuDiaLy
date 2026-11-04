@@ -3,6 +3,7 @@ import { rawRegionContent } from '../../test/fixtures'
 import {
   INITIAL_PROGRESS,
   markItemViewed,
+  markItemsViewed,
   markRegionVisited,
   parseProgress,
   recordQuiz,
@@ -92,4 +93,11 @@ test('safeGet returns null when localStorage access throws', () => {
   })
   expect(safeGet('k')).toBeNull()
   spy.mockRestore()
+})
+
+test('markItemsViewed marks all, first id most recent, and is idempotent', () => {
+  const once = markItemsViewed(INITIAL_PROGRESS, ['a', 'b'])
+  expect(once.viewedItemIds).toEqual(['a', 'b'])
+  expect(once.recentItemIds.slice(0, 2)).toEqual(['a', 'b'])
+  expect(markItemsViewed(once, ['a', 'b'])).toBe(once)
 })

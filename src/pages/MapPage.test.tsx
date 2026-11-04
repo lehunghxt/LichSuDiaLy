@@ -90,12 +90,12 @@ test('clicking region button navigates and panel shows region name, intro and it
   expect(screen.getByTestId('map')).toHaveAttribute('data-selected', 'trung-du-mien-nui-phia-bac')
 })
 
-test('selecting another item in the modal updates ?muc= and the detail', async () => {
+test('selecting another topic in the modal updates ?muc= and the detail', async () => {
   const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac?phan=dan-cu-san-xuat&muc=cac-dan-toc')
   const dialog = await screen.findByRole('dialog', { name: 'Dân cư và hoạt động sản xuất' })
-  const list = within(dialog).getByRole('list', { name: 'Các mục trong chủ đề' })
-  await userEvent.click(within(list).getByRole('button', { name: 'Khai thác và sử dụng khoáng sản' }))
-  expect(router.state.location.search).toBe('?phan=dan-cu-san-xuat&muc=khai-thac-khoang-san&bai=su-dung-khoang-san')
+  const list = within(dialog).getByRole('list', { name: 'Các mục trong phần' })
+  await userEvent.click(within(list).getByRole('button', { name: /Khai thác khoáng sản/ }))
+  expect(router.state.location.search).toBe('?phan=dan-cu-san-xuat&muc=khai-thac-khoang-san')
   expect(within(dialog).getByRole('heading', { level: 3, name: 'Khai thác và sử dụng khoáng sản' })).toBeInTheDocument()
 })
 
@@ -228,7 +228,7 @@ test('modal: region-wide item lists the 9 provinces of the region', async () => 
   expect(within(provinces).getAllByRole('listitem')).toHaveLength(9)
   expect(provinces).toHaveTextContent('Lai Châu')
   expect(provinces).toHaveTextContent('Phú Thọ')
-  expect(within(dialog).getByTestId('item-place')).toHaveTextContent('gồm 9 tỉnh')
+  expect(within(dialog).getAllByTestId('item-place')[0]).toHaveTextContent('gồm 9 tỉnh')
 })
 
 test('modal shows images of the item with credit', async () => {
@@ -393,4 +393,24 @@ test('legacy ?chu-de=landmark&muc=dinh-phan-xi-pang opens the matching section a
   const dialog = await screen.findByRole('dialog', { name: 'Thiên nhiên' })
   expect(within(dialog).getByRole('heading', { level: 3, name: 'Đỉnh Phan-xi-păng' })).toBeInTheDocument()
   await waitFor(() => expect(router.state.location.search).toBe('?phan=thien-nhien&muc=dia-hinh&bai=dinh-phan-xi-pang'))
+})
+
+test('coming-soon region: clicking a topic opens the modal saying content is being updated', async () => {
+  renderAt('/ban-do/nam-bo')
+  const nav = await outlineNav()
+  await userEvent.click(within(nav).getByRole('button', { name: /Chợ nổi Cái Răng/ }))
+  const dialog = await screen.findByRole('dialog', { name: 'Văn hóa' })
+  expect(within(dialog).getByText('Nội dung đang được cập nhật')).toBeInTheDocument()
+})
+
+test('opening a topic with two items records both as viewed', async () => {
+  localStorage.clear()
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac?phan=thien-nhien&muc=dia-hinh')
+  await screen.findByRole('dialog', { name: 'Thiên nhiên' })
+  await waitFor(() => {
+    const saved = JSON.parse(localStorage.getItem(PROGRESS_KEY) ?? '{}') as { viewedItemIds?: string[] }
+    expect(saved.viewedItemIds).toEqual(
+      expect.arrayContaining(['trung-du-mien-nui-phia-bac__dia-hinh', 'trung-du-mien-nui-phia-bac__dinh-phan-xi-pang']),
+    )
+  })
 })

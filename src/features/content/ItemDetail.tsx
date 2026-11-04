@@ -4,8 +4,7 @@ import { SmartImage } from '../../components/ui/SmartImage'
 import { WebImageFigure } from '../../components/ui/WebImageFigure'
 import { provinceName, provinceNamesOfRegion } from '../../lib/provinces'
 import { SGK_URL, sgkPageUrl } from '../../lib/sources'
-import { SECTION_LABELS, type ContentItem, type MediaRef, type SourceRef, type SectionId, type WebImage } from '../../types/content'
-import { itemSlug } from './links'
+import { SECTION_LABELS, type ContentItem, type MediaRef, type SourceRef, type WebImage } from '../../types/content'
 import { SECTION_ICONS } from './sectionIcons'
 
 interface ItemDetailProps {
@@ -14,7 +13,7 @@ interface ItemDetailProps {
   /** Ảnh nhúng (Wikimedia Commons) minh hoạ mục này */
   webImages?: WebImage[]
   related: ContentItem[]
-  onSelectRelated(section: SectionId, slug: string): void
+  onSelectRelated(item: ContentItem): void
 }
 
 /** Toàn bộ thông tin một mục nội dung; dùng trong modal chủ đề */
@@ -167,7 +166,7 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
                 <li key={r.id}>
                   <button
                     type="button"
-                    onClick={() => onSelectRelated(r.section, itemSlug(r.id))}
+                    onClick={() => onSelectRelated(r)}
                     className="inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-line px-4 font-semibold hover:border-primary hover:bg-primary-soft"
                   >
                     <RIcon aria-hidden className="size-5 text-primary" />

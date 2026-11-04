@@ -26,6 +26,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       persisted,
       markRegionVisited: (id) => setState((s) => P.markRegionVisited(s, id)),
       markItemViewed: (id) => setState((s) => P.markItemViewed(s, id)),
+      markItemsViewed: (ids) => setState((s) => P.markItemsViewed(s, ids)),
       recordQuiz: (id, score, total) => setState((s) => P.recordQuiz(s, id, score, total, new Date())),
       reset: () => setState(P.INITIAL_PROGRESS),
     }),
