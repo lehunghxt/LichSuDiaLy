@@ -1,0 +1,152 @@
+[
+  {
+    "id": "dong-nai__buu-long-bien-hoa-dong-nai-vietnam-panoramio-1",
+    "provider": "wikimedia-commons",
+    "provinceId": "dong-nai",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Mặt hồ phẳng lặng, bên bờ có vách đá lớn và cây xanh",
+    "caption": "Khu Bửu Long, thành phố Biên Hòa (tỉnh Đồng Nai).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio_%281%29.jpg/960px-B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio_%281%29.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio_%281%29.jpg/500px-B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio_%281%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio_%281%29.jpg/960px-B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio_%281%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio_%281%29.jpg/1280px-B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio_%281%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Bửu Long, Bien Hoa, Dong Nai, Vietnam - panoramio (1).jpg",
+      "author": "Lam Tr Th",
+      "authorUrl": "https://web.archive.org/web/20161030012451/http://www.panoramio.com/user/6647071?with_photo_id=100821845",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%E1%BB%ADu_Long,_Bien_Hoa,_Dong_Nai,_Vietnam_-_panoramio_(1).jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "dong-nai__buu-long-bien-hoa-dong-nai-vietnam-panoramio",
+    "provider": "wikimedia-commons",
+    "provinceId": "dong-nai",
+    "section": "van-hoa",
+    "itemIds": [],
+    "alt": "Cổng tam quan mái ngói xanh, có ba cửa vòm",
+    "caption": "Cổng vào khu Bửu Long, thành phố Biên Hòa (tỉnh Đồng Nai).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio.jpg/960px-B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio.jpg/500px-B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio.jpg/960px-B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio.jpg/1280px-B%E1%BB%ADu_Long%2C_Bien_Hoa%2C_Dong_Nai%2C_Vietnam_-_panoramio.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Bửu Long, Bien Hoa, Dong Nai, Vietnam - panoramio.jpg",
+      "author": "Lam Tr Th",
+      "authorUrl": "https://web.archive.org/web/20161030012543/http://www.panoramio.com/user/6647071?with_photo_id=100821846",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%E1%BB%ADu_Long,_Bien_Hoa,_Dong_Nai,_Vietnam_-_panoramio.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "dong-nai__binh-phuoc-landscape",
+    "provider": "wikimedia-commons",
+    "provinceId": "dong-nai",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Đồi rừng và mặt hồ trải rộng nhìn từ trên núi cao",
+    "caption": "Phong cảnh nhìn từ núi Bà Rá (tỉnh Đồng Nai).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc_landscape.jpg/960px-B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc_landscape.jpg",
+      "width": 960,
+      "height": 540,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc_landscape.jpg/500px-B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc_landscape.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc_landscape.jpg/960px-B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc_landscape.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc_landscape.jpg/1280px-B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc_landscape.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Bình Phước landscape.jpg",
+      "author": "[Tycho] talk , http://shansov.net",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Shansov.net",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc_landscape.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "dong-nai__dong-nai-river-in-bien-hoa-15286968737",
+    "provider": "wikimedia-commons",
+    "provinceId": "dong-nai",
+    "section": "thien-nhien",
+    "itemIds": [
+      "nam-bo__song-ngoi"
+    ],
+    "alt": "Dòng sông rộng màu nâu đỏ chảy qua thành phố, nhìn từ máy bay",
+    "caption": "Sông Đồng Nai chảy qua Biên Hòa (tỉnh Đồng Nai).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Dong_Nai_River_in_Bien_Hoa_%2815286968737%29.jpg/960px-Dong_Nai_River_in_Bien_Hoa_%2815286968737%29.jpg",
+      "width": 960,
+      "height": 640,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Dong_Nai_River_in_Bien_Hoa_%2815286968737%29.jpg/500px-Dong_Nai_River_in_Bien_Hoa_%2815286968737%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Dong_Nai_River_in_Bien_Hoa_%2815286968737%29.jpg/960px-Dong_Nai_River_in_Bien_Hoa_%2815286968737%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Dong_Nai_River_in_Bien_Hoa_%2815286968737%29.jpg/1280px-Dong_Nai_River_in_Bien_Hoa_%2815286968737%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Dong Nai River in Bien Hoa (15286968737).jpg",
+      "author": "Gary Todd from Xinzheng, China",
+      "authorUrl": "https://www.flickr.com/people/101561334@N08",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dong_Nai_River_in_Bien_Hoa_(15286968737).jpg"
+    },
+    "status": "draft"
+  }
+]

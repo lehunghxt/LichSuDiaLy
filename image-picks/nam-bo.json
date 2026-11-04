@@ -1,1 +1,396 @@
-[]
+[
+  {
+    "file": "File:Bửu Long, Bien Hoa, Dong Nai, Vietnam - panoramio (1).jpg",
+    "provinceId": "dong-nai",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Mặt hồ phẳng lặng, bên bờ có vách đá lớn và cây xanh",
+    "caption": "Khu Bửu Long, thành phố Biên Hòa (tỉnh Đồng Nai).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Bửu Long, Bien Hoa, Dong Nai, Vietnam - panoramio.jpg",
+    "provinceId": "dong-nai",
+    "section": "van-hoa",
+    "itemIds": [],
+    "alt": "Cổng tam quan mái ngói xanh, có ba cửa vòm",
+    "caption": "Cổng vào khu Bửu Long, thành phố Biên Hòa (tỉnh Đồng Nai).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Bình Phước landscape.jpg",
+    "provinceId": "dong-nai",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Đồi rừng và mặt hồ trải rộng nhìn từ trên núi cao",
+    "caption": "Phong cảnh nhìn từ núi Bà Rá (tỉnh Đồng Nai).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Dong Nai River in Bien Hoa (15286968737).jpg",
+    "provinceId": "dong-nai",
+    "section": "thien-nhien",
+    "itemIds": [
+      "nam-bo__song-ngoi"
+    ],
+    "alt": "Dòng sông rộng màu nâu đỏ chảy qua thành phố, nhìn từ máy bay",
+    "caption": "Sông Đồng Nai chảy qua Biên Hòa (tỉnh Đồng Nai).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Cu Chi Tunnels Vietnam war 5.jpg",
+    "provinceId": "ho-chi-minh",
+    "section": "lich-su",
+    "itemIds": [
+      "nam-bo__dia-dao"
+    ],
+    "alt": "Một người chui lên từ miệng hầm nhỏ giữa lớp lá khô",
+    "caption": "Miệng hầm ở Địa đạo Củ Chi (Thành phố Hồ Chí Minh).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Cu Chi Tunnel 3.jpg",
+    "provinceId": "ho-chi-minh",
+    "section": "lich-su",
+    "itemIds": [
+      "nam-bo__dia-dao"
+    ],
+    "alt": "Lối xuống hầm nhỏ hẹp trên nền đất có lá khô",
+    "caption": "Một lối xuống hầm ở Địa đạo Củ Chi (Thành phố Hồ Chí Minh).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Học viên an ninh tham quan Bến Nhà Rồng.JPG",
+    "provinceId": "ho-chi-minh",
+    "section": "lich-su",
+    "itemIds": [
+      "nam-bo__su-kien-tphcm"
+    ],
+    "alt": "Một nhóm học viên đứng nghe giới thiệu trước tủ trưng bày",
+    "caption": "Học viên tham quan Bến Nhà Rồng (Thành phố Hồ Chí Minh).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Ben Thanh market 2.jpg",
+    "provinceId": "ho-chi-minh",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [],
+    "alt": "Cổng chợ có tháp đồng hồ, xe máy chạy phía trước",
+    "caption": "Chợ Bến Thành (Thành phố Hồ Chí Minh).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Ben Thanh Market, 2023 (02).jpg",
+    "provinceId": "ho-chi-minh",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [],
+    "alt": "Mặt tiền chợ có tháp đồng hồ và dòng chữ Chợ Bến Thành",
+    "caption": "Chợ Bến Thành, Thành phố Hồ Chí Minh.",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Bai Truoc Vung Tau.jpg",
+    "provinceId": "ho-chi-minh",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Bờ biển cong, chân núi xanh, nhiều tàu thuyền neo đậu",
+    "caption": "Bờ biển Bãi Trước nhìn từ Núi Lớn, Vũng Tàu (Thành phố Hồ Chí Minh).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Tây Ninh, 2023.jpg",
+    "provinceId": "tay-ninh",
+    "section": "thien-nhien",
+    "itemIds": [
+      "nam-bo__dia-hinh-dong-nam-bo"
+    ],
+    "alt": "Thành phố nhiều cây xanh, phía xa là ngọn núi cao",
+    "caption": "Thành phố Tây Ninh, phía xa là núi Bà Đen (tỉnh Tây Ninh).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Cáp treo núi Bà Đen.JPG",
+    "provinceId": "tay-ninh",
+    "section": "thien-nhien",
+    "itemIds": [
+      "nam-bo__dia-hinh-dong-nam-bo"
+    ],
+    "alt": "Các cabin cáp treo chạy dọc sườn núi nhiều cây",
+    "caption": "Cáp treo lên các chùa trên núi Bà Đen (tỉnh Tây Ninh).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Quần thể chùa Thượng ở núi Bà Đen.png",
+    "provinceId": "tay-ninh",
+    "section": "van-hoa",
+    "itemIds": [],
+    "alt": "Quần thể chùa mái đỏ giữa cây xanh, nhìn từ trên cao",
+    "caption": "Quần thể chùa Thượng ở núi Bà Đen (tỉnh Tây Ninh).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Bình Thanh, tp. Tân An, Long An, Vietnam - panoramio.jpg",
+    "provinceId": "tay-ninh",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [],
+    "alt": "Cánh đồng lúa xanh rộng dưới bầu trời nhiều mây",
+    "caption": "Cánh đồng ở Bình Thạnh, Tân An (tỉnh Tây Ninh).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Đồng cỏ và chim nước.jpg",
+    "provinceId": "dong-thap",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Đàn chim trắng bay trên đồng cỏ ngập nước",
+    "caption": "Đồng cỏ ở Tràm Chim (tỉnh Đồng Tháp).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Anastomus oscitans Tràm Chim 2.JPG",
+    "provinceId": "dong-thap",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Đàn cò bay trên nền trời xanh",
+    "caption": "Đàn cò ốc ở Vườn quốc gia Tràm Chim (tỉnh Đồng Tháp).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Khu chòi canh vuon quoc gia Tram Chim, Tam Nong, Dong thap - panoramio.jpg",
+    "provinceId": "dong-thap",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Chòi canh mái xanh trên mặt nước phủ đầy lá sen",
+    "caption": "Khu chòi canh Vườn quốc gia Tràm Chim, Tam Nông (tỉnh Đồng Tháp).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Vietnam 08 - 116 - Cai Be floating market (3185891184).jpg",
+    "provinceId": "dong-thap",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__cho-noi"
+    ],
+    "alt": "Người phụ nữ đội nón lá chèo xuồng nhỏ trên sông",
+    "caption": "Chèo xuồng ở chợ nổi Cái Bè (tỉnh Đồng Tháp).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Vietnam 08 - 112 - Cai Be floating market (3185044019).jpg",
+    "provinceId": "dong-thap",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__cho-noi"
+    ],
+    "alt": "Ghe chở đầy chuối đậu cạnh nhau trên sông",
+    "caption": "Trao đổi chuối ở chợ nổi Cái Bè (tỉnh Đồng Tháp).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:CoconutPeel @BinhDai BenTre Vietnam.jpg",
+    "provinceId": "vinh-long",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__cay-an-qua"
+    ],
+    "alt": "Chiếc ghe chở đầy vỏ dừa đậu bên bờ sông",
+    "caption": "Chở vỏ dừa ở Bình Đại (tỉnh Vĩnh Long).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:20190924 coconut opening-1.jpg",
+    "provinceId": "vinh-long",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__cay-an-qua"
+    ],
+    "alt": "Người thợ đang bổ dừa bên cạnh đống dừa khô",
+    "caption": "Bổ dừa ở một vườn dừa ven sông Bến Tre (tỉnh Vĩnh Long).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Ao Bà Om.jpg",
+    "provinceId": "vinh-long",
+    "section": "van-hoa",
+    "itemIds": [],
+    "alt": "Ao nước rộng hình vuông, xung quanh là hàng cây cao",
+    "caption": "Ao Bà Om (tỉnh Vĩnh Long).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Chùa Âng.jpg",
+    "provinceId": "vinh-long",
+    "section": "van-hoa",
+    "itemIds": [],
+    "alt": "Ngôi chùa Khmer mái nhọn nhiều tầng giữa vườn cây",
+    "caption": "Chùa Âng, một ngôi chùa Khmer cổ bên ao Bà Om (tỉnh Vĩnh Long).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Le village flottant (Chau Doc, Vietnam) (6620578201).jpg",
+    "provinceId": "an-giang",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__nha-o",
+      "nam-bo__thuy-san"
+    ],
+    "alt": "Dãy nhà nổi sơn xanh trên mặt sông",
+    "caption": "Nhà nổi trên sông Hậu gần Châu Đốc, vừa để ở vừa để nuôi cá (tỉnh An Giang).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Vietnam, Chau Doc, Floating village.jpg",
+    "provinceId": "an-giang",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__nha-o"
+    ],
+    "alt": "Nhà nổi có cắm cờ đỏ trên mặt sông rộng",
+    "caption": "Làng nổi ở Châu Đốc (tỉnh An Giang).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Rừng tràm Trà Sư.jpg",
+    "provinceId": "an-giang",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Rừng tràm thân thẳng mọc trên mặt nước phủ bèo xanh",
+    "caption": "Rừng tràm Trà Sư, Tịnh Biên (tỉnh An Giang).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Trà Sư 1.jpg",
+    "provinceId": "an-giang",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Rừng tràm xanh rậm xen những vũng nước, nhìn từ trên cao",
+    "caption": "Rừng tràm Trà Sư (tỉnh An Giang).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Miếu Bà Chúa Xứ Núi Sam.jpg",
+    "provinceId": "an-giang",
+    "section": "van-hoa",
+    "itemIds": [],
+    "alt": "Ngôi miếu mái ngói xanh nhiều tầng dưới trời xanh",
+    "caption": "Miếu Bà Chúa Xứ núi Sam, Châu Đốc (tỉnh An Giang).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Rice field at ChauDoc.JPG",
+    "provinceId": "an-giang",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__trong-lua"
+    ],
+    "alt": "Cánh đồng lúa rộng nhìn từ trên núi xuống",
+    "caption": "Cánh đồng lúa nhìn từ núi Sam, Châu Đốc (tỉnh An Giang).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Bai-sao-phu-quoc-tuonglamphotos.jpg",
+    "provinceId": "an-giang",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Bãi cát trắng, nước biển xanh trong, phía sau là đồi núi",
+    "caption": "Bãi Sao, Phú Quốc (tỉnh An Giang).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Kem Beach aerial view Phu Quoc Island Vietnam.jpg",
+    "provinceId": "an-giang",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Bãi cát trắng chạy dọc hàng cây xanh, nhìn từ trên cao",
+    "caption": "Bãi Kem, đảo Phú Quốc (tỉnh An Giang).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Cai Rang Floating Market 8.jpg",
+    "provinceId": "can-tho",
+    "section": "van-hoa",
+    "itemIds": [
+      "nam-bo__cho-noi"
+    ],
+    "alt": "Nhiều ghe thuyền chở rau quả đậu sát nhau trên sông",
+    "caption": "Chợ nổi Cái Răng gần Cần Thơ.",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể",
+    "cover": true
+  },
+  {
+    "file": "File:Cai Rang floating market (15886375226).jpg",
+    "provinceId": "can-tho",
+    "section": "van-hoa",
+    "itemIds": [
+      "nam-bo__cho-noi"
+    ],
+    "alt": "Người phụ nữ đội nón chèo xuồng giữa chợ nổi đông ghe",
+    "caption": "Chợ nổi Cái Răng (thành phố Cần Thơ).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Đình Bình Thủy, Cần Thơ.jpg",
+    "provinceId": "can-tho",
+    "section": "van-hoa",
+    "itemIds": [],
+    "alt": "Ngôi đình mái ngói, sân lát gạch có nhiều chậu cây cảnh",
+    "caption": "Đình Bình Thủy (thành phố Cần Thơ).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Chua Doi.jpg",
+    "provinceId": "can-tho",
+    "section": "van-hoa",
+    "itemIds": [],
+    "alt": "Ngôi chùa Khmer mái nhọn vàng rực dưới trời xanh",
+    "caption": "Chùa Dơi, Sóc Trăng (thành phố Cần Thơ).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Chua soc trang.jpg",
+    "provinceId": "can-tho",
+    "section": "van-hoa",
+    "itemIds": [],
+    "alt": "Ngôi chùa Khmer mái nhiều tầng, tường màu vàng cam",
+    "caption": "Chùa Khleang, một ngôi chùa Khmer cổ ở Sóc Trăng (thành phố Cần Thơ).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:MũiCàMau.jpg",
+    "provinceId": "ca-mau",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Tượng đài hình cánh buồm màu trắng giữa cây xanh",
+    "caption": "Biểu tượng hình con thuyền ở Mũi Cà Mau, điểm cực Nam trên đất liền (tỉnh Cà Mau).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Mui Ca Mau 005.JPG",
+    "provinceId": "ca-mau",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Mặt trời chiếu trên biển và rừng cây ven bờ",
+    "caption": "Mũi Cà Mau lúc hoàng hôn (tỉnh Cà Mau).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Intricate prop root system of mangrove tree in Ca Mau Vietnam.jpg",
+    "provinceId": "ca-mau",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Bộ rễ cây đan chằng chịt cắm xuống nền bùn",
+    "caption": "Rễ cây rừng ngập mặn ở Cà Mau.",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Bạc Liêu windpower farm.jpg",
+    "provinceId": "ca-mau",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__cong-nghiep"
+    ],
+    "alt": "Hàng tua-bin gió đứng trên biển lúc hoàng hôn",
+    "caption": "Nhà máy điện gió Bạc Liêu (tỉnh Cà Mau).",
+    "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  }
+]

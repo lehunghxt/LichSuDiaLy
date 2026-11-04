@@ -1,0 +1,151 @@
+[
+  {
+    "id": "ca-mau__muicamau",
+    "provider": "wikimedia-commons",
+    "provinceId": "ca-mau",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Tượng đài hình cánh buồm màu trắng giữa cây xanh",
+    "caption": "Biểu tượng hình con thuyền ở Mũi Cà Mau, điểm cực Nam trên đất liền (tỉnh Cà Mau).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/M%C5%A9iC%C3%A0Mau.jpg/960px-M%C5%A9iC%C3%A0Mau.jpg",
+      "width": 960,
+      "height": 528,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/M%C5%A9iC%C3%A0Mau.jpg/500px-M%C5%A9iC%C3%A0Mau.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/M%C5%A9iC%C3%A0Mau.jpg/960px-M%C5%A9iC%C3%A0Mau.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/M%C5%A9iC%C3%A0Mau.jpg/1280px-M%C5%A9iC%C3%A0Mau.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:MũiCàMau.jpg",
+      "author": "HaMinh1997 at Vietnamese Wikipedia",
+      "authorUrl": "https://en.wikipedia.org/wiki/vi:User:HaMinh1997",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:M%C5%A9iC%C3%A0Mau.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "ca-mau__mui-ca-mau-005",
+    "provider": "wikimedia-commons",
+    "provinceId": "ca-mau",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Mặt trời chiếu trên biển và rừng cây ven bờ",
+    "caption": "Mũi Cà Mau lúc hoàng hôn (tỉnh Cà Mau).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Mui_Ca_Mau_005.JPG/960px-Mui_Ca_Mau_005.JPG",
+      "width": 960,
+      "height": 630,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Mui_Ca_Mau_005.JPG/500px-Mui_Ca_Mau_005.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Mui_Ca_Mau_005.JPG/960px-Mui_Ca_Mau_005.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Mui_Ca_Mau_005.JPG/1280px-Mui_Ca_Mau_005.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Mui Ca Mau 005.JPG",
+      "author": "Ctvn wikiviet",
+      "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:Ctvn_wikiviet&action=edit&redlink=1",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mui_Ca_Mau_005.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "ca-mau__intricate-prop-root-system-of-mangrove-tree-in-ca-mau-vietna",
+    "provider": "wikimedia-commons",
+    "provinceId": "ca-mau",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Bộ rễ cây đan chằng chịt cắm xuống nền bùn",
+    "caption": "Rễ cây rừng ngập mặn ở Cà Mau.",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Intricate_prop_root_system_of_mangrove_tree_in_Ca_Mau_Vietnam.jpg/960px-Intricate_prop_root_system_of_mangrove_tree_in_Ca_Mau_Vietnam.jpg",
+      "width": 960,
+      "height": 2133,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Intricate_prop_root_system_of_mangrove_tree_in_Ca_Mau_Vietnam.jpg/500px-Intricate_prop_root_system_of_mangrove_tree_in_Ca_Mau_Vietnam.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Intricate_prop_root_system_of_mangrove_tree_in_Ca_Mau_Vietnam.jpg/960px-Intricate_prop_root_system_of_mangrove_tree_in_Ca_Mau_Vietnam.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Intricate_prop_root_system_of_mangrove_tree_in_Ca_Mau_Vietnam.jpg/1280px-Intricate_prop_root_system_of_mangrove_tree_in_Ca_Mau_Vietnam.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Intricate prop root system of mangrove tree in Ca Mau Vietnam.jpg",
+      "author": "Nevillenguyen310",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Nevillenguyen310",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Intricate_prop_root_system_of_mangrove_tree_in_Ca_Mau_Vietnam.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "ca-mau__bac-lieu-windpower-farm",
+    "provider": "wikimedia-commons",
+    "provinceId": "ca-mau",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__cong-nghiep"
+    ],
+    "alt": "Hàng tua-bin gió đứng trên biển lúc hoàng hôn",
+    "caption": "Nhà máy điện gió Bạc Liêu (tỉnh Cà Mau).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/B%E1%BA%A1c_Li%C3%AAu_windpower_farm.jpg/960px-B%E1%BA%A1c_Li%C3%AAu_windpower_farm.jpg",
+      "width": 960,
+      "height": 540,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/B%E1%BA%A1c_Li%C3%AAu_windpower_farm.jpg/500px-B%E1%BA%A1c_Li%C3%AAu_windpower_farm.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/B%E1%BA%A1c_Li%C3%AAu_windpower_farm.jpg/960px-B%E1%BA%A1c_Li%C3%AAu_windpower_farm.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/B%E1%BA%A1c_Li%C3%AAu_windpower_farm.jpg/1280px-B%E1%BA%A1c_Li%C3%AAu_windpower_farm.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Bạc Liêu windpower farm.jpg",
+      "author": "[Tycho] talk , http://shansov.net",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Shansov.net",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%E1%BA%A1c_Li%C3%AAu_windpower_farm.jpg"
+    },
+    "status": "draft"
+  }
+]

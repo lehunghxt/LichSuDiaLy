@@ -1,0 +1,153 @@
+[
+  {
+    "id": "vinh-long__coconutpeel-binhdai-bentre-vietnam",
+    "provider": "wikimedia-commons",
+    "provinceId": "vinh-long",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__cay-an-qua"
+    ],
+    "alt": "Chiếc ghe chở đầy vỏ dừa đậu bên bờ sông",
+    "caption": "Chở vỏ dừa ở Bình Đại (tỉnh Vĩnh Long).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/CoconutPeel_%40BinhDai_BenTre_Vietnam.jpg/960px-CoconutPeel_%40BinhDai_BenTre_Vietnam.jpg",
+      "width": 960,
+      "height": 660,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/CoconutPeel_%40BinhDai_BenTre_Vietnam.jpg/500px-CoconutPeel_%40BinhDai_BenTre_Vietnam.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/CoconutPeel_%40BinhDai_BenTre_Vietnam.jpg/960px-CoconutPeel_%40BinhDai_BenTre_Vietnam.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/CoconutPeel_%40BinhDai_BenTre_Vietnam.jpg/1280px-CoconutPeel_%40BinhDai_BenTre_Vietnam.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:CoconutPeel @BinhDai BenTre Vietnam.jpg",
+      "author": "The original uploader was BacLuong at Vietnamese Wikipedia .",
+      "authorUrl": "https://en.wikipedia.org/wiki/vi:User:BacLuong",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CoconutPeel_@BinhDai_BenTre_Vietnam.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "vinh-long__20190924-coconut-opening-1",
+    "provider": "wikimedia-commons",
+    "provinceId": "vinh-long",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__cay-an-qua"
+    ],
+    "alt": "Người thợ đang bổ dừa bên cạnh đống dừa khô",
+    "caption": "Bổ dừa ở một vườn dừa ven sông Bến Tre (tỉnh Vĩnh Long).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/20190924_coconut_opening-1.jpg/960px-20190924_coconut_opening-1.jpg",
+      "width": 960,
+      "height": 640,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/20190924_coconut_opening-1.jpg/500px-20190924_coconut_opening-1.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/20190924_coconut_opening-1.jpg/960px-20190924_coconut_opening-1.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/20190924_coconut_opening-1.jpg/1280px-20190924_coconut_opening-1.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:20190924 coconut opening-1.jpg",
+      "author": "Balon Greyjoy",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Balon_Greyjoy",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190924_coconut_opening-1.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "vinh-long__ao-ba-om",
+    "provider": "wikimedia-commons",
+    "provinceId": "vinh-long",
+    "section": "van-hoa",
+    "itemIds": [],
+    "alt": "Ao nước rộng hình vuông, xung quanh là hàng cây cao",
+    "caption": "Ao Bà Om (tỉnh Vĩnh Long).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ao_B%C3%A0_Om.jpg/960px-Ao_B%C3%A0_Om.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ao_B%C3%A0_Om.jpg/500px-Ao_B%C3%A0_Om.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ao_B%C3%A0_Om.jpg/960px-Ao_B%C3%A0_Om.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ao_B%C3%A0_Om.jpg/1280px-Ao_B%C3%A0_Om.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Ao Bà Om.jpg",
+      "author": "Bùi Thụy Đào Nguyên",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:B%C3%B9i_Th%E1%BB%A5y_%C4%90%C3%A0o_Nguy%C3%AAn",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ao_B%C3%A0_Om.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "vinh-long__chua-ang",
+    "provider": "wikimedia-commons",
+    "provinceId": "vinh-long",
+    "section": "van-hoa",
+    "itemIds": [],
+    "alt": "Ngôi chùa Khmer mái nhọn nhiều tầng giữa vườn cây",
+    "caption": "Chùa Âng, một ngôi chùa Khmer cổ bên ao Bà Om (tỉnh Vĩnh Long).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ch%C3%B9a_%C3%82ng.jpg/960px-Ch%C3%B9a_%C3%82ng.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ch%C3%B9a_%C3%82ng.jpg/500px-Ch%C3%B9a_%C3%82ng.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ch%C3%B9a_%C3%82ng.jpg/960px-Ch%C3%B9a_%C3%82ng.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ch%C3%B9a_%C3%82ng.jpg/1280px-Ch%C3%B9a_%C3%82ng.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Chùa Âng.jpg",
+      "author": "Bùi Thụy Đào Nguyên",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:B%C3%B9i_Th%E1%BB%A5y_%C4%90%C3%A0o_Nguy%C3%AAn",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ch%C3%B9a_%C3%82ng.jpg"
+    },
+    "status": "draft"
+  }
+]

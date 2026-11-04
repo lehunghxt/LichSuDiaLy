@@ -1,0 +1,191 @@
+[
+  {
+    "id": "dong-thap__dong-co-va-chim-nuoc",
+    "provider": "wikimedia-commons",
+    "provinceId": "dong-thap",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Đàn chim trắng bay trên đồng cỏ ngập nước",
+    "caption": "Đồng cỏ ở Tràm Chim (tỉnh Đồng Tháp).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/%C4%90%E1%BB%93ng_c%E1%BB%8F_v%C3%A0_chim_n%C6%B0%E1%BB%9Bc.jpg/960px-%C4%90%E1%BB%93ng_c%E1%BB%8F_v%C3%A0_chim_n%C6%B0%E1%BB%9Bc.jpg",
+      "width": 960,
+      "height": 638,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/%C4%90%E1%BB%93ng_c%E1%BB%8F_v%C3%A0_chim_n%C6%B0%E1%BB%9Bc.jpg/500px-%C4%90%E1%BB%93ng_c%E1%BB%8F_v%C3%A0_chim_n%C6%B0%E1%BB%9Bc.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/%C4%90%E1%BB%93ng_c%E1%BB%8F_v%C3%A0_chim_n%C6%B0%E1%BB%9Bc.jpg/960px-%C4%90%E1%BB%93ng_c%E1%BB%8F_v%C3%A0_chim_n%C6%B0%E1%BB%9Bc.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/%C4%90%E1%BB%93ng_c%E1%BB%8F_v%C3%A0_chim_n%C6%B0%E1%BB%9Bc.jpg/1280px-%C4%90%E1%BB%93ng_c%E1%BB%8F_v%C3%A0_chim_n%C6%B0%E1%BB%9Bc.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Đồng cỏ và chim nước.jpg",
+      "author": "Quoilp at Vietnamese Wikipedia",
+      "authorUrl": "https://en.wikipedia.org/wiki/vi:User:Quoilp",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%93ng_c%E1%BB%8F_v%C3%A0_chim_n%C6%B0%E1%BB%9Bc.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "dong-thap__anastomus-oscitans-tram-chim-2",
+    "provider": "wikimedia-commons",
+    "provinceId": "dong-thap",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Đàn cò bay trên nền trời xanh",
+    "caption": "Đàn cò ốc ở Vườn quốc gia Tràm Chim (tỉnh Đồng Tháp).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Anastomus_oscitans_Tr%C3%A0m_Chim_2.JPG/960px-Anastomus_oscitans_Tr%C3%A0m_Chim_2.JPG",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Anastomus_oscitans_Tr%C3%A0m_Chim_2.JPG/500px-Anastomus_oscitans_Tr%C3%A0m_Chim_2.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Anastomus_oscitans_Tr%C3%A0m_Chim_2.JPG/960px-Anastomus_oscitans_Tr%C3%A0m_Chim_2.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Anastomus_oscitans_Tr%C3%A0m_Chim_2.JPG/1280px-Anastomus_oscitans_Tr%C3%A0m_Chim_2.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Anastomus oscitans Tràm Chim 2.JPG",
+      "author": "Hungda",
+      "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:Hungda&action=edit&redlink=1",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anastomus_oscitans_Tr%C3%A0m_Chim_2.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "dong-thap__khu-choi-canh-vuon-quoc-gia-tram-chim-tam-nong-dong-thap-pan",
+    "provider": "wikimedia-commons",
+    "provinceId": "dong-thap",
+    "section": "thien-nhien",
+    "itemIds": [],
+    "alt": "Chòi canh mái xanh trên mặt nước phủ đầy lá sen",
+    "caption": "Khu chòi canh Vườn quốc gia Tràm Chim, Tam Nông (tỉnh Đồng Tháp).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Khu_ch%C3%B2i_canh_vuon_quoc_gia_Tram_Chim%2C_Tam_Nong%2C_Dong_thap_-_panoramio.jpg/960px-Khu_ch%C3%B2i_canh_vuon_quoc_gia_Tram_Chim%2C_Tam_Nong%2C_Dong_thap_-_panoramio.jpg",
+      "width": 960,
+      "height": 706,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Khu_ch%C3%B2i_canh_vuon_quoc_gia_Tram_Chim%2C_Tam_Nong%2C_Dong_thap_-_panoramio.jpg/500px-Khu_ch%C3%B2i_canh_vuon_quoc_gia_Tram_Chim%2C_Tam_Nong%2C_Dong_thap_-_panoramio.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Khu_ch%C3%B2i_canh_vuon_quoc_gia_Tram_Chim%2C_Tam_Nong%2C_Dong_thap_-_panoramio.jpg/960px-Khu_ch%C3%B2i_canh_vuon_quoc_gia_Tram_Chim%2C_Tam_Nong%2C_Dong_thap_-_panoramio.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Khu_ch%C3%B2i_canh_vuon_quoc_gia_Tram_Chim%2C_Tam_Nong%2C_Dong_thap_-_panoramio.jpg/1280px-Khu_ch%C3%B2i_canh_vuon_quoc_gia_Tram_Chim%2C_Tam_Nong%2C_Dong_thap_-_panoramio.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Khu chòi canh vuon quoc gia Tram Chim, Tam Nong, Dong thap - panoramio.jpg",
+      "author": "trungydang",
+      "authorUrl": "https://web.archive.org/web/20161030015919/http://www.panoramio.com/user/5317517?with_photo_id=97532967",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Khu_ch%C3%B2i_canh_vuon_quoc_gia_Tram_Chim,_Tam_Nong,_Dong_thap_-_panoramio.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "dong-thap__vietnam-08-116-cai-be-floating-market-3185891184",
+    "provider": "wikimedia-commons",
+    "provinceId": "dong-thap",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__cho-noi"
+    ],
+    "alt": "Người phụ nữ đội nón lá chèo xuồng nhỏ trên sông",
+    "caption": "Chèo xuồng ở chợ nổi Cái Bè (tỉnh Đồng Tháp).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Vietnam_08_-_116_-_Cai_Be_floating_market_%283185891184%29.jpg/960px-Vietnam_08_-_116_-_Cai_Be_floating_market_%283185891184%29.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Vietnam_08_-_116_-_Cai_Be_floating_market_%283185891184%29.jpg/500px-Vietnam_08_-_116_-_Cai_Be_floating_market_%283185891184%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Vietnam_08_-_116_-_Cai_Be_floating_market_%283185891184%29.jpg/960px-Vietnam_08_-_116_-_Cai_Be_floating_market_%283185891184%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Vietnam_08_-_116_-_Cai_Be_floating_market_%283185891184%29.jpg/1280px-Vietnam_08_-_116_-_Cai_Be_floating_market_%283185891184%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Vietnam 08 - 116 - Cai Be floating market (3185891184).jpg",
+      "author": "McKay Savage from London, UK",
+      "authorUrl": "https://www.flickr.com/people/56796376@N00",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vietnam_08_-_116_-_Cai_Be_floating_market_(3185891184).jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "dong-thap__vietnam-08-112-cai-be-floating-market-3185044019",
+    "provider": "wikimedia-commons",
+    "provinceId": "dong-thap",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [
+      "nam-bo__cho-noi"
+    ],
+    "alt": "Ghe chở đầy chuối đậu cạnh nhau trên sông",
+    "caption": "Trao đổi chuối ở chợ nổi Cái Bè (tỉnh Đồng Tháp).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Vietnam_08_-_112_-_Cai_Be_floating_market_%283185044019%29.jpg/960px-Vietnam_08_-_112_-_Cai_Be_floating_market_%283185044019%29.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Vietnam_08_-_112_-_Cai_Be_floating_market_%283185044019%29.jpg/500px-Vietnam_08_-_112_-_Cai_Be_floating_market_%283185044019%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Vietnam_08_-_112_-_Cai_Be_floating_market_%283185044019%29.jpg/960px-Vietnam_08_-_112_-_Cai_Be_floating_market_%283185044019%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Vietnam_08_-_112_-_Cai_Be_floating_market_%283185044019%29.jpg/1280px-Vietnam_08_-_112_-_Cai_Be_floating_market_%283185044019%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Vietnam 08 - 112 - Cai Be floating market (3185044019).jpg",
+      "author": "McKay Savage from London, UK",
+      "authorUrl": "https://www.flickr.com/people/56796376@N00",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vietnam_08_-_112_-_Cai_Be_floating_market_(3185044019).jpg"
+    },
+    "status": "draft"
+  }
+]

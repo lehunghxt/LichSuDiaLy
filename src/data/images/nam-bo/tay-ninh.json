@@ -1,0 +1,144 @@
+[
+  {
+    "id": "tay-ninh__tay-ninh-2023",
+    "provider": "wikimedia-commons",
+    "provinceId": "tay-ninh",
+    "section": "thien-nhien",
+    "itemIds": [
+      "nam-bo__dia-hinh-dong-nam-bo"
+    ],
+    "alt": "Thành phố nhiều cây xanh, phía xa là ngọn núi cao",
+    "caption": "Thành phố Tây Ninh, phía xa là núi Bà Đen (tỉnh Tây Ninh).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/T%C3%A2y_Ninh%2C_2023.jpg/960px-T%C3%A2y_Ninh%2C_2023.jpg",
+      "width": 960,
+      "height": 1702,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/T%C3%A2y_Ninh%2C_2023.jpg/500px-T%C3%A2y_Ninh%2C_2023.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/T%C3%A2y_Ninh%2C_2023.jpg/960px-T%C3%A2y_Ninh%2C_2023.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/T%C3%A2y_Ninh%2C_2023.jpg/1280px-T%C3%A2y_Ninh%2C_2023.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Tây Ninh, 2023.jpg",
+      "author": "Khangdora2809",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Khangdora2809",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:T%C3%A2y_Ninh,_2023.jpg"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "tay-ninh__cap-treo-nui-ba-den",
+    "provider": "wikimedia-commons",
+    "provinceId": "tay-ninh",
+    "section": "thien-nhien",
+    "itemIds": [
+      "nam-bo__dia-hinh-dong-nam-bo"
+    ],
+    "alt": "Các cabin cáp treo chạy dọc sườn núi nhiều cây",
+    "caption": "Cáp treo lên các chùa trên núi Bà Đen (tỉnh Tây Ninh).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/C%C3%A1p_treo_n%C3%BAi_B%C3%A0_%C4%90en.JPG/960px-C%C3%A1p_treo_n%C3%BAi_B%C3%A0_%C4%90en.JPG",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/C%C3%A1p_treo_n%C3%BAi_B%C3%A0_%C4%90en.JPG/500px-C%C3%A1p_treo_n%C3%BAi_B%C3%A0_%C4%90en.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/C%C3%A1p_treo_n%C3%BAi_B%C3%A0_%C4%90en.JPG/960px-C%C3%A1p_treo_n%C3%BAi_B%C3%A0_%C4%90en.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/C%C3%A1p_treo_n%C3%BAi_B%C3%A0_%C4%90en.JPG/1280px-C%C3%A1p_treo_n%C3%BAi_B%C3%A0_%C4%90en.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Cáp treo núi Bà Đen.JPG",
+      "author": "Nguyễn Thanh Quang 18:18, 16 December 2007 (UTC)",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Nguy%E1%BB%85n_Thanh_Quang",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:C%C3%A1p_treo_n%C3%BAi_B%C3%A0_%C4%90en.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "tay-ninh__quan-the-chua-thuong-o-nui-ba-den",
+    "provider": "wikimedia-commons",
+    "provinceId": "tay-ninh",
+    "section": "van-hoa",
+    "itemIds": [],
+    "alt": "Quần thể chùa mái đỏ giữa cây xanh, nhìn từ trên cao",
+    "caption": "Quần thể chùa Thượng ở núi Bà Đen (tỉnh Tây Ninh).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Qu%E1%BA%A7n_th%E1%BB%83_ch%C3%B9a_Th%C6%B0%E1%BB%A3ng_%E1%BB%9F_n%C3%BAi_B%C3%A0_%C4%90en.png",
+      "width": 877,
+      "height": 568,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Qu%E1%BA%A7n_th%E1%BB%83_ch%C3%B9a_Th%C6%B0%E1%BB%A3ng_%E1%BB%9F_n%C3%BAi_B%C3%A0_%C4%90en.png",
+          "width": 877
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Quần thể chùa Thượng ở núi Bà Đen.png",
+      "author": "Trung Quân",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qu%E1%BA%A7n_th%E1%BB%83_ch%C3%B9a_Th%C6%B0%E1%BB%A3ng_%E1%BB%9F_n%C3%BAi_B%C3%A0_%C4%90en.png"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "tay-ninh__binh-thanh-tp-tan-an-long-an-vietnam-panoramio",
+    "provider": "wikimedia-commons",
+    "provinceId": "tay-ninh",
+    "section": "dan-cu-san-xuat",
+    "itemIds": [],
+    "alt": "Cánh đồng lúa xanh rộng dưới bầu trời nhiều mây",
+    "caption": "Cánh đồng ở Bình Thạnh, Tân An (tỉnh Tây Ninh).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/B%C3%ACnh_Thanh%2C_tp._T%C3%A2n_An%2C_Long_An%2C_Vietnam_-_panoramio.jpg/960px-B%C3%ACnh_Thanh%2C_tp._T%C3%A2n_An%2C_Long_An%2C_Vietnam_-_panoramio.jpg",
+      "width": 960,
+      "height": 540,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/B%C3%ACnh_Thanh%2C_tp._T%C3%A2n_An%2C_Long_An%2C_Vietnam_-_panoramio.jpg/500px-B%C3%ACnh_Thanh%2C_tp._T%C3%A2n_An%2C_Long_An%2C_Vietnam_-_panoramio.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/B%C3%ACnh_Thanh%2C_tp._T%C3%A2n_An%2C_Long_An%2C_Vietnam_-_panoramio.jpg/960px-B%C3%ACnh_Thanh%2C_tp._T%C3%A2n_An%2C_Long_An%2C_Vietnam_-_panoramio.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/B%C3%ACnh_Thanh%2C_tp._T%C3%A2n_An%2C_Long_An%2C_Vietnam_-_panoramio.jpg/1280px-B%C3%ACnh_Thanh%2C_tp._T%C3%A2n_An%2C_Long_An%2C_Vietnam_-_panoramio.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Bình Thanh, tp. Tân An, Long An, Vietnam - panoramio.jpg",
+      "author": "trungydang",
+      "authorUrl": "https://web.archive.org/web/20161030203559/http://www.panoramio.com/user/5317517?with_photo_id=111835898",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%C3%ACnh_Thanh,_tp._T%C3%A2n_An,_Long_An,_Vietnam_-_panoramio.jpg"
+    },
+    "status": "draft"
+  }
+]
