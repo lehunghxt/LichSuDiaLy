@@ -1,9 +1,9 @@
 // Mỗi dạng câu hỏi có một component hiển thị. Thiếu dạng nào thì TypeScript báo lỗi.
 import type { ComponentType } from 'react'
 import type { Question, QuestionType } from '../../types/quiz'
-import type { Answer } from './engine'
+import { POINT_LETTERS, type Answer } from './engine'
+import { MapLocate } from './questions/MapLocate'
 import { Matching } from './questions/Matching'
-import { Pending } from './questions/Pending'
 import { SingleChoice } from './questions/SingleChoice'
 import { TrueFalse } from './questions/TrueFalse'
 
@@ -19,7 +19,7 @@ type Views = { [K in QuestionType]: ComponentType<QuestionViewProps<Extract<Ques
 export const questionViews: Views = {
   single_choice: SingleChoice,
   true_false: TrueFalse,
-  map_locate: Pending,
+  map_locate: MapLocate,
   matching: Matching,
 }
 
@@ -53,7 +53,7 @@ export function correctAnswerLabel(q: Question): string {
     case 'true_false':
       return q.answer ? 'Đúng' : 'Sai'
     case 'map_locate':
-      return 'vị trí được đánh dấu trên bản đồ'
+      return `Điểm ${POINT_LETTERS[q.candidateItemIds.indexOf(q.targetItemId)] ?? '?'}`
     case 'matching':
       return q.pairs.map((p) => `${p.left} – ${p.right}`).join('; ')
   }

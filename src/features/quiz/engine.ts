@@ -9,6 +9,9 @@ export type Answer =
   /** leftIndex → rightIndex (chỉ số theo thứ tự gốc trong pairs) */
   | { type: 'matching'; pairs: Record<number, number> }
 
+/** Nhãn các điểm ứng viên của câu hỏi bản đồ, theo thứ tự candidateItemIds */
+export const POINT_LETTERS = 'ABCDEFGH'
+
 export function isCorrect(q: Question, a: Answer): boolean {
   switch (q.type) {
     case 'single_choice':
