@@ -69,3 +69,10 @@ test("checkOutlineIntegrity reports item whose section differs from its topic's 
     `${R} / cho-phien: mục "${R}__cho" thuộc phần "thien-nhien" nhưng nằm trong phần "van-hoa"`,
   )
 })
+
+test('checkOutlineIntegrity reports an item listed in two topics', () => {
+  const r = raw()
+  const id = r.sections[0]!.topics[0]!.itemIds[0]!
+  r.sections[0]!.topics[1]!.itemIds = [id]
+  expect(checkOutlineIntegrity(parseOutline(r, R, 'o'), items)).toContain(`${R} / khi-hau: mục "${id}" đã nằm trong một mục khác`)
+})

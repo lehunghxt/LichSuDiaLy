@@ -35,6 +35,7 @@ export function checkOutlineIntegrity(outline: RegionOutline, items: { id: strin
         if (!item) errors.push(`${r} / ${topic.id}: không có mục nội dung "${id}"`)
         else if (item.section !== section.id)
           errors.push(`${r} / ${topic.id}: mục "${id}" thuộc phần "${item.section}" nhưng nằm trong phần "${section.id}"`)
+        if (placed.has(id)) errors.push(`${r} / ${topic.id}: mục "${id}" đã nằm trong một mục khác`)
         placed.add(id)
       }
     }

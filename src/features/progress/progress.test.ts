@@ -101,3 +101,9 @@ test('markItemsViewed marks all, first id most recent, and is idempotent', () =>
   expect(once.recentItemIds.slice(0, 2)).toEqual(['a', 'b'])
   expect(markItemsViewed(once, ['a', 'b'])).toBe(once)
 })
+
+test('markItemsViewed with more ids than the recent list is still idempotent', () => {
+  const ids = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+  const once = markItemsViewed(INITIAL_PROGRESS, ids)
+  expect(markItemsViewed(once, ids)).toBe(once)
+})

@@ -163,14 +163,6 @@ test('real outlines in src/data/regions pass integrity', () => {
   }
 })
 
-test('every TDMNPB item appears in exactly one outline topic', () => {
-  const dir = path.resolve(import.meta.dirname, '../../data/regions/trung-du-mien-nui-phia-bac')
-  const outline = parseOutline(JSON.parse(readFileSync(path.join(dir, 'outline.json'), 'utf8')), 'trung-du-mien-nui-phia-bac', 'o')
-  const ids = outline.sections.flatMap((s) => s.topics.flatMap((t) => t.itemIds))
-  expect(new Set(ids).size).toBe(ids.length)
-  expect(ids.length).toBe(26)
-})
-
 test('progress saved under old item ids still counts', () => {
   const dataDir = path.resolve(import.meta.dirname, '../../data')
   const regions = parseRegionList(JSON.parse(readFileSync(path.join(dataDir, 'regions.json'), 'utf8')))

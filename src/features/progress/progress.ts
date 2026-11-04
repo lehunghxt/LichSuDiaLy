@@ -78,7 +78,8 @@ export function markRegionVisited(s: ProgressState, regionId: string): ProgressS
 /** Đánh dấu nhiều mục cùng lúc (các mục hiện chung một mục dàn ý); id đầu tiên là mục xem gần nhất. Gọi lại không đổi gì */
 export function markItemsViewed(s: ProgressState, itemIds: string[]): ProgressState {
   const fresh = itemIds.filter((id) => !s.viewedItemIds.includes(id))
-  if (fresh.length === 0 && itemIds.every((id, i) => s.recentItemIds[i] === id)) return s
+  // Danh sách gần đây chỉ giữ RECENT_LIMIT mục nên chỉ so phần đầu, nếu không sẽ luôn tạo state mới (lặp render)
+  if (fresh.length === 0 && itemIds.slice(0, RECENT_LIMIT).every((id, i) => s.recentItemIds[i] === id)) return s
   return {
     ...s,
     viewedItemIds: [...s.viewedItemIds, ...fresh],
