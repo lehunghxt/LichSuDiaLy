@@ -77,9 +77,19 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 78,
         "note": "tr. 78, Hình 1"
+      },
+      {
+        "title": "Wikidata: Thánh địa Mỹ Sơn (Q391406), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q391406",
+        "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft"
+    "status": "draft",
+    "location": {
+      "lat": 15.7632,
+      "lng": 108.1244,
+      "placeName": "Thánh địa Mỹ Sơn"
+    }
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__ruoc-ca-ong",

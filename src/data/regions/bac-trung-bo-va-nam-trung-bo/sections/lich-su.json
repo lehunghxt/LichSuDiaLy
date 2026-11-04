@@ -151,9 +151,9 @@
       "Cố đô Huế là di sản thế giới đầu tiên của Việt Nam."
     ],
     "location": {
-      "lat": 16.4698,
-      "lng": 107.5786,
-      "placeName": "Kinh thành Huế"
+      "lat": 16.4694,
+      "lng": 107.5778,
+      "placeName": "Hoàng thành Huế"
     },
     "provinceId": "hue",
     "images": [],
@@ -199,6 +199,11 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 88,
         "note": "tr. 88–89, Hình 1, 2, 3, 4, 5"
+      },
+      {
+        "title": "Wikidata: Hoàng thành Huế (Q10769129), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q10769129",
+        "note": "toạ độ (P625)"
       }
     ],
     "status": "draft"
@@ -290,8 +295,8 @@
       "Truyền thuyết kể Chùa Cầu được dựng như thanh kiếm trấn giữ con thuỷ quái, để nó không cựa mình gây động đất, lũ lụt."
     ],
     "location": {
-      "lat": 15.8801,
-      "lng": 108.338,
+      "lat": 15.8771,
+      "lng": 108.3286,
       "placeName": "Phố cổ Hội An"
     },
     "provinceId": "da-nang",
@@ -331,6 +336,11 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 92,
         "note": "tr. 92–94, Hình 1, 3, 4, 5"
+      },
+      {
+        "title": "Wikidata: Phố cổ Hội An (Q5965459), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q5965459",
+        "note": "toạ độ (P625)"
       }
     ],
     "status": "draft"

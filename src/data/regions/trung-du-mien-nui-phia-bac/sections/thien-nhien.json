@@ -74,9 +74,19 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 19,
         "note": "tr. 19, Hình 3"
+      },
+      {
+        "title": "Wikidata: Cột cờ Lũng Cú (Q28197259), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q28197259",
+        "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft"
+    "status": "draft",
+    "location": {
+      "lat": 23.3637,
+      "lng": 105.3162,
+      "placeName": "Cột cờ Lũng Cú"
+    }
   },
   {
     "id": "trung-du-mien-nui-phia-bac__dia-hinh",
@@ -172,9 +182,19 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 18,
         "note": "tr. 18–20"
+      },
+      {
+        "title": "Wikidata: Phan-xi-păng (Q123782), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q123782",
+        "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft"
+    "status": "draft",
+    "location": {
+      "lat": 22.3033,
+      "lng": 103.7753,
+      "placeName": "Đỉnh Phan-xi-păng"
+    }
   },
   {
     "id": "trung-du-mien-nui-phia-bac__khi-hau",

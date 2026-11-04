@@ -10,8 +10,15 @@ vi.mock('../features/map/VietnamMap', () => ({
     selectedRegionId: string | null
     onSelectRegion(id: string): void
     onSelectProvince(id: string | null): void
+    places: { id: string; title: string }[]
+    onOpenPlace(place: { id: string }): void
   }) => (
     <div data-testid="map" data-selected={props.selectedRegionId ?? ''}>
+      {props.places.map((p) => (
+        <button key={p.id} type="button" onClick={() => props.onOpenPlace(p)}>
+          marker-{p.title}
+        </button>
+      ))}
       <button type="button" onClick={() => props.onSelectRegion('trung-du-mien-nui-phia-bac')}>
         polygon-tdmnpb
       </button>
@@ -219,6 +226,21 @@ test('panel lists featured places with province; clicking one opens the modal at
   expect(router.state.location.search).toBe('?phan=thien-nhien&muc=dia-hinh&bai=dinh-phan-xi-pang')
   const dialog = await screen.findByRole('dialog', { name: 'Thiên nhiên' })
   expect(within(dialog).getByRole('heading', { level: 3, name: 'Đỉnh Phan-xi-păng' })).toBeInTheDocument()
+})
+
+test('map gets markers only for located items of the selected region; a marker opens that item', async () => {
+  const router = renderAt('/ban-do')
+  const map = await screen.findByTestId('map')
+  expect(within(map).queryAllByRole('button', { name: /^marker-/ })).toEqual([])
+  await userEvent.click(within(map).getByRole('button', { name: 'polygon-tdmnpb' }))
+  const denHung = await within(map).findByRole('button', { name: 'marker-Khu di tích Đền Hùng' })
+  expect(within(map).getByRole('button', { name: 'marker-Đỉnh Phan-xi-păng' })).toBeInTheDocument()
+  // Mục không có toạ độ (khí hậu) không có marker
+  expect(within(map).queryByRole('button', { name: /marker-Khí hậu/ })).toBeNull()
+  await userEvent.click(denHung)
+  expect(router.state.location.search).toContain('bai=den-hung')
+  const dialog = await screen.findByRole('dialog', { name: 'Lịch sử và di tích' })
+  expect(within(dialog).getByRole('heading', { level: 3, name: 'Khu di tích Đền Hùng' })).toBeInTheDocument()
 })
 
 test('"Khám phá chi tiết vùng này" opens the modal at the first topic', async () => {

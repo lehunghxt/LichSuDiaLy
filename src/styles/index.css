@@ -199,3 +199,37 @@ div.leaflet-container {
     transform: translateX(100%);
   }
 }
+
+/* Marker địa danh: giọt nước màu chủ đạo, đầu nhọn chỉ đúng toạ độ */
+.place-pin {
+  background: none;
+  border: none;
+}
+.place-pin span {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: #dc2626;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.35);
+  transition: transform 0.15s;
+}
+.place-pin span::after {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  border-radius: 50%;
+  background: #fff;
+}
+.place-pin:hover span,
+.place-pin:focus-visible span {
+  transform: rotate(-45deg) scale(1.15);
+}
+.place-pin:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 50%;
+}

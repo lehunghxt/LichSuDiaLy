@@ -277,7 +277,7 @@
       "Hậu Đường có hai tầng: tầng một thờ thầy giáo Chu Văn An; tầng hai thờ các vua Lý Thánh Tông, Lý Nhân Tông, Lê Thánh Tông."
     ],
     "location": {
-      "lat": 21.0293,
+      "lat": 21.0286,
       "lng": 105.8356,
       "placeName": "Văn Miếu – Quốc Tử Giám, Hà Nội"
     },
@@ -313,6 +313,11 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 59,
         "note": "tr. 59–61, Hình 1, 2, 5"
+      },
+      {
+        "title": "Wikidata: Văn Miếu – Quốc Tử Giám (Q1202019), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q1202019",
+        "note": "toạ độ (P625)"
       }
     ],
     "status": "draft"

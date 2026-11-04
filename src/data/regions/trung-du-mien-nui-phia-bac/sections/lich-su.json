@@ -41,9 +41,19 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 32,
         "note": "tr. 32–33"
+      },
+      {
+        "title": "Wikidata: Đền Hùng (Q5964889), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q5964889",
+        "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft"
+    "status": "draft",
+    "location": {
+      "lat": 21.3655,
+      "lng": 105.3246,
+      "placeName": "Khu di tích Đền Hùng"
+    }
   },
   {
     "id": "trung-du-mien-nui-phia-bac__le-gio-to",

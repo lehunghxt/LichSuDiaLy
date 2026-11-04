@@ -10,6 +10,7 @@ import { SectionModal } from '../features/content/SectionModal'
 import { useRegionContent } from '../features/content/useRegionContent'
 import { useRegionOutline } from '../features/content/useRegionOutline'
 import { useRegionImages } from '../features/images/useRegionImages'
+import { placesOf } from '../features/map/places'
 import { MapInfoPanel } from '../features/map/MapInfoPanel'
 import { RegionList } from '../features/map/RegionList'
 import { useProgress } from '../features/progress/useProgress'
@@ -82,6 +83,8 @@ export default function MapPage() {
               selectedProvinceId={provinceId}
               onSelectRegion={selectRegion}
               onSelectProvince={setProvinceId}
+              places={placesOf(items)}
+              onOpenPlace={openItem}
             />
           </Suspense>
           <div data-map-legend className="absolute left-4 top-4 z-[1000]">

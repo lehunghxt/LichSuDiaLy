@@ -7,6 +7,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { GeoJSON, MapContainer, Marker, useMap } from 'react-leaflet'
 import { ErrorState, LoadingState } from '../../components/ui/states'
 import type { RegionMeta } from '../../types/content'
+import { LocationMarkers } from './LocationMarkers'
+import type { Place } from './places'
 import { geoLoader, type AreaCollection, type LabelCollection, type ProvinceFeatureProps, type RegionFeatureProps } from './geo'
 
 // Khung nhìn toàn quốc, gồm cả Hoàng Sa và Trường Sa
@@ -28,6 +30,9 @@ export interface VietnamMapProps {
   selectedProvinceId: string | null
   onSelectRegion(id: string): void
   onSelectProvince(id: string | null): void
+  /** Địa danh có toạ độ của vùng đang chọn */
+  places: Place[]
+  onOpenPlace(place: Place): void
 }
 
 type Loaded = { regions: AreaCollection<RegionFeatureProps>; provinces: AreaCollection<ProvinceFeatureProps>; labels: LabelCollection }
@@ -264,6 +269,7 @@ export default function VietnamMap(props: VietnamMapProps) {
           />
         )}
         <Labels data={data.labels} />
+        {props.selectedRegionId && <LocationMarkers places={props.places} onOpen={props.onOpenPlace} />}
         <FitCountry />
         <Controls />
       </MapContainer>

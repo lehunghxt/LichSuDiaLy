@@ -31,7 +31,24 @@ test('sources page lists every SGK lesson used, with page links and links to the
   const stats = screen.getByRole('list', { name: 'Tổng quan nguồn tham khảo' })
   expect(within(stats).getByText('Bài học SGK được dẫn').closest('li')).toHaveTextContent(/\d+/)
   expect(screen.getByRole('link', { name: /Xem nguồn ảnh/ })).toHaveAttribute('href', '/nguon-anh')
-})
+  // Bảng lớn (mọi nguồn của 4 vùng): khi chạy cả bộ test có thể lâu hơn 5 giây
+}, 15_000)
+
+test('lesson count counts only SGK lessons; coordinate sources are listed but not counted', async () => {
+  renderAt('/nguon-tham-khao')
+  const table = await screen.findByRole('table', { name: 'Thống kê nguồn tham khảo' })
+  expect(within(table).getByRole('row', { name: /Wikidata: Đền Hùng/ })).toBeInTheDocument()
+  const lessonRows = within(table)
+    .getAllByRole('row')
+    .filter((r) =>
+      within(r)
+        .queryAllByRole('link')
+        .some((a) => a.getAttribute('href')?.startsWith(`${SGK_URL}#`) && /Bài \d+\./.test(a.textContent ?? '')),
+    )
+  const stats = screen.getByRole('list', { name: 'Tổng quan nguồn tham khảo' })
+  const lessons = within(stats).getByText('Bài học SGK được dẫn').closest('li')
+  expect(lessons?.textContent?.match(/\d+/)?.[0]).toBe(String(lessonRows.length))
+}, 15_000)
 
 test('footer and map panel link to the sources page', async () => {
   renderAt('/')

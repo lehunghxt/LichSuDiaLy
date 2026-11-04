@@ -63,7 +63,11 @@ export default function SourcesPage() {
       ) : (
         <>
           <ul aria-label="Tổng quan nguồn tham khảo" className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-            <Stat icon={<BookOpen aria-hidden className="size-5" />} label="Bài học SGK được dẫn" value={data.rows.length} />
+            <Stat
+              icon={<BookOpen aria-hidden className="size-5" />}
+              label="Bài học SGK được dẫn"
+              value={data.rows.filter((r) => r.url === SGK_URL).length}
+            />
             <Stat
               icon={<FileText aria-hidden className="size-5" />}
               label="Trang sách được dẫn"

@@ -375,8 +375,18 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 78,
         "note": "tr. 78–79, Hình 4"
+      },
+      {
+        "title": "Wikidata: Vườn quốc gia Phong Nha – Kẻ Bàng (Q23513), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q23513",
+        "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft"
+    "status": "draft",
+    "location": {
+      "lat": 17.5333,
+      "lng": 106.15,
+      "placeName": "Vườn quốc gia Phong Nha – Kẻ Bàng"
+    }
   }
 ]

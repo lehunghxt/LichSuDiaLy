@@ -245,9 +245,9 @@
       "Địa đạo Củ Chi là công trình độc đáo trong kháng chiến chống Mỹ."
     ],
     "location": {
-      "lat": 11.1433,
-      "lng": 106.4627,
-      "placeName": "Địa đạo Bến Dược, Củ Chi"
+      "lat": 11.061,
+      "lng": 106.526,
+      "placeName": "Địa đạo Củ Chi"
     },
     "provinceId": "ho-chi-minh",
     "images": [],
@@ -280,6 +280,11 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 117,
         "note": "tr. 117–118, Hình 1, 2, 3"
+      },
+      {
+        "title": "Wikidata: Địa đạo Củ Chi (Q192721), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q192721",
+        "note": "toạ độ (P625)"
       }
     ],
     "status": "draft"
