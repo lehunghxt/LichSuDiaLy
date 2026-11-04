@@ -29,6 +29,7 @@
   --animate-pop: pop 0.35s ease-out;
   --animate-float: float 5s ease-in-out infinite;
   --animate-fade-up: fade-up 0.4s ease-out;
+  --animate-shimmer: shimmer 1.4s ease-in-out infinite;
 }
 
 /* Màu từng vùng địa lí: khai báo ngoài @theme vì được đọc động
@@ -186,5 +187,15 @@ div.leaflet-container {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Vệt sáng chạy ngang trên khung chờ ảnh */
+@keyframes shimmer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
   }
 }

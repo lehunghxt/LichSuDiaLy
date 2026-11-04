@@ -1,44 +1,42 @@
-import { X } from "lucide-react";
-import { useEffect, useRef } from "react";
-import { createPortal } from "react-dom";
-import type { WebImage } from "../../types/content";
-import { ImageCredit } from "./ImageCredit";
+import { X } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
+import type { WebImage } from '../../types/content'
+import { ImageCredit } from './ImageCredit'
+import { ImageSkeleton } from './ImageSkeleton'
+import { markIfComplete } from './imageLoad'
 
 interface ImageViewerProps {
-  image: WebImage;
-  onClose(): void;
+  image: WebImage
+  onClose(): void
 }
 
 /** Xem ảnh toàn màn hình: nền tối, ảnh vừa khít màn hình, kèm chú thích và ghi nguồn */
 export function ImageViewer({ image, onClose }: ImageViewerProps) {
-  const closeRef = useRef<HTMLButtonElement>(null);
-  const closeCb = useRef(onClose);
-  closeCb.current = onClose;
+  const closeRef = useRef<HTMLButtonElement>(null)
+  const [loaded, setLoaded] = useState(false)
+  const closeCb = useRef(onClose)
+  closeCb.current = onClose
 
   useEffect(() => {
-    closeRef.current?.focus();
+    closeRef.current?.focus()
     // Bắt Esc ở pha capture để chỉ đóng ảnh, không đóng luôn modal đang mở bên dưới
     const onKey = (e: KeyboardEvent) => {
-      if (e.key !== "Escape") return;
-      e.stopPropagation();
-      closeCb.current();
-    };
-    window.addEventListener("keydown", onKey, true);
-    const overflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
+      if (e.key !== 'Escape') return
+      e.stopPropagation()
+      closeCb.current()
+    }
+    window.addEventListener('keydown', onKey, true)
+    const overflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
     return () => {
-      window.removeEventListener("keydown", onKey, true);
-      document.body.style.overflow = overflow;
-    };
-  }, []);
+      window.removeEventListener('keydown', onKey, true)
+      document.body.style.overflow = overflow
+    }
+  }, [])
 
   return createPortal(
-    <div
-      role="dialog"
-      aria-modal="true"
-      aria-label={image.alt}
-      className="fixed inset-0 z-[1400] flex flex-col bg-ink/90"
-    >
+    <div role="dialog" aria-modal="true" aria-label={image.alt} className="fixed inset-0 z-[1400] flex flex-col bg-ink/90">
       <button
         ref={closeRef}
         type="button"
@@ -51,20 +49,25 @@ export function ImageViewer({ image, onClose }: ImageViewerProps) {
       <div
         data-testid="image-viewer-backdrop"
         onClick={(e) => e.target === e.currentTarget && onClose()}
-        className="flex min-h-0 flex-1 items-center justify-center p-3 sm:p-6"
+        className="relative flex min-h-0 flex-1 items-center justify-center p-3 sm:p-6"
       >
+        {!loaded && (
+          <span className="absolute inset-3 m-auto aspect-[4/3] max-h-[calc(100%-1.5rem)] max-w-[calc(100%-1.5rem)] sm:inset-6">
+            <ImageSkeleton className="rounded-lg bg-surface/15" />
+          </span>
+        )}
         <img
+          ref={markIfComplete(setLoaded)}
           src={image.src.url}
-          srcSet={image.src.srcset
-            .map((s) => `${s.url} ${s.width}w`)
-            .join(", ")}
+          srcSet={image.src.srcset.map((s) => `${s.url} ${s.width}w`).join(', ')}
           sizes="100vw"
           alt={image.alt}
           width={image.src.width}
           height={image.src.height}
           decoding="async"
           referrerPolicy="no-referrer"
-          className="max-h-full max-w-full rounded-lg object-contain"
+          onLoad={() => setLoaded(true)}
+          className={`max-h-full max-w-full rounded-lg object-contain transition-opacity duration-300 ${loaded ? 'opacity-100' : 'opacity-0'}`}
         />
       </div>
       <div className="mx-auto mb-3 flex w-[min(100%-1.5rem,48rem)] flex-col gap-0.5 rounded-xl bg-surface px-4 py-2.5 leading-snug">
@@ -73,5 +76,5 @@ export function ImageViewer({ image, onClose }: ImageViewerProps) {
       </div>
     </div>,
     document.body,
-  );
+  )
 }

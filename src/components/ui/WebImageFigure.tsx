@@ -1,18 +1,20 @@
-import { ImageOff, Maximize2 } from "lucide-react";
-import { useRef, useState } from "react";
-import type { WebImage } from "../../types/content";
-import { ImageCredit } from "./ImageCredit";
-import { ImageViewer } from "./ImageViewer";
+import { ImageOff, Maximize2 } from 'lucide-react'
+import { useRef, useState } from 'react'
+import type { WebImage } from '../../types/content'
+import { ImageCredit } from './ImageCredit'
+import { ImageSkeleton } from './ImageSkeleton'
+import { markIfComplete } from './imageLoad'
+import { ImageViewer } from './ImageViewer'
 
 interface WebImageFigureProps {
-  image: WebImage;
+  image: WebImage
   /** Giá trị `sizes` của srcset, ví dụ "(min-width: 1024px) 30vw, 100vw" */
-  sizes: string;
-  priority?: boolean;
-  showCaption?: boolean;
+  sizes: string
+  priority?: boolean
+  showCaption?: boolean
   /** Tỉ lệ khung, mặc định 4 / 3 */
-  aspect?: string;
-  className?: string;
+  aspect?: string
+  className?: string
 }
 
 /** Ảnh nhúng từ Wikimedia Commons, khung 4:3, luôn kèm dòng ghi nguồn (kể cả khi ảnh lỗi); nhấn vào để xem toàn màn hình */
@@ -21,23 +23,20 @@ export function WebImageFigure({
   sizes,
   priority = false,
   showCaption = false,
-  aspect = "4 / 3",
-  className = "",
+  aspect = '4 / 3',
+  className = '',
 }: WebImageFigureProps) {
-  const [failed, setFailed] = useState(false);
-  const [viewing, setViewing] = useState(false);
-  const openRef = useRef<HTMLButtonElement>(null);
+  const [failed, setFailed] = useState(false)
+  const [loaded, setLoaded] = useState(false)
+  const [viewing, setViewing] = useState(false)
+  const openRef = useRef<HTMLButtonElement>(null)
   const closeViewer = () => {
-    setViewing(false);
-    openRef.current?.focus();
-  };
+    setViewing(false)
+    openRef.current?.focus()
+  }
   return (
     <figure className={`flex flex-col gap-1.5 ${className}`}>
-      <div
-        data-testid="web-image-frame"
-        className="relative overflow-hidden rounded-2xl bg-line"
-        style={{ aspectRatio: aspect }}
-      >
+      <div data-testid="web-image-frame" className="relative overflow-hidden rounded-2xl bg-line" style={{ aspectRatio: aspect }}>
         {failed ? (
           <div className="flex size-full flex-col items-center justify-center gap-2 text-muted">
             <ImageOff aria-hidden className="size-8" />
@@ -51,20 +50,21 @@ export function WebImageFigure({
             aria-label={`Xem ảnh lớn: ${image.alt}`}
             className="group block size-full cursor-zoom-in focus-visible:outline-3 focus-visible:-outline-offset-3 focus-visible:outline-primary"
           >
+            {!loaded && <ImageSkeleton />}
             <img
+              ref={markIfComplete(setLoaded)}
               src={image.src.url}
-              srcSet={image.src.srcset
-                .map((s) => `${s.url} ${s.width}w`)
-                .join(", ")}
+              srcSet={image.src.srcset.map((s) => `${s.url} ${s.width}w`).join(', ')}
               sizes={sizes}
               alt={image.alt}
               width={image.src.width}
               height={image.src.height}
-              loading={priority ? "eager" : "lazy"}
+              loading={priority ? 'eager' : 'lazy'}
               decoding="async"
               referrerPolicy="no-referrer"
+              onLoad={() => setLoaded(true)}
               onError={() => setFailed(true)}
-              className="size-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+              className={`size-full object-cover transition-[opacity,transform] duration-300 group-hover:scale-[1.03] ${loaded ? 'opacity-100' : 'opacity-0'}`}
             />
             <span
               aria-hidden
@@ -81,5 +81,5 @@ export function WebImageFigure({
       </figcaption>
       {viewing && <ImageViewer image={image} onClose={closeViewer} />}
     </figure>
-  );
+  )
 }
