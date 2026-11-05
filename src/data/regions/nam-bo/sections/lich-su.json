@@ -135,9 +135,19 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 111,
         "note": "tr. 111–112, Hình 1, 2"
+      },
+      {
+        "title": "Wikidata: Thành phố Hồ Chí Minh (Q1854), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q1854",
+        "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft"
+    "status": "draft",
+    "location": {
+      "lat": 10.7756,
+      "lng": 106.7019,
+      "placeName": "Thành phố Hồ Chí Minh"
+    }
   },
   {
     "id": "nam-bo__su-kien-tphcm",

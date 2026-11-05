@@ -31,9 +31,19 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 108,
         "note": "tr. 108, Hình 3"
+      },
+      {
+        "title": "Wikidata: Chợ nổi Cái Răng (Q10748803), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q10748803",
+        "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft"
+    "status": "draft",
+    "location": {
+      "lat": 10.005,
+      "lng": 105.746,
+      "placeName": "Chợ nổi Cái Răng (thành phố Cần Thơ)"
+    }
   },
   {
     "id": "nam-bo__trang-phuc",

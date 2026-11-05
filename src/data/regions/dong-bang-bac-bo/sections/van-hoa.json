@@ -117,8 +117,23 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 48,
         "note": "tr. 48–49, Hình 7"
+      },
+      {
+        "title": "Wikidata: Hội Lim (Q1825302), địa điểm tổ chức (P276): Tiên Du",
+        "url": "https://www.wikidata.org/wiki/Q1825302",
+        "note": "địa điểm (P276)"
+      },
+      {
+        "title": "Wikidata: Tiên Du (Q135153259), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q135153259",
+        "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft"
+    "status": "draft",
+    "location": {
+      "lat": 21.1428,
+      "lng": 106.0203,
+      "placeName": "Phường Tiên Du (tỉnh Bắc Ninh), nơi tổ chức hội Lim"
+    }
   }
 ]
