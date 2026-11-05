@@ -228,9 +228,19 @@
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 82,
         "note": "tr. 82, Hình 10"
+      },
+      {
+        "title": "Wikidata: Buôn Đôn (Q141274888), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q141274888",
+        "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft"
+    "status": "draft",
+    "location": {
+      "lat": 12.8828,
+      "lng": 107.7896,
+      "placeName": "Buôn Đôn (tỉnh Đắk Lắk)"
+    }
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__nha-o",

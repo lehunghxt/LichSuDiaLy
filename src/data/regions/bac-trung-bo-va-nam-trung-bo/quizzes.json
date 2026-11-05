@@ -1,0 +1,321 @@
+[
+  {
+    "id": "bac-trung-bo-va-nam-trung-bo__on-tap-1",
+    "regionId": "bac-trung-bo-va-nam-trung-bo",
+    "title": "Khám phá Bắc Trung Bộ và Nam Trung Bộ",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "single_choice",
+        "prompt": "Dãy núi nào dài nhất Việt Nam?",
+        "options": [
+          "Dãy Trường Sơn",
+          "Dãy Hoàng Liên Sơn",
+          "Dãy Bạch Mã",
+          "Dãy Tam Đảo"
+        ],
+        "answerIndex": 0,
+        "explanation": "Trường Sơn là dãy núi dài nhất Việt Nam, chạy dọc phía tây của vùng.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 65,
+            "note": "tr. 65, Hình 1"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "prompt": "Dãy Bạch Mã như bức tường chắn gió mùa Đông Bắc thổi từ phía bắc xuống.",
+        "answer": true,
+        "explanation": "Dãy Bạch Mã chắn gió mùa Đông Bắc nên Nam Trung Bộ ít chịu ảnh hưởng của gió này và nóng quanh năm.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 68,
+            "note": "tr. 68"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q3",
+        "type": "true_false",
+        "prompt": "Ở các đồng bằng ven biển của vùng chủ yếu là đất phù sa, thích hợp trồng lúa, mía, lạc.",
+        "answer": true,
+        "explanation": "Đồng bằng ven biển chủ yếu là đất phù sa, thích hợp trồng lúa, mía, lạc. Đồi núi, cao nguyên có đất phe-ra-lít, thích hợp trồng cà phê, hồ tiêu, cao su, chè.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 68,
+            "note": "tr. 68"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q4",
+        "type": "single_choice",
+        "prompt": "Nghề làm muối ở vùng phát triển nhờ điều kiện nào?",
+        "options": [
+          "Có nhiều sông ngắn và dốc",
+          "Có mùa đông lạnh",
+          "Nước biển mặn và nhiều nắng",
+          "Có nhiều cao nguyên"
+        ],
+        "answerIndex": 2,
+        "explanation": "Nước biển mặn và nhiều nắng giúp vùng phát triển nghề làm muối, nổi tiếng ở Sa Huỳnh (Quảng Ngãi), Cà Ná (Khánh Hoà).",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 74,
+            "note": "tr. 74, Hình 8"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q5",
+        "type": "matching",
+        "prompt": "Ghép mỗi bãi biển với tỉnh, thành phố có bãi biển đó.",
+        "pairs": [
+          {
+            "left": "Sầm Sơn",
+            "right": "Thanh Hoá"
+          },
+          {
+            "left": "Lăng Cô",
+            "right": "Huế"
+          },
+          {
+            "left": "Mỹ Khê",
+            "right": "Đà Nẵng"
+          },
+          {
+            "left": "Nha Trang",
+            "right": "Khánh Hoà"
+          }
+        ],
+        "explanation": "Sầm Sơn (Thanh Hoá), Lăng Cô (Huế), Mỹ Khê (Đà Nẵng), Nha Trang (Khánh Hoà) là những bãi biển nổi tiếng của vùng.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 74,
+            "note": "tr. 74, Hình 6"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q6",
+        "type": "true_false",
+        "prompt": "Quần thể di tích Cố đô Huế là Di sản văn hoá thế giới đầu tiên của Việt Nam được UNESCO ghi danh.",
+        "answer": true,
+        "explanation": "Quần thể di tích Cố đô Huế là Di sản văn hoá thế giới đầu tiên của Việt Nam được UNESCO ghi danh.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 19. Cố đô Huế",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 88,
+            "note": "tr. 88–89, Hình 1, 2, 3, 4, 5"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q7",
+        "type": "single_choice",
+        "prompt": "Kinh thành Huế có ba vòng thành. Đó là những vòng thành nào?",
+        "options": [
+          "Thành nội, thành trung và thành ngoại",
+          "Kinh thành, Hoàng thành và Tử Cấm thành",
+          "Thành Đại La, thành Hoa Lư và thành Cổ Loa",
+          "Thành nhà Hồ, thành Cổ Loa và thành Đại La"
+        ],
+        "answerIndex": 1,
+        "explanation": "Kinh thành Huế có ba vòng thành: Kinh thành, Hoàng thành và Tử Cấm thành.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 19. Cố đô Huế",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 88,
+            "note": "tr. 88–89, Hình 1, 2, 3, 4, 5"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q8",
+        "type": "single_choice",
+        "prompt": "Chùa Cầu ở Hội An tương truyền do ai xây dựng?",
+        "options": [
+          "Thương nhân người Hoa",
+          "Các vua Triều Nguyễn",
+          "Người Chăm",
+          "Thương nhân Nhật Bản"
+        ],
+        "answerIndex": 3,
+        "explanation": "Chùa Cầu tương truyền do thương nhân Nhật Bản xây dựng khoảng cuối thế kỉ XVI – đầu thế kỉ XVII, làm bằng gỗ, hình vòng cung.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 20. Phố cổ Hội An",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 92,
+            "note": "tr. 92–94, Hình 1, 3, 4, 5"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q9",
+        "type": "single_choice",
+        "prompt": "Lễ hội Ka-tê là lễ hội của dân tộc nào?",
+        "options": [
+          "Chăm",
+          "Ê Đê",
+          "Ba Na",
+          "Mông"
+        ],
+        "answerIndex": 0,
+        "explanation": "Lễ hội Ka-tê của đồng bào Chăm diễn ra tại khu đền tháp Chăm, khoảng tháng 9 – 10 hằng năm.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 81,
+            "note": "tr. 81, Hình 8"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q10",
+        "type": "true_false",
+        "prompt": "Lễ hội Đua voi ở Buôn Đôn (tỉnh Đắk Lắk) được tổ chức mỗi năm một lần.",
+        "answer": false,
+        "explanation": "Lễ hội Đua voi tổ chức hai năm một lần vào tháng Ba âm lịch tại Buôn Đôn (tỉnh Đắk Lắk).",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 82,
+            "note": "tr. 82, Hình 10"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q11",
+        "type": "single_choice",
+        "prompt": "Anh hùng Đinh Núp là người dân tộc nào?",
+        "options": [
+          "Mnông",
+          "Chăm",
+          "Ba Na",
+          "Ê Đê"
+        ],
+        "answerIndex": 2,
+        "explanation": "Anh hùng Đinh Núp là người dân tộc Ba Na, quê ở xã Tơ Tung, tỉnh Gia Lai.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 18. Truyền thống yêu nước, cách mạng của đồng bào Bắc Trung Bộ và Nam Trung Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 87,
+            "note": "tr. 87"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q12",
+        "type": "matching",
+        "prompt": "Ghép mỗi nhân vật với quê hương của nhân vật đó.",
+        "pairs": [
+          {
+            "left": "Chủ tịch Hồ Chí Minh",
+            "right": "Nghệ An"
+          },
+          {
+            "left": "Huỳnh Thúc Kháng",
+            "right": "Đà Nẵng"
+          },
+          {
+            "left": "Anh hùng Đinh Núp",
+            "right": "Gia Lai"
+          }
+        ],
+        "explanation": "Chủ tịch Hồ Chí Minh quê ở xã Kim Liên (Nghệ An), Huỳnh Thúc Kháng quê ở xã Thạnh Bình (Đà Nẵng), Anh hùng Núp quê ở xã Tơ Tung (Gia Lai).",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 18. Truyền thống yêu nước, cách mạng của đồng bào Bắc Trung Bộ và Nam Trung Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 86,
+            "note": "tr. 86, Hình 3"
+          },
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 18. Truyền thống yêu nước, cách mạng của đồng bào Bắc Trung Bộ và Nam Trung Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 85,
+            "note": "tr. 85, Hình 2"
+          },
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 18. Truyền thống yêu nước, cách mạng của đồng bào Bắc Trung Bộ và Nam Trung Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 87,
+            "note": "tr. 87"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q13",
+        "type": "map_locate",
+        "prompt": "Trên bản đồ vùng có ba điểm A, B, C. Điểm nào là Quần thể di tích Cố đô Huế?",
+        "targetItemId": "bac-trung-bo-va-nam-trung-bo__co-do-hue",
+        "candidateItemIds": [
+          "bac-trung-bo-va-nam-trung-bo__phong-nha",
+          "bac-trung-bo-va-nam-trung-bo__co-do-hue",
+          "bac-trung-bo-va-nam-trung-bo__dua-voi"
+        ],
+        "explanation": "Quần thể di tích Cố đô Huế chủ yếu thuộc các phường Phú Xuân, Thuận Hoá và một số phường lân cận của thành phố Huế.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 19. Cố đô Huế",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 88,
+            "note": "tr. 88–89, Hình 1, 2, 3, 4, 5"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q14",
+        "type": "map_locate",
+        "prompt": "Lễ hội Đua voi được tổ chức ở Buôn Đôn (tỉnh Đắk Lắk). Điểm nào trên bản đồ là Buôn Đôn?",
+        "targetItemId": "bac-trung-bo-va-nam-trung-bo__dua-voi",
+        "candidateItemIds": [
+          "bac-trung-bo-va-nam-trung-bo__phong-nha",
+          "bac-trung-bo-va-nam-trung-bo__co-do-hue",
+          "bac-trung-bo-va-nam-trung-bo__dua-voi"
+        ],
+        "explanation": "Lễ hội Đua voi tổ chức hai năm một lần vào tháng Ba âm lịch tại Buôn Đôn (tỉnh Đắk Lắk), là lễ hội độc đáo của đồng bào các dân tộc Tây Nguyên.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 82,
+            "note": "tr. 82, Hình 10"
+          }
+        ],
+        "status": "draft"
+      }
+    ]
+  }
+]
