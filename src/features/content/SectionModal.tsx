@@ -72,7 +72,9 @@ export function SectionModal(props: SectionModalProps) {
 
   // Điện thoại: phần và mục hiện thành hàng cuộn ngang → đưa nút đang chọn vào tầm nhìn
   useEffect(() => {
-    for (const el of dialogRef.current?.querySelectorAll('[aria-pressed="true"], [aria-current="true"]') ?? []) {
+    // Chỉ hai hàng chọn phần và mục, không đụng nút bật/tắt trong nội dung (sẽ kéo vùng nội dung lệch khỏi mục đang đọc)
+    const rows = '[aria-label="Các phần"] [aria-pressed="true"], [aria-label="Các mục trong phần"] [aria-current="true"]'
+    for (const el of dialogRef.current?.querySelectorAll(rows) ?? []) {
       el.scrollIntoView?.({ block: 'nearest', inline: 'nearest' })
     }
   }, [section, topicKey])

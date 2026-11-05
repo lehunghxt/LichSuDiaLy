@@ -45,14 +45,16 @@ export function cleanAuthorText(text) {
       .replace(/\[([^\]]+)\]/g, '$1')
       .replace(/\(\s*(?:talk|thảo luận|more photos|User:[^)]*)\s*\)/gi, '')
       .replace(/\d{1,2}:\d{2}, \d{1,2} \w+ \d{4} \(UTC\)/g, '')
+      .replace(/\d{1,2}:\d{2}, (?:ngày )?\d{1,2} tháng \d{1,2} năm \d{4} \(UTC\)/g, '')
       .replace(/,?\s*https?:\/\/\S+/g, '')
       .replace(/\btalk\b/gi, '')
       // vi:User:Tên (người dùng wiki tiếng Việt) → Tên
-      .replace(/(^|\s)[a-z]{2,3}:(?=\S)/g, '$1')
+      .replace(/^[a-z]{2,3}:(?=\S)/, '')
       .replace(/\bUser:/g, '')
       .replace(/\s+([,/])/g, ' $1')
       .replace(/\s+,/g, ',')
       .replace(/\s+/g, ' ')
+      .replace(/\s+\.$/, '')
       .replace(/[\s,/]+$/, '')
       .trim()
   )
@@ -66,11 +68,11 @@ export function cleanAuthorUrl(url) {
 
 /** HTML của trường Artist/Credit → text sạch + link đầu tiên (nếu có) */
 export function cleanArtist(html) {
-  const author = cleanAuthorText(
-    decode(html.replace(/<[^>]*>/g, ' '))
-      .replace(/\s+/g, ' ')
-      .trim(),
-  )
+  const raw = decode(html.replace(/<[^>]*>/g, ' '))
+    .replace(/\s+/g, ' ')
+    .trim()
+  // Dọn xong mà rỗng (ví dụ tên chỉ là một link Flickr): giữ nguyên chữ gốc, còn hơn bỏ mất ảnh
+  const author = cleanAuthorText(raw) || raw
   const href = /href="([^"]+)"/.exec(html)?.[1]
   const absolute = href && (href.startsWith('//') ? `https:${href}` : href.startsWith('/') ? `https://commons.wikimedia.org${href}` : href)
   const authorUrl = cleanAuthorUrl(absolute && decode(absolute))
@@ -182,6 +184,10 @@ export function checkSummary({ total, broken, unchecked, only }) {
   if (unchecked.length) lines.push(`${unchecked.length} link chưa kiểm tra được vì Commons giới hạn tốc độ; chạy lại sau.`)
   if (broken.length) {
     lines.push(`${broken.length} link hỏng:`, ...broken.map((b) => `  - ${b.id}: ${b.why} ${b.url}`))
+    return { lines, exitCode: 1 }
+  }
+  if (checked === 0 && total > 0) {
+    lines.push('Chưa kiểm tra được link nào.')
     return { lines, exitCode: 1 }
   }
   lines.push(unchecked.length ? `Trong ${checked} link đã kiểm tra, không có link hỏng.` : 'Không có link hỏng.')

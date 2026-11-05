@@ -117,3 +117,27 @@ export function splitOffshore<P>(data: AreaCollection<P>): AreaCollection<WithOf
   })
   return { ...data, features }
 }
+
+/** Khung bao toàn bộ một vùng [[nam, tây], [bắc, đông]], tính cả quần đảo xa bờ (Hoàng Sa, Trường Sa) */
+export function regionBounds(data: AreaCollection<RegionFeatureProps>, regionId: string): [[number, number], [number, number]] | null {
+  let s = Infinity
+  let w = Infinity
+  let n = -Infinity
+  let e = -Infinity
+  for (const f of data.features) {
+    if (f.properties.regionId !== regionId) continue
+    const polys = f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates
+    for (const [lng, lat] of polys.flat(2) as [number, number][]) {
+      s = Math.min(s, lat)
+      n = Math.max(n, lat)
+      w = Math.min(w, lng)
+      e = Math.max(e, lng)
+    }
+  }
+  return Number.isFinite(s)
+    ? [
+        [s, w],
+        [n, e],
+      ]
+    : null
+}

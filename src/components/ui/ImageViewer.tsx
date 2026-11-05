@@ -1,6 +1,7 @@
 import { ImageOff, X } from 'lucide-react'
 import { type KeyboardEvent as ReactKeyboardEvent, useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
+import { useLatest } from '../../lib/useLatest'
 import type { WebImage } from '../../types/content'
 import { ImageCredit } from './ImageCredit'
 import { ImageSkeleton } from './ImageSkeleton'
@@ -19,8 +20,7 @@ export function ImageViewer({ image, onClose }: ImageViewerProps) {
   const closeRef = useRef<HTMLButtonElement>(null)
   const [loaded, setLoaded] = useState(false)
   const [failed, setFailed] = useState(false)
-  const closeCb = useRef(onClose)
-  closeCb.current = onClose
+  const closeCb = useLatest(onClose)
 
   useEffect(() => {
     closeRef.current?.focus()

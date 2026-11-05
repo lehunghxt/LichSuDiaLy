@@ -4,6 +4,7 @@ import {
   createGeoLoader,
   isProvinceCollection,
   isRegionCollection,
+  regionBounds,
   splitOffshore,
   type AreaCollection,
   type ProvinceFeatureProps,
@@ -148,4 +149,18 @@ test('real map data: Hoàng Sa and Trường Sa are split off from Đà Nẵng a
   const provinces = readJson('provinces.geojson') as AreaCollection<ProvinceFeatureProps>
   const offshore = splitOffshore(provinces).features.filter((f) => f.properties.offshore)
   expect(offshore.map((f) => f.properties.provinceId).sort()).toEqual(['da-nang', 'khanh-hoa'])
+})
+
+test('regionBounds covers the whole region including Hoàng Sa and Trường Sa, so zooming in never crops the archipelagos', () => {
+  const data = readJson('regions.geojson') as AreaCollection<RegionFeatureProps>
+  const [[south, west], [north, east]] = regionBounds(data, 'bac-trung-bo-va-nam-trung-bo')!
+  expect(east).toBeGreaterThan(116) // Trường Sa xa nhất về phía đông
+  expect(south).toBeLessThan(9) // Trường Sa xa nhất về phía nam
+  expect(north).toBeGreaterThan(19.5) // Thanh Hoá
+  expect(west).toBeLessThan(105)
+  const [[nbS], [nbN, nbE]] = regionBounds(data, 'trung-du-mien-nui-phia-bac')!
+  expect(nbE).toBeLessThan(109)
+  expect(nbS).toBeGreaterThan(20)
+  expect(nbN).toBeGreaterThan(23)
+  expect(regionBounds(data, 'khong-co')).toBeNull()
 })

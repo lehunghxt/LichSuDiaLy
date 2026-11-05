@@ -6,12 +6,14 @@ import { LocateFixed, Minus, Plus } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { GeoJSON, MapContainer, Marker, useMap } from 'react-leaflet'
 import { ErrorState, LoadingState } from '../../components/ui/states'
+import { useLatest } from '../../lib/useLatest'
 import type { RegionMeta } from '../../types/content'
 import { countryPadding, regionPadding } from './fit'
 import { LocationMarkers } from './LocationMarkers'
 import type { Place } from './places'
 import {
   geoLoader,
+  regionBounds,
   splitOffshore,
   type AreaCollection,
   type LabelCollection,
@@ -33,7 +35,8 @@ function legendBox(map: L.Map) {
 }
 
 function fitCountry(map: L.Map) {
-  map.fitBounds(VIETNAM_BOUNDS, countryPadding(map.getContainer().clientWidth, legendBox(map)))
+  const { clientWidth, clientHeight } = map.getContainer()
+  map.fitBounds(VIETNAM_BOUNDS, countryPadding(clientWidth, clientHeight, legendBox(map)))
 }
 
 export interface VietnamMapProps {
@@ -98,8 +101,7 @@ function RegionsLayer({
   const areas = useMemo(() => splitOffshore(data), [data])
   const colorOf = useCallback((id: string) => cssColor(regions.find((r) => r.id === id)?.color), [regions])
   const nameOf = useCallback((id: string) => regions.find((r) => r.id === id)?.name ?? id, [regions])
-  const select = useRef(onSelectRegion)
-  select.current = onSelectRegion
+  const select = useLatest(onSelectRegion)
 
   // React Leaflet gọi lại setStyle khi prop style đổi → style là hàm ổn định, chỉ đổi khi vùng chọn đổi
   const styleFor = useCallback(
@@ -107,8 +109,7 @@ function RegionsLayer({
       regionStyle(colorOf(id), id === selectedRegionId, selectedRegionId !== null && id !== selectedRegionId, offshore),
     [colorOf, selectedRegionId],
   )
-  const styleRef = useRef(styleFor)
-  styleRef.current = styleFor
+  const styleRef = useLatest(styleFor)
   const style = useCallback(
     (f?: GeoJSON.Feature<GeoJSON.Geometry, WithOffshore<RegionFeatureProps>>) =>
       f ? styleFor(f.properties.regionId, f.properties.offshore) : {},
@@ -118,18 +119,20 @@ function RegionsLayer({
   // Theo hình mẫu: giữ toàn quốc, vùng đang chọn có nhãn bong bóng phía trên.
   // Riêng màn xếp dọc (điện thoại, máy tính bảng) thì phóng vào vùng, vì ở cỡ toàn quốc các tỉnh quá nhỏ để chạm
   useEffect(() => {
-    const zoomIn = regionPadding(window.innerWidth, legendBox(map))
+    const zoomIn = regionPadding(window.innerWidth, map.getContainer().clientHeight, legendBox(map))
     if (!selectedRegionId) {
       if (zoomIn) fitCountry(map)
       return
     }
+    // Khung phóng tính cả quần đảo xa bờ: Hoàng Sa, Trường Sa luôn hiện cùng vùng của mình
+    const bounds = zoomIn && regionBounds(data, selectedRegionId)
+    if (zoomIn && bounds) map.fitBounds(bounds, zoomIn)
     let tooltip: L.Tooltip | null = null
     layerRef.current?.eachLayer((l) => {
       const props = (l as PathWithFeature<WithOffshore<RegionFeatureProps>>).feature?.properties
       // Nhãn đặt trên phần đất liền, không tính quần đảo xa bờ
       if (l instanceof L.Polygon && props?.regionId === selectedRegionId && !props.offshore) {
         const b = l.getBounds()
-        if (zoomIn) map.fitBounds(b, zoomIn)
         tooltip = L.tooltip({ permanent: true, direction: 'top', className: 'region-callout', offset: [0, -6] })
           .setLatLng([b.getNorth(), b.getCenter().lng])
           .setContent(nameOf(selectedRegionId))
@@ -139,7 +142,7 @@ function RegionsLayer({
     return () => {
       if (tooltip) map.closeTooltip(tooltip)
     }
-  }, [selectedRegionId, map, nameOf])
+  }, [selectedRegionId, map, nameOf, data])
 
   const onEachFeature = (feature: GeoJSON.Feature<GeoJSON.Geometry, WithOffshore<RegionFeatureProps>>, layer: Layer) => {
     const { regionId: id, offshore } = feature.properties
@@ -160,8 +163,7 @@ function ProvincesLayer({
   selectedProvinceId,
   onSelectProvince,
 }: { data: AreaCollection<ProvinceFeatureProps>; regionId: string } & Pick<VietnamMapProps, 'selectedProvinceId' | 'onSelectProvince'>) {
-  const select = useRef(onSelectProvince)
-  select.current = onSelectProvince
+  const select = useLatest(onSelectProvince)
   const filtered = useMemo(
     () => splitOffshore({ ...data, features: data.features.filter((f) => f.properties.regionId === regionId) }),
     [data, regionId],

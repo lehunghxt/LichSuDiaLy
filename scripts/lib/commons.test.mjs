@@ -192,3 +192,26 @@ test('checkSummary: broken links are listed and fail the run', () => {
     exitCode: 1,
   })
 })
+
+test('cleanArtist keeps a credit whose only text is a link (Flickr imports) instead of leaving it empty', () => {
+  expect(cleanArtist('<a href="https://www.flickr.com/people/abc">https://www.flickr.com/people/abc</a>')).toEqual({
+    author: 'https://www.flickr.com/people/abc',
+    authorUrl: 'https://www.flickr.com/people/abc',
+  })
+  expect(cleanArtist('Talk')).toEqual({ author: 'Talk' })
+})
+
+test('cleanAuthorText also drops Vietnamese wiki timestamps and a dangling full stop', () => {
+  expect(cleanAuthorText('Nguyễn Văn A 18:18, 16 tháng 12 năm 2007 (UTC)')).toBe('Nguyễn Văn A')
+  expect(cleanAuthorText('The original uploader was BacLuong at Vietnamese Wikipedia .')).toBe(
+    'The original uploader was BacLuong at Vietnamese Wikipedia',
+  )
+  expect(cleanAuthorText('Photo by:Nguyen')).toBe('Photo by:Nguyen')
+})
+
+test('checkSummary: a run that could check nothing (all rate-limited) does not pass', () => {
+  expect(checkSummary({ total: 2, broken: [], unchecked: [{}, {}] })).toEqual({
+    lines: ['Đã kiểm tra 0/2 link.', '2 link chưa kiểm tra được vì Commons giới hạn tốc độ; chạy lại sau.', 'Chưa kiểm tra được link nào.'],
+    exitCode: 1,
+  })
+})
