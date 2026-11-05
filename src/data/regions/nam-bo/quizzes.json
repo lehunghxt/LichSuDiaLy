@@ -10,11 +10,11 @@
         "prompt": "Vùng nào trồng lúa lớn nhất nước ta?",
         "options": [
           "Đồng bằng Bắc Bộ",
-          "Nam Bộ",
           "Bắc Trung Bộ và Nam Trung Bộ",
-          "Trung du và miền núi phía Bắc"
+          "Trung du và miền núi phía Bắc",
+          "Nam Bộ"
         ],
-        "answerIndex": 1,
+        "answerIndex": 3,
         "explanation": "Nam Bộ có nhiều điều kiện tự nhiên thuận lợi cho nông nghiệp, là vùng trồng lúa lớn nhất nước ta.",
         "sources": [
           {
@@ -69,12 +69,12 @@
         "type": "single_choice",
         "prompt": "Sông Mê Công chảy về đồng bằng thì chia thành hai sông nào?",
         "options": [
-          "Sông Tiền và sông Hậu",
           "Sông Hồng và sông Thái Bình",
           "Sông Đuống và sông Luộc",
-          "Sông Mã và sông Cả"
+          "Sông Mã và sông Cả",
+          "Sông Tiền và sông Hậu"
         ],
-        "answerIndex": 0,
+        "answerIndex": 3,
         "explanation": "Sông Mê Công chảy về đồng bằng thì chia thành sông Tiền và sông Hậu. Trước kia sông đổ ra biển qua chín cửa nên còn gọi là sông Cửu Long.",
         "sources": [
           {
@@ -148,12 +148,12 @@
         "type": "single_choice",
         "prompt": "Chợ nổi Cái Răng thuộc tỉnh, thành phố nào?",
         "options": [
+          "Thành phố Cần Thơ",
           "Tỉnh Đồng Tháp",
           "Tỉnh Vĩnh Long",
-          "Thành phố Cần Thơ",
           "Tỉnh An Giang"
         ],
-        "answerIndex": 2,
+        "answerIndex": 0,
         "explanation": "Một số chợ nổi lớn: Cái Răng, Phong Điền, Phụng Hiệp, Ngã Năm (thành phố Cần Thơ); Cái Bè (tỉnh Đồng Tháp); Trà Ôn (tỉnh Vĩnh Long).",
         "sources": [
           {
@@ -171,11 +171,11 @@
         "prompt": "Trước đây, trang phục phổ biến của người dân Nam Bộ là gì?",
         "options": [
           "Áo yếm và váy",
-          "Áo bà ba và khăn rằn",
           "Áo dài và nón quai thao",
+          "Áo bà ba và khăn rằn",
           "Khố và áo thổ cẩm"
         ],
-        "answerIndex": 1,
+        "answerIndex": 2,
         "explanation": "Trước đây, trang phục phổ biến của người dân Nam Bộ là áo bà ba và khăn rằn.",
         "sources": [
           {
@@ -193,11 +193,11 @@
         "prompt": "Bác Hồ đã tặng quân và dân Nam Bộ danh hiệu gì?",
         "options": [
           "\"Thành phố vì hoà bình\"",
+          "\"Thành đồng Tổ quốc\"",
           "\"Điện Biên Phủ trên không\"",
-          "\"Anh hùng Lực lượng vũ trang nhân dân\"",
-          "\"Thành đồng Tổ quốc\""
+          "\"Anh hùng Lực lượng vũ trang nhân dân\""
         ],
-        "answerIndex": 3,
+        "answerIndex": 1,
         "explanation": "Nhân dân Nam Bộ có truyền thống yêu nước, đấu tranh chống ngoại xâm. Vì thế, Bác Hồ đã tặng quân và dân Nam Bộ danh hiệu \"Thành đồng Tổ quốc\".",
         "sources": [
           {
@@ -275,12 +275,12 @@
         "type": "single_choice",
         "prompt": "Địa đạo Củ Chi có mấy tầng?",
         "options": [
-          "Ba tầng",
           "Một tầng",
+          "Ba tầng",
           "Hai tầng",
           "Năm tầng"
         ],
-        "answerIndex": 0,
+        "answerIndex": 1,
         "explanation": "Địa đạo có ba tầng, từ đường chính toả ra các nhánh dài, ngắn thông với nhau; giữa các tầng có nắp hầm bí mật.",
         "sources": [
           {
@@ -288,6 +288,27 @@
             "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
             "page": 117,
             "note": "tr. 117–118, Hình 1, 2, 3"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q14",
+        "type": "map_locate",
+        "prompt": "Trên bản đồ vùng có ba điểm A, B, C. Điểm nào là chợ nổi Cái Răng (thành phố Cần Thơ)?",
+        "targetItemId": "nam-bo__cho-noi",
+        "candidateItemIds": [
+          "nam-bo__dia-dao",
+          "nam-bo__tphcm-ten-goi",
+          "nam-bo__cho-noi"
+        ],
+        "explanation": "Một số chợ nổi lớn như Cái Răng, Phong Điền thuộc thành phố Cần Thơ. Hàng hoá bán trên ghe, xuồng, chủ yếu là nông sản và đồ dùng cần thiết.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 108,
+            "note": "tr. 108, Hình 3"
           }
         ],
         "status": "draft"

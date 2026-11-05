@@ -10,11 +10,11 @@
         "prompt": "Hai hệ thống sông lớn của vùng Đồng bằng Bắc Bộ là gì?",
         "options": [
           "Sông Tiền và sông Hậu",
-          "Sông Hồng và sông Thái Bình",
           "Sông Đồng Nai và sông Mê Công",
+          "Sông Hồng và sông Thái Bình",
           "Sông Mã và sông Cả"
         ],
-        "answerIndex": 1,
+        "answerIndex": 2,
         "explanation": "Vùng có hệ thống sông Hồng và sông Thái Bình với nhiều nhánh sông toả khắp vùng.",
         "sources": [
           {
@@ -69,12 +69,12 @@
         "type": "single_choice",
         "prompt": "Đất chủ yếu ở vùng Đồng bằng Bắc Bộ là loại đất nào?",
         "options": [
-          "Đất phù sa",
           "Đất phe-ra-lít",
           "Đất phèn",
+          "Đất phù sa",
           "Đất mặn"
         ],
-        "answerIndex": 0,
+        "answerIndex": 2,
         "explanation": "Đất ở Đồng bằng Bắc Bộ chủ yếu là đất phù sa màu mỡ.",
         "sources": [
           {
@@ -212,11 +212,11 @@
         "prompt": "Ngày 2 – 9 – 1945, Bác Hồ đọc Tuyên ngôn Độc lập ở đâu?",
         "options": [
           "Bến Nhà Rồng",
-          "Quảng trường Ba Đình",
           "Văn Miếu – Quốc Tử Giám",
+          "Quảng trường Ba Đình",
           "Hồ Gươm"
         ],
-        "answerIndex": 1,
+        "answerIndex": 2,
         "explanation": "Ngày 2 – 9 – 1945, Bác Hồ đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình (Hà Nội).",
         "sources": [
           {
@@ -249,12 +249,12 @@
         "type": "single_choice",
         "prompt": "Hội Lim, nơi có hát Quan họ, diễn ra ở tỉnh nào?",
         "options": [
+          "Bắc Ninh",
           "Hưng Yên",
           "Ninh Bình",
-          "Phú Thọ",
-          "Bắc Ninh"
+          "Phú Thọ"
         ],
-        "answerIndex": 3,
+        "answerIndex": 0,
         "explanation": "Hội Lim ở tỉnh Bắc Ninh là một lễ hội nổi tiếng của vùng. Trong hội Lim có hát Quan họ.",
         "sources": [
           {
