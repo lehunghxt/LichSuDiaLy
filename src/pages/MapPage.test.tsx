@@ -53,7 +53,12 @@ vi.mock('../features/images/library', async (importOriginal) => {
     alt,
     caption: `Chú thích ${alt}`,
     src: { url: `https://upload.wikimedia.org/wikipedia/commons/${id}.jpg`, width: 4, height: 3, srcset: [] },
-    attribution: { title: `File:${id}.jpg`, author: 'Tác giả', license: 'Public domain', sourceUrl: `https://commons.wikimedia.org/wiki/File:${id}.jpg` },
+    attribution: {
+      title: `File:${id}.jpg`,
+      author: 'Tác giả',
+      license: 'Public domain',
+      sourceUrl: `https://commons.wikimedia.org/wiki/File:${id}.jpg`,
+    },
     status: 'verified',
   })
   const mod = (v: unknown) => () => Promise.resolve({ default: v })
@@ -83,9 +88,7 @@ test('RegionList shows all regions; coming_soon ones labelled "Sắp ra mắt"',
   const buttons = within(regionList()).getAllByRole('button')
   expect(buttons).toHaveLength(4)
   expect(within(regionList()).getByRole('button', { name: /Nam Bộ/ })).toHaveTextContent('Sắp ra mắt')
-  expect(within(regionList()).getByRole('button', { name: /Trung du và miền núi phía Bắc/ })).not.toHaveTextContent(
-    'Sắp ra mắt',
-  )
+  expect(within(regionList()).getByRole('button', { name: /Trung du và miền núi phía Bắc/ })).not.toHaveTextContent('Sắp ra mắt')
 })
 
 test('without selection, panel invites the student to choose a region', async () => {
@@ -217,7 +220,9 @@ test('panel lists featured places with province; clicking one opens the modal at
   const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
   const places = await within(panel).findByRole('list', { name: 'Một số địa điểm tiêu biểu' })
   // Bỏ qua nút phóng to ảnh, chỉ đếm nút mở địa điểm
-  const buttons = within(places).getAllByRole('button').filter((b) => !b.getAttribute('aria-label')?.startsWith('Xem ảnh lớn'))
+  const buttons = within(places)
+    .getAllByRole('button')
+    .filter((b) => !b.getAttribute('aria-label')?.startsWith('Xem ảnh lớn'))
   expect(buttons.length).toBeGreaterThan(0)
   expect(buttons.length).toBeLessThanOrEqual(3)
   const fansipan = within(places).getByRole('button', { name: /Đỉnh Phan-xi-păng/ })
@@ -266,7 +271,10 @@ test('modal shows images of the item with credit', async () => {
   const gallery = await within(dialog).findByRole('region', { name: 'Hình ảnh' })
   expect(within(gallery).getByRole('img', { name: 'Ảnh đền Thượng' })).toBeInTheDocument()
   expect(within(gallery).getByText('Chú thích Ảnh đền Thượng')).toBeInTheDocument()
-  expect(within(gallery).getByRole('link', { name: 'Wikimedia Commons' })).toHaveAttribute('href', 'https://commons.wikimedia.org/wiki/File:phu-tho__den.jpg')
+  expect(within(gallery).getByRole('link', { name: 'Wikimedia Commons' })).toHaveAttribute(
+    'href',
+    'https://commons.wikimedia.org/wiki/File:phu-tho__den.jpg',
+  )
 })
 
 test('modal hides image section when item has none', async () => {
@@ -346,7 +354,11 @@ test('compact nav is a single row of four equal tabs with short labels', async (
   const nav = await screen.findByRole('navigation', { name: 'Điều hướng chính' })
   const list = within(nav).getByRole('list')
   expect(list.className).toContain('grid-cols-4')
-  expect(within(nav).getAllByRole('link').map((l) => l.textContent)).toEqual(['Trang chủ', 'Bản đồ', 'Trắc nghiệm', 'Tiến độ'])
+  expect(
+    within(nav)
+      .getAllByRole('link')
+      .map((l) => l.textContent),
+  ).toEqual(['Trang chủ', 'Bản đồ', 'Trắc nghiệm', 'Tiến độ'])
   expect(within(nav).getByRole('link', { name: 'Bản đồ' })).toHaveAttribute('aria-current', 'page')
 })
 
@@ -373,21 +385,17 @@ const outlineNav = async () => screen.findByRole('navigation', { name: 'Dàn ý 
 test('region panel shows the outline sections in doc order with their topics', async () => {
   renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   const nav = await outlineNav()
-  expect(within(nav).getAllByRole('heading', { level: 3 }).map((h) => h.textContent)).toEqual([
-    'Thiên nhiên',
-    'Dân cư và hoạt động sản xuất',
-    'Văn hóa',
-    'Lịch sử và di tích',
-  ])
+  expect(
+    within(nav)
+      .getAllByRole('heading', { level: 3 })
+      .map((h) => h.textContent),
+  ).toEqual(['Thiên nhiên', 'Dân cư và hoạt động sản xuất', 'Văn hóa', 'Lịch sử và di tích'])
   const nature = within(nav).getByRole('list', { name: 'Thiên nhiên' })
-  expect(within(nature).getAllByRole('button').map((b) => b.dataset.topic)).toEqual([
-    'vi-tri-dia-li-va-ban-do-vung',
-    'dia-hinh',
-    'khi-hau',
-    'song-ngoi',
-    'khoang-san',
-    'thien-nhien-va-canh-quan-tieu-bieu',
-  ])
+  expect(
+    within(nature)
+      .getAllByRole('button')
+      .map((b) => b.dataset.topic),
+  ).toEqual(['vi-tri-dia-li-va-ban-do-vung', 'dia-hinh', 'khi-hau', 'song-ngoi', 'khoang-san', 'thien-nhien-va-canh-quan-tieu-bieu'])
   expect(screen.queryByText('Khám phá theo chủ đề')).not.toBeInTheDocument()
 })
 
@@ -442,4 +450,16 @@ test('opening a topic with two items records both as viewed', async () => {
       expect.arrayContaining(['trung-du-mien-nui-phia-bac__dia-hinh', 'trung-du-mien-nui-phia-bac__dinh-phan-xi-pang']),
     )
   })
+})
+
+test('province card also lists what the lessons say about the province elsewhere, each opening its item', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-lai-chau' }))
+  const card = screen.getByRole('region', { name: 'Tỉnh đang xem: Lai Châu' })
+  expect(card).not.toHaveTextContent('Bài học chưa có địa danh nào')
+  const said = within(card).getByRole('list', { name: 'Bài học nhắc tới tỉnh Lai Châu' })
+  expect(within(said).getByText(/nhà máy thuỷ điện: Lai Châu/)).toBeInTheDocument()
+  await userEvent.click(within(said).getByRole('button', { name: 'Xem mục Sản xuất thủy điện' }))
+  expect(await screen.findByRole('heading', { level: 3, name: 'Sản xuất thủy điện' })).toBeInTheDocument()
 })

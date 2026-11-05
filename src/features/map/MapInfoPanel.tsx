@@ -1,7 +1,9 @@
 import { ArrowLeft, BookOpen, ChevronRight, Clock, Compass, ImageIcon, MapPin, Mountain, X } from 'lucide-react'
+import { useMemo } from 'react'
 import { SmartImage } from '../../components/ui/SmartImage'
 import { WebImageFigure } from '../../components/ui/WebImageFigure'
 import { provinceName } from '../../lib/provinces'
+import { provinceMentions } from './mentions'
 import { EmptyState, ErrorState, LoadingState } from '../../components/ui/states'
 import {
   SECTION_LABELS,
@@ -225,6 +227,7 @@ interface ProvinceCardProps {
 function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen }: ProvinceCardProps) {
   const name = provinceName(provinceId) ?? provinceId
   const items = content?.items.filter((i) => i.provinceId === provinceId) ?? []
+  const mentions = useMemo(() => (content ? provinceMentions(content.items, provinceId) : []), [content, provinceId])
   const photos = imageLibrary.forProvince(images, provinceId).slice(0, 4)
   return (
     <section
@@ -259,11 +262,13 @@ function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen
           ))}
         </ul>
       )}
-      {!content ? null : items.length === 0 ? (
+      {!content ? null : items.length === 0 && mentions.length === 0 ? (
         <p className="text-sm text-muted">Bài học chưa có địa danh nào của tỉnh này. Em xem các phần bên dưới nhé!</p>
-      ) : (
+      ) : items.length === 0 ? null : (
         <>
-          <p className="text-sm font-semibold">Trong bài học có {items.length} mục ở tỉnh {name}:</p>
+          <p className="text-sm font-semibold">
+            Trong bài học có {items.length} mục ở tỉnh {name}:
+          </p>
           <ul aria-label={`Địa danh ở tỉnh ${name}`} className="flex flex-wrap gap-2">
             {items.map((i) => {
               const Icon = SECTION_ICONS[i.section]
@@ -276,6 +281,32 @@ function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen
                   >
                     <Icon aria-hidden className={`size-4 ${SECTION_TILE[i.section].icon}`} />
                     {i.title}
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+        </>
+      )}
+      {mentions.length > 0 && (
+        <>
+          <p className="text-sm font-semibold">Bài học còn nhắc tới tỉnh {name}:</p>
+          <ul aria-label={`Bài học nhắc tới tỉnh ${name}`} className="flex flex-col gap-2">
+            {mentions.map(({ item, sentences }) => {
+              const Icon = SECTION_ICONS[item.section]
+              return (
+                <li key={item.id} className="rounded-xl border border-amber-200 bg-white p-3 text-sm shadow-sm">
+                  {sentences.map((t) => (
+                    <p key={t}>{t}</p>
+                  ))}
+                  <button
+                    type="button"
+                    onClick={() => onOpen(item)}
+                    aria-label={`Xem mục ${item.title}`}
+                    className="mt-1.5 inline-flex min-h-9 items-center gap-1.5 font-semibold text-primary hover:underline"
+                  >
+                    <Icon aria-hidden className={`size-4 ${SECTION_TILE[item.section].icon}`} />
+                    {item.title}
                   </button>
                 </li>
               )
@@ -357,11 +388,13 @@ function RegionGallery({ images }: { images: WebImage[] }) {
         Hình ảnh của vùng
       </h3>
       <ul className="grid grid-cols-2 gap-4">
-        {interleaveByProvince(images).slice(0, 8).map((img) => (
-          <li key={img.id}>
-            <WebImageFigure image={img} showCaption sizes="(min-width: 1024px) 18vw, 50vw" />
-          </li>
-        ))}
+        {interleaveByProvince(images)
+          .slice(0, 8)
+          .map((img) => (
+            <li key={img.id}>
+              <WebImageFigure image={img} showCaption sizes="(min-width: 1024px) 18vw, 50vw" />
+            </li>
+          ))}
       </ul>
     </section>
   )
