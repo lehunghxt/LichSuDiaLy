@@ -109,18 +109,23 @@ function Hero({ content, regionCount }: { content: RegionContent | null; regionC
   const questions = content?.quizzes.reduce((n, q) => n + q.questions.length, 0) ?? 0
   const stats = [
     { value: regionCount, label: 'vùng đất' },
-    ...(content ? [{ value: content.items.length, label: 'mục khám phá' }, { value: questions, label: 'câu hỏi ôn tập' }] : []),
+    ...(content
+      ? [
+          { value: content.items.length, label: 'mục khám phá' },
+          { value: questions, label: 'câu hỏi ôn tập' },
+        ]
+      : []),
   ]
   return (
-    <section className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-sky-100 via-white to-emerald-100 px-10 py-12 shadow-[0_8px_30px_rgb(15_23_42/0.08)]">
+    <section className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-sky-100 via-white to-emerald-100 px-5 py-8 shadow-[0_8px_30px_rgb(15_23_42/0.08)] sm:px-10 sm:py-12">
       <Decor />
-      <div className="relative grid items-center gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]">
+      <div className="relative grid grid-cols-[minmax(0,1fr)] items-center gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]">
         <div className="flex flex-col gap-6">
           <p className="inline-flex w-fit items-center gap-2 rounded-full bg-white/80 px-4 py-1.5 text-sm font-semibold text-primary shadow-sm">
             <Sparkles aria-hidden className="size-4 text-accent" />
             Lịch sử và Địa lí lớp 4 · Theo SGK Kết nối tri thức với cuộc sống
           </p>
-          <h1 className="text-4xl font-extrabold leading-tight text-[#1e293b] xl:text-5xl">
+          <h1 className="text-3xl font-extrabold sm:text-4xl leading-tight text-[#1e293b] xl:text-5xl">
             Em khám phá{' '}
             <span className="block bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">
               Lịch sử và Địa lí Việt Nam
@@ -156,7 +161,7 @@ function Hero({ content, regionCount }: { content: RegionContent | null; regionC
           </ul>
         </div>
 
-        <div className="relative mx-auto h-[460px] w-full max-w-xl">
+        <div className="relative mx-auto h-[380px] w-full max-w-xl sm:h-[460px]">
           <div aria-hidden className="absolute inset-8 rounded-full bg-sky-200/50 blur-2xl" />
           <MiniVietnamMap regions={repository.getRegions()} className="relative mx-auto h-full drop-shadow-xl" />
           {BADGES.map(({ icon: Icon, text, sub, className, delay }) => (
@@ -197,9 +202,24 @@ function Decor() {
 }
 
 const STEPS: { icon: LucideIcon; title: string; text: string; tone: string }[] = [
-  { icon: MapIcon, title: 'Chọn vùng trên bản đồ', text: 'Bấm vào một vùng để xem vị trí, các tỉnh và những địa điểm tiêu biểu.', tone: 'bg-sky-100 text-sky-600' },
-  { icon: Search, title: 'Khám phá theo dàn ý', text: 'Thiên nhiên, dân cư và sản xuất, văn hóa, lịch sử của từng vùng, có hình trong SGK.', tone: 'bg-emerald-100 text-emerald-600' },
-  { icon: BookOpenCheck, title: 'Ôn tập vui', text: 'Trả lời câu hỏi, ghép đôi và xem lại câu sai để nhớ bài lâu hơn.', tone: 'bg-amber-100 text-amber-600' },
+  {
+    icon: MapIcon,
+    title: 'Chọn vùng trên bản đồ',
+    text: 'Bấm vào một vùng để xem vị trí, các tỉnh và những địa điểm tiêu biểu.',
+    tone: 'bg-sky-100 text-sky-600',
+  },
+  {
+    icon: Search,
+    title: 'Khám phá theo dàn ý',
+    text: 'Thiên nhiên, dân cư và sản xuất, văn hóa, lịch sử của từng vùng, có hình trong SGK.',
+    tone: 'bg-emerald-100 text-emerald-600',
+  },
+  {
+    icon: BookOpenCheck,
+    title: 'Ôn tập vui',
+    text: 'Trả lời câu hỏi, ghép đôi và xem lại câu sai để nhớ bài lâu hơn.',
+    tone: 'bg-amber-100 text-amber-600',
+  },
 ]
 
 function Journey() {
@@ -218,7 +238,10 @@ function Journey() {
               <p className="mt-1 text-muted">{text}</p>
             </div>
             {i < STEPS.length - 1 && (
-              <ArrowRight aria-hidden className="absolute -right-5 top-1/2 z-10 hidden size-8 -translate-y-1/2 rounded-full bg-white p-1.5 text-primary shadow md:block" />
+              <ArrowRight
+                aria-hidden
+                className="absolute -right-5 top-1/2 z-10 hidden size-8 -translate-y-1/2 rounded-full bg-white p-1.5 text-primary shadow md:block"
+              />
             )}
           </li>
         ))}
@@ -235,7 +258,11 @@ function RegionCards() {
         const visited = state.visitedRegionIds.includes(r.id)
         const body = (
           <>
-            <span aria-hidden className="block h-24 rounded-t-card" style={{ background: `linear-gradient(135deg, var(--color-${r.color}), #ffffff)` }} />
+            <span
+              aria-hidden
+              className="block h-24 rounded-t-card"
+              style={{ background: `linear-gradient(135deg, var(--color-${r.color}), #ffffff)` }}
+            />
             <span className="flex flex-1 flex-col gap-2 p-5">
               <span className="text-lg font-bold leading-snug">{r.name}</span>
               {r.status === 'active' ? (
@@ -275,7 +302,10 @@ function FunFacts({ content }: { content: RegionContent | null }) {
   const current = facts.length > 0 ? facts[index % facts.length] : undefined
 
   return (
-    <section aria-labelledby="fun-title" className="relative overflow-hidden rounded-card bg-gradient-to-br from-amber-100 to-orange-50 p-8 shadow-[0_8px_30px_rgb(15_23_42/0.08)]">
+    <section
+      aria-labelledby="fun-title"
+      className="relative overflow-hidden rounded-card bg-gradient-to-br from-amber-100 to-orange-50 p-5 shadow-[0_8px_30px_rgb(15_23_42/0.08)] sm:p-8"
+    >
       <Lightbulb aria-hidden className="absolute -right-6 -top-6 size-40 rotate-12 text-amber-200" />
       <h2 id="fun-title" className="relative flex items-center gap-3 text-2xl font-bold">
         <span className="flex size-10 items-center justify-center rounded-xl bg-white">
@@ -326,7 +356,7 @@ function ProgressCard({ content, regionCount }: { content: RegionContent | null;
   const percent = itemTotal ? Math.round((viewed / itemTotal) * 100) : 0
 
   return (
-    <section aria-labelledby="progress-title" className={`${card} flex flex-col gap-5 p-8`}>
+    <section aria-labelledby="progress-title" className={`${card} flex flex-col gap-5 p-5 sm:p-8`}>
       <h2 id="progress-title" className="flex items-center gap-3 text-2xl font-bold">
         <span className="flex size-10 items-center justify-center rounded-xl bg-emerald-100">
           <Star aria-hidden className="size-6 text-emerald-600" />
@@ -340,8 +370,18 @@ function ProgressCard({ content, regionCount }: { content: RegionContent | null;
             {viewed}/{itemTotal || '…'}
           </span>
         </div>
-        <div className="h-4 overflow-hidden rounded-full bg-line" role="progressbar" aria-label="Mục đã xem" aria-valuenow={percent} aria-valuemin={0} aria-valuemax={100}>
-          <div className="h-full rounded-full bg-gradient-to-r from-emerald-400 to-primary transition-all" style={{ width: `${percent}%` }} />
+        <div
+          className="h-4 overflow-hidden rounded-full bg-line"
+          role="progressbar"
+          aria-label="Mục đã xem"
+          aria-valuenow={percent}
+          aria-valuemin={0}
+          aria-valuemax={100}
+        >
+          <div
+            className="h-full rounded-full bg-gradient-to-r from-emerald-400 to-primary transition-all"
+            style={{ width: `${percent}%` }}
+          />
         </div>
       </div>
       <ul className="grid grid-cols-2 gap-3">

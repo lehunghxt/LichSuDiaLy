@@ -7,6 +7,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { GeoJSON, MapContainer, Marker, useMap } from 'react-leaflet'
 import { ErrorState, LoadingState } from '../../components/ui/states'
 import type { RegionMeta } from '../../types/content'
+import { countryPadding, regionPadding } from './fit'
 import { LocationMarkers } from './LocationMarkers'
 import type { Place } from './places'
 import {
@@ -26,10 +27,13 @@ const VIETNAM_BOUNDS: LatLngBoundsExpression = [
 ]
 
 /** Canh toàn quốc, chừa chỗ cho bảng chú giải nổi góc trái (đo thật vì cỡ chữ đổi theo màn hình) */
-function fitCountry(map: L.Map) {
+function legendBox(map: L.Map) {
   const legend = map.getContainer().closest('[data-map-frame]')?.querySelector<HTMLElement>('[data-map-legend]')
-  const left = legend ? legend.offsetLeft + legend.offsetWidth + 8 : 12
-  map.fitBounds(VIETNAM_BOUNDS, { paddingTopLeft: [left, 12], paddingBottomRight: [12, 12] })
+  return legend ? { left: legend.offsetLeft, top: legend.offsetTop, width: legend.offsetWidth, height: legend.offsetHeight } : null
+}
+
+function fitCountry(map: L.Map) {
+  map.fitBounds(VIETNAM_BOUNDS, countryPadding(map.getContainer().clientWidth, legendBox(map)))
 }
 
 export interface VietnamMapProps {
@@ -111,15 +115,21 @@ function RegionsLayer({
     [styleFor],
   )
 
-  // Theo hình mẫu: giữ toàn quốc, vùng đang chọn có nhãn bong bóng phía trên
+  // Theo hình mẫu: giữ toàn quốc, vùng đang chọn có nhãn bong bóng phía trên.
+  // Riêng màn xếp dọc (điện thoại, máy tính bảng) thì phóng vào vùng, vì ở cỡ toàn quốc các tỉnh quá nhỏ để chạm
   useEffect(() => {
-    if (!selectedRegionId) return
+    const zoomIn = regionPadding(window.innerWidth, legendBox(map))
+    if (!selectedRegionId) {
+      if (zoomIn) fitCountry(map)
+      return
+    }
     let tooltip: L.Tooltip | null = null
     layerRef.current?.eachLayer((l) => {
       const props = (l as PathWithFeature<WithOffshore<RegionFeatureProps>>).feature?.properties
       // Nhãn đặt trên phần đất liền, không tính quần đảo xa bờ
       if (l instanceof L.Polygon && props?.regionId === selectedRegionId && !props.offshore) {
         const b = l.getBounds()
+        if (zoomIn) map.fitBounds(b, zoomIn)
         tooltip = L.tooltip({ permanent: true, direction: 'top', className: 'region-callout', offset: [0, -6] })
           .setLatLng([b.getNorth(), b.getCenter().lng])
           .setContent(nameOf(selectedRegionId))
@@ -279,6 +289,8 @@ export default function VietnamMap(props: VietnamMapProps) {
         className="h-full w-full bg-sea"
         aria-label="Bản đồ các vùng địa lí Việt Nam"
       >
+        {/* Đặt trước RegionsLayer: canh toàn quốc lúc mở trước, rồi mới phóng vào vùng đang chọn (màn xếp dọc) */}
+        <FitCountry />
         <RegionsLayer
           data={data.regions}
           regions={props.regions}
@@ -295,10 +307,9 @@ export default function VietnamMap(props: VietnamMapProps) {
         )}
         <Labels data={data.labels} />
         {props.selectedRegionId && <LocationMarkers places={props.places} onOpen={props.onOpenPlace} />}
-        <FitCountry />
         <Controls />
       </MapContainer>
-      <p className="pointer-events-none absolute bottom-2 right-4 z-[1000] text-xs text-muted">
+      <p className="pointer-events-none absolute bottom-2 right-4 z-[1000] max-w-[60%] text-right text-xs text-muted">
         Ranh giới: vietnamese-provinces-database (MIT), đã đơn giản hoá để hiển thị.
       </p>
     </div>

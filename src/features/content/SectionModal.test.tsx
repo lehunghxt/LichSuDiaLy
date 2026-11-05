@@ -14,7 +14,9 @@ function content() {
     funFacts: ['Điều thú vị 1'],
     audio: { src: '/audio/a.mp3', credit: 'Người đọc', license: 'CC BY' },
     figures: [{ lesson: 4, figure: 2, page: 19, caption: 'Lược đồ vùng A' }],
-    sources: [{ title: 'SGK', url: 'https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172', page: 19, note: 'tr. 19' }],
+    sources: [
+      { title: 'SGK', url: 'https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172', page: 19, note: 'tr. 19' },
+    ],
   }
   raw.items.push({
     ...raw.items[0],
@@ -145,10 +147,7 @@ test('SGK figures link to the exact SGK page', () => {
   setup()
   const figures = screen.getByRole('region', { name: 'Hình minh hoạ trong SGK' })
   expect(within(figures).getByText('Lược đồ vùng A')).toBeInTheDocument()
-  expect(within(figures).getByRole('link', { name: 'Xem Hình 2 (Bài 4) trong SGK, trang 19' })).toHaveAttribute(
-    'href',
-    sgkPageUrl(19),
-  )
+  expect(within(figures).getByRole('link', { name: 'Xem Hình 2 (Bài 4) trong SGK, trang 19' })).toHaveAttribute('href', sgkPageUrl(19))
 })
 
 test('SGK source with page links to that page', () => {
@@ -211,4 +210,21 @@ test('item not tied to one province says it covers the whole region', () => {
   c.items[0] = { ...c.items[0]!, provinceId: undefined }
   setup({ items: c.items })
   expect(screen.getAllByTestId('item-place')[0]).toHaveTextContent('Toàn vùng Vùng A')
+})
+
+test('the current topic and section are scrolled into view sideways (phones show them as a scrolling row)', () => {
+  const calls: { el: Element; arg: unknown }[] = []
+  // jsdom không có scrollIntoView
+  Element.prototype.scrollIntoView = function (this: Element, arg?: boolean | ScrollIntoViewOptions) {
+    calls.push({ el: this, arg })
+  }
+  try {
+    setup({ topicId: 'khi-hau' })
+    const current = screen.getByRole('button', { name: /Khí hậu/ })
+    const section = screen.getByRole('button', { name: 'Thiên nhiên' })
+    expect(calls).toContainEqual({ el: current, arg: { block: 'nearest', inline: 'nearest' } })
+    expect(calls).toContainEqual({ el: section, arg: { block: 'nearest', inline: 'nearest' } })
+  } finally {
+    delete (Element.prototype as Partial<Element>).scrollIntoView
+  }
 })

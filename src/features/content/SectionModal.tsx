@@ -1,14 +1,7 @@
 import { X } from 'lucide-react'
 import { useEffect, useId, useRef, type KeyboardEvent } from 'react'
 import { EmptyState } from '../../components/ui/states'
-import {
-  SECTION_LABELS,
-  type ContentItem,
-  type RegionMeta,
-  type RegionOutline,
-  type SectionId,
-  type WebImage,
-} from '../../types/content'
+import { SECTION_LABELS, type ContentItem, type RegionMeta, type RegionOutline, type SectionId, type WebImage } from '../../types/content'
 import { ItemDetail } from './ItemDetail'
 import { itemSlug } from './links'
 import { findTopic } from './outlineNav'
@@ -50,8 +43,7 @@ export function SectionModal(props: SectionModalProps) {
   const topics = outline.sections.find((s) => s.id === section)?.topics ?? []
   const topic = findTopic(outline, section, topicId)
   const shown = (topic?.itemIds ?? []).map((id) => byId.get(id)).filter((i): i is ContentItem => i !== undefined)
-  const relatedOf = (item: ContentItem) =>
-    item.relatedIds.map((id) => byId.get(id)).filter((i): i is ContentItem => i !== undefined)
+  const relatedOf = (item: ContentItem) => item.relatedIds.map((id) => byId.get(id)).filter((i): i is ContentItem => i !== undefined)
 
   // Mở modal: khoá cuộn trang, đưa focus vào nút Đóng; đóng: trả focus về chỗ cũ
   useEffect(() => {
@@ -78,6 +70,13 @@ export function SectionModal(props: SectionModalProps) {
     else detailRef.current?.scrollTo?.({ top: 0 })
   }, [topicKey, slug])
 
+  // Điện thoại: phần và mục hiện thành hàng cuộn ngang → đưa nút đang chọn vào tầm nhìn
+  useEffect(() => {
+    for (const el of dialogRef.current?.querySelectorAll('[aria-pressed="true"], [aria-current="true"]') ?? []) {
+      el.scrollIntoView?.({ block: 'nearest', inline: 'nearest' })
+    }
+  }, [section, topicKey])
+
   // Giữ Tab trong modal
   const trapTab = (e: KeyboardEvent) => {
     if (e.key !== 'Tab' || !dialogRef.current) return
@@ -103,16 +102,19 @@ export function SectionModal(props: SectionModalProps) {
       onKeyDown={trapTab}
       className="fixed inset-0 z-[1300] flex flex-col bg-bg"
     >
-      <header className="flex flex-wrap items-center gap-4 border-b border-line bg-surface px-6 py-3 shadow-sm">
+      <header className="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-line bg-surface px-4 py-3 shadow-sm sm:px-6">
         <div className="min-w-0 flex-1">
           <p className="text-sm font-semibold" style={{ color: `var(--color-${region.color})` }}>
             {region.name}
           </p>
-          <h2 id={titleId} className="text-2xl font-bold">
+          <h2 id={titleId} className="text-xl font-bold sm:text-2xl">
             {SECTION_LABELS[section]}
           </h2>
         </div>
-        <nav aria-label="Các phần" className="flex flex-wrap gap-2">
+        <nav
+          aria-label="Các phần"
+          className="order-last -mx-4 flex w-[calc(100%+2rem)] gap-2 overflow-x-auto px-4 pb-1 sm:-mx-6 sm:w-[calc(100%+3rem)] sm:px-6 lg:order-none lg:mx-0 lg:w-auto lg:flex-wrap lg:overflow-visible lg:p-0"
+        >
           {outline.sections.map((s) => {
             const Icon = SECTION_ICONS[s.id]
             const active = s.id === section
@@ -122,7 +124,7 @@ export function SectionModal(props: SectionModalProps) {
                 type="button"
                 aria-pressed={active}
                 onClick={() => onSelect(s.id, null)}
-                className={`inline-flex min-h-11 items-center gap-2 rounded-full border-2 px-3 text-sm font-semibold transition-colors ${
+                className={`inline-flex min-h-11 shrink-0 items-center gap-2 whitespace-nowrap rounded-full border-2 px-3 text-sm font-semibold transition-colors ${
                   active ? 'border-primary bg-primary text-white' : 'border-line bg-surface hover:border-primary'
                 }`}
               >
@@ -143,25 +145,25 @@ export function SectionModal(props: SectionModalProps) {
         </button>
       </header>
 
-      <div className="grid min-h-0 flex-1 grid-cols-[300px_minmax(0,1fr)]">
-        <aside className="overflow-y-auto border-r border-line bg-surface p-4">
+      <div className="flex min-h-0 flex-1 flex-col md:grid md:grid-cols-[240px_minmax(0,1fr)] lg:grid-cols-[300px_minmax(0,1fr)]">
+        <aside className="shrink-0 border-b border-line bg-surface p-2 md:overflow-y-auto md:border-b-0 md:border-r md:p-4">
           {topics.length > 0 && (
-            <ul aria-label="Các mục trong phần" className="flex flex-col gap-1.5">
+            <ul aria-label="Các mục trong phần" className="flex gap-1.5 overflow-x-auto md:flex-col md:overflow-visible">
               {topics.map((t) => {
                 const active = t.id === topic?.id
                 const empty = !t.itemIds.some((id) => byId.has(id))
                 return (
-                  <li key={t.id}>
+                  <li key={t.id} className="shrink-0 md:shrink">
                     <button
                       type="button"
                       aria-current={active ? 'true' : undefined}
                       onClick={() => onSelect(section, t.id)}
-                      className={`w-full rounded-2xl border-2 px-4 py-2.5 text-left transition-colors ${
+                      className={`min-h-11 w-full whitespace-nowrap rounded-2xl border-2 px-4 py-2 text-left transition-colors md:whitespace-normal md:py-2.5 ${
                         active ? 'border-primary bg-primary-soft text-primary' : 'border-transparent hover:border-line hover:bg-bg'
                       } ${empty && !active ? 'text-muted' : ''}`}
                     >
                       <span className="block font-semibold leading-snug">{t.title}</span>
-                      {t.hint && <span className="block text-sm leading-snug text-muted">{t.hint}</span>}
+                      {t.hint && <span className="hidden text-sm leading-snug text-muted md:block">{t.hint}</span>}
                       {empty && <span className="block text-xs italic text-muted">(đang cập nhật)</span>}
                     </button>
                   </li>
@@ -170,12 +172,14 @@ export function SectionModal(props: SectionModalProps) {
             </ul>
           )}
         </aside>
-        <div ref={detailRef} className="overflow-y-auto p-8">
+        <div ref={detailRef} className="min-h-0 flex-1 overflow-y-auto p-4 sm:p-8">
           <div className="mx-auto flex max-w-5xl flex-col gap-10">
             {shown.length === 0 ? (
               <EmptyState
                 title="Nội dung đang được cập nhật"
-                description={topic ? `Phần "${topic.title}" sẽ sớm có nội dung. Em hãy chọn mục khác nhé!` : 'Em hãy chọn phần khác ở phía trên nhé!'}
+                description={
+                  topic ? `Phần "${topic.title}" sẽ sớm có nội dung. Em hãy chọn mục khác nhé!` : 'Em hãy chọn phần khác ở phía trên nhé!'
+                }
               />
             ) : (
               shown.map((item, i) => (
