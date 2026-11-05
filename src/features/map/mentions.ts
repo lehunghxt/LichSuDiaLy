@@ -29,6 +29,12 @@ const PATTERNS: Record<string, string> = {
   'dong-nai': '(?<!sông )Đồng Nai',
 }
 
+// Địa danh SGK nêu mà không kèm tên tỉnh (Bình Thuận nhập vào Lâm Đồng năm 2025)
+const PLACES: Record<string, string[]> = {
+  'thanh-hoa': ['Thành nhà Hồ'],
+  'lam-dong': ['Lâm Viên', 'Di Linh', 'Bình Thuận'],
+}
+
 const sentencesOf = (text: string) =>
   norm(text)
     .split(/(?<=[.;!?])\s+/)
@@ -39,7 +45,8 @@ const sentencesOf = (text: string) =>
 export function provinceMentions(items: ContentItem[], provinceId: string): ProvinceMention[] {
   const province = provinces.find((p) => p.id === provinceId)
   if (!province) return []
-  const pattern = new RegExp(`${PATTERNS[provinceId] ?? escape(norm(province.name))}(?![\\p{L}])`, 'u')
+  const names = [PATTERNS[provinceId] ?? escape(norm(province.name)), ...(PLACES[provinceId] ?? []).map(escape)]
+  const pattern = new RegExp(`(?:${names.join('|')})(?![\\p{L}])`, 'u')
   return items
     .filter((i) => i.provinceId !== provinceId)
     .map((item) => ({

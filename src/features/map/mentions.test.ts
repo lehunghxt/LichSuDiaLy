@@ -47,3 +47,13 @@ test('provinceMentions: no match or unknown province → empty', () => {
   expect(provinceMentions(items, 'ca-mau')).toEqual([])
   expect(provinceMentions(items, 'khong-co')).toEqual([])
 })
+
+test('provinceMentions: places the lessons name without their province still count (Thành nhà Hồ → Thanh Hoá, Lâm Viên/Di Linh/Bình Thuận → Lâm Đồng)', () => {
+  const places = [
+    item('r__di-san', { summary: 'Vùng có nhiều di sản như: Thành nhà Hồ, Phố cổ Hội An.' }),
+    item('r__dia-hinh', { keyPoints: ['Các cao nguyên Lâm Viên, Di Linh (cao khoảng 1 000–1 500 m).'] }),
+    item('r__ka-te', { funFacts: ['Lễ hội Ka-tê của người Chăm ở Bình Thuận được công nhận năm 2022.'] }),
+  ]
+  expect(provinceMentions(places, 'thanh-hoa').map((m) => m.item.id)).toEqual(['r__di-san'])
+  expect(provinceMentions(places, 'lam-dong').map((m) => m.item.id)).toEqual(['r__dia-hinh', 'r__ka-te'])
+})

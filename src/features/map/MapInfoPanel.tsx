@@ -4,6 +4,7 @@ import { SmartImage } from '../../components/ui/SmartImage'
 import { WebImageFigure } from '../../components/ui/WebImageFigure'
 import { provinceName } from '../../lib/provinces'
 import { provinceMentions } from './mentions'
+import { provinceFacts } from './profiles'
 import { EmptyState, ErrorState, LoadingState } from '../../components/ui/states'
 import {
   SECTION_LABELS,
@@ -227,6 +228,7 @@ interface ProvinceCardProps {
 function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen }: ProvinceCardProps) {
   const name = provinceName(provinceId) ?? provinceId
   const items = content?.items.filter((i) => i.provinceId === provinceId) ?? []
+  const facts = provinceFacts(provinceId)
   const mentions = useMemo(() => (content ? provinceMentions(content.items, provinceId) : []), [content, provinceId])
   const photos = imageLibrary.forProvince(images, provinceId).slice(0, 4)
   return (
@@ -262,7 +264,7 @@ function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen
           ))}
         </ul>
       )}
-      {!content ? null : items.length === 0 && mentions.length === 0 ? (
+      {!content ? null : items.length === 0 && mentions.length === 0 && facts.length === 0 ? (
         <p className="text-sm text-muted">Bài học chưa có địa danh nào của tỉnh này. Em xem các phần bên dưới nhé!</p>
       ) : items.length === 0 ? null : (
         <>
@@ -287,6 +289,36 @@ function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen
             })}
           </ul>
         </>
+      )}
+      {facts.length > 0 && (
+        <section
+          aria-label={`Tìm hiểu thêm về tỉnh ${name}`}
+          className="flex flex-col gap-2 rounded-xl border border-dashed border-amber-300 bg-white/70 p-3"
+        >
+          <p className="flex flex-wrap items-center gap-2 text-sm font-semibold">
+            Tìm hiểu thêm
+            <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-bold text-amber-800">Ngoài SGK</span>
+          </p>
+          <ul className="flex list-disc flex-col gap-1.5 pl-5 text-sm">
+            {facts.map((f) => (
+              <li key={f.text}>
+                {f.text}{' '}
+                {f.source.url && (
+                  <a
+                    href={f.source.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Nguồn: ${f.source.title}`}
+                    title={f.source.title}
+                    className="text-xs text-muted underline hover:text-ink"
+                  >
+                    (nguồn)
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
       {mentions.length > 0 && (
         <>

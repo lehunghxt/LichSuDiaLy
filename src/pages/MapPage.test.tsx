@@ -31,6 +31,12 @@ vi.mock('../features/map/VietnamMap', () => ({
       <button type="button" onClick={() => props.onSelectProvince('can-tho')}>
         polygon-can-tho
       </button>
+      <button type="button" onClick={() => props.onSelectProvince('thanh-hoa')}>
+        polygon-thanh-hoa
+      </button>
+      <button type="button" onClick={() => props.onSelectProvince('quang-tri')}>
+        polygon-quang-tri
+      </button>
     </div>
   ),
 }))
@@ -462,4 +468,17 @@ test('province card also lists what the lessons say about the province elsewhere
   expect(within(said).getByText(/nhà máy thuỷ điện: Lai Châu/)).toBeInTheDocument()
   await userEvent.click(within(said).getByRole('button', { name: 'Xem mục Sản xuất thủy điện' }))
   expect(await screen.findByRole('heading', { level: 3, name: 'Sản xuất thủy điện' })).toBeInTheDocument()
+})
+
+test('province card: extra facts from outside the textbook, labelled as such, each with its source link', async () => {
+  renderAt('/ban-do/bac-trung-bo-va-nam-trung-bo')
+  await screen.findByRole('region', { name: 'Bắc Trung Bộ và Nam Trung Bộ' })
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-thanh-hoa' }))
+  const card = screen.getByRole('region', { name: 'Tỉnh đang xem: Thanh Hóa' })
+  const more = within(card).getByRole('region', { name: 'Tìm hiểu thêm về tỉnh Thanh Hóa' })
+  expect(more).toHaveTextContent('Ngoài SGK')
+  expect(more).toHaveTextContent(/Thành nhà Hồ/)
+  expect(within(more).getAllByRole('link', { name: /Nguồn:/ })[0]).toHaveAttribute('href', expect.stringMatching(/^https:\/\//))
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-quang-tri' }))
+  expect(screen.queryByRole('region', { name: /Tìm hiểu thêm/ })).not.toBeInTheDocument()
 })
