@@ -28,7 +28,7 @@ export function LocatePins({ regions, regionId, pins, onPick, chosenId, correctI
 
   // Chuột và màn hình cảm ứng chạm vào điểm; bàn phím và trình đọc màn hình dùng danh sách nút bên dưới
   return (
-    <svg aria-hidden viewBox={shape.viewBox} className="mx-auto h-auto max-h-[60vh] w-full max-w-md">
+    <svg aria-hidden viewBox={shape.viewBox} className="mx-auto h-auto max-h-[60vh] w-full max-w-xl overflow-visible">
       {shape.paths.map((p) => (
         <path
           key={p.regionId}
@@ -49,8 +49,8 @@ export function LocatePins({ regions, regionId, pins, onPick, chosenId, correctI
             onClick={() => !locked && onPick(pin.id)}
             className={locked ? undefined : 'cursor-pointer'}
           >
-            <circle cx={x} cy={y} r={4.2} fill={fill(pin.id)} stroke="#fff" strokeWidth={0.9} />
-            <text x={x} y={y} dy="0.35em" textAnchor="middle" fontSize={4.6} fontWeight={700} fill="#fff">
+            <circle cx={x} cy={y} r={5.5} fill={fill(pin.id)} stroke="#fff" strokeWidth={1.1} />
+            <text x={x} y={y} dy="0.35em" textAnchor="middle" fontSize={6} fontWeight={700} fill="#fff">
               {pin.label}
             </text>
           </g>

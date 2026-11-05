@@ -285,6 +285,48 @@
           }
         ],
         "status": "draft"
+      },
+      {
+        "id": "q13",
+        "type": "map_locate",
+        "prompt": "Trên bản đồ vùng có ba điểm A, B, C. Điểm nào là Khu di tích Đền Hùng (tỉnh Phú Thọ)?",
+        "targetItemId": "trung-du-mien-nui-phia-bac__den-hung",
+        "candidateItemIds": [
+          "trung-du-mien-nui-phia-bac__cot-co-lung-cu",
+          "trung-du-mien-nui-phia-bac__den-hung",
+          "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang"
+        ],
+        "explanation": "Khu di tích Đền Hùng chủ yếu thuộc xã Hy Cương, tỉnh Phú Thọ.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 7. Đền Hùng và lễ giỗ Tổ Hùng Vương",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 32,
+            "note": "tr. 32"
+          }
+        ],
+        "status": "draft"
+      },
+      {
+        "id": "q14",
+        "type": "map_locate",
+        "prompt": "Cột cờ Lũng Cú nằm ở địa đầu Tổ quốc. Điểm nào trên bản đồ là Cột cờ Lũng Cú?",
+        "targetItemId": "trung-du-mien-nui-phia-bac__cot-co-lung-cu",
+        "candidateItemIds": [
+          "trung-du-mien-nui-phia-bac__cot-co-lung-cu",
+          "trung-du-mien-nui-phia-bac__den-hung",
+          "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang"
+        ],
+        "explanation": "Cột cờ Lũng Cú được xây dựng trên đỉnh núi Rồng thuộc xã Lũng Cú, tỉnh Tuyên Quang; nằm ở địa đầu Tổ quốc.",
+        "sources": [
+          {
+            "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+            "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+            "page": 19,
+            "note": "tr. 19"
+          }
+        ],
+        "status": "draft"
       }
     ]
   }
