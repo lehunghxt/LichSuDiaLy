@@ -1,4 +1,4 @@
-import { X } from 'lucide-react'
+import { ImageOff, X } from 'lucide-react'
 import { type KeyboardEvent as ReactKeyboardEvent, useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import type { WebImage } from '../../types/content'
@@ -18,6 +18,7 @@ export function ImageViewer({ image, onClose }: ImageViewerProps) {
   const rootRef = useRef<HTMLDivElement>(null)
   const closeRef = useRef<HTMLButtonElement>(null)
   const [loaded, setLoaded] = useState(false)
+  const [failed, setFailed] = useState(false)
   const closeCb = useRef(onClose)
   closeCb.current = onClose
 
@@ -63,7 +64,8 @@ export function ImageViewer({ image, onClose }: ImageViewerProps) {
       aria-modal="true"
       aria-label={image.alt}
       onKeyDown={trapTab}
-      className="fixed inset-0 z-[1400] flex flex-col bg-ink/90">
+      className="fixed inset-0 z-[1400] flex flex-col bg-ink/90"
+    >
       <button
         ref={closeRef}
         type="button"
@@ -78,24 +80,34 @@ export function ImageViewer({ image, onClose }: ImageViewerProps) {
         onClick={(e) => e.target === e.currentTarget && onClose()}
         className="relative flex min-h-0 flex-1 items-center justify-center p-3 sm:p-6"
       >
-        {!loaded && (
-          <span className="absolute inset-3 m-auto aspect-[4/3] max-h-[calc(100%-1.5rem)] max-w-[calc(100%-1.5rem)] sm:inset-6">
-            <ImageSkeleton className="rounded-lg bg-surface/15" />
-          </span>
+        {failed ? (
+          <div className="flex flex-col items-center gap-2 text-surface">
+            <ImageOff aria-hidden className="size-10" />
+            <span>Hình ảnh hiện không tải được</span>
+          </div>
+        ) : (
+          !loaded && (
+            <span className="absolute inset-3 m-auto aspect-[4/3] max-h-[calc(100%-1.5rem)] max-w-[calc(100%-1.5rem)] sm:inset-6">
+              <ImageSkeleton className="rounded-lg bg-surface/15" />
+            </span>
+          )
         )}
-        <img
-          ref={markIfComplete(setLoaded)}
-          src={image.src.url}
-          srcSet={image.src.srcset.map((s) => `${s.url} ${s.width}w`).join(', ')}
-          sizes="100vw"
-          alt={image.alt}
-          width={image.src.width}
-          height={image.src.height}
-          decoding="async"
-          referrerPolicy="no-referrer"
-          onLoad={() => setLoaded(true)}
-          className={`max-h-full max-w-full rounded-lg object-contain transition-opacity duration-300 ${loaded ? 'opacity-100' : 'opacity-0'}`}
-        />
+        {!failed && (
+          <img
+            ref={markIfComplete(setLoaded)}
+            src={image.src.url}
+            srcSet={image.src.srcset.map((s) => `${s.url} ${s.width}w`).join(', ')}
+            sizes="100vw"
+            alt={image.alt}
+            width={image.src.width}
+            height={image.src.height}
+            decoding="async"
+            referrerPolicy="no-referrer"
+            onLoad={() => setLoaded(true)}
+            onError={() => setFailed(true)}
+            className={`max-h-full max-w-full rounded-lg object-contain transition-opacity duration-300 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+          />
+        )}
       </div>
       <div className="mx-auto mb-3 flex w-[min(100%-1.5rem,48rem)] flex-col gap-0.5 rounded-xl bg-surface px-4 py-2.5 leading-snug">
         <span className="text-sm">{image.caption}</span>

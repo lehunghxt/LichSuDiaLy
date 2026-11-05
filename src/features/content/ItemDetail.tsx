@@ -50,7 +50,10 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
           {regionProvinces.length > 0 && (
             <ul aria-label="Các tỉnh trong vùng" className="flex flex-wrap gap-1.5 pl-7">
               {regionProvinces.map((name) => (
-                <li key={name} className="rounded-full bg-amber-50 px-2.5 py-0.5 text-sm font-semibold text-amber-900 ring-1 ring-amber-200">
+                <li
+                  key={name}
+                  className="rounded-full bg-amber-50 px-2.5 py-0.5 text-sm font-semibold text-amber-900 ring-1 ring-amber-200"
+                >
                   {name}
                 </li>
               ))}
@@ -70,7 +73,13 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
       {item.images.length > 0 && (
         <div className="grid gap-3 sm:grid-cols-2">
           {item.images.map((img, i) => (
-            <SmartImage key={img.imageId} image={img} priority={i === 0} showCredit sizes="(min-width: 1024px) 35vw, 50vw" />
+            <SmartImage
+              key={img.imageId}
+              image={img}
+              priority={i === 0}
+              showCredit
+              sizes="(min-width: 1024px) 35vw, (min-width: 640px) 50vw, 100vw"
+            />
           ))}
         </div>
       )}
@@ -80,7 +89,12 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
           <ul className="grid gap-4 sm:grid-cols-2">
             {webImages.map((img, i) => (
               <li key={img.id}>
-                <WebImageFigure image={img} priority={i === 0} showCaption sizes="(min-width: 1024px) 30vw, 50vw" />
+                <WebImageFigure
+                  image={img}
+                  priority={i === 0}
+                  showCaption
+                  sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
+                />
               </li>
             ))}
           </ul>
@@ -115,7 +129,9 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
             ))}
           </ul>
           {item.images.length === 0 && (
-            <p className="mt-3 text-sm text-muted">Hình trong SGK thuộc bản quyền Nhà xuất bản Giáo dục Việt Nam; em bấm vào thẻ để xem hình trong sách.</p>
+            <p className="mt-3 text-sm text-muted">
+              Hình trong SGK thuộc bản quyền Nhà xuất bản Giáo dục Việt Nam; em bấm vào thẻ để xem hình trong sách.
+            </p>
           )}
         </Section>
       )}

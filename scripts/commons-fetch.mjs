@@ -10,7 +10,7 @@
 // Tác giả, giấy phép, link gốc lấy từ API Wikimedia Commons, không gõ tay.
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
-import { USER_AGENT, apiUrl, cleanArtist, mergeStatus, toWebImage } from './lib/commons.mjs'
+import { USER_AGENT, apiUrl, cleanArtist, mergeStatus, pagesOf, toWebImage } from './lib/commons.mjs'
 
 const root = path.resolve(import.meta.dirname, '..')
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -30,9 +30,8 @@ async function query(titles) {
       await sleep(5000 * (attempt + 1))
     }
     if (!res.ok) throw new Error(`Commons API ${res.status}`)
-    const data = await res.json()
-    const renamed = new Map((data.query.normalized ?? []).map((n) => [n.to, n.from]))
-    for (const p of data.query.pages) {
+    const { pages: found, renamed } = pagesOf(await res.json())
+    for (const p of found) {
       pages.set(p.title, p)
       if (renamed.has(p.title)) pages.set(renamed.get(p.title), p)
     }
@@ -85,7 +84,9 @@ async function build(regionId) {
     }
   }
 
-  const existingFiles = readdirSync(outDir).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5))
+  const existingFiles = readdirSync(outDir)
+    .filter((f) => f.endsWith('.json'))
+    .map((f) => f.slice(0, -5))
   for (const name of new Set([...existingFiles, ...groups.keys(), '_toan-vung'])) {
     const file = path.join(outDir, `${name}.json`)
     const old = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : []

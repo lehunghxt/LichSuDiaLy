@@ -3,7 +3,7 @@
 // Chạy trước mỗi lần deploy. Có link hỏng thì thoát với mã 1.
 import { readFileSync, readdirSync } from 'node:fs'
 import path from 'node:path'
-import { USER_AGENT } from './lib/commons.mjs'
+import { USER_AGENT, checkSummary } from './lib/commons.mjs'
 
 const dir = path.resolve(import.meta.dirname, '../src/data/images')
 const only = process.argv[2]
@@ -48,11 +48,6 @@ async function worker() {
 }
 await Promise.all(Array.from({ length: 2 }, worker))
 
-console.log(`Đã kiểm tra ${checks.length} link${only ? ` của vùng ${only}` : ''}.`)
-if (unchecked.length) console.log(`${unchecked.length} link chưa kiểm tra được vì Commons giới hạn tốc độ; chạy lại sau.`)
-if (broken.length) {
-  console.log(`${broken.length} link hỏng:`)
-  for (const b of broken) console.log(`  - ${b.id}: ${b.why} ${b.url}`)
-  process.exit(1)
-}
-console.log('Không có link hỏng.')
+const summary = checkSummary({ total: checks.length, broken, unchecked, only })
+for (const line of summary.lines) console.log(line)
+process.exit(summary.exitCode)

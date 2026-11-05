@@ -228,3 +228,27 @@ test('the current topic and section are scrolled into view sideways (phones show
     delete (Element.prototype as Partial<Element>).scrollIntoView
   }
 })
+
+test('item photos tell the browser they fill the width on phones (one column below sm), so a sharp size is downloaded', () => {
+  const U = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/F.jpg'
+  setup({
+    images: [
+      {
+        id: 'p__f',
+        provider: 'wikimedia-commons',
+        regionId: 'vung-a',
+        provinceId: 'p',
+        section: 'thien-nhien',
+        itemIds: ['vung-a__dia-danh-1'],
+        alt: 'Ảnh địa danh',
+        caption: 'Địa danh 1.',
+        src: { url: `${U}/960px-F.jpg`, width: 960, height: 720, srcset: [{ url: `${U}/500px-F.jpg`, width: 500 }] },
+        attribution: { title: 'File:F.jpg', author: 'A', license: 'CC BY 4.0', sourceUrl: 'https://commons.wikimedia.org/wiki/File:F.jpg' },
+        status: 'draft',
+      },
+    ],
+  })
+  const sizes = screen.getByRole('img', { name: 'Ảnh địa danh' }).getAttribute('sizes') ?? ''
+  expect(sizes.split(',').at(-1)?.trim()).toBe('100vw')
+  expect(sizes).toContain('(min-width: 640px) 50vw')
+})

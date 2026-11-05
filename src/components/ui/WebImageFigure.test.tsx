@@ -57,7 +57,10 @@ test('caption and credit links to author, license and source page', () => {
   render(<WebImageFigure image={image()} sizes="50vw" showCaption />)
   const fig = screen.getByRole('figure')
   expect(fig).toHaveTextContent('Đỉnh Phan-xi-păng (tỉnh Lào Cai).')
-  expect(within(fig).getByRole('link', { name: 'Christophe95' })).toHaveAttribute('href', 'https://commons.wikimedia.org/wiki/User:Christophe95')
+  expect(within(fig).getByRole('link', { name: 'Christophe95' })).toHaveAttribute(
+    'href',
+    'https://commons.wikimedia.org/wiki/User:Christophe95',
+  )
   expect(within(fig).getByRole('link', { name: 'CC BY-SA 4.0' })).toHaveAttribute('href', 'https://creativecommons.org/licenses/by-sa/4.0')
   const source = within(fig).getByRole('link', { name: 'Wikimedia Commons' })
   expect(source).toHaveAttribute('href', 'https://commons.wikimedia.org/wiki/File:F.jpg')
@@ -161,4 +164,15 @@ test('Tab and Shift+Tab stay inside the image viewer', () => {
   expect(last).toHaveFocus()
   fireEvent.keyDown(last, { key: 'Tab' })
   expect(close).toHaveFocus()
+})
+
+test('full-screen viewer: if the large image fails, the skeleton stops and a message shows, caption and credit stay', () => {
+  render(<WebImageFigure image={image()} sizes="50vw" />)
+  fireEvent.click(screen.getByRole('button', { name: /Xem ảnh lớn/ }))
+  const viewer = screen.getByRole('dialog', { name: 'Đỉnh núi trong mây' })
+  fireEvent.error(within(viewer).getByRole('img'))
+  expect(within(viewer).queryByTestId('image-skeleton')).not.toBeInTheDocument()
+  expect(within(viewer).getByText('Hình ảnh hiện không tải được')).toBeInTheDocument()
+  expect(within(viewer).getByText('Đỉnh Phan-xi-păng (tỉnh Lào Cai).')).toBeInTheDocument()
+  expect(within(viewer).getByRole('button', { name: 'Đóng ảnh' })).toBeInTheDocument()
 })

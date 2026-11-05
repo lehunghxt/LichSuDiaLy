@@ -29,13 +29,52 @@ const decode = (s) =>
     return ENTITIES[e.toLowerCase()] ?? m
   })
 
+/** Body JSON của API → các trang ảnh và bảng tên đã chuẩn hoá (tên mới → tên đã hỏi). API báo lỗi thì ném lỗi rõ ràng */
+export function pagesOf(data) {
+  if (data?.error) throw new Error(`Commons API lỗi ${data.error.code}: ${data.error.info}`)
+  if (!Array.isArray(data?.query?.pages)) throw new Error('Commons API trả về dữ liệu không có query.pages')
+  return { pages: data.query.pages, renamed: new Map((data.query.normalized ?? []).map((n) => [n.to, n.from])) }
+}
+
+/** Tên tác giả đã bỏ thẻ HTML → bỏ phần chữ ký wiki: (talk), (thảo luận), User:, mốc giờ, url, ngoặc wikitext */
+export function cleanAuthorText(text) {
+  return (
+    text
+      // [url Nhãn] → Nhãn; [Nhãn] → Nhãn
+      .replace(/\[(?:https?:)?\/\/\S+\s+([^\]]+)\]/g, '$1')
+      .replace(/\[([^\]]+)\]/g, '$1')
+      .replace(/\(\s*(?:talk|thảo luận|more photos|User:[^)]*)\s*\)/gi, '')
+      .replace(/\d{1,2}:\d{2}, \d{1,2} \w+ \d{4} \(UTC\)/g, '')
+      .replace(/,?\s*https?:\/\/\S+/g, '')
+      .replace(/\btalk\b/gi, '')
+      // vi:User:Tên (người dùng wiki tiếng Việt) → Tên
+      .replace(/(^|\s)[a-z]{2,3}:(?=\S)/g, '$1')
+      .replace(/\bUser:/g, '')
+      .replace(/\s+([,/])/g, ' $1')
+      .replace(/\s+,/g, ',')
+      .replace(/\s+/g, ' ')
+      .replace(/[\s,/]+$/, '')
+      .trim()
+  )
+}
+
+/** Link tới trang wiki chưa tồn tại (redlink) mở form tạo trang → bỏ link, vẫn giữ tên tác giả */
+export function cleanAuthorUrl(url) {
+  if (!url || /[?&]redlink=1\b/.test(url) || /[?&]action=edit\b/.test(url)) return undefined
+  return url
+}
+
 /** HTML của trường Artist/Credit → text sạch + link đầu tiên (nếu có) */
 export function cleanArtist(html) {
-  const author = decode(html.replace(/<[^>]*>/g, ' ')).replace(/\s+/g, ' ').trim()
+  const author = cleanAuthorText(
+    decode(html.replace(/<[^>]*>/g, ' '))
+      .replace(/\s+/g, ' ')
+      .trim(),
+  )
   const href = /href="([^"]+)"/.exec(html)?.[1]
-  if (!href) return { author }
-  const authorUrl = href.startsWith('//') ? `https:${href}` : href.startsWith('/') ? `https://commons.wikimedia.org${href}` : href
-  return { author, authorUrl: decode(authorUrl) }
+  const absolute = href && (href.startsWith('//') ? `https:${href}` : href.startsWith('/') ? `https://commons.wikimedia.org${href}` : href)
+  const authorUrl = cleanAuthorUrl(absolute && decode(absolute))
+  return authorUrl ? { author, authorUrl } : { author }
 }
 
 export function normalizeLicense(raw) {
@@ -131,8 +170,20 @@ export function toWebImage(pick, page) {
 export function mergeStatus(image, existing) {
   const old = existing.find((e) => e.id === image.id)
   const same =
-    old?.status === 'verified' &&
-    old.src?.url === image.src.url &&
-    JSON.stringify(old.attribution) === JSON.stringify(image.attribution)
+    old?.status === 'verified' && old.src?.url === image.src.url && JSON.stringify(old.attribution) === JSON.stringify(image.attribution)
   return same ? { ...image, status: 'verified' } : image
+}
+
+/** Tóm tắt kết quả commons-check. Link bị giới hạn tốc độ không tính là đã kiểm tra */
+export function checkSummary({ total, broken, unchecked, only }) {
+  const checked = total - unchecked.length
+  const where = only ? ` của vùng ${only}` : ''
+  const lines = [unchecked.length ? `Đã kiểm tra ${checked}/${total} link${where}.` : `Đã kiểm tra ${total} link${where}.`]
+  if (unchecked.length) lines.push(`${unchecked.length} link chưa kiểm tra được vì Commons giới hạn tốc độ; chạy lại sau.`)
+  if (broken.length) {
+    lines.push(`${broken.length} link hỏng:`, ...broken.map((b) => `  - ${b.id}: ${b.why} ${b.url}`))
+    return { lines, exitCode: 1 }
+  }
+  lines.push(unchecked.length ? `Trong ${checked} link đã kiểm tra, không có link hỏng.` : 'Không có link hỏng.')
+  return { lines, exitCode: 0 }
 }
