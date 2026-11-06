@@ -184,10 +184,14 @@ export function SectionModal(props: SectionModalProps) {
             ref={closeRef}
             type="button"
             onClick={onClose}
-            className="inline-flex min-h-11 items-center gap-2 rounded-full bg-ink px-4 font-semibold text-white hover:brightness-110"
+            aria-label="Đóng"
+            title="Đóng"
+            className="inline-flex size-10 shrink-0 items-center justify-center gap-1.5 rounded-full bg-bg text-muted transition-colors hover:bg-line hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/50 lg:h-10 lg:w-auto lg:border lg:border-line lg:bg-surface lg:px-4 lg:font-semibold lg:text-ink"
           >
-            <X aria-hidden className="size-5" />
-            Đóng
+            <X aria-hidden className="size-5" strokeWidth={2.5} />
+            <span aria-hidden className="hidden lg:inline">
+              Đóng
+            </span>
           </button>
         </header>
 
