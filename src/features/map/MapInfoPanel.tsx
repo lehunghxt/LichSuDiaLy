@@ -2,7 +2,7 @@ import { ArrowLeft, BookOpen, ChevronRight, Clock, Compass, ImageIcon, MapPin, M
 import { useMemo } from 'react'
 import { SmartImage } from '../../components/ui/SmartImage'
 import { WebImageFigure } from '../../components/ui/WebImageFigure'
-import { provinceName } from '../../lib/provinces'
+import { formedFrom, formerUnits, provinceName, provinceTitle } from '../../lib/provinces'
 import { provinceMentions } from './mentions'
 import { provinceFacts } from './profiles'
 import { EmptyState, ErrorState, LoadingState } from '../../components/ui/states'
@@ -224,11 +224,17 @@ interface ProvinceCardProps {
   onOpen(item: ContentItem): void
 }
 
+// Danh sách tỉnh mới và các tỉnh cũ hợp nhất, theo Nghị quyết 202/2025/QH15 (báo Nhân Dân đăng toàn văn danh sách)
+const MERGER_SOURCE =
+  'https://nhandan.vn/quoc-hoi-thong-qua-nghi-quyet-ve-sap-xep-don-vi-hanh-chinh-cap-tinh-ca-nuoc-con-34-tinh-thanh-post886206.html'
+
 /** Tỉnh đang chọn trên bản đồ: tên, vùng, các mục trong bài học gắn với tỉnh */
 function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen }: ProvinceCardProps) {
   const name = provinceName(provinceId) ?? provinceId
   const items = content?.items.filter((i) => i.provinceId === provinceId) ?? []
   const facts = provinceFacts(provinceId)
+  const former = formedFrom(provinceId)
+  const title = provinceTitle(provinceId)
   const mentions = useMemo(() => (content ? provinceMentions(content.items, provinceId) : []), [content, provinceId])
   const photos = imageLibrary.forProvince(images, provinceId).slice(0, 4)
   return (
@@ -242,7 +248,7 @@ function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen
         </span>
         <div className="min-w-0 flex-1">
           <p className="text-xs font-bold uppercase tracking-wide text-amber-700">Tỉnh đang xem</p>
-          <h3 className="text-xl font-bold leading-tight">Tỉnh {name}</h3>
+          <h3 className="text-xl font-bold leading-tight">{title}</h3>
           <p className="text-sm text-muted">Thuộc vùng {regionName}</p>
         </div>
         <button
@@ -254,6 +260,32 @@ function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen
         >
           <X aria-hidden className="size-5" />
         </button>
+      </div>
+      <div data-testid="province-history" className="rounded-xl bg-white/70 p-3 text-sm">
+        {former.length > 0 ? (
+          <>
+            <p className="font-semibold">
+              Từ năm 2025, {title.charAt(0).toLowerCase() + title.slice(1)} được hợp nhất từ {formerUnits(provinceId)} cũ:
+            </p>
+            <ul className="mt-1.5 flex flex-wrap gap-1.5">
+              {former.map((n) => (
+                <li key={n} className="rounded-full border border-amber-200 bg-amber-50 px-2.5 py-0.5 font-semibold text-amber-900">
+                  {n}
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : (
+          <p className="font-semibold">{title} giữ nguyên, không hợp nhất trong đợt sắp xếp năm 2025.</p>
+        )}
+        <a
+          href={MERGER_SOURCE}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-1.5 inline-block text-xs text-muted underline hover:text-ink"
+        >
+          Theo Nghị quyết 202/2025/QH15 của Quốc hội
+        </a>
       </div>
       {photos.length > 0 && (
         <ul aria-label={`Hình ảnh tỉnh ${name}`} className="grid grid-cols-2 gap-3">

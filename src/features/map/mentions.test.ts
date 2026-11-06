@@ -57,3 +57,13 @@ test('provinceMentions: places the lessons name without their province still cou
   expect(provinceMentions(places, 'thanh-hoa').map((m) => m.item.id)).toEqual(['r__di-san'])
   expect(provinceMentions(places, 'lam-dong').map((m) => m.item.id)).toEqual(['r__dia-hinh', 'r__ka-te'])
 })
+
+test('provinceMentions: former province names count for the new province, river names do not', () => {
+  const old = [
+    item('r__mi-quang', { summary: 'Mì Quảng là đặc sản của Quảng Nam.' }),
+    item('r__song', { summary: 'Sông Thái Bình chảy qua đồng bằng.' }),
+    item('r__lua', { summary: 'Lúa được trồng nhiều ở Thái Bình.' }),
+  ]
+  expect(provinceMentions(old, 'da-nang').map((m) => m.item.id)).toEqual(['r__mi-quang'])
+  expect(provinceMentions(old, 'hung-yen').map((m) => m.item.id)).toEqual(['r__lua'])
+})

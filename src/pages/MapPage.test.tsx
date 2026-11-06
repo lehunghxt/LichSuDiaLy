@@ -483,3 +483,24 @@ test('province card: extra facts from outside the textbook, labelled as such, ea
   await userEvent.click(screen.getByRole('button', { name: 'polygon-quang-tri' }))
   expect(screen.queryByRole('region', { name: /Tìm hiểu thêm/ })).not.toBeInTheDocument()
 })
+
+test('province card says which former provinces the 2025 province was formed from', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
+  const merged = within(screen.getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })).getByTestId('province-history')
+  expect(merged).toHaveTextContent('Từ năm 2025, tỉnh Phú Thọ được hợp nhất từ 3 tỉnh cũ:')
+  expect(
+    within(merged)
+      .getAllByRole('listitem')
+      .map((li) => li.textContent),
+  ).toEqual(['Phú Thọ', 'Vĩnh Phúc', 'Hòa Bình'])
+  expect(within(merged).getByRole('link', { name: /Nghị quyết 202\/2025\/QH15/ })).toHaveAttribute(
+    'href',
+    expect.stringMatching(/^https:\/\//),
+  )
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-lai-chau' }))
+  expect(within(screen.getByRole('region', { name: 'Tỉnh đang xem: Lai Châu' })).getByTestId('province-history')).toHaveTextContent(
+    'Tỉnh Lai Châu giữ nguyên, không hợp nhất trong đợt sắp xếp năm 2025.',
+  )
+})
