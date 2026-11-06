@@ -9,7 +9,8 @@ const SHORT_LABELS: Record<string, string> = { '/ban-do': 'Bản đồ', '/tien-
  *  Điện thoại, máy tính bảng (dưới lg): thanh tab dính ở đáy màn hình, ẩn logo (đã có tab Trang chủ). */
 export function CompactNav() {
   return (
-    <div className="flex items-center gap-3">
+    // Màn rộng: dính sát mép trên khung thông tin khi cuộn (top âm bù phần padding của khung); nền + lề âm để nội dung trượt khuất bên dưới
+    <div className="flex items-center gap-3 lg:sticky lg:-top-4 lg:z-10 lg:-mx-4 lg:-mt-4 lg:bg-bg/95 lg:px-4 lg:pb-3 lg:pt-4 lg:backdrop-blur xl:-top-5 xl:-mx-5 xl:-mt-5 xl:px-5 xl:pt-5">
       <Link to="/" aria-label="Em khám phá Lịch sử và Địa lí Việt Nam – Trang chủ" className="hidden lg:block shrink-0">
         <span className="relative flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-300 to-emerald-400 shadow-md">
           <BookOpen aria-hidden className="size-7 text-white" />

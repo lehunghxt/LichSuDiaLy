@@ -531,3 +531,12 @@ test('on phones the main navigation is a tab bar stuck to the bottom of the scre
   // logo chỉ hiện trên màn rộng (điện thoại đã có tab Trang chủ)
   expect(within(panel).getByRole('link', { name: /^Em khám phá/ }).className).toContain('hidden lg:block')
 })
+
+test('on desktop the logo and main menu stay stuck to the top of the panel while it scrolls', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const panel = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
+  const bar = within(panel).getByRole('navigation', { name: 'Điều hướng chính' }).parentElement!
+  expect(bar.className).toContain('lg:sticky')
+  expect(bar.className).toContain('lg:-top-4')
+  expect(bar.className).toContain('lg:bg-bg/95')
+})
