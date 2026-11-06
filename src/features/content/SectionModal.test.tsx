@@ -252,3 +252,37 @@ test('item photos tell the browser they fill the width on phones (one column bel
   expect(sizes.split(',').at(-1)?.trim()).toBe('100vw')
   expect(sizes).toContain('(min-width: 640px) 50vw')
 })
+
+const handle = () => screen.getByTestId('sheet-handle')
+
+test('small screens: the modal is a bottom sheet over a dimmed backdrop; tapping the backdrop closes it', async () => {
+  const { onClose } = setup()
+  const dialog = screen.getByRole('dialog')
+  expect(dialog.className).toContain('rounded-t-3xl')
+  expect(dialog.className).toContain('lg:rounded-none')
+  expect(handle()).toBeInTheDocument()
+  await userEvent.click(screen.getByTestId('sheet-backdrop'))
+  expect(onClose).toHaveBeenCalledTimes(1)
+})
+
+test('dragging the handle down far enough closes the sheet; a short drag springs back', () => {
+  const { onClose } = setup()
+  const dialog = screen.getByRole('dialog')
+  fireEvent.pointerDown(handle(), { clientY: 100, pointerId: 1 })
+  fireEvent.pointerMove(handle(), { clientY: 160, pointerId: 1 })
+  expect(dialog.style.transform).toBe('translateY(60px)')
+  fireEvent.pointerUp(handle(), { clientY: 160, pointerId: 1 })
+  expect(onClose).not.toHaveBeenCalled()
+  expect(dialog.style.transform).toBe('')
+  fireEvent.pointerDown(handle(), { clientY: 100, pointerId: 1 })
+  fireEvent.pointerMove(handle(), { clientY: 300, pointerId: 1 })
+  fireEvent.pointerUp(handle(), { clientY: 300, pointerId: 1 })
+  expect(onClose).toHaveBeenCalledTimes(1)
+})
+
+test('dragging up does not move the sheet above its resting place', () => {
+  setup()
+  fireEvent.pointerDown(handle(), { clientY: 300, pointerId: 1 })
+  fireEvent.pointerMove(handle(), { clientY: 200, pointerId: 1 })
+  expect(screen.getByRole('dialog').style.transform).toBe('translateY(0px)')
+})
