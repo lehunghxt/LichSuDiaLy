@@ -4,20 +4,23 @@ const legend = { left: 16, top: 16, width: 170, height: 40 }
 // Bảng "Các vùng" đang mở: cao hơn nhiều
 const openLegend = { left: 16, top: 16, width: 220, height: 240 }
 
-test('wide map frame: leave room on the left for the legend', () => {
-  expect(countryPadding(1100, 700, legend)).toEqual({ paddingTopLeft: [194, 12], paddingBottomRight: [12, 12] })
+test('wide map frame: the region chips run along the top edge, so leave room above, not on the left', () => {
+  expect(countryPadding(700, { left: 12, top: 12, width: 760, height: 48 })).toEqual({
+    paddingTopLeft: [12, 68],
+    paddingBottomRight: [12, 12],
+  })
 })
 
 test('narrow map frame (phone): leave room above the legend instead, so the map keeps its full width', () => {
-  expect(countryPadding(375, 500, legend)).toEqual({ paddingTopLeft: [12, 64], paddingBottomRight: [12, 12] })
+  expect(countryPadding(500, legend)).toEqual({ paddingTopLeft: [12, 64], paddingBottomRight: [12, 12] })
 })
 
 test('no legend: small even padding', () => {
-  expect(countryPadding(375, 500, null)).toEqual({ paddingTopLeft: [12, 12], paddingBottomRight: [12, 12] })
+  expect(countryPadding(500, null)).toEqual({ paddingTopLeft: [12, 12], paddingBottomRight: [12, 12] })
 })
 
 test('narrow and short frame with the legend open: padding never eats most of the frame, the legend floats over the map', () => {
-  expect(countryPadding(375, 253, openLegend)).toEqual({ paddingTopLeft: [12, 12], paddingBottomRight: [12, 12] })
+  expect(countryPadding(253, openLegend)).toEqual({ paddingTopLeft: [12, 12], paddingBottomRight: [12, 12] })
 })
 
 test('regionPadding: below the lg breakpoint (stacked layout: phones, portrait tablets) zoom into the selected region, leaving room for the legend and the callout above it', () => {

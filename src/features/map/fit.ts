@@ -1,4 +1,4 @@
-// Lề khi canh bản đồ toàn quốc, để bảng "Các vùng" nổi ở góc trái không che mất vùng nào
+// Lề khi canh bản đồ, để dải chip "Các vùng" ở mép trên không che mất vùng nào
 
 export interface LegendBox {
   left: number
@@ -12,12 +12,10 @@ export interface CountryPadding {
   paddingBottomRight: [number, number]
 }
 
-// Khung hẹp hơn mức này (điện thoại): chừa lề phía trên thay vì bên trái, giữ trọn chiều ngang cho bản đồ
-const NARROW_FRAME = 640
 const GAP = 8
 const EDGE = 12
 
-// Lề phía trên chừa cho bảng không được quá phần này của chiều cao khung (bảng đang mở trên màn thấp):
+// Lề phía trên chừa cho dải chip không được quá phần này của chiều cao khung (màn thấp, chip xuống nhiều hàng):
 // quá thì để bảng nổi đè lên bản đồ, còn hơn khung nhìn bị bóp tới mức Leaflet phóng sai
 const MAX_TOP_SHARE = 0.35
 
@@ -28,11 +26,8 @@ function belowLegend(frameHeight: number, legend: LegendBox | null): number | nu
   return top <= frameHeight * MAX_TOP_SHARE ? top : null
 }
 
-export function countryPadding(frameWidth: number, frameHeight: number, legend: LegendBox | null): CountryPadding {
-  if (!legend) return { paddingTopLeft: [EDGE, EDGE], paddingBottomRight: [EDGE, EDGE] }
-  const topLeft: [number, number] =
-    frameWidth < NARROW_FRAME ? [EDGE, belowLegend(frameHeight, legend) ?? EDGE] : [legend.left + legend.width + GAP, EDGE]
-  return { paddingTopLeft: topLeft, paddingBottomRight: [EDGE, EDGE] }
+export function countryPadding(frameHeight: number, legend: LegendBox | null): CountryPadding {
+  return { paddingTopLeft: [EDGE, belowLegend(frameHeight, legend) ?? EDGE], paddingBottomRight: [EDGE, EDGE] }
 }
 
 // Chỗ cho nhãn bong bóng tên vùng đặt phía trên vùng đang chọn

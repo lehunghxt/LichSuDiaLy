@@ -64,7 +64,10 @@ export default function MapPage() {
   const selectRegion = (id: string) => navigate(`/ban-do/${id}`)
   // Mở modal thêm một mục lịch sử (nút Back của trình duyệt đóng modal); đổi mục bên trong thì thay thế
   const openTopic = (s: SectionId, topicId: string | null, slug?: string | null) =>
-    navigate({ search: topicSearch(s, topicId ?? (outline ? (findTopic(outline, s, null)?.id ?? null) : null), slug) }, { replace: modalOpen })
+    navigate(
+      { search: topicSearch(s, topicId ?? (outline ? (findTopic(outline, s, null)?.id ?? null) : null), slug) },
+      { replace: modalOpen },
+    )
   const openItem = (item: Pick<ContentItem, 'id' | 'section'>) => {
     const at = outline ? topicOfItem(outline, item.id) : null
     openTopic(at?.section ?? item.section, at?.topicId ?? null, itemSlug(item.id))
@@ -87,7 +90,8 @@ export default function MapPage() {
               onOpenPlace={openItem}
             />
           </Suspense>
-          <div data-map-legend className="absolute left-4 top-4 z-[1000]">
+          {/* Chừa bên phải cho nút phóng to/thu nhỏ của bản đồ */}
+          <div data-map-legend className="absolute left-3 right-14 top-3 z-[1000] flex">
             <RegionList regions={regions} selectedId={region?.id ?? null} onSelect={selectRegion} />
           </div>
         </div>
@@ -95,6 +99,8 @@ export default function MapPage() {
           <CompactNav />
           <MapInfoPanel
             region={region}
+            regions={regions}
+            onSelectRegion={selectRegion}
             regionIdFromUrl={regionId}
             content={content}
             images={images}

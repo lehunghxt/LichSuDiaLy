@@ -99,12 +99,13 @@ test('RegionList shows all regions; coming_soon ones labelled "Sắp ra mắt"',
 
 test('without selection, panel invites the student to choose a region', async () => {
   renderAt('/ban-do')
-  expect(await screen.findByText('Em hãy chọn một vùng trên bản đồ để bắt đầu khám phá nhé!')).toBeInTheDocument()
+  expect(await screen.findByText('Em bấm vào một vùng trên bản đồ hoặc chọn bên dưới để bắt đầu khám phá nhé!')).toBeInTheDocument()
 })
 
 test('clicking region button navigates and panel shows region name, intro and its outline', async () => {
   const router = renderAt('/ban-do')
-  await userEvent.click(await screen.findByRole('button', { name: /Trung du và miền núi phía Bắc/ }))
+  await screen.findByRole('list', { name: 'Các vùng địa lí' })
+  await userEvent.click(within(regionList()).getByRole('button', { name: /Trung du và miền núi phía Bắc/ }))
   expect(router.state.location.pathname).toBe('/ban-do/trung-du-mien-nui-phia-bac')
   const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
   expect(within(panel).getByText(/vùng duy nhất của nước ta không giáp biển/)).toBeInTheDocument()
@@ -215,10 +216,16 @@ test('unknown region id shows not found message with link back', async () => {
   expect(await screen.findByText('Không tìm thấy vùng này')).toBeInTheDocument()
 })
 
-test('legend card titled "Các vùng địa lí Việt Nam" with a hint for students', async () => {
-  renderAt('/ban-do')
+test('without a region, the side panel shows one card per region (colour, name, number of provinces); a card opens its region', async () => {
+  const router = renderAt('/ban-do')
   expect(await screen.findByRole('heading', { name: 'Các vùng địa lí Việt Nam' })).toBeInTheDocument()
-  expect(screen.getByText('Nhấn vào một vùng trên bản đồ để khám phá thông tin chi tiết.')).toBeInTheDocument()
+  const cards = screen.getByRole('list', { name: 'Chọn vùng để khám phá' })
+  expect(within(cards).getAllByRole('button')).toHaveLength(4)
+  const tdmn = within(cards).getByRole('button', { name: /Trung du và miền núi phía Bắc/ })
+  expect(tdmn).toHaveTextContent('9 tỉnh')
+  expect(within(cards).getByRole('button', { name: /Nam Bộ/ })).toHaveTextContent('Sắp ra mắt')
+  await userEvent.click(tdmn)
+  expect(router.state.location.pathname).toBe('/ban-do/trung-du-mien-nui-phia-bac')
 })
 
 test('panel lists featured places with province; clicking one opens the modal at that item', async () => {
@@ -368,22 +375,19 @@ test('compact nav is a single row of four equal tabs with short labels', async (
   expect(within(nav).getByRole('link', { name: 'Bản đồ' })).toHaveAttribute('aria-current', 'page')
 })
 
-test('legend can be collapsed to a small button and expanded again', async () => {
-  renderAt('/ban-do')
-  const toggle = await screen.findByRole('button', { name: 'Thu gọn bảng các vùng' })
-  expect(toggle).toHaveAttribute('aria-expanded', 'true')
-  await userEvent.click(toggle)
-  expect(screen.queryByRole('list', { name: 'Các vùng địa lí' })).not.toBeInTheDocument()
-  const open = screen.getByRole('button', { name: 'Mở bảng các vùng' })
-  expect(open).toHaveAttribute('aria-expanded', 'false')
-  await userEvent.click(open)
-  expect(screen.getByRole('list', { name: 'Các vùng địa lí' })).toBeInTheDocument()
+test('region chips on the map are always shown (nothing to expand or collapse) and switch region', async () => {
+  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  await screen.findByRole('list', { name: 'Các vùng địa lí' })
+  expect(screen.queryByRole('button', { name: /Thu gọn|Mở bảng/ })).not.toBeInTheDocument()
+  expect(within(regionList()).getByRole('button', { name: /Trung du/ })).toHaveAttribute('aria-pressed', 'true')
+  await userEvent.click(within(regionList()).getByRole('button', { name: /Đồng bằng Bắc Bộ/ }))
+  expect(router.state.location.pathname).toBe('/ban-do/dong-bang-bac-bo')
 })
 
-test('hint card is hidden once a region is selected', async () => {
+test('region cards are only in the panel before a region is chosen', async () => {
   renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   await screen.findByRole('list', { name: 'Các vùng địa lí' })
-  expect(screen.queryByText('Nhấn vào một vùng trên bản đồ để khám phá thông tin chi tiết.')).not.toBeInTheDocument()
+  expect(screen.queryByRole('list', { name: 'Chọn vùng để khám phá' })).not.toBeInTheDocument()
 })
 
 const outlineNav = async () => screen.findByRole('navigation', { name: 'Dàn ý vùng' })
