@@ -1,0 +1,413 @@
+diff --git a/src/features/map/MapSheet.test.tsx b/src/features/map/MapSheet.test.tsx
+new file mode 100644
+index 0000000..e4b50d7
+--- /dev/null
++++ b/src/features/map/MapSheet.test.tsx
+@@ -0,0 +1,57 @@
++import { fireEvent, render, screen } from '@testing-library/react'
++import userEvent from '@testing-library/user-event'
++import { useState } from 'react'
++import { MapSheet, nearestSnap, snapHeight, type Snap } from './MapSheet'
++
++function Harness({ initial = 'half' as Snap }) {
++  const [snap, setSnap] = useState<Snap>(initial)
++  return (
++    <MapSheet snap={snap} onSnap={setSnap}>
++      <p>Nội dung</p>
++    </MapSheet>
++  )
++}
++
++const sheet = () => screen.getByRole('complementary', { name: 'Thông tin bản đồ' })
++const handle = () => screen.getByRole('button', { name: /Kéo hoặc bấm/ })
++
++test('snap heights: peek shows only the top, half is about half the screen, full leaves the top strip visible', () => {
++  expect(snapHeight('peek', 800)).toBe(112)
++  expect(snapHeight('half', 800)).toBe(416)
++  expect(snapHeight('full', 800)).toBe(752)
++})
++
++test('nearestSnap picks the closest resting height after a drag', () => {
++  expect(nearestSnap(150, 800)).toBe('peek')
++  expect(nearestSnap(380, 800)).toBe('half')
++  expect(nearestSnap(700, 800)).toBe('full')
++})
++
++test('the sheet keeps its children, starts at its snap and tapping the handle toggles half ↔ full', async () => {
++  render(<Harness />)
++  expect(screen.getByText('Nội dung')).toBeInTheDocument()
++  expect(sheet()).toHaveAttribute('data-snap', 'half')
++  expect(handle()).toHaveAttribute('aria-expanded', 'false')
++  await userEvent.click(handle())
++  expect(sheet()).toHaveAttribute('data-snap', 'full')
++  expect(handle()).toHaveAttribute('aria-expanded', 'true')
++  await userEvent.click(handle())
++  expect(sheet()).toHaveAttribute('data-snap', 'half')
++})
++
++test('from peek, a tap opens to half', async () => {
++  render(<Harness initial="peek" />)
++  await userEvent.click(handle())
++  expect(sheet()).toHaveAttribute('data-snap', 'half')
++})
++
++test('dragging the handle down then releasing snaps to the nearest height (and is not also a tap)', () => {
++  window.innerHeight = 800
++  render(<Harness />)
++  fireEvent.pointerDown(handle(), { clientY: 400, pointerId: 1 })
++  fireEvent.pointerMove(handle(), { clientY: 650, pointerId: 1 })
++  expect(sheet().style.getPropertyValue('--sheet-h')).toBe('166px')
++  fireEvent.pointerUp(handle(), { clientY: 650, pointerId: 1 })
++  fireEvent.click(handle())
++  expect(sheet()).toHaveAttribute('data-snap', 'peek')
++})
+diff --git a/src/features/map/MapSheet.tsx b/src/features/map/MapSheet.tsx
+new file mode 100644
+index 0000000..916a6af
+--- /dev/null
++++ b/src/features/map/MapSheet.tsx
+@@ -0,0 +1,100 @@
++import { type CSSProperties, type PointerEvent, type ReactNode, useRef, useState } from 'react'
++import { HALF_SHEET } from './fit'
++
++export type Snap = 'peek' | 'half' | 'full'
++
++// Thu gọn: chỉ thấy thanh kéo và thanh điều hướng; mở hết: vẫn chừa dải chip các vùng ở trên
++const PEEK = 112
++const TOP_GAP = 48
++const SNAPS: Snap[] = ['peek', 'half', 'full']
++
++/** Chiều cao (px) của tấm ở từng mức, theo chiều cao màn hình */
++export function snapHeight(snap: Snap, viewportHeight: number): number {
++  if (snap === 'peek') return PEEK
++  if (snap === 'half') return Math.round(viewportHeight * HALF_SHEET)
++  return viewportHeight - TOP_GAP
++}
++
++/** Mức gần nhất với chiều cao lúc thả tay */
++export function nearestSnap(height: number, viewportHeight: number): Snap {
++  const dist = (s: Snap) => Math.abs(snapHeight(s, viewportHeight) - height)
++  return SNAPS.reduce((a, b) => (dist(b) < dist(a) ? b : a))
++}
++
++// Chiều cao theo CSS (dvh) để tự đúng khi xoay màn hình hay thanh địa chỉ co giãn
++const SNAP_CSS: Record<Snap, string> = {
++  peek: `${PEEK}px`,
++  half: `${HALF_SHEET * 100}dvh`,
++  full: `calc(100dvh - ${TOP_GAP}px)`,
++}
++export const sheetCss = (snap: Snap) => SNAP_CSS[snap]
++
++interface MapSheetProps {
++  snap: Snap
++  onSnap(snap: Snap): void
++  children: ReactNode
++}
++
++/** Màn hẹp (dưới lg): khung thông tin là tấm kéo từ đáy, nổi trên bản đồ toàn màn hình.
++ *  Kéo thanh ở đầu tấm để đổi mức, thả tay thì bám mức gần nhất; bấm (hoặc Enter) để chuyển nửa ↔ gần hết.
++ *  Màn rộng: là cột bên phải như cũ. */
++export function MapSheet({ snap, onSnap, children }: MapSheetProps) {
++  const [dragHeight, setDragHeight] = useState<number | null>(null)
++  const drag = useRef<{ y: number; h: number; moved: boolean } | null>(null)
++  // Sau một lần kéo, trình duyệt vẫn bắn sự kiện click: bỏ qua để không bị tính thêm một lần bấm
++  const swallowClick = useRef(false)
++
++  const onPointerDown = (e: PointerEvent<HTMLButtonElement>) => {
++    e.currentTarget.setPointerCapture?.(e.pointerId)
++    drag.current = { y: e.clientY, h: snapHeight(snap, window.innerHeight), moved: false }
++  }
++  const onPointerMove = (e: PointerEvent<HTMLButtonElement>) => {
++    const d = drag.current
++    if (!d) return
++    const dy = d.y - e.clientY
++    if (Math.abs(dy) > 4) d.moved = true
++    if (d.moved) setDragHeight(Math.min(Math.max(d.h + dy, PEEK), window.innerHeight - TOP_GAP))
++  }
++  const onPointerUp = () => {
++    const d = drag.current
++    drag.current = null
++    if (!d?.moved || dragHeight === null) return
++    swallowClick.current = true
++    onSnap(nearestSnap(dragHeight, window.innerHeight))
++    setDragHeight(null)
++  }
++  const onClick = () => {
++    if (swallowClick.current) {
++      swallowClick.current = false
++      return
++    }
++    onSnap(snap === 'half' ? 'full' : 'half')
++  }
++
++  const style = { '--sheet-h': dragHeight === null ? SNAP_CSS[snap] : `${dragHeight}px` } as CSSProperties
++  return (
++    <aside
++      aria-label="Thông tin bản đồ"
++      data-snap={snap}
++      style={style}
++      className={`fixed inset-x-0 bottom-0 z-[1100] flex h-[var(--sheet-h)] flex-col rounded-t-3xl bg-bg shadow-[0_-8px_30px_rgba(15,23,42,0.18)] lg:static lg:h-full lg:rounded-none lg:shadow-none ${
++        dragHeight === null ? 'transition-[height] duration-300 ease-out' : ''
++      }`}
++    >
++      <button
++        type="button"
++        aria-label={snap === 'full' ? 'Kéo hoặc bấm để thu nhỏ khung thông tin' : 'Kéo hoặc bấm để mở rộng khung thông tin'}
++        aria-expanded={snap === 'full'}
++        onPointerDown={onPointerDown}
++        onPointerMove={onPointerMove}
++        onPointerUp={onPointerUp}
++        onPointerCancel={onPointerUp}
++        onClick={onClick}
++        className="flex h-7 shrink-0 cursor-grab touch-none items-center justify-center active:cursor-grabbing lg:hidden"
++      >
++        <span aria-hidden className="h-1.5 w-12 rounded-full bg-line" />
++      </button>
++      <div className="flex min-h-0 flex-1 flex-col gap-5 overflow-y-auto overscroll-contain p-4 pt-1 lg:pt-4 xl:p-5">{children}</div>
++    </aside>
++  )
++}
+diff --git a/src/features/map/VietnamMap.tsx b/src/features/map/VietnamMap.tsx
+index e7a0e22..efcfc31 100644
+--- a/src/features/map/VietnamMap.tsx
++++ b/src/features/map/VietnamMap.tsx
+@@ -36,7 +36,7 @@ function legendBox(map: L.Map) {
+ 
+ function fitCountry(map: L.Map) {
+   const { clientHeight } = map.getContainer()
+-  map.fitBounds(VIETNAM_BOUNDS, countryPadding(clientHeight, legendBox(map)))
++  map.fitBounds(VIETNAM_BOUNDS, countryPadding(window.innerWidth, clientHeight, legendBox(map)))
+ }
+ 
+ export interface VietnamMapProps {
+diff --git a/src/features/map/fit.test.ts b/src/features/map/fit.test.ts
+index 4a37d12..4bd3e3a 100644
+--- a/src/features/map/fit.test.ts
++++ b/src/features/map/fit.test.ts
+@@ -5,32 +5,38 @@ const legend = { left: 16, top: 16, width: 170, height: 40 }
+ const openLegend = { left: 16, top: 16, width: 220, height: 240 }
+ 
+ test('wide map frame: the region chips run along the top edge, so leave room above, not on the left', () => {
+-  expect(countryPadding(700, { left: 12, top: 12, width: 760, height: 48 })).toEqual({
++  expect(countryPadding(1280, 700, { left: 12, top: 12, width: 760, height: 48 })).toEqual({
+     paddingTopLeft: [12, 68],
+     paddingBottomRight: [12, 12],
+   })
+ })
+ 
+ test('narrow map frame (phone): leave room above the legend instead, so the map keeps its full width', () => {
+-  expect(countryPadding(500, legend)).toEqual({ paddingTopLeft: [12, 64], paddingBottomRight: [12, 12] })
++  expect(countryPadding(1280, 500, legend)).toEqual({ paddingTopLeft: [12, 64], paddingBottomRight: [12, 12] })
+ })
+ 
+ test('no legend: small even padding', () => {
+-  expect(countryPadding(500, null)).toEqual({ paddingTopLeft: [12, 12], paddingBottomRight: [12, 12] })
++  expect(countryPadding(1280, 500, null)).toEqual({ paddingTopLeft: [12, 12], paddingBottomRight: [12, 12] })
+ })
+ 
+ test('narrow and short frame with the legend open: padding never eats most of the frame, the legend floats over the map', () => {
+-  expect(countryPadding(253, openLegend)).toEqual({ paddingTopLeft: [12, 12], paddingBottomRight: [12, 12] })
++  expect(countryPadding(1280, 253, openLegend)).toEqual({ paddingTopLeft: [12, 12], paddingBottomRight: [12, 12] })
+ })
+ 
+ test('regionPadding: below the lg breakpoint (stacked layout: phones, portrait tablets) zoom into the selected region, leaving room for the legend and the callout above it', () => {
+   expect(regionPadding(1024, 600, legend)).toBeNull()
+-  expect(regionPadding(768, 600, legend)).toEqual({ paddingTopLeft: [12, 100], paddingBottomRight: [12, 12] })
+-  expect(regionPadding(375, 500, legend)).toEqual({ paddingTopLeft: [12, 100], paddingBottomRight: [12, 12] })
+-  expect(regionPadding(375, 500, null)).toEqual({ paddingTopLeft: [12, 48], paddingBottomRight: [12, 12] })
++  expect(regionPadding(768, 600, legend)).toEqual({ paddingTopLeft: [12, 100], paddingBottomRight: [12, 312] })
++  expect(regionPadding(375, 500, legend)).toEqual({ paddingTopLeft: [12, 100], paddingBottomRight: [12, 260] })
++  expect(regionPadding(375, 500, null)).toEqual({ paddingTopLeft: [12, 48], paddingBottomRight: [12, 260] })
+ })
+ 
+ test('regionPadding: landscape phone with the legend open keeps a usable frame (only the callout room is reserved)', () => {
+   // 844×390 ngang: khung bản đồ 65vh ≈ 253px, bảng mở cao 240px
+-  expect(regionPadding(844, 253, openLegend)).toEqual({ paddingTopLeft: [12, 48], paddingBottomRight: [12, 12] })
++  expect(regionPadding(844, 253, openLegend)).toEqual({ paddingTopLeft: [12, 48], paddingBottomRight: [12, 132] })
++})
++
++test('stacked layout (bottom sheet): leave the lower half for the sheet, so the map content sits above it', () => {
++  expect(countryPadding(375, 800, null)).toEqual({ paddingTopLeft: [12, 12], paddingBottomRight: [12, 416] })
++  expect(regionPadding(375, 800, null)).toEqual({ paddingTopLeft: [12, 48], paddingBottomRight: [12, 416] })
++  expect(countryPadding(1280, 800, null)).toEqual({ paddingTopLeft: [12, 12], paddingBottomRight: [12, 12] })
+ })
+diff --git a/src/features/map/fit.ts b/src/features/map/fit.ts
+index b0de26b..00ef0eb 100644
+--- a/src/features/map/fit.ts
++++ b/src/features/map/fit.ts
+@@ -7,6 +7,16 @@ export interface LegendBox {
+   height: number
+ }
+ 
++// Mốc lg của Tailwind: dưới mốc này bản đồ chiếm cả màn hình, thông tin nằm trong tấm kéo từ đáy (bottom sheet)
++export const STACKED_VIEWPORT = 1024
++// Tấm ở mức "nửa màn hình" cao bằng phần này của màn hình; bản đồ canh nội dung lên phía trên tấm
++export const HALF_SHEET = 0.52
++
++/** Lề dưới: chừa chỗ cho tấm thông tin khi ở mức nửa màn hình (màn xếp dọc); màn rộng chỉ lề nhỏ */
++function aboveSheet(viewportWidth: number, frameHeight: number): number {
++  return viewportWidth < STACKED_VIEWPORT ? Math.round(frameHeight * HALF_SHEET) : EDGE
++}
++
+ export interface CountryPadding {
+   paddingTopLeft: [number, number]
+   paddingBottomRight: [number, number]
+@@ -26,18 +36,19 @@ function belowLegend(frameHeight: number, legend: LegendBox | null): number | nu
+   return top <= frameHeight * MAX_TOP_SHARE ? top : null
+ }
+ 
+-export function countryPadding(frameHeight: number, legend: LegendBox | null): CountryPadding {
+-  return { paddingTopLeft: [EDGE, belowLegend(frameHeight, legend) ?? EDGE], paddingBottomRight: [EDGE, EDGE] }
++export function countryPadding(viewportWidth: number, frameHeight: number, legend: LegendBox | null): CountryPadding {
++  return {
++    paddingTopLeft: [EDGE, belowLegend(frameHeight, legend) ?? EDGE],
++    paddingBottomRight: [EDGE, aboveSheet(viewportWidth, frameHeight)],
++  }
+ }
+ 
+ // Chỗ cho nhãn bong bóng tên vùng đặt phía trên vùng đang chọn
+ const CALLOUT = 36
+-// Mốc lg của Tailwind: dưới mốc này trang bản đồ xếp dọc (điện thoại, máy tính bảng dựng đứng)
+-const STACKED_VIEWPORT = 1024
+ 
+ /** Màn xếp dọc: phóng vào vùng đang chọn để em chạm được từng tỉnh. Màn rộng: giữ toàn quốc (null) */
+ export function regionPadding(viewportWidth: number, frameHeight: number, legend: LegendBox | null): CountryPadding | null {
+   if (viewportWidth >= STACKED_VIEWPORT) return null
+   const top = (belowLegend(frameHeight, legend) ?? EDGE) + CALLOUT
+-  return { paddingTopLeft: [EDGE, top], paddingBottomRight: [EDGE, EDGE] }
++  return { paddingTopLeft: [EDGE, top], paddingBottomRight: [EDGE, aboveSheet(viewportWidth, frameHeight)] }
+ }
+diff --git a/src/pages/MapPage.test.tsx b/src/pages/MapPage.test.tsx
+index d6332f0..47fb317 100644
+--- a/src/pages/MapPage.test.tsx
++++ b/src/pages/MapPage.test.tsx
+@@ -1,4 +1,4 @@
+-import { render, screen, waitFor, within } from '@testing-library/react'
++import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
+ import userEvent from '@testing-library/user-event'
+ import { createMemoryRouter, RouterProvider } from 'react-router'
+ import { routes } from '../app/router'
+@@ -355,7 +355,8 @@ test('map takes 2/3 and the side panel 1/3; the panel scrolls on its own', async
+   const layout = panel.parentElement!
+   expect(layout.className).toContain('lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]')
+   expect(layout.className).toContain('lg:h-dvh')
+-  expect(panel.className).toContain('lg:overflow-y-auto')
++  // phần nội dung trong khung (dưới thanh kéo của bottom sheet) tự cuộn
++  expect(panel.querySelector('.overflow-y-auto')).toBeInTheDocument()
+ })
+ 
+ test('other pages keep the site header and footer', async () => {
+@@ -510,3 +511,16 @@ test('province card says which former provinces the 2025 province was formed fro
+     'Tỉnh Lai Châu giữ nguyên, không hợp nhất trong đợt sắp xếp năm 2025.',
+   )
+ })
++
++test('on small screens the info panel is a bottom sheet: half open by default, and choosing a province brings it back up from peek', async () => {
++  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
++  const sheet = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
++  expect(sheet).toHaveAttribute('data-snap', 'half')
++  const handle = within(sheet).getByRole('button', { name: /Kéo hoặc bấm/ })
++  fireEvent.pointerDown(handle, { clientY: 300, pointerId: 1 })
++  fireEvent.pointerMove(handle, { clientY: 760, pointerId: 1 })
++  fireEvent.pointerUp(handle, { clientY: 760, pointerId: 1 })
++  expect(sheet).toHaveAttribute('data-snap', 'peek')
++  await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
++  expect(sheet).toHaveAttribute('data-snap', 'half')
++})
+diff --git a/src/pages/MapPage.tsx b/src/pages/MapPage.tsx
+index f01686e..d14f351 100644
+--- a/src/pages/MapPage.tsx
++++ b/src/pages/MapPage.tsx
+@@ -1,4 +1,4 @@
+-import { lazy, Suspense, useEffect, useState } from 'react'
++import { type CSSProperties, lazy, Suspense, useEffect, useState } from 'react'
+ import { Link } from 'react-router'
+ import { CompactNav } from '../components/layout/CompactNav'
+ import { useNavigate, useParams, useSearchParams } from 'react-router'
+@@ -12,6 +12,7 @@ import { useRegionOutline } from '../features/content/useRegionOutline'
+ import { useRegionImages } from '../features/images/useRegionImages'
+ import { placesOf } from '../features/map/places'
+ import { MapInfoPanel } from '../features/map/MapInfoPanel'
++import { MapSheet, sheetCss, type Snap } from '../features/map/MapSheet'
+ import { RegionList } from '../features/map/RegionList'
+ import { useProgress } from '../features/progress/useProgress'
+ import type { ContentItem, SectionId } from '../types/content'
+@@ -48,8 +49,18 @@ export default function MapPage() {
+     navigate({ search: t ? topicSearch(t.section, t.topicId, t.slug) : '' }, { replace: true })
+   }, [legacyTopic, legacySlug, outline, navigate])
+ 
+-  // Đổi vùng thì bỏ chọn tỉnh
+-  useEffect(() => setProvinceId(null), [regionId])
++  // Màn hẹp: mức mở của tấm thông tin kéo từ đáy
++  const [snap, setSnap] = useState<Snap>('half')
++
++  // Đổi vùng thì bỏ chọn tỉnh và mở lại tấm thông tin ở mức nửa màn hình
++  useEffect(() => {
++    setProvinceId(null)
++    setSnap('half')
++  }, [regionId])
++  const selectProvince = (id: string | null) => {
++    setProvinceId(id)
++    if (id) setSnap((s) => (s === 'peek' ? 'half' : s))
++  }
+ 
+   useEffect(() => {
+     if (region?.status === 'active') markRegionVisited(region.id)
+@@ -77,15 +88,20 @@ export default function MapPage() {
+   return (
+     <>
+       <h1 className="sr-only">Bản đồ khám phá</h1>
+-      <div className="grid lg:h-dvh lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+-        <div data-map-frame className="relative h-[65vh] overflow-hidden bg-sea lg:h-full">
++      <div className="lg:grid lg:h-dvh lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
++        {/* Màn hẹp: bản đồ toàn màn hình; thước tỉ lệ, ghi nguồn đẩy lên trên mép tấm thông tin (--map-bottom-inset) */}
++        <div
++          data-map-frame
++          style={{ '--map-bottom-inset': sheetCss(snap) } as CSSProperties}
++          className="relative h-dvh overflow-hidden bg-sea lg:h-full"
++        >
+           <Suspense fallback={<LoadingState label="Đang tải bản đồ…" />}>
+             <VietnamMap
+               regions={regions}
+               selectedRegionId={region?.id ?? null}
+               selectedProvinceId={provinceId}
+               onSelectRegion={selectRegion}
+-              onSelectProvince={setProvinceId}
++              onSelectProvince={selectProvince}
+               places={placesOf(items)}
+               onOpenPlace={openItem}
+             />
+@@ -95,7 +111,7 @@ export default function MapPage() {
+             <RegionList regions={regions} selectedId={region?.id ?? null} onSelect={selectRegion} />
+           </div>
+         </div>
+-        <aside aria-label="Thông tin bản đồ" className="flex flex-col gap-5 bg-bg p-4 lg:overflow-y-auto lg:overscroll-contain xl:p-5">
++        <MapSheet snap={snap} onSnap={setSnap}>
+           <CompactNav />
+           <MapInfoPanel
+             region={region}
+@@ -121,7 +137,7 @@ export default function MapPage() {
+               Nguồn ảnh
+             </Link>
+           </p>
+-        </aside>
++        </MapSheet>
+       </div>
+       {modalOpen && (
+         <SectionModal
+diff --git a/src/styles/index.css b/src/styles/index.css
+index 080c57f..63ac7bf 100644
+--- a/src/styles/index.css
++++ b/src/styles/index.css
+@@ -233,3 +233,11 @@ div.leaflet-container {
+   outline-offset: 2px;
+   border-radius: 50%;
+ }
++
++/* Màn hẹp: tấm thông tin nổi từ đáy che phần dưới bản đồ → đẩy thước tỉ lệ và dòng ghi nguồn lên trên mép tấm */
++@media (max-width: 1023.98px) {
++  [data-map-frame] .leaflet-bottom {
++    bottom: var(--map-bottom-inset, 0px);
++    transition: bottom 300ms ease-out;
++  }
++}

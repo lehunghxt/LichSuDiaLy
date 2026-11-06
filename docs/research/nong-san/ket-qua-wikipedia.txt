@@ -1,0 +1,227 @@
+lai-chau | Lai Châu | chè | 4 | Tổng sản lượng lương thực có hạt năm 2025 đạt 226.000 tấn; toàn tỉnh có 3.954 ha lúa hàng hóa chất lượng cao (với các giống lúa đặc sản như Séng Cù, Tẻ Râu, Nếp Tan), 10.861 ha chè, 8.084 ha cây ăn quả, 7.421 ha mắc ca v
+lai-chau | Lai Châu | sâm | 2 | Sâm Lai Châu được xác định là sản phẩm chủ lực mang thương hiệu quốc gia, với hàm lượng saponin trong tự nhiên đạt tới 23,85%.
+lai-chau | Lai Châu | thảo quả | 1 | Các đặc sản, ẩm thực ở Lai Châu như: lợn cắp nách, bánh bỏng San Thàng, gạo nếp Tan, mắc cọp Sìn Hồ, pa tỉnh tộp, chè san tuyết Sà Dề Phìn, rêu đá, rượu ngô Sùng Chô, bánh chưng đen, chè dây Ka Lăng, thịt sấy gác bếp, ra
+lai-chau | Lai Châu | lúa | 1 | Tổng sản lượng lương thực có hạt năm 2025 đạt 226.000 tấn; toàn tỉnh có 3.954 ha lúa hàng hóa chất lượng cao (với các giống lúa đặc sản như Séng Cù, Tẻ Râu, Nếp Tan), 10.861 ha chè, 8.084 ha cây ăn quả, 7.421 ha mắc ca v
+lai-chau | Lai Châu | mắc ca | 2 | Tổng sản lượng lương thực có hạt năm 2025 đạt 226.000 tấn; toàn tỉnh có 3.954 ha lúa hàng hóa chất lượng cao (với các giống lúa đặc sản như Séng Cù, Tẻ Râu, Nếp Tan), 10.861 ha chè, 8.084 ha cây ăn quả, 7.421 ha mắc ca v
+dien-bien | Điện Biên | gạo | 5 | Gạo Điện Biên gồm hai loại cơ bản là IR64 (gạo tám Điện Biên) và Bắc thơm số 7 (gạo tám thơm Điện Biên) với hàng chục nghìn tấn gạo được sản xuất mỗi năm trên cánh đồng Mường Thanh.
+dien-bien | Điện Biên | cà phê | 0 | -
+dien-bien | Điện Biên | chè | 1 | Pa tỉnh tộp, gà nướng mắc khén, rượu mông pê Tủa Chùa, táo mèo Pha Đin, bánh chưng đen Huổi Só, lạp xưởng hun khói, ngô nếp tím Điện Biên, canh bon, long nhãn Pom Lót, mận Phiêng Ban, xôi nếp nương, chè tuyết Sín Chải, b
+dien-bien | Điện Biên | mắc ca | 0 | -
+dien-bien | Điện Biên | lúa | 1 | Diện tích gieo cấy lúa năm 2016 đạt 500,98 km², tăng 1,32%; năng suất bình quân đạt 35 tạ/ha, giảm 0,4 tạ/ha; sản lượng ước đạt 175119 tấn, tăng 0,17% so với năm 2015.
+son-la | Sơn La | chè | 6 | Các đặc sản, ẩm thực địa phương trong tỉnh: táo mèo Bắc Yên, bánh dày Mông, rượu chuối Yên Châu, nộm da trâu, pa tỉnh tộp, măng trúc muối ớt Háng Đồng, nhót xanh chấm chéo, mận Phiêng Khoài, canh mọ, rượu thóc men lá Han
+son-la | Sơn La | mận | 1 | Các đặc sản, ẩm thực địa phương trong tỉnh: táo mèo Bắc Yên, bánh dày Mông, rượu chuối Yên Châu, nộm da trâu, pa tỉnh tộp, măng trúc muối ớt Háng Đồng, nhót xanh chấm chéo, mận Phiêng Khoài, canh mọ, rượu thóc men lá Han
+son-la | Sơn La | xoài | 1 | Các đặc sản, ẩm thực địa phương trong tỉnh: táo mèo Bắc Yên, bánh dày Mông, rượu chuối Yên Châu, nộm da trâu, pa tỉnh tộp, măng trúc muối ớt Háng Đồng, nhót xanh chấm chéo, mận Phiêng Khoài, canh mọ, rượu thóc men lá Han
+son-la | Sơn La | cà phê | 0 | -
+son-la | Sơn La | nhãn | 1 | Các đặc sản, ẩm thực địa phương trong tỉnh: táo mèo Bắc Yên, bánh dày Mông, rượu chuối Yên Châu, nộm da trâu, pa tỉnh tộp, măng trúc muối ớt Háng Đồng, nhót xanh chấm chéo, mận Phiêng Khoài, canh mọ, rượu thóc men lá Han
+son-la | Sơn La | bò sữa | 0 | -
+lao-cai | Lào Cai | chè | 4 | Diện tích trồng nhiều loại cây trồng đạt và vượt kế hoạch, gồm chè với 15.476 ha, cây dược liệu 2.136 ha, dứa 2.616 ha và chuối hàng hóa 2.865 ha.
+lao-cai | Lào Cai | thảo quả | 2 | Thắng cố truyền thống nấu từ thịt và nội tạng ngựa trong chảo lớn, đun cùng nhiều loại gia vị như thảo quả, quế chi, sả, gừng và lá thắng cố, tạo vị béo và cay.
+lao-cai | Lào Cai | lê | 17 | Châu này có 2 huyện làː Lâm Tây và Cam Quất (甘橘)."  Động Đào Hoa về sau có thể là ải Lê Hoa, tức ải Liên Hoa, nằm trên biên giới Đại Việt và Trung Hoa, nay là hương Liên Hoa Than (Ghềnh Liên Hoa) của huyện Hà Khẩu.
+lao-cai | Lào Cai | mận | 2 | Lào Cai có nhiều địa danh lịch sử, hang động tự nhiên và các vùng sinh thái nông nghiệp đặc sản như mận Bắc Hà, rau ôn đới, cây dược liệu quý, cá hồi, cá tầm...
+lao-cai | Lào Cai | gạo | 3 | Phở chua Bắc Hà dùng sợi phở màu hồng làm thủ công từ gạo nương địa phương, ăn kèm nước sốt vị chua, thịt lợn xá xíu, lạc rang và rau thơm.
+lao-cai | Yên Bái (định hướng) | chè | 0 | -
+lao-cai | Yên Bái (định hướng) | quế | 0 | -
+lao-cai | Yên Bái (định hướng) | Suối Giàng | 0 | -
+lao-cai | Yên Bái (định hướng) | bưởi | 0 | -
+tuyen-quang | Tuyên Quang | cam | 7 | Cây ăn quả có: cam, quýt, nhãn, vải, chanh.
+tuyen-quang | Tuyên Quang | chè | 6 | Cây công nghiệp gồm có: chè (nhà máy chè Tuyên Quang, Tháng Mười, Tân Trào), cây sả làm tinh dầu sả, lạc, đậu, tương.
+tuyen-quang | Tuyên Quang | bưởi | 5 | Tỉnh đang phát triển các vùng cây trồng hàng hóa chủ lực như chè, cam, bưởi và mía, gắn với chỉ dẫn địa lý, mã số vùng trồng và truy xuất nguồn gốc.
+tuyen-quang | Hà Giang | cam | 5 | Ngoài ra đây còn là vùng trồng các loại cây ăn quả có múi như cam, quýt, chanh...
+tuyen-quang | Hà Giang | chè | 3 | Chăn nuôi chủ yếu là trâu, ngựa, dê và các loại gia cầm.Vùng này là vùng đất của chè Shan tuyết và chủ nhân lâu đời của nó là người Dao - Một dân tộc có kinh nghiệm trồng và chăm sóc cây chè núi lâu đời.
+tuyen-quang | Hà Giang | Shan tuyết | 4 | Chăn nuôi chủ yếu là trâu, ngựa, dê và các loại gia cầm.Vùng này là vùng đất của chè Shan tuyết và chủ nhân lâu đời của nó là người Dao - Một dân tộc có kinh nghiệm trồng và chăm sóc cây chè núi lâu đời.
+tuyen-quang | Hà Giang | tam giác mạch | 1 | Các đặc sản, ẩm thực của Hà Giang như: cam sành Bắc Quang, thắng cố, mận đỏ Hoàng Su Phì, chè Lũng Phìn, cơm lam Bắc Mê, măng nứa, gà đen Hà Giang, gạo tẻ Già Diu, cháo ấu tẩu, lê Đồng Văn, hạt bí mèo đen Hà Giang, tam t
+cao-bang | Cao Bằng | hạt dẻ | 1 | Các đặc sản, ẩm thực Cao Bằng như: miến rong Phja Đén, đường phên Bó Tờ, bánh khẩu sli Nà Giàng, chè Đoỏng Lẹng, phở chua Cao Bằng, trám đen, lợn Hạ Lang, bí hương Thạch An, măng ngâm ớt, cốm Nà Pò, lê mắc cọp, bánh khảo
+cao-bang | Cao Bằng | thuốc lá | 0 | -
+cao-bang | Cao Bằng | lê | 16 | Mùa hè ở đây có đặc điểm nóng ẩm, nhiệt độ cao trung bình từ 30 – 32 °C và thấp trung bình từ 23 – 25 °C, nhiệt độ không lên đến 39 – 40 °C.
+cao-bang | Cao Bằng | miến | 1 | Các đặc sản, ẩm thực Cao Bằng như: miến rong Phja Đén, đường phên Bó Tờ, bánh khẩu sli Nà Giàng, chè Đoỏng Lẹng, phở chua Cao Bằng, trám đen, lợn Hạ Lang, bí hương Thạch An, măng ngâm ớt, cốm Nà Pò, lê mắc cọp, bánh khảo
+cao-bang | Cao Bằng | quýt | 1 | Các đặc sản, ẩm thực Cao Bằng như: miến rong Phja Đén, đường phên Bó Tờ, bánh khẩu sli Nà Giàng, chè Đoỏng Lẹng, phở chua Cao Bằng, trám đen, lợn Hạ Lang, bí hương Thạch An, măng ngâm ớt, cốm Nà Pò, lê mắc cọp, bánh khảo
+cao-bang | Cao Bằng | chè | 1 | Các đặc sản, ẩm thực Cao Bằng như: miến rong Phja Đén, đường phên Bó Tờ, bánh khẩu sli Nà Giàng, chè Đoỏng Lẹng, phở chua Cao Bằng, trám đen, lợn Hạ Lang, bí hương Thạch An, măng ngâm ớt, cốm Nà Pò, lê mắc cọp, bánh khảo
+thai-nguyen | Thái Nguyên | chè | 9 | Tỉnh còn có các hồ như Bảo Linh (86,5 ha), Ghềnh Chè (79 ha), Nước Hai, Suối Lạnh, Trại Gạo, Quán Chẽ, Bản Chang, Gò Miếu, các hồ thủy điện như Thác Giềng 1 và Pác Cáp.
+thai-nguyen | Thái Nguyên | Tân Cương | 5 | Các bãi rác như Đá Mài (Tân Cương) có hiện tượng phát tán bụi, khói, mùi hôi, nước rỉ rác ra môi trường.
+thai-nguyen | Bắc Kạn (định hướng) | quýt | 0 | -
+thai-nguyen | Bắc Kạn (định hướng) | hồng | 0 | -
+thai-nguyen | Bắc Kạn (định hướng) | miến | 0 | -
+lang-son | Lạng Sơn | hồi | 6 | Còn lại các tôn giáo khác như Minh Lý đạo có 6 người, Hồi giáo có 5 người, Tịnh độ cư sĩ Phật hội Việt Nam có 3 người, Phật giáo Hòa Hảo có 2 người và 1 người theo đạo Cao Đài.
+lang-son | Lạng Sơn | na | 23 | Lạng Sơn là một tỉnh miền núi biên giới nằm ở vùng Đông Bắc Bộ, Việt Nam.
+lang-son | Lạng Sơn | quýt | 2 | Lạng Sơn nổi tiếng với nhiều nông sản mang thương hiệu gắn liền địa danh như na Chi Lăng, quýt Bắc Sơn, hồng Bảo Lâm, thạch đen Tràng Định và hồi.
+lang-son | Lạng Sơn | thuốc lá | 0 | -
+lang-son | Lạng Sơn | đào | 4 | Ở bậc sau phổ thông, tỉnh chủ yếu có các cơ sở giáo dục nghề nghiệp và đào tạo giáo viên.
+phu-tho | Phú Thọ | chè | 7 | Cây chè là sản phẩm đặc trưng nhất với 14,5 nghìn ha và sản lượng 182,7 nghìn tấn, đưa tỉnh vào nhóm dẫn đầu cả nước sau Thái Nguyên và Tuyên Quang; tiếp đến là cây bưởi với khoảng 11,9 nghìn ha và cây cam với 3,7 nghìn 
+phu-tho | Phú Thọ | bưởi | 6 | Sông Bôi bắt nguồn từ khu vực Kim Bôi (dài khoảng 125 km), cùng với sông Lạng và sông Bùi đều thuộc hệ thống sông Đáy; riêng sông Bưởi bắt nguồn từ khu vực Tân Lạc (dài khoảng 55 km) chảy xuống Thanh Hóa và đổ vào sông M
+phu-tho | Phú Thọ | Đoan Hùng | 19 | Sông Lô đi vào tỉnh từ phía bắc, tiếp nhận nước từ sông Chảy tại khu vực huyện Đoan Hùng cũ trước khi hợp lưu với sông Hồng tại Việt Trì.
+phu-tho | Hòa Bình (định hướng) | cam | 0 | -
+phu-tho | Hòa Bình (định hướng) | Cao Phong | 0 | -
+phu-tho | Hòa Bình (định hướng) | mía | 0 | -
+phu-tho | Vĩnh Phúc (định hướng) | su su | 0 | -
+phu-tho | Vĩnh Phúc (định hướng) | bò sữa | 0 | -
+phu-tho | Vĩnh Phúc (định hướng) | Tam Đảo | 0 | -
+ha-noi | Hà Nội | bưởi Diễn | 0 | -
+ha-noi | Hà Nội | cam Canh | 0 | -
+ha-noi | Hà Nội | hoa | 38 | Thất bại của Thục Phán đầu thế kỷ II TCN đã kết thúc giai đoạn độc lập của Âu Lạc, bắt đầu giai đoạn 1000 năm do các triều đại phong kiến Trung Hoa thống trị.
+ha-noi | Hà Nội | nhãn | 0 | -
+ha-noi | Hà Nội | sữa | 1 | Có một số tác phẩm tuy không nhắc đến địa danh Hà Nội trong tựa đề hoặc trong ca từ nhưng được lấy cảm hứng hoặc viết về chính mảnh đất này như: "Những ánh sao đêm" của Phan Huỳnh Điểu, "Từ một ngã tư đường phố" của Phạm
+quang-ninh | Quảng Ninh | ba kích | 1 | Các đặc sản, ẩm thực địa phương trong thành phố như: hải sản Quảng Ninh, hải sản khô, miến dong Bình Liêu, bánh chưng cơm lông Hải Hà, bánh gật gù Tiên Yên, ba kích tím, nộm sứa Cô Tô, bánh ngải Bình Liêu, vải thiều Bình
+quang-ninh | Quảng Ninh | na | 53 | Quảng Ninh là một trong chín thành phố trực thuộc trung ương của Việt Nam, thuộc vùng đồng bằng sông Hồng.
+quang-ninh | Quảng Ninh | chè | 3 | Các đặc sản, ẩm thực địa phương trong thành phố như: hải sản Quảng Ninh, hải sản khô, miến dong Bình Liêu, bánh chưng cơm lông Hải Hà, bánh gật gù Tiên Yên, ba kích tím, nộm sứa Cô Tô, bánh ngải Bình Liêu, vải thiều Bình
+quang-ninh | Quảng Ninh | hải sản | 1 | Các đặc sản, ẩm thực địa phương trong thành phố như: hải sản Quảng Ninh, hải sản khô, miến dong Bình Liêu, bánh chưng cơm lông Hải Hà, bánh gật gù Tiên Yên, ba kích tím, nộm sứa Cô Tô, bánh ngải Bình Liêu, vải thiều Bình
+quang-ninh | Quảng Ninh | sá sùng | 1 | Các đặc sản, ẩm thực địa phương trong thành phố như: hải sản Quảng Ninh, hải sản khô, miến dong Bình Liêu, bánh chưng cơm lông Hải Hà, bánh gật gù Tiên Yên, ba kích tím, nộm sứa Cô Tô, bánh ngải Bình Liêu, vải thiều Bình
+bac-ninh | Bắc Giang (định hướng) | vải | 0 | -
+bac-ninh | Bắc Giang (định hướng) | Lục Ngạn | 0 | -
+bac-ninh | Bắc Giang (định hướng) | lạc | 0 | -
+bac-ninh | Bắc Giang (định hướng) | chè | 0 | -
+bac-ninh | Bắc Ninh | lúa | 0 | -
+bac-ninh | Bắc Ninh | rau | 0 | -
+hai-phong | Hải Dương (định hướng) | vải | 0 | -
+hai-phong | Hải Dương (định hướng) | Thanh Hà | 0 | -
+hai-phong | Hải Dương (định hướng) | cà rốt | 0 | -
+hai-phong | Hải Dương (định hướng) | hành | 6 | Phường Hải Dương, thành phố Hải Phòng.
+hai-phong | Hải Dương (định hướng) | tỏi | 0 | -
+hai-phong | Hải Phòng | lúa | 0 | -
+hai-phong | Hải Phòng | hải sản | 4 | Khu vực ven biển có các sản phẩm như mật ong Cát Bà, hải sản Đồ Sơn, thuốc lào Vĩnh Bảo – Tiên Lãng, táo Bàng La và một số sản phẩm thủy sản.
+hai-phong | Hải Phòng | thuốc lào | 1 | Khu vực ven biển có các sản phẩm như mật ong Cát Bà, hải sản Đồ Sơn, thuốc lào Vĩnh Bảo – Tiên Lãng, táo Bàng La và một số sản phẩm thủy sản.
+hung-yen | Hưng Yên | nhãn | 16 | Với điều kiện tự nhiên thuận lợi, đất đai màu mỡ, hệ thống sông ngòi dày đặc, Hưng Yên phát triển nền nông nghiệp đa dạng và hiệu quả, nổi bật với các vùng chuyên canh trồng lúa, rau, cây ăn quả (nhãn, vải, chuối, ổi, ca
+hung-yen | Hưng Yên | chuối | 4 | Với điều kiện tự nhiên thuận lợi, đất đai màu mỡ, hệ thống sông ngòi dày đặc, Hưng Yên phát triển nền nông nghiệp đa dạng và hiệu quả, nổi bật với các vùng chuyên canh trồng lúa, rau, cây ăn quả (nhãn, vải, chuối, ổi, ca
+hung-yen | Hưng Yên | long nhãn | 3 | Làng nghề long nhãn Hồng Nam (xã Tân Hưng)
+hung-yen | Thái Bình (định hướng) | lúa | 0 | -
+hung-yen | Thái Bình (định hướng) | gạo | 0 | -
+hung-yen | Thái Bình (định hướng) | hải sản | 0 | -
+ninh-binh | Nam Định (định hướng) | gạo | 0 | -
+ninh-binh | Nam Định (định hướng) | Hải Hậu | 0 | -
+ninh-binh | Nam Định (định hướng) | lúa | 0 | -
+ninh-binh | Ninh Bình | cói | 3 | Các làng nghề thủ công truyền thống địa phương có: thêu Văn Lâm, đá mỹ nghệ Ninh Vân ở Nam Hoa Lư, dệt chiếu và làm hàng cói mỹ nghệ ở Kim Sơn, Yên Khánh..., đan lát mây tre ở Gia Viễn, Nho Quan, làng nghề mộc Phúc Lọc ở
+ninh-binh | Ninh Bình | dê | 1 | Các đặc sản, ẩm thực tiêu biểu của Ninh Bình như: đặc sản thịt dê núi Ninh Bình, phở bò Giao Cù, dứa Đồng Giao, chuối ngự Đại Hoàng, bánh xíu páo, cá kho quả gáo, cá kho Vũ Đại, bánh đa nướng Phong An, chè Ba Trại, kẹo S
+ninh-binh | Ninh Bình | lúa | 0 | -
+ninh-binh | Hà Nam | chuối | 0 | -
+ninh-binh | Hà Nam | bưởi | 0 | -
+thanh-hoa | Thanh Hóa | mía | 2 | Cây công nghiệp & Cây ăn quả: Vùng mía thâm canh 12.000 – 15.000 ha (Thạch Thành, Ngọc Lặc, Thọ Xuân, Cẩm Thủy, Bá Thước, Thường Xuân, Như Xuân...); vùng sắn nguyên liệu 13.500 ha; vùng cây ăn quả tập trung 12.000 – 14.0
+thanh-hoa | Thanh Hóa | cói | 0 | -
+thanh-hoa | Thanh Hóa | bưởi | 0 | -
+thanh-hoa | Thanh Hóa | lúa | 1 | Cây lương thực: Vùng lúa thâm canh 150.000 ha (trong đó có 75.000 ha lúa năng suất, chất lượng cao) tập trung tại Yên Định, Triệu Sơn, Thọ Xuân, Thiệu Hóa, Quảng Xương, Nông Cống, Hoằng Hóa, Hậu Lộc, Đông Sơn, Vĩnh Lộc, 
+thanh-hoa | Thanh Hóa | luồng | 3 | Các loại thuộc tre nứa gồm có luồng, nứa, vầu, giang, tre,...
+nghe-an | Nghệ An | cam | 1 | Nghệ An còn là nơi có nhiều món ăn ngon, đặc sản nổi tiếng: cháo lươn Vinh, cơm lam, nhút Thanh Chương, tương Nam Đàn, cam xã Đoài...
+nghe-an | Nghệ An | chè | 0 | -
+nghe-an | Nghệ An | mía | 0 | -
+nghe-an | Nghệ An | lạc | 3 | Theo truyền thuyết, thời Hùng Vương đây là vùng sinh sống của bộ lạc Việt Thường với trung tâm là vùng chân núi Hồng Lĩnh, thì vùng Nghệ An và Hà Tĩnh vốn thuộc nước Việt Thường thủ đô là kinh Đô Ngàn Hống chân núi Hồng 
+nghe-an | Nghệ An | bò sữa | 0 | -
+ha-tinh | Hà Tĩnh | bưởi | 2 | Cam là sản phẩm nổi tiếng nhất, đạt 69.060 tấn, tiếp đến là bưởi với 39.492 tấn.
+ha-tinh | Hà Tĩnh | Phúc Trạch | 1 | Các đặc sản, ẩm thực địa phương ở Hà Tĩnh như: hải sản, bánh cu đơ, nhút mít Hương Sơn, vỏ bánh ram, bánh mướt ram, bưởi Phúc Trạch, bánh đa Việt Xuyên, hồng Yên Du, mật ong rừng Vũ Quang, chè, hến sông La, mật mía Thọ Đ
+ha-tinh | Hà Tĩnh | cam | 3 | Năm Minh Mạng 21 (1840), 2 huyện (trước của vương quốc Viêng Chăn bị diệt vong bởi Xiêm La và đất châu Trịnh Cao) là: Cam Cát (tức Khamkheuth tỉnh Borikhamxay) và Cam Môn (tức vùng các huyện Hương Khê, Vũ Quang và phía Đ
+ha-tinh | Hà Tĩnh | lạc | 11 | Năm Thiệu Trị thứ nhất (1841), đổi phủ Hà Hoa thành phủ Hà Thanh (do kỵ húy), đồng thời Thiệu Trị lấy cả 3 phủ Trấn Định, Trấn Tĩnh, Lạc Biên (trước thuộc Nghệ An) nhập vào tỉnh Hà Tĩnh.
+ha-tinh | Hà Tĩnh | chè | 4 | Mặt hàng xuất khẩu chủ lực của tỉnh là thép và phôi thép, bên cạnh các nông - lâm sản như chè và dăm gỗ.
+quang-tri | Quảng Trị | hồ tiêu | 5 | Nhờ điều kiện thổ nhưỡng phù hợp, đây trở thành địa bàn lý tưởng để phát triển các loại cây công nghiệp lâu năm như cao su, hồ tiêu cùng các dải cây ăn quả.
+quang-tri | Quảng Trị | cà phê | 3 | Cao su là cây chủ lực với 30.080,1 ha, tiếp đến là cà phê 3.708,7 ha, hồ tiêu 3.143,2 ha, chuối 5.058,8 ha, cam 607,8 ha, ổi 578,4 ha và chè 370,2 ha.
+quang-tri | Quảng Trị | Khe Sanh | 2 | Cách ngày nay khoảng 2 đến 3 vạn năm, những lớp cư dân đầu tiên đã xuất hiện và sinh sống tập trung tại các xã/ đặc khu Cam Lộ, Cồn Cỏ, Khe Sanh, Hướng Tân, tiêu biểu là các di chỉ Tân Sở (Cam Lộ), Đồi 241/Ken-Karol (Cam
+quang-tri | Quảng Trị | cao su | 5 | Nhờ điều kiện thổ nhưỡng phù hợp, đây trở thành địa bàn lý tưởng để phát triển các loại cây công nghiệp lâu năm như cao su, hồ tiêu cùng các dải cây ăn quả.
+quang-tri | Quảng Bình (định hướng) | khoai | 0 | -
+quang-tri | Quảng Bình (định hướng) | hồ tiêu | 0 | -
+quang-tri | Quảng Bình (định hướng) | lúa | 0 | -
+hue | Huế | thanh trà | 1 | Các đặc sản, ẩm thực địa phương trong thành phố như: hải sản, mè xửng, mứt gừng Kim Long, tôm chua Huế, gà kho củ nén, rượu cần A Lưới, bánh bột lọc, chè bắp Cồn Hến, rượu đoác người Tà Ôi, bánh canh Nam Phổ, cơm hến, ch
+hue | Huế | sen | 1 | Các đặc sản, ẩm thực địa phương trong thành phố như: hải sản, mè xửng, mứt gừng Kim Long, tôm chua Huế, gà kho củ nén, rượu cần A Lưới, bánh bột lọc, chè bắp Cồn Hến, rượu đoác người Tà Ôi, bánh canh Nam Phổ, cơm hến, ch
+hue | Huế | lúa | 0 | -
+da-nang | Quảng Nam | quế | 15 | Tỉnh Quảng Nam được chia thành 2 phủ: Thăng Bình (升平) (trước là Thăng Hoa) (gồm các huyện Lễ Dương (醴陽) Tam Kỳ (三岐), Hà Đông (河東), Quế Sơn (桂山)) và Điện Bàn (奠磐) (gồm các huyện Hòa Vang (和榮), Duy Xuyên (濰川), Diên Phúc (延
+da-nang | Quảng Nam | sâm | 2 | Nhân sâm Ngọc Linh là cây dược liệu quý phân bố chủ yếu ở độ cao trên 1.000 m của núi Ngọc Linh.
+da-nang | Quảng Nam | Ngọc Linh | 3 | Đỉnh núi Ngọc Linh cao 2.598 m nằm giữa ranh giới 2 tỉnh: Quảng Nam và Kon Tum; đây là đỉnh núi cao nhất của dãy Trường Sơn nhưng đỉnh núi này vẫn thuộc địa phận quản lý của tỉnh Quảng Nam.
+da-nang | Quảng Nam | Trà My | 14 | Vùng Tây Bắc thuộc lưu vực sông Bung (các huyện Đông Giang, Tây Giang và Nam Giang) có lượng mưa thấp nhất trong khi vùng đồi núi Tây Nam thuộc lưu vực sông Thu Bồn (các huyện Nam Trà My, Bắc Trà My, Tiên Phước và Hiệp Đ
+da-nang | Đà Nẵng | rau | 0 | -
+da-nang | Đà Nẵng | nông | 17 | Đồng bằng ven biển là vùng đất thấp chịu ảnh hưởng của biển bị nhiễm mặn, là vùng tập trung nhiều cơ sở nông nghiệp, công nghiệp, dịch vụ, quân sự, đất ở và các khu chức năng của thành phố.
+quang-ngai | Quảng Ngãi | tỏi | 3 | Nhiều đặc sản của tỉnh đã được bảo hộ nhãn hiệu gắn với địa danh, tiêu biểu là quế Trà Bồng, tỏi Lý Sơn, cá bống sông Trà, mạch nha Mộ Đức.
+quang-ngai | Quảng Ngãi | Lý Sơn | 20 | Điểm cực đông tại đảo Lý Sơn, đặc khu Lý Sơn.
+quang-ngai | Quảng Ngãi | quế | 3 | Nhiều đặc sản của tỉnh đã được bảo hộ nhãn hiệu gắn với địa danh, tiêu biểu là quế Trà Bồng, tỏi Lý Sơn, cá bống sông Trà, mạch nha Mộ Đức.
+quang-ngai | Quảng Ngãi | mía | 2 | Vùng phía đông, tức địa bàn Quảng Ngãi cũ, mạnh về lúa, mía, rau màu, cây nguyên liệu giấy và thủy sản.
+quang-ngai | Kon Tum (định hướng) | sâm | 0 | -
+quang-ngai | Kon Tum (định hướng) | Ngọc Linh | 0 | -
+quang-ngai | Kon Tum (định hướng) | cà phê | 0 | -
+quang-ngai | Kon Tum (định hướng) | cao su | 0 | -
+gia-lai | Gia Lai | hồ tiêu | 1 | Nhóm cây lâu năm đạt tổng diện tích 294.011,9 ha và sản lượng 1.087,4 nghìn tấn, đứng đầu là cà phê với 108.389,6 ha và 340,6 nghìn tấn, tiếp đến là cao su với 85.717 ha và 84,1 nghìn tấn, điều với 40.230,6 ha và 38,1 ng
+gia-lai | Gia Lai | cà phê | 5 | Nhóm cây lâu năm đạt tổng diện tích 294.011,9 ha và sản lượng 1.087,4 nghìn tấn, đứng đầu là cà phê với 108.389,6 ha và 340,6 nghìn tấn, tiếp đến là cao su với 85.717 ha và 84,1 nghìn tấn, điều với 40.230,6 ha và 38,1 ng
+gia-lai | Gia Lai | Chư Sê | 6 | Ngày 17 tháng 8 năm 1981, thành lập huyện Chư Sê trên cơ sở tách ra từ 2 huyện: Chư Prông và Mang Yang.
+gia-lai | Gia Lai | cao su | 2 | Nhóm cây lâu năm đạt tổng diện tích 294.011,9 ha và sản lượng 1.087,4 nghìn tấn, đứng đầu là cà phê với 108.389,6 ha và 340,6 nghìn tấn, tiếp đến là cao su với 85.717 ha và 84,1 nghìn tấn, điều với 40.230,6 ha và 38,1 ng
+gia-lai | Bình Định (định hướng) | dừa | 0 | -
+gia-lai | Bình Định (định hướng) | Tam Quan | 0 | -
+gia-lai | Bình Định (định hướng) | lúa | 0 | -
+khanh-hoa | Khánh Hòa | yến | 51 | Do địa hình dốc gắt, các tuyến giao thông huyết mạch nối lên Tây Nguyên phải vượt qua nhiều cung đèo dài và hiểm trở.
+khanh-hoa | Khánh Hòa | xoài | 4 | Tại phần lãnh thổ phía bắc, xoài là loại cây ăn quả mang tính thương hiệu.
+khanh-hoa | Khánh Hòa | Cam Lâm | 17 | Chúa chấp thuận và đặt dinh Thái Khang gồm hai phủ là phủ Thái Khang gồm các huyện Tân Định, Quảng Phước ở phía bắc (nay là thị xã Ninh Hòa và huyện Vạn Ninh) và phủ Diên Ninh gồm các huyện Phước Diên, Hoa Châu, Vĩnh Xươ
+khanh-hoa | Ninh Thuận | nho | 3 | Ninh Thuận nổi tiếng với những sản phẩm như: Nho, táo, hành, tỏi, tôm giống, muối,...
+khanh-hoa | Ninh Thuận | tỏi | 2 | Ninh Thuận nổi tiếng với những sản phẩm như: Nho, táo, hành, tỏi, tôm giống, muối,...
+khanh-hoa | Ninh Thuận | táo | 1 | Ninh Thuận nổi tiếng với những sản phẩm như: Nho, táo, hành, tỏi, tôm giống, muối,...
+khanh-hoa | Ninh Thuận | muối | 3 | Do thuộc vùng có nhiệt độ cao, cường độ bức xạ lớn nên Ninh Thuận có điều kiện lý tưởng để sản xuất muối công nghiệp.
+dak-lak | Đắk Lắk | cà phê | 3 | Nhiều lễ hội truyền thống đặc sắc được duy trì thường niên như Lễ mừng lúa mới, Lễ bỏ mả, Lễ đâm trâu, Lễ cúng Bến nước, Lễ hội đua voi, Lễ hội Cồng chiêng, Lễ hội Cà phê...
+dak-lak | Đắk Lắk | Buôn Ma Thuột | 19 | Ngày 02 tháng 11 năm 1899, Toàn quyền Đông Dương tiếp tục ra Nghị định thành lập Đại lý hành chính Đắk Lắk, đặt trụ sở tại Buôn Ma Thuột, cũng trực thuộc Lào.
+dak-lak | Đắk Lắk | sầu riêng | 0 | -
+dak-lak | Đắk Lắk | hồ tiêu | 0 | -
+dak-lak | Phú Yên (định hướng) | cá ngừ | 0 | -
+dak-lak | Phú Yên (định hướng) | lúa | 0 | -
+dak-lak | Phú Yên (định hướng) | dừa | 0 | -
+lam-dong | Lâm Đồng | chè | 3 | Các khu vực thấp hơn thuộc cao nguyên Di Linh – Bảo Lộc có nền nhiệt cao hơn, phù hợp với việc trồng trọt cây công nghiệp dài ngày như cà phê, chè và dâu tằm.
+lam-dong | Lâm Đồng | Bảo Lộc | 14 | Tỉnh Lâm Đồng gồm hai quận Di Linh và Bảo Lộc.
+lam-dong | Lâm Đồng | rau | 1 | Sản lượng một số sản phẩm chủ yếu gồm điện sản xuất 36.652 triệu kWh, tăng 2,04%; ôxit nhôm 1.584.396 tấn, tăng 4,39%; đá xây dựng 4.199.087 m³, tăng 10,21%; phân bón 127.695 tấn, tăng 22,71% nhờ Nhà máy hóa chất Đức Gia
+lam-dong | Lâm Đồng | hoa | 4 | Cao nguyên Di Linh – Bảo Lộc ở phía nam thấp hơn, độ cao khoảng 800 đến 1.000 m, với các đồi dốc thoai thoải thuận lợi cho việc trồng trọt các cây công nghiệp dài ngày.
+lam-dong | Lâm Đồng | cà phê | 3 | Các khu vực thấp hơn thuộc cao nguyên Di Linh – Bảo Lộc có nền nhiệt cao hơn, phù hợp với việc trồng trọt cây công nghiệp dài ngày như cà phê, chè và dâu tằm.
+lam-dong | Lâm Đồng | atisô | 0 | -
+lam-dong | Đắk Nông (định hướng) | hồ tiêu | 0 | -
+lam-dong | Đắk Nông (định hướng) | cà phê | 0 | -
+lam-dong | Bình Thuận (định hướng) | thanh long | 0 | -
+lam-dong | Bình Thuận (định hướng) | nước mắm | 0 | -
+dong-nai | Đồng Nai | bưởi | 3 | Về nông nghiệp, Đồng Nai là thủ phủ sản xuất chè, cà phê, ca cao, cam, bưởi, quýt, sầu riêng, chôm chôm, măng cụt,....
+dong-nai | Đồng Nai | Tân Triều | 6 | Khu công nghiệp Thạnh Phú (phường Tân Triều)
+dong-nai | Đồng Nai | cao su | 4 | Trong đó, một số cây công nghiệp chủ lực có diện tích thuộc tốp đầu cả nước như: cao su, điều, hồ tiêu...
+dong-nai | Đồng Nai | điều | 16 | === Điều kiện thiên nhiên ===
+dong-nai | Bình Phước (định hướng) | điều | 0 | -
+dong-nai | Bình Phước (định hướng) | hạt điều | 0 | -
+dong-nai | Bình Phước (định hướng) | cao su | 0 | -
+dong-nai | Bình Phước (định hướng) | hồ tiêu | 0 | -
+ho-chi-minh | Bình Dương (định hướng) | măng cụt | 0 | -
+ho-chi-minh | Bình Dương (định hướng) | Lái Thiêu | 0 | -
+ho-chi-minh | Bình Dương (định hướng) | cao su | 0 | -
+ho-chi-minh | Bình Dương (định hướng) | sầu riêng | 0 | -
+ho-chi-minh | Bà Rịa – Vũng Tàu | hồ tiêu | 0 | -
+ho-chi-minh | Bà Rịa – Vũng Tàu | cao su | 1 | Phạm Văn Hy (1931-2010): tên thật là Phạm Bàng, Bí thư Đặc khu Vũng Tàu - Côn Đảo và tỉnh Bà Rịa – Vũng Tàu, có công phổ biến cây cao su lên vùng Tây Nguyên, Quảng Trị.
+ho-chi-minh | Bà Rịa – Vũng Tàu | hải sản | 0 | -
+tay-ninh | Tây Ninh | mãng cầu | 3 | Mãng cầu Bà Đen (trái na): được trồng tại khu vực gần núi Bà Đen của Tây Ninh.
+tay-ninh | Tây Ninh | mía | 1 | Ngành công nghiệp và tiểu thủ công nghiệp của Tây Ninh ngày càng phát triển vững chắc đồng thời đã xây dựng được hệ thống các nhà máy chế biến nông sản tại các vùng chuyên canh như các nhà máy mía đường, các nhà máy chế 
+tay-ninh | Tây Ninh | cao su | 1 | Ngành công nghiệp và tiểu thủ công nghiệp của Tây Ninh ngày càng phát triển vững chắc đồng thời đã xây dựng được hệ thống các nhà máy chế biến nông sản tại các vùng chuyên canh như các nhà máy mía đường, các nhà máy chế 
+tay-ninh | Tây Ninh | mì | 2 | Ngành công nghiệp và tiểu thủ công nghiệp của Tây Ninh ngày càng phát triển vững chắc đồng thời đã xây dựng được hệ thống các nhà máy chế biến nông sản tại các vùng chuyên canh như các nhà máy mía đường, các nhà máy chế 
+tay-ninh | Long An (định hướng) | thanh long | 0 | -
+tay-ninh | Long An (định hướng) | lúa | 0 | -
+tay-ninh | Long An (định hướng) | gạo | 0 | -
+tay-ninh | Long An (định hướng) | chanh | 0 | -
+dong-thap | Đồng Tháp | xoài | 6 | Các nông sản đặc trưng gồm xoài cát Hòa Lộc, xoài Cao Lãnh, quýt hồng Lai Vung, quýt Cái Bè, nhãn Tân Phong, sen Tháp Mười, sầu riêng Cai Lậy, vú sữa Vĩnh Kim, khóm Tân Phước, sơ ri Gò Công và thanh long Chợ Gạo.
+dong-thap | Đồng Tháp | sen | 3 | Các nông sản đặc trưng gồm xoài cát Hòa Lộc, xoài Cao Lãnh, quýt hồng Lai Vung, quýt Cái Bè, nhãn Tân Phong, sen Tháp Mười, sầu riêng Cai Lậy, vú sữa Vĩnh Kim, khóm Tân Phước, sơ ri Gò Công và thanh long Chợ Gạo.
+dong-thap | Đồng Tháp | lúa | 6 | Các sản phẩm nổi bật gồm lúa gạo, trái cây, hoa-cây kiểng và thủy sản.
+dong-thap | Đồng Tháp | quýt | 4 | Các nông sản đặc trưng gồm xoài cát Hòa Lộc, xoài Cao Lãnh, quýt hồng Lai Vung, quýt Cái Bè, nhãn Tân Phong, sen Tháp Mười, sầu riêng Cai Lậy, vú sữa Vĩnh Kim, khóm Tân Phước, sơ ri Gò Công và thanh long Chợ Gạo.
+dong-thap | Tiền Giang | vú sữa | 0 | -
+dong-thap | Tiền Giang | Lò Rèn | 0 | -
+dong-thap | Tiền Giang | thanh long | 0 | -
+dong-thap | Tiền Giang | sầu riêng | 0 | -
+vinh-long | Vĩnh Long | bưởi | 1 | Tỉnh cũng có nhiều đặc sản dùng làm quà, trong đó nổi tiếng nhất là kẹo dừa và bánh phồng Sơn Đốc gắn với địa bàn Bến Tre cũ, dừa sáp gắn với địa bàn Trà Vinh cũ, cùng tàu hũ ky, bưởi Năm Roi và cam sành gắn với địa bàn 
+vinh-long | Vĩnh Long | Năm Roi | 1 | Tỉnh cũng có nhiều đặc sản dùng làm quà, trong đó nổi tiếng nhất là kẹo dừa và bánh phồng Sơn Đốc gắn với địa bàn Bến Tre cũ, dừa sáp gắn với địa bàn Trà Vinh cũ, cùng tàu hũ ky, bưởi Năm Roi và cam sành gắn với địa bàn 
+vinh-long | Vĩnh Long | cam | 1 | Tỉnh cũng có nhiều đặc sản dùng làm quà, trong đó nổi tiếng nhất là kẹo dừa và bánh phồng Sơn Đốc gắn với địa bàn Bến Tre cũ, dừa sáp gắn với địa bàn Trà Vinh cũ, cùng tàu hũ ky, bưởi Năm Roi và cam sành gắn với địa bàn 
+vinh-long | Vĩnh Long | chôm chôm | 0 | -
+vinh-long | Bến Tre (định hướng) | dừa | 0 | -
+vinh-long | Bến Tre (định hướng) | bưởi | 0 | -
+vinh-long | Trà Vinh (định hướng) | dừa | 0 | -
+vinh-long | Trà Vinh (định hướng) | dừa sáp | 0 | -
+an-giang | An Giang | lúa | 7 | Nông nghiệp An Giang phát triển mạnh, lấy lúa gạo làm nền tảng (vùng Tứ giác Long Xuyên), với diện tích lớn, năng suất cao, sản xuất 2–3 vụ/năm, cánh đồng lớn và hướng hữu cơ.
+an-giang | An Giang | gạo | 3 | Nông nghiệp An Giang phát triển mạnh, lấy lúa gạo làm nền tảng (vùng Tứ giác Long Xuyên), với diện tích lớn, năng suất cao, sản xuất 2–3 vụ/năm, cánh đồng lớn và hướng hữu cơ.
+an-giang | An Giang | cá tra | 3 | Bên cạnh đó, tỉnh đẩy mạnh thủy sản (cá tra, nuôi trồng hiện đại), chăn nuôi và cây ăn trái, phát triển sản phẩm OCOP.
+an-giang | An Giang | thốt nốt | 23 | Đất huyện Phong Phú nay có thể là đất thuộc các quận Thốt Nốt, Ô Môn,...
+an-giang | Kiên Giang | hồ tiêu | 0 | -
+an-giang | Kiên Giang | Phú Quốc | 39 | Đến ngày nay Kiên Giang được nhiều người biết đến qua danh thắng du lịch nổi tiếng là Hòn Phụ Tử (gãy hòn Phụ, còn hòn Tử) và đảo Phú Quốc.
+an-giang | Kiên Giang | lúa | 4 | Nền nông nghiệp của Kiên Giang là nông nghiệp trồng lúa nước.
+can-tho | Sóc Trăng (định hướng) | gạo | 0 | -
+can-tho | Sóc Trăng (định hướng) | ST25 | 0 | -
+can-tho | Sóc Trăng (định hướng) | hành | 3 | Phường Sóc Trăng, thành phố Cần Thơ.
+can-tho | Sóc Trăng (định hướng) | lúa | 0 | -
+can-tho | Hậu Giang | khóm | 1 | Đặc sản về cây ăn trái của Hậu Giang cũng được nhiều người ưa chuộng như khóm Cầu Đúc, bưởi Phú Hữu, quýt đường Long Trị....Ngoài ra, tỉnh còn có đặc sản về thủy sản, cá thác lác Vị Thanh ngon nổi tiếng khắp vùng Đồng bằ
+can-tho | Hậu Giang | bưởi | 1 | Đặc sản về cây ăn trái của Hậu Giang cũng được nhiều người ưa chuộng như khóm Cầu Đúc, bưởi Phú Hữu, quýt đường Long Trị....Ngoài ra, tỉnh còn có đặc sản về thủy sản, cá thác lác Vị Thanh ngon nổi tiếng khắp vùng Đồng bằ
+can-tho | Hậu Giang | mía | 0 | -
+can-tho | Cần Thơ | lúa | 2 | Cây nông nghiệp chính của Cần Thơ là lúa, với sản lượng 1.194,7 tấn.
+can-tho | Cần Thơ | cá | 131 | Thành phố Cần Thơ hợp nhất với các tỉnh Hậu Giang và Sóc Trăng, được chia làm 103 đơn vị hành chính cấp cơ sở, bao gồm 31 phường và 72 xã.
+can-tho | Cần Thơ | trái cây | 0 | -
+ca-mau | Cà Mau | tôm | 21 | Diện tích nuôi trồng thủy sản của tỉnh hiện hơn 450.000 ha, trong đó hơn 416.990 ha là nuôi tôm.
+ca-mau | Cà Mau | cua | 4 | Ngoài con tôm, cua Cà Mau cũng là sản phẩm chủ lực với diện tích nuôi xen canh được mở rộng, hướng tới việc xây dựng các doanh nghiệp dẫn dắt chuỗi giá trị và thực hiện truy xuất nguồn gốc điện tử.
+ca-mau | Cà Mau | rừng | 24 | Do Nước đen là màu nước đặc trưng do lá tràm của thảm rừng tràm U Minh bạt ngàn rụng xuống làm đổi màu nước.
+ca-mau | Bạc Liêu (định hướng) | muối | 0 | -
+ca-mau | Bạc Liêu (định hướng) | tôm | 0 | -
+ca-mau | Bạc Liêu (định hướng) | lúa | 0 | -
