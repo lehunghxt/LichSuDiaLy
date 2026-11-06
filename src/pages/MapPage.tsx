@@ -95,7 +95,10 @@ export default function MapPage() {
             <RegionList regions={regions} selectedId={region?.id ?? null} onSelect={selectRegion} />
           </div>
         </div>
-        <aside aria-label="Thông tin bản đồ" className="flex flex-col gap-5 bg-bg p-4 lg:overflow-y-auto lg:overscroll-contain xl:p-5">
+        <aside
+          aria-label="Thông tin bản đồ"
+          className="flex flex-col gap-5 bg-bg p-4 pb-24 lg:overflow-y-auto lg:overscroll-contain lg:pb-4 xl:p-5"
+        >
           <CompactNav />
           <MapInfoPanel
             region={region}

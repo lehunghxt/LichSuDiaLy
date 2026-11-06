@@ -510,3 +510,17 @@ test('province card says which former provinces the 2025 province was formed fro
     'Tỉnh Lai Châu giữ nguyên, không hợp nhất trong đợt sắp xếp năm 2025.',
   )
 })
+
+test('on phones the main navigation is a tab bar stuck to the bottom of the screen; the panel leaves room for it', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const panel = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
+  const nav = within(panel).getByRole('navigation', { name: 'Điều hướng chính' })
+  expect(nav.className).toMatch(/(^| )fixed( |$)/)
+  expect(nav.className).toContain('bottom-0')
+  expect(nav.className).toContain('lg:static')
+  expect(nav.className).toContain('env(safe-area-inset-bottom)')
+  expect(panel.className).toContain('pb-24')
+  expect(panel.className).toContain('lg:pb-4')
+  // logo chỉ hiện trên màn rộng (điện thoại đã có tab Trang chủ)
+  expect(within(panel).getByRole('link', { name: /^Em khám phá/ }).className).toContain('hidden lg:block')
+})
