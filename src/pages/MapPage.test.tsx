@@ -382,6 +382,13 @@ test('region chips on the map are always shown (nothing to expand or collapse) a
   await screen.findByRole('list', { name: 'Các vùng địa lí' })
   expect(screen.queryByRole('button', { name: /Thu gọn|Mở bảng/ })).not.toBeInTheDocument()
   expect(within(regionList()).getByRole('button', { name: /Trung du/ })).toHaveAttribute('aria-pressed', 'true')
+  // một hàng chip tròn riêng lẻ, vuốt ngang trên điện thoại; chip đang chọn tô màu của vùng
+  expect(regionList().className).toContain('overflow-x-auto')
+  expect(regionList().className).not.toContain('flex-wrap')
+  const chip = within(regionList()).getByRole('button', { name: /Trung du/ })
+  expect(chip.className).toContain('rounded-full')
+  expect(chip.style.background).toContain('--color-')
+  expect(within(regionList()).getByRole('button', { name: /Nam Bộ/ }).style.background).toBe('')
   await userEvent.click(within(regionList()).getByRole('button', { name: /Đồng bằng Bắc Bộ/ }))
   expect(router.state.location.pathname).toBe('/ban-do/dong-bang-bac-bo')
 })

@@ -1,4 +1,5 @@
 import { Clock } from 'lucide-react'
+import { useEffect, useRef } from 'react'
 import type { RegionMeta } from '../../types/content'
 
 interface RegionListProps {
@@ -15,26 +16,41 @@ const SHORT: Record<string, string> = {
   'nam-bo': 'Nam Bộ',
 }
 
-/** Dải chip các vùng nằm ngang ở mép trên bản đồ: vừa là chú giải màu, vừa để chọn vùng (cả bằng bàn phím).
- *  Luôn hiện; màn hẹp thì chip xuống hàng. */
+/** Dải chip các vùng ở mép trên bản đồ: vừa là chú giải màu, vừa để chọn vùng (cả bằng bàn phím).
+ *  Mỗi vùng một viên chip tròn, nằm trên một hàng; màn hẹp vuốt ngang. Chip đang chọn tô màu của vùng. */
 export function RegionList({ regions, selectedId, onSelect }: RegionListProps) {
+  const selectedRef = useRef<HTMLButtonElement>(null)
+  // Đổi vùng: đưa chip đang chọn vào tầm nhìn (màn hẹp có thể đang bị cuộn khuất)
+  useEffect(() => {
+    selectedRef.current?.scrollIntoView?.({ block: 'nearest', inline: 'nearest' })
+  }, [selectedId])
   return (
-    <ul aria-label="Các vùng địa lí" className="flex max-w-full flex-wrap gap-1 rounded-2xl bg-surface/95 p-1.5 shadow-lg backdrop-blur ">
+    <ul
+      aria-label="Các vùng địa lí"
+      // py để bóng của chip không bị cắt khi cuộn ngang
+      className="-my-2 flex max-w-full gap-2 overflow-x-auto py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+    >
       {regions.map((r) => {
         const selected = r.id === selectedId
         return (
           <li key={r.id} className="shrink-0">
             <button
+              ref={selected ? selectedRef : undefined}
               type="button"
               aria-pressed={selected}
               aria-label={r.name}
               title={r.name}
               onClick={() => onSelect(r.id)}
-              className={`flex min-h-8 items-center gap-1.5 whitespace-nowrap rounded-xl px-2 text-xs sm:min-h-9 sm:gap-2 sm:px-2.5 sm:text-sm transition-colors ${
-                selected ? 'bg-violet-100 font-bold ring-2 ring-violet-300' : 'font-semibold hover:bg-bg'
+              style={selected ? { background: `var(--color-${r.color})` } : undefined}
+              className={`flex h-9 items-center gap-2 whitespace-nowrap rounded-full px-3.5 text-sm shadow-md transition ${
+                selected ? 'font-bold text-ink shadow-lg' : 'bg-surface/95 font-semibold text-ink/80 backdrop-blur hover:bg-surface'
               }`}
             >
-              <span aria-hidden className="size-3.5 shrink-0 rounded" style={{ background: `var(--color-${r.color})` }} />
+              <span
+                aria-hidden
+                className={`size-3 shrink-0 rounded-full ${selected ? 'bg-surface ring-2 ring-ink/20' : ''}`}
+                style={selected ? undefined : { background: `var(--color-${r.color})` }}
+              />
               {SHORT[r.id] ?? r.name}
               {r.status === 'coming_soon' && (
                 <span title="Sắp ra mắt" className="text-muted">
