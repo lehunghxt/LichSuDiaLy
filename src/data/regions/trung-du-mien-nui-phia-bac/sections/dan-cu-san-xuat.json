@@ -277,5 +277,31 @@
       }
     ],
     "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__nha-san",
+    "title": "Nhà sàn và bản làng",
+    "summary": "Ở miền núi phía Bắc, nhiều dân tộc như người Thái sống trong nhà sàn, dựng cao hơn mặt đất. Mỗi bản gồm nhiều nhà sàn ở gần nhau.",
+    "highlights": [
+      "Nhà sàn phổ biến ở miền núi phía Bắc và Tây Nguyên.",
+      "Nhà sàn của người Thái Đen có mái hình mai rùa, hai đầu hồi có lan can bao quanh.",
+      "Mặt sàn chia hai phần: một phần là chỗ ngủ, phần còn lại có bếp và chỗ tiếp khách."
+    ],
+    "keyPoints": [
+      "Nhà sàn là nét đặc trưng trong đời sống của nhiều dân tộc vùng núi."
+    ],
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Nhà sàn",
+        "url": "https://vi.wikipedia.org/wiki/Nh%C3%A0_s%C3%A0n"
+      },
+      {
+        "title": "Wikipedia tiếng Việt: Người Thái (Việt Nam)",
+        "url": "https://vi.wikipedia.org/wiki/Ng%C6%B0%E1%BB%9Di_Th%C3%A1i_%28Vi%E1%BB%87t_Nam%29"
+      }
+    ],
+    "status": "draft"
   }
 ]

@@ -405,11 +405,12 @@ test('region panel shows the outline sections in doc order with their topics', a
   expect(screen.queryByText('Khám phá theo chủ đề')).not.toBeInTheDocument()
 })
 
-test('topic without content is shown greyed with "đang cập nhật"', async () => {
+// Mục dàn ý trống hiện màu xám "đang cập nhật": xem test vùng sắp ra mắt bên dưới (mọi mục đều trống)
+test('topics that now have content (some from outside the SGK) are no longer "đang cập nhật"', async () => {
   renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   const nav = await outlineNav()
   const people = within(nav).getByRole('list', { name: 'Dân cư và hoạt động sản xuất' })
-  expect(within(people).getByRole('button', { name: /Nhà ở và bản làng/ })).toHaveTextContent('đang cập nhật')
+  expect(within(people).getByRole('button', { name: /Nhà ở và bản làng/ })).not.toHaveTextContent('đang cập nhật')
   expect(within(people).getByRole('button', { name: /Các dân tộc/ })).not.toHaveTextContent('đang cập nhật')
 })
 
@@ -426,7 +427,7 @@ test('coming-soon region shows its outline greyed and the image gallery', async 
   renderAt('/ban-do/nam-bo')
   const nav = await outlineNav()
   const buttons = within(nav).getAllByRole('button')
-  expect(buttons.length).toBe(31)
+  expect(buttons.length).toBe(30)
   for (const b of buttons) expect(b).toHaveTextContent('đang cập nhật')
   expect(await screen.findByRole('region', { name: 'Hình ảnh của vùng' })).toBeInTheDocument()
 })

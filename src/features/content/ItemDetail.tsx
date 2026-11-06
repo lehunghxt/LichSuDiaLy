@@ -22,6 +22,8 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
   const figures = item.figures ?? []
   const province = provinceName(item.provinceId)
   const regionProvinces = province ? [] : provinceNamesOfRegion(item.regionId)
+  // Mục dàn ý SGK không nói tới, viết từ nguồn khác: báo rõ cho em và giáo viên
+  const outsideSgk = !item.sources.some((s) => s.url === SGK_URL)
   return (
     <article className="flex flex-col gap-6">
       <header className="flex flex-col gap-3">
@@ -32,6 +34,12 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
         <h3 tabIndex={-1} data-item-heading className="text-3xl font-bold outline-none">
           {item.title}
         </h3>
+        {outsideSgk && (
+          <p className="flex flex-wrap items-center gap-2 text-sm text-muted">
+            <span className="rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-bold text-amber-800">Ngoài SGK</span>
+            Nội dung này không có trong SGK, được tìm hiểu thêm từ các nguồn ghi ở cuối trang.
+          </p>
+        )}
         <div data-testid="item-place" className="flex flex-col gap-2 text-muted">
           <p className="flex flex-wrap items-center gap-2">
             <MapPin aria-hidden className="size-5 shrink-0 text-amber-600" />

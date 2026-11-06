@@ -1,30 +1,39 @@
-# Mục trong dàn ý chưa có nội dung từ SGK
+# Mục trong dàn ý mà SGK không nói tới
 
-Dàn ý (`doc.md`, `src/data/regions/<vùng>/outline.json`) có một số mục mà SGK Lịch sử và Địa lí 4 (Kết nối tri thức) không nói tới.
-Theo quy tắc "không bịa nội dung", các mục này hiện "Nội dung đang được cập nhật" trên web. Giáo viên quyết định bổ sung từ nguồn khác hay bỏ khỏi dàn ý.
+SGK Lịch sử và Địa lí 4 (Kết nối tri thức) không có nội dung cho các mục dưới đây.
+Ngày 2026-11-06, các mục này đã được viết bổ sung từ nguồn ngoài SGK (Wikipedia tiếng Việt, báo Văn hoá).
+Trên web, mỗi mục có nhãn **"Ngoài SGK"** và danh sách nguồn ở cuối trang; tất cả đang ở trạng thái nháp (`draft`).
+Giáo viên duyệt từng mục: giữ (đổi `status`), sửa, hoặc bỏ khỏi dàn ý. Quy tắc kiểm tra hiện chỉ cho phép duyệt mục có nguồn SGK,
+nên muốn duyệt mục ngoài SGK cần đổi quy tắc đó trong `src/features/content/integrity.ts`.
 
-| Vùng | Phần → mục | Đã tìm ở | Ghi chú |
+| Vùng | Mục dàn ý | Mục nội dung (id) | Nguồn |
 |---|---|---|---|
-| Trung du và miền núi phía Bắc | Dân cư và hoạt động sản xuất → Nhà ở và bản làng | Bài 4–6, tr. 18–31 | Sách không có đoạn nào về nhà ở hay bản làng. Thư viện ảnh Commons có ảnh nhà sàn (Điện Biên, Mai Châu) nếu giáo viên muốn viết thêm. |
-| Đồng bằng Bắc Bộ | Dân cư và hoạt động sản xuất → Nghề làm tranh Đông Hồ | Bài 9, tr. 44 | Sách kể làng gốm Bát Tràng, đúc đồng Đại Bái, thêu ren Văn Lâm, chạm bạc Đồng Xâm; không nói tới tranh Đông Hồ. Thư viện ảnh có ảnh tranh Đông Hồ (Bắc Ninh). |
-| Đồng bằng Bắc Bộ | Dân cư và hoạt động sản xuất → Nghề dệt lụa Vạn Phúc | Bài 9, tr. 44–45 | Sách chỉ nhắc chung "dệt lụa" trong bài luyện tập, không nói tới Vạn Phúc. |
-| Đồng bằng Bắc Bộ | Văn hóa → Hội Gióng | Bài 10, tr. 48 | Sách chỉ nêu tên hội Gióng trong danh sách lễ hội (đã có trong mục "Lễ hội truyền thống"). |
-| Đồng bằng Bắc Bộ | Văn hóa → Lễ hội chùa Hương | Bài 10, tr. 48 | Như trên: chỉ nêu tên. |
-| Đồng bằng Bắc Bộ | Văn hóa → Trang phục truyền thống (áo tứ thân, nón quai thao) | Bài 10, tr. 48 | Sách chỉ nói người dân mặc trang phục truyền thống khi dự lễ hội; không tả áo tứ thân, nón quai thao. |
-| Đồng bằng Bắc Bộ | Văn hóa → Ẩm thực truyền thống | Bài 8–13 | Không có đoạn nào về món ăn của vùng. |
-| Đồng bằng Bắc Bộ | Dân cư và hoạt động sản xuất → Trồng rau màu và cây vụ đông | Bài 9, tr. 43 | Đã viết mục ngắn theo ô "Em có biết?" (rau màu, cây ăn quả); sách không nhắc "cây vụ đông". |
-| Bắc Trung Bộ và Nam Trung Bộ | Dân cư và hoạt động sản xuất → Nuôi trồng thủy sản | Bài 16, tr. 74 | Sách gộp "đánh bắt và nuôi trồng hải sản" thành một dòng trong Bảng 1; nội dung đã nằm ở mục "Đánh bắt hải sản". |
-| Bắc Trung Bộ và Nam Trung Bộ | Văn hóa → Dân ca Ví, Giặm Nghệ Tĩnh | Bài 17, tr. 79 | Chỉ có tên trong chú giải bản đồ di sản (Hình 2), không có đoạn mô tả. |
-| Bắc Trung Bộ và Nam Trung Bộ | Văn hóa → Trang phục truyền thống | Bài 15–21 | Sách không có đoạn nào về trang phục của vùng. |
-| Bắc Trung Bộ và Nam Trung Bộ | Văn hóa → Ẩm thực miền Trung | Bài 15–21 | Sách không có đoạn nào về món ăn của vùng. |
-| Nam Bộ | Thiên nhiên → Kênh rạch và sông nước | Bài 22–24 | Sách nói "sông ngòi dày đặc" và vận tải đường sông, không có đoạn riêng về kênh rạch. |
-| Nam Bộ | Thiên nhiên → Rừng ngập mặn | Bài 22 | Không có đoạn nào. |
-| Nam Bộ | Thiên nhiên → Rừng tràm và cảnh quan thiên nhiên | Bài 22 | Không có đoạn nào. |
-| Nam Bộ | Thiên nhiên → Biển và đảo (Phú Quốc, Côn Đảo) | Bài 22, 25 | Chỉ một câu "vùng biển rộng lớn, nhiều tiềm năng"; Côn Đảo chỉ có ảnh trại tù Phú Sơn (Bài 25, Hình 8). |
-| Nam Bộ | Dân cư và hoạt động sản xuất → Chợ nổi | Bài 24, tr. 108 | Sách đặt chợ nổi trong phần văn hoá; nội dung nằm ở mục "Chợ nổi Cái Răng" (Văn hóa). |
-| Nam Bộ | Văn hóa → Lễ hội Ok Om Bok | Bài 22–26 | Không có đoạn nào. |
-| Nam Bộ | Văn hóa → Lễ hội đua ghe ngo | Bài 22–26 | Không có đoạn nào. |
-| Nam Bộ | Văn hóa → Lễ hội Bà Chúa Xứ núi Sam | Bài 22–26 | Không có đoạn nào. |
-| Nam Bộ | Văn hóa → Đờn ca tài tử Nam Bộ | Bài 22–26 | Không có đoạn nào. |
-| Nam Bộ | Văn hóa → Ẩm thực Nam Bộ | Bài 22–26 | Không có đoạn nào. |
-| Nam Bộ | Văn hóa → Văn hóa miệt vườn | Bài 24, tr. 107 | Chỉ nhắc "ở các miệt vườn, chủ yếu là nhà lợp bằng lá" (đã ở mục Nhà ở). |
+| Trung du và miền núi phía Bắc | Nhà ở và bản làng | `trung-du-mien-nui-phia-bac__nha-san` | Wikipedia: Nhà sàn; Người Thái (Việt Nam) |
+| Đồng bằng Bắc Bộ | Nghề làm tranh Đông Hồ | `dong-bang-bac-bo__tranh-dong-ho` | Wikipedia: Tranh Đông Hồ |
+| Đồng bằng Bắc Bộ | Nghề dệt lụa Vạn Phúc | `dong-bang-bac-bo__lua-van-phuc` | Wikipedia: Làng lụa Vạn Phúc |
+| Đồng bằng Bắc Bộ | Hội Gióng | `dong-bang-bac-bo__hoi-giong` | Wikipedia: Hội Gióng |
+| Đồng bằng Bắc Bộ | Lễ hội chùa Hương | `dong-bang-bac-bo__le-hoi-chua-huong` | Wikipedia: Chùa Hương |
+| Đồng bằng Bắc Bộ | Trang phục truyền thống | `dong-bang-bac-bo__ao-tu-than` | Wikipedia: Áo tứ thân |
+| Đồng bằng Bắc Bộ | Ẩm thực truyền thống | `dong-bang-bac-bo__am-thuc` | Wikipedia: Phở; Bánh chưng |
+| Bắc Trung Bộ và Nam Trung Bộ | Dân ca Ví, Giặm Nghệ Tĩnh | `bac-trung-bo-va-nam-trung-bo__vi-giam` | Wikipedia: Dân ca ví, giặm Nghệ Tĩnh |
+| Bắc Trung Bộ và Nam Trung Bộ | Trang phục truyền thống | `bac-trung-bo-va-nam-trung-bo__ao-dai-non-la` | Wikipedia: Áo dài; Nón lá |
+| Bắc Trung Bộ và Nam Trung Bộ | Ẩm thực miền Trung | `bac-trung-bo-va-nam-trung-bo__am-thuc` | Wikipedia: Bún bò Huế; Mì Quảng |
+| Nam Bộ | Kênh rạch và sông nước | `nam-bo__kenh-rach` | Wikipedia: Đồng bằng sông Cửu Long |
+| Nam Bộ | Rừng ngập mặn | `nam-bo__rung-ngap-man` | Wikipedia: Rừng ngập mặn Cần Giờ |
+| Nam Bộ | Rừng tràm và cảnh quan thiên nhiên | `nam-bo__rung-tram` | Wikipedia: Tràm Chim; Vườn quốc gia U Minh Thượng |
+| Nam Bộ | Biển và đảo | `nam-bo__phu-quoc-con-dao` | Wikipedia: Phú Quốc; Côn Đảo |
+| Nam Bộ | Lễ hội Ok Om Bok | `nam-bo__ok-om-bok` | Wikipedia: Ok Om Bok |
+| Nam Bộ | Lễ hội đua ghe Ngo | `nam-bo__dua-ghe-ngo` | Wikipedia: Ok Om Bok |
+| Nam Bộ | Lễ hội Bà Chúa Xứ núi Sam | `nam-bo__ba-chua-xu-nui-sam` | Báo Văn hoá (2 bài) |
+| Nam Bộ | Đờn ca tài tử Nam Bộ | `nam-bo__don-ca-tai-tu` | Wikipedia: Đờn ca tài tử Nam Bộ |
+| Nam Bộ | Ẩm thực Nam Bộ | `nam-bo__am-thuc` | Wikipedia: Bánh xèo |
+| Nam Bộ | Văn hóa miệt vườn | `nam-bo__van-hoa-miet-vuon` | Wikipedia: Vườn cây ăn trái |
+
+## Mục dàn ý đã gộp vì SGK có nội dung ở mục khác
+
+- Bắc Trung Bộ và Nam Trung Bộ: "Nuôi trồng thủy sản" gộp vào "Đánh bắt hải sản", đổi tên thành "Đánh bắt và nuôi trồng hải sản" (SGK Bài 16 nói chung một dòng).
+- Nam Bộ: bỏ "Chợ nổi" ở phần Dân cư và hoạt động sản xuất; SGK đặt chợ nổi ở phần Văn hoá (mục "Chợ nổi Cái Răng").
+
+## Còn thiếu một phần
+
+- Đồng bằng Bắc Bộ, "Trồng rau màu và cây vụ đông": mục viết theo SGK, nhưng SGK không nhắc "cây vụ đông".

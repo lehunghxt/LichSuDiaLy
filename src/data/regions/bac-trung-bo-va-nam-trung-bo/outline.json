@@ -87,15 +87,10 @@
         },
         {
           "id": "danh-bat-hai-san",
-          "title": "Đánh bắt hải sản",
+          "title": "Đánh bắt và nuôi trồng hải sản",
           "itemIds": [
             "bac-trung-bo-va-nam-trung-bo__hai-san"
           ]
-        },
-        {
-          "id": "nuoi-trong-thuy-san",
-          "title": "Nuôi trồng thủy sản",
-          "itemIds": []
         },
         {
           "id": "lam-muoi",
@@ -175,17 +170,23 @@
         {
           "id": "dan-ca-vi-giam-nghe-tinh",
           "title": "Dân ca Ví, Giặm Nghệ Tĩnh",
-          "itemIds": []
+          "itemIds": [
+            "bac-trung-bo-va-nam-trung-bo__vi-giam"
+          ]
         },
         {
           "id": "trang-phuc-truyen-thong",
           "title": "Trang phục truyền thống",
-          "itemIds": []
+          "itemIds": [
+            "bac-trung-bo-va-nam-trung-bo__ao-dai-non-la"
+          ]
         },
         {
           "id": "am-thuc-mien-trung",
           "title": "Ẩm thực miền Trung",
-          "itemIds": []
+          "itemIds": [
+            "bac-trung-bo-va-nam-trung-bo__am-thuc"
+          ]
         },
         {
           "id": "di-san-the-gioi",

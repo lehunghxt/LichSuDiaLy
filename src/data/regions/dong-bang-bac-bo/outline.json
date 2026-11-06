@@ -93,12 +93,16 @@
         {
           "id": "nghe-lam-tranh-dong-ho",
           "title": "Nghề làm tranh Đông Hồ",
-          "itemIds": []
+          "itemIds": [
+            "dong-bang-bac-bo__tranh-dong-ho"
+          ]
         },
         {
           "id": "nghe-det-lua-van-phuc",
           "title": "Nghề dệt lụa Vạn Phúc",
-          "itemIds": []
+          "itemIds": [
+            "dong-bang-bac-bo__lua-van-phuc"
+          ]
         }
       ]
     },
@@ -130,23 +134,31 @@
         {
           "id": "hoi-giong",
           "title": "Hội Gióng",
-          "itemIds": []
+          "itemIds": [
+            "dong-bang-bac-bo__hoi-giong"
+          ]
         },
         {
           "id": "le-hoi-chua-huong",
           "title": "Lễ hội chùa Hương",
-          "itemIds": []
+          "itemIds": [
+            "dong-bang-bac-bo__le-hoi-chua-huong"
+          ]
         },
         {
           "id": "trang-phuc-truyen-thong",
           "title": "Trang phục truyền thống",
           "hint": "(áo tứ thân, nón quai thao)",
-          "itemIds": []
+          "itemIds": [
+            "dong-bang-bac-bo__ao-tu-than"
+          ]
         },
         {
           "id": "am-thuc-truyen-thong",
           "title": "Ẩm thực truyền thống",
-          "itemIds": []
+          "itemIds": [
+            "dong-bang-bac-bo__am-thuc"
+          ]
         }
       ]
     },

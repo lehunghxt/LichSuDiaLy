@@ -42,23 +42,31 @@
         {
           "id": "kenh-rach-va-song-nuoc",
           "title": "Kênh rạch và sông nước",
-          "itemIds": []
+          "itemIds": [
+            "nam-bo__kenh-rach"
+          ]
         },
         {
           "id": "rung-ngap-man",
           "title": "Rừng ngập mặn",
-          "itemIds": []
+          "itemIds": [
+            "nam-bo__rung-ngap-man"
+          ]
         },
         {
           "id": "rung-tram-va-canh-quan-thien-nhien",
           "title": "Rừng tràm và cảnh quan thiên nhiên",
-          "itemIds": []
+          "itemIds": [
+            "nam-bo__rung-tram"
+          ]
         },
         {
           "id": "bien-va-dao",
           "title": "Biển và đảo",
           "hint": "(Phú Quốc, Côn Đảo)",
-          "itemIds": []
+          "itemIds": [
+            "nam-bo__phu-quoc-con-dao"
+          ]
         },
         {
           "id": "dat",
@@ -125,11 +133,6 @@
           ]
         },
         {
-          "id": "cho-noi",
-          "title": "Chợ nổi",
-          "itemIds": []
-        },
-        {
           "id": "cong-nghiep-va-hoat-dong-thuong-mai",
           "title": "Công nghiệp và hoạt động thương mại",
           "itemIds": [
@@ -158,22 +161,30 @@
         {
           "id": "le-hoi-ok-om-bok",
           "title": "Lễ hội Ok Om Bok",
-          "itemIds": []
+          "itemIds": [
+            "nam-bo__ok-om-bok"
+          ]
         },
         {
           "id": "le-hoi-dua-ghe-ngo",
           "title": "Lễ hội đua ghe Ngo",
-          "itemIds": []
+          "itemIds": [
+            "nam-bo__dua-ghe-ngo"
+          ]
         },
         {
           "id": "le-hoi-ba-chua-xu-nui-sam",
           "title": "Lễ hội Bà Chúa Xứ núi Sam",
-          "itemIds": []
+          "itemIds": [
+            "nam-bo__ba-chua-xu-nui-sam"
+          ]
         },
         {
           "id": "don-ca-tai-tu-nam-bo",
           "title": "Đờn ca tài tử Nam Bộ",
-          "itemIds": []
+          "itemIds": [
+            "nam-bo__don-ca-tai-tu"
+          ]
         },
         {
           "id": "trang-phuc-truyen-thong",
@@ -186,12 +197,16 @@
         {
           "id": "am-thuc-nam-bo",
           "title": "Ẩm thực Nam Bộ",
-          "itemIds": []
+          "itemIds": [
+            "nam-bo__am-thuc"
+          ]
         },
         {
           "id": "van-hoa-miet-vuon",
           "title": "Văn hóa miệt vườn",
-          "itemIds": []
+          "itemIds": [
+            "nam-bo__van-hoa-miet-vuon"
+          ]
         }
       ]
     },

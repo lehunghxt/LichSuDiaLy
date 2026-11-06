@@ -69,5 +69,147 @@
       }
     ],
     "status": "draft"
+  },
+  {
+    "id": "nam-bo__ok-om-bok",
+    "title": "Lễ hội Ok Om Bok",
+    "summary": "Ok Om Bok (lễ cúng trăng) là lễ hội của người Khmer Nam Bộ, diễn ra vào khoảng rằm tháng 10 âm lịch.",
+    "highlights": [
+      "Người Khmer cúng trăng để tạ ơn Thần Mặt Trăng đã cho mùa màng tốt tươi.",
+      "Hoạt động: đút cốm dẹp, thả đèn gió, đèn nước, đua ghe Ngo."
+    ],
+    "keyPoints": [
+      "Năm 2014, lễ hội được công nhận là Di sản văn hoá phi vật thể quốc gia."
+    ],
+    "images": [],
+    "relatedIds": [
+      "nam-bo__dan-cu"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Ok Om Bok",
+        "url": "https://vi.wikipedia.org/wiki/Ok_Om_Bok"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__dua-ghe-ngo",
+    "title": "Lễ hội đua ghe Ngo",
+    "summary": "Đua ghe Ngo là hoạt động sôi nổi nhất trong dịp lễ Ok Om Bok của người Khmer Nam Bộ.",
+    "highlights": [
+      "Ghe Ngo là loại thuyền dài, nhiều người cùng chèo.",
+      "Thành phố Cần Thơ có hội đua ghe Ngo lớn nhất, thu hút đông vận động viên và người xem."
+    ],
+    "keyPoints": [
+      "Đua ghe Ngo thể hiện tinh thần đoàn kết, gắn bó với sông nước."
+    ],
+    "provinceId": "can-tho",
+    "images": [],
+    "relatedIds": [
+      "nam-bo__ok-om-bok"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Ok Om Bok",
+        "url": "https://vi.wikipedia.org/wiki/Ok_Om_Bok"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__ba-chua-xu-nui-sam",
+    "title": "Lễ hội Vía Bà Chúa Xứ núi Sam",
+    "summary": "Lễ hội diễn ra tại Miếu Bà Chúa Xứ núi Sam (tỉnh An Giang) từ ngày 22 đến 27 tháng 4 âm lịch.",
+    "highlights": [
+      "Lễ hội có cả người Kinh, Khmer, Hoa, Chăm cùng tham gia.",
+      "Lễ hội gồm các nghi lễ như rước tượng Bà, tắm Bà."
+    ],
+    "keyPoints": [
+      "Cuối năm 2024, UNESCO ghi danh lễ hội là Di sản văn hoá phi vật thể đại diện của nhân loại, di sản thứ hai của Nam Bộ sau Đờn ca tài tử."
+    ],
+    "provinceId": "an-giang",
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Báo Văn hoá: Lễ hội Vía Bà Chúa Xứ núi Sam được UNESCO ghi danh vào Danh sách Di sản văn hoá phi vật thể đại diện của nhân loại",
+        "url": "https://baovanhoa.vn/van-hoa/di-san-le-hoi-via-ba-chua-xu-nui-sam-duoc-unesco-ghi-danh-vao-danh-sach-di-san-van-hoa-phi-vat-the-dai-dien-cua-nhan-loai-114042.html"
+      },
+      {
+        "title": "Báo Văn hoá: Độc đáo Lễ phục hiện rước tượng Bà Chúa Xứ núi Sam",
+        "url": "https://baovanhoa.vn/dan-toc-ton-giao/doc-dao-le-phuc-hien-ruoc-tuong-ba-chua-xu-nui-sam-135894.html"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__don-ca-tai-tu",
+    "title": "Đờn ca tài tử Nam Bộ",
+    "summary": "Đờn ca tài tử là loại hình âm nhạc đặc trưng của Nam Bộ, hình thành vào cuối thế kỷ 19 – đầu thế kỷ 20.",
+    "highlights": [
+      "Nhạc cụ: đàn kìm, đàn tranh, đàn cò, đàn bầu; về sau có thêm ghi-ta phím lõm.",
+      "Người dân chơi đờn ca tài tử lúc nông nhàn, sau mùa thu hoạch, trong vườn, trên ghe thuyền hay những đêm trăng."
+    ],
+    "keyPoints": [
+      "Năm 2013, UNESCO ghi danh Đờn ca tài tử Nam Bộ là Di sản văn hoá phi vật thể đại diện của nhân loại."
+    ],
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Đờn ca tài tử Nam Bộ",
+        "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%9Dn_ca_t%C3%A0i_t%E1%BB%AD_Nam_B%E1%BB%99"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__am-thuc",
+    "title": "Ẩm thực Nam Bộ",
+    "summary": "Bánh xèo được coi là đặc sản của miền Tây Nam Bộ.",
+    "highlights": [
+      "Bột bánh làm từ bột gạo, có nghệ cho màu vàng; nhiều nơi thêm nước cốt dừa.",
+      "Nhân bánh gồm thịt, tôm, đậu xanh, giá; ăn kèm nhiều loại rau.",
+      "Mỗi nơi có lá ăn kèm riêng: Cần Thơ có lá chiết, Đồng Tháp có lá bằng lăng, Vĩnh Long có lá xoài non."
+    ],
+    "keyPoints": [
+      "Món ăn Nam Bộ dùng nhiều sản vật của vườn cây và sông nước."
+    ],
+    "images": [],
+    "relatedIds": [
+      "nam-bo__van-hoa-miet-vuon"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Bánh xèo",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%A1nh_x%C3%A8o"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__van-hoa-miet-vuon",
+    "title": "Miệt vườn",
+    "summary": "Ở miền Tây Nam Bộ, vùng vườn cây ăn trái được gọi chung là miệt vườn.",
+    "highlights": [
+      "Vườn trồng nhiều cây ăn trái như xoài, chôm chôm, sầu riêng, mít, dừa, chuối,…",
+      "Ở các miệt vườn, nhà thường lợp bằng lá."
+    ],
+    "keyPoints": [
+      "Miệt vườn gắn với cuộc sống sông nước và chợ nổi của người dân Nam Bộ."
+    ],
+    "images": [],
+    "relatedIds": [
+      "nam-bo__nha-o",
+      "nam-bo__cho-noi"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Vườn cây ăn trái",
+        "url": "https://vi.wikipedia.org/wiki/V%C6%B0%E1%BB%9Dn_c%C3%A2y_%C4%83n_tr%C3%A1i"
+      }
+    ],
+    "status": "draft"
   }
 ]

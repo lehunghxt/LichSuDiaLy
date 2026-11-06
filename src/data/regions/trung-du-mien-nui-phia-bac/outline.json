@@ -76,7 +76,9 @@
         {
           "id": "nha-o-va-ban-lang",
           "title": "Nhà ở và bản làng",
-          "itemIds": []
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__nha-san"
+          ]
         },
         {
           "id": "lam-ruong-bac-thang",

@@ -199,5 +199,55 @@
       }
     ],
     "status": "draft"
+  },
+  {
+    "id": "dong-bang-bac-bo__tranh-dong-ho",
+    "title": "Nghề làm tranh Đông Hồ",
+    "summary": "Làng Đông Hồ bên bờ nam sông Đuống (tỉnh Bắc Ninh) nổi tiếng với tranh dân gian in bằng ván gỗ khắc trên giấy điệp.",
+    "highlights": [
+      "Giấy điệp: bột vỏ con điệp (một loại sò biển) trộn hồ, quét lên giấy dó, tạo màu trắng lấp lánh.",
+      "Màu lấy từ thiên nhiên: đen từ than lá tre, xanh từ lá chàm, vàng từ hoa hoè, đỏ từ sỏi son.",
+      "Tranh nổi tiếng: Đám cưới chuột, Đàn gà, Lợn ỉ, Chăn trâu thổi sáo."
+    ],
+    "keyPoints": [
+      "Ngày trước, tranh Đông Hồ chủ yếu được bán vào dịp Tết để treo trong nhà."
+    ],
+    "provinceId": "bac-ninh",
+    "images": [],
+    "relatedIds": [
+      "dong-bang-bac-bo__nghe-thu-cong"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Tranh Đông Hồ",
+        "url": "https://vi.wikipedia.org/wiki/Tranh_%C4%90%C3%B4ng_H%E1%BB%93"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "dong-bang-bac-bo__lua-van-phuc",
+    "title": "Nghề dệt lụa Vạn Phúc",
+    "summary": "Làng lụa Vạn Phúc (phường Hà Đông, Hà Nội) nằm bên sông Nhuệ, là làng dệt lụa lâu đời và nổi tiếng.",
+    "highlights": [
+      "Sản phẩm: lụa, gấm, vóc, the, đũi,…; nổi tiếng nhất là lụa vân.",
+      "Lụa Vạn Phúc ấm vào mùa đông, mát vào mùa hè.",
+      "Năm 1931, lụa Vạn Phúc được đưa đi giới thiệu ở hội chợ tại Pháp."
+    ],
+    "keyPoints": [
+      "Làng nghề giữ gìn nghề dệt truyền thống của Đồng bằng Bắc Bộ."
+    ],
+    "provinceId": "ha-noi",
+    "images": [],
+    "relatedIds": [
+      "dong-bang-bac-bo__nghe-thu-cong"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Làng lụa Vạn Phúc",
+        "url": "https://vi.wikipedia.org/wiki/L%C3%A0ng_l%E1%BB%A5a_V%E1%BA%A1n_Ph%C3%BAc"
+      }
+    ],
+    "status": "draft"
   }
 ]

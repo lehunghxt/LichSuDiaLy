@@ -235,5 +235,108 @@
       }
     ],
     "status": "draft"
+  },
+  {
+    "id": "nam-bo__kenh-rach",
+    "title": "Kênh rạch và sông nước",
+    "summary": "Đồng bằng sông Cửu Long có sông ngòi, kênh rạch dày đặc; vùng giữa sông Tiền và sông Hậu có kênh mương chằng chịt như mạng nhện.",
+    "highlights": [
+      "Kênh Vĩnh Tế là kênh đào chạy dọc biên giới Việt Nam – Cam-pu-chia, lấy nước từ sông Hậu.",
+      "Vào mùa mưa, Đồng Tháp Mười thành một vùng nước rộng, có nơi sâu tới 3 m.",
+      "Giao thông đường thuỷ giữ vai trò quan trọng ở vùng."
+    ],
+    "keyPoints": [
+      "Sông nước gắn bó với đời sống, đi lại và buôn bán của người dân."
+    ],
+    "images": [],
+    "relatedIds": [
+      "nam-bo__song-ngoi",
+      "nam-bo__van-tai-duong-song",
+      "nam-bo__cho-noi"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Đồng bằng sông Cửu Long",
+        "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__rung-ngap-man",
+    "title": "Rừng ngập mặn Cần Giờ",
+    "summary": "Rừng ngập mặn Cần Giờ (Thành phố Hồ Chí Minh) mọc ở vùng cửa sông Đồng Nai – Sài Gòn, nơi nước mặn và nước ngọt gặp nhau.",
+    "highlights": [
+      "Cây tiêu biểu: đước, mắm, bần.",
+      "Động vật: khỉ đuôi dài, nhiều loài chim, kỳ đà, cá sấu cửa sông,…",
+      "Rừng là nơi kiếm ăn và trú ngụ của nhiều loài cá và động vật dưới nước."
+    ],
+    "keyPoints": [
+      "Năm 2000, Cần Giờ trở thành khu dự trữ sinh quyển đầu tiên của Việt Nam được UNESCO công nhận."
+    ],
+    "provinceId": "ho-chi-minh",
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Rừng ngập mặn Cần Giờ",
+        "url": "https://vi.wikipedia.org/wiki/R%E1%BB%ABng_ng%E1%BA%ADp_m%E1%BA%B7n_C%E1%BA%A7n_Gi%E1%BB%9D"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__rung-tram",
+    "title": "Rừng tràm",
+    "summary": "Nam Bộ có những khu rừng tràm rộng lớn trên vùng đất ngập nước, như Tràm Chim (tỉnh Đồng Tháp) và U Minh.",
+    "highlights": [
+      "Vườn quốc gia Tràm Chim thuộc vùng Đồng Tháp Mười, có rừng tràm và đồng cỏ ngập nước theo mùa.",
+      "Tràm Chim là nơi sinh sống của sếu đầu đỏ, loài chim quý hiếm.",
+      "Rừng U Minh là rừng tràm trên đất than bùn; sông Trẹm chia thành U Minh Thượng (tỉnh An Giang) và U Minh Hạ (tỉnh Cà Mau)."
+    ],
+    "keyPoints": [
+      "Năm 2012, Tràm Chim được công nhận là khu Ramsar (vùng đất ngập nước quan trọng của thế giới)."
+    ],
+    "images": [],
+    "relatedIds": [
+      "nam-bo__dong-bang-cuu-long"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Tràm Chim",
+        "url": "https://vi.wikipedia.org/wiki/Tr%C3%A0m_Chim"
+      },
+      {
+        "title": "Wikipedia tiếng Việt: Vườn quốc gia U Minh Thượng",
+        "url": "https://vi.wikipedia.org/wiki/V%C6%B0%E1%BB%9Dn_qu%E1%BB%91c_gia_U_Minh_Th%C6%B0%E1%BB%A3ng"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "nam-bo__phu-quoc-con-dao",
+    "title": "Phú Quốc và Côn Đảo",
+    "summary": "Vùng biển Nam Bộ có nhiều đảo, trong đó nổi tiếng là đảo Phú Quốc và quần đảo Côn Đảo.",
+    "highlights": [
+      "Phú Quốc là đảo lớn nhất Việt Nam, nằm trong vịnh Thái Lan; nay là đặc khu thuộc tỉnh An Giang.",
+      "Phú Quốc nổi tiếng với nước mắm, hồ tiêu, hải sản và các bãi biển đẹp.",
+      "Côn Đảo gồm 16 hòn đảo, nay là đặc khu thuộc Thành phố Hồ Chí Minh; vùng biển Côn Đảo có nhiều rùa biển nhất Việt Nam."
+    ],
+    "keyPoints": [
+      "Côn Đảo còn có di tích nhà tù Côn Đảo, nơi thực dân Pháp giam giữ nhiều chiến sĩ cách mạng."
+    ],
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Phú Quốc",
+        "url": "https://vi.wikipedia.org/wiki/Ph%C3%BA_Qu%E1%BB%91c"
+      },
+      {
+        "title": "Wikipedia tiếng Việt: Côn Đảo",
+        "url": "https://vi.wikipedia.org/wiki/C%C3%B4n_%C4%90%E1%BA%A3o"
+      }
+    ],
+    "status": "draft"
   }
 ]

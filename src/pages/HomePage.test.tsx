@@ -46,7 +46,7 @@ test('home page lists the sections of the region outline (no old topic names)', 
     'Lịch sử và di tích',
   ])
   expect(within(parts).getByRole('link', { name: /Văn hóa/ })).toHaveAttribute('href', `/ban-do/${TDMNPB}?phan=van-hoa`)
-  expect(await within(parts).findByText('7/8 mục có nội dung')).toBeInTheDocument()
+  expect(await within(parts).findByText('8/8 mục có nội dung')).toBeInTheDocument()
   for (const old of ['Đặc điểm tự nhiên', 'Lễ hội và văn hóa', 'Danh lam thắng cảnh', 'Di tích lịch sử', '5 chủ đề khám phá']) {
     expect(screen.queryByText(old)).toBeNull()
   }
