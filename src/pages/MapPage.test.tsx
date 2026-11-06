@@ -240,6 +240,8 @@ test('panel lists featured places with province; clicking one opens the modal at
   expect(buttons.length).toBeLessThanOrEqual(3)
   const fansipan = within(places).getByRole('button', { name: /Đỉnh Phan-xi-păng/ })
   expect(fansipan).toHaveTextContent('Lào Cai')
+  // mỗi địa điểm một hàng: tên, tỉnh và phần của bài học
+  expect(fansipan).toHaveTextContent('Lào Cai · Thiên nhiên')
   await userEvent.click(fansipan)
   expect(router.state.location.search).toBe('?phan=thien-nhien&muc=dia-hinh&bai=dinh-phan-xi-pang')
   const dialog = await screen.findByRole('dialog', { name: 'Thiên nhiên' })
