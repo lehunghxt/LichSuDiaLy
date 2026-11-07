@@ -11,10 +11,8 @@ const RESPONSIVE = /(?<![\w/:@-])(?:sm|md|lg|xl|2xl):[\w[-]/
 /** File bố cục: <Thiết bị>Xxx.tsx hoặc XxxLayout.tsx */
 const isLayoutFile = (file: string) => /^(Mobile|Tablet|Desktop)[A-Z]\w*\.tsx$|Layout\.tsx$/.test(path.basename(file))
 
-// Chưa tách theo thiết bị (đợt 2). Danh sách này chỉ được rút ngắn.
-const PENDING = new Set([
-  'pages/HomePage.tsx',
-])
+// File chưa tách theo thiết bị (tạm cho phép). Hiện không còn file nào; danh sách này chỉ được rút ngắn.
+const PENDING = new Set<string>([])
 
 function tsxFiles(dir: string): string[] {
   return readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
