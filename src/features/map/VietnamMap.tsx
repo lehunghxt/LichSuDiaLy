@@ -68,7 +68,7 @@ export default function VietnamMap(props: VietnamMapProps) {
         {props.selectedRegionId && <LocationMarkers places={props.places} onOpen={props.onOpenPlace} />}
         <Controls />
       </MapContainer>
-      <p className="pointer-events-none absolute bottom-2 right-4 z-[1000] max-w-[60%] text-right text-xs text-muted">
+      <p className="pointer-events-none absolute bottom-2 right-4 z-map-ui max-w-[60%] text-right text-xs text-muted">
         Ranh giới: vietnamese-provinces-database (MIT), đã đơn giản hoá để hiển thị.
       </p>
     </div>

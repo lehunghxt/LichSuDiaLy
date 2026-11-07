@@ -21,7 +21,7 @@ export function FullScreenDialog({ labelledBy, onClose, initialFocusRef, childre
       aria-modal="true"
       aria-labelledby={labelledBy}
       onKeyDown={onKeyDown}
-      className="fixed inset-0 z-[1300] flex flex-col bg-bg"
+      className="fixed inset-0 z-dialog flex flex-col bg-bg"
     >
       {children}
     </div>

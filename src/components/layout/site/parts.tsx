@@ -85,7 +85,7 @@ export function SkipLink() {
   return (
     <a
       href="#main"
-      className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[1200] focus:rounded-full focus:bg-surface focus:px-4 focus:py-2"
+      className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-nav focus:rounded-full focus:bg-surface focus:px-4 focus:py-2"
     >
       Bỏ qua tới nội dung chính
     </a>
@@ -106,4 +106,4 @@ export function Mountains({ className = '' }: { className?: string }) {
 }
 
 /** Thanh header dính trên cùng (nền mờ, đổ bóng nhẹ) */
-export const HEADER_BAR = 'sticky top-0 z-[1100] overflow-hidden bg-surface/95 shadow-[0_4px_20px_rgb(15_23_42/0.06)] backdrop-blur'
+export const HEADER_BAR = 'sticky top-0 z-overlay overflow-hidden bg-surface/95 shadow-[0_4px_20px_rgb(15_23_42/0.06)] backdrop-blur'

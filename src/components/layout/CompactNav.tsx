@@ -44,7 +44,7 @@ export function CompactNav({ variant }: CompactNavProps) {
       <nav
         aria-label="Điều hướng chính"
         style={{ height: `calc(${TAB_BAR}px + env(safe-area-inset-bottom))` }}
-        className="fixed inset-x-0 bottom-0 z-[1200] flex flex-col justify-center border-t border-line bg-surface/95 px-2 pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_16px_rgba(15,23,42,0.08)] backdrop-blur"
+        className="fixed inset-x-0 bottom-0 z-nav flex flex-col justify-center border-t border-line bg-surface/95 px-2 pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_16px_rgba(15,23,42,0.08)] backdrop-blur"
       >
         <div className="mx-auto w-full max-w-lg">
           <NavTabs />

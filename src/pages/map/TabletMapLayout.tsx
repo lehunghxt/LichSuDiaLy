@@ -31,7 +31,7 @@ export function TabletMapLayout({ map, chips, panel, panelOpen, onClosePanel }: 
       <div data-map-frame style={frameStyle} className="relative h-dvh overflow-hidden bg-sea">
         {map}
         {/* Chừa bên phải cho nút phóng to/thu nhỏ (và khung nổi khi đang mở) */}
-        <div data-map-legend style={{ right: rightInset + 56 }} className="absolute left-3 top-3 z-[1000] flex">
+        <div data-map-legend style={{ right: rightInset + 56 }} className="absolute left-3 top-3 z-map-ui flex">
           {chips}
         </div>
       </div>
@@ -39,7 +39,7 @@ export function TabletMapLayout({ map, chips, panel, panelOpen, onClosePanel }: 
         <aside
           aria-label="Thông tin bản đồ"
           style={{ width: SIDE_PANEL, bottom: `calc(${TAB_BAR + GAP}px + env(safe-area-inset-bottom))` }}
-          className="animate-fade-in fixed right-3 top-3 z-[1100] flex flex-col gap-5 overflow-y-auto overscroll-contain rounded-3xl bg-bg p-4 pt-3 shadow-[0_12px_40px_rgba(15,23,42,0.22)]"
+          className="animate-fade-in fixed right-3 top-3 z-overlay flex flex-col gap-5 overflow-y-auto overscroll-contain rounded-3xl bg-bg p-4 pt-3 shadow-[0_12px_40px_rgba(15,23,42,0.22)]"
         >
           <button
             type="button"

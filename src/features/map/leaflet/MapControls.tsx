@@ -26,7 +26,7 @@ export function Controls() {
     'inline-flex size-11 items-center justify-center rounded-xl bg-surface text-ink shadow-md hover:bg-primary-soft focus-visible:outline-3'
   return (
     // Dời sang trái khi có khung nổi ở mép phải bản đồ (máy tính bảng: --map-right-inset)
-    <div style={{ right: 'calc(var(--map-right-inset, 0px) + 0.75rem)' }} className="absolute top-3 z-[1000] flex flex-col gap-2">
+    <div style={{ right: 'calc(var(--map-right-inset, 0px) + 0.75rem)' }} className="absolute top-3 z-map-ui flex flex-col gap-2">
       <button type="button" aria-label="Phóng to" className={btn} onClick={() => map.zoomIn()}>
         <Plus aria-hidden className="size-5" />
       </button>

@@ -16,7 +16,7 @@ export function LightboxImageViewer({ image, onClose }: ImageViewerProps) {
       aria-modal="true"
       aria-label={image.alt}
       onKeyDown={onKeyDown}
-      className="fixed inset-0 z-[1400] flex flex-col bg-ink/90"
+      className="fixed inset-0 z-viewer flex flex-col bg-ink/90"
     >
       <button
         ref={closeRef}

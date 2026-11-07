@@ -9,7 +9,7 @@ export function CenteredConfirmDialog(props: ConfirmDialogProps) {
   const cancelRef = useRef<HTMLButtonElement>(null)
   const onKeyDown = useDialog(ref, props.onCancel, cancelRef)
   return (
-    <div className="fixed inset-0 z-[1300] flex items-center justify-center bg-ink/40 p-4">
+    <div className="fixed inset-0 z-dialog flex items-center justify-center bg-ink/40 p-4">
       <div
         ref={ref}
         role="dialog"

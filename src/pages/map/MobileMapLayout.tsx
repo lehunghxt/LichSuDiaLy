@@ -27,7 +27,7 @@ export function MobileMapLayout({ map, chips, panel, sheetOpen, snap, onSnap }: 
         className="relative h-dvh overflow-hidden bg-sea"
       >
         {map}
-        <div data-map-legend className="absolute left-3 right-14 top-3 z-[1000] flex">
+        <div data-map-legend className="absolute left-3 right-14 top-3 z-map-ui flex">
           {chips}
         </div>
       </div>

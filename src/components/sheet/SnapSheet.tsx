@@ -59,7 +59,7 @@ export function SnapSheet({ label, snap, onSnap, children }: SnapSheetProps) {
       aria-label={label}
       data-snap={snap}
       style={style}
-      className={`animate-sheet-up fixed inset-x-0 bottom-[calc(var(--tab-bar)+env(safe-area-inset-bottom))] z-[1100] flex h-[var(--sheet-h)] flex-col rounded-t-3xl bg-bg shadow-[0_-8px_30px_rgba(15,23,42,0.18)] ${
+      className={`animate-sheet-up fixed inset-x-0 bottom-[calc(var(--tab-bar)+env(safe-area-inset-bottom))] z-overlay flex h-[var(--sheet-h)] flex-col rounded-t-3xl bg-bg shadow-[0_-8px_30px_rgba(15,23,42,0.18)] ${
         down === null ? 'transition-[height] duration-300 ease-out' : ''
       }`}
     >

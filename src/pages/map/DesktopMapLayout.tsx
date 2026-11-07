@@ -16,7 +16,7 @@ export function DesktopMapLayout({ map, chips, panel }: DesktopMapLayoutProps) {
       <div data-map-frame className="relative h-full overflow-hidden bg-sea">
         {map}
         {/* Chừa bên phải cho nút phóng to/thu nhỏ của bản đồ */}
-        <div data-map-legend className="absolute left-3 right-14 top-3 z-[1000] flex">
+        <div data-map-legend className="absolute left-3 right-14 top-3 z-map-ui flex">
           {chips}
         </div>
       </div>

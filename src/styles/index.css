@@ -259,3 +259,26 @@ div.leaflet-container {
   right: var(--map-right-inset, 0px);
   transition: right 200ms ease-out;
 }
+
+/* Thứ tự lớp chồng của app (thấp → cao). Leaflet đặt nút điều khiển của nó ở 1000.
+   Dùng tên lớp (z-dialog…), không viết số z-[…]: src/test/zLayers.test.ts kiểm tra */
+/* Nút, chip, ghi chú nổi trên bản đồ */
+@utility z-map-ui {
+  z-index: 1000;
+}
+/* Header dính, khung thông tin nổi trên bản đồ (bottom sheet vùng, khung bên phải máy tính bảng) */
+@utility z-overlay {
+  z-index: 1100;
+}
+/* Thanh tab dưới đáy, link "Bỏ qua tới nội dung chính" */
+@utility z-nav {
+  z-index: 1200;
+}
+/* Hộp thoại: khung xem bài, hộp xác nhận, bottom sheet dạng hộp thoại */
+@utility z-dialog {
+  z-index: 1300;
+}
+/* Xem ảnh phóng to: mở chồng lên khung xem bài */
+@utility z-viewer {
+  z-index: 1400;
+}

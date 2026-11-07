@@ -30,7 +30,7 @@ export function BottomSheet({ label, labelledBy, onClose, initialFocusRef, size 
 
   return (
     <>
-      <div data-testid="sheet-backdrop" aria-hidden onClick={onClose} className="animate-fade-in fixed inset-0 z-[1300] bg-ink/40" />
+      <div data-testid="sheet-backdrop" aria-hidden onClick={onClose} className="animate-fade-in fixed inset-0 z-dialog bg-ink/40" />
       <div
         ref={ref}
         role="dialog"
@@ -39,7 +39,7 @@ export function BottomSheet({ label, labelledBy, onClose, initialFocusRef, size 
         aria-labelledby={labelledBy}
         onKeyDown={onKeyDown}
         style={down === null ? undefined : { transform: `translateY(${Math.max(0, down)}px)` }}
-        className={`animate-sheet-up fixed inset-x-0 bottom-0 z-[1300] flex flex-col overflow-hidden rounded-t-3xl bg-bg pb-[env(safe-area-inset-bottom)] shadow-[0_-12px_40px_rgba(15,23,42,0.25)] ${
+        className={`animate-sheet-up fixed inset-x-0 bottom-0 z-dialog flex flex-col overflow-hidden rounded-t-3xl bg-bg pb-[env(safe-area-inset-bottom)] shadow-[0_-12px_40px_rgba(15,23,42,0.25)] ${
           size === 'full' ? 'top-[8dvh]' : 'max-h-[90dvh]'
         } ${down === null ? 'transition-transform duration-200 ease-out' : ''}`}
       >
