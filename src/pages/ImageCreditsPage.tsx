@@ -26,8 +26,8 @@ export default function ImageCreditsPage() {
       <div>
         <h1 className="text-3xl font-bold">Nguồn ảnh</h1>
         <p className="mt-1 max-w-3xl text-muted">
-          Ảnh trên trang được nhúng trực tiếp từ Wikimedia Commons, với giấy phép tự do (Public domain, CC0, CC BY, CC BY-SA). Cảm ơn
-          các tác giả đã chia sẻ; em bấm vào tên ảnh để xem trang gốc.
+          Ảnh trên trang được nhúng trực tiếp từ Wikimedia Commons, với giấy phép tự do (Public domain, CC0, CC BY, CC BY-SA). Cảm ơn các
+          tác giả đã chia sẻ; em bấm vào tên ảnh để xem trang gốc.
         </p>
       </div>
       {images === null ? (
@@ -53,7 +53,13 @@ export default function ImageCreditsPage() {
                   <tr key={img.id} className="border-t border-line align-top">
                     <td className="px-4 py-3">
                       <span className="flex items-center gap-3">
-                        <img src={img.src.srcset[0]?.url ?? img.src.url} alt="" loading="lazy" referrerPolicy="no-referrer" className="size-14 shrink-0 rounded-lg object-cover" />
+                        <img
+                          src={img.src.srcset[0]?.url ?? img.src.url}
+                          alt=""
+                          loading="lazy"
+                          referrerPolicy="no-referrer"
+                          className="size-14 shrink-0 rounded-lg object-cover"
+                        />
                         {img.caption}
                       </span>
                     </td>

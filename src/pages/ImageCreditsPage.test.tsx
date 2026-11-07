@@ -22,7 +22,10 @@ vi.mock('../features/images/library', async (importOriginal) => {
     },
     status: 'verified',
   }
-  return { ...orig, imageLibrary: orig.createImageLibrary({ '../../data/images/nam-bo/can-tho.json': () => Promise.resolve({ default: [img] }) }) }
+  return {
+    ...orig,
+    imageLibrary: orig.createImageLibrary({ '../../data/images/nam-bo/can-tho.json': () => Promise.resolve({ default: [img] }) }),
+  }
 })
 
 function renderAt(path: string) {
@@ -33,14 +36,19 @@ test('/nguon-anh lists every image with author, license and a link to the origin
   renderAt('/nguon-anh')
   expect(await screen.findByRole('heading', { level: 1, name: 'Nguồn ảnh' })).toBeInTheDocument()
   const table = await screen.findByRole('table')
-  const headers = within(table).getAllByRole('columnheader').map((h) => h.textContent)
+  const headers = within(table)
+    .getAllByRole('columnheader')
+    .map((h) => h.textContent)
   expect(headers).toEqual(['Ảnh', 'Tỉnh', 'Tác giả', 'Giấy phép', 'Trang gốc'])
   const row = within(table).getAllByRole('row')[1]!
   expect(row).toHaveTextContent('Chợ nổi Cái Răng (TP. Cần Thơ).')
   expect(row).toHaveTextContent('Cần Thơ')
   expect(row).toHaveTextContent('Người chụp')
   expect(within(row).getByRole('link', { name: 'CC BY-SA 4.0' })).toHaveAttribute('href', 'https://creativecommons.org/licenses/by-sa/4.0')
-  expect(within(row).getByRole('link', { name: 'File:Cho noi.jpg' })).toHaveAttribute('href', 'https://commons.wikimedia.org/wiki/File:Cho_noi.jpg')
+  expect(within(row).getByRole('link', { name: 'File:Cho noi.jpg' })).toHaveAttribute(
+    'href',
+    'https://commons.wikimedia.org/wiki/File:Cho_noi.jpg',
+  )
 })
 
 test('footer links to the image credits page', async () => {

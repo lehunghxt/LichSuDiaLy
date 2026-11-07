@@ -249,8 +249,13 @@ div.leaflet-container {
   }
 }
 
-/* Bố cục điện thoại: thanh tab và bottom sheet che phần dưới bản đồ → đẩy thước tỉ lệ và dòng ghi nguồn lên trên chúng */
+/* Điện thoại, máy tính bảng: thanh tab (và bottom sheet) che phần dưới bản đồ → đẩy thước tỉ lệ và dòng ghi nguồn lên trên chúng */
 [data-map-frame] .leaflet-bottom {
   bottom: var(--map-bottom-inset, 0px);
   transition: bottom 300ms ease-out;
+}
+/* Máy tính bảng: khung thông tin nổi ở mép phải → dời nút phóng to/thu nhỏ sang trái khung */
+[data-map-frame] .leaflet-right {
+  right: var(--map-right-inset, 0px);
+  transition: right 200ms ease-out;
 }

@@ -8,6 +8,7 @@ import { GeoJSON, MapContainer, Marker, useMap } from 'react-leaflet'
 import { ErrorState, LoadingState } from '../../components/ui/states'
 import { useLatest } from '../../lib/useLatest'
 import type { RegionMeta } from '../../types/content'
+import { deviceOf } from '../../lib/device'
 import { countryPadding, regionPadding } from './fit'
 import { LocationMarkers } from './LocationMarkers'
 import type { Place } from './places'
@@ -36,7 +37,7 @@ function legendBox(map: L.Map) {
 
 function fitCountry(map: L.Map) {
   const { clientHeight } = map.getContainer()
-  map.fitBounds(VIETNAM_BOUNDS, countryPadding(window.innerWidth, clientHeight, legendBox(map)))
+  map.fitBounds(VIETNAM_BOUNDS, countryPadding(deviceOf(window.innerWidth), clientHeight, legendBox(map)))
 }
 
 export interface VietnamMapProps {
@@ -119,7 +120,7 @@ function RegionsLayer({
   // Theo hình mẫu: giữ toàn quốc, vùng đang chọn có nhãn bong bóng phía trên.
   // Riêng màn xếp dọc (điện thoại, máy tính bảng) thì phóng vào vùng, vì ở cỡ toàn quốc các tỉnh quá nhỏ để chạm
   useEffect(() => {
-    const zoomIn = regionPadding(window.innerWidth, map.getContainer().clientHeight, legendBox(map))
+    const zoomIn = regionPadding(deviceOf(window.innerWidth), map.getContainer().clientHeight, legendBox(map))
     if (!selectedRegionId) {
       if (zoomIn) fitCountry(map)
       return
@@ -250,7 +251,8 @@ function Controls() {
   const btn =
     'inline-flex size-11 items-center justify-center rounded-xl bg-surface text-ink shadow-md hover:bg-primary-soft focus-visible:outline-3'
   return (
-    <div className="absolute right-3 top-3 z-[1000] flex flex-col gap-2">
+    // Dời sang trái khi có khung nổi ở mép phải bản đồ (máy tính bảng: --map-right-inset)
+    <div style={{ right: 'calc(var(--map-right-inset, 0px) + 0.75rem)' }} className="absolute top-3 z-[1000] flex flex-col gap-2">
       <button type="button" aria-label="Phóng to" className={btn} onClick={() => map.zoomIn()}>
         <Plus aria-hidden className="size-5" />
       </button>

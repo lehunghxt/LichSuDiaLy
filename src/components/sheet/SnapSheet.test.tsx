@@ -1,14 +1,14 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { useState } from 'react'
-import { MapSheet, nearestSnap, snapHeight, type Snap } from './MapSheet'
+import { nearestSnap, snapHeight, SnapSheet, type Snap } from './SnapSheet'
 
 function Harness({ initial = 'half' as Snap }) {
   const [snap, setSnap] = useState<Snap>(initial)
   return (
-    <MapSheet snap={snap} onSnap={setSnap}>
+    <SnapSheet label="Thông tin bản đồ" snap={snap} onSnap={setSnap}>
       <p>Nội dung</p>
-    </MapSheet>
+    </SnapSheet>
   )
 }
 

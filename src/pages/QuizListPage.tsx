@@ -14,9 +14,7 @@ export default function QuizListPage() {
       <p className="mt-2 text-muted">Chọn một bài để thử tài kiến thức của em nhé!</p>
       <div className="mt-6">
         {status === 'loading' && <LoadingState label="Đang tải bài ôn tập…" />}
-        {status === 'error' && (
-          <ErrorState title="Chưa tải được bài ôn tập" onRetry={() => window.location.reload()} />
-        )}
+        {status === 'error' && <ErrorState title="Chưa tải được bài ôn tập" onRetry={() => window.location.reload()} />}
         {status === 'ready' && quizzes.length === 0 && (
           <EmptyState title="Bài ôn tập đang được chuẩn bị" description="Thầy cô đang soạn câu hỏi, em quay lại sau nhé." />
         )}

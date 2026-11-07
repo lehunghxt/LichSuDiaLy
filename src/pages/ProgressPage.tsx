@@ -24,10 +24,7 @@ function latest(records: QuizRecord[]): QuizRecord | undefined {
 }
 
 function best(records: QuizRecord[]): QuizRecord | undefined {
-  return records.reduce<QuizRecord | undefined>(
-    (a, r) => (!a || r.bestScore / r.total > a.bestScore / a.total ? r : a),
-    undefined,
-  )
+  return records.reduce<QuizRecord | undefined>((a, r) => (!a || r.bestScore / r.total > a.bestScore / a.total ? r : a), undefined)
 }
 
 function RecentItems({ ids }: { ids: string[] }) {

@@ -1,6 +1,6 @@
 import { BookOpen, Map as MapIcon } from 'lucide-react'
 import { Link, NavLink } from 'react-router'
-import { TAB_BAR } from '../../features/map/fit'
+import { TAB_BAR } from '../sheet/sizes'
 import { NAV_ITEMS } from './navItems'
 
 // Nhãn ngắn để cả 4 mục nằm trên một hàng (khung 1/3 màn hình, hoặc màn điện thoại)

@@ -569,3 +569,27 @@ describe('phone layout (below 1024px)', () => {
     expect(within(sheet).getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })).toBeInTheDocument()
   })
 })
+
+describe('tablet layout (768–1023px)', () => {
+  beforeEach(() => setViewportWidth(820))
+
+  test('full-screen map with the tab bar; no info panel until a region is chosen', async () => {
+    renderAt('/ban-do')
+    await screen.findByRole('list', { name: 'Các vùng địa lí' })
+    expect(screen.queryByRole('complementary', { name: 'Thông tin bản đồ' })).not.toBeInTheDocument()
+    expect(screen.getByRole('navigation', { name: 'Điều hướng chính' }).className).toContain('bottom-0')
+    expect(screen.queryByRole('link', { name: /^Em khám phá/ })).not.toBeInTheDocument()
+  })
+
+  test('a chosen region opens a floating panel on the right (not a bottom sheet); its close button goes back to the whole country', async () => {
+    const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+    const panel = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
+    expect(panel).not.toHaveAttribute('data-snap')
+    expect(panel.className).toContain('right-3')
+    expect(panel.className).toContain('overflow-y-auto')
+    expect(within(panel).getByRole('region', { name: 'Trung du và miền núi phía Bắc' })).toBeInTheDocument()
+    await userEvent.click(within(panel).getByRole('button', { name: 'Đóng khung thông tin' }))
+    expect(router.state.location.pathname).toBe('/ban-do')
+    expect(screen.queryByRole('complementary', { name: 'Thông tin bản đồ' })).not.toBeInTheDocument()
+  })
+})

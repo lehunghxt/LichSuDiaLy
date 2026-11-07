@@ -8,15 +8,18 @@ vi.mock('../features/content/repository', async (importOriginal) => {
   const mod = await importOriginal<typeof import('../features/content/repository')>()
   const { rawRegionContent } = await import('../test/fixtures')
   const raw = rawRegionContent()
-  const empty = { ...rawRegionContent(), region: { ...raw.region, id: 'vung-b', name: 'Vùng B' }, items: [], quizzes: [
-    { id: 'vung-b__on-tap-1', regionId: 'vung-b', title: 'Ôn tập rỗng', questions: [] },
-  ] }
+  const empty = {
+    ...rawRegionContent(),
+    region: { ...raw.region, id: 'vung-b', name: 'Vùng B' },
+    items: [],
+    quizzes: [{ id: 'vung-b__on-tap-1', regionId: 'vung-b', title: 'Ôn tập rỗng', questions: [] }],
+  }
   return {
     ...mod,
-    repository: mod.createRepository(
-      [raw.region, empty.region],
-      { 'vung-a': async () => ({ default: rawRegionContent() }), 'vung-b': async () => ({ default: empty }) },
-    ),
+    repository: mod.createRepository([raw.region, empty.region], {
+      'vung-a': async () => ({ default: rawRegionContent() }),
+      'vung-b': async () => ({ default: empty }),
+    }),
   }
 })
 

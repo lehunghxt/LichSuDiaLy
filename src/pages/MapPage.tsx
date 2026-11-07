@@ -11,13 +11,14 @@ import { useRegionOutline } from '../features/content/useRegionOutline'
 import { useRegionImages } from '../features/images/useRegionImages'
 import { placesOf } from '../features/map/places'
 import { MapInfoPanel } from '../features/map/MapInfoPanel'
-import { type Snap } from '../features/map/MapSheet'
+import type { Snap } from '../components/sheet/SnapSheet'
 import { RegionList } from '../features/map/RegionList'
 import { useProgress } from '../features/progress/useProgress'
-import { useIsDesktop } from '../lib/useIsDesktop'
+import { useDevice } from '../lib/device'
 import type { ContentItem, SectionId } from '../types/content'
 import { DesktopMapLayout } from './map/DesktopMapLayout'
 import { MobileMapLayout } from './map/MobileMapLayout'
+import { TabletMapLayout } from './map/TabletMapLayout'
 
 const VietnamMap = lazy(() => import('../features/map/VietnamMap'))
 
@@ -51,7 +52,7 @@ export default function MapPage() {
     navigate({ search: t ? topicSearch(t.section, t.topicId, t.slug) : '' }, { replace: true })
   }, [legacyTopic, legacySlug, outline, navigate])
 
-  const isDesktop = useIsDesktop()
+  const device = useDevice()
   // Điện thoại: mức mở của bottom sheet thông tin vùng
   const [snap, setSnap] = useState<Snap>('half')
 
@@ -135,9 +136,17 @@ export default function MapPage() {
   return (
     <>
       <h1 className="sr-only">Bản đồ khám phá</h1>
-      {isDesktop ? (
-        <DesktopMapLayout map={map} chips={chips} panel={panel} />
-      ) : (
+      {device === 'desktop' && <DesktopMapLayout map={map} chips={chips} panel={panel} />}
+      {device === 'tablet' && (
+        <TabletMapLayout
+          map={map}
+          chips={chips}
+          panel={panel}
+          panelOpen={regionId !== undefined}
+          onClosePanel={() => navigate('/ban-do')}
+        />
+      )}
+      {device === 'mobile' && (
         <MobileMapLayout map={map} chips={chips} panel={panel} sheetOpen={regionId !== undefined} snap={snap} onSnap={setSnap} />
       )}
       {modalOpen && (

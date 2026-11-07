@@ -1,7 +1,7 @@
 import type { CSSProperties, ReactNode } from 'react'
 import { CompactNav } from '../../components/layout/CompactNav'
-import { TAB_BAR } from '../../features/map/fit'
-import { MapSheet, sheetCss, type Snap } from '../../features/map/MapSheet'
+import { TAB_BAR } from '../../components/sheet/sizes'
+import { sheetCss, type Snap, SnapSheet } from '../../components/sheet/SnapSheet'
 
 interface MobileMapLayoutProps {
   map: ReactNode
@@ -32,9 +32,9 @@ export function MobileMapLayout({ map, chips, panel, sheetOpen, snap, onSnap }: 
         </div>
       </div>
       {sheetOpen && (
-        <MapSheet snap={snap} onSnap={onSnap}>
+        <SnapSheet label="Thông tin bản đồ" snap={snap} onSnap={onSnap}>
           {panel}
-        </MapSheet>
+        </SnapSheet>
       )}
       <CompactNav variant="tabs" />
     </>
