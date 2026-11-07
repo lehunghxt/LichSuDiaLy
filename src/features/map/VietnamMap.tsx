@@ -10,6 +10,7 @@ import { useLatest } from '../../lib/useLatest'
 import type { RegionMeta } from '../../types/content'
 import { deviceOf } from '../../lib/device'
 import { MAP_MAX_BOUNDS, countryPadding, regionPadding } from './fit'
+import { bindHoverName } from './hoverName'
 import { LocationMarkers } from './LocationMarkers'
 import type { Place } from './places'
 import {
@@ -103,6 +104,7 @@ function RegionsLayer({
   const colorOf = useCallback((id: string) => cssColor(regions.find((r) => r.id === id)?.color), [regions])
   const nameOf = useCallback((id: string) => regions.find((r) => r.id === id)?.name ?? id, [regions])
   const select = useLatest(onSelectRegion)
+  const selectedRef = useLatest(selectedRegionId)
 
   // React Leaflet gọi lại setStyle khi prop style đổi → style là hàm ổn định, chỉ đổi khi vùng chọn đổi
   const styleFor = useCallback(
@@ -147,7 +149,7 @@ function RegionsLayer({
 
   const onEachFeature = (feature: GeoJSON.Feature<GeoJSON.Geometry, WithOffshore<RegionFeatureProps>>, layer: Layer) => {
     const { regionId: id, offshore } = feature.properties
-    layer.bindTooltip(nameOf(id), { sticky: true, className: 'map-tooltip' })
+    bindHoverName(layer, nameOf(id), () => selectedRef.current === id)
     layer.on({
       click: () => select.current(id),
       mouseover: (e) => !offshore && (e.target as L.Path).setStyle({ weight: 3 }),
@@ -165,6 +167,7 @@ function ProvincesLayer({
   onSelectProvince,
 }: { data: AreaCollection<ProvinceFeatureProps>; regionId: string } & Pick<VietnamMapProps, 'selectedProvinceId' | 'onSelectProvince'>) {
   const select = useLatest(onSelectProvince)
+  const selectedRef = useLatest(selectedProvinceId)
   const filtered = useMemo(
     () => splitOffshore({ ...data, features: data.features.filter((f) => f.properties.regionId === regionId) }),
     [data, regionId],
@@ -205,7 +208,7 @@ function ProvincesLayer({
         data={filtered}
         style={style}
         onEachFeature={(feature, layer) => {
-          layer.bindTooltip(feature.properties.name, { sticky: true, className: 'map-tooltip' })
+          bindHoverName(layer, feature.properties.name, () => selectedRef.current === feature.properties.provinceId)
           layer.on('click', (e) => {
             L.DomEvent.stopPropagation(e)
             select.current(feature.properties.provinceId)
