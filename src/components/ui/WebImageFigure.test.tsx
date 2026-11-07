@@ -1,5 +1,6 @@
 import { fireEvent, render, screen, within } from '@testing-library/react'
 import type { WebImage } from '../../types/content'
+import { setViewportWidth } from '../../test/viewport'
 import { WebImageFigure } from './WebImageFigure'
 
 const U = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/F.jpg'
@@ -175,4 +176,19 @@ test('full-screen viewer: if the large image fails, the skeleton stops and a mes
   expect(within(viewer).getByText('Hình ảnh hiện không tải được')).toBeInTheDocument()
   expect(within(viewer).getByText('Đỉnh Phan-xi-păng (tỉnh Lào Cai).')).toBeInTheDocument()
   expect(within(viewer).getByRole('button', { name: 'Đóng ảnh' })).toBeInTheDocument()
+})
+
+describe('phones', () => {
+  beforeEach(() => setViewportWidth(390))
+
+  test('the large image opens as a bottom sheet (drag handle, rounded top) with caption and credit; "Đóng ảnh" closes it', () => {
+    render(<WebImageFigure image={image()} sizes="50vw" />)
+    fireEvent.click(screen.getByRole('button', { name: /Xem ảnh lớn/ }))
+    const viewer = screen.getByRole('dialog')
+    expect(viewer.className).toContain('rounded-t-3xl')
+    expect(screen.getByTestId('sheet-handle')).toBeInTheDocument()
+    expect(within(viewer).getByText('Đỉnh Phan-xi-păng (tỉnh Lào Cai).')).toBeInTheDocument()
+    fireEvent.click(within(viewer).getByRole('button', { name: 'Đóng ảnh' }))
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+  })
 })
