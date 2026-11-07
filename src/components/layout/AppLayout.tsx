@@ -1,51 +1,36 @@
 import { Suspense } from 'react'
-import { Link, Outlet, useMatch } from 'react-router'
+import { Outlet, useMatch } from 'react-router'
 import { ProgressProvider } from '../../features/progress/ProgressProvider'
+import { useDevice } from '../../lib/device'
 import { LoadingState } from '../ui/states'
-import { Header } from './Header'
+import { DesktopSiteLayout } from './site/DesktopSiteLayout'
+import { MobileSiteLayout } from './site/MobileSiteLayout'
+import { TabletSiteLayout } from './site/TabletSiteLayout'
 
+const SITE_LAYOUT = { mobile: MobileSiteLayout, tablet: TabletSiteLayout, desktop: DesktopSiteLayout }
+
+/** Khung trang: mỗi thiết bị một bố cục (header, menu, chân trang). Trang bản đồ tự lo bố cục toàn màn hình */
 export function AppLayout() {
-  // Trang bản đồ chiếm trọn màn hình: không header/footer, điều hướng nằm trong khung thông tin bên phải
+  const device = useDevice()
   const fullScreen = useMatch('/ban-do/*') !== null
+  const page = (
+    <Suspense fallback={<LoadingState />}>
+      <Outlet />
+    </Suspense>
+  )
   if (fullScreen) {
     return (
       <ProgressProvider>
-        <div className="flex min-h-dvh flex-col lg:h-dvh">
-          <main id="main" className="min-h-0 flex-1">
-            <Suspense fallback={<LoadingState />}>
-              <Outlet />
-            </Suspense>
-          </main>
-        </div>
+        <main id="main" className="min-h-dvh">
+          {page}
+        </main>
       </ProgressProvider>
     )
   }
+  const SiteLayout = SITE_LAYOUT[device]
   return (
     <ProgressProvider>
-      <div className="flex min-h-dvh flex-col">
-        <a
-          href="#main"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[1200] focus:rounded-full focus:bg-surface focus:px-4 focus:py-2"
-        >
-          Bỏ qua tới nội dung chính
-        </a>
-        <Header />
-        <main id="main" className="mx-auto w-full max-w-[1680px] flex-1 px-4 py-5 lg:px-6">
-          <Suspense fallback={<LoadingState />}>
-            <Outlet />
-          </Suspense>
-        </main>
-        <footer className="border-t border-line bg-surface px-4 py-5 text-center text-sm text-muted">
-          Nội dung học tập bám theo SGK Lịch sử và Địa lí 4. Tiến độ chỉ lưu trên trình duyệt này.{' '}
-          <Link to="/nguon-tham-khao" className="font-semibold text-primary hover:underline">
-            Nguồn tham khảo
-          </Link>
-          {' · '}
-          <Link to="/nguon-anh" className="font-semibold text-primary hover:underline">
-            Nguồn ảnh
-          </Link>
-        </footer>
-      </div>
+      <SiteLayout>{page}</SiteLayout>
     </ProgressProvider>
   )
 }

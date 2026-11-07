@@ -13,7 +13,6 @@ const isLayoutFile = (file: string) => /^(Mobile|Tablet|Desktop)[A-Z]\w*\.tsx$|L
 
 // Chưa tách theo thiết bị (đợt 2). Danh sách này chỉ được rút ngắn.
 const PENDING = new Set([
-  'components/layout/Header.tsx',
   'pages/HomePage.tsx',
 ])
 
