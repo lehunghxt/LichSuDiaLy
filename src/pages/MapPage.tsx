@@ -1,6 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
 import { Link } from 'react-router'
-import { CompactNav } from '../components/layout/CompactNav'
 import { useNavigate, useParams, useSearchParams } from 'react-router'
 import { LoadingState } from '../components/ui/states'
 import { itemSlug, topicSearch } from '../features/content/links'
@@ -12,9 +11,13 @@ import { useRegionOutline } from '../features/content/useRegionOutline'
 import { useRegionImages } from '../features/images/useRegionImages'
 import { placesOf } from '../features/map/places'
 import { MapInfoPanel } from '../features/map/MapInfoPanel'
+import { type Snap } from '../features/map/MapSheet'
 import { RegionList } from '../features/map/RegionList'
 import { useProgress } from '../features/progress/useProgress'
+import { useIsDesktop } from '../lib/useIsDesktop'
 import type { ContentItem, SectionId } from '../types/content'
+import { DesktopMapLayout } from './map/DesktopMapLayout'
+import { MobileMapLayout } from './map/MobileMapLayout'
 
 const VietnamMap = lazy(() => import('../features/map/VietnamMap'))
 
@@ -48,8 +51,20 @@ export default function MapPage() {
     navigate({ search: t ? topicSearch(t.section, t.topicId, t.slug) : '' }, { replace: true })
   }, [legacyTopic, legacySlug, outline, navigate])
 
-  // Đổi vùng thì bỏ chọn tỉnh
-  useEffect(() => setProvinceId(null), [regionId])
+  const isDesktop = useIsDesktop()
+  // Điện thoại: mức mở của bottom sheet thông tin vùng
+  const [snap, setSnap] = useState<Snap>('half')
+
+  // Đổi vùng thì bỏ chọn tỉnh và mở lại bottom sheet ở mức nửa màn hình
+  useEffect(() => {
+    setProvinceId(null)
+    setSnap('half')
+  }, [regionId])
+  // Chọn tỉnh khi tấm đang thu gọn: mở lên để em thấy thẻ tỉnh
+  const selectProvince = (id: string | null) => {
+    setProvinceId(id)
+    if (id) setSnap((s) => (s === 'peek' ? 'half' : s))
+  }
 
   useEffect(() => {
     if (region?.status === 'active') markRegionVisited(region.id)
@@ -74,58 +89,57 @@ export default function MapPage() {
   }
   const closeTopic = () => navigate({ search: '' }, { replace: true })
 
+  const map = (
+    <Suspense fallback={<LoadingState label="Đang tải bản đồ…" />}>
+      <VietnamMap
+        regions={regions}
+        selectedRegionId={region?.id ?? null}
+        selectedProvinceId={provinceId}
+        onSelectRegion={selectRegion}
+        onSelectProvince={selectProvince}
+        places={placesOf(items)}
+        onOpenPlace={openItem}
+      />
+    </Suspense>
+  )
+  const chips = <RegionList regions={regions} selectedId={region?.id ?? null} onSelect={selectRegion} />
+  const panel = (
+    <>
+      <MapInfoPanel
+        region={region}
+        regions={regions}
+        onSelectRegion={selectRegion}
+        regionIdFromUrl={regionId}
+        content={content}
+        images={images}
+        outline={outline}
+        provinceId={provinceId}
+        onBack={() => navigate('/ban-do')}
+        onClearProvince={() => setProvinceId(null)}
+        onOpenTopic={openTopic}
+        onOpenItem={openItem}
+      />
+      <p className="mt-auto text-center text-xs text-muted">
+        Nội dung bám theo SGK Lịch sử và Địa lí 4.{' '}
+        <Link to="/nguon-tham-khao" className="font-semibold text-primary hover:underline">
+          Nguồn tham khảo
+        </Link>
+        {' · '}
+        <Link to="/nguon-anh" className="font-semibold text-primary hover:underline">
+          Nguồn ảnh
+        </Link>
+      </p>
+    </>
+  )
+
   return (
     <>
       <h1 className="sr-only">Bản đồ khám phá</h1>
-      <div className="grid lg:h-dvh lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
-        <div data-map-frame className="relative h-[65vh] overflow-hidden bg-sea lg:h-full">
-          <Suspense fallback={<LoadingState label="Đang tải bản đồ…" />}>
-            <VietnamMap
-              regions={regions}
-              selectedRegionId={region?.id ?? null}
-              selectedProvinceId={provinceId}
-              onSelectRegion={selectRegion}
-              onSelectProvince={setProvinceId}
-              places={placesOf(items)}
-              onOpenPlace={openItem}
-            />
-          </Suspense>
-          {/* Chừa bên phải cho nút phóng to/thu nhỏ của bản đồ */}
-          <div data-map-legend className="absolute left-3 right-14 top-3 z-[1000] flex">
-            <RegionList regions={regions} selectedId={region?.id ?? null} onSelect={selectRegion} />
-          </div>
-        </div>
-        <aside
-          aria-label="Thông tin bản đồ"
-          className="flex flex-col gap-5 bg-bg p-4 pb-24 lg:overflow-y-auto lg:overscroll-contain lg:pb-4 xl:p-5"
-        >
-          <CompactNav />
-          <MapInfoPanel
-            region={region}
-            regions={regions}
-            onSelectRegion={selectRegion}
-            regionIdFromUrl={regionId}
-            content={content}
-            images={images}
-            outline={outline}
-            provinceId={provinceId}
-            onBack={() => navigate('/ban-do')}
-            onClearProvince={() => setProvinceId(null)}
-            onOpenTopic={openTopic}
-            onOpenItem={openItem}
-          />
-          <p className="mt-auto text-center text-xs text-muted">
-            Nội dung bám theo SGK Lịch sử và Địa lí 4.{' '}
-            <Link to="/nguon-tham-khao" className="font-semibold text-primary hover:underline">
-              Nguồn tham khảo
-            </Link>
-            {' · '}
-            <Link to="/nguon-anh" className="font-semibold text-primary hover:underline">
-              Nguồn ảnh
-            </Link>
-          </p>
-        </aside>
-      </div>
+      {isDesktop ? (
+        <DesktopMapLayout map={map} chips={chips} panel={panel} />
+      ) : (
+        <MobileMapLayout map={map} chips={chips} panel={panel} sheetOpen={regionId !== undefined} snap={snap} onSnap={setSnap} />
+      )}
       {modalOpen && (
         <SectionModal
           region={region}

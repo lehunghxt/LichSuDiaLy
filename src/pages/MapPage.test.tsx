@@ -1,8 +1,9 @@
-import { render, screen, waitFor, within } from '@testing-library/react'
+import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { createMemoryRouter, RouterProvider } from 'react-router'
 import { routes } from '../app/router'
 import { PROGRESS_KEY } from '../features/progress/progress'
+import { setViewportWidth } from '../test/viewport'
 
 // Leaflet cần trình duyệt thật; trong test thay bằng bản giả giữ nguyên các callback
 vi.mock('../features/map/VietnamMap', () => ({
@@ -349,15 +350,6 @@ test('map page is full screen: no site header or footer, compact navigation in t
   expect(within(panel).getByRole('link', { name: 'Nguồn ảnh' })).toHaveAttribute('href', '/nguon-anh')
 })
 
-test('map takes 2/3 and the side panel 1/3; the panel scrolls on its own', async () => {
-  renderAt('/ban-do')
-  const panel = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
-  const layout = panel.parentElement!
-  expect(layout.className).toContain('lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]')
-  expect(layout.className).toContain('lg:h-dvh')
-  expect(panel.className).toContain('lg:overflow-y-auto')
-})
-
 test('other pages keep the site header and footer', async () => {
   renderAt('/on-tap')
   expect(await screen.findByRole('banner')).toBeInTheDocument()
@@ -518,25 +510,62 @@ test('province card says which former provinces the 2025 province was formed fro
   )
 })
 
-test('on phones the main navigation is a tab bar stuck to the bottom of the screen; the panel leaves room for it', async () => {
-  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
-  const panel = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
-  const nav = within(panel).getByRole('navigation', { name: 'Điều hướng chính' })
-  expect(nav.className).toMatch(/(^| )fixed( |$)/)
-  expect(nav.className).toContain('bottom-0')
-  expect(nav.className).toContain('lg:static')
-  expect(nav.className).toContain('env(safe-area-inset-bottom)')
-  expect(panel.className).toContain('pb-24')
-  expect(panel.className).toContain('lg:pb-4')
-  // logo chỉ hiện trên màn rộng (điện thoại đã có tab Trang chủ)
-  expect(within(panel).getByRole('link', { name: /^Em khám phá/ }).className).toContain('hidden lg:block')
+describe('desktop layout (from 1024px)', () => {
+  test('map takes 2/3 and the info panel 1/3; the panel scrolls on its own', async () => {
+    renderAt('/ban-do')
+    const panel = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
+    expect(panel.parentElement!.className).toContain('grid-cols-[minmax(0,2fr)_minmax(0,1fr)]')
+    expect(panel.className).toContain('overflow-y-auto')
+    expect(screen.queryByRole('button', { name: /Kéo hoặc bấm/ })).not.toBeInTheDocument()
+  })
+
+  test('logo and main menu stay stuck to the top of the panel while it scrolls', async () => {
+    renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+    const panel = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
+    const bar = within(panel).getByRole('navigation', { name: 'Điều hướng chính' }).parentElement!
+    expect(bar.className).toContain('sticky')
+    expect(within(bar).getByRole('link', { name: /^Em khám phá/ })).toBeInTheDocument()
+  })
 })
 
-test('on desktop the logo and main menu stay stuck to the top of the panel while it scrolls', async () => {
-  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
-  const panel = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
-  const bar = within(panel).getByRole('navigation', { name: 'Điều hướng chính' }).parentElement!
-  expect(bar.className).toContain('lg:sticky')
-  expect(bar.className).toContain('lg:-top-4')
-  expect(bar.className).toContain('lg:bg-bg/95')
+describe('phone layout (below 1024px)', () => {
+  beforeEach(() => setViewportWidth(390))
+
+  test('the map fills the screen, the main menu is a tab bar at the bottom, and there is no info panel until a region is chosen', async () => {
+    renderAt('/ban-do')
+    await screen.findByRole('list', { name: 'Các vùng địa lí' })
+    expect(screen.queryByRole('complementary', { name: 'Thông tin bản đồ' })).not.toBeInTheDocument()
+    expect(document.querySelector('[data-map-frame]')!.className).toContain('h-dvh')
+    const nav = screen.getByRole('navigation', { name: 'Điều hướng chính' })
+    expect(nav.className).toMatch(/(^| )fixed( |$)/)
+    expect(nav.className).toContain('bottom-0')
+    expect(screen.queryByRole('link', { name: /^Em khám phá/ })).not.toBeInTheDocument()
+  })
+
+  test('choosing a region opens its info in a bottom sheet; "Về bản đồ Việt Nam" closes it', async () => {
+    renderAt('/ban-do')
+    await screen.findByRole('list', { name: 'Các vùng địa lí' })
+    await userEvent.click(within(regionList()).getByRole('button', { name: /Trung du/ }))
+    const sheet = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
+    expect(sheet).toHaveAttribute('data-snap', 'half')
+    expect(within(sheet).getByRole('region', { name: 'Trung du và miền núi phía Bắc' })).toBeInTheDocument()
+    await userEvent.click(within(sheet).getByRole('button', { name: /Về bản đồ Việt Nam/ }))
+    expect(screen.queryByRole('complementary', { name: 'Thông tin bản đồ' })).not.toBeInTheDocument()
+  })
+
+  test('dragging the sheet down leaves just its top; choosing a province brings it back to half', async () => {
+    window.innerHeight = 800
+    renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+    const sheet = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
+    const handle = within(sheet).getByRole('button', { name: /Kéo hoặc bấm/ })
+    act(() => {
+      fireEvent.pointerDown(handle, { clientY: 300, pointerId: 1 })
+      fireEvent.pointerMove(handle, { clientY: 700, pointerId: 1 })
+      fireEvent.pointerUp(handle, { clientY: 700, pointerId: 1 })
+    })
+    expect(sheet).toHaveAttribute('data-snap', 'peek')
+    await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
+    expect(sheet).toHaveAttribute('data-snap', 'half')
+    expect(within(sheet).getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })).toBeInTheDocument()
+  })
 })

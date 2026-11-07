@@ -248,3 +248,9 @@ div.leaflet-container {
     transform: translateY(100%);
   }
 }
+
+/* Bố cục điện thoại: thanh tab và bottom sheet che phần dưới bản đồ → đẩy thước tỉ lệ và dòng ghi nguồn lên trên chúng */
+[data-map-frame] .leaflet-bottom {
+  bottom: var(--map-bottom-inset, 0px);
+  transition: bottom 300ms ease-out;
+}

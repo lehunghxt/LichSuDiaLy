@@ -36,7 +36,7 @@ function legendBox(map: L.Map) {
 
 function fitCountry(map: L.Map) {
   const { clientHeight } = map.getContainer()
-  map.fitBounds(VIETNAM_BOUNDS, countryPadding(clientHeight, legendBox(map)))
+  map.fitBounds(VIETNAM_BOUNDS, countryPadding(window.innerWidth, clientHeight, legendBox(map)))
 }
 
 export interface VietnamMapProps {
