@@ -3,6 +3,7 @@ import { useState } from 'react'
 import type { MatchingQuestion } from '../../../types/quiz'
 import { shuffle } from '../engine'
 import type { QuestionViewProps } from '../registry'
+import { GRID } from '../../../components/ui/grid'
 
 // Mỗi cặp đã ghép có một màu riêng để học sinh dễ nhìn
 const PAIR_COLORS = [
@@ -14,7 +15,8 @@ const PAIR_COLORS = [
   'border-lime-600 bg-lime-50',
 ]
 
-const base = 'flex min-h-14 w-full items-center justify-between gap-2 rounded-2xl border-2 px-4 py-3 text-left font-semibold transition-colors'
+const base =
+  'flex min-h-14 w-full items-center justify-between gap-2 rounded-2xl border-2 px-4 py-3 text-left font-semibold transition-colors'
 
 export function Matching({ question, answer, onAnswer, locked }: QuestionViewProps<MatchingQuestion>) {
   const { pairs } = question
@@ -28,10 +30,15 @@ export function Matching({ question, answer, onAnswer, locked }: QuestionViewPro
     const entry = Object.entries(chosen).find(([, v]) => v === r)
     return entry ? Number(entry[0]) : undefined
   }
-  const colorOf = (l: number) => PAIR_COLORS[Object.keys(chosen).map(Number).sort((a, b) => a - b).indexOf(l) % PAIR_COLORS.length]
+  const colorOf = (l: number) =>
+    PAIR_COLORS[
+      Object.keys(chosen)
+        .map(Number)
+        .sort((a, b) => a - b)
+        .indexOf(l) % PAIR_COLORS.length
+    ]
 
-  const unpair = (l: number) =>
-    setDraft((d) => Object.fromEntries(Object.entries(d).filter(([k]) => Number(k) !== l)))
+  const unpair = (l: number) => setDraft((d) => Object.fromEntries(Object.entries(d).filter(([k]) => Number(k) !== l)))
 
   const onLeft = (l: number) => {
     if (chosen[l] !== undefined) {
@@ -62,12 +69,16 @@ export function Matching({ question, answer, onAnswer, locked }: QuestionViewPro
   return (
     <div>
       <p className="mb-4 text-muted">Chạm vào một ô bên trái, rồi chạm vào ô phù hợp bên phải. Chạm lại để bỏ ghép.</p>
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className={`${GRID.md} gap-6`}>
         <div role="group" aria-label="Cột trái" className="flex flex-col gap-3">
           {pairs.map((p, l) => {
             const r = chosen[l]
             const paired = r !== undefined
-            const tone = paired ? colorOf(l) : selectedLeft === l ? 'border-primary bg-primary-soft' : 'border-line bg-surface hover:border-primary'
+            const tone = paired
+              ? colorOf(l)
+              : selectedLeft === l
+                ? 'border-primary bg-primary-soft'
+                : 'border-line bg-surface hover:border-primary'
             return (
               <button
                 key={l}

@@ -6,6 +6,7 @@ import { provinceName, provinceNamesOfRegion } from '../../lib/provinces'
 import { SGK_URL, sgkPageUrl } from '../../lib/sources'
 import { SECTION_LABELS, type ContentItem, type MediaRef, type SourceRef, type WebImage } from '../../types/content'
 import { SECTION_ICONS } from './sectionIcons'
+import { GRID } from '../../components/ui/grid'
 
 interface ItemDetailProps {
   item: ContentItem
@@ -79,7 +80,7 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
       </header>
 
       {item.images.length > 0 && (
-        <div className="grid gap-3 sm:grid-cols-2">
+        <div className={`${GRID.md} gap-3`}>
           {item.images.map((img, i) => (
             <SmartImage
               key={img.imageId}
@@ -94,7 +95,7 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
 
       {webImages.length > 0 && (
         <Section title="Hình ảnh" icon={<ImageIcon aria-hidden className="size-6 text-primary" />}>
-          <ul className="grid gap-4 sm:grid-cols-2">
+          <ul className={`${GRID.md} gap-4`}>
             {webImages.map((img, i) => (
               <li key={img.id}>
                 <WebImageFigure
@@ -111,7 +112,7 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
 
       {figures.length > 0 && (
         <Section title="Hình minh hoạ trong SGK" icon={<ImageIcon aria-hidden className="size-6 text-primary" />}>
-          <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+          <ul className={`${GRID.md} gap-3`}>
             {figures.map((f) => (
               <li key={`${f.lesson}-${f.figure}`}>
                 <a
@@ -146,7 +147,7 @@ export function ItemDetail({ item, regionName, webImages = [], related, onSelect
 
       {item.audio && <AudioPlayer audio={item.audio} />}
 
-      <div className="grid gap-6 xl:grid-cols-2">
+      <div className={`${GRID.xl} gap-6`}>
         {item.highlights.length > 0 && (
           <Section title="Điều nổi bật" icon={<Star aria-hidden className="size-6 text-accent" />}>
             <ul className="flex flex-col gap-2">

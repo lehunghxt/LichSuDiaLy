@@ -6,6 +6,7 @@ import { repository } from '../features/content/repository'
 import type { QuizRecord } from '../features/progress/progress'
 import { useProgress } from '../features/progress/useProgress'
 import type { ContentItem } from '../types/content'
+import { GRID } from '../components/ui/grid'
 
 function Stat({ icon: Icon, label, value }: { icon: LucideIcon; label: string; value: string }) {
   return (
@@ -93,7 +94,7 @@ export default function ProgressPage() {
         </div>
       ) : (
         <>
-          <ul aria-label="Thống kê" className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
+          <ul aria-label="Thống kê" className={`${GRID.xs} mt-6 gap-4`}>
             <Stat icon={Map} label="Vùng đã khám phá" value={String(state.visitedRegionIds.length)} />
             <Stat icon={Eye} label="Địa danh đã xem" value={String(state.viewedItemIds.length)} />
             <Stat icon={BookOpenCheck} label="Bài đã hoàn thành" value={String(records.length)} />

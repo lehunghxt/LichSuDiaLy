@@ -24,10 +24,7 @@ interface ErrorStateProps extends StateProps {
 
 export function ErrorState({ title, description, action, onRetry }: ErrorStateProps) {
   return (
-    <div
-      role="alert"
-      className="flex flex-col items-center gap-3 rounded-card border border-accent/40 bg-accent-soft p-8 text-center"
-    >
+    <div role="alert" className="flex flex-col items-center gap-3 rounded-card border border-accent/40 bg-accent-soft p-8 text-center">
       <AlertTriangle aria-hidden className="size-10 text-accent" />
       <p className="font-semibold">{title}</p>
       {description && <p className="text-muted">{description}</p>}

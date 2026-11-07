@@ -86,7 +86,7 @@ export function MapInfoPanel(props: MapInfoPanelProps) {
       {webCover && <WebImageFigure image={webCover} priority sizes="(min-width: 1024px) 35vw, 100vw" aspect="16 / 7" />}
 
       <div className="flex gap-5">
-        <div className={`w-28 shrink-0 2xl:w-36 ${webCover ? 'hidden' : ''}`}>
+        <div className={`w-28 shrink-0 ${webCover ? 'hidden' : ''}`}>
           {cover ? (
             <SmartImage image={cover} sizes="144px" priority className="aspect-square" />
           ) : (
@@ -100,7 +100,7 @@ export function MapInfoPanel(props: MapInfoPanelProps) {
           )}
         </div>
         <div className="flex min-w-0 flex-col gap-2">
-          <h2 className="flex items-center gap-2 text-2xl font-bold xl:text-3xl">
+          <h2 className="flex items-center gap-2 text-2xl font-bold">
             <Mountain aria-hidden className="size-8 shrink-0 text-secondary" />
             {region.name}
           </h2>
@@ -144,7 +144,7 @@ export function MapInfoPanel(props: MapInfoPanelProps) {
           <button
             type="button"
             onClick={() => onOpenTopic('thien-nhien', null)}
-            className="flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-primary-dark px-5 text-base font-bold text-white shadow-lg transition hover:bg-primary sm:text-lg"
+            className="flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-primary-dark px-5 text-lg font-bold text-white shadow-lg transition hover:bg-primary"
           >
             <BookOpen aria-hidden className="size-6" />
             Khám phá chi tiết vùng này

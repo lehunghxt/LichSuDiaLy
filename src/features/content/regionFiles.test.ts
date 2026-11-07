@@ -47,7 +47,10 @@ test('missing section files and quizzes.json are allowed (empty)', () => {
 
 test('item declaring a section different from its file is rejected', () => {
   expect(() =>
-    assembleRegionRaw(region, { 'region.json': { intro: 'x' }, 'sections/thien-nhien.json': [{ ...item('a'), section: 'dan-cu-san-xuat' }] }),
+    assembleRegionRaw(region, {
+      'region.json': { intro: 'x' },
+      'sections/thien-nhien.json': [{ ...item('a'), section: 'dan-cu-san-xuat' }],
+    }),
   ).toThrow(ContentError)
 })
 

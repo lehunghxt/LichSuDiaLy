@@ -32,7 +32,10 @@ function lib() {
   return createImageLibrary({
     [`../../data/images/${R}/_toan-vung.json`]: mod([img('_toan-vung__a', null, { section: 'van-hoa' })]),
     [`../../data/images/${R}/phu-tho.json`]: mod([img('phu-tho__a', 'phu-tho', { itemIds: [`${R}__den-hung`], section: 'lich-su' })]),
-    [`../../data/images/${R}/lao-cai.json`]: mod([img('lao-cai__a', 'lao-cai', { status: 'draft', section: 'van-hoa' }), img('lao-cai__b', 'lao-cai')]),
+    [`../../data/images/${R}/lao-cai.json`]: mod([
+      img('lao-cai__a', 'lao-cai', { status: 'draft', section: 'van-hoa' }),
+      img('lao-cai__b', 'lao-cai'),
+    ]),
     '../../data/images/nam-bo/can-tho.json': mod([img('can-tho__a', 'can-tho')]),
   })
 }

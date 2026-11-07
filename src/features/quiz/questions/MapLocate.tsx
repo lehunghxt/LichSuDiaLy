@@ -6,6 +6,7 @@ import { POINT_LETTERS } from '../engine'
 import type { QuestionViewProps } from '../registry'
 import { ChoiceButton } from './ChoiceButton'
 import { LocatePins, type Pin } from './LocatePins'
+import { GRID } from '../../../components/ui/grid'
 
 /** id mục có dạng "<vùng>__<tên>", nên vùng của câu hỏi lấy từ mục đáp án */
 const regionOf = (itemId: string) => itemId.split('__')[0] ?? ''
@@ -50,7 +51,7 @@ export function MapLocate({ question, answer, onAnswer, locked }: QuestionViewPr
           locked={locked}
         />
       )}
-      <ul className="grid gap-3 sm:grid-cols-3" aria-label="Các điểm trên bản đồ">
+      <ul className={`${GRID.xs} gap-3`} aria-label="Các điểm trên bản đồ">
         {question.candidateItemIds.map((id, i) => (
           <li key={id}>
             <ChoiceButton selected={chosen === id} correct={id === question.targetItemId} locked={locked} onClick={() => choose(id)}>

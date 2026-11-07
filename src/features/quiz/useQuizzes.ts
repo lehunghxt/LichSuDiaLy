@@ -4,10 +4,7 @@ import type { Quiz } from '../../types/quiz'
 import { repository } from '../content/repository'
 
 export type QuizState =
-  | { status: 'loading' }
-  | { status: 'ready'; quiz: Quiz; content: RegionContent }
-  | { status: 'not_found' }
-  | { status: 'error' }
+  { status: 'loading' } | { status: 'ready'; quiz: Quiz; content: RegionContent } | { status: 'not_found' } | { status: 'error' }
 
 export function useQuiz(quizId: string | undefined): QuizState {
   const [state, setState] = useState<QuizState>({ status: 'loading' })

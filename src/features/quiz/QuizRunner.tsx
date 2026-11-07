@@ -100,7 +100,7 @@ export function QuizRunner({ quiz, onComplete }: QuizRunnerProps) {
   const isLast = index === questions.length - 1
 
   return (
-    <section className="rounded-card bg-surface p-6 shadow-sm md:p-8">
+    <section className="@container rounded-card bg-surface p-6 shadow-sm">
       <div className="flex items-center justify-between gap-4">
         <p className="font-semibold text-primary">
           Câu {index + 1}/{questions.length}
@@ -117,7 +117,7 @@ export function QuizRunner({ quiz, onComplete }: QuizRunnerProps) {
         </div>
       </div>
 
-      <h2 className="mt-4 text-xl font-bold md:text-2xl">{question.prompt}</h2>
+      <h2 className="mt-4 text-xl font-bold @2xl:text-2xl">{question.prompt}</h2>
 
       <div className="mt-6">
         <QuestionView

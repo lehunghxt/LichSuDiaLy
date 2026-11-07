@@ -12,7 +12,11 @@ afterEach(() => {
 })
 
 test('getRegions returns parsed region list', () => {
-  expect(repo().getRegions().map((r) => r.id)).toEqual(['vung-a'])
+  expect(
+    repo()
+      .getRegions()
+      .map((r) => r.id),
+  ).toEqual(['vung-a'])
 })
 
 test('loadRegionContent returns null for unknown id', async () => {

@@ -62,7 +62,12 @@ test('rejects non-commons src host', () => {
 })
 
 test('rejects srcset entries from another host', () => {
-  const src = { url: 'https://upload.wikimedia.org/wikipedia/commons/a.jpg', width: 1, height: 1, srcset: [{ url: 'https://x.org/a.jpg', width: 5 }] }
+  const src = {
+    url: 'https://upload.wikimedia.org/wikipedia/commons/a.jpg',
+    width: 1,
+    height: 1,
+    srcset: [{ url: 'https://x.org/a.jpg', width: 5 }],
+  }
   expect(errorPath(() => parse(raw({ src })))).toBe(`${FILE}[0].src.srcset[0].url`)
 })
 

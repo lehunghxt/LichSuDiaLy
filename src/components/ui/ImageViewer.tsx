@@ -78,7 +78,7 @@ export function ImageViewer({ image, onClose }: ImageViewerProps) {
       <div
         data-testid="image-viewer-backdrop"
         onClick={(e) => e.target === e.currentTarget && onClose()}
-        className="relative flex min-h-0 flex-1 items-center justify-center p-3 sm:p-6"
+        className="relative flex min-h-0 flex-1 items-center justify-center p-4"
       >
         {failed ? (
           <div className="flex flex-col items-center gap-2 text-surface">
@@ -87,7 +87,7 @@ export function ImageViewer({ image, onClose }: ImageViewerProps) {
           </div>
         ) : (
           !loaded && (
-            <span className="absolute inset-3 m-auto aspect-[4/3] max-h-[calc(100%-1.5rem)] max-w-[calc(100%-1.5rem)] sm:inset-6">
+            <span className="absolute inset-3 m-auto aspect-[4/3] max-h-[calc(100%-1.5rem)] max-w-[calc(100%-1.5rem)]">
               <ImageSkeleton className="rounded-lg bg-surface/15" />
             </span>
           )

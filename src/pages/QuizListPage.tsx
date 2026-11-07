@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import { EmptyState, ErrorState, LoadingState } from '../components/ui/states'
 import { useProgress } from '../features/progress/useProgress'
 import { useQuizList } from '../features/quiz/useQuizzes'
+import { GRID } from '../components/ui/grid'
 
 export default function QuizListPage() {
   const { status, quizzes } = useQuizList()
@@ -19,7 +20,7 @@ export default function QuizListPage() {
           <EmptyState title="Bài ôn tập đang được chuẩn bị" description="Thầy cô đang soạn câu hỏi, em quay lại sau nhé." />
         )}
         {status === 'ready' && quizzes.length > 0 && (
-          <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <ul className={`${GRID.lg} gap-4`}>
             {quizzes.map(({ quiz, regionName }) => {
               const record = state.quizzes[quiz.id]
               return (

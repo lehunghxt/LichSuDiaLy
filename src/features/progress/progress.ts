@@ -120,7 +120,6 @@ export function regionCompletion(s: ProgressState, content: RegionContent): numb
   const quizzes = content.quizzes.filter((q) => q.questions.some((x) => isPublished(x.status)))
   const total = items.length + quizzes.length
   if (total === 0) return 0
-  const done =
-    items.filter((i) => s.viewedItemIds.includes(i.id)).length + quizzes.filter((q) => s.quizzes[q.id]).length
+  const done = items.filter((i) => s.viewedItemIds.includes(i.id)).length + quizzes.filter((q) => s.quizzes[q.id]).length
   return Math.round((100 * done) / total)
 }

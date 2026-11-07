@@ -40,8 +40,14 @@ test('relatedIds and map_locate ids resolve', () => {
   const { raw } = fixture()
   raw.items[0] = { ...raw.items[0]!, relatedIds: ['vung-a__khong-co'] }
   raw.quizzes[0]!.questions.push({
-    id: 'q3', type: 'map_locate', prompt: '?', explanation: '.', status: 'draft', sources: [],
-    targetItemId: 'vung-a__x', candidateItemIds: ['vung-a__x', 'vung-a__dia-danh-1'],
+    id: 'q3',
+    type: 'map_locate',
+    prompt: '?',
+    explanation: '.',
+    status: 'draft',
+    sources: [],
+    targetItemId: 'vung-a__x',
+    candidateItemIds: ['vung-a__x', 'vung-a__dia-danh-1'],
   } as never)
   const problems = check(raw)
   expect(problems).toContainEqual(expect.stringContaining('relatedIds: không có "vung-a__khong-co"'))
@@ -51,8 +57,14 @@ test('relatedIds and map_locate ids resolve', () => {
 test('map_locate candidates must have location', () => {
   const { raw } = fixture()
   raw.quizzes[0]!.questions.push({
-    id: 'q3', type: 'map_locate', prompt: '?', explanation: '.', status: 'draft', sources: [],
-    targetItemId: 'vung-a__khoang-san-1', candidateItemIds: ['vung-a__khoang-san-1', 'vung-a__dia-danh-1'],
+    id: 'q3',
+    type: 'map_locate',
+    prompt: '?',
+    explanation: '.',
+    status: 'draft',
+    sources: [],
+    targetItemId: 'vung-a__khoang-san-1',
+    candidateItemIds: ['vung-a__khoang-san-1', 'vung-a__dia-danh-1'],
   } as never)
   expect(check(raw)).toContainEqual(expect.stringContaining('"vung-a__khoang-san-1" chưa có tọa độ'))
 })
@@ -125,13 +137,21 @@ test('real image library in src/data/images passes integrity check', () => {
           .filter((f) => f.endsWith('.json'))
           .map((f) => [f.split(path.sep).join('/'), JSON.parse(readFileSync(path.join(regionsDir, dir.name, f), 'utf8')) as unknown]),
       )
-      return parseRegionContent(assembleRegionRaw(regions.find((r) => r.id === dir.name), files))
+      return parseRegionContent(
+        assembleRegionRaw(
+          regions.find((r) => r.id === dir.name),
+          files,
+        ),
+      )
     })
   const imagesDir = path.join(dataDir, 'images')
   const images = readdirSync(imagesDir, { withFileTypes: true })
     .filter((d) => d.isDirectory())
     .flatMap((dir) => {
-      expect(regions.some((r) => r.id === dir.name), `thư mục ảnh "${dir.name}" không phải vùng`).toBe(true)
+      expect(
+        regions.some((r) => r.id === dir.name),
+        `thư mục ảnh "${dir.name}" không phải vùng`,
+      ).toBe(true)
       return readdirSync(path.join(imagesDir, dir.name))
         .filter((f) => f.endsWith('.json'))
         .flatMap((f) => {

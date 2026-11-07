@@ -80,9 +80,13 @@ test('wrong pair → encouraging feedback with correct pairs', async () => {
 
 test('works with keyboard only', async () => {
   render(<QuizRunner quiz={quiz} onComplete={() => {}} />)
-  within(left()).getByRole('button', { name: /Bắc Hà/ }).focus()
+  within(left())
+    .getByRole('button', { name: /Bắc Hà/ })
+    .focus()
   await userEvent.keyboard('{Enter}')
-  within(right()).getByRole('button', { name: /Lào Cai/ }).focus()
+  within(right())
+    .getByRole('button', { name: /Lào Cai/ })
+    .focus()
   await userEvent.keyboard('{Enter}')
   expect(within(left()).getByRole('button', { name: /Bắc Hà/ })).toHaveAccessibleName(/đã ghép với Lào Cai/)
 })

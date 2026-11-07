@@ -6,6 +6,7 @@ import { repository } from '../features/content/repository'
 import { imageLibrary } from '../features/images/library'
 import { collectSources, type SourceRow } from '../features/sources/collectSources'
 import { SGK_URL, sgkPageUrl } from '../lib/sources'
+import { GRID } from '../components/ui/grid'
 
 const external = { target: '_blank', rel: 'noopener noreferrer' } as const
 const link = 'text-primary underline decoration-dotted underline-offset-2 hover:text-primary-dark'
@@ -62,7 +63,7 @@ export default function SourcesPage() {
         <EmptyState title="Chưa có nguồn tham khảo" description="Nội dung đang được giáo viên duyệt." />
       ) : (
         <>
-          <ul aria-label="Tổng quan nguồn tham khảo" className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+          <ul aria-label="Tổng quan nguồn tham khảo" className={`${GRID.xs} gap-3`}>
             <Stat
               icon={<BookOpen aria-hidden className="size-5" />}
               label="Bài học SGK được dẫn"

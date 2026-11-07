@@ -5,7 +5,8 @@ import { readdirSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 
 const SRC = path.resolve(import.meta.dirname, '..')
-const RESPONSIVE = /(?<![\w/:-])(?:sm|md|lg|xl|2xl):[\w[-]/
+// Container query (@md:, @lg:…) được phép: component đổi theo khung chứa nó, không theo thiết bị
+const RESPONSIVE = /(?<![\w/:@-])(?:sm|md|lg|xl|2xl):[\w[-]/
 
 /** File bố cục: <Thiết bị>Xxx.tsx hoặc XxxLayout.tsx */
 const isLayoutFile = (file: string) => /^(Mobile|Tablet|Desktop)[A-Z]\w*\.tsx$|Layout\.tsx$/.test(path.basename(file))
@@ -13,18 +14,7 @@ const isLayoutFile = (file: string) => /^(Mobile|Tablet|Desktop)[A-Z]\w*\.tsx$|L
 // Chưa tách theo thiết bị (đợt 2). Danh sách này chỉ được rút ngắn.
 const PENDING = new Set([
   'components/layout/Header.tsx',
-  'components/ui/ImageViewer.tsx',
-  'features/content/ItemDetail.tsx',
-  'features/map/MapInfoPanel.tsx',
-  'features/quiz/QuizRunner.tsx',
-  'features/quiz/questions/Matching.tsx',
-  'features/quiz/questions/MapLocate.tsx',
-  'features/quiz/questions/SingleChoice.tsx',
-  'features/quiz/questions/TrueFalse.tsx',
   'pages/HomePage.tsx',
-  'pages/ProgressPage.tsx',
-  'pages/QuizListPage.tsx',
-  'pages/SourcesPage.tsx',
 ])
 
 function tsxFiles(dir: string): string[] {
