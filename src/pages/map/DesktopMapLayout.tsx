@@ -21,7 +21,10 @@ export function DesktopMapLayout({ map, chips, panel }: DesktopMapLayoutProps) {
         </div>
       </div>
       <aside aria-label="Thông tin bản đồ" className="flex flex-col gap-5 overflow-y-auto overscroll-contain bg-bg p-4 xl:p-5">
-        <CompactNav variant="bar" />
+        {/* Dính sát mép trên khung khi cuộn (top âm bù phần padding của khung); nền + lề âm để nội dung trượt khuất bên dưới */}
+        <div className="sticky -top-4 z-10 -mx-4 -mt-4 bg-bg/95 px-4 pb-3 pt-4 backdrop-blur xl:-top-5 xl:-mx-5 xl:-mt-5 xl:px-5 xl:pt-5">
+          <CompactNav variant="bar" />
+        </div>
         {panel}
       </aside>
     </div>

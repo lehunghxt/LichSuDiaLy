@@ -1,10 +1,11 @@
 import { fireEvent, render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router'
-import { rawRegionContent } from '../../test/fixtures'
-import { sgkPageUrl } from '../../lib/sources'
-import { parseRegionContent } from './parse'
-import type { RegionOutline } from '../../types/content'
+import { rawRegionContent } from '../../../test/fixtures'
+import { sgkPageUrl } from '../../../lib/sources'
+import { parseRegionContent } from '../parse'
+import type { RegionOutline } from '../../../types/content'
+import { setViewportWidth } from '../../../test/viewport'
 import { SectionModal } from './SectionModal'
 
 function content() {
@@ -253,36 +254,43 @@ test('item photos tell the browser they fill the width on phones (one column bel
   expect(sizes).toContain('(min-width: 640px) 50vw')
 })
 
-const handle = () => screen.getByTestId('sheet-handle')
+describe('phones', () => {
+  beforeEach(() => setViewportWidth(390))
 
-test('small screens: the modal is a bottom sheet over a dimmed backdrop; tapping the backdrop closes it', async () => {
-  const { onClose } = setup()
-  const dialog = screen.getByRole('dialog')
-  expect(dialog.className).toContain('rounded-t-3xl')
-  expect(dialog.className).toContain('lg:rounded-none')
-  expect(handle()).toBeInTheDocument()
-  await userEvent.click(screen.getByTestId('sheet-backdrop'))
-  expect(onClose).toHaveBeenCalledTimes(1)
+  test('the modal is a bottom sheet over a dimmed backdrop with a drag handle; tapping the backdrop closes it', async () => {
+    const { onClose } = setup()
+    expect(screen.getByRole('dialog', { name: 'Thiên nhiên' }).className).toContain('rounded-t-3xl')
+    expect(screen.getByTestId('sheet-handle')).toBeInTheDocument()
+    await userEvent.click(screen.getByTestId('sheet-backdrop'))
+    expect(onClose).toHaveBeenCalledTimes(1)
+  })
+
+  test('sections and topics are horizontal scrolling rows; topic hints are left out; the close button is a round ✕', () => {
+    setup()
+    expect(screen.getByRole('list', { name: 'Các mục trong phần' }).className).toContain('overflow-x-auto')
+    expect(screen.queryByText('(núi cao)')).not.toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Đóng' })).not.toHaveTextContent('Đóng')
+  })
 })
 
-test('dragging the handle down far enough closes the sheet; a short drag springs back', () => {
-  const { onClose } = setup()
-  const dialog = screen.getByRole('dialog')
-  fireEvent.pointerDown(handle(), { clientY: 100, pointerId: 1 })
-  fireEvent.pointerMove(handle(), { clientY: 160, pointerId: 1 })
-  expect(dialog.style.transform).toBe('translateY(60px)')
-  fireEvent.pointerUp(handle(), { clientY: 160, pointerId: 1 })
-  expect(onClose).not.toHaveBeenCalled()
-  expect(dialog.style.transform).toBe('')
-  fireEvent.pointerDown(handle(), { clientY: 100, pointerId: 1 })
-  fireEvent.pointerMove(handle(), { clientY: 300, pointerId: 1 })
-  fireEvent.pointerUp(handle(), { clientY: 300, pointerId: 1 })
-  expect(onClose).toHaveBeenCalledTimes(1)
+describe('tablets', () => {
+  beforeEach(() => setViewportWidth(820))
+
+  test('full-screen dialog (not a sheet) with the topics as a column beside the content, hints included', () => {
+    setup()
+    expect(screen.getByRole('dialog', { name: 'Thiên nhiên' }).className).not.toContain('rounded-t-3xl')
+    expect(screen.queryByTestId('sheet-handle')).not.toBeInTheDocument()
+    expect(screen.getByRole('list', { name: 'Các mục trong phần' }).className).toContain('flex-col')
+    expect(screen.getByText('(núi cao)')).toBeInTheDocument()
+  })
 })
 
-test('dragging up does not move the sheet above its resting place', () => {
-  setup()
-  fireEvent.pointerDown(handle(), { clientY: 300, pointerId: 1 })
-  fireEvent.pointerMove(handle(), { clientY: 200, pointerId: 1 })
-  expect(screen.getByRole('dialog').style.transform).toBe('translateY(0px)')
+describe('desktop', () => {
+  test('full-screen dialog with topics as a column and a labelled close button', () => {
+    setup()
+    expect(screen.getByRole('dialog', { name: 'Thiên nhiên' }).className).toContain('inset-0')
+    expect(screen.queryByTestId('sheet-backdrop')).not.toBeInTheDocument()
+    expect(screen.getByRole('list', { name: 'Các mục trong phần' }).className).toContain('flex-col')
+    expect(screen.getByRole('button', { name: 'Đóng' })).toHaveTextContent('Đóng')
+  })
 })

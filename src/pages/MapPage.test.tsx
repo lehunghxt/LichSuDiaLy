@@ -522,9 +522,10 @@ describe('desktop layout (from 1024px)', () => {
   test('logo and main menu stay stuck to the top of the panel while it scrolls', async () => {
     renderAt('/ban-do/trung-du-mien-nui-phia-bac')
     const panel = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
-    const bar = within(panel).getByRole('navigation', { name: 'Điều hướng chính' }).parentElement!
-    expect(bar.className).toContain('sticky')
-    expect(within(bar).getByRole('link', { name: /^Em khám phá/ })).toBeInTheDocument()
+    const bar = within(panel).getByRole('navigation', { name: 'Điều hướng chính' }).closest('.sticky')
+    expect(bar).not.toBeNull()
+    expect(panel).toContainElement(bar as HTMLElement)
+    expect(within(bar as HTMLElement).getByRole('link', { name: /^Em khám phá/ })).toBeInTheDocument()
   })
 })
 

@@ -32,7 +32,7 @@ function NavTabs() {
 }
 
 interface CompactNavProps {
-  /** bar: logo + menu ở đầu khung thông tin (desktop); tabs: thanh tab dính đáy màn hình (điện thoại) */
+  /** bar: logo + menu (bố cục tự đặt chỗ, ví dụ dính đầu khung thông tin); tabs: thanh tab dính đáy màn hình */
   variant: 'bar' | 'tabs'
 }
 
@@ -53,8 +53,7 @@ export function CompactNav({ variant }: CompactNavProps) {
     )
   }
   return (
-    // Dính sát mép trên khung thông tin khi cuộn (top âm bù phần padding của khung); nền + lề âm để nội dung trượt khuất bên dưới
-    <div className="sticky -top-4 z-10 -mx-4 -mt-4 flex items-center gap-3 bg-bg/95 px-4 pb-3 pt-4 backdrop-blur xl:-top-5 xl:-mx-5 xl:-mt-5 xl:px-5 xl:pt-5">
+    <div className="flex items-center gap-3">
       <Link to="/" aria-label="Em khám phá Lịch sử và Địa lí Việt Nam – Trang chủ" className="shrink-0">
         <span className="relative flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-300 to-emerald-400 shadow-md">
           <BookOpen aria-hidden className="size-7 text-white" />
