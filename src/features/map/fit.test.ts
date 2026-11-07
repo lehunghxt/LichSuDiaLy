@@ -1,4 +1,9 @@
-import { countryPadding, regionPadding } from './fit'
+import { readFileSync } from 'node:fs'
+import path from 'node:path'
+import L from 'leaflet'
+import type { Device } from '../../lib/device'
+import { MAP_MAX_BOUNDS, countryPadding, regionPadding } from './fit'
+import { regionBounds, type AreaCollection, type RegionFeatureProps } from './geo'
 
 const legend = { left: 16, top: 16, width: 170, height: 40 }
 // Dải chip cao bất thường (ví dụ chữ phóng to)
@@ -48,4 +53,49 @@ describe('tablet', () => {
     // khung nổi 380 + lề 12 hai bên = 404
     expect(regionPadding('tablet', 1000, legend)).toEqual({ paddingTopLeft: [12, 100], paddingBottomRight: [404, 76] })
   })
+})
+
+describe('every region fits its zoom without hitting the pan limit', () => {
+  // Leaflet chặn không cho khung nhìn ra ngoài MAP_MAX_BOUNDS: nếu khung phóng cần vượt giới hạn, bản đồ bị kéo lệch
+  // và vùng đang chọn nằm dưới khung thông tin. Tính lại khung nhìn như map.fitBounds (zoomSnap 0.25)
+  const data = JSON.parse(
+    readFileSync(path.resolve(import.meta.dirname, '../../../public/maps/regions.geojson'), 'utf8'),
+  ) as AreaCollection<RegionFeatureProps>
+  const crs = L.CRS.EPSG3857
+  const [[minLat, minLng], [maxLat, maxLng]] = MAP_MAX_BOUNDS
+
+  const screens: [Device, number, number][] = [
+    ['mobile', 390, 800],
+    ['mobile', 360, 640],
+    ['tablet', 820, 1100],
+    ['tablet', 1000, 760],
+  ]
+  for (const [device, width, height] of screens) {
+    for (const region of data.features.map((f) => f.properties.regionId)) {
+      test(`${device} ${width}×${height}: ${region}`, () => {
+        const pad = regionPadding(device, height, legend)!
+        const [[s, w], [n, e]] = regionBounds(data, region)!
+        const [padL, padT] = pad.paddingTopLeft
+        const [padR, padB] = pad.paddingBottomRight
+        let zoom = 10
+        for (; zoom > 4; zoom -= 0.25) {
+          const sw = crs.latLngToPoint(L.latLng(s, w), zoom)
+          const ne = crs.latLngToPoint(L.latLng(n, e), zoom)
+          if (ne.x - sw.x <= width - padL - padR && sw.y - ne.y <= height - padT - padB) break
+        }
+        const sw = crs.latLngToPoint(L.latLng(s, w), zoom)
+        const ne = crs.latLngToPoint(L.latLng(n, e), zoom)
+        const center = sw
+          .add(ne)
+          .divideBy(2)
+          .add(L.point(padR - padL, padB - padT).divideBy(2))
+        const topLeft = crs.pointToLatLng(center.subtract(L.point(width / 2, height / 2)), zoom)
+        const bottomRight = crs.pointToLatLng(center.add(L.point(width / 2, height / 2)), zoom)
+        expect(topLeft.lat).toBeLessThanOrEqual(maxLat)
+        expect(topLeft.lng).toBeGreaterThanOrEqual(minLng)
+        expect(bottomRight.lat).toBeGreaterThanOrEqual(minLat)
+        expect(bottomRight.lng).toBeLessThanOrEqual(maxLng)
+      })
+    }
+  }
 })

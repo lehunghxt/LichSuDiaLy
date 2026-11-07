@@ -12,6 +12,12 @@ export interface LegendBox {
 
 // Phần chừa ở đáy không quá chừng này của khung (điện thoại xoay ngang vẫn còn chỗ thấy bản đồ)
 const MAX_BOTTOM_SHARE = 0.55
+/** Giới hạn kéo bản đồ [[nam, tây], [bắc, đông]]: đủ rộng để khung phóng vào mọi vùng (kể cả lề chừa cho khung thông tin)
+ *  không chạm giới hạn; chạm thì Leaflet kéo bản đồ lệch và vùng bị khung che */
+export const MAP_MAX_BOUNDS: [[number, number], [number, number]] = [
+  [-30, 70],
+  [45, 140],
+]
 // Máy tính bảng: bề rộng khung thông tin nổi ở mép phải bản đồ
 export const SIDE_PANEL = 380
 

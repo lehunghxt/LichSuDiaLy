@@ -9,7 +9,7 @@ import { ErrorState, LoadingState } from '../../components/ui/states'
 import { useLatest } from '../../lib/useLatest'
 import type { RegionMeta } from '../../types/content'
 import { deviceOf } from '../../lib/device'
-import { countryPadding, regionPadding } from './fit'
+import { MAP_MAX_BOUNDS, countryPadding, regionPadding } from './fit'
 import { LocationMarkers } from './LocationMarkers'
 import type { Place } from './places'
 import {
@@ -279,11 +279,7 @@ export default function VietnamMap(props: VietnamMapProps) {
     <div className="relative h-full">
       <MapContainer
         bounds={VIETNAM_BOUNDS}
-        // Rộng về phía tây: phần đó nằm dưới bảng chú giải khi canh toàn quốc
-        maxBounds={[
-          [3, 85],
-          [27, 123],
-        ]}
+        maxBounds={MAP_MAX_BOUNDS}
         minZoom={4}
         maxZoom={10}
         zoomSnap={0.25}
