@@ -1,9 +1,8 @@
 import { useCallback } from 'react'
 import { Link, useParams } from 'react-router'
 import { EmptyState, ErrorState, LoadingState } from '../components/ui/states'
-import { useProgress } from '../features/progress/useProgress'
-import { QuizRunner } from '../features/quiz/QuizRunner'
-import { useQuiz } from '../features/quiz/useQuizzes'
+import { useProgress } from '../features/progress'
+import { QuizRunner, useQuiz } from '../features/quiz'
 
 const backLink = (
   <Link to="/on-tap" className="font-semibold text-primary underline">

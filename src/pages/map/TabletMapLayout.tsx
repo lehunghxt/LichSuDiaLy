@@ -2,7 +2,7 @@ import { X } from 'lucide-react'
 import type { CSSProperties, ReactNode } from 'react'
 import { CompactNav } from '../../components/layout/CompactNav'
 import { TAB_BAR } from '../../components/sheet/sizes'
-import { SIDE_PANEL } from '../../features/map/fit'
+import { SIDE_PANEL } from '../../features/map'
 
 interface TabletMapLayoutProps {
   map: ReactNode

@@ -54,3 +54,13 @@ test('images over 250KB in dist/images are reported', () => {
   write('images/big/photo.webp', Buffer.alloc(260 * 1024))
   expect(checkDist(dir)).toEqual(['ảnh quá 250KB: images/big/photo.webp (260KB)'])
 })
+
+test('the home page must not load the map info panel (it only belongs to the map page)', () => {
+  write('assets/HomePage-aaa.js', 'import{a}from"./shared-1.js";export default a')
+  write('assets/shared-1.js', 'import"./inner-2.js";export const a=1')
+  write('assets/inner-2.js', 'export const b=2')
+  write('assets/MapPage-bbb.js', 'const t="Về bản đồ Việt Nam"')
+  expect(checkDist(dir)).toEqual([])
+  write('assets/inner-2.js', 'const t="Về bản đồ Việt Nam"')
+  expect(checkDist(dir)).toContain('Trang chủ tải kèm khung thông tin bản đồ: inner-2.js')
+})

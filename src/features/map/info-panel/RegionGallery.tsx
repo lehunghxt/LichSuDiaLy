@@ -1,7 +1,7 @@
 import { ImageIcon } from 'lucide-react'
 import { WebImageFigure } from '../../../components/ui/WebImageFigure'
 import { type WebImage } from '../../../types/content'
-import { interleaveByProvince } from '../../images/library'
+import { interleaveByProvince } from '../../images'
 
 /** Ảnh của vùng chưa có nội dung bài học: xem trước cảnh quan, văn hoá theo từng chủ đề */
 export function RegionGallery({ images }: { images: WebImage[] }) {

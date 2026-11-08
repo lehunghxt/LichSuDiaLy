@@ -4,9 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "can-tho",
     "section": "van-hoa",
-    "itemIds": [
-      "nam-bo__cho-noi"
-    ],
+    "itemIds": ["nam-bo__cho-noi"],
     "cover": true,
     "alt": "Nhiều ghe thuyền chở rau quả đậu sát nhau trên sông",
     "caption": "Chợ nổi Cái Răng gần Cần Thơ.",
@@ -44,9 +42,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "can-tho",
     "section": "van-hoa",
-    "itemIds": [
-      "nam-bo__cho-noi"
-    ],
+    "itemIds": ["nam-bo__cho-noi"],
     "alt": "Người phụ nữ đội nón chèo xuồng giữa chợ nổi đông ghe",
     "caption": "Chợ nổi Cái Răng (thành phố Cần Thơ).",
     "src": {

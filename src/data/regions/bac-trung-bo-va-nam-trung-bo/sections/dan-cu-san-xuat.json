@@ -7,12 +7,8 @@
       "Người Ê Đê đã định cư lâu đời, sống thành buôn làng ở các tỉnh Đắk Lắk, Gia Lai,…",
       "Ngoài làm nông nghiệp, người Ê Đê còn giữ nhiều nghề thủ công như đan lát mây tre, dệt vải,…"
     ],
-    "keyPoints": [
-      "Vùng có nhiều dân tộc cùng sinh sống."
-    ],
-    "funFacts": [
-      "Tên gọi Ê Đê có nghĩa là người sống trong rừng tre."
-    ],
+    "keyPoints": ["Vùng có nhiều dân tộc cùng sinh sống."],
+    "funFacts": ["Tên gọi Ê Đê có nghĩa là người sống trong rừng tre."],
     "images": [],
     "figures": [
       {
@@ -34,9 +30,7 @@
         "caption": "Người Ê Đê (tỉnh Đắk Lắk)"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__nha-o"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__nha-o"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -55,9 +49,7 @@
       "Vùng còn trồng các cây khác như mía, lạc,…",
       "Đồng bằng ven biển đất phù sa thích hợp trồng lúa, mía, lạc; đồi núi, cao nguyên đất phe-ra-lít thích hợp trồng cà phê, hồ tiêu, cao su, chè."
     ],
-    "keyPoints": [
-      "Vùng trồng nhiều cây công nghiệp có giá trị xuất khẩu."
-    ],
+    "keyPoints": ["Vùng trồng nhiều cây công nghiệp có giá trị xuất khẩu."],
     "images": [],
     "figures": [
       {
@@ -79,10 +71,7 @@
         "caption": "Vườn hồ tiêu (tỉnh Gia Lai)"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__dat",
-      "bac-trung-bo-va-nam-trung-bo__chan-nuoi"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__dat", "bac-trung-bo-va-nam-trung-bo__chan-nuoi"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -97,18 +86,11 @@
     "id": "bac-trung-bo-va-nam-trung-bo__chan-nuoi",
     "title": "Chăn nuôi gia súc",
     "summary": "Vùng có nhiều điều kiện để chăn nuôi gia súc: nguồn thức ăn dồi dào, khí hậu thuận lợi, khoa học – công nghệ phát triển. Đây là vùng chăn nuôi lợn và bò lớn của cả nước.",
-    "highlights": [
-      "Lợn được nuôi nhiều ở Thanh Hoá, Đắk Lắk.",
-      "Bò được nuôi nhiều ở Nghệ An, Gia Lai."
-    ],
-    "keyPoints": [
-      "Vùng nuôi nhiều lợn và bò."
-    ],
+    "highlights": ["Lợn được nuôi nhiều ở Thanh Hoá, Đắk Lắk.", "Bò được nuôi nhiều ở Nghệ An, Gia Lai."],
+    "keyPoints": ["Vùng nuôi nhiều lợn và bò."],
     "images": [],
     "figures": [],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__cay-trong"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__cay-trong"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -127,9 +109,7 @@
       "Việc xây dựng nhà máy thuỷ điện cũng gây ảnh hưởng tới môi trường tự nhiên.",
       "Vùng còn phát triển mạnh điện gió và điện mặt trời."
     ],
-    "keyPoints": [
-      "Vùng sản xuất nhiều điện từ nước, gió và mặt trời."
-    ],
+    "keyPoints": ["Vùng sản xuất nhiều điện từ nước, gió và mặt trời."],
     "images": [],
     "figures": [
       {
@@ -139,9 +119,7 @@
         "caption": "Nhà máy thuỷ điện Ialy (tỉnh Gia Lai)"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__song-ngoi"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__song-ngoi"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -156,12 +134,8 @@
     "id": "bac-trung-bo-va-nam-trung-bo__hai-san",
     "title": "Đánh bắt và nuôi trồng hải sản",
     "summary": "Vùng biển rộng, nhiều đầm phá giúp người dân đánh bắt và nuôi trồng hải sản.",
-    "highlights": [
-      "Một số nơi nổi tiếng: Thanh Hoá, Nghệ An, Đà Nẵng, Quảng Ngãi, Gia Lai, Đắk Lắk, Khánh Hoà, Lâm Đồng,…"
-    ],
-    "keyPoints": [
-      "Biển mang lại nguồn hải sản phong phú cho vùng."
-    ],
+    "highlights": ["Một số nơi nổi tiếng: Thanh Hoá, Nghệ An, Đà Nẵng, Quảng Ngãi, Gia Lai, Đắk Lắk, Khánh Hoà, Lâm Đồng,…"],
+    "keyPoints": ["Biển mang lại nguồn hải sản phong phú cho vùng."],
     "images": [],
     "figures": [
       {
@@ -171,10 +145,7 @@
         "caption": "Thuyền đánh bắt cá trên biển"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__bien-dao",
-      "bac-trung-bo-va-nam-trung-bo__lam-muoi"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__bien-dao", "bac-trung-bo-va-nam-trung-bo__lam-muoi"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -189,13 +160,8 @@
     "id": "bac-trung-bo-va-nam-trung-bo__lam-muoi",
     "title": "Làm muối",
     "summary": "Nước biển mặn và nhiều nắng giúp vùng phát triển nghề làm muối. Nơi làm muối nổi tiếng có Sa Huỳnh (Quảng Ngãi), Cà Ná (Khánh Hoà),…",
-    "highlights": [
-      "Người làm muối dẫn nước biển vào các ô ruộng bằng phẳng.",
-      "Nắng và gió làm nước bay hơi, để lại những hạt muối."
-    ],
-    "keyPoints": [
-      "Nghề làm muối phụ thuộc nhiều vào nắng và gió."
-    ],
+    "highlights": ["Người làm muối dẫn nước biển vào các ô ruộng bằng phẳng.", "Nắng và gió làm nước bay hơi, để lại những hạt muối."],
+    "keyPoints": ["Nghề làm muối phụ thuộc nhiều vào nắng và gió."],
     "images": [],
     "figures": [
       {
@@ -205,9 +171,7 @@
         "caption": "Làm muối (tỉnh Khánh Hoà)"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__hai-san"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__hai-san"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -222,13 +186,8 @@
     "id": "bac-trung-bo-va-nam-trung-bo__du-lich",
     "title": "Du lịch biển, đảo",
     "summary": "Vùng có nhiều bãi tắm, vịnh biển, đảo có phong cảnh đẹp nên du lịch biển, đảo phát triển.",
-    "highlights": [
-      "Bãi biển: Sầm Sơn, Lăng Cô, Mỹ Khê, Non Nước, Nha Trang,…",
-      "Đảo: cù lao Chàm (Đà Nẵng), Lý Sơn (Quảng Ngãi),…"
-    ],
-    "keyPoints": [
-      "Biển đẹp thu hút nhiều khách du lịch."
-    ],
+    "highlights": ["Bãi biển: Sầm Sơn, Lăng Cô, Mỹ Khê, Non Nước, Nha Trang,…", "Đảo: cù lao Chàm (Đà Nẵng), Lý Sơn (Quảng Ngãi),…"],
+    "keyPoints": ["Biển đẹp thu hút nhiều khách du lịch."],
     "images": [],
     "figures": [
       {
@@ -238,10 +197,7 @@
         "caption": "Bãi biển Nha Trang (tỉnh Khánh Hoà)"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__bai-bien",
-      "bac-trung-bo-va-nam-trung-bo__giao-thong-bien"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__bai-bien", "bac-trung-bo-va-nam-trung-bo__giao-thong-bien"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -256,12 +212,8 @@
     "id": "bac-trung-bo-va-nam-trung-bo__giao-thong-bien",
     "title": "Giao thông đường biển",
     "summary": "Vùng biển rộng và dài, có nhiều vịnh kín gió nên thuận lợi cho giao thông đường biển.",
-    "highlights": [
-      "Một số cảng: Cửa Lò (Nghệ An), Chân Mây (Huế), Đà Nẵng (Đà Nẵng), Dung Quất (Quảng Ngãi),…"
-    ],
-    "keyPoints": [
-      "Vùng có nhiều cảng biển lớn."
-    ],
+    "highlights": ["Một số cảng: Cửa Lò (Nghệ An), Chân Mây (Huế), Đà Nẵng (Đà Nẵng), Dung Quất (Quảng Ngãi),…"],
+    "keyPoints": ["Vùng có nhiều cảng biển lớn."],
     "images": [],
     "figures": [
       {
@@ -271,9 +223,7 @@
         "caption": "Cảng Đà Nẵng (thành phố Đà Nẵng)"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__du-lich"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__du-lich"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -288,18 +238,11 @@
     "id": "bac-trung-bo-va-nam-trung-bo__nghe-thu-cong",
     "title": "Nghề thủ công truyền thống",
     "summary": "Đồng bào các dân tộc Tây Nguyên còn lưu giữ nhiều nghề thủ công truyền thống như đan lát mây tre, dệt vải,…",
-    "highlights": [
-      "Trong lễ hội Cồng chiêng Tây Nguyên có các cuộc thi tạc tượng gỗ, dệt thổ cẩm."
-    ],
-    "keyPoints": [
-      "Nghề thủ công là nét đẹp văn hoá của đồng bào Tây Nguyên."
-    ],
+    "highlights": ["Trong lễ hội Cồng chiêng Tây Nguyên có các cuộc thi tạc tượng gỗ, dệt thổ cẩm."],
+    "keyPoints": ["Nghề thủ công là nét đẹp văn hoá của đồng bào Tây Nguyên."],
     "images": [],
     "figures": [],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__dan-cu",
-      "bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__dan-cu", "bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",

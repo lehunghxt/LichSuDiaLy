@@ -3,8 +3,8 @@ import { ImageCredit } from '../../../components/ui/ImageCredit'
 import { SmartImage } from '../../../components/ui/SmartImage'
 import { provinceName } from '../../../lib/provinces'
 import { SECTION_LABELS, type ContentItem, type WebImage } from '../../../types/content'
-import { SECTION_ICONS, SECTION_TILE } from '../../content/sectionIcons'
-import { imageLibrary } from '../../images/library'
+import { SECTION_ICONS, SECTION_TILE } from '../../content'
+import { imageLibrary } from '../../images'
 
 export interface FeaturedPlacesProps {
   items: ContentItem[]

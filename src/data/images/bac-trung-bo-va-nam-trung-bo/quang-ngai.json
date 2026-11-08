@@ -78,9 +78,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "quang-ngai",
     "section": "van-hoa",
-    "itemIds": [
-      "bac-trung-bo-va-nam-trung-bo__nha-o"
-    ],
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__nha-o"],
     "alt": "Ngôi nhà rông mái lá cao vút",
     "caption": "Nhà rông của người Ba Na ở làng Kon Kơ Tu (tỉnh Quảng Ngãi, trước đây thuộc tỉnh Kon Tum).",
     "src": {

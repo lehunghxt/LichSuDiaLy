@@ -41,9 +41,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "thai-nguyen",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__trong-che-cay-an-qua"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__trong-che-cay-an-qua"],
     "alt": "Đồi chè xanh xếp thành từng hàng",
     "caption": "Đồi chè ở xã Vô Tranh (tỉnh Thái Nguyên).",
     "src": {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { RegionContent } from '../../types/content'
 import type { Quiz } from '../../types/quiz'
-import { repository } from '../content/repository'
+import { repository } from '../content'
 
 export type QuizState =
   { status: 'loading' } | { status: 'ready'; quiz: Quiz; content: RegionContent } | { status: 'not_found' } | { status: 'error' }

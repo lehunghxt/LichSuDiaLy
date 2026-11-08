@@ -7,9 +7,7 @@
       "Hàng hoá phần lớn là những sản phẩm của người dân địa phương, nhiều nhất là hàng thổ cẩm, công cụ sản xuất, một số món ăn đặc trưng như: thắng cố, cơm lam,…",
       "Chợ phiên còn là nơi giao lưu và gặp gỡ của người dân sau những giờ lao động vất vả, nơi kết bạn của các nam nữ thanh niên."
     ],
-    "keyPoints": [
-      "Chợ phiên vừa là nơi mua bán, vừa là nơi giao lưu, gặp gỡ của người dân vùng cao."
-    ],
+    "keyPoints": ["Chợ phiên vừa là nơi mua bán, vừa là nơi giao lưu, gặp gỡ của người dân vùng cao."],
     "funFacts": [
       "Chợ phiên Bắc Hà (tỉnh Lào Cai) nổi tiếng ở vùng Tây Bắc, họp vào Chủ nhật hằng tuần. Chợ còn giữ được nhiều nét truyền thống của chợ phiên miền núi nên được nhiều du khách trong và ngoài nước ghé thăm."
     ],
@@ -28,9 +26,7 @@
         "caption": "Khu vực bán gia súc ở chợ phiên Bắc Hà (tỉnh Lào Cai)"
       }
     ],
-    "relatedIds": [
-      "trung-du-mien-nui-phia-bac__dan-toc"
-    ],
+    "relatedIds": ["trung-du-mien-nui-phia-bac__dan-toc"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
@@ -45,12 +41,8 @@
     "id": "trung-du-mien-nui-phia-bac__le-hoi",
     "title": "Lễ hội của vùng",
     "summary": "Vùng nổi tiếng với nhiều lễ hội như: lễ hội Gầu Tào, lễ hội Lồng Tồng,… Các lễ hội được tổ chức nhằm cầu cho mọi người có một năm khoẻ mạnh, nhiều may mắn, mùa màng bội thu,…",
-    "highlights": [
-      "Ở vùng còn có nhiều lễ hội nổi tiếng khác như: lễ hội Đền Hùng (tỉnh Phú Thọ), lễ hội Hoa ban (tỉnh Điện Biên),…"
-    ],
-    "keyPoints": [
-      "Lễ hội cầu cho mọi người một năm khoẻ mạnh, nhiều may mắn, mùa màng bội thu."
-    ],
+    "highlights": ["Ở vùng còn có nhiều lễ hội nổi tiếng khác như: lễ hội Đền Hùng (tỉnh Phú Thọ), lễ hội Hoa ban (tỉnh Điện Biên),…"],
+    "keyPoints": ["Lễ hội cầu cho mọi người một năm khoẻ mạnh, nhiều may mắn, mùa màng bội thu."],
     "images": [],
     "figures": [
       {
@@ -82,9 +74,7 @@
     "highlights": [
       "Sau phần nghi lễ được tiến hành trang trọng là những hoạt động vui chơi như: múa khèn, ném pao, đi thăng bằng, đẩy gậy,…"
     ],
-    "keyPoints": [
-      "Gầu Tào là lễ hội truyền thống của người Mông, tổ chức vào đầu năm."
-    ],
+    "keyPoints": ["Gầu Tào là lễ hội truyền thống của người Mông, tổ chức vào đầu năm."],
     "images": [],
     "figures": [
       {
@@ -100,10 +90,7 @@
         "caption": "Trò chơi ném pao trong lễ hội Gầu Tào ở xã Dào San (tỉnh Lai Châu)"
       }
     ],
-    "relatedIds": [
-      "trung-du-mien-nui-phia-bac__le-hoi",
-      "trung-du-mien-nui-phia-bac__le-hoi-long-tong"
-    ],
+    "relatedIds": ["trung-du-mien-nui-phia-bac__le-hoi", "trung-du-mien-nui-phia-bac__le-hoi-long-tong"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
@@ -118,13 +105,8 @@
     "id": "trung-du-mien-nui-phia-bac__le-hoi-long-tong",
     "title": "Lễ hội Lồng Tồng",
     "summary": "Lễ hội Lồng Tồng (còn gọi là hội Xuống đồng) là lễ hội truyền thống của người Tày, Nùng,… được tổ chức trên những cánh đồng hoặc khu đất rộng.",
-    "highlights": [
-      "Cày ruộng là nghi thức quan trọng trong lễ hội.",
-      "Sau đó có các trò chơi dân gian như: tung còn, kéo co, đẩy gậy,…"
-    ],
-    "keyPoints": [
-      "Lồng Tồng (hội Xuống đồng) là lễ hội truyền thống của người Tày, Nùng."
-    ],
+    "highlights": ["Cày ruộng là nghi thức quan trọng trong lễ hội.", "Sau đó có các trò chơi dân gian như: tung còn, kéo co, đẩy gậy,…"],
+    "keyPoints": ["Lồng Tồng (hội Xuống đồng) là lễ hội truyền thống của người Tày, Nùng."],
     "images": [],
     "figures": [
       {
@@ -140,10 +122,7 @@
         "caption": "Hát Then trong lễ hội Lồng Tồng ở phường Lương Văn Tri (tỉnh Lạng Sơn)"
       }
     ],
-    "relatedIds": [
-      "trung-du-mien-nui-phia-bac__hat-then",
-      "trung-du-mien-nui-phia-bac__le-hoi"
-    ],
+    "relatedIds": ["trung-du-mien-nui-phia-bac__hat-then", "trung-du-mien-nui-phia-bac__le-hoi"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
@@ -158,15 +137,9 @@
     "id": "trung-du-mien-nui-phia-bac__mua-xoe-thai",
     "title": "Múa Xoè Thái",
     "summary": "Xoè Thái là loại hình múa truyền thống đặc sắc của người Thái, được biểu diễn trong các dịp lễ, tết, ngày vui của gia đình, dòng họ, bản mường,…",
-    "highlights": [
-      "Những điệu xoè chứa đựng ước mơ, khát vọng và là niềm tự hào của người Thái."
-    ],
-    "keyPoints": [
-      "Xoè Thái là điệu múa truyền thống của người Thái."
-    ],
-    "funFacts": [
-      "Nghệ thuật Xoè Thái được UNESCO ghi danh là Di sản văn hoá phi vật thể đại diện của nhân loại vào năm 2021."
-    ],
+    "highlights": ["Những điệu xoè chứa đựng ước mơ, khát vọng và là niềm tự hào của người Thái."],
+    "keyPoints": ["Xoè Thái là điệu múa truyền thống của người Thái."],
+    "funFacts": ["Nghệ thuật Xoè Thái được UNESCO ghi danh là Di sản văn hoá phi vật thể đại diện của nhân loại vào năm 2021."],
     "images": [],
     "figures": [
       {
@@ -176,9 +149,7 @@
         "caption": "Múa Xoè cộng đồng của người Thái ở phường Mộc Sơn (tỉnh Sơn La)"
       }
     ],
-    "relatedIds": [
-      "trung-du-mien-nui-phia-bac__hat-then"
-    ],
+    "relatedIds": ["trung-du-mien-nui-phia-bac__hat-then"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
@@ -193,12 +164,8 @@
     "id": "trung-du-mien-nui-phia-bac__hat-then",
     "title": "Hát Then",
     "summary": "Hát Then là một loại hình diễn xướng âm nhạc dân gian của các dân tộc Tày, Nùng, Thái, thường được tổ chức vào những dịp lễ quan trọng.",
-    "highlights": [
-      "Thông qua các làn điệu khác nhau của Then, người dân mong muốn những điều may mắn và cuộc sống tốt lành."
-    ],
-    "keyPoints": [
-      "Hát Then là loại hình âm nhạc dân gian của người Tày, Nùng, Thái."
-    ],
+    "highlights": ["Thông qua các làn điệu khác nhau của Then, người dân mong muốn những điều may mắn và cuộc sống tốt lành."],
+    "keyPoints": ["Hát Then là loại hình âm nhạc dân gian của người Tày, Nùng, Thái."],
     "funFacts": [
       "Thực hành Then của người Tày, Nùng, Thái được UNESCO ghi danh là Di sản văn hoá phi vật thể đại diện của nhân loại vào năm 2019."
     ],
@@ -211,9 +178,7 @@
         "caption": "Hát Then trong lễ hội Lồng Tồng ở phường Lương Văn Tri (tỉnh Lạng Sơn)"
       }
     ],
-    "relatedIds": [
-      "trung-du-mien-nui-phia-bac__mua-xoe-thai"
-    ],
+    "relatedIds": ["trung-du-mien-nui-phia-bac__mua-xoe-thai"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",
@@ -228,12 +193,8 @@
     "id": "trung-du-mien-nui-phia-bac__am-thuc",
     "title": "Ẩm thực truyền thống",
     "summary": "Vùng có những món ăn đặc trưng như thắng cố, cơm lam. Em có thể gặp các món này ở chợ phiên vùng cao.",
-    "highlights": [
-      "Chợ phiên ngoài mua bán hàng hoá còn là nơi người dân thưởng thức món ăn của vùng."
-    ],
-    "keyPoints": [
-      "Thắng cố, cơm lam là món ăn đặc trưng của vùng."
-    ],
+    "highlights": ["Chợ phiên ngoài mua bán hàng hoá còn là nơi người dân thưởng thức món ăn của vùng."],
+    "keyPoints": ["Thắng cố, cơm lam là món ăn đặc trưng của vùng."],
     "images": [],
     "figures": [
       {
@@ -243,9 +204,7 @@
         "caption": "Chợ phiên ở xã Đồng Văn (tỉnh Tuyên Quang)"
       }
     ],
-    "relatedIds": [
-      "trung-du-mien-nui-phia-bac__cho-phien"
-    ],
+    "relatedIds": ["trung-du-mien-nui-phia-bac__cho-phien"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 6. Một số nét văn hoá ở vùng Trung du và miền núi phía Bắc",

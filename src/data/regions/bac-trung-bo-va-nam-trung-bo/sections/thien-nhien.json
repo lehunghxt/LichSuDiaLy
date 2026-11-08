@@ -7,15 +7,10 @@
       "Vùng có vùng biển rộng, bờ biển kéo dài, nhiều đảo và quần đảo.",
       "Trong vùng biển có quần đảo Hoàng Sa và quần đảo Trường Sa, rất quan trọng với kinh tế và quốc phòng."
     ],
-    "keyPoints": [
-      "Vùng là cầu nối giữa hai miền Bắc – Nam và có vùng biển rộng lớn."
-    ],
+    "keyPoints": ["Vùng là cầu nối giữa hai miền Bắc – Nam và có vùng biển rộng lớn."],
     "images": [],
     "figures": [],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__dia-hinh",
-      "bac-trung-bo-va-nam-trung-bo__bien-dao"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__dia-hinh", "bac-trung-bo-va-nam-trung-bo__bien-dao"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -35,9 +30,7 @@
       "Các cao nguyên: Kon Tum, Pleiku, Đắk Lắk, Mơ Nông (cao khoảng 500–800 m); Lâm Viên, Di Linh (cao khoảng 1 000–1 500 m).",
       "Một số địa danh: dãy núi Trường Sơn, dãy núi Bạch Mã, đèo Hải Vân."
     ],
-    "keyPoints": [
-      "Tây là núi và cao nguyên, đông là đồng bằng ven biển nhỏ hẹp."
-    ],
+    "keyPoints": ["Tây là núi và cao nguyên, đông là đồng bằng ven biển nhỏ hẹp."],
     "images": [],
     "figures": [
       {
@@ -47,10 +40,7 @@
         "caption": "Bản đồ địa hình vùng Bắc Trung Bộ và Nam Trung Bộ"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__truong-son",
-      "bac-trung-bo-va-nam-trung-bo__dat"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__truong-son", "bac-trung-bo-va-nam-trung-bo__dat"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -65,19 +55,11 @@
     "id": "bac-trung-bo-va-nam-trung-bo__dat",
     "title": "Đất",
     "summary": "Ở các đồng bằng ven biển chủ yếu là đất phù sa. Vùng đồi núi và cao nguyên có đất phe-ra-lít chiếm diện tích lớn.",
-    "highlights": [
-      "Đất phù sa thích hợp trồng lúa và các cây mía, lạc,…",
-      "Đất phe-ra-lít thích hợp trồng cà phê, hồ tiêu, cao su, chè,…"
-    ],
-    "keyPoints": [
-      "Mỗi loại đất thích hợp với những loại cây trồng khác nhau."
-    ],
+    "highlights": ["Đất phù sa thích hợp trồng lúa và các cây mía, lạc,…", "Đất phe-ra-lít thích hợp trồng cà phê, hồ tiêu, cao su, chè,…"],
+    "keyPoints": ["Mỗi loại đất thích hợp với những loại cây trồng khác nhau."],
     "images": [],
     "figures": [],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__dia-hinh",
-      "bac-trung-bo-va-nam-trung-bo__cay-trong"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__dia-hinh", "bac-trung-bo-va-nam-trung-bo__cay-trong"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -92,12 +74,8 @@
     "id": "bac-trung-bo-va-nam-trung-bo__truong-son",
     "title": "Dãy Trường Sơn",
     "summary": "Trường Sơn là dãy núi dài nhất Việt Nam. Nơi đây có con đường Trường Sơn huyền thoại trong cuộc kháng chiến chống Mỹ, cứu nước.",
-    "highlights": [
-      "Dãy Trường Sơn đã đi vào thơ ca, âm nhạc với niềm tự hào dân tộc."
-    ],
-    "keyPoints": [
-      "Dãy Trường Sơn chạy dọc phía tây của vùng."
-    ],
+    "highlights": ["Dãy Trường Sơn đã đi vào thơ ca, âm nhạc với niềm tự hào dân tộc."],
+    "keyPoints": ["Dãy Trường Sơn chạy dọc phía tây của vùng."],
     "images": [],
     "figures": [
       {
@@ -107,9 +85,7 @@
         "caption": "Một phần dãy Trường Sơn (tỉnh Quảng Trị)"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__dia-hinh"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__dia-hinh"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -129,17 +105,11 @@
       "Nam Trung Bộ ít chịu ảnh hưởng gió mùa Đông Bắc nên nóng quanh năm; có mùa mưa và mùa khô rõ rệt.",
       "Bắc Trung Bộ và ven biển Nam Trung Bộ thường có mưa lớn và bão từ tháng 9 đến tháng 12."
     ],
-    "keyPoints": [
-      "Dãy Bạch Mã chia khí hậu vùng thành hai phía khác nhau."
-    ],
-    "funFacts": [
-      "Ở Buôn Ma Thuột (Đắk Lắk), mùa mưa kéo dài từ tháng 5 đến tháng 11, còn từ tháng 12 đến tháng 4 là mùa khô."
-    ],
+    "keyPoints": ["Dãy Bạch Mã chia khí hậu vùng thành hai phía khác nhau."],
+    "funFacts": ["Ở Buôn Ma Thuột (Đắk Lắk), mùa mưa kéo dài từ tháng 5 đến tháng 11, còn từ tháng 12 đến tháng 4 là mùa khô."],
     "images": [],
     "figures": [],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__thien-tai"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__thien-tai"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -158,9 +128,7 @@
       "Ven biển có hiện tượng cát bay ảnh hưởng tới sản xuất và đời sống.",
       "Để phòng, chống thiên tai: trồng và bảo vệ rừng đầu nguồn, dự báo thiên tai kịp thời, làm hệ thống thuỷ lợi và hồ chứa nước, xây nhà kiên cố chống bão."
     ],
-    "keyPoints": [
-      "Em có thể chia sẻ, giúp đỡ các bạn ở vùng gặp thiên tai."
-    ],
+    "keyPoints": ["Em có thể chia sẻ, giúp đỡ các bạn ở vùng gặp thiên tai."],
     "images": [],
     "figures": [
       {
@@ -188,10 +156,7 @@
         "caption": "Trồng rừng chắn cát bay (tỉnh Quảng Trị)"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__khi-hau",
-      "bac-trung-bo-va-nam-trung-bo__rung"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__khi-hau", "bac-trung-bo-va-nam-trung-bo__rung"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -206,18 +171,11 @@
     "id": "bac-trung-bo-va-nam-trung-bo__song-ngoi",
     "title": "Sông ngòi",
     "summary": "Vùng có nhiều sông nhưng phần lớn là sông ngắn và dốc. Vào mùa mưa, nước sông dâng nhanh, thường gây lũ quét và sạt lở đất.",
-    "highlights": [
-      "Các sông có nhiều thác ghềnh.",
-      "Sông có tiềm năng lớn để phát triển thuỷ điện."
-    ],
-    "keyPoints": [
-      "Sông ngắn, dốc, nhiều thác ghềnh, giàu tiềm năng thuỷ điện."
-    ],
+    "highlights": ["Các sông có nhiều thác ghềnh.", "Sông có tiềm năng lớn để phát triển thuỷ điện."],
+    "keyPoints": ["Sông ngắn, dốc, nhiều thác ghềnh, giàu tiềm năng thuỷ điện."],
     "images": [],
     "figures": [],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__thuy-dien"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__thuy-dien"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -236,12 +194,8 @@
       "Quần đảo Hoàng Sa và quần đảo Trường Sa thuộc vùng biển của vùng.",
       "Biển rộng, nhiều đầm phá thuận lợi để đánh bắt và nuôi trồng hải sản."
     ],
-    "keyPoints": [
-      "Biển, đảo đóng vai trò quan trọng với kinh tế và quốc phòng."
-    ],
-    "funFacts": [
-      "Đầm phá Tam Giang – Cầu Hai (thành phố Huế) dài khoảng 70 km, rộng 216 km², là vùng đầm phá lớn nhất Đông Nam Á."
-    ],
+    "keyPoints": ["Biển, đảo đóng vai trò quan trọng với kinh tế và quốc phòng."],
+    "funFacts": ["Đầm phá Tam Giang – Cầu Hai (thành phố Huế) dài khoảng 70 km, rộng 216 km², là vùng đầm phá lớn nhất Đông Nam Á."],
     "images": [],
     "figures": [
       {
@@ -251,10 +205,7 @@
         "caption": "Một góc phá Tam Giang (thành phố Huế)"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__vi-tri-dia-li",
-      "bac-trung-bo-va-nam-trung-bo__hai-san"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__vi-tri-dia-li", "bac-trung-bo-va-nam-trung-bo__hai-san"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -269,12 +220,8 @@
     "id": "bac-trung-bo-va-nam-trung-bo__bai-bien",
     "title": "Những bãi biển đẹp",
     "summary": "Vùng có nhiều bãi tắm, vịnh biển và đảo có phong cảnh đẹp.",
-    "highlights": [
-      "Một số bãi biển nổi tiếng: Sầm Sơn (Thanh Hoá), Lăng Cô (Huế), Mỹ Khê, Non Nước (Đà Nẵng), Nha Trang (Khánh Hoà),…"
-    ],
-    "keyPoints": [
-      "Bãi biển đẹp giúp vùng phát triển du lịch biển."
-    ],
+    "highlights": ["Một số bãi biển nổi tiếng: Sầm Sơn (Thanh Hoá), Lăng Cô (Huế), Mỹ Khê, Non Nước (Đà Nẵng), Nha Trang (Khánh Hoà),…"],
+    "keyPoints": ["Bãi biển đẹp giúp vùng phát triển du lịch biển."],
     "images": [],
     "figures": [
       {
@@ -284,9 +231,7 @@
         "caption": "Bãi biển Nha Trang (tỉnh Khánh Hoà)"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__du-lich"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__du-lich"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -307,9 +252,7 @@
       "Rừng cung cấp gỗ, dược liệu, thực phẩm và giúp phát triển du lịch sinh thái.",
       "Diện tích rừng tự nhiên đang bị thu hẹp. Cần trồng rừng, lập khu bảo tồn và vận động mọi người cùng bảo vệ rừng."
     ],
-    "keyPoints": [
-      "Rừng rất quan trọng với thiên nhiên và đời sống con người."
-    ],
+    "keyPoints": ["Rừng rất quan trọng với thiên nhiên và đời sống con người."],
     "images": [],
     "figures": [
       {
@@ -331,10 +274,7 @@
         "caption": "Rừng ngập mặn (tỉnh Quảng Ngãi)"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__thien-tai",
-      "bac-trung-bo-va-nam-trung-bo__phong-nha"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__thien-tai", "bac-trung-bo-va-nam-trung-bo__phong-nha"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
@@ -349,12 +289,8 @@
     "id": "bac-trung-bo-va-nam-trung-bo__phong-nha",
     "title": "Vườn quốc gia Phong Nha – Kẻ Bàng",
     "summary": "Vườn quốc gia Phong Nha – Kẻ Bàng là một di sản thiên nhiên thế giới ở vùng Bắc Trung Bộ và Nam Trung Bộ.",
-    "highlights": [
-      "Trong khu vực này có hang Sơn Đoòng (tỉnh Quảng Trị)."
-    ],
-    "keyPoints": [
-      "Phong Nha – Kẻ Bàng được UNESCO ghi danh là di sản thế giới."
-    ],
+    "highlights": ["Trong khu vực này có hang Sơn Đoòng (tỉnh Quảng Trị)."],
+    "keyPoints": ["Phong Nha – Kẻ Bàng được UNESCO ghi danh là di sản thế giới."],
     "provinceId": "quang-tri",
     "images": [],
     "figures": [
@@ -365,10 +301,7 @@
         "caption": "Hang Sơn Đoòng (tỉnh Quảng Trị)"
       }
     ],
-    "relatedIds": [
-      "bac-trung-bo-va-nam-trung-bo__di-san-the-gioi",
-      "bac-trung-bo-va-nam-trung-bo__rung"
-    ],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__di-san-the-gioi", "bac-trung-bo-va-nam-trung-bo__rung"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",

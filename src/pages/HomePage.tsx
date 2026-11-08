@@ -1,6 +1,4 @@
-import { repository } from '../features/content/repository'
-import { useRegionContent } from '../features/content/useRegionContent'
-import { useRegionOutline } from '../features/content/useRegionOutline'
+import { repository, useRegionContent, useRegionOutline } from '../features/content'
 import { useDevice } from '../lib/device'
 import { DesktopHome } from './home/DesktopHome'
 import { MobileHome } from './home/MobileHome'

@@ -8,12 +8,7 @@
         "id": "q1",
         "type": "single_choice",
         "prompt": "Dãy núi nào dài nhất Việt Nam?",
-        "options": [
-          "Dãy Hoàng Liên Sơn",
-          "Dãy Bạch Mã",
-          "Dãy Tam Đảo",
-          "Dãy Trường Sơn"
-        ],
+        "options": ["Dãy Hoàng Liên Sơn", "Dãy Bạch Mã", "Dãy Tam Đảo", "Dãy Trường Sơn"],
         "answerIndex": 3,
         "explanation": "Trường Sơn là dãy núi dài nhất Việt Nam, chạy dọc phía tây của vùng.",
         "sources": [
@@ -62,12 +57,7 @@
         "id": "q4",
         "type": "single_choice",
         "prompt": "Nghề làm muối ở vùng phát triển nhờ điều kiện nào?",
-        "options": [
-          "Có nhiều sông ngắn và dốc",
-          "Có mùa đông lạnh",
-          "Nước biển mặn và nhiều nắng",
-          "Có nhiều cao nguyên"
-        ],
+        "options": ["Có nhiều sông ngắn và dốc", "Có mùa đông lạnh", "Nước biển mặn và nhiều nắng", "Có nhiều cao nguyên"],
         "answerIndex": 2,
         "explanation": "Nước biển mặn và nhiều nắng giúp vùng phát triển nghề làm muối, nổi tiếng ở Sa Huỳnh (Quảng Ngãi), Cà Ná (Khánh Hoà).",
         "sources": [
@@ -155,12 +145,7 @@
         "id": "q8",
         "type": "single_choice",
         "prompt": "Chùa Cầu ở Hội An tương truyền do ai xây dựng?",
-        "options": [
-          "Thương nhân người Hoa",
-          "Các vua Triều Nguyễn",
-          "Người Chăm",
-          "Thương nhân Nhật Bản"
-        ],
+        "options": ["Thương nhân người Hoa", "Các vua Triều Nguyễn", "Người Chăm", "Thương nhân Nhật Bản"],
         "answerIndex": 3,
         "explanation": "Chùa Cầu tương truyền do thương nhân Nhật Bản xây dựng khoảng cuối thế kỉ XVI – đầu thế kỉ XVII, làm bằng gỗ, hình vòng cung.",
         "sources": [
@@ -177,12 +162,7 @@
         "id": "q9",
         "type": "single_choice",
         "prompt": "Lễ hội Ka-tê là lễ hội của dân tộc nào?",
-        "options": [
-          "Ê Đê",
-          "Ba Na",
-          "Chăm",
-          "Mông"
-        ],
+        "options": ["Ê Đê", "Ba Na", "Chăm", "Mông"],
         "answerIndex": 2,
         "explanation": "Lễ hội Ka-tê của đồng bào Chăm diễn ra tại khu đền tháp Chăm, khoảng tháng 9 – 10 hằng năm.",
         "sources": [
@@ -215,12 +195,7 @@
         "id": "q11",
         "type": "single_choice",
         "prompt": "Anh hùng Đinh Núp là người dân tộc nào?",
-        "options": [
-          "Ba Na",
-          "Mnông",
-          "Chăm",
-          "Ê Đê"
-        ],
+        "options": ["Ba Na", "Mnông", "Chăm", "Ê Đê"],
         "answerIndex": 0,
         "explanation": "Anh hùng Đinh Núp là người dân tộc Ba Na, quê ở xã Tơ Tung, tỉnh Gia Lai.",
         "sources": [

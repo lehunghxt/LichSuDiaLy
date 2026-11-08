@@ -6,81 +6,59 @@
         {
           "id": "vi-tri-dia-li-va-ban-do-vung",
           "title": "Vị trí địa lí và bản đồ vùng",
-          "itemIds": [
-            "nam-bo__vi-tri-dia-li"
-          ]
+          "itemIds": ["nam-bo__vi-tri-dia-li"]
         },
         {
           "id": "dia-hinh-dong-nam-bo",
           "title": "Địa hình Đông Nam Bộ",
-          "itemIds": [
-            "nam-bo__dia-hinh-dong-nam-bo"
-          ]
+          "itemIds": ["nam-bo__dia-hinh-dong-nam-bo"]
         },
         {
           "id": "dia-hinh-dong-bang-song-cuu-long",
           "title": "Địa hình Đồng bằng sông Cửu Long",
-          "itemIds": [
-            "nam-bo__dong-bang-cuu-long"
-          ]
+          "itemIds": ["nam-bo__dong-bang-cuu-long"]
         },
         {
           "id": "khi-hau",
           "title": "Khí hậu",
           "hint": "(mùa mưa và mùa khô)",
-          "itemIds": [
-            "nam-bo__khi-hau"
-          ]
+          "itemIds": ["nam-bo__khi-hau"]
         },
         {
           "id": "song-dong-nai-va-song-me-cong",
           "title": "Sông Đồng Nai và sông Mê Công",
-          "itemIds": [
-            "nam-bo__song-ngoi"
-          ]
+          "itemIds": ["nam-bo__song-ngoi"]
         },
         {
           "id": "kenh-rach-va-song-nuoc",
           "title": "Kênh rạch và sông nước",
-          "itemIds": [
-            "nam-bo__kenh-rach"
-          ]
+          "itemIds": ["nam-bo__kenh-rach"]
         },
         {
           "id": "rung-ngap-man",
           "title": "Rừng ngập mặn",
-          "itemIds": [
-            "nam-bo__rung-ngap-man"
-          ]
+          "itemIds": ["nam-bo__rung-ngap-man"]
         },
         {
           "id": "rung-tram-va-canh-quan-thien-nhien",
           "title": "Rừng tràm và cảnh quan thiên nhiên",
-          "itemIds": [
-            "nam-bo__rung-tram"
-          ]
+          "itemIds": ["nam-bo__rung-tram"]
         },
         {
           "id": "bien-va-dao",
           "title": "Biển và đảo",
           "hint": "(Phú Quốc, Côn Đảo)",
-          "itemIds": [
-            "nam-bo__phu-quoc-con-dao"
-          ]
+          "itemIds": ["nam-bo__phu-quoc-con-dao"]
         },
         {
           "id": "dat",
           "title": "Đất",
-          "itemIds": [
-            "nam-bo__dat"
-          ]
+          "itemIds": ["nam-bo__dat"]
         },
         {
           "id": "thuan-loi-va-kho-khan",
           "title": "Thuận lợi và khó khăn",
-          "itemIds": [
-            "nam-bo__thuan-loi-kho-khan"
-          ]
+          "itemIds": ["nam-bo__thuan-loi-kho-khan"]
         }
       ]
     },
@@ -91,60 +69,43 @@
           "id": "cac-dan-toc",
           "title": "Các dân tộc",
           "hint": "(Kinh, Khmer, Hoa, Chăm)",
-          "itemIds": [
-            "nam-bo__dan-cu"
-          ]
+          "itemIds": ["nam-bo__dan-cu"]
         },
         {
           "id": "nha-o-va-doi-song-song-nuoc",
           "title": "Nhà ở và đời sống sông nước",
-          "itemIds": [
-            "nam-bo__nha-o",
-            "nam-bo__van-tai-duong-song"
-          ]
+          "itemIds": ["nam-bo__nha-o", "nam-bo__van-tai-duong-song"]
         },
         {
           "id": "trong-lua",
           "title": "Trồng lúa",
-          "itemIds": [
-            "nam-bo__trong-lua"
-          ]
+          "itemIds": ["nam-bo__trong-lua"]
         },
         {
           "id": "trong-cay-an-qua",
           "title": "Trồng cây ăn quả",
-          "itemIds": [
-            "nam-bo__cay-an-qua"
-          ]
+          "itemIds": ["nam-bo__cay-an-qua"]
         },
         {
           "id": "trong-cay-cong-nghiep",
           "title": "Trồng cây công nghiệp",
           "hint": "(cao su, điều, hồ tiêu)",
-          "itemIds": [
-            "nam-bo__cay-cong-nghiep"
-          ]
+          "itemIds": ["nam-bo__cay-cong-nghiep"]
         },
         {
           "id": "nuoi-trong-va-danh-bat-thuy-san",
           "title": "Nuôi trồng và đánh bắt thủy sản",
-          "itemIds": [
-            "nam-bo__thuy-san"
-          ]
+          "itemIds": ["nam-bo__thuy-san"]
         },
         {
           "id": "cong-nghiep-va-hoat-dong-thuong-mai",
           "title": "Công nghiệp và hoạt động thương mại",
-          "itemIds": [
-            "nam-bo__cong-nghiep"
-          ]
+          "itemIds": ["nam-bo__cong-nghiep"]
         },
         {
           "id": "chan-nuoi",
           "title": "Chăn nuôi",
-          "itemIds": [
-            "nam-bo__chan-nuoi"
-          ]
+          "itemIds": ["nam-bo__chan-nuoi"]
         }
       ]
     },
@@ -154,59 +115,43 @@
         {
           "id": "cho-noi-cai-rang",
           "title": "Chợ nổi Cái Răng",
-          "itemIds": [
-            "nam-bo__cho-noi"
-          ]
+          "itemIds": ["nam-bo__cho-noi"]
         },
         {
           "id": "le-hoi-ok-om-bok",
           "title": "Lễ hội Ok Om Bok",
-          "itemIds": [
-            "nam-bo__ok-om-bok"
-          ]
+          "itemIds": ["nam-bo__ok-om-bok"]
         },
         {
           "id": "le-hoi-dua-ghe-ngo",
           "title": "Lễ hội đua ghe Ngo",
-          "itemIds": [
-            "nam-bo__dua-ghe-ngo"
-          ]
+          "itemIds": ["nam-bo__dua-ghe-ngo"]
         },
         {
           "id": "le-hoi-ba-chua-xu-nui-sam",
           "title": "Lễ hội Bà Chúa Xứ núi Sam",
-          "itemIds": [
-            "nam-bo__ba-chua-xu-nui-sam"
-          ]
+          "itemIds": ["nam-bo__ba-chua-xu-nui-sam"]
         },
         {
           "id": "don-ca-tai-tu-nam-bo",
           "title": "Đờn ca tài tử Nam Bộ",
-          "itemIds": [
-            "nam-bo__don-ca-tai-tu"
-          ]
+          "itemIds": ["nam-bo__don-ca-tai-tu"]
         },
         {
           "id": "trang-phuc-truyen-thong",
           "title": "Trang phục truyền thống",
           "hint": "(áo bà ba, khăn rằn)",
-          "itemIds": [
-            "nam-bo__trang-phuc"
-          ]
+          "itemIds": ["nam-bo__trang-phuc"]
         },
         {
           "id": "am-thuc-nam-bo",
           "title": "Ẩm thực Nam Bộ",
-          "itemIds": [
-            "nam-bo__am-thuc"
-          ]
+          "itemIds": ["nam-bo__am-thuc"]
         },
         {
           "id": "van-hoa-miet-vuon",
           "title": "Văn hóa miệt vườn",
-          "itemIds": [
-            "nam-bo__van-hoa-miet-vuon"
-          ]
+          "itemIds": ["nam-bo__van-hoa-miet-vuon"]
         }
       ]
     },
@@ -216,28 +161,17 @@
         {
           "id": "truyen-thong-yeu-nuoc-cach-mang",
           "title": "Truyền thống yêu nước, cách mạng",
-          "itemIds": [
-            "nam-bo__truyen-thong-yeu-nuoc",
-            "nam-bo__truong-dinh",
-            "nam-bo__nguyen-thi-dinh"
-          ]
+          "itemIds": ["nam-bo__truyen-thong-yeu-nuoc", "nam-bo__truong-dinh", "nam-bo__nguyen-thi-dinh"]
         },
         {
           "id": "thanh-pho-ho-chi-minh",
           "title": "Thành phố Hồ Chí Minh",
-          "itemIds": [
-            "nam-bo__tphcm-ten-goi",
-            "nam-bo__su-kien-tphcm",
-            "nam-bo__tphcm-ngay-nay"
-          ]
+          "itemIds": ["nam-bo__tphcm-ten-goi", "nam-bo__su-kien-tphcm", "nam-bo__tphcm-ngay-nay"]
         },
         {
           "id": "dia-dao-cu-chi",
           "title": "Địa đạo Củ Chi",
-          "itemIds": [
-            "nam-bo__dia-dao",
-            "nam-bo__chuyen-dia-dao"
-          ]
+          "itemIds": ["nam-bo__dia-dao", "nam-bo__chuyen-dia-dao"]
         }
       ]
     }

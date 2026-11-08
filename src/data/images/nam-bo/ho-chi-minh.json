@@ -4,9 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "ho-chi-minh",
     "section": "lich-su",
-    "itemIds": [
-      "nam-bo__dia-dao"
-    ],
+    "itemIds": ["nam-bo__dia-dao"],
     "alt": "Một người chui lên từ miệng hầm nhỏ giữa lớp lá khô",
     "caption": "Miệng hầm ở Địa đạo Củ Chi (Thành phố Hồ Chí Minh).",
     "src": {
@@ -42,9 +40,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "ho-chi-minh",
     "section": "lich-su",
-    "itemIds": [
-      "nam-bo__dia-dao"
-    ],
+    "itemIds": ["nam-bo__dia-dao"],
     "alt": "Lối xuống hầm nhỏ hẹp trên nền đất có lá khô",
     "caption": "Một lối xuống hầm ở Địa đạo Củ Chi (Thành phố Hồ Chí Minh).",
     "src": {
@@ -80,9 +76,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "ho-chi-minh",
     "section": "lich-su",
-    "itemIds": [
-      "nam-bo__su-kien-tphcm"
-    ],
+    "itemIds": ["nam-bo__su-kien-tphcm"],
     "alt": "Một nhóm học viên đứng nghe giới thiệu trước tủ trưng bày",
     "caption": "Học viên tham quan Bến Nhà Rồng (Thành phố Hồ Chí Minh).",
     "src": {

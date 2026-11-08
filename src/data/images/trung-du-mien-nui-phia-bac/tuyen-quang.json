@@ -4,9 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "tuyen-quang",
     "section": "thien-nhien",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__cot-co-lung-cu"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__cot-co-lung-cu"],
     "alt": "Cột cờ Lũng Cú cao, trên đỉnh có lá cờ đỏ, chìm trong sương",
     "caption": "Cột cờ Lũng Cú (tỉnh Tuyên Quang, trước đây thuộc tỉnh Hà Giang).",
     "src": {
@@ -43,9 +41,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "tuyen-quang",
     "section": "thien-nhien",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__song-ngoi"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__song-ngoi"],
     "alt": "Dòng sông xanh uốn quanh giữa các dãy núi đá cao",
     "caption": "Sông Nho Quế chảy giữa vùng núi đá (tỉnh Tuyên Quang, trước đây thuộc tỉnh Hà Giang).",
     "src": {
@@ -82,9 +78,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "tuyen-quang",
     "section": "thien-nhien",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__dia-hinh"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dia-hinh"],
     "alt": "Con đèo vắt ngang sườn núi đá dựng đứng",
     "caption": "Đèo Mã Pí Lèng, nối Mèo Vạc với Đồng Văn (tỉnh Tuyên Quang, trước đây thuộc tỉnh Hà Giang).",
     "src": {
@@ -113,9 +107,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "tuyen-quang",
     "section": "van-hoa",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__cho-phien"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__cho-phien"],
     "alt": "Phụ nữ Mông mua bán vải vóc ở một phiên chợ",
     "caption": "Một chợ của người Mông ở Hà Giang (tỉnh Tuyên Quang, trước đây thuộc tỉnh Hà Giang).",
     "src": {

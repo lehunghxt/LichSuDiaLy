@@ -1,26 +1,28 @@
-import { lazy, Suspense, useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { Link } from 'react-router'
 import { useNavigate, useParams, useSearchParams } from 'react-router'
 import { LoadingState } from '../components/ui/states'
-import { itemSlug, topicSearch } from '../features/content/links'
-import { findTopic, isSection, legacyTarget, topicOfItem } from '../features/content/outlineNav'
-import { repository } from '../features/content/repository'
-import { SectionModal } from '../features/content/section-modal/SectionModal'
-import { useRegionContent } from '../features/content/useRegionContent'
-import { useRegionOutline } from '../features/content/useRegionOutline'
-import { useRegionImages } from '../features/images/useRegionImages'
-import { placesOf } from '../features/map/places'
-import { MapInfoPanel } from '../features/map/info-panel/MapInfoPanel'
+import {
+  findTopic,
+  isSection,
+  itemSlug,
+  legacyTarget,
+  repository,
+  SectionModal,
+  topicOfItem,
+  topicSearch,
+  useRegionContent,
+  useRegionOutline,
+} from '../features/content'
+import { useRegionImages } from '../features/images'
+import { MapInfoPanel, placesOf, RegionList, VietnamMap } from '../features/map'
 import type { Snap } from '../components/sheet/SnapSheet'
-import { RegionList } from '../features/map/RegionList'
-import { useProgress } from '../features/progress/useProgress'
+import { useProgress } from '../features/progress'
 import { useDevice } from '../lib/device'
 import type { ContentItem, SectionId } from '../types/content'
 import { DesktopMapLayout } from './map/DesktopMapLayout'
 import { MobileMapLayout } from './map/MobileMapLayout'
 import { TabletMapLayout } from './map/TabletMapLayout'
-
-const VietnamMap = lazy(() => import('../features/map/VietnamMap'))
 
 export default function MapPage() {
   const { regionId } = useParams()

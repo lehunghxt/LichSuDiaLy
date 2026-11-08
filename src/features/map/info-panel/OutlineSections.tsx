@@ -1,5 +1,5 @@
 import { SECTION_LABELS, type ContentItem, type RegionOutline, type SectionId } from '../../../types/content'
-import { SECTION_ICONS, SECTION_TILE } from '../../content/sectionIcons'
+import { SECTION_ICONS, SECTION_TILE } from '../../content'
 
 export interface OutlineSectionsProps {
   outline: RegionOutline

@@ -1,7 +1,6 @@
 // Bản đồ SVG của một vùng với các điểm ứng viên đánh chữ A, B, C (không ghi tên địa danh)
 import { useMemo } from 'react'
-import type { AreaCollection, RegionFeatureProps } from '../../map/geo'
-import { projectAreas } from '../../map/svgMap'
+import { type AreaCollection, projectAreas, type RegionFeatureProps } from '../../map'
 
 export interface Pin {
   id: string

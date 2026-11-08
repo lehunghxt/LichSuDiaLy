@@ -113,9 +113,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "ca-mau",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "nam-bo__cong-nghiep"
-    ],
+    "itemIds": ["nam-bo__cong-nghiep"],
     "alt": "Hàng tua-bin gió đứng trên biển lúc hoàng hôn",
     "caption": "Nhà máy điện gió Bạc Liêu (tỉnh Cà Mau).",
     "src": {

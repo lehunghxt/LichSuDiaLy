@@ -115,9 +115,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "dong-nai",
     "section": "thien-nhien",
-    "itemIds": [
-      "nam-bo__song-ngoi"
-    ],
+    "itemIds": ["nam-bo__song-ngoi"],
     "alt": "Dòng sông rộng màu nâu đỏ chảy qua thành phố, nhìn từ máy bay",
     "caption": "Sông Đồng Nai chảy qua Biên Hòa (tỉnh Đồng Nai).",
     "src": {

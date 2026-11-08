@@ -8,12 +8,7 @@
         "id": "q1",
         "type": "single_choice",
         "prompt": "Hai hệ thống sông lớn của vùng Đồng bằng Bắc Bộ là gì?",
-        "options": [
-          "Sông Tiền và sông Hậu",
-          "Sông Đồng Nai và sông Mê Công",
-          "Sông Hồng và sông Thái Bình",
-          "Sông Mã và sông Cả"
-        ],
+        "options": ["Sông Tiền và sông Hậu", "Sông Đồng Nai và sông Mê Công", "Sông Hồng và sông Thái Bình", "Sông Mã và sông Cả"],
         "answerIndex": 2,
         "explanation": "Vùng có hệ thống sông Hồng và sông Thái Bình với nhiều nhánh sông toả khắp vùng.",
         "sources": [
@@ -46,12 +41,7 @@
         "id": "q3",
         "type": "single_choice",
         "prompt": "Mùa đông ở vùng Đồng bằng Bắc Bộ có đặc điểm gì?",
-        "options": [
-          "Nóng, mưa nhiều",
-          "Nóng quanh năm",
-          "Mưa đều tất cả các tháng",
-          "Lạnh, ít mưa"
-        ],
+        "options": ["Nóng, mưa nhiều", "Nóng quanh năm", "Mưa đều tất cả các tháng", "Lạnh, ít mưa"],
         "answerIndex": 3,
         "explanation": "Vùng có khí hậu nhiệt đới gió mùa. Mùa đông lạnh, ít mưa; mùa hạ nóng, mưa nhiều.",
         "sources": [
@@ -68,12 +58,7 @@
         "id": "q4",
         "type": "single_choice",
         "prompt": "Đất chủ yếu ở vùng Đồng bằng Bắc Bộ là loại đất nào?",
-        "options": [
-          "Đất phe-ra-lít",
-          "Đất phèn",
-          "Đất phù sa",
-          "Đất mặn"
-        ],
+        "options": ["Đất phe-ra-lít", "Đất phèn", "Đất phù sa", "Đất mặn"],
         "answerIndex": 2,
         "explanation": "Đất ở Đồng bằng Bắc Bộ chủ yếu là đất phù sa màu mỡ.",
         "sources": [
@@ -155,12 +140,7 @@
         "id": "q8",
         "type": "single_choice",
         "prompt": "Năm 1010, vua Lý Thái Tổ dời đô từ Hoa Lư về thành Đại La và đổi tên thành gì?",
-        "options": [
-          "Đông Đô",
-          "Đông Kinh",
-          "Thăng Long",
-          "Hà Nội"
-        ],
+        "options": ["Đông Đô", "Đông Kinh", "Thăng Long", "Hà Nội"],
         "answerIndex": 2,
         "explanation": "Năm 1010, vua Lý Thái Tổ dời đô từ Hoa Lư (Ninh Bình) về thành Đại La và đổi tên là Thăng Long, nghĩa là \"Rồng bay lên\".",
         "sources": [
@@ -210,12 +190,7 @@
         "id": "q10",
         "type": "single_choice",
         "prompt": "Ngày 2 – 9 – 1945, Bác Hồ đọc Tuyên ngôn Độc lập ở đâu?",
-        "options": [
-          "Bến Nhà Rồng",
-          "Văn Miếu – Quốc Tử Giám",
-          "Quảng trường Ba Đình",
-          "Hồ Gươm"
-        ],
+        "options": ["Bến Nhà Rồng", "Văn Miếu – Quốc Tử Giám", "Quảng trường Ba Đình", "Hồ Gươm"],
         "answerIndex": 2,
         "explanation": "Ngày 2 – 9 – 1945, Bác Hồ đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình (Hà Nội).",
         "sources": [
@@ -248,12 +223,7 @@
         "id": "q12",
         "type": "single_choice",
         "prompt": "Hội Lim, nơi có hát Quan họ, diễn ra ở tỉnh nào?",
-        "options": [
-          "Bắc Ninh",
-          "Hưng Yên",
-          "Ninh Bình",
-          "Phú Thọ"
-        ],
+        "options": ["Bắc Ninh", "Hưng Yên", "Ninh Bình", "Phú Thọ"],
         "answerIndex": 0,
         "explanation": "Hội Lim ở tỉnh Bắc Ninh là một lễ hội nổi tiếng của vùng. Trong hội Lim có hát Quan họ.",
         "sources": [

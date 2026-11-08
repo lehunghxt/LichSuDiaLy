@@ -114,9 +114,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "dien-bien",
     "section": "van-hoa",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__mua-xoe-thai"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__mua-xoe-thai"],
     "alt": "Các cô gái mặc áo cánh, váy đen múa với khăn hồng",
     "caption": "Một tiết mục múa của người Thái ở Điện Biên (tỉnh Điện Biên).",
     "src": {
@@ -152,9 +150,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "dien-bien",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__dan-toc"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dan-toc"],
     "alt": "Ngôi nhà sàn gỗ mái ngói giữa vườn cây",
     "caption": "Nhà sàn truyền thống của người Thái Đen ở thung lũng Mường Thanh (tỉnh Điện Biên).",
     "src": {

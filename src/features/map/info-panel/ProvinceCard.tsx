@@ -5,8 +5,8 @@ import { formedFrom, formerUnits, provinceName, provinceTitle } from '../../../l
 import { provinceMentions } from '../mentions'
 import { provinceFacts } from '../profiles'
 import { type ContentItem, type RegionContent, type WebImage } from '../../../types/content'
-import { SECTION_ICONS, SECTION_TILE } from '../../content/sectionIcons'
-import { imageLibrary } from '../../images/library'
+import { SECTION_ICONS, SECTION_TILE } from '../../content'
+import { imageLibrary } from '../../images'
 
 export interface ProvinceCardProps {
   /** Không có khi vùng chưa có nội dung (Sắp ra mắt) */

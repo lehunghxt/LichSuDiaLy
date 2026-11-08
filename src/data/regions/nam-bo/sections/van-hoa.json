@@ -8,9 +8,7 @@
       "Trên mỗi ghe, xuồng có treo những loại hàng hoá cần bán.",
       "Một số chợ nổi lớn: Cái Răng, Phong Điền, Phụng Hiệp, Ngã Năm (thành phố Cần Thơ); Cái Bè (tỉnh Đồng Tháp); Trà Ôn (tỉnh Vĩnh Long);…"
     ],
-    "keyPoints": [
-      "Chợ nổi thể hiện cuộc sống hài hoà với sông nước của người Nam Bộ."
-    ],
+    "keyPoints": ["Chợ nổi thể hiện cuộc sống hài hoà với sông nước của người Nam Bộ."],
     "provinceId": "can-tho",
     "images": [],
     "figures": [
@@ -21,10 +19,7 @@
         "caption": "Chợ nổi Ngã Năm (thành phố Cần Thơ)"
       }
     ],
-    "relatedIds": [
-      "nam-bo__van-tai-duong-song",
-      "nam-bo__trang-phuc"
-    ],
+    "relatedIds": ["nam-bo__van-tai-duong-song", "nam-bo__trang-phuc"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
@@ -49,17 +44,11 @@
     "id": "nam-bo__trang-phuc",
     "title": "Trang phục",
     "summary": "Trước đây, trang phục phổ biến của người dân Nam Bộ là áo bà ba và khăn rằn.",
-    "highlights": [
-      "Ngày nay, áo bà ba và khăn rằn vẫn được chọn làm trang phục chính trong những dịp lễ, tết,…"
-    ],
-    "keyPoints": [
-      "Áo bà ba, khăn rằn thể hiện nét văn hoá miền sông nước Nam Bộ."
-    ],
+    "highlights": ["Ngày nay, áo bà ba và khăn rằn vẫn được chọn làm trang phục chính trong những dịp lễ, tết,…"],
+    "keyPoints": ["Áo bà ba, khăn rằn thể hiện nét văn hoá miền sông nước Nam Bộ."],
     "images": [],
     "figures": [],
-    "relatedIds": [
-      "nam-bo__cho-noi"
-    ],
+    "relatedIds": ["nam-bo__cho-noi"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
@@ -78,13 +67,9 @@
       "Người Khmer cúng trăng để tạ ơn Thần Mặt Trăng đã cho mùa màng tốt tươi.",
       "Hoạt động: đút cốm dẹp, thả đèn gió, đèn nước, đua ghe Ngo."
     ],
-    "keyPoints": [
-      "Năm 2014, lễ hội được công nhận là Di sản văn hoá phi vật thể quốc gia."
-    ],
+    "keyPoints": ["Năm 2014, lễ hội được công nhận là Di sản văn hoá phi vật thể quốc gia."],
     "images": [],
-    "relatedIds": [
-      "nam-bo__dan-cu"
-    ],
+    "relatedIds": ["nam-bo__dan-cu"],
     "sources": [
       {
         "title": "Wikipedia tiếng Việt: Ok Om Bok",
@@ -101,14 +86,10 @@
       "Ghe Ngo là loại thuyền dài, nhiều người cùng chèo.",
       "Thành phố Cần Thơ có hội đua ghe Ngo lớn nhất, thu hút đông vận động viên và người xem."
     ],
-    "keyPoints": [
-      "Đua ghe Ngo thể hiện tinh thần đoàn kết, gắn bó với sông nước."
-    ],
+    "keyPoints": ["Đua ghe Ngo thể hiện tinh thần đoàn kết, gắn bó với sông nước."],
     "provinceId": "can-tho",
     "images": [],
-    "relatedIds": [
-      "nam-bo__ok-om-bok"
-    ],
+    "relatedIds": ["nam-bo__ok-om-bok"],
     "sources": [
       {
         "title": "Wikipedia tiếng Việt: Ok Om Bok",
@@ -121,10 +102,7 @@
     "id": "nam-bo__ba-chua-xu-nui-sam",
     "title": "Lễ hội Vía Bà Chúa Xứ núi Sam",
     "summary": "Lễ hội diễn ra tại Miếu Bà Chúa Xứ núi Sam (tỉnh An Giang) từ ngày 22 đến 27 tháng 4 âm lịch.",
-    "highlights": [
-      "Lễ hội có cả người Kinh, Khmer, Hoa, Chăm cùng tham gia.",
-      "Lễ hội gồm các nghi lễ như rước tượng Bà, tắm Bà."
-    ],
+    "highlights": ["Lễ hội có cả người Kinh, Khmer, Hoa, Chăm cùng tham gia.", "Lễ hội gồm các nghi lễ như rước tượng Bà, tắm Bà."],
     "keyPoints": [
       "Cuối năm 2024, UNESCO ghi danh lễ hội là Di sản văn hoá phi vật thể đại diện của nhân loại, di sản thứ hai của Nam Bộ sau Đờn ca tài tử."
     ],
@@ -151,9 +129,7 @@
       "Nhạc cụ: đàn kìm, đàn tranh, đàn cò, đàn bầu; về sau có thêm ghi-ta phím lõm.",
       "Người dân chơi đờn ca tài tử lúc nông nhàn, sau mùa thu hoạch, trong vườn, trên ghe thuyền hay những đêm trăng."
     ],
-    "keyPoints": [
-      "Năm 2013, UNESCO ghi danh Đờn ca tài tử Nam Bộ là Di sản văn hoá phi vật thể đại diện của nhân loại."
-    ],
+    "keyPoints": ["Năm 2013, UNESCO ghi danh Đờn ca tài tử Nam Bộ là Di sản văn hoá phi vật thể đại diện của nhân loại."],
     "images": [],
     "relatedIds": [],
     "sources": [
@@ -173,13 +149,9 @@
       "Nhân bánh gồm thịt, tôm, đậu xanh, giá; ăn kèm nhiều loại rau.",
       "Mỗi nơi có lá ăn kèm riêng: Cần Thơ có lá chiết, Đồng Tháp có lá bằng lăng, Vĩnh Long có lá xoài non."
     ],
-    "keyPoints": [
-      "Món ăn Nam Bộ dùng nhiều sản vật của vườn cây và sông nước."
-    ],
+    "keyPoints": ["Món ăn Nam Bộ dùng nhiều sản vật của vườn cây và sông nước."],
     "images": [],
-    "relatedIds": [
-      "nam-bo__van-hoa-miet-vuon"
-    ],
+    "relatedIds": ["nam-bo__van-hoa-miet-vuon"],
     "sources": [
       {
         "title": "Wikipedia tiếng Việt: Bánh xèo",
@@ -196,14 +168,9 @@
       "Vườn trồng nhiều cây ăn trái như xoài, chôm chôm, sầu riêng, mít, dừa, chuối,…",
       "Ở các miệt vườn, nhà thường lợp bằng lá."
     ],
-    "keyPoints": [
-      "Miệt vườn gắn với cuộc sống sông nước và chợ nổi của người dân Nam Bộ."
-    ],
+    "keyPoints": ["Miệt vườn gắn với cuộc sống sông nước và chợ nổi của người dân Nam Bộ."],
     "images": [],
-    "relatedIds": [
-      "nam-bo__nha-o",
-      "nam-bo__cho-noi"
-    ],
+    "relatedIds": ["nam-bo__nha-o", "nam-bo__cho-noi"],
     "sources": [
       {
         "title": "Wikipedia tiếng Việt: Vườn cây ăn trái",

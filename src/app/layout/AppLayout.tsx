@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import { Outlet, useMatch } from 'react-router'
-import { ProgressProvider } from '../../features/progress/ProgressProvider'
+import { ProgressProvider } from '../../features/progress'
 import { useDevice } from '../../lib/device'
 import { LoadingState } from '../../components/ui/states'
 import { DesktopSiteLayout } from './DesktopSiteLayout'

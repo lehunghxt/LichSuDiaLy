@@ -4,9 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "da-nang",
     "section": "lich-su",
-    "itemIds": [
-      "bac-trung-bo-va-nam-trung-bo__hoi-an"
-    ],
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__hoi-an"],
     "alt": "Dãy nhà cổ tường vàng bên con phố có đèn lồng",
     "caption": "Phố cổ Hội An (thành phố Đà Nẵng, trước đây thuộc tỉnh Quảng Nam).",
     "src": {
@@ -43,9 +41,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "da-nang",
     "section": "van-hoa",
-    "itemIds": [
-      "bac-trung-bo-va-nam-trung-bo__my-son"
-    ],
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__my-son"],
     "alt": "Ngôi tháp cổ bằng gạch đỏ giữa cây cỏ",
     "caption": "Một ngôi tháp ở Khu đền tháp Mỹ Sơn (thành phố Đà Nẵng, trước đây thuộc tỉnh Quảng Nam).",
     "src": {

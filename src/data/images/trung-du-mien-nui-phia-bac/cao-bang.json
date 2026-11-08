@@ -151,9 +151,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "cao-bang",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__dan-toc"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dan-toc"],
     "alt": "Nhà sàn bên con suối, phía sau là núi đá",
     "caption": "Làng văn hóa dân tộc Tày ở Đàm Thủy (tỉnh Cao Bằng).",
     "src": {

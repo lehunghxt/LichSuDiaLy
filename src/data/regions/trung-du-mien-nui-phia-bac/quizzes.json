@@ -8,12 +8,7 @@
         "id": "q1",
         "type": "single_choice",
         "prompt": "Đỉnh núi nào cao nhất Việt Nam?",
-        "options": [
-          "Phan-xi-păng",
-          "Tây Côn Lĩnh",
-          "Mẫu Sơn",
-          "Tam Đảo"
-        ],
+        "options": ["Phan-xi-păng", "Tây Côn Lĩnh", "Mẫu Sơn", "Tam Đảo"],
         "answerIndex": 0,
         "explanation": "Phan-xi-păng (tỉnh Lào Cai) cao 3 147 m, là đỉnh núi cao nhất Việt Nam.",
         "sources": [
@@ -46,12 +41,7 @@
         "id": "q3",
         "type": "single_choice",
         "prompt": "Khí hậu của vùng Trung du và miền núi phía Bắc có đặc điểm nổi bật nào?",
-        "options": [
-          "Nắng nóng quanh năm",
-          "Có mùa đông lạnh nhất cả nước",
-          "Không có mùa đông",
-          "Mưa đều tất cả các tháng"
-        ],
+        "options": ["Nắng nóng quanh năm", "Có mùa đông lạnh nhất cả nước", "Không có mùa đông", "Mưa đều tất cả các tháng"],
         "answerIndex": 1,
         "explanation": "Vùng có khí hậu nhiệt đới ẩm gió mùa, với mùa đông lạnh nhất cả nước.",
         "sources": [
@@ -90,12 +80,7 @@
         "id": "q5",
         "type": "single_choice",
         "prompt": "Người ta dùng a-pa-tít để sản xuất gì?",
-        "options": [
-          "Phân lân",
-          "Vật liệu xây dựng",
-          "Giấy viết",
-          "Vải may áo"
-        ],
+        "options": ["Phân lân", "Vật liệu xây dựng", "Giấy viết", "Vải may áo"],
         "answerIndex": 0,
         "explanation": "A-pa-tít là nguyên liệu để sản xuất phân lân.",
         "sources": [
@@ -112,12 +97,7 @@
         "id": "q6",
         "type": "single_choice",
         "prompt": "Lễ hội Lồng Tồng (hội Xuống đồng) là lễ hội truyền thống của dân tộc nào?",
-        "options": [
-          "Mông",
-          "Tày, Nùng",
-          "Chăm",
-          "Ê-đê"
-        ],
+        "options": ["Mông", "Tày, Nùng", "Chăm", "Ê-đê"],
         "answerIndex": 1,
         "explanation": "Lồng Tồng (hội Xuống đồng) là lễ hội truyền thống của người Tày, Nùng, tổ chức trên những cánh đồng hoặc khu đất rộng.",
         "sources": [
@@ -150,12 +130,7 @@
         "id": "q8",
         "type": "single_choice",
         "prompt": "Lễ giỗ Tổ Hùng Vương được tổ chức vào ngày nào?",
-        "options": [
-          "Ngày 10 tháng Ba âm lịch",
-          "Ngày 1 tháng Giêng âm lịch",
-          "Ngày 15 tháng Tám âm lịch",
-          "Ngày 2 tháng 9"
-        ],
+        "options": ["Ngày 10 tháng Ba âm lịch", "Ngày 1 tháng Giêng âm lịch", "Ngày 15 tháng Tám âm lịch", "Ngày 2 tháng 9"],
         "answerIndex": 0,
         "explanation": "Lễ giỗ Tổ Hùng Vương diễn ra vào ngày 10 tháng Ba âm lịch hằng năm.",
         "sources": [
@@ -188,12 +163,7 @@
         "id": "q10",
         "type": "single_choice",
         "prompt": "Việc làm nào giúp phòng chống lũ quét, sạt lở đất?",
-        "options": [
-          "Chặt cây trên sườn đồi",
-          "Làm nhà ở chân núi dễ sạt lở",
-          "Trồng rừng và bảo vệ rừng",
-          "Đổ rác xuống lòng sông"
-        ],
+        "options": ["Chặt cây trên sườn đồi", "Làm nhà ở chân núi dễ sạt lở", "Trồng rừng và bảo vệ rừng", "Đổ rác xuống lòng sông"],
         "answerIndex": 2,
         "explanation": "Trồng rừng và bảo vệ rừng là một trong các biện pháp bảo vệ thiên nhiên và phòng, chống thiên tai (Hình 15, Bài 4).",
         "sources": [

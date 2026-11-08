@@ -4,9 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "thanh-hoa",
     "section": "van-hoa",
-    "itemIds": [
-      "bac-trung-bo-va-nam-trung-bo__di-san-the-gioi"
-    ],
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__di-san-the-gioi"],
     "alt": "Cổng thành bằng những khối đá lớn, có ba cửa vòm",
     "caption": "Thành nhà Hồ (tỉnh Thanh Hóa).",
     "src": {
@@ -42,9 +40,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "thanh-hoa",
     "section": "thien-nhien",
-    "itemIds": [
-      "bac-trung-bo-va-nam-trung-bo__bai-bien"
-    ],
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__bai-bien"],
     "cover": true,
     "alt": "Bãi cát rộng, xa xa là biển và núi nhỏ",
     "caption": "Bãi biển Sầm Sơn (tỉnh Thanh Hóa).",

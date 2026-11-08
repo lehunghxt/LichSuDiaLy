@@ -4,9 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "khanh-hoa",
     "section": "thien-nhien",
-    "itemIds": [
-      "bac-trung-bo-va-nam-trung-bo__bai-bien"
-    ],
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__bai-bien"],
     "alt": "Vịnh biển rộng với đảo và núi, có cầu vồng mờ",
     "caption": "Vịnh Nha Trang (tỉnh Khánh Hòa).",
     "src": {

@@ -4,9 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "tay-ninh",
     "section": "thien-nhien",
-    "itemIds": [
-      "nam-bo__dia-hinh-dong-nam-bo"
-    ],
+    "itemIds": ["nam-bo__dia-hinh-dong-nam-bo"],
     "alt": "Thành phố nhiều cây xanh, phía xa là ngọn núi cao",
     "caption": "Thành phố Tây Ninh, phía xa là núi Bà Đen (tỉnh Tây Ninh).",
     "src": {
@@ -43,9 +41,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "tay-ninh",
     "section": "thien-nhien",
-    "itemIds": [
-      "nam-bo__dia-hinh-dong-nam-bo"
-    ],
+    "itemIds": ["nam-bo__dia-hinh-dong-nam-bo"],
     "alt": "Các cabin cáp treo chạy dọc sườn núi nhiều cây",
     "caption": "Cáp treo lên các chùa trên núi Bà Đen (tỉnh Tây Ninh).",
     "src": {

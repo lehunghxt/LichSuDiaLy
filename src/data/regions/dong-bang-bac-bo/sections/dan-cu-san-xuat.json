@@ -7,9 +7,7 @@
       "Điều kiện tự nhiên thuận lợi cho sinh sống, giao thông và sản xuất nên dân cư tập trung đông.",
       "Người dân chủ yếu là người Kinh, ngoài ra còn có người Mường, Sán Dìu,…"
     ],
-    "keyPoints": [
-      "Đồng bằng Bắc Bộ là vùng đông dân nhất nước ta, chủ yếu là người Kinh."
-    ],
+    "keyPoints": ["Đồng bằng Bắc Bộ là vùng đông dân nhất nước ta, chủ yếu là người Kinh."],
     "images": [],
     "figures": [
       {
@@ -25,10 +23,7 @@
         "caption": "Bản đồ mật độ dân số theo tỉnh hoặc thành phố ở vùng Đồng bằng Bắc Bộ năm 2024"
       }
     ],
-    "relatedIds": [
-      "dong-bang-bac-bo__nha-o",
-      "dong-bang-bac-bo__lua-nuoc"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__nha-o", "dong-bang-bac-bo__lua-nuoc"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
@@ -47,9 +42,7 @@
       "Nhà truyền thống thường có ba gian hoặc năm gian.",
       "Gian giữa để thờ cúng và tiếp khách; các gian hai bên làm chỗ ngủ hoặc chứa thóc, gạo, đồ dùng."
     ],
-    "keyPoints": [
-      "Nhà truyền thống có nhiều gian, gian giữa là nơi thờ cúng, tiếp khách."
-    ],
+    "keyPoints": ["Nhà truyền thống có nhiều gian, gian giữa là nơi thờ cúng, tiếp khách."],
     "images": [],
     "figures": [
       {
@@ -65,10 +58,7 @@
         "caption": "Nhà ở vùng Đồng bằng Bắc Bộ hiện nay"
       }
     ],
-    "relatedIds": [
-      "dong-bang-bac-bo__lang-que",
-      "dong-bang-bac-bo__dan-cu"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__lang-que", "dong-bang-bac-bo__dan-cu"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
@@ -87,9 +77,7 @@
       "Vùng có đất màu mỡ, nguồn nước dồi dào, người dân giàu kinh nghiệm.",
       "Các công việc trồng lúa: làm đất, cấy lúa, chăm sóc lúa, thu hoạch."
     ],
-    "keyPoints": [
-      "Đồng bằng Bắc Bộ là vựa lúa lớn thứ hai cả nước."
-    ],
+    "keyPoints": ["Đồng bằng Bắc Bộ là vựa lúa lớn thứ hai cả nước."],
     "images": [],
     "figures": [
       {
@@ -99,11 +87,7 @@
         "caption": "Một số công việc trong trồng lúa nước"
       }
     ],
-    "relatedIds": [
-      "dong-bang-bac-bo__de-song-hong",
-      "dong-bang-bac-bo__rau-mau",
-      "dong-bang-bac-bo__dan-cu"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__de-song-hong", "dong-bang-bac-bo__rau-mau", "dong-bang-bac-bo__dan-cu"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
@@ -118,18 +102,11 @@
     "id": "dong-bang-bac-bo__rau-mau",
     "title": "Trồng rau màu và cây ăn quả",
     "summary": "Ngoài trồng lúa nước, người dân Đồng bằng Bắc Bộ còn trồng nhiều loại rau màu và cây ăn quả.",
-    "highlights": [
-      "Đất phù sa màu mỡ và nguồn nước dồi dào giúp cây trồng phát triển."
-    ],
-    "keyPoints": [
-      "Bên cạnh lúa, vùng còn trồng rau màu và cây ăn quả."
-    ],
+    "highlights": ["Đất phù sa màu mỡ và nguồn nước dồi dào giúp cây trồng phát triển."],
+    "keyPoints": ["Bên cạnh lúa, vùng còn trồng rau màu và cây ăn quả."],
     "images": [],
     "figures": [],
-    "relatedIds": [
-      "dong-bang-bac-bo__lua-nuoc",
-      "dong-bang-bac-bo__chan-nuoi"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__lua-nuoc", "dong-bang-bac-bo__chan-nuoi"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
@@ -144,17 +121,11 @@
     "id": "dong-bang-bac-bo__chan-nuoi",
     "title": "Chăn nuôi và nuôi trồng thuỷ sản",
     "summary": "Người dân trong vùng chăn nuôi gia súc, gia cầm. Họ còn nuôi trồng thuỷ sản.",
-    "highlights": [
-      "Chăn nuôi là hoạt động sản xuất đi cùng với trồng trọt ở đồng bằng."
-    ],
-    "keyPoints": [
-      "Vùng chăn nuôi gia súc, gia cầm và nuôi trồng thuỷ sản."
-    ],
+    "highlights": ["Chăn nuôi là hoạt động sản xuất đi cùng với trồng trọt ở đồng bằng."],
+    "keyPoints": ["Vùng chăn nuôi gia súc, gia cầm và nuôi trồng thuỷ sản."],
     "images": [],
     "figures": [],
-    "relatedIds": [
-      "dong-bang-bac-bo__rau-mau"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__rau-mau"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
@@ -175,9 +146,7 @@
       "Đồ gốm, sứ làm từ đất sét, qua phơi sấy, nung và tráng men.",
       "Đúc đồng đòi hỏi người thợ có tay nghề cao, khéo léo ở mọi khâu."
     ],
-    "keyPoints": [
-      "Sản phẩm thủ công được dùng rộng rãi và xuất khẩu ra nhiều nước."
-    ],
+    "keyPoints": ["Sản phẩm thủ công được dùng rộng rãi và xuất khẩu ra nhiều nước."],
     "images": [],
     "figures": [
       {
@@ -187,9 +156,7 @@
         "caption": "Một số sản phẩm thủ công ở vùng Đồng bằng Bắc Bộ"
       }
     ],
-    "relatedIds": [
-      "dong-bang-bac-bo__lang-que"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__lang-que"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
@@ -209,14 +176,10 @@
       "Màu lấy từ thiên nhiên: đen từ than lá tre, xanh từ lá chàm, vàng từ hoa hoè, đỏ từ sỏi son.",
       "Tranh nổi tiếng: Đám cưới chuột, Đàn gà, Lợn ỉ, Chăn trâu thổi sáo."
     ],
-    "keyPoints": [
-      "Ngày trước, tranh Đông Hồ chủ yếu được bán vào dịp Tết để treo trong nhà."
-    ],
+    "keyPoints": ["Ngày trước, tranh Đông Hồ chủ yếu được bán vào dịp Tết để treo trong nhà."],
     "provinceId": "bac-ninh",
     "images": [],
-    "relatedIds": [
-      "dong-bang-bac-bo__nghe-thu-cong"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__nghe-thu-cong"],
     "sources": [
       {
         "title": "Wikipedia tiếng Việt: Tranh Đông Hồ",
@@ -234,14 +197,10 @@
       "Lụa Vạn Phúc ấm vào mùa đông, mát vào mùa hè.",
       "Năm 1931, lụa Vạn Phúc được đưa đi giới thiệu ở hội chợ tại Pháp."
     ],
-    "keyPoints": [
-      "Làng nghề giữ gìn nghề dệt truyền thống của Đồng bằng Bắc Bộ."
-    ],
+    "keyPoints": ["Làng nghề giữ gìn nghề dệt truyền thống của Đồng bằng Bắc Bộ."],
     "provinceId": "ha-noi",
     "images": [],
-    "relatedIds": [
-      "dong-bang-bac-bo__nghe-thu-cong"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__nghe-thu-cong"],
     "sources": [
       {
         "title": "Wikipedia tiếng Việt: Làng lụa Vạn Phúc",

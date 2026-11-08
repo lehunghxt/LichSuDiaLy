@@ -23,7 +23,6 @@
   --color-line: #e2e8f0;
   --color-sea: #cfe8fa;
 
-
   --radius-card: 1.25rem;
 
   --animate-pop: pop 0.35s ease-out;
@@ -104,7 +103,9 @@ div.leaflet-container {
   font-size: 0.85rem;
   font-weight: 600;
   color: #0c4a6e;
-  text-shadow: 0 0 3px #fff, 0 0 3px #fff;
+  text-shadow:
+    0 0 3px #fff,
+    0 0 3px #fff;
   pointer-events: none;
 }
 .map-label-sea span {

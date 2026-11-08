@@ -9,9 +9,7 @@
       "Giếng làng trước đây là nơi lấy nước sinh hoạt chính của dân làng.",
       "Đình làng thờ Thành hoàng; sân đình là nơi sinh hoạt văn hoá chung."
     ],
-    "keyPoints": [
-      "Cổng làng, cây đa, giếng nước, sân đình là hình ảnh quen thuộc của làng quê Bắc Bộ."
-    ],
+    "keyPoints": ["Cổng làng, cây đa, giếng nước, sân đình là hình ảnh quen thuộc của làng quê Bắc Bộ."],
     "images": [],
     "figures": [
       {
@@ -39,10 +37,7 @@
         "caption": "Đình làng Đình Bảng (tỉnh Bắc Ninh)"
       }
     ],
-    "relatedIds": [
-      "dong-bang-bac-bo__nha-o",
-      "dong-bang-bac-bo__le-hoi"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__nha-o", "dong-bang-bac-bo__le-hoi"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
@@ -62,9 +57,7 @@
       "Người dân mặc trang phục truyền thống, làm lễ tế và tham gia trò chơi.",
       "Trò chơi dân gian: đánh đu, đấu vật, kéo co, cờ người,…"
     ],
-    "keyPoints": [
-      "Lễ hội thường diễn ra vào mùa xuân với phần lễ và nhiều trò chơi dân gian."
-    ],
+    "keyPoints": ["Lễ hội thường diễn ra vào mùa xuân với phần lễ và nhiều trò chơi dân gian."],
     "images": [],
     "figures": [
       {
@@ -74,10 +67,7 @@
         "caption": "Trò chơi cờ người trong lễ hội Cổ Loa (thành phố Hà Nội)"
       }
     ],
-    "relatedIds": [
-      "dong-bang-bac-bo__hoi-lim",
-      "dong-bang-bac-bo__lang-que"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__hoi-lim", "dong-bang-bac-bo__lang-que"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
@@ -92,12 +82,8 @@
     "id": "dong-bang-bac-bo__hoi-lim",
     "title": "Hội Lim và hát Quan họ",
     "summary": "Hội Lim ở tỉnh Bắc Ninh là một lễ hội nổi tiếng của vùng. Trong hội Lim có hát Quan họ.",
-    "highlights": [
-      "Sách có ảnh các liền anh, liền chị hát Quan họ trên thuyền trong hội Lim."
-    ],
-    "keyPoints": [
-      "Hát Quan họ là nét đặc sắc trong hội Lim (Bắc Ninh)."
-    ],
+    "highlights": ["Sách có ảnh các liền anh, liền chị hát Quan họ trên thuyền trong hội Lim."],
+    "keyPoints": ["Hát Quan họ là nét đặc sắc trong hội Lim (Bắc Ninh)."],
     "provinceId": "bac-ninh",
     "images": [],
     "figures": [
@@ -108,9 +94,7 @@
         "caption": "Hát Quan họ trong hội Lim (tỉnh Bắc Ninh)"
       }
     ],
-    "relatedIds": [
-      "dong-bang-bac-bo__le-hoi"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__le-hoi"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
@@ -150,9 +134,7 @@
     ],
     "provinceId": "ha-noi",
     "images": [],
-    "relatedIds": [
-      "dong-bang-bac-bo__le-hoi"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__le-hoi"],
     "sources": [
       {
         "title": "Wikipedia tiếng Việt: Hội Gióng",
@@ -169,14 +151,10 @@
       "Lễ hội khai mạc ngày mùng 6 tháng Giêng âm lịch, kéo dài đến khoảng tháng Ba âm lịch.",
       "Khách đi lễ thường ngồi thuyền trên suối Yến, từ bến Đục vào chùa."
     ],
-    "keyPoints": [
-      "Lễ hội chùa Hương là một trong những lễ hội kéo dài nhất ở Đồng bằng Bắc Bộ."
-    ],
+    "keyPoints": ["Lễ hội chùa Hương là một trong những lễ hội kéo dài nhất ở Đồng bằng Bắc Bộ."],
     "provinceId": "ha-noi",
     "images": [],
-    "relatedIds": [
-      "dong-bang-bac-bo__le-hoi"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__le-hoi"],
     "sources": [
       {
         "title": "Wikipedia tiếng Việt: Chùa Hương",
@@ -194,13 +172,9 @@
       "Mặc kèm yếm bên trong, thắt dây lưng ngoài áo.",
       "Khi đi hội, phụ nữ đội nón quai thao và đi guốc."
     ],
-    "keyPoints": [
-      "Áo tứ thân, nón quai thao là hình ảnh quen thuộc trong lễ hội và khi hát quan họ."
-    ],
+    "keyPoints": ["Áo tứ thân, nón quai thao là hình ảnh quen thuộc trong lễ hội và khi hát quan họ."],
     "images": [],
-    "relatedIds": [
-      "dong-bang-bac-bo__le-hoi"
-    ],
+    "relatedIds": ["dong-bang-bac-bo__le-hoi"],
     "sources": [
       {
         "title": "Wikipedia tiếng Việt: Áo tứ thân",
@@ -218,9 +192,7 @@
       "Phở hình thành vào đầu thế kỷ 20; Hà Nội và Nam Định (nay thuộc tỉnh Ninh Bình) thường được coi là quê hương của phở.",
       "Bánh chưng làm từ gạo nếp, đậu xanh, thịt lợn, gói bằng lá dong; được làm vào dịp Tết Nguyên đán và giỗ Tổ Hùng Vương."
     ],
-    "keyPoints": [
-      "Nhiều món ăn được làm từ lúa gạo, sản vật chính của đồng bằng."
-    ],
+    "keyPoints": ["Nhiều món ăn được làm từ lúa gạo, sản vật chính của đồng bằng."],
     "images": [],
     "relatedIds": [],
     "sources": [

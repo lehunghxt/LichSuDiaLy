@@ -4,9 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
     "section": "lich-su",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__den-hung"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__den-hung"],
     "alt": "Bậc đá dẫn lên cổng một ngôi đền cổ, có nhiều người tham quan",
     "caption": "Đền Thượng trong Khu di tích Đền Hùng (tỉnh Phú Thọ).",
     "src": {
@@ -43,9 +41,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
     "section": "lich-su",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__den-hung"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__den-hung"],
     "alt": "Sân đền với ngôi tháp và mái đền cổ",
     "caption": "Đền Hạ trong Khu di tích Đền Hùng (tỉnh Phú Thọ).",
     "src": {
@@ -82,9 +78,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
     "section": "lich-su",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__den-hung"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__den-hung"],
     "alt": "Lăng nhỏ bằng đá chạm khắc hoa văn",
     "caption": "Lăng vua Hùng trong Khu di tích Đền Hùng (tỉnh Phú Thọ).",
     "src": {
@@ -120,9 +114,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
     "section": "thien-nhien",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__dia-hinh"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dia-hinh"],
     "alt": "Dãy núi phủ rừng xanh với nhiều đỉnh nhọn",
     "caption": "Dãy núi Tam Đảo (tỉnh Phú Thọ, trước đây thuộc tỉnh Vĩnh Phúc).",
     "src": {
@@ -158,9 +150,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__thuy-dien"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__thuy-dien"],
     "alt": "Dòng sông chảy giữa hai bờ đồi, bên trái là công trình thủy điện",
     "caption": "Sông Đà và nhà máy thủy điện Hòa Bình (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
     "src": {
@@ -269,9 +259,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__dan-toc"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dan-toc"],
     "alt": "Ngôi nhà sàn gỗ mái lá có cầu thang gỗ",
     "caption": "Nhà sàn của người Thái ở Mai Châu (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
     "src": {

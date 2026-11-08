@@ -4,10 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "an-giang",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "nam-bo__nha-o",
-      "nam-bo__thuy-san"
-    ],
+    "itemIds": ["nam-bo__nha-o", "nam-bo__thuy-san"],
     "alt": "Dãy nhà nổi sơn xanh trên mặt sông",
     "caption": "Nhà nổi trên sông Hậu gần Châu Đốc, vừa để ở vừa để nuôi cá (tỉnh An Giang).",
     "src": {
@@ -44,9 +41,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "an-giang",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "nam-bo__nha-o"
-    ],
+    "itemIds": ["nam-bo__nha-o"],
     "alt": "Nhà nổi có cắm cờ đỏ trên mặt sông rộng",
     "caption": "Làng nổi ở Châu Đốc (tỉnh An Giang).",
     "src": {
@@ -194,9 +189,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "an-giang",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "nam-bo__trong-lua"
-    ],
+    "itemIds": ["nam-bo__trong-lua"],
     "alt": "Cánh đồng lúa rộng nhìn từ trên núi xuống",
     "caption": "Cánh đồng lúa nhìn từ núi Sam, Châu Đốc (tỉnh An Giang).",
     "src": {

@@ -10,9 +10,8 @@ import {
   type SectionId,
   type WebImage,
 } from '../../../types/content'
-import { getItemsBySection } from '../../content/repository'
-import { imageLibrary } from '../../images/library'
-import { type RegionContentState } from '../../content/useRegionContent'
+import { getItemsBySection, type RegionContentState } from '../../content'
+import { imageLibrary } from '../../images'
 import { card } from './styles'
 import { FeaturedPlaces } from './FeaturedPlaces'
 import { RegionCards } from './RegionCards'

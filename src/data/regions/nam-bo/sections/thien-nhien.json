@@ -7,9 +7,7 @@
       "Vùng Nam Bộ có vùng biển rộng lớn, nhiều tiềm năng.",
       "Vùng giáp vùng Bắc Trung Bộ và Nam Trung Bộ, giáp Cam-pu-chia, Biển Đông và vịnh Thái Lan."
     ],
-    "keyPoints": [
-      "Nam Bộ gồm hai phần: Đông Nam Bộ và Tây Nam Bộ."
-    ],
+    "keyPoints": ["Nam Bộ gồm hai phần: Đông Nam Bộ và Tây Nam Bộ."],
     "images": [],
     "figures": [
       {
@@ -19,10 +17,7 @@
         "caption": "Bản đồ địa hình vùng Nam Bộ"
       }
     ],
-    "relatedIds": [
-      "nam-bo__dia-hinh-dong-nam-bo",
-      "nam-bo__dong-bang-cuu-long"
-    ],
+    "relatedIds": ["nam-bo__dia-hinh-dong-nam-bo", "nam-bo__dong-bang-cuu-long"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
@@ -37,15 +32,9 @@
     "id": "nam-bo__dia-hinh-dong-nam-bo",
     "title": "Địa hình Đông Nam Bộ",
     "summary": "Vùng Nam Bộ chủ yếu là đồng bằng thấp, tương đối bằng phẳng. Riêng phía bắc của Đông Nam Bộ có đồi núi thấp.",
-    "highlights": [
-      "Núi Bà Đen (tỉnh Tây Ninh) cao 986 m, là đỉnh núi cao nhất Nam Bộ."
-    ],
-    "keyPoints": [
-      "Phía bắc Đông Nam Bộ có đồi núi thấp, còn lại là đồng bằng."
-    ],
-    "funFacts": [
-      "Cụm núi Bà Đen gồm ba ngọn núi: núi Heo, núi Phụng và núi Bà Đen."
-    ],
+    "highlights": ["Núi Bà Đen (tỉnh Tây Ninh) cao 986 m, là đỉnh núi cao nhất Nam Bộ."],
+    "keyPoints": ["Phía bắc Đông Nam Bộ có đồi núi thấp, còn lại là đồng bằng."],
+    "funFacts": ["Cụm núi Bà Đen gồm ba ngọn núi: núi Heo, núi Phụng và núi Bà Đen."],
     "provinceId": "tay-ninh",
     "images": [],
     "figures": [
@@ -56,9 +45,7 @@
         "caption": "Núi Bà Đen"
       }
     ],
-    "relatedIds": [
-      "nam-bo__dong-bang-cuu-long"
-    ],
+    "relatedIds": ["nam-bo__dong-bang-cuu-long"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
@@ -77,9 +64,7 @@
       "Vùng trũng lớn: Đồng Tháp Mười và một số nơi ở các tỉnh An Giang, Cà Mau.",
       "Ca dao Nam Bộ kể về Tháp Mười nước mặn, đồng chua, nửa năm nắng cháy, nửa năm nước dâng."
     ],
-    "keyPoints": [
-      "Đồng bằng sông Cửu Long có nhiều vùng trũng."
-    ],
+    "keyPoints": ["Đồng bằng sông Cửu Long có nhiều vùng trũng."],
     "images": [],
     "figures": [
       {
@@ -89,10 +74,7 @@
         "caption": "Một góc đồng bằng sông Cửu Long"
       }
     ],
-    "relatedIds": [
-      "nam-bo__dia-hinh-dong-nam-bo",
-      "nam-bo__song-ngoi"
-    ],
+    "relatedIds": ["nam-bo__dia-hinh-dong-nam-bo", "nam-bo__song-ngoi"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
@@ -111,14 +93,10 @@
       "Mùa mưa từ tháng 5 đến tháng 11.",
       "Mùa khô từ tháng 12 đến tháng 4 năm sau; mùa khô ít mưa nên thường thiếu nước cho sinh hoạt và sản xuất."
     ],
-    "keyPoints": [
-      "Nam Bộ có hai mùa: mùa mưa và mùa khô."
-    ],
+    "keyPoints": ["Nam Bộ có hai mùa: mùa mưa và mùa khô."],
     "images": [],
     "figures": [],
-    "relatedIds": [
-      "nam-bo__thuan-loi-kho-khan"
-    ],
+    "relatedIds": ["nam-bo__thuan-loi-kho-khan"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
@@ -133,22 +111,14 @@
     "id": "nam-bo__song-ngoi",
     "title": "Sông Đồng Nai và sông Mê Công",
     "summary": "Vùng Nam Bộ có hệ thống sông ngòi dày đặc. Các sông lớn là sông Đồng Nai (Đông Nam Bộ), sông Tiền, sông Hậu (đồng bằng sông Cửu Long),…",
-    "highlights": [
-      "Sông ngòi cung cấp nước, phù sa và thuỷ sản.",
-      "Sông là đường giao thông quan trọng của vùng."
-    ],
-    "keyPoints": [
-      "Sông ngòi dày đặc mang lại nhiều lợi ích cho Nam Bộ."
-    ],
+    "highlights": ["Sông ngòi cung cấp nước, phù sa và thuỷ sản.", "Sông là đường giao thông quan trọng của vùng."],
+    "keyPoints": ["Sông ngòi dày đặc mang lại nhiều lợi ích cho Nam Bộ."],
     "funFacts": [
       "Sông Mê Công chảy về đồng bằng thì chia thành sông Tiền và sông Hậu. Trước kia sông đổ ra biển qua chín cửa nên còn gọi là sông Cửu Long (chín con rồng); nay một cửa (Bát Xắc) đã bị phù sa bồi lấp."
     ],
     "images": [],
     "figures": [],
-    "relatedIds": [
-      "nam-bo__dong-bang-cuu-long",
-      "nam-bo__van-tai-duong-song"
-    ],
+    "relatedIds": ["nam-bo__dong-bang-cuu-long", "nam-bo__van-tai-duong-song"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
@@ -167,15 +137,10 @@
       "Đất xám, đất badan (nhiều ở phía bắc Đông Nam Bộ) thích hợp trồng cây công nghiệp như cao su, điều, hồ tiêu,…",
       "Đất phù sa (ở các khu vực đồng bằng) thích hợp trồng lúa, rau, cây ăn quả,…"
     ],
-    "keyPoints": [
-      "Mỗi loại đất phù hợp với những cây trồng khác nhau."
-    ],
+    "keyPoints": ["Mỗi loại đất phù hợp với những cây trồng khác nhau."],
     "images": [],
     "figures": [],
-    "relatedIds": [
-      "nam-bo__cay-cong-nghiep",
-      "nam-bo__trong-lua"
-    ],
+    "relatedIds": ["nam-bo__cay-cong-nghiep", "nam-bo__trong-lua"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
@@ -190,12 +155,8 @@
     "id": "nam-bo__thuan-loi-kho-khan",
     "title": "Thuận lợi và khó khăn",
     "summary": "Thiên nhiên vùng Nam Bộ có nhiều điều kiện thuận lợi cho sinh hoạt và sản xuất, nhất là sản xuất nông nghiệp.",
-    "highlights": [
-      "Khó khăn: lũ lụt; sạt lở đất ven sông, ven biển; đất bị nhiễm mặn; thiếu nước vào mùa khô,…"
-    ],
-    "keyPoints": [
-      "Người dân cần tìm cách khắc phục khó khăn do thiên nhiên gây ra."
-    ],
+    "highlights": ["Khó khăn: lũ lụt; sạt lở đất ven sông, ven biển; đất bị nhiễm mặn; thiếu nước vào mùa khô,…"],
+    "keyPoints": ["Người dân cần tìm cách khắc phục khó khăn do thiên nhiên gây ra."],
     "images": [],
     "figures": [
       {
@@ -223,9 +184,7 @@
         "caption": "Kênh bị cạn nước vào mùa khô (tỉnh Đồng Tháp)"
       }
     ],
-    "relatedIds": [
-      "nam-bo__khi-hau"
-    ],
+    "relatedIds": ["nam-bo__khi-hau"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
@@ -245,15 +204,9 @@
       "Vào mùa mưa, Đồng Tháp Mười thành một vùng nước rộng, có nơi sâu tới 3 m.",
       "Giao thông đường thuỷ giữ vai trò quan trọng ở vùng."
     ],
-    "keyPoints": [
-      "Sông nước gắn bó với đời sống, đi lại và buôn bán của người dân."
-    ],
+    "keyPoints": ["Sông nước gắn bó với đời sống, đi lại và buôn bán của người dân."],
     "images": [],
-    "relatedIds": [
-      "nam-bo__song-ngoi",
-      "nam-bo__van-tai-duong-song",
-      "nam-bo__cho-noi"
-    ],
+    "relatedIds": ["nam-bo__song-ngoi", "nam-bo__van-tai-duong-song", "nam-bo__cho-noi"],
     "sources": [
       {
         "title": "Wikipedia tiếng Việt: Đồng bằng sông Cửu Long",
@@ -271,9 +224,7 @@
       "Động vật: khỉ đuôi dài, nhiều loài chim, kỳ đà, cá sấu cửa sông,…",
       "Rừng là nơi kiếm ăn và trú ngụ của nhiều loài cá và động vật dưới nước."
     ],
-    "keyPoints": [
-      "Năm 2000, Cần Giờ trở thành khu dự trữ sinh quyển đầu tiên của Việt Nam được UNESCO công nhận."
-    ],
+    "keyPoints": ["Năm 2000, Cần Giờ trở thành khu dự trữ sinh quyển đầu tiên của Việt Nam được UNESCO công nhận."],
     "provinceId": "ho-chi-minh",
     "images": [],
     "relatedIds": [],
@@ -294,13 +245,9 @@
       "Tràm Chim là nơi sinh sống của sếu đầu đỏ, loài chim quý hiếm.",
       "Rừng U Minh là rừng tràm trên đất than bùn; sông Trẹm chia thành U Minh Thượng (tỉnh An Giang) và U Minh Hạ (tỉnh Cà Mau)."
     ],
-    "keyPoints": [
-      "Năm 2012, Tràm Chim được công nhận là khu Ramsar (vùng đất ngập nước quan trọng của thế giới)."
-    ],
+    "keyPoints": ["Năm 2012, Tràm Chim được công nhận là khu Ramsar (vùng đất ngập nước quan trọng của thế giới)."],
     "images": [],
-    "relatedIds": [
-      "nam-bo__dong-bang-cuu-long"
-    ],
+    "relatedIds": ["nam-bo__dong-bang-cuu-long"],
     "sources": [
       {
         "title": "Wikipedia tiếng Việt: Tràm Chim",
@@ -322,9 +269,7 @@
       "Phú Quốc nổi tiếng với nước mắm, hồ tiêu, hải sản và các bãi biển đẹp.",
       "Côn Đảo gồm 16 hòn đảo, nay là đặc khu thuộc Thành phố Hồ Chí Minh; vùng biển Côn Đảo có nhiều rùa biển nhất Việt Nam."
     ],
-    "keyPoints": [
-      "Côn Đảo còn có di tích nhà tù Côn Đảo, nơi thực dân Pháp giam giữ nhiều chiến sĩ cách mạng."
-    ],
+    "keyPoints": ["Côn Đảo còn có di tích nhà tù Côn Đảo, nơi thực dân Pháp giam giữ nhiều chiến sĩ cách mạng."],
     "images": [],
     "relatedIds": [],
     "sources": [

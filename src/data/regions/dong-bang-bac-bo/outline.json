@@ -6,48 +6,33 @@
         {
           "id": "vi-tri-dia-li-va-ban-do-vung",
           "title": "Vị trí địa lí và bản đồ vùng",
-          "itemIds": [
-            "dong-bang-bac-bo__vi-tri-dia-li"
-          ]
+          "itemIds": ["dong-bang-bac-bo__vi-tri-dia-li"]
         },
         {
           "id": "dia-hinh-dong-bang",
           "title": "Địa hình đồng bằng",
-          "itemIds": [
-            "dong-bang-bac-bo__dia-hinh"
-          ]
+          "itemIds": ["dong-bang-bac-bo__dia-hinh"]
         },
         {
           "id": "khi-hau",
           "title": "Khí hậu",
           "hint": "(bốn mùa, mùa đông lạnh)",
-          "itemIds": [
-            "dong-bang-bac-bo__khi-hau"
-          ]
+          "itemIds": ["dong-bang-bac-bo__khi-hau"]
         },
         {
           "id": "song-hong-va-song-thai-binh",
           "title": "Sông Hồng và sông Thái Bình",
-          "itemIds": [
-            "dong-bang-bac-bo__song-ngoi",
-            "dong-bang-bac-bo__song-hong"
-          ]
+          "itemIds": ["dong-bang-bac-bo__song-ngoi", "dong-bang-bac-bo__song-hong"]
         },
         {
           "id": "he-thong-de-song-hong",
           "title": "Hệ thống đê sông Hồng",
-          "itemIds": [
-            "dong-bang-bac-bo__de-song-hong"
-          ]
+          "itemIds": ["dong-bang-bac-bo__de-song-hong"]
         },
         {
           "id": "dat-phu-sa-va-canh-quan-dong-bang",
           "title": "Đất phù sa và cảnh quan đồng bằng",
-          "itemIds": [
-            "dong-bang-bac-bo__dat-sinh-vat",
-            "dong-bang-bac-bo__thuan-loi-kho-khan",
-            "dong-bang-bac-bo__bao-ve-thien-nhien"
-          ]
+          "itemIds": ["dong-bang-bac-bo__dat-sinh-vat", "dong-bang-bac-bo__thuan-loi-kho-khan", "dong-bang-bac-bo__bao-ve-thien-nhien"]
         }
       ]
     },
@@ -57,52 +42,37 @@
         {
           "id": "dan-cu-va-lang-que-bac-bo",
           "title": "Dân cư và làng quê Bắc Bộ",
-          "itemIds": [
-            "dong-bang-bac-bo__dan-cu",
-            "dong-bang-bac-bo__nha-o"
-          ]
+          "itemIds": ["dong-bang-bac-bo__dan-cu", "dong-bang-bac-bo__nha-o"]
         },
         {
           "id": "trong-lua-nuoc",
           "title": "Trồng lúa nước",
-          "itemIds": [
-            "dong-bang-bac-bo__lua-nuoc"
-          ]
+          "itemIds": ["dong-bang-bac-bo__lua-nuoc"]
         },
         {
           "id": "trong-rau-mau-va-cay-vu-dong",
           "title": "Trồng rau màu và cây vụ đông",
-          "itemIds": [
-            "dong-bang-bac-bo__rau-mau"
-          ]
+          "itemIds": ["dong-bang-bac-bo__rau-mau"]
         },
         {
           "id": "chan-nuoi",
           "title": "Chăn nuôi",
-          "itemIds": [
-            "dong-bang-bac-bo__chan-nuoi"
-          ]
+          "itemIds": ["dong-bang-bac-bo__chan-nuoi"]
         },
         {
           "id": "nghe-lam-gom-bat-trang",
           "title": "Nghề làm gốm Bát Tràng",
-          "itemIds": [
-            "dong-bang-bac-bo__nghe-thu-cong"
-          ]
+          "itemIds": ["dong-bang-bac-bo__nghe-thu-cong"]
         },
         {
           "id": "nghe-lam-tranh-dong-ho",
           "title": "Nghề làm tranh Đông Hồ",
-          "itemIds": [
-            "dong-bang-bac-bo__tranh-dong-ho"
-          ]
+          "itemIds": ["dong-bang-bac-bo__tranh-dong-ho"]
         },
         {
           "id": "nghe-det-lua-van-phuc",
           "title": "Nghề dệt lụa Vạn Phúc",
-          "itemIds": [
-            "dong-bang-bac-bo__lua-van-phuc"
-          ]
+          "itemIds": ["dong-bang-bac-bo__lua-van-phuc"]
         }
       ]
     },
@@ -113,52 +83,38 @@
           "id": "lang-que-truyen-thong",
           "title": "Làng quê truyền thống",
           "hint": "(đình làng, cây đa, giếng nước)",
-          "itemIds": [
-            "dong-bang-bac-bo__lang-que"
-          ]
+          "itemIds": ["dong-bang-bac-bo__lang-que"]
         },
         {
           "id": "le-hoi-truyen-thong",
           "title": "Lễ hội truyền thống",
-          "itemIds": [
-            "dong-bang-bac-bo__le-hoi"
-          ]
+          "itemIds": ["dong-bang-bac-bo__le-hoi"]
         },
         {
           "id": "hoi-lim-va-dan-ca-quan-ho",
           "title": "Hội Lim và dân ca Quan họ",
-          "itemIds": [
-            "dong-bang-bac-bo__hoi-lim"
-          ]
+          "itemIds": ["dong-bang-bac-bo__hoi-lim"]
         },
         {
           "id": "hoi-giong",
           "title": "Hội Gióng",
-          "itemIds": [
-            "dong-bang-bac-bo__hoi-giong"
-          ]
+          "itemIds": ["dong-bang-bac-bo__hoi-giong"]
         },
         {
           "id": "le-hoi-chua-huong",
           "title": "Lễ hội chùa Hương",
-          "itemIds": [
-            "dong-bang-bac-bo__le-hoi-chua-huong"
-          ]
+          "itemIds": ["dong-bang-bac-bo__le-hoi-chua-huong"]
         },
         {
           "id": "trang-phuc-truyen-thong",
           "title": "Trang phục truyền thống",
           "hint": "(áo tứ thân, nón quai thao)",
-          "itemIds": [
-            "dong-bang-bac-bo__ao-tu-than"
-          ]
+          "itemIds": ["dong-bang-bac-bo__ao-tu-than"]
         },
         {
           "id": "am-thuc-truyen-thong",
           "title": "Ẩm thực truyền thống",
-          "itemIds": [
-            "dong-bang-bac-bo__am-thuc"
-          ]
+          "itemIds": ["dong-bang-bac-bo__am-thuc"]
         }
       ]
     },
@@ -177,19 +133,12 @@
         {
           "id": "thang-long-ha-noi",
           "title": "Thăng Long – Hà Nội",
-          "itemIds": [
-            "dong-bang-bac-bo__thang-long-ten-goi",
-            "dong-bang-bac-bo__lich-su-thang-long",
-            "dong-bang-bac-bo__ha-noi-ngay-nay"
-          ]
+          "itemIds": ["dong-bang-bac-bo__thang-long-ten-goi", "dong-bang-bac-bo__lich-su-thang-long", "dong-bang-bac-bo__ha-noi-ngay-nay"]
         },
         {
           "id": "van-mieu-quoc-tu-giam",
           "title": "Văn Miếu – Quốc Tử Giám",
-          "itemIds": [
-            "dong-bang-bac-bo__van-mieu",
-            "dong-bang-bac-bo__gin-giu-van-mieu"
-          ]
+          "itemIds": ["dong-bang-bac-bo__van-mieu", "dong-bang-bac-bo__gin-giu-van-mieu"]
         }
       ]
     }

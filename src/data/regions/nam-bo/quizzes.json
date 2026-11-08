@@ -8,12 +8,7 @@
         "id": "q1",
         "type": "single_choice",
         "prompt": "Vùng nào trồng lúa lớn nhất nước ta?",
-        "options": [
-          "Đồng bằng Bắc Bộ",
-          "Bắc Trung Bộ và Nam Trung Bộ",
-          "Trung du và miền núi phía Bắc",
-          "Nam Bộ"
-        ],
+        "options": ["Đồng bằng Bắc Bộ", "Bắc Trung Bộ và Nam Trung Bộ", "Trung du và miền núi phía Bắc", "Nam Bộ"],
         "answerIndex": 3,
         "explanation": "Nam Bộ có nhiều điều kiện tự nhiên thuận lợi cho nông nghiệp, là vùng trồng lúa lớn nhất nước ta.",
         "sources": [
@@ -46,12 +41,7 @@
         "id": "q3",
         "type": "single_choice",
         "prompt": "Mùa mưa ở Nam Bộ kéo dài từ tháng nào đến tháng nào?",
-        "options": [
-          "Từ tháng 12 đến tháng 4 năm sau",
-          "Từ tháng 1 đến tháng 6",
-          "Từ tháng 9 đến tháng 12",
-          "Từ tháng 5 đến tháng 11"
-        ],
+        "options": ["Từ tháng 12 đến tháng 4 năm sau", "Từ tháng 1 đến tháng 6", "Từ tháng 9 đến tháng 12", "Từ tháng 5 đến tháng 11"],
         "answerIndex": 3,
         "explanation": "Mùa mưa từ tháng 5 đến tháng 11; mùa khô từ tháng 12 đến tháng 4 năm sau.",
         "sources": [
@@ -68,12 +58,7 @@
         "id": "q4",
         "type": "single_choice",
         "prompt": "Sông Mê Công chảy về đồng bằng thì chia thành hai sông nào?",
-        "options": [
-          "Sông Hồng và sông Thái Bình",
-          "Sông Đuống và sông Luộc",
-          "Sông Mã và sông Cả",
-          "Sông Tiền và sông Hậu"
-        ],
+        "options": ["Sông Hồng và sông Thái Bình", "Sông Đuống và sông Luộc", "Sông Mã và sông Cả", "Sông Tiền và sông Hậu"],
         "answerIndex": 3,
         "explanation": "Sông Mê Công chảy về đồng bằng thì chia thành sông Tiền và sông Hậu. Trước kia sông đổ ra biển qua chín cửa nên còn gọi là sông Cửu Long.",
         "sources": [
@@ -147,12 +132,7 @@
         "id": "q8",
         "type": "single_choice",
         "prompt": "Chợ nổi Cái Răng thuộc tỉnh, thành phố nào?",
-        "options": [
-          "Thành phố Cần Thơ",
-          "Tỉnh Đồng Tháp",
-          "Tỉnh Vĩnh Long",
-          "Tỉnh An Giang"
-        ],
+        "options": ["Thành phố Cần Thơ", "Tỉnh Đồng Tháp", "Tỉnh Vĩnh Long", "Tỉnh An Giang"],
         "answerIndex": 0,
         "explanation": "Một số chợ nổi lớn: Cái Răng, Phong Điền, Phụng Hiệp, Ngã Năm (thành phố Cần Thơ); Cái Bè (tỉnh Đồng Tháp); Trà Ôn (tỉnh Vĩnh Long).",
         "sources": [
@@ -169,12 +149,7 @@
         "id": "q9",
         "type": "single_choice",
         "prompt": "Trước đây, trang phục phổ biến của người dân Nam Bộ là gì?",
-        "options": [
-          "Áo yếm và váy",
-          "Áo dài và nón quai thao",
-          "Áo bà ba và khăn rằn",
-          "Khố và áo thổ cẩm"
-        ],
+        "options": ["Áo yếm và váy", "Áo dài và nón quai thao", "Áo bà ba và khăn rằn", "Khố và áo thổ cẩm"],
         "answerIndex": 2,
         "explanation": "Trước đây, trang phục phổ biến của người dân Nam Bộ là áo bà ba và khăn rằn.",
         "sources": [
@@ -274,12 +249,7 @@
         "id": "q13",
         "type": "single_choice",
         "prompt": "Địa đạo Củ Chi có mấy tầng?",
-        "options": [
-          "Một tầng",
-          "Ba tầng",
-          "Hai tầng",
-          "Năm tầng"
-        ],
+        "options": ["Một tầng", "Ba tầng", "Hai tầng", "Năm tầng"],
         "answerIndex": 1,
         "explanation": "Địa đạo có ba tầng, từ đường chính toả ra các nhánh dài, ngắn thông với nhau; giữa các tầng có nắp hầm bí mật.",
         "sources": [
@@ -297,11 +267,7 @@
         "type": "map_locate",
         "prompt": "Trên bản đồ vùng có ba điểm A, B, C. Điểm nào là chợ nổi Cái Răng (thành phố Cần Thơ)?",
         "targetItemId": "nam-bo__cho-noi",
-        "candidateItemIds": [
-          "nam-bo__dia-dao",
-          "nam-bo__tphcm-ten-goi",
-          "nam-bo__cho-noi"
-        ],
+        "candidateItemIds": ["nam-bo__dia-dao", "nam-bo__tphcm-ten-goi", "nam-bo__cho-noi"],
         "explanation": "Một số chợ nổi lớn như Cái Răng, Phong Điền thuộc thành phố Cần Thơ. Hàng hoá bán trên ghe, xuồng, chủ yếu là nông sản và đồ dùng cần thiết.",
         "sources": [
           {

@@ -4,9 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "vinh-long",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "nam-bo__cay-an-qua"
-    ],
+    "itemIds": ["nam-bo__cay-an-qua"],
     "alt": "Chiếc ghe chở đầy vỏ dừa đậu bên bờ sông",
     "caption": "Chở vỏ dừa ở Bình Đại (tỉnh Vĩnh Long).",
     "src": {
@@ -42,9 +40,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "vinh-long",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "nam-bo__cay-an-qua"
-    ],
+    "itemIds": ["nam-bo__cay-an-qua"],
     "alt": "Người thợ đang bổ dừa bên cạnh đống dừa khô",
     "caption": "Bổ dừa ở một vườn dừa ven sông Bến Tre (tỉnh Vĩnh Long).",
     "src": {

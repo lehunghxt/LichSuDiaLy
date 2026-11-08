@@ -63,3 +63,11 @@ test('features do not depend on each other in a circle', () => {
   for (const node of graph.keys()) visit(node, [])
   expect([...new Set(cycles)]).toEqual([])
 })
+
+test('outside a feature, code uses it only through features/<x>/index.ts', () => {
+  const deep = imports.filter(({ from, to }) => {
+    const target = featureOf(to)
+    return target !== null && featureOf(from) !== target && to !== `features/${target}/index.ts` && to !== `features/${target}`
+  })
+  expect(deep.map(({ from, to }) => `${from} → ${to}`)).toEqual([])
+})

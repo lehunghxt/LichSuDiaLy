@@ -3,12 +3,8 @@
     "id": "trung-du-mien-nui-phia-bac__den-hung",
     "title": "Khu di tích Đền Hùng",
     "summary": "Khu di tích Đền Hùng chủ yếu thuộc xã Hy Cương, tỉnh Phú Thọ.",
-    "highlights": [
-      "Khu di tích gồm: Đền Hạ, Đền Trung, Đền Thượng, lăng Vua Hùng, đền Quốc Tổ Lạc Long Quân, đền Tổ Mẫu Âu Cơ,…"
-    ],
-    "keyPoints": [
-      "Khu di tích Đền Hùng ở tỉnh Phú Thọ."
-    ],
+    "highlights": ["Khu di tích gồm: Đền Hạ, Đền Trung, Đền Thượng, lăng Vua Hùng, đền Quốc Tổ Lạc Long Quân, đền Tổ Mẫu Âu Cơ,…"],
+    "keyPoints": ["Khu di tích Đền Hùng ở tỉnh Phú Thọ."],
     "provinceId": "phu-tho",
     "images": [],
     "figures": [
@@ -31,10 +27,7 @@
         "caption": "Lăng Hùng Vương trong khu di tích Đền Hùng"
       }
     ],
-    "relatedIds": [
-      "trung-du-mien-nui-phia-bac__le-gio-to",
-      "trung-du-mien-nui-phia-bac__truyen-thuyet-hung-vuong"
-    ],
+    "relatedIds": ["trung-du-mien-nui-phia-bac__le-gio-to", "trung-du-mien-nui-phia-bac__truyen-thuyet-hung-vuong"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 7. Đền Hùng và lễ giỗ Tổ Hùng Vương",
@@ -65,13 +58,8 @@
       "Lễ dâng hương được tổ chức trang trọng, thể hiện đạo lí uống nước nhớ nguồn.",
       "Phần hội có các hoạt động như: thi gói bánh chưng, giã bánh giầy, hát Xoan, đấu vật,…"
     ],
-    "keyPoints": [
-      "Lễ giỗ Tổ Hùng Vương: ngày 10 tháng Ba (âm lịch) hằng năm.",
-      "Lễ giỗ Tổ thể hiện đạo lí uống nước nhớ nguồn."
-    ],
-    "funFacts": [
-      "Câu ca dao: \"Dù ai đi ngược về xuôi / Nhớ ngày giỗ Tổ mồng Mười tháng Ba.\""
-    ],
+    "keyPoints": ["Lễ giỗ Tổ Hùng Vương: ngày 10 tháng Ba (âm lịch) hằng năm.", "Lễ giỗ Tổ thể hiện đạo lí uống nước nhớ nguồn."],
+    "funFacts": ["Câu ca dao: \"Dù ai đi ngược về xuôi / Nhớ ngày giỗ Tổ mồng Mười tháng Ba.\""],
     "images": [],
     "figures": [
       {
@@ -87,10 +75,7 @@
         "caption": "Thi giã bánh giầy"
       }
     ],
-    "relatedIds": [
-      "trung-du-mien-nui-phia-bac__den-hung",
-      "trung-du-mien-nui-phia-bac__truyen-thuyet-hung-vuong"
-    ],
+    "relatedIds": ["trung-du-mien-nui-phia-bac__den-hung", "trung-du-mien-nui-phia-bac__truyen-thuyet-hung-vuong"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 7. Đền Hùng và lễ giỗ Tổ Hùng Vương",
@@ -110,9 +95,7 @@
       "Năm mươi người con theo cha xuống biển, năm mươi người con theo mẹ lên núi.",
       "Người con trưởng theo mẹ được tôn lên làm vua, lấy hiệu là Hùng Vương, đóng đô ở Phong Châu (thuộc tỉnh Phú Thọ ngày nay), đặt tên nước là Văn Lang."
     ],
-    "keyPoints": [
-      "Người Việt Nam thường nhắc đến nguồn gốc của mình là con Rồng cháu Tiên."
-    ],
+    "keyPoints": ["Người Việt Nam thường nhắc đến nguồn gốc của mình là con Rồng cháu Tiên."],
     "images": [],
     "figures": [
       {
@@ -122,10 +105,7 @@
         "caption": "Lăng Hùng Vương trong khu di tích Đền Hùng"
       }
     ],
-    "relatedIds": [
-      "trung-du-mien-nui-phia-bac__den-hung",
-      "trung-du-mien-nui-phia-bac__le-gio-to"
-    ],
+    "relatedIds": ["trung-du-mien-nui-phia-bac__den-hung", "trung-du-mien-nui-phia-bac__le-gio-to"],
     "sources": [
       {
         "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 7. Đền Hùng và lễ giỗ Tổ Hùng Vương",

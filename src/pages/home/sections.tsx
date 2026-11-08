@@ -18,10 +18,9 @@ import {
 } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router'
-import { repository } from '../../features/content/repository'
-import { SECTION_ICONS, SECTION_TILE } from '../../features/content/sectionIcons'
-import { MiniVietnamMap } from '../../features/map/MiniVietnamMap'
-import { useProgress } from '../../features/progress/useProgress'
+import { repository, SECTION_ICONS, SECTION_TILE } from '../../features/content'
+import { MiniVietnamMap } from '../../features/map'
+import { useProgress } from '../../features/progress'
 import { SECTION_LABELS, type ContentItem, type RegionContent, type RegionMeta, type RegionOutline } from '../../types/content'
 
 const card = 'rounded-card bg-surface shadow-[0_8px_30px_rgb(15_23_42/0.08)]'

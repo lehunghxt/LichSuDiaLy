@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { LoadingState } from '../components/ui/states'
-import { imageLibrary } from '../features/images/library'
+import { imageLibrary } from '../features/images'
 import { provinceName } from '../lib/provinces'
 import type { WebImage } from '../types/content'
 

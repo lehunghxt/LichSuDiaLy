@@ -9,4 +9,4 @@ if (problems.length > 0) {
   for (const p of problems) console.error(`  - ${p}`)
   process.exit(1)
 }
-console.log(`Bản build đạt: chunk ban đầu < ${ENTRY_LIMIT_KB}KB gzip, leaflet tải sau, ảnh ≤ ${IMAGE_LIMIT_KB}KB.`)
+console.log(`Bản build đạt: chunk ban đầu < ${ENTRY_LIMIT_KB}KB gzip, leaflet tải sau, Trang chủ không tải khung bản đồ, ảnh ≤ ${IMAGE_LIMIT_KB}KB.`)

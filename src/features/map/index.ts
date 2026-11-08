@@ -1,0 +1,10 @@
+// Cửa chính của tính năng "map": bên ngoài chỉ dùng những gì xuất ra ở đây (src/test/architecture.test.ts)
+export { VietnamMap } from './LazyVietnamMap'
+export { MiniVietnamMap } from './MiniVietnamMap'
+export { RegionList } from './RegionList'
+export { SIDE_PANEL } from './fit'
+export { geoLoader } from './geo'
+export type { AreaCollection, RegionFeatureProps } from './geo'
+export { MapInfoPanel } from './info-panel/MapInfoPanel'
+export { placesOf } from './places'
+export { projectAreas } from './svgMap'

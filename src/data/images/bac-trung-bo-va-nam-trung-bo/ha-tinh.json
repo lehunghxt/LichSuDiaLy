@@ -4,9 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "ha-tinh",
     "section": "thien-nhien",
-    "itemIds": [
-      "bac-trung-bo-va-nam-trung-bo__bai-bien"
-    ],
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__bai-bien"],
     "alt": "Bãi biển cát vàng, có ngọn núi nhô ra biển",
     "caption": "Bãi biển Thiên Cầm (tỉnh Hà Tĩnh).",
     "src": {
@@ -42,9 +40,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "ha-tinh",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "bac-trung-bo-va-nam-trung-bo__cay-trong"
-    ],
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__cay-trong"],
     "alt": "Cánh đồng lúa trong sương sớm, có người và trâu",
     "caption": "Đồng ruộng ở tỉnh Hà Tĩnh.",
     "src": {

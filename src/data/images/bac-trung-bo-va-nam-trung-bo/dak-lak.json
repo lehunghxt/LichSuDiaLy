@@ -77,9 +77,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "dak-lak",
     "section": "van-hoa",
-    "itemIds": [
-      "bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng"
-    ],
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng"],
     "alt": "Sân khấu biểu diễn cồng chiêng về đêm, đông người xem",
     "caption": "Lễ hội Cồng chiêng ở Đắk Lắk (tỉnh Đắk Lắk).",
     "src": {

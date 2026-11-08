@@ -4,9 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": null,
     "section": "thien-nhien",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__dia-hinh"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dia-hinh"],
     "alt": "Con đèo ngoằn ngoèo giữa các dãy núi cao",
     "caption": "Đèo Ô Quy Hồ trên dãy Hoàng Liên Sơn, nối tỉnh Lào Cai và tỉnh Lai Châu.",
     "src": {

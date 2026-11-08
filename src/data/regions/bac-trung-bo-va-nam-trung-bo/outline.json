@@ -6,65 +6,46 @@
         {
           "id": "vi-tri-dia-li-va-ban-do-vung",
           "title": "Vị trí địa lí và bản đồ vùng",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__vi-tri-dia-li"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__vi-tri-dia-li"]
         },
         {
           "id": "dia-hinh",
           "title": "Địa hình",
           "hint": "(núi, đồng bằng ven biển)",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__dia-hinh",
-            "bac-trung-bo-va-nam-trung-bo__dat"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__dia-hinh", "bac-trung-bo-va-nam-trung-bo__dat"]
         },
         {
           "id": "day-truong-son",
           "title": "Dãy Trường Sơn",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__truong-son"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__truong-son"]
         },
         {
           "id": "khi-hau",
           "title": "Khí hậu",
           "hint": "(gió Lào, bão, hạn hán)",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__khi-hau",
-            "bac-trung-bo-va-nam-trung-bo__thien-tai"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__khi-hau", "bac-trung-bo-va-nam-trung-bo__thien-tai"]
         },
         {
           "id": "song-ngoi",
           "title": "Sông ngòi",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__song-ngoi"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__song-ngoi"]
         },
         {
           "id": "bien-dao-va-vinh-bien",
           "title": "Biển, đảo và vịnh biển",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__bien-dao"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__bien-dao"]
         },
         {
           "id": "bai-bien-dep",
           "title": "Bãi biển đẹp",
           "hint": "(Sầm Sơn, Cửa Lò, Mỹ Khê, Nha Trang)",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__bai-bien"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__bai-bien"]
         },
         {
           "id": "canh-quan-thien-nhien",
           "title": "Cảnh quan thiên nhiên",
           "hint": "(động Phong Nha, đèo Hải Vân)",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__rung",
-            "bac-trung-bo-va-nam-trung-bo__phong-nha"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__rung", "bac-trung-bo-va-nam-trung-bo__phong-nha"]
         }
       ]
     },
@@ -74,65 +55,47 @@
         {
           "id": "cac-dan-toc-va-doi-song-dan-cu",
           "title": "Các dân tộc và đời sống dân cư",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__dan-cu"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__dan-cu"]
         },
         {
           "id": "trong-lua-va-cay-cong-nghiep",
           "title": "Trồng lúa và cây công nghiệp",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__cay-trong"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__cay-trong"]
         },
         {
           "id": "danh-bat-hai-san",
           "title": "Đánh bắt và nuôi trồng hải sản",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__hai-san"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__hai-san"]
         },
         {
           "id": "lam-muoi",
           "title": "Làm muối",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__lam-muoi"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__lam-muoi"]
         },
         {
           "id": "du-lich-bien",
           "title": "Du lịch biển",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__du-lich"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__du-lich"]
         },
         {
           "id": "nghe-thu-cong-truyen-thong",
           "title": "Nghề thủ công truyền thống",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__nghe-thu-cong"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__nghe-thu-cong"]
         },
         {
           "id": "chan-nuoi-gia-suc",
           "title": "Chăn nuôi gia súc",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__chan-nuoi"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__chan-nuoi"]
         },
         {
           "id": "thuy-dien-dien-gio-dien-mat-troi",
           "title": "Thuỷ điện, điện gió và điện mặt trời",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__thuy-dien"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__thuy-dien"]
         },
         {
           "id": "giao-thong-duong-bien",
           "title": "Giao thông đường biển",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__giao-thong-bien"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__giao-thong-bien"]
         }
       ]
     },
@@ -142,87 +105,62 @@
         {
           "id": "le-hoi-cau-ngu",
           "title": "Lễ hội Cầu ngư",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__ruoc-ca-ong"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__ruoc-ca-ong"]
         },
         {
           "id": "le-hoi-ka-te-cua-nguoi-cham",
           "title": "Lễ hội Ka-tê của người Chăm",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__ka-te"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__ka-te"]
         },
         {
           "id": "thap-cham-va-van-hoa-cham",
           "title": "Tháp Chăm và văn hóa Chăm",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__my-son"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__my-son"]
         },
         {
           "id": "nghe-thuat-bai-choi",
           "title": "Nghệ thuật Bài chòi",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__bai-choi"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__bai-choi"]
         },
         {
           "id": "dan-ca-vi-giam-nghe-tinh",
           "title": "Dân ca Ví, Giặm Nghệ Tĩnh",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__vi-giam"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__vi-giam"]
         },
         {
           "id": "trang-phuc-truyen-thong",
           "title": "Trang phục truyền thống",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__ao-dai-non-la"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__ao-dai-non-la"]
         },
         {
           "id": "am-thuc-mien-trung",
           "title": "Ẩm thực miền Trung",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__am-thuc"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__am-thuc"]
         },
         {
           "id": "di-san-the-gioi",
           "title": "Di sản thế giới",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__di-san-the-gioi"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__di-san-the-gioi"]
         },
         {
           "id": "le-hoi-khao-le-the-linh-hoang-sa",
           "title": "Lễ Khao lề thế lính Hoàng Sa",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__khao-le"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__khao-le"]
         },
         {
           "id": "le-hoi-dua-voi",
           "title": "Lễ hội Đua voi",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__dua-voi"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__dua-voi"]
         },
         {
           "id": "nha-o-va-nha-sinh-hoat-cong-dong",
           "title": "Nhà ở và nhà sinh hoạt cộng đồng",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__nha-o"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__nha-o"]
         },
         {
           "id": "le-hoi-cong-chieng-tay-nguyen",
           "title": "Lễ hội Cồng chiêng Tây Nguyên",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__khong-gian-cong-chieng",
-            "bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__khong-gian-cong-chieng", "bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng"]
         }
       ]
     },
@@ -251,10 +189,7 @@
         {
           "id": "pho-co-hoi-an",
           "title": "Phố cổ Hội An",
-          "itemIds": [
-            "bac-trung-bo-va-nam-trung-bo__hoi-an",
-            "bac-trung-bo-va-nam-trung-bo__bao-ton-hoi-an"
-          ]
+          "itemIds": ["bac-trung-bo-va-nam-trung-bo__hoi-an", "bac-trung-bo-va-nam-trung-bo__bao-ton-hoi-an"]
         }
       ]
     }

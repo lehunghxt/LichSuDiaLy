@@ -4,9 +4,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
     "section": "thien-nhien",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dinh-phan-xi-pang"],
     "cover": true,
     "alt": "Khu đỉnh Phan-xi-păng nhìn từ trên cao, phía dưới là biển mây",
     "caption": "Khu đỉnh Phan-xi-păng trên biển mây, Sa Pa (tỉnh Lào Cai).",
@@ -44,9 +42,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
     "section": "thien-nhien",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__dinh-phan-xi-pang"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dinh-phan-xi-pang"],
     "alt": "Chóp mốc bằng đá trên đỉnh Phan-xi-păng giữa sương mù",
     "caption": "Mốc đỉnh Phan-xi-păng (tỉnh Lào Cai).",
     "src": {
@@ -83,9 +79,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__ruong-bac-thang"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__ruong-bac-thang"],
     "alt": "Ruộng bậc thang xanh trên sườn đồi ở Sa Pa",
     "caption": "Ruộng bậc thang giữa Sa Pa và Tả Phìn (tỉnh Lào Cai).",
     "src": {
@@ -122,9 +116,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
     "section": "van-hoa",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__cho-phien"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__cho-phien"],
     "alt": "Phụ nữ Mông mặc trang phục sặc sỡ bày hàng ở chợ",
     "caption": "Một phiên chợ Bắc Hà (tỉnh Lào Cai).",
     "src": {
@@ -160,9 +152,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__dan-toc"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dan-toc"],
     "alt": "Các phụ nữ Mông mặc áo chàm ngồi khâu vá trước nhà",
     "caption": "Phụ nữ người Mông ở Sa Pa (tỉnh Lào Cai).",
     "src": {
@@ -199,9 +189,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__dan-toc"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dan-toc"],
     "alt": "Hai phụ nữ Dao đỏ đội khăn đỏ",
     "caption": "Phụ nữ người Dao đỏ ở Sa Pa (tỉnh Lào Cai).",
     "src": {
@@ -238,9 +226,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
     "section": "dan-cu-san-xuat",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__ruong-bac-thang"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__ruong-bac-thang"],
     "alt": "Ruộng bậc thang mùa đổ nước trên sườn núi",
     "caption": "Ruộng bậc thang mùa đổ nước ở xã Dế Xu Phình, Mù Cang Chải (tỉnh Lào Cai, trước đây thuộc tỉnh Yên Bái).",
     "src": {
@@ -276,9 +262,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
     "section": "thien-nhien",
-    "itemIds": [
-      "trung-du-mien-nui-phia-bac__dia-hinh"
-    ],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dia-hinh"],
     "alt": "Đường mòn đá giữa rừng, phía sau là các đỉnh núi đá trong mây",
     "caption": "Dãy Hoàng Liên Sơn nhìn từ đường mòn lên đỉnh Phan-xi-păng (tỉnh Lào Cai).",
     "src": {
