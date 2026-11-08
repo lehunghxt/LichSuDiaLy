@@ -1,8 +1,8 @@
 import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router'
-import { ProgressProvider } from '../features/progress/ProgressProvider'
-import { PROGRESS_KEY } from '../features/progress/progress'
+import { ProgressProvider } from '../../features/progress/ProgressProvider'
+import { PROGRESS_KEY } from '../../features/progress/progress'
 import ProgressPage from './ProgressPage'
 
 function seed() {

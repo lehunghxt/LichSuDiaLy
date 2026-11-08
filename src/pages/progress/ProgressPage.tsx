@@ -1,11 +1,11 @@
 import { BookOpenCheck, Eye, Map, Star, Trash2, Trophy, type LucideIcon } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router'
-import { ConfirmDialog } from '../components/ui/ConfirmDialog'
-import { repository } from '../features/content'
-import { type QuizRecord, useProgress } from '../features/progress'
-import type { ContentItem } from '../types/content'
-import { GRID } from '../components/ui/grid'
+import { ConfirmDialog } from '../../components/ui/ConfirmDialog'
+import { repository } from '../../features/content'
+import { type QuizRecord, useProgress } from '../../features/progress'
+import type { ContentItem } from '../../types/content'
+import { GRID } from '../../components/ui/grid'
 
 function Stat({ icon: Icon, label, value }: { icon: LucideIcon; label: string; value: string }) {
   return (

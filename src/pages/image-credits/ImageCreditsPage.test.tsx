@@ -1,9 +1,9 @@
 import { render, screen, within } from '@testing-library/react'
 import { createMemoryRouter, RouterProvider } from 'react-router'
-import { routes } from '../app/router'
+import { routes } from '../../app/router'
 
-vi.mock('../features/images/library', async (importOriginal) => {
-  const orig = await importOriginal<typeof import('../features/images/library')>()
+vi.mock('../../features/images/library', async (importOriginal) => {
+  const orig = await importOriginal<typeof import('../../features/images/library')>()
   const img = {
     id: 'can-tho__cho',
     provider: 'wikimedia-commons',

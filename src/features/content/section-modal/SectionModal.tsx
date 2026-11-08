@@ -1,4 +1,5 @@
 import { useEffect, useId, useRef } from 'react'
+import { ByDevice } from '../../../components/layout/ByDevice'
 import { useDevice } from '../../../lib/device'
 import type { ContentItem, RegionMeta, RegionOutline, SectionId, WebImage } from '../../../types/content'
 import { findTopic } from '../outlineNav'
@@ -72,7 +73,11 @@ export function SectionModal(props: SectionModalProps) {
     closeRef,
     detailRef,
   }
-  if (device === 'mobile') return <MobileSectionModal view={view} />
-  if (device === 'tablet') return <TabletSectionModal view={view} />
-  return <DesktopSectionModal view={view} />
+  return (
+    <ByDevice
+      mobile={<MobileSectionModal view={view} />}
+      tablet={<TabletSectionModal view={view} />}
+      desktop={<DesktopSectionModal view={view} />}
+    />
+  )
 }

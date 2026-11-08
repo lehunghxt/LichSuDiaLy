@@ -1,7 +1,7 @@
 import { Suspense, useEffect, useState } from 'react'
 import { Link } from 'react-router'
 import { useNavigate, useParams, useSearchParams } from 'react-router'
-import { LoadingState } from '../components/ui/states'
+import { LoadingState } from '../../components/ui/states'
 import {
   findTopic,
   isSection,
@@ -13,16 +13,16 @@ import {
   topicSearch,
   useRegionContent,
   useRegionOutline,
-} from '../features/content'
-import { useRegionImages } from '../features/images'
-import { MapInfoPanel, placesOf, RegionList, VietnamMap } from '../features/map'
-import type { Snap } from '../components/sheet/SnapSheet'
-import { useProgress } from '../features/progress'
-import { useDevice } from '../lib/device'
-import type { ContentItem, SectionId } from '../types/content'
-import { DesktopMapLayout } from './map/DesktopMapLayout'
-import { MobileMapLayout } from './map/MobileMapLayout'
-import { TabletMapLayout } from './map/TabletMapLayout'
+} from '../../features/content'
+import { useRegionImages } from '../../features/images'
+import { MapInfoPanel, placesOf, RegionList, VietnamMap } from '../../features/map'
+import type { Snap } from '../../components/sheet/SnapSheet'
+import { useProgress } from '../../features/progress'
+import { ByDevice } from '../../components/layout/ByDevice'
+import type { ContentItem, SectionId } from '../../types/content'
+import { DesktopMapLayout } from './DesktopMapLayout'
+import { MobileMapLayout } from './MobileMapLayout'
+import { TabletMapLayout } from './TabletMapLayout'
 
 export default function MapPage() {
   const { regionId } = useParams()
@@ -54,7 +54,6 @@ export default function MapPage() {
     navigate({ search: t ? topicSearch(t.section, t.topicId, t.slug) : '' }, { replace: true })
   }, [legacyTopic, legacySlug, outline, navigate])
 
-  const device = useDevice()
   // Điện thoại: mức mở của bottom sheet thông tin vùng
   const [snap, setSnap] = useState<Snap>('half')
 
@@ -138,19 +137,19 @@ export default function MapPage() {
   return (
     <>
       <h1 className="sr-only">Bản đồ khám phá</h1>
-      {device === 'desktop' && <DesktopMapLayout map={map} chips={chips} panel={panel} />}
-      {device === 'tablet' && (
-        <TabletMapLayout
-          map={map}
-          chips={chips}
-          panel={panel}
-          panelOpen={regionId !== undefined}
-          onClosePanel={() => navigate('/ban-do')}
-        />
-      )}
-      {device === 'mobile' && (
-        <MobileMapLayout map={map} chips={chips} panel={panel} sheetOpen={regionId !== undefined} snap={snap} onSnap={setSnap} />
-      )}
+      <ByDevice
+        mobile={<MobileMapLayout map={map} chips={chips} panel={panel} sheetOpen={regionId !== undefined} snap={snap} onSnap={setSnap} />}
+        tablet={
+          <TabletMapLayout
+            map={map}
+            chips={chips}
+            panel={panel}
+            panelOpen={regionId !== undefined}
+            onClosePanel={() => navigate('/ban-do')}
+          />
+        }
+        desktop={<DesktopMapLayout map={map} chips={chips} panel={panel} />}
+      />
       {modalOpen && (
         <SectionModal
           region={region}

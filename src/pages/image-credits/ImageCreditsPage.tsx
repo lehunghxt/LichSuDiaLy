@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { LoadingState } from '../components/ui/states'
-import { imageLibrary } from '../features/images'
-import { provinceName } from '../lib/provinces'
-import type { WebImage } from '../types/content'
+import { LoadingState } from '../../components/ui/states'
+import { imageLibrary } from '../../features/images'
+import { provinceName } from '../../lib/provinces'
+import type { WebImage } from '../../types/content'
 
 const external = { target: '_blank', rel: 'noopener noreferrer' } as const
 const link = 'text-primary underline decoration-dotted underline-offset-2 hover:text-primary-dark'

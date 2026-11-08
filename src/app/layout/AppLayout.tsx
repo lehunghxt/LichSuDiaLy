@@ -1,17 +1,14 @@
 import { Suspense } from 'react'
 import { Outlet, useMatch } from 'react-router'
 import { ProgressProvider } from '../../features/progress'
-import { useDevice } from '../../lib/device'
+import { ByDevice } from '../../components/layout/ByDevice'
 import { LoadingState } from '../../components/ui/states'
 import { DesktopSiteLayout } from './DesktopSiteLayout'
 import { MobileSiteLayout } from './MobileSiteLayout'
 import { TabletSiteLayout } from './TabletSiteLayout'
 
-const SITE_LAYOUT = { mobile: MobileSiteLayout, tablet: TabletSiteLayout, desktop: DesktopSiteLayout }
-
 /** Khung trang: mỗi thiết bị một bố cục (header, menu, chân trang). Trang bản đồ tự lo bố cục toàn màn hình */
 export function AppLayout() {
-  const device = useDevice()
   const fullScreen = useMatch('/ban-do/*') !== null
   const page = (
     <Suspense fallback={<LoadingState />}>
@@ -27,10 +24,13 @@ export function AppLayout() {
       </ProgressProvider>
     )
   }
-  const SiteLayout = SITE_LAYOUT[device]
   return (
     <ProgressProvider>
-      <SiteLayout>{page}</SiteLayout>
+      <ByDevice
+        mobile={<MobileSiteLayout>{page}</MobileSiteLayout>}
+        tablet={<TabletSiteLayout>{page}</TabletSiteLayout>}
+        desktop={<DesktopSiteLayout>{page}</DesktopSiteLayout>}
+      />
     </ProgressProvider>
   )
 }

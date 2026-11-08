@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import { EmptyState } from '../components/ui/states'
+import { EmptyState } from '../../components/ui/states'
 
 export default function NotFoundPage() {
   return (

@@ -1,9 +1,9 @@
 import { ArrowLeft } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router'
-import { EmptyState, ErrorState, LoadingState } from '../components/ui/states'
-import { itemSlug, repository } from '../features/content'
-import type { ContentItem } from '../types/content'
+import { EmptyState, ErrorState, LoadingState } from '../../components/ui/states'
+import { itemSlug, repository } from '../../features/content'
+import type { ContentItem } from '../../types/content'
 
 type State = { status: 'loading' } | { status: 'not_found' } | { status: 'error' } | { status: 'ready'; item: ContentItem }
 

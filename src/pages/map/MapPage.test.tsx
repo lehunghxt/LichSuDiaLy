@@ -1,12 +1,12 @@
 import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { createMemoryRouter, RouterProvider } from 'react-router'
-import { routes } from '../app/router'
-import { PROGRESS_KEY } from '../features/progress/progress'
-import { setViewportWidth } from '../test/viewport'
+import { routes } from '../../app/router'
+import { PROGRESS_KEY } from '../../features/progress/progress'
+import { setViewportWidth } from '../../test/viewport'
 
 // Leaflet cần trình duyệt thật; trong test thay bằng bản giả giữ nguyên các callback
-vi.mock('../features/map/VietnamMap', () => ({
+vi.mock('../../features/map/VietnamMap', () => ({
   default: (props: {
     selectedRegionId: string | null
     onSelectRegion(id: string): void
@@ -43,14 +43,14 @@ vi.mock('../features/map/VietnamMap', () => ({
 }))
 
 // Mọi vùng thật đều đã có nội dung; giả lập Nam Bộ "sắp ra mắt" để giữ test cho trạng thái này
-vi.mock('../data/regions.json', async (importOriginal) => {
+vi.mock('../../data/regions.json', async (importOriginal) => {
   const orig = await importOriginal<{ default: { id: string; status: string }[] }>()
   return { default: orig.default.map((r) => (r.id === 'nam-bo' ? { ...r, status: 'coming_soon' } : r)) }
 })
 
 // Thư viện ảnh giả: 1 ảnh bìa (Lào Cai), 1 ảnh Đền Hùng (Phú Thọ), 1 ảnh Cần Thơ (vùng sắp ra mắt)
-vi.mock('../features/images/library', async (importOriginal) => {
-  const orig = await importOriginal<typeof import('../features/images/library')>()
+vi.mock('../../features/images/library', async (importOriginal) => {
+  const orig = await importOriginal<typeof import('../../features/images/library')>()
   const img = (id: string, provinceId: string, section: string, alt: string, itemIds: string[] = []) => ({
     id,
     provider: 'wikimedia-commons',

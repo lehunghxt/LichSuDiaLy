@@ -1,12 +1,12 @@
 import { BookOpen, FileText, Images, MapPinned } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link } from 'react-router'
-import { EmptyState, LoadingState } from '../components/ui/states'
-import { repository } from '../features/content'
-import { imageLibrary } from '../features/images'
-import { collectSources, type SourceRow } from '../features/sources'
-import { SGK_URL, sgkPageUrl } from '../lib/sources'
-import { GRID } from '../components/ui/grid'
+import { EmptyState, LoadingState } from '../../components/ui/states'
+import { repository } from '../../features/content'
+import { imageLibrary } from '../../features/images'
+import { collectSources, type SourceRow } from '../../features/sources'
+import { SGK_URL, sgkPageUrl } from '../../lib/sources'
+import { GRID } from '../../components/ui/grid'
 
 const external = { target: '_blank', rel: 'noopener noreferrer' } as const
 const link = 'text-primary underline decoration-dotted underline-offset-2 hover:text-primary-dark'

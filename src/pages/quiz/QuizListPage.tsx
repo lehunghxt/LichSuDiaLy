@@ -1,9 +1,9 @@
 import { BookOpenCheck, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router'
-import { EmptyState, ErrorState, LoadingState } from '../components/ui/states'
-import { useProgress } from '../features/progress'
-import { useQuizList } from '../features/quiz'
-import { GRID } from '../components/ui/grid'
+import { EmptyState, ErrorState, LoadingState } from '../../components/ui/states'
+import { useProgress } from '../../features/progress'
+import { useQuizList } from '../../features/quiz'
+import { GRID } from '../../components/ui/grid'
 
 export default function QuizListPage() {
   const { status, quizzes } = useQuizList()

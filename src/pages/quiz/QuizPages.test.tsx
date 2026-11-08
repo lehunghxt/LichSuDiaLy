@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { createMemoryRouter, RouterProvider } from 'react-router'
-import { PROGRESS_KEY } from '../features/progress/progress'
-import { routes } from '../app/router'
+import { PROGRESS_KEY } from '../../features/progress/progress'
+import { routes } from '../../app/router'
 
-vi.mock('../features/content/repository', async (importOriginal) => {
-  const mod = await importOriginal<typeof import('../features/content/repository')>()
-  const { rawRegionContent } = await import('../test/fixtures')
+vi.mock('../../features/content/repository', async (importOriginal) => {
+  const mod = await importOriginal<typeof import('../../features/content/repository')>()
+  const { rawRegionContent } = await import('../../test/fixtures')
   const raw = rawRegionContent()
   const empty = {
     ...rawRegionContent(),

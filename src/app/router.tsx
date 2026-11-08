@@ -3,16 +3,16 @@ import type { RouteObject } from 'react-router'
 import { AppLayout } from './layout/AppLayout'
 import { RouteError } from './RouteError'
 
-const HomePage = lazy(() => import('../pages/HomePage'))
-const MapPage = lazy(() => import('../pages/MapPage'))
-const RegionPage = lazy(() => import('../pages/RegionPage'))
-const ItemPage = lazy(() => import('../pages/ItemPage'))
-const QuizListPage = lazy(() => import('../pages/QuizListPage'))
-const QuizPage = lazy(() => import('../pages/QuizPage'))
-const ProgressPage = lazy(() => import('../pages/ProgressPage'))
-const ImageCreditsPage = lazy(() => import('../pages/ImageCreditsPage'))
-const SourcesPage = lazy(() => import('../pages/SourcesPage'))
-const NotFoundPage = lazy(() => import('../pages/NotFoundPage'))
+const HomePage = lazy(() => import('../pages/home/HomePage'))
+const MapPage = lazy(() => import('../pages/map/MapPage'))
+const RegionPage = lazy(() => import('../pages/region/RegionPage'))
+const ItemPage = lazy(() => import('../pages/item/ItemPage'))
+const QuizListPage = lazy(() => import('../pages/quiz/QuizListPage'))
+const QuizPage = lazy(() => import('../pages/quiz/QuizPage'))
+const ProgressPage = lazy(() => import('../pages/progress/ProgressPage'))
+const ImageCreditsPage = lazy(() => import('../pages/image-credits/ImageCreditsPage'))
+const SourcesPage = lazy(() => import('../pages/sources/SourcesPage'))
+const NotFoundPage = lazy(() => import('../pages/not-found/NotFoundPage'))
 
 export const routes: RouteObject[] = [
   {

@@ -1,7 +1,7 @@
 import { render, screen, within } from '@testing-library/react'
 import { createMemoryRouter, RouterProvider } from 'react-router'
-import { routes } from '../app/router'
-import { SGK_URL, sgkPageUrl } from '../lib/sources'
+import { routes } from '../../app/router'
+import { SGK_URL, sgkPageUrl } from '../../lib/sources'
 
 function renderAt(path: string) {
   const router = createMemoryRouter(routes, { initialEntries: [path] })
