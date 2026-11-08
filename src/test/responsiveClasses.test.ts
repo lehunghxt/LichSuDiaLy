@@ -8,8 +8,8 @@ const SRC = path.resolve(import.meta.dirname, '..')
 // Container query (@md:, @lg:…) được phép: component đổi theo khung chứa nó, không theo thiết bị
 const RESPONSIVE = /(?<![\w/:@-])(?:sm|md|lg|xl|2xl):[\w[-]/
 
-/** File bố cục: <Thiết bị>Xxx.tsx hoặc XxxLayout.tsx */
-const isLayoutFile = (file: string) => /^(Mobile|Tablet|Desktop)[A-Z]\w*\.tsx$|Layout\.tsx$/.test(path.basename(file))
+/** File bố cục: Xxx.<thiết bị>.tsx (Home.mobile.tsx, MapLayout.desktop.tsx…) hoặc XxxLayout.tsx */
+const isLayoutFile = (file: string) => /\.(mobile|tablet|desktop)\.tsx$|Layout\.tsx$/.test(path.basename(file))
 
 // File chưa tách theo thiết bị (tạm cho phép). Hiện không còn file nào; danh sách này chỉ được rút ngắn.
 const PENDING = new Set<string>([])
@@ -32,4 +32,11 @@ test('responsive classes only appear in per-device layout files', () => {
 
 test('the pending list only names files that still need splitting (remove a file once it is done)', () => {
   expect([...PENDING].filter((f) => !offenders.includes(f))).toEqual([])
+})
+
+test('per-device files are named <Name>.<mobile|tablet|desktop>.tsx, not <Device><Name>.tsx', () => {
+  const oldStyle = tsxFiles(SRC)
+    .map((f) => path.basename(f))
+    .filter((f) => /^(Mobile|Tablet|Desktop|Centered|Lightbox)[A-Z]\w*\.tsx$/.test(f))
+  expect(oldStyle).toEqual([])
 })

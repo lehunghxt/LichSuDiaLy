@@ -1,5 +1,5 @@
 // Các khối của Trang chủ, dùng chung cho mọi thiết bị. Không chứa lớp responsive (sm:/md:/lg:):
-// cách xếp khác nhau chọn qua prop; file Mobile/Tablet/DesktopHome quyết định.
+// cách xếp khác nhau chọn qua prop; file Home.mobile/tablet/desktop.tsx quyết định.
 import {
   ArrowRight,
   BookOpenCheck,

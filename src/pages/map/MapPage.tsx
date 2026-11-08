@@ -20,9 +20,9 @@ import type { Snap } from '../../components/sheet/SnapSheet'
 import { useProgress } from '../../features/progress'
 import { ByDevice } from '../../components/layout/ByDevice'
 import type { ContentItem, SectionId } from '../../types/content'
-import { DesktopMapLayout } from './DesktopMapLayout'
-import { MobileMapLayout } from './MobileMapLayout'
-import { TabletMapLayout } from './TabletMapLayout'
+import { DesktopMapLayout } from './MapLayout.desktop'
+import { MobileMapLayout } from './MapLayout.mobile'
+import { TabletMapLayout } from './MapLayout.tablet'
 
 export default function MapPage() {
   const { regionId } = useParams()

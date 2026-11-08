@@ -1,6 +1,6 @@
 import { ByDevice } from '../layout/ByDevice'
-import { CenteredConfirmDialog } from './confirm-dialog/CenteredConfirmDialog'
-import { MobileConfirmDialog } from './confirm-dialog/MobileConfirmDialog'
+import { CenteredConfirmDialog } from './confirm-dialog/ConfirmDialog.desktop'
+import { MobileConfirmDialog } from './confirm-dialog/ConfirmDialog.mobile'
 import type { ConfirmDialogProps } from './confirm-dialog/parts'
 
 /** Hộp xác nhận một việc khó hoàn tác. Điện thoại: bottom sheet; máy tính bảng, desktop: hộp giữa màn hình */

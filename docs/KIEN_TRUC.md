@@ -15,7 +15,7 @@ Tầng trên được dùng tầng dưới. Tầng dưới không bao giờ dùn
 | Thư mục | Chứa gì | Được dùng |
 |---|---|---|
 | `main.tsx`, `app/` | Khởi động, đường dẫn (`router.tsx`), khung trang theo thiết bị (`app/layout/`: header, menu, chân trang) | mọi tầng |
-| `pages/<trang>/` | Mỗi trang một thư mục: `XxxPage.tsx` (lấy dữ liệu, giữ trạng thái), các file bố cục `Mobile…`/`Tablet…`/`Desktop…`, và test của trang | features, components, lib, types, data |
+| `pages/<trang>/` | Mỗi trang một thư mục: `XxxPage.tsx` (lấy dữ liệu, giữ trạng thái), các file bố cục `Xxx.mobile.tsx`/`Xxx.tablet.tsx`/`Xxx.desktop.tsx`, và test của trang | features, components, lib, types, data |
 | `features/<tính năng>/` | Nghiệp vụ: `content` (bài học, khung xem bài), `map` (bản đồ, khung thông tin), `quiz`, `progress`, `images`, `sources` | features khác (qua `index.ts`), components, lib, types, data |
 | `components/` | Khối giao diện chung, không biết gì về bài học: `sheet/` (bottom sheet), `dialog/`, `ui/`, `layout/` (`ByDevice`, thanh tab) | components, lib, types |
 | `lib/` | Tiện ích thuần: `device.ts` (thiết bị), `validate.ts` (kiểm tra JSON), `publishing.ts` (nháp/đã duyệt), `provinces.ts` | lib, types, data |
@@ -31,7 +31,7 @@ Tầng trên được dùng tầng dưới. Tầng dưới không bao giờ dùn
 | Phụ thuộc chỉ đi xuống (bảng trên) | Khối chung không bị buộc vào một tính năng; đổi tính năng không làm vỡ khối chung | `src/test/architecture.test.ts` |
 | Tính năng không phụ thuộc vòng tròn vào nhau | Sửa một bên không làm vỡ bên kia; vẫn tách và tải riêng được | `src/test/architecture.test.ts` |
 | Bên ngoài chỉ dùng tính năng qua `features/<x>/index.ts` | Bên trong tính năng sắp xếp lại thoải mái, chỉ cần giữ "cửa chính" | `src/test/architecture.test.ts` |
-| Lớp responsive (`sm:`, `md:`, `lg:`…) chỉ có trong file bố cục `Mobile*`/`Tablet*`/`Desktop*`/`*Layout.tsx` | Sửa giao diện một thiết bị không lan sang thiết bị khác. Component dùng chung đổi kiểu bằng prop hoặc container query (`@md:`) | `src/test/responsiveClasses.test.ts` |
+| Lớp responsive (`sm:`, `md:`, `lg:`…) chỉ có trong file bố cục `*.mobile.tsx`/`*.tablet.tsx`/`*.desktop.tsx`/`*Layout.tsx` | Sửa giao diện một thiết bị không lan sang thiết bị khác. Component dùng chung đổi kiểu bằng prop hoặc container query (`@md:`) | `src/test/responsiveClasses.test.ts` |
 | Chọn bố cục theo thiết bị bằng `<ByDevice mobile tablet desktop />` (`tablet` bỏ trống thì dùng `desktop`) | Một cách duy nhất, đổi ngay khi xoay máy | đọc code (chỉ `ByDevice` so sánh thiết bị) |
 | Lớp chồng dùng tên (`z-map-ui` < `z-overlay` < `z-nav` < `z-dialog` < `z-viewer`), không viết số `z-[…]` | Thêm lớp mới không đè sai thứ tự | `src/test/zLayers.test.ts` |
 | Trang chủ không tải code của trang bản đồ; Leaflet chỉ tải ở trang bản đồ; chunk ban đầu < 150KB gzip | Trang đầu mở nhanh trên điện thoại | `scripts/check-dist.mjs` (trong `npm run verify`) |
@@ -44,10 +44,14 @@ Lưu ý về `index.ts`: `vite.config.ts` khai báo các file này "không có t
   - `mobile`: dưới 768px;
   - `tablet`: 768–1023px;
   - `desktop`: từ 1024px.
-- Mỗi màn hình có khác biệt giữa các thiết bị thì có ba file `Mobile…`, `Tablet…`, `Desktop…` đặt cạnh component chọn chúng:
-  - trang: `pages/<trang>/`;
-  - khung xem bài: `features/content/section-modal/`;
-  - khung trang: `app/layout/`.
+- Mỗi màn hình có khác biệt giữa các thiết bị thì có các file `<Tên>.mobile.tsx`, `<Tên>.tablet.tsx`, `<Tên>.desktop.tsx` đặt cạnh component chọn chúng (bằng `ByDevice`):
+  - trang chủ: `pages/home/Home.{mobile,tablet,desktop}.tsx`;
+  - bản đồ: `pages/map/MapLayout.{mobile,tablet,desktop}.tsx`;
+  - khung xem bài: `features/content/section-modal/SectionModal.{mobile,tablet,desktop}.tsx`;
+  - khung trang: `app/layout/SiteLayout.{mobile,tablet,desktop}.tsx`;
+  - hộp xác nhận, xem ảnh: `components/ui/confirm-dialog/ConfirmDialog.{mobile,desktop}.tsx`, `components/ui/image-viewer/ImageViewer.{mobile,desktop}.tsx` (máy tính bảng dùng bản desktop).
+- Thiết bị nào giống thiết bị khác thì không cần file riêng: `ByDevice` cho máy tính bảng dùng bản desktop khi không có bản tablet.
+- Tên file theo màn hình, tên component bên trong theo thiết bị (`Home.mobile.tsx` xuất `MobileHome`). Test `src/test/responsiveClasses.test.ts` chặn kiểu tên cũ `MobileXxx.tsx`.
 - File bố cục chỉ sắp đặt. Trạng thái và logic nằm ở component cha.
 - Trên điện thoại ưu tiên tấm trượt, dùng `components/sheet/`:
   - `BottomSheet`: dạng hộp thoại (khung xem bài, xác nhận, xem ảnh);

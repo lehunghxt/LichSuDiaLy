@@ -1,8 +1,8 @@
 import { repository, useRegionContent, useRegionOutline } from '../../features/content'
 import { ByDevice } from '../../components/layout/ByDevice'
-import { DesktopHome } from './DesktopHome'
-import { MobileHome } from './MobileHome'
-import { TabletHome } from './TabletHome'
+import { DesktopHome } from './Home.desktop'
+import { MobileHome } from './Home.mobile'
+import { TabletHome } from './Home.tablet'
 import type { HomeView } from './view'
 
 /** Trang chủ: lấy dữ liệu một lần, mỗi thiết bị một bố cục (pages/home/*Home.tsx) */

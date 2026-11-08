@@ -3,10 +3,10 @@ import { ByDevice } from '../../../components/layout/ByDevice'
 import { useDevice } from '../../../lib/device'
 import type { ContentItem, RegionMeta, RegionOutline, SectionId, WebImage } from '../../../types/content'
 import { findTopic } from '../outlineNav'
-import { DesktopSectionModal } from './DesktopSectionModal'
-import { MobileSectionModal } from './MobileSectionModal'
+import { DesktopSectionModal } from './SectionModal.desktop'
+import { MobileSectionModal } from './SectionModal.mobile'
 import type { SectionModalView } from './parts'
-import { TabletSectionModal } from './TabletSectionModal'
+import { TabletSectionModal } from './SectionModal.tablet'
 
 interface SectionModalProps {
   region: RegionMeta
