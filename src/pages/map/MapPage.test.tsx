@@ -208,7 +208,7 @@ test('with a province selected, province and region info are separate tabs; the 
   const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
   // chưa chọn tỉnh: chỉ có thông tin vùng, không có tab
   expect(within(panel).queryByRole('tablist')).toBeNull()
-  expect(within(panel).getByRole('navigation', { name: 'Dàn ý vùng' })).toBeInTheDocument()
+  expect(await within(panel).findByRole('navigation', { name: 'Dàn ý vùng' })).toBeInTheDocument()
 
   await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
   const tabs = within(panel).getByRole('tablist', { name: 'Xem thông tin' })
