@@ -212,9 +212,11 @@ test('with a province selected, province and region info are separate tabs; the 
 
   await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
   const tabs = within(panel).getByRole('tablist', { name: 'Xem thông tin' })
-  const provinceTab = within(tabs).getByRole('tab', { name: /Tỉnh.*Phú Thọ/ })
-  const regionTab = within(tabs).getByRole('tab', { name: /^Vùng/ })
+  const provinceTab = within(tabs).getByRole('tab', { name: 'Tỉnh Phú Thọ' })
+  const regionTab = within(tabs).getByRole('tab', { name: 'Cả vùng' })
   expect(provinceTab).toHaveAttribute('aria-selected', 'true')
+  // nhãn ngắn một dòng; tên vùng đầy đủ khi rê chuột
+  expect(regionTab).toHaveAttribute('title', 'Thông tin vùng Trung du và miền núi phía Bắc')
   expect(within(panel).getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })).toBeInTheDocument()
   expect(within(panel).queryByRole('navigation', { name: 'Dàn ý vùng' })).toBeNull()
   expect(within(panel).queryByRole('list', { name: 'Một số địa điểm tiêu biểu' })).toBeNull()
@@ -226,7 +228,7 @@ test('with a province selected, province and region info are separate tabs; the 
 
   // chọn tỉnh khác (cùng vùng) thì về lại tab tỉnh của tỉnh mới
   await userEvent.click(screen.getByRole('button', { name: 'polygon-lai-chau' }))
-  expect(within(panel).getByRole('tab', { name: /Tỉnh.*Lai Châu/ })).toHaveAttribute('aria-selected', 'true')
+  expect(within(panel).getByRole('tab', { name: 'Tỉnh Lai Châu' })).toHaveAttribute('aria-selected', 'true')
   expect(within(panel).getByRole('region', { name: 'Tỉnh đang xem: Lai Châu' })).toBeInTheDocument()
   expect(within(panel).queryByRole('navigation', { name: 'Dàn ý vùng' })).toBeNull()
 })
@@ -236,7 +238,7 @@ test('"Thuộc vùng …" in the province card switches to the region tab', asyn
   const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
   await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
   await userEvent.click(within(panel).getByRole('button', { name: /Xem thông tin vùng/ }))
-  expect(within(panel).getByRole('tab', { name: /^Vùng/ })).toHaveAttribute('aria-selected', 'true')
+  expect(within(panel).getByRole('tab', { name: 'Cả vùng' })).toHaveAttribute('aria-selected', 'true')
   expect(within(panel).getByRole('navigation', { name: 'Dàn ý vùng' })).toBeInTheDocument()
 })
 
