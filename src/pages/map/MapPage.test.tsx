@@ -199,11 +199,45 @@ test('selected province is shown prominently at the top of the panel', async () 
   const card = within(panel).getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })
   expect(within(card).getByRole('heading', { name: 'Tỉnh Phú Thọ' })).toBeInTheDocument()
   expect(card).toHaveTextContent('Thuộc vùng Trung du và miền núi phía Bắc')
-  // nằm trên dàn ý vùng để em thấy ngay
-  const topics = within(panel).getByRole('navigation', { name: 'Dàn ý vùng' })
-  expect(card.compareDocumentPosition(topics) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
   await userEvent.click(within(card).getByRole('button', { name: 'Bỏ chọn tỉnh' }))
   expect(screen.queryByRole('region', { name: /Tỉnh đang xem/ })).not.toBeInTheDocument()
+})
+
+test('with a province selected, province and region info are separate tabs; the region info is not repeated under the province', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
+  // chưa chọn tỉnh: chỉ có thông tin vùng, không có tab
+  expect(within(panel).queryByRole('tablist')).toBeNull()
+  expect(within(panel).getByRole('navigation', { name: 'Dàn ý vùng' })).toBeInTheDocument()
+
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
+  const tabs = within(panel).getByRole('tablist', { name: 'Xem thông tin' })
+  const provinceTab = within(tabs).getByRole('tab', { name: /Tỉnh.*Phú Thọ/ })
+  const regionTab = within(tabs).getByRole('tab', { name: /^Vùng/ })
+  expect(provinceTab).toHaveAttribute('aria-selected', 'true')
+  expect(within(panel).getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })).toBeInTheDocument()
+  expect(within(panel).queryByRole('navigation', { name: 'Dàn ý vùng' })).toBeNull()
+  expect(within(panel).queryByRole('list', { name: 'Một số địa điểm tiêu biểu' })).toBeNull()
+
+  await userEvent.click(regionTab)
+  expect(regionTab).toHaveAttribute('aria-selected', 'true')
+  expect(within(panel).getByRole('navigation', { name: 'Dàn ý vùng' })).toBeInTheDocument()
+  expect(within(panel).queryByRole('region', { name: /Tỉnh đang xem/ })).toBeNull()
+
+  // chọn tỉnh khác (cùng vùng) thì về lại tab tỉnh của tỉnh mới
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-lai-chau' }))
+  expect(within(panel).getByRole('tab', { name: /Tỉnh.*Lai Châu/ })).toHaveAttribute('aria-selected', 'true')
+  expect(within(panel).getByRole('region', { name: 'Tỉnh đang xem: Lai Châu' })).toBeInTheDocument()
+  expect(within(panel).queryByRole('navigation', { name: 'Dàn ý vùng' })).toBeNull()
+})
+
+test('"Thuộc vùng …" in the province card switches to the region tab', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
+  await userEvent.click(within(panel).getByRole('button', { name: /Xem thông tin vùng/ }))
+  expect(within(panel).getByRole('tab', { name: /^Vùng/ })).toHaveAttribute('aria-selected', 'true')
+  expect(within(panel).getByRole('navigation', { name: 'Dàn ý vùng' })).toBeInTheDocument()
 })
 
 test('"Về bản đồ Việt Nam" clears selection', async () => {

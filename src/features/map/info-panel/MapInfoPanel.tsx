@@ -1,4 +1,6 @@
-import { ArrowLeft, BookOpen, ChevronRight, Clock, Mountain } from 'lucide-react'
+import { ArrowLeft, BookOpen, ChevronRight, Clock, MapPin, Mountain } from 'lucide-react'
+import { useState } from 'react'
+import { provinceName } from '../../../lib/provinces'
 import { SmartImage } from '../../../components/ui/SmartImage'
 import { WebImageFigure } from '../../../components/ui/WebImageFigure'
 import { EmptyState, ErrorState, LoadingState } from '../../../components/ui/states'
@@ -54,6 +56,8 @@ function featuredPlaces(content: RegionContent): ContentItem[] {
 
 export function MapInfoPanel(props: MapInfoPanelProps) {
   const { region, regionIdFromUrl, content, images, outline, provinceId, onBack, onClearProvince, onOpenTopic, onOpenItem } = props
+  // Tỉnh mà em đã bấm sang tab Vùng; chọn tỉnh khác thì không còn khớp nên tự về tab Tỉnh của tỉnh mới
+  const [regionTabFor, setRegionTabFor] = useState<string | null>(null)
   if (!regionIdFromUrl) return <RegionCards regions={props.regions} onSelect={props.onSelectRegion} />
 
   const back = (
@@ -74,11 +78,23 @@ export function MapInfoPanel(props: MapInfoPanelProps) {
   const ready = region.status === 'active' && content.status === 'ready' ? content.content : null
   const cover = ready?.items.find((i) => i.images.length > 0)?.images[0]
   const webCover = cover ? undefined : imageLibrary.regionCover(images)
+  // Có tỉnh đang chọn: thông tin tỉnh và thông tin vùng là hai tab riêng, không xếp chồng lên nhau
+  const view: 'province' | 'region' = provinceId && regionTabFor !== provinceId ? 'province' : 'region'
 
-  return (
-    <section aria-label={region.name} className={`${card} flex flex-col gap-6`}>
-      <div className="-mb-4 -mt-2 flex justify-end">{back}</div>
+  const provinceView = provinceId && (
+    <ProvinceCard
+      content={ready ?? undefined}
+      regionName={region.name}
+      provinceId={provinceId}
+      images={images}
+      onClear={onClearProvince}
+      onOpen={onOpenItem}
+      onShowRegion={() => setRegionTabFor(provinceId)}
+    />
+  )
 
+  const regionView = (
+    <>
       {webCover && <WebImageFigure image={webCover} priority sizes="(min-width: 1024px) 35vw, 100vw" aspect="16 / 7" />}
 
       <div className="flex gap-5">
@@ -110,9 +126,6 @@ export function MapInfoPanel(props: MapInfoPanelProps) {
           <p>Nội dung vùng {region.name} đang được chuẩn bị.</p>
         </div>
       )}
-      {region.status === 'coming_soon' && provinceId && (
-        <ProvinceCard regionName={region.name} provinceId={provinceId} images={images} onClear={onClearProvince} onOpen={onOpenItem} />
-      )}
       {region.status === 'coming_soon' && outline && <OutlineSections outline={outline} items={[]} onOpen={onOpenTopic} />}
       {region.status === 'coming_soon' && <RegionGallery images={images} />}
       {region.status === 'active' && content.status === 'loading' && <LoadingState label="Đang tải nội dung vùng…" />}
@@ -122,17 +135,6 @@ export function MapInfoPanel(props: MapInfoPanelProps) {
 
       {ready && (
         <>
-          {provinceId && (
-            <ProvinceCard
-              content={ready}
-              regionName={region.name}
-              provinceId={provinceId}
-              images={images}
-              onClear={onClearProvince}
-              onOpen={onOpenItem}
-            />
-          )}
-
           {outline && <OutlineSections outline={outline} items={ready.items} onOpen={onOpenTopic} />}
 
           <FeaturedPlaces items={featuredPlaces(ready)} images={images} onOpen={onOpenItem} />
@@ -148,6 +150,78 @@ export function MapInfoPanel(props: MapInfoPanelProps) {
           </button>
         </>
       )}
+    </>
+  )
+
+  return (
+    <section aria-label={region.name} className={`${card} flex flex-col gap-6`}>
+      <div className="-mb-4 -mt-2 flex justify-end">{back}</div>
+
+      {provinceId ? (
+        <>
+          <ViewTabs
+            view={view}
+            provinceLabel={provinceName(provinceId) ?? provinceId}
+            regionLabel={region.shortName}
+            onChange={(v) => setRegionTabFor(v === 'region' ? provinceId : null)}
+          />
+          <div role="tabpanel" id={`map-info-${view}`} aria-labelledby={`map-info-tab-${view}`} className="flex flex-col gap-6">
+            {view === 'province' ? provinceView : regionView}
+          </div>
+        </>
+      ) : (
+        regionView
+      )}
     </section>
+  )
+}
+
+interface ViewTabsProps {
+  view: 'province' | 'region'
+  provinceLabel: string
+  regionLabel: string
+  onChange(view: 'province' | 'region'): void
+}
+
+/** Hai tab Tỉnh | Vùng (chỉ có khi đang chọn một tỉnh); mũi tên trái/phải chuyển tab */
+function ViewTabs({ view, provinceLabel, regionLabel, onChange }: ViewTabsProps) {
+  const tabs = [
+    { id: 'province' as const, kind: 'Tỉnh', label: provinceLabel, Icon: MapPin, on: 'bg-amber-400 text-white shadow-sm' },
+    { id: 'region' as const, kind: 'Vùng', label: regionLabel, Icon: Mountain, on: 'bg-secondary text-white shadow-sm' },
+  ]
+  return (
+    <div
+      role="tablist"
+      aria-label="Xem thông tin"
+      className="grid grid-cols-2 gap-1 rounded-2xl bg-bg p-1"
+      onKeyDown={(e) => {
+        if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return
+        const next = view === 'province' ? 'region' : 'province'
+        onChange(next)
+        document.getElementById(`map-info-tab-${next}`)?.focus()
+      }}
+    >
+      {tabs.map(({ id, kind, label, Icon, on }) => (
+        <button
+          key={id}
+          type="button"
+          role="tab"
+          id={`map-info-tab-${id}`}
+          aria-selected={view === id}
+          aria-controls={`map-info-${id}`}
+          tabIndex={view === id ? 0 : -1}
+          onClick={() => onChange(id)}
+          className={`flex min-h-12 min-w-0 items-center gap-2 rounded-xl px-3 py-1.5 text-left transition ${
+            view === id ? on : 'text-muted hover:bg-surface hover:text-ink'
+          }`}
+        >
+          <Icon aria-hidden className="size-5 shrink-0" />
+          <span className="min-w-0 leading-tight">
+            <span className="block text-xs font-semibold opacity-80">{kind}</span>
+            <span className="line-clamp-2 block font-bold">{label}</span>
+          </span>
+        </button>
+      ))}
+    </div>
   )
 }

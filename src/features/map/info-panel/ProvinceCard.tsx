@@ -16,6 +16,8 @@ export interface ProvinceCardProps {
   provinceId: string
   onClear(): void
   onOpen(item: ContentItem): void
+  /** Chuyển sang xem thông tin vùng (tab Vùng của panel) */
+  onShowRegion?(): void
 }
 
 // Danh sách tỉnh mới và các tỉnh cũ hợp nhất, theo Nghị quyết 202/2025/QH15 (báo Nhân Dân đăng toàn văn danh sách)
@@ -23,7 +25,7 @@ const MERGER_SOURCE =
   'https://nhandan.vn/quoc-hoi-thong-qua-nghi-quyet-ve-sap-xep-don-vi-hanh-chinh-cap-tinh-ca-nuoc-con-34-tinh-thanh-post886206.html'
 
 /** Tỉnh đang chọn trên bản đồ: tên, vùng, các mục trong bài học gắn với tỉnh */
-export function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen }: ProvinceCardProps) {
+export function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen, onShowRegion }: ProvinceCardProps) {
   const name = provinceName(provinceId) ?? provinceId
   const items = content?.items.filter((i) => i.provinceId === provinceId) ?? []
   const facts = provinceFacts(provinceId)
@@ -43,7 +45,17 @@ export function ProvinceCard({ content, regionName, provinceId, images, onClear,
         <div className="min-w-0 flex-1">
           <p className="text-xs font-bold uppercase tracking-wide text-amber-700">Tỉnh đang xem</p>
           <h3 className="text-xl font-bold leading-tight">{title}</h3>
-          <p className="text-sm text-muted">Thuộc vùng {regionName}</p>
+          <p className="text-sm text-muted">
+            Thuộc vùng {regionName}
+            {onShowRegion && (
+              <>
+                {' · '}
+                <button type="button" onClick={onShowRegion} className="font-semibold text-primary underline-offset-2 hover:underline">
+                  Xem thông tin vùng
+                </button>
+              </>
+            )}
+          </p>
         </div>
         <button
           type="button"
