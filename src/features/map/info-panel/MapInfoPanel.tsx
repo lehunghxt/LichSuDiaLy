@@ -156,23 +156,36 @@ export function MapInfoPanel(props: MapInfoPanelProps) {
   )
 
   return (
-    <section aria-label={region.name} className={`${card} flex flex-col gap-6`}>
-      <div className="-mb-4 -mt-2 flex justify-end">{back}</div>
-
+    <section aria-label={region.name} className={`${card} flex flex-col gap-6 in-data-sheet:gap-4`}>
       {provinceId ? (
         <>
-          <ViewTabs
-            view={view}
-            provinceLabel={provinceName(provinceId) ?? provinceId}
-            regionName={region.name}
-            onChange={(v) => setRegionTabFor(v === 'region' ? provinceId : null)}
-          />
+          {/* Nút về bản đồ thu thành nút tròn cùng hàng với tab, không chiếm riêng một dòng */}
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={onBack}
+              aria-label="Về bản đồ Việt Nam"
+              title="Về bản đồ Việt Nam"
+              className="grid size-11 shrink-0 place-items-center rounded-full bg-bg text-muted ring-1 ring-line hover:text-ink"
+            >
+              <ArrowLeft aria-hidden className="size-5" />
+            </button>
+            <ViewTabs
+              view={view}
+              provinceLabel={provinceName(provinceId) ?? provinceId}
+              regionName={region.name}
+              onChange={(v) => setRegionTabFor(v === 'region' ? provinceId : null)}
+            />
+          </div>
           <div role="tabpanel" id={`map-info-${view}`} aria-labelledby={`map-info-tab-${view}`} className="flex flex-col gap-6">
             {view === 'province' ? provinceView : regionView}
           </div>
         </>
       ) : (
-        regionView
+        <>
+          <div className="-mb-4 -mt-2 flex justify-end in-data-sheet:-mb-2 in-data-sheet:mt-0">{back}</div>
+          {regionView}
+        </>
       )}
     </section>
   )
@@ -189,14 +202,14 @@ interface ViewTabsProps {
  *  Mũi tên trái/phải chuyển tab */
 function ViewTabs({ view, provinceLabel, regionName, onChange }: ViewTabsProps) {
   const tabs = [
-    { id: 'province' as const, label: `Tỉnh ${provinceLabel}`, title: undefined, Icon: MapPin, on: 'text-amber-700' },
-    { id: 'region' as const, label: 'Cả vùng', title: `Thông tin vùng ${regionName}`, Icon: Mountain, on: 'text-secondary' },
+    { id: 'province' as const, kind: 'Tỉnh', label: provinceLabel, title: undefined, Icon: MapPin, on: 'text-amber-700' },
+    { id: 'region' as const, kind: '', label: 'Cả vùng', title: `Thông tin vùng ${regionName}`, Icon: Mountain, on: 'text-secondary' },
   ]
   return (
     <div
       role="tablist"
       aria-label="Xem thông tin"
-      className="grid grid-cols-2 gap-1 rounded-full bg-bg p-1 ring-1 ring-line"
+      className="grid min-w-0 flex-1 grid-cols-2 gap-1 rounded-full bg-bg p-1 ring-1 ring-line"
       onKeyDown={(e) => {
         if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return
         const next = view === 'province' ? 'region' : 'province'
@@ -204,7 +217,7 @@ function ViewTabs({ view, provinceLabel, regionName, onChange }: ViewTabsProps) 
         document.getElementById(`map-info-tab-${next}`)?.focus()
       }}
     >
-      {tabs.map(({ id, label, title, Icon, on }) => (
+      {tabs.map(({ id, kind, label, title, Icon, on }) => (
         <button
           key={id}
           type="button"
@@ -220,7 +233,15 @@ function ViewTabs({ view, provinceLabel, regionName, onChange }: ViewTabsProps) 
           }`}
         >
           <Icon aria-hidden className="size-4 shrink-0" />
-          <span className="truncate">{label}</span>
+          {/* "Tỉnh" chỉ cho trình đọc màn hình: biểu tượng ghim đã nói đây là tỉnh, nhường chỗ cho tên */}
+          <span className="truncate">
+            {kind && (
+              <>
+                <span className="sr-only">{kind}</span>{' '}
+              </>
+            )}
+            {label}
+          </span>
         </button>
       ))}
     </div>

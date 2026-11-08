@@ -69,7 +69,9 @@ export function SnapSheet({ label, snap, onSnap, children }: SnapSheetProps) {
         expanded={snap === 'full'}
         onClick={onClick}
       />
-      <div className="flex min-h-0 flex-1 flex-col gap-5 overflow-y-auto overscroll-contain p-4 pt-1">{children}</div>
+      <div data-sheet className="flex min-h-0 flex-1 flex-col gap-5 overflow-y-auto overscroll-contain p-4 pt-1">
+        {children}
+      </div>
     </aside>
   )
 }

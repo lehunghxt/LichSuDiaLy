@@ -36,14 +36,13 @@ export function ProvinceCard({ content, regionName, provinceId, images, onClear,
   return (
     <section
       aria-label={`Tỉnh đang xem: ${name}`}
-      className="animate-fade-up flex flex-col gap-3 rounded-2xl border-2 border-amber-300 bg-amber-50 p-4"
+      className="animate-fade-up flex flex-col gap-3 rounded-2xl border-2 border-amber-300 bg-amber-50 p-4 in-data-sheet:p-3"
     >
       <div className="flex items-start gap-3">
         <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-amber-400 text-white shadow-sm">
           <MapPin aria-hidden className="size-6" />
         </span>
         <div className="min-w-0 flex-1">
-          <p className="text-xs font-bold uppercase tracking-wide text-amber-700">Tỉnh đang xem</p>
           <h3 className="text-xl font-bold leading-tight">{title}</h3>
           <p className="text-sm text-muted">
             Thuộc vùng {regionName}
