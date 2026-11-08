@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import type { RegionContent } from '../../types/content'
+import type { RegionContent, RegionMeta } from '../../types/content'
 import type { Quiz } from '../../types/quiz'
 import { repository } from '../content'
 
@@ -24,7 +24,7 @@ export function useQuiz(quizId: string | undefined): QuizState {
 
 export interface QuizSummary {
   quiz: Quiz
-  regionName: string
+  region: RegionMeta
 }
 
 /** Các bài ôn tập (có ít nhất 1 câu đã xuất bản) của mọi vùng đang mở */
@@ -40,7 +40,7 @@ export function useQuizList(): { status: 'loading' | 'ready' | 'error'; quizzes:
       (contents) => {
         if (cancelled) return
         const quizzes = contents.flatMap((c) =>
-          c ? c.quizzes.filter((q) => q.questions.length > 0).map((quiz) => ({ quiz, regionName: c.region.name })) : [],
+          c ? c.quizzes.filter((q) => q.questions.length > 0).map((quiz) => ({ quiz, region: c.region })) : [],
         )
         setState({ status: 'ready', quizzes })
       },

@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { createMemoryRouter, RouterProvider } from 'react-router'
 import { PROGRESS_KEY } from '../../features/progress/progress'
@@ -34,6 +34,42 @@ test('quiz list shows quizzes with published questions and links to them', async
   const link = await screen.findByRole('link', { name: /Ôn tập 1/ })
   expect(link).toHaveAttribute('href', '/on-tap/vung-a__on-tap-1')
   expect(screen.queryByRole('link', { name: /Ôn tập rỗng/ })).toBeNull()
+})
+
+test('a quiz not done yet: card shows the question count, "Chưa làm" and a "Bắt đầu" call to action', async () => {
+  renderAt('/on-tap')
+  const link = await screen.findByRole('link', { name: /Ôn tập 1/ })
+  const card = link.closest('li')!
+  expect(card).toHaveTextContent('2 câu')
+  expect(card).toHaveTextContent('Chưa làm')
+  expect(link).toHaveTextContent('Bắt đầu')
+  expect(within(card).queryByRole('progressbar')).toBeNull()
+})
+
+test('a quiz already done: card shows the best score with a bar and offers "Làm lại"', async () => {
+  localStorage.setItem(
+    PROGRESS_KEY,
+    JSON.stringify({
+      version: 1,
+      visitedRegionIds: [],
+      viewedItemIds: [],
+      recentItemIds: [],
+      quizzes: { 'vung-a__on-tap-1': { lastScore: 1, bestScore: 1, total: 2, attempts: 1, completedAt: '2026-11-08T10:00:00.000Z' } },
+    }),
+  )
+  renderAt('/on-tap')
+  const link = await screen.findByRole('link', { name: /Ôn tập 1/ })
+  const card = link.closest('li')!
+  expect(card).toHaveTextContent('Điểm cao nhất 1/2')
+  expect(within(card).getByRole('progressbar', { name: 'Điểm cao nhất' })).toHaveAttribute('aria-valuenow', '50')
+  expect(link).toHaveTextContent('Làm lại')
+})
+
+test('the region name is shown only when the quiz title does not already say it', async () => {
+  renderAt('/on-tap')
+  const card = (await screen.findByRole('link', { name: /Ôn tập 1/ })).closest('li')!
+  // "Ôn tập 1" không có tên vùng → ghi tên vùng một lần
+  expect(card.textContent!.match(/Vùng A/g)).toHaveLength(1)
 })
 
 test('quiz page runs quiz and records result in progress', async () => {

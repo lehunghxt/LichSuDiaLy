@@ -5,7 +5,7 @@ import { ConfirmDialog } from '../../components/ui/ConfirmDialog'
 import { repository } from '../../features/content'
 import { type QuizRecord, useProgress } from '../../features/progress'
 import type { ContentItem } from '../../types/content'
-import { GRID_FILL_XS } from '../../components/ui/grid'
+import { GRID_FILL } from '../../components/ui/grid'
 
 interface StatProps {
   icon: LucideIcon
@@ -123,7 +123,7 @@ export default function ProgressPage() {
         </div>
       ) : (
         <>
-          <ul aria-label="Thống kê" className={`${GRID_FILL_XS} mt-6 gap-4`}>
+          <ul aria-label="Thống kê" className={`${GRID_FILL.xs} mt-6 gap-4`}>
             <Stat icon={Map} label="Vùng đã khám phá" value={state.visitedRegionIds.length} total={repository.getRegions().length} />
             <Stat icon={Eye} label="Địa danh đã xem" value={state.viewedItemIds.length} />
             <Stat icon={BookOpenCheck} label="Bài đã hoàn thành" value={records.length} />

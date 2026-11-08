@@ -18,20 +18,13 @@ import {
 } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router'
+import { CoverImage } from '../../components/ui/CoverImage'
 import { ImageCredit } from '../../components/ui/ImageCredit'
-import { markIfComplete } from '../../components/ui/imageLoad'
 import { repository, SECTION_ICONS, SECTION_TILE } from '../../features/content'
 import { useRegionCovers } from '../../features/images'
 import { MiniVietnamMap } from '../../features/map'
 import { useProgress } from '../../features/progress'
-import {
-  SECTION_LABELS,
-  type ContentItem,
-  type RegionContent,
-  type RegionMeta,
-  type RegionOutline,
-  type WebImage,
-} from '../../types/content'
+import { SECTION_LABELS, type ContentItem, type RegionContent, type RegionMeta, type RegionOutline } from '../../types/content'
 
 const card = 'rounded-card bg-surface shadow-[0_8px_30px_rgb(15_23_42/0.08)]'
 
@@ -240,7 +233,7 @@ export function RegionCards({ columns }: { columns: 1 | 2 | 4 }) {
               className="relative block h-40 overflow-hidden rounded-t-card"
               style={{ background: `linear-gradient(135deg, var(--color-${r.color}), #ffffff)` }}
             >
-              {cover && <RegionCoverImage image={cover} sizes={`${Math.ceil(100 / columns)}vw`} />}
+              {cover && <CoverImage image={cover} sizes={`${Math.ceil(100 / columns)}vw`} />}
               <span aria-hidden className="absolute inset-x-0 bottom-0 h-1.5" style={{ background: `var(--color-${r.color})` }} />
             </span>
             <span className="flex flex-1 flex-col gap-2 p-5">
@@ -279,25 +272,6 @@ export function RegionCards({ columns }: { columns: 1 | 2 | 4 }) {
         )
       })}
     </ul>
-  )
-}
-
-/** Ảnh bìa vùng phủ kín khung, hiện dần khi tải xong. Chỉ minh hoạ (alt rỗng): tên link của thẻ là tên vùng */
-function RegionCoverImage({ image, sizes }: { image: WebImage; sizes: string }) {
-  const [loaded, setLoaded] = useState(false)
-  return (
-    <img
-      ref={markIfComplete(setLoaded)}
-      src={image.src.url}
-      srcSet={image.src.srcset.map((x) => `${x.url} ${x.width}w`).join(', ')}
-      sizes={sizes}
-      alt=""
-      loading="lazy"
-      decoding="async"
-      referrerPolicy="no-referrer"
-      onLoad={() => setLoaded(true)}
-      className={`absolute inset-0 size-full object-cover transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
-    />
   )
 }
 
