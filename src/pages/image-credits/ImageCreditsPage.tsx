@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { LoadingState } from '../../components/ui/states'
 import { imageLibrary } from '../../features/images'
+import { loadProduce } from '../../features/produce'
 import { provinceName } from '../../lib/provinces'
 import type { WebImage } from '../../types/content'
 
@@ -12,8 +13,13 @@ export default function ImageCreditsPage() {
   const [images, setImages] = useState<WebImage[] | null>(null)
   useEffect(() => {
     let cancelled = false
-    imageLibrary.loadAll().then(
-      (all) => !cancelled && setImages(all),
+    // ảnh cây trồng là phần thêm: tải lỗi thì vẫn hiện ảnh vùng/tỉnh
+    const crops = loadProduce().then(
+      (p) => p.crops.map((c) => c.image),
+      () => [],
+    )
+    Promise.all([imageLibrary.loadAll(), crops]).then(
+      ([all, cropImages]) => !cancelled && setImages([...all, ...cropImages]),
       () => !cancelled && setImages([]),
     )
     return () => {
@@ -63,7 +69,9 @@ export default function ImageCreditsPage() {
                         {img.caption}
                       </span>
                     </td>
-                    <td className="px-4 py-3">{img.provinceId ? provinceName(img.provinceId) : 'Toàn vùng'}</td>
+                    <td className="px-4 py-3">
+                      {img.provinceId ? provinceName(img.provinceId) : img.id.startsWith('nong-san__') ? 'Cây trồng' : 'Toàn vùng'}
+                    </td>
                     <td className="px-4 py-3">
                       {a.authorUrl ? (
                         <a href={a.authorUrl} {...external} className={link}>

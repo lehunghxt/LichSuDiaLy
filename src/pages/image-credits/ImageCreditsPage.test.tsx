@@ -51,6 +51,14 @@ test('/nguon-anh lists every image with author, license and a link to the origin
   )
 })
 
+test('/nguon-anh also credits the crop photos, marked "Cây trồng"', async () => {
+  renderAt('/nguon-anh')
+  const table = await screen.findByRole('table')
+  const tea = (await within(table).findByText('Đồi chè ở tỉnh Thái Nguyên.')).closest('tr')!
+  expect(tea).toHaveTextContent('Cây trồng')
+  expect(within(tea).getByRole('link', { name: 'File:Tea plantation in Thai Nguyen.jpg' })).toBeInTheDocument()
+})
+
 test('footer links to the image credits page', async () => {
   renderAt('/')
   const footer = await screen.findByRole('contentinfo')

@@ -47,9 +47,9 @@ function CropTile({ entry }: { entry: CropEntry }) {
   const { crop, page, source } = entry
   return (
     <li className="flex w-36 shrink-0 snap-start flex-col gap-1">
-      <h4 className="order-2 font-bold leading-tight">{crop.name}</h4>
-      <WebImageFigure image={crop.image} sizes="160px" aspect="4 / 3" className="order-1" />
-      <p className="order-3 text-xs text-muted">
+      <h4 className="font-bold leading-tight">{crop.name}</h4>
+      <WebImageFigure image={crop.image} sizes="160px" aspect="4 / 3" />
+      <p className="text-xs text-muted">
         {page !== undefined && `SGK tr. ${page}`}
         {source && (
           <a
