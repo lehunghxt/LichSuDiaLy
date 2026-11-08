@@ -1,12 +1,14 @@
-import { BookOpen, FileText, Images, MapPinned } from 'lucide-react'
+import { BookOpen, Clapperboard, FileText, Images, MapPinned, type LucideIcon } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link } from 'react-router'
 import { EmptyState, LoadingState } from '../../components/ui/states'
 import { repository } from '../../features/content'
 import { imageLibrary } from '../../features/images'
+import { loadProduce } from '../../features/produce'
 import { collectSources, type SourceRow } from '../../features/sources'
+import { loadFestivalVideos } from '../../features/videos'
 import { SGK_URL, sgkPageUrl } from '../../lib/sources'
-import { GRID } from '../../components/ui/grid'
+import { GRID_FILL } from '../../components/ui/grid'
 
 const external = { target: '_blank', rel: 'noopener noreferrer' } as const
 const link = 'text-primary underline decoration-dotted underline-offset-2 hover:text-primary-dark'
@@ -15,6 +17,7 @@ interface SourcesData {
   rows: SourceRow[]
   itemCount: number
   imageCount: number
+  videoCount: number
 }
 
 async function loadSources(): Promise<SourcesData> {
@@ -24,11 +27,23 @@ async function loadSources(): Promise<SourcesData> {
     const content = contents[i]
     return content ? [{ regionId: r.id, regionName: r.name, items: content.items }] : []
   })
-  const images = await imageLibrary.loadAll().catch(() => [])
+  // ảnh địa danh + ảnh cây trồng, video lễ hội: phần thêm, lỗi tải thì tính là 0
+  const [images, cropImages, videos] = await Promise.all([
+    imageLibrary.loadAll().catch(() => []),
+    loadProduce().then(
+      (p) => p.crops.length,
+      () => 0,
+    ),
+    loadFestivalVideos().then(
+      (v) => v.all.length,
+      () => 0,
+    ),
+  ])
   return {
     rows: collectSources(withItems),
     itemCount: withItems.reduce((n, r) => n + r.items.length, 0),
-    imageCount: images.length,
+    imageCount: images.length + cropImages,
+    videoCount: videos,
   }
 }
 
@@ -63,21 +78,18 @@ export default function SourcesPage() {
         <EmptyState title="Chưa có nguồn tham khảo" description="Nội dung đang được giáo viên duyệt." />
       ) : (
         <>
-          <ul aria-label="Tổng quan nguồn tham khảo" className={`${GRID.xs} gap-3`}>
-            <Stat
-              icon={<BookOpen aria-hidden className="size-5" />}
-              label="Bài học SGK được dẫn"
-              value={data.rows.filter((r) => r.url === SGK_URL).length}
-            />
-            <Stat
-              icon={<FileText aria-hidden className="size-5" />}
-              label="Trang sách được dẫn"
-              value={new Set(data.rows.flatMap((r) => r.pages)).size}
-            />
-            <Stat icon={<MapPinned aria-hidden className="size-5" />} label="Mục nội dung" value={data.itemCount} />
-            <Stat icon={<Images aria-hidden className="size-5" />} label="Ảnh nhúng" value={data.imageCount}>
-              <Link to="/nguon-anh" className={`${link} text-sm`}>
+          <ul aria-label="Tổng quan nguồn tham khảo" className={`${GRID_FILL.xs} gap-3`}>
+            <Stat icon={BookOpen} label="Bài học SGK được dẫn" value={data.rows.filter((r) => r.url === SGK_URL).length} />
+            <Stat icon={FileText} label="Trang sách được dẫn" value={new Set(data.rows.flatMap((r) => r.pages)).size} />
+            <Stat icon={MapPinned} label="Mục nội dung" value={data.itemCount} />
+            <Stat icon={Images} label="Ảnh nhúng" value={data.imageCount}>
+              <Link to="/nguon-anh" className={`${link} text-sm font-semibold`}>
                 Xem nguồn ảnh
+              </Link>
+            </Stat>
+            <Stat icon={Clapperboard} label="Video lễ hội" value={data.videoCount}>
+              <Link to="/nguon-anh" className={`${link} text-sm font-semibold`}>
+                Xem nguồn video
               </Link>
             </Stat>
           </ul>
@@ -146,14 +158,15 @@ export default function SourcesPage() {
   )
 }
 
-function Stat({ icon, label, value, children }: { icon: ReactNode; label: string; value: number; children?: ReactNode }) {
+/** Ô số liệu cùng kiểu với trang Tiến độ: icon trong ô tròn, số lớn, nhãn ngắn bên dưới (nhãn xuống dòng không làm lệch số) */
+function Stat({ icon: Icon, label, value, children }: { icon: LucideIcon; label: string; value: number; children?: ReactNode }) {
   return (
-    <li className="flex flex-col gap-1 rounded-card bg-surface p-4 shadow-sm">
-      <span className="flex items-center gap-2 text-muted">
-        {icon}
-        <span>{label}</span>
+    <li className="flex flex-col gap-2 rounded-card bg-surface p-5 shadow-sm">
+      <span className="mb-1 grid size-11 shrink-0 place-items-center rounded-2xl bg-primary-soft">
+        <Icon aria-hidden className="size-6 text-primary" />
       </span>
-      <span className="text-3xl font-bold">{value}</span>
+      <span className="text-3xl font-extrabold leading-9">{value}</span>
+      <p className="text-sm font-semibold leading-snug text-muted">{label}</p>
       {children}
     </li>
   )

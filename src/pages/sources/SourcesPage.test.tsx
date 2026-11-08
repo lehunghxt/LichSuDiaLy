@@ -1,3 +1,4 @@
+import { globSync, readFileSync } from 'node:fs'
 import { render, screen, within } from '@testing-library/react'
 import { createMemoryRouter, RouterProvider } from 'react-router'
 import { routes } from '../../app/router'
@@ -48,6 +49,16 @@ test('lesson count counts only SGK lessons; coordinate sources are listed but no
   const stats = screen.getByRole('list', { name: 'Tổng quan nguồn tham khảo' })
   const lessons = within(stats).getByText('Bài học SGK được dẫn').closest('li')
   expect(lessons?.textContent?.match(/\d+/)?.[0]).toBe(String(lessonRows.length))
+}, 15_000)
+
+test('stats count every embedded image (places and crops) and the festival videos', async () => {
+  renderAt('/nguon-tham-khao')
+  const stats = await screen.findByRole('list', { name: 'Tổng quan nguồn tham khảo' })
+  const count = (f: string) => (JSON.parse(readFileSync(f, 'utf8')) as unknown[]).length
+  const images = globSync('src/data/images/*/*.json').reduce((n, f) => n + count(f), 0) + count('src/data/produce/images.json')
+  const value = (label: string) => within(stats).getByText(label).closest('li')?.textContent?.match(/\d+/)?.[0]
+  expect(value('Ảnh nhúng')).toBe(String(images))
+  expect(value('Video lễ hội')).toBe(String(count('src/data/festival-videos.json')))
 }, 15_000)
 
 test('footer and map panel link to the sources page', async () => {
