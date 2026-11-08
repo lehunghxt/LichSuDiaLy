@@ -242,6 +242,22 @@ test('"Thuộc vùng …" in the province card switches to the region tab', asyn
   expect(within(panel).getByRole('navigation', { name: 'Dàn ý vùng' })).toBeInTheDocument()
 })
 
+test('region tab shows the SGK crops of the region; province tab shows the province crops, outside the SGK, with sources', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
+  const regionCrops = await within(panel).findByRole('region', { name: 'Cây trồng tiêu biểu' })
+  expect(within(regionCrops).getByRole('list', { name: 'Cây công nghiệp' })).toHaveTextContent('Chè')
+  expect(regionCrops).toHaveTextContent('SGK tr. 21')
+  expect(regionCrops).not.toHaveTextContent('Ngoài SGK')
+
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
+  const card = within(panel).getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })
+  const provinceCrops = await within(card).findByRole('region', { name: 'Cây trồng tiêu biểu' })
+  expect(provinceCrops).toHaveTextContent('Ngoài SGK')
+  expect(within(provinceCrops).getByRole('list', { name: 'Cây nông nghiệp' })).toHaveTextContent('Bưởi')
+  expect(within(provinceCrops).getAllByRole('link', { name: /^Nguồn: Wikipedia/ }).length).toBeGreaterThan(0)
+})
+
 test('"Về bản đồ Việt Nam" clears selection', async () => {
   const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   await userEvent.click(await screen.findByRole('button', { name: 'Về bản đồ Việt Nam' }))
@@ -356,7 +372,8 @@ test('province card shows province images; none → no empty gallery', async () 
   expect(within(card).getByRole('img', { name: 'Ảnh đền Thượng' })).toBeInTheDocument()
   await userEvent.click(screen.getByRole('button', { name: 'polygon-lai-chau' }))
   const empty = screen.getByRole('region', { name: 'Tỉnh đang xem: Lai Châu' })
-  expect(within(empty).queryByRole('img')).not.toBeInTheDocument()
+  // không có ảnh tỉnh thì không có khung ảnh tỉnh rỗng (ảnh cây trồng là phần riêng)
+  expect(within(empty).queryByRole('list', { name: 'Hình ảnh tỉnh Lai Châu' })).not.toBeInTheDocument()
 })
 
 test('coming-soon region shows its image gallery and still says content is being prepared', async () => {

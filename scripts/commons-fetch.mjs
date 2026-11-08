@@ -4,6 +4,10 @@
 //     đọc  image-picks/<regionId>.json
 //     ghi  src/data/images/<regionId>/<provinceId>.json và _toan-vung.json
 //
+//   node scripts/commons-fetch.mjs --produce
+//     đọc  image-picks/_nong-san.json (mỗi loại cây một ảnh, slug = id cây trong src/data/produce/crops.json)
+//     ghi  src/data/produce/images.json (id "nong-san__<slug>")
+//
 //   node scripts/commons-fetch.mjs --show "File:A.jpg" "File:B.jpg"
 //     in mô tả, giấy phép, tác giả, link thumbnail để người chọn ảnh xem và viết chú thích.
 //
@@ -107,8 +111,28 @@ async function build(regionId) {
   }
 }
 
+/** Ảnh cây trồng (dùng chung cho vùng và tỉnh): một file, không chia theo tỉnh */
+async function buildProduce() {
+  const picks = JSON.parse(readFileSync(path.join(root, 'image-picks', '_nong-san.json'), 'utf8'))
+  const outFile = path.join(root, 'src/data/produce/images.json')
+  mkdirSync(path.dirname(outFile), { recursive: true })
+  const old = existsSync(outFile) ? JSON.parse(readFileSync(outFile, 'utf8')) : []
+  const pages = await query([...new Set(picks.map((p) => normTitle(p.file)))])
+  const images = []
+  const skipped = []
+  for (const pick of picks) {
+    const { image, skip } = toWebImage({ ...pick, provinceId: undefined }, pages.get(normTitle(pick.file)))
+    if (skip) skipped.push([pick.file, skip])
+    else images.push(mergeStatus({ ...image, id: `nong-san__${pick.slug}` }, old))
+  }
+  writeFileSync(outFile, `${JSON.stringify(images, null, 2)}\n`)
+  console.log(`Ảnh cây trồng: ${images.length} ảnh`)
+  for (const [file, why] of skipped) console.log(`  - bỏ qua ${file}: ${why}`)
+}
+
 const [first, ...rest] = process.argv.slice(2)
 if (first === '--show') await show(rest)
+else if (first === '--produce') await buildProduce()
 else if (first) await build(first)
 else {
   console.error('Cách dùng: node scripts/commons-fetch.mjs <regionId> | --show "File:..."')

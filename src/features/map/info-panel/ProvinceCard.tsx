@@ -7,6 +7,7 @@ import { provinceFacts } from '../profiles'
 import { type ContentItem, type RegionContent, type WebImage } from '../../../types/content'
 import { SECTION_ICONS, SECTION_TILE } from '../../content'
 import { imageLibrary } from '../../images'
+import { ProvinceCrops } from '../../produce'
 
 export interface ProvinceCardProps {
   /** Không có khi vùng chưa có nội dung (Sắp ra mắt) */
@@ -105,6 +106,7 @@ export function ProvinceCard({ content, regionName, provinceId, images, onClear,
           ))}
         </ul>
       )}
+      <ProvinceCrops provinceId={provinceId} />
       {!content ? null : items.length === 0 && mentions.length === 0 && facts.length === 0 ? (
         <p className="text-sm text-muted">Bài học chưa có địa danh nào của tỉnh này. Em xem các phần bên dưới nhé!</p>
       ) : items.length === 0 ? null : (

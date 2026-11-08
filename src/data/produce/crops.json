@@ -1,0 +1,1206 @@
+{
+  "crops": [
+    {
+      "id": "che",
+      "name": "Chè",
+      "kind": "cong-nghiep"
+    },
+    {
+      "id": "ca-phe",
+      "name": "Cà phê",
+      "kind": "cong-nghiep"
+    },
+    {
+      "id": "cao-su",
+      "name": "Cao su",
+      "kind": "cong-nghiep"
+    },
+    {
+      "id": "ho-tieu",
+      "name": "Hồ tiêu",
+      "kind": "cong-nghiep"
+    },
+    {
+      "id": "dieu",
+      "name": "Điều",
+      "kind": "cong-nghiep"
+    },
+    {
+      "id": "mia",
+      "name": "Mía",
+      "kind": "cong-nghiep"
+    },
+    {
+      "id": "lac",
+      "name": "Lạc",
+      "kind": "cong-nghiep"
+    },
+    {
+      "id": "coi",
+      "name": "Cói",
+      "kind": "cong-nghiep"
+    },
+    {
+      "id": "thuoc-lao",
+      "name": "Thuốc lào",
+      "kind": "cong-nghiep"
+    },
+    {
+      "id": "lua",
+      "name": "Lúa",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "rau",
+      "name": "Rau màu",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "buoi",
+      "name": "Bưởi",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "cam",
+      "name": "Cam",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "quyt",
+      "name": "Quýt",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "vai",
+      "name": "Vải",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "nhan",
+      "name": "Nhãn",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "xoai",
+      "name": "Xoài",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "man",
+      "name": "Mận",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "le",
+      "name": "Lê",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "na",
+      "name": "Na (mãng cầu)",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "chuoi",
+      "name": "Chuối",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "thanh-long",
+      "name": "Thanh long",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "nho",
+      "name": "Nho",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "toi",
+      "name": "Tỏi",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "hanh",
+      "name": "Hành",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "sen",
+      "name": "Sen",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "thanh-tra",
+      "name": "Thanh trà",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "que",
+      "name": "Quế",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "hoi",
+      "name": "Hồi",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "thao-qua",
+      "name": "Thảo quả",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "sam",
+      "name": "Sâm",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "hat-de",
+      "name": "Hạt dẻ",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "hong",
+      "name": "Hồng",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "khom",
+      "name": "Dứa (khóm)",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "san",
+      "name": "Sắn (khoai mì)",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "tao",
+      "name": "Táo ta",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "ca-rot",
+      "name": "Cà rốt",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "su-su",
+      "name": "Su su",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "sau-rieng",
+      "name": "Sầu riêng",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "chom-chom",
+      "name": "Chôm chôm",
+      "kind": "nong-nghiep"
+    },
+    {
+      "id": "dua",
+      "name": "Dừa",
+      "kind": "nong-nghiep"
+    }
+  ],
+  "regions": [
+    {
+      "regionId": "trung-du-mien-nui-phia-bac",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "che",
+          "page": 21,
+          "itemId": "trung-du-mien-nui-phia-bac__trong-che-cay-an-qua"
+        },
+        {
+          "crop": "lua",
+          "page": 25,
+          "itemId": "trung-du-mien-nui-phia-bac__ruong-bac-thang"
+        }
+      ]
+    },
+    {
+      "regionId": "dong-bang-bac-bo",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "lua",
+          "page": 43,
+          "itemId": "dong-bang-bac-bo__lua-nuoc"
+        },
+        {
+          "crop": "rau",
+          "page": 43,
+          "itemId": "dong-bang-bac-bo__rau-mau"
+        }
+      ]
+    },
+    {
+      "regionId": "bac-trung-bo-va-nam-trung-bo",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "ca-phe",
+          "page": 75,
+          "itemId": "bac-trung-bo-va-nam-trung-bo__cay-trong"
+        },
+        {
+          "crop": "ho-tieu",
+          "page": 75,
+          "itemId": "bac-trung-bo-va-nam-trung-bo__cay-trong"
+        },
+        {
+          "crop": "cao-su",
+          "page": 75,
+          "itemId": "bac-trung-bo-va-nam-trung-bo__cay-trong"
+        },
+        {
+          "crop": "che",
+          "page": 75,
+          "itemId": "bac-trung-bo-va-nam-trung-bo__cay-trong"
+        },
+        {
+          "crop": "mia",
+          "page": 75,
+          "itemId": "bac-trung-bo-va-nam-trung-bo__cay-trong"
+        },
+        {
+          "crop": "lac",
+          "page": 75,
+          "itemId": "bac-trung-bo-va-nam-trung-bo__cay-trong"
+        },
+        {
+          "crop": "lua",
+          "page": 75,
+          "itemId": "bac-trung-bo-va-nam-trung-bo__cay-trong"
+        }
+      ]
+    },
+    {
+      "regionId": "nam-bo",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "lua",
+          "page": 103,
+          "itemId": "nam-bo__trong-lua"
+        },
+        {
+          "crop": "sau-rieng",
+          "page": 103,
+          "itemId": "nam-bo__cay-an-qua"
+        },
+        {
+          "crop": "chom-chom",
+          "page": 103,
+          "itemId": "nam-bo__cay-an-qua"
+        },
+        {
+          "crop": "xoai",
+          "page": 103,
+          "itemId": "nam-bo__cay-an-qua"
+        },
+        {
+          "crop": "dua",
+          "page": 103,
+          "itemId": "nam-bo__cay-an-qua"
+        },
+        {
+          "crop": "cam",
+          "page": 103,
+          "itemId": "nam-bo__cay-an-qua"
+        },
+        {
+          "crop": "quyt",
+          "page": 103,
+          "itemId": "nam-bo__cay-an-qua"
+        },
+        {
+          "crop": "cao-su",
+          "page": 103,
+          "itemId": "nam-bo__cay-cong-nghiep"
+        },
+        {
+          "crop": "dieu",
+          "page": 103,
+          "itemId": "nam-bo__cay-cong-nghiep"
+        },
+        {
+          "crop": "ho-tieu",
+          "page": 103,
+          "itemId": "nam-bo__cay-cong-nghiep"
+        }
+      ]
+    }
+  ],
+  "provinces": [
+    {
+      "provinceId": "lai-chau",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "che",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Lai Châu",
+            "url": "https://vi.wikipedia.org/wiki/Lai_Ch%C3%A2u"
+          }
+        },
+        {
+          "crop": "lua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Lai Châu",
+            "url": "https://vi.wikipedia.org/wiki/Lai_Ch%C3%A2u"
+          }
+        },
+        {
+          "crop": "thao-qua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Lai Châu",
+            "url": "https://vi.wikipedia.org/wiki/Lai_Ch%C3%A2u"
+          }
+        },
+        {
+          "crop": "sam",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Lai Châu",
+            "url": "https://vi.wikipedia.org/wiki/Lai_Ch%C3%A2u"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "dien-bien",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "che",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Điện Biên",
+            "url": "https://vi.wikipedia.org/wiki/%C4%90i%E1%BB%87n_Bi%C3%AAn"
+          }
+        },
+        {
+          "crop": "lua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Điện Biên",
+            "url": "https://vi.wikipedia.org/wiki/%C4%90i%E1%BB%87n_Bi%C3%AAn"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "son-la",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "che",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Sơn La",
+            "url": "https://vi.wikipedia.org/wiki/S%C6%A1n_La"
+          }
+        },
+        {
+          "crop": "man",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Sơn La",
+            "url": "https://vi.wikipedia.org/wiki/S%C6%A1n_La"
+          }
+        },
+        {
+          "crop": "xoai",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Sơn La",
+            "url": "https://vi.wikipedia.org/wiki/S%C6%A1n_La"
+          }
+        },
+        {
+          "crop": "nhan",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Sơn La",
+            "url": "https://vi.wikipedia.org/wiki/S%C6%A1n_La"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "lao-cai",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "che",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Lào Cai",
+            "url": "https://vi.wikipedia.org/wiki/L%C3%A0o_Cai"
+          }
+        },
+        {
+          "crop": "thao-qua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Lào Cai",
+            "url": "https://vi.wikipedia.org/wiki/L%C3%A0o_Cai"
+          }
+        },
+        {
+          "crop": "man",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Lào Cai",
+            "url": "https://vi.wikipedia.org/wiki/L%C3%A0o_Cai"
+          }
+        },
+        {
+          "crop": "que",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Yên Bái (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/Y%C3%AAn_B%C3%A1i_%28t%E1%BB%89nh%29"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "tuyen-quang",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "che",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Tuyên Quang",
+            "url": "https://vi.wikipedia.org/wiki/Tuy%C3%AAn_Quang"
+          }
+        },
+        {
+          "crop": "cam",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Tuyên Quang",
+            "url": "https://vi.wikipedia.org/wiki/Tuy%C3%AAn_Quang"
+          }
+        },
+        {
+          "crop": "buoi",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Tuyên Quang",
+            "url": "https://vi.wikipedia.org/wiki/Tuy%C3%AAn_Quang"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "cao-bang",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "che",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Cao Bằng",
+            "url": "https://vi.wikipedia.org/wiki/Cao_B%E1%BA%B1ng"
+          }
+        },
+        {
+          "crop": "hat-de",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Cao Bằng",
+            "url": "https://vi.wikipedia.org/wiki/Cao_B%E1%BA%B1ng"
+          }
+        },
+        {
+          "crop": "le",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Cao Bằng",
+            "url": "https://vi.wikipedia.org/wiki/Cao_B%E1%BA%B1ng"
+          }
+        },
+        {
+          "crop": "quyt",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Cao Bằng",
+            "url": "https://vi.wikipedia.org/wiki/Cao_B%E1%BA%B1ng"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "thai-nguyen",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "che",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Thái Nguyên",
+            "url": "https://vi.wikipedia.org/wiki/Th%C3%A1i_Nguy%C3%AAn"
+          }
+        },
+        {
+          "crop": "quyt",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Bắc Kạn (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/B%E1%BA%AFc_K%E1%BA%A1n_%28t%E1%BB%89nh%29"
+          }
+        },
+        {
+          "crop": "hong",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Bắc Kạn (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/B%E1%BA%AFc_K%E1%BA%A1n_%28t%E1%BB%89nh%29"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "lang-son",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "hoi",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Lạng Sơn",
+            "url": "https://vi.wikipedia.org/wiki/L%E1%BA%A1ng_S%C6%A1n"
+          }
+        },
+        {
+          "crop": "na",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Lạng Sơn",
+            "url": "https://vi.wikipedia.org/wiki/L%E1%BA%A1ng_S%C6%A1n"
+          }
+        },
+        {
+          "crop": "quyt",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Lạng Sơn",
+            "url": "https://vi.wikipedia.org/wiki/L%E1%BA%A1ng_S%C6%A1n"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "phu-tho",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "che",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Phú Thọ",
+            "url": "https://vi.wikipedia.org/wiki/Ph%C3%BA_Th%E1%BB%8D"
+          }
+        },
+        {
+          "crop": "buoi",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Phú Thọ",
+            "url": "https://vi.wikipedia.org/wiki/Ph%C3%BA_Th%E1%BB%8D"
+          }
+        },
+        {
+          "crop": "cam",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hòa Bình (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/H%C3%B2a_B%C3%ACnh_%28t%E1%BB%89nh%29"
+          }
+        },
+        {
+          "crop": "mia",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hòa Bình (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/H%C3%B2a_B%C3%ACnh_%28t%E1%BB%89nh%29"
+          }
+        },
+        {
+          "crop": "su-su",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Vĩnh Phúc (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/V%C4%A9nh_Ph%C3%BAc_%28t%E1%BB%89nh%29"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "quang-ninh",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "che",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Quảng Ninh",
+            "url": "https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Ninh"
+          }
+        },
+        {
+          "crop": "na",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Quảng Ninh",
+            "url": "https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Ninh"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "bac-ninh",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "vai",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Bắc Giang (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/B%E1%BA%AFc_Giang_%28t%E1%BB%89nh%29"
+          }
+        },
+        {
+          "crop": "che",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Bắc Giang (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/B%E1%BA%AFc_Giang_%28t%E1%BB%89nh%29"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "hai-phong",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "thuoc-lao",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hải Phòng",
+            "url": "https://vi.wikipedia.org/wiki/H%E1%BA%A3i_Ph%C3%B2ng"
+          }
+        },
+        {
+          "crop": "vai",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hải Dương (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/H%E1%BA%A3i_D%C6%B0%C6%A1ng_%28t%E1%BB%89nh%29"
+          }
+        },
+        {
+          "crop": "ca-rot",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hải Dương (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/H%E1%BA%A3i_D%C6%B0%C6%A1ng_%28t%E1%BB%89nh%29"
+          }
+        },
+        {
+          "crop": "toi",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hải Dương (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/H%E1%BA%A3i_D%C6%B0%C6%A1ng_%28t%E1%BB%89nh%29"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "hung-yen",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "nhan",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hưng Yên",
+            "url": "https://vi.wikipedia.org/wiki/H%C6%B0ng_Y%C3%AAn"
+          }
+        },
+        {
+          "crop": "chuoi",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hưng Yên",
+            "url": "https://vi.wikipedia.org/wiki/H%C6%B0ng_Y%C3%AAn"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "ninh-binh",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "coi",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Ninh Bình",
+            "url": "https://vi.wikipedia.org/wiki/Ninh_B%C3%ACnh"
+          }
+        },
+        {
+          "crop": "lua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Nam Định (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/Nam_%C4%90%E1%BB%8Bnh_%28t%E1%BB%89nh%29"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "thanh-hoa",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "mia",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Thanh Hóa",
+            "url": "https://vi.wikipedia.org/wiki/Thanh_H%C3%B3a"
+          }
+        },
+        {
+          "crop": "lua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Thanh Hóa",
+            "url": "https://vi.wikipedia.org/wiki/Thanh_H%C3%B3a"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "nghe-an",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "cam",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Nghệ An",
+            "url": "https://vi.wikipedia.org/wiki/Ngh%E1%BB%87_An"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "ha-tinh",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "lac",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hà Tĩnh",
+            "url": "https://vi.wikipedia.org/wiki/H%C3%A0_T%C4%A9nh"
+          }
+        },
+        {
+          "crop": "che",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hà Tĩnh",
+            "url": "https://vi.wikipedia.org/wiki/H%C3%A0_T%C4%A9nh"
+          }
+        },
+        {
+          "crop": "buoi",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hà Tĩnh",
+            "url": "https://vi.wikipedia.org/wiki/H%C3%A0_T%C4%A9nh"
+          }
+        },
+        {
+          "crop": "cam",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hà Tĩnh",
+            "url": "https://vi.wikipedia.org/wiki/H%C3%A0_T%C4%A9nh"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "quang-tri",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "ho-tieu",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Quảng Trị",
+            "url": "https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Tr%E1%BB%8B"
+          }
+        },
+        {
+          "crop": "ca-phe",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Quảng Trị",
+            "url": "https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Tr%E1%BB%8B"
+          }
+        },
+        {
+          "crop": "cao-su",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Quảng Trị",
+            "url": "https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Tr%E1%BB%8B"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "hue",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "thanh-tra",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Huế",
+            "url": "https://vi.wikipedia.org/wiki/Hu%E1%BA%BF"
+          }
+        },
+        {
+          "crop": "sen",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Huế",
+            "url": "https://vi.wikipedia.org/wiki/Hu%E1%BA%BF"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "da-nang",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "que",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Quảng Nam",
+            "url": "https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Nam"
+          }
+        },
+        {
+          "crop": "sam",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Quảng Nam",
+            "url": "https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Nam"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "quang-ngai",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "mia",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Quảng Ngãi",
+            "url": "https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Ng%C3%A3i"
+          }
+        },
+        {
+          "crop": "toi",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Quảng Ngãi",
+            "url": "https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Ng%C3%A3i"
+          }
+        },
+        {
+          "crop": "que",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Quảng Ngãi",
+            "url": "https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Ng%C3%A3i"
+          }
+        },
+        {
+          "crop": "sam",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Kon Tum (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/Kon_Tum_%28t%E1%BB%89nh%29"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "gia-lai",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "ho-tieu",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Gia Lai",
+            "url": "https://vi.wikipedia.org/wiki/Gia_Lai"
+          }
+        },
+        {
+          "crop": "ca-phe",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Gia Lai",
+            "url": "https://vi.wikipedia.org/wiki/Gia_Lai"
+          }
+        },
+        {
+          "crop": "cao-su",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Gia Lai",
+            "url": "https://vi.wikipedia.org/wiki/Gia_Lai"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "dak-lak",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "ca-phe",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Cà phê Buôn Ma Thuột",
+            "url": "https://vi.wikipedia.org/wiki/C%C3%A0_ph%C3%AA_Bu%C3%B4n_Ma_Thu%E1%BB%99t"
+          }
+        },
+        {
+          "crop": "lua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Đắk Lắk",
+            "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BA%AFk_L%E1%BA%AFk"
+          }
+        },
+        {
+          "crop": "dua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Phú Yên (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/Ph%C3%BA_Y%C3%AAn_%28t%E1%BB%89nh%29"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "khanh-hoa",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "xoai",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Khánh Hòa",
+            "url": "https://vi.wikipedia.org/wiki/Kh%C3%A1nh_H%C3%B2a"
+          }
+        },
+        {
+          "crop": "nho",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Ninh Thuận",
+            "url": "https://vi.wikipedia.org/wiki/Ninh_Thu%E1%BA%ADn"
+          }
+        },
+        {
+          "crop": "toi",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Ninh Thuận",
+            "url": "https://vi.wikipedia.org/wiki/Ninh_Thu%E1%BA%ADn"
+          }
+        },
+        {
+          "crop": "tao",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Ninh Thuận",
+            "url": "https://vi.wikipedia.org/wiki/Ninh_Thu%E1%BA%ADn"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "lam-dong",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "che",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Lâm Đồng",
+            "url": "https://vi.wikipedia.org/wiki/L%C3%A2m_%C4%90%E1%BB%93ng"
+          }
+        },
+        {
+          "crop": "ca-phe",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Lâm Đồng",
+            "url": "https://vi.wikipedia.org/wiki/L%C3%A2m_%C4%90%E1%BB%93ng"
+          }
+        },
+        {
+          "crop": "thanh-long",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Bình Thuận (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_Thu%E1%BA%ADn_%28t%E1%BB%89nh%29"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "dong-nai",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "cao-su",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Đồng Nai",
+            "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Nai"
+          }
+        },
+        {
+          "crop": "buoi",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Đồng Nai",
+            "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Nai"
+          }
+        },
+        {
+          "crop": "dieu",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Bình Phước (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc_%28t%E1%BB%89nh%29"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "tay-ninh",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "mia",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Tây Ninh",
+            "url": "https://vi.wikipedia.org/wiki/T%C3%A2y_Ninh"
+          }
+        },
+        {
+          "crop": "cao-su",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Tây Ninh",
+            "url": "https://vi.wikipedia.org/wiki/T%C3%A2y_Ninh"
+          }
+        },
+        {
+          "crop": "na",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Tây Ninh",
+            "url": "https://vi.wikipedia.org/wiki/T%C3%A2y_Ninh"
+          }
+        },
+        {
+          "crop": "san",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Tây Ninh",
+            "url": "https://vi.wikipedia.org/wiki/T%C3%A2y_Ninh"
+          }
+        },
+        {
+          "crop": "thanh-long",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Long An (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/Long_An_%28t%E1%BB%89nh%29"
+          }
+        },
+        {
+          "crop": "lua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Long An (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/Long_An_%28t%E1%BB%89nh%29"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "dong-thap",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "xoai",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Đồng Tháp",
+            "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Th%C3%A1p"
+          }
+        },
+        {
+          "crop": "sen",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Đồng Tháp",
+            "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Th%C3%A1p"
+          }
+        },
+        {
+          "crop": "lua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Đồng Tháp",
+            "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Th%C3%A1p"
+          }
+        },
+        {
+          "crop": "quyt",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Đồng Tháp",
+            "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Th%C3%A1p"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "an-giang",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "lua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: An Giang",
+            "url": "https://vi.wikipedia.org/wiki/An_Giang"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "vinh-long",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "dua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Bến Tre (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/B%E1%BA%BFn_Tre_%28t%E1%BB%89nh%29"
+          }
+        },
+        {
+          "crop": "buoi",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Vĩnh Long",
+            "url": "https://vi.wikipedia.org/wiki/V%C4%A9nh_Long"
+          }
+        },
+        {
+          "crop": "cam",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Vĩnh Long",
+            "url": "https://vi.wikipedia.org/wiki/V%C4%A9nh_Long"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "can-tho",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "hanh",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Sóc Trăng (tỉnh)",
+            "url": "https://vi.wikipedia.org/wiki/S%C3%B3c_Tr%C4%83ng_%28t%E1%BB%89nh%29"
+          }
+        },
+        {
+          "crop": "khom",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Hậu Giang",
+            "url": "https://vi.wikipedia.org/wiki/H%E1%BA%ADu_Giang"
+          }
+        },
+        {
+          "crop": "lua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Cần Thơ",
+            "url": "https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1"
+          }
+        }
+      ]
+    },
+    {
+      "provinceId": "ca-mau",
+      "status": "draft",
+      "crops": [
+        {
+          "crop": "lua",
+          "source": {
+            "title": "Wikipedia tiếng Việt: Cà Mau",
+            "url": "https://vi.wikipedia.org/wiki/C%C3%A0_Mau"
+          }
+        }
+      ]
+    }
+  ]
+}

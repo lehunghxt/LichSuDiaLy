@@ -14,6 +14,7 @@ import {
 } from '../../../types/content'
 import { getItemsBySection, type RegionContentState } from '../../content'
 import { imageLibrary } from '../../images'
+import { RegionCrops } from '../../produce'
 import { card } from './styles'
 import { FeaturedPlaces } from './FeaturedPlaces'
 import { RegionCards } from './RegionCards'
@@ -138,6 +139,8 @@ export function MapInfoPanel(props: MapInfoPanelProps) {
           {outline && <OutlineSections outline={outline} items={ready.items} onOpen={onOpenTopic} />}
 
           <FeaturedPlaces items={featuredPlaces(ready)} images={images} onOpen={onOpenItem} />
+
+          <RegionCrops regionId={region.id} />
 
           <button
             type="button"
