@@ -36,7 +36,7 @@ export function ProvinceCard({ content, regionName, provinceId, images, onClear,
   return (
     <section
       aria-label={`Tỉnh đang xem: ${name}`}
-      className="animate-fade-up flex flex-col gap-3 rounded-2xl border-2 border-amber-300 bg-amber-50 p-4 in-data-sheet:p-3"
+      className="animate-fade-up flex flex-col gap-3 rounded-2xl border-2 border-amber-300 bg-amber-50 p-4 in-data-sheet:rounded-none in-data-sheet:border-0 in-data-sheet:bg-transparent in-data-sheet:p-0"
     >
       <div className="flex items-start gap-3">
         <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-amber-400 text-white shadow-sm">
@@ -93,10 +93,14 @@ export function ProvinceCard({ content, regionName, provinceId, images, onClear,
         </a>
       </div>
       {photos.length > 0 && (
-        <ul aria-label={`Hình ảnh tỉnh ${name}`} className="grid grid-cols-2 gap-3">
+        // Trong bottom sheet: dải ảnh vuốt ngang (thấy 2 ảnh, ló ảnh thứ 3) thay cho lưới nhiều hàng
+        <ul
+          aria-label={`Hình ảnh tỉnh ${name}`}
+          className="grid grid-cols-2 gap-3 in-data-sheet:-mx-4 in-data-sheet:flex in-data-sheet:snap-x in-data-sheet:snap-mandatory in-data-sheet:overflow-x-auto in-data-sheet:scroll-px-4 in-data-sheet:px-4 in-data-sheet:pb-1"
+        >
           {photos.map((img) => (
-            <li key={img.id}>
-              <WebImageFigure image={img} showCaption sizes="(min-width: 1024px) 15vw, 50vw" />
+            <li key={img.id} className="in-data-sheet:w-[42%] in-data-sheet:shrink-0 in-data-sheet:snap-start">
+              <WebImageFigure image={img} showCaption clampCaption sizes="(min-width: 1024px) 15vw, 45vw" />
             </li>
           ))}
         </ul>

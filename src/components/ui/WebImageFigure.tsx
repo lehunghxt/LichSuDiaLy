@@ -12,6 +12,8 @@ interface WebImageFigureProps {
   sizes: string
   priority?: boolean
   showCaption?: boolean
+  /** Chú thích tối đa 2 dòng (chỗ hẹp); bản đầy đủ có khi xem ảnh lớn. Dòng ghi nguồn luôn hiện đủ */
+  clampCaption?: boolean
   /** Tỉ lệ khung, mặc định 4 / 3 */
   aspect?: string
   className?: string
@@ -23,6 +25,7 @@ export function WebImageFigure({
   sizes,
   priority = false,
   showCaption = false,
+  clampCaption = false,
   aspect = '4 / 3',
   className = '',
 }: WebImageFigureProps) {
@@ -76,7 +79,7 @@ export function WebImageFigure({
         )}
       </div>
       <figcaption className="flex flex-col gap-0.5 leading-snug">
-        {showCaption && <span className="text-sm">{image.caption}</span>}
+        {showCaption && <span className={`text-sm ${clampCaption ? 'line-clamp-2' : ''}`}>{image.caption}</span>}
         <ImageCredit image={image} />
       </figcaption>
       {viewing && <ImageViewer image={image} onClose={closeViewer} />}
