@@ -1,4 +1,4 @@
-import { ArrowLeft, BookOpen, ChevronRight, Clock, MapPin, Mountain } from 'lucide-react'
+import { ArrowLeft, BookOpen, Clock, MapPin, Mountain } from 'lucide-react'
 import { useState } from 'react'
 import { provinceName } from '../../../lib/provinces'
 import { SmartImage } from '../../../components/ui/SmartImage'
@@ -142,11 +142,13 @@ export function MapInfoPanel(props: MapInfoPanelProps) {
           <button
             type="button"
             onClick={() => onOpenTopic('thien-nhien', null)}
-            className="flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-primary-dark px-5 text-lg font-bold text-white shadow-lg transition hover:bg-primary"
+            className="flex min-h-12 w-full items-center justify-center rounded-full bg-primary-dark px-4 py-2.5 text-base font-bold leading-tight text-white shadow-lg transition hover:bg-primary"
           >
-            <BookOpen aria-hidden className="size-6" />
-            Khám phá chi tiết vùng này
-            <ChevronRight aria-hidden className="size-6" />
+            {/* Biểu tượng nằm trong dòng chữ: phải xuống dòng thì vẫn đứng sát chữ đầu */}
+            <span className="text-balance text-center">
+              <BookOpen aria-hidden className="mr-2 inline size-5 align-[-0.2em]" />
+              Khám phá chi tiết vùng này
+            </span>
           </button>
         </>
       )}
