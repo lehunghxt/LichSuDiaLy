@@ -49,9 +49,10 @@ Lưu ý về `index.ts`: `vite.config.ts` khai báo các file này "không có t
   - khung xem bài: `features/content/section-modal/`;
   - khung trang: `app/layout/`.
 - File bố cục chỉ sắp đặt. Trạng thái và logic nằm ở component cha.
-- Trên điện thoại ưu tiên bottom sheet, dùng `components/sheet/`:
-  - `BottomSheet`: dạng hộp thoại;
-  - `SnapSheet`: tấm không chặn, có các mức peek / half / full.
+- Trên điện thoại ưu tiên tấm trượt, dùng `components/sheet/`:
+  - `BottomSheet`: dạng hộp thoại (khung xem bài, xác nhận, xem ảnh);
+  - `SnapSheet`: tấm không chặn, có các mức peek / half / full (thông tin vùng);
+  - `SideDrawer`: thanh bên trượt từ mép phải (menu ☰), vuốt sang phải để đóng.
 
 ## Công thức thêm một tính năng
 

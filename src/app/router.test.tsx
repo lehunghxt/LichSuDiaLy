@@ -55,12 +55,13 @@ describe('site header per device', () => {
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
   })
 
-  test('phone: ☰ opens the menu as a bottom sheet; choosing a page goes there and closes it', async () => {
+  test('phone: ☰ opens the menu as a sidebar from the right; choosing a page goes there and closes it', async () => {
     setViewportWidth(390)
     const router = renderAt('/')
     await userEvent.click(await screen.findByRole('button', { name: 'Mở menu' }))
     const sheet = screen.getByRole('dialog', { name: 'Menu' })
-    expect(sheet.className).toContain('rounded-t-3xl')
+    expect(sheet).toHaveAttribute('data-side', 'right')
+    expect(within(sheet).getByRole('button', { name: 'Đóng menu' })).toHaveFocus()
     const nav = within(sheet).getByRole('navigation', { name: 'Menu' })
     expect(within(sheet).getByRole('link', { name: 'Nguồn tham khảo' })).toBeInTheDocument()
     await userEvent.click(within(nav).getByRole('link', { name: /Trắc nghiệm/ }))

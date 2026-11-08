@@ -5,9 +5,17 @@ import { Link, NavLink } from 'react-router'
 import { NAV_ITEMS } from '../../components/layout/navItems'
 
 /** Logo + tên trang, dẫn về Trang chủ. compact: biểu tượng và chữ nhỏ hơn (điện thoại) */
-export function SiteLogo({ compact = false, titleClassName = '' }: { compact?: boolean; titleClassName?: string }) {
+export function SiteLogo({
+  compact = false,
+  titleClassName = '',
+  onNavigate,
+}: {
+  compact?: boolean
+  titleClassName?: string
+  onNavigate?(): void
+}) {
   return (
-    <Link to="/" className="flex min-w-0 shrink-0 items-center gap-3">
+    <Link to="/" onClick={onNavigate} className="flex min-w-0 shrink-0 items-center gap-3">
       <span
         className={`relative flex shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-300 to-emerald-400 shadow-md ${compact ? 'size-11' : 'size-14'}`}
       >

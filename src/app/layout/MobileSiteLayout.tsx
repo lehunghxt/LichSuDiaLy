@@ -1,12 +1,13 @@
-import { Menu } from 'lucide-react'
-import { type ReactNode, useState } from 'react'
-import { BottomSheet } from '../../components/sheet/BottomSheet'
+import { Menu, X } from 'lucide-react'
+import { type ReactNode, useRef, useState } from 'react'
+import { SideDrawer } from '../../components/sheet/SideDrawer'
 import { HEADER_BAR, NavPills, SiteFooter, SiteLogo, SkipLink, SourceLinks } from './parts'
 
-/** Điện thoại: header gọn (logo + ☰); ☰ mở menu dạng bottom sheet */
+/** Điện thoại: header gọn (logo + ☰); ☰ mở menu dạng thanh bên trượt ra từ mép phải */
 export function MobileSiteLayout({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false)
   const close = () => setOpen(false)
+  const closeRef = useRef<HTMLButtonElement>(null)
   return (
     <div className="flex min-h-dvh flex-col">
       <SkipLink />
@@ -30,14 +31,26 @@ export function MobileSiteLayout({ children }: { children: ReactNode }) {
       </main>
       <SiteFooter />
       {open && (
-        <BottomSheet label="Menu" onClose={close}>
-          <nav aria-label="Menu" className="px-4 pb-2">
+        <SideDrawer label="Menu" onClose={close} initialFocusRef={closeRef}>
+          <div className="flex items-center gap-2 border-b border-line px-4 py-3">
+            <SiteLogo compact onNavigate={close} />
+            <button
+              ref={closeRef}
+              type="button"
+              onClick={close}
+              aria-label="Đóng menu"
+              className="ml-auto grid size-11 shrink-0 place-items-center rounded-full bg-surface text-muted shadow-sm hover:bg-line hover:text-ink"
+            >
+              <X aria-hidden className="size-5" strokeWidth={2.5} />
+            </button>
+          </div>
+          <nav aria-label="Menu" className="px-4 py-4">
             <NavPills layout="column" onNavigate={close} />
           </nav>
-          <p className="px-4 pb-5 pt-2 text-center text-sm text-muted">
+          <p className="mt-auto border-t border-line px-4 py-4 text-center text-sm text-muted">
             <SourceLinks onNavigate={close} />
           </p>
-        </BottomSheet>
+        </SideDrawer>
       )}
     </div>
   )
