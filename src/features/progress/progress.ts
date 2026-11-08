@@ -1,7 +1,7 @@
 // Mô hình tiến độ học tập và các hàm cập nhật thuần (không đụng tới localStorage).
 // Hàm cập nhật trả về đúng object cũ khi không có gì thay đổi, để tránh ghi thừa.
 import type { RegionContent } from '../../types/content'
-import { isPublished } from '../content/repository'
+import { isPublished } from '../../lib/publishing'
 
 export const PROGRESS_KEY = 'ekp-progress-v1'
 const RECENT_LIMIT = 6

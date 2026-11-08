@@ -1,4 +1,4 @@
-import { ContentError } from '../content/parse'
+import { ContentError } from '../../lib/validate'
 import { parseWebImages } from './parseWebImages'
 
 const REGION = 'trung-du-mien-nui-phia-bac'

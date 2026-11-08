@@ -1,6 +1,6 @@
 import { lazy } from 'react'
 import type { RouteObject } from 'react-router'
-import { AppLayout } from '../components/layout/AppLayout'
+import { AppLayout } from './layout/AppLayout'
 import { RouteError } from './RouteError'
 
 const HomePage = lazy(() => import('../pages/HomePage'))

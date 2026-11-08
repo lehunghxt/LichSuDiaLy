@@ -1,6 +1,6 @@
 import profiles from '../../data/province-profiles.json'
 import type { ContentStatus, SourceRef } from '../../types/content'
-import { isPublished } from '../content/repository'
+import { isPublished } from '../../lib/publishing'
 
 export interface ProvinceFact {
   text: string

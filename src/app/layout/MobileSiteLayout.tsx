@@ -1,6 +1,6 @@
 import { Menu } from 'lucide-react'
 import { type ReactNode, useState } from 'react'
-import { BottomSheet } from '../../sheet/BottomSheet'
+import { BottomSheet } from '../../components/sheet/BottomSheet'
 import { HEADER_BAR, NavPills, SiteFooter, SiteLogo, SkipLink, SourceLinks } from './parts'
 
 /** Điện thoại: header gọn (logo + ☰); ☰ mở menu dạng bottom sheet */

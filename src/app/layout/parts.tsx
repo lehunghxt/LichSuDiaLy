@@ -2,7 +2,7 @@
 // file bố cục của từng thiết bị chọn kiểu qua prop hoặc thêm lớp qua className.
 import { BookOpen, Map as MapIcon } from 'lucide-react'
 import { Link, NavLink } from 'react-router'
-import { NAV_ITEMS } from '../navItems'
+import { NAV_ITEMS } from '../../components/layout/navItems'
 
 /** Logo + tên trang, dẫn về Trang chủ. compact: biểu tượng và chữ nhỏ hơn (điện thoại) */
 export function SiteLogo({ compact = false, titleClassName = '' }: { compact?: boolean; titleClassName?: string }) {

@@ -6,7 +6,7 @@
 // Tên file quyết định provinceId, thư mục quyết định regionId. Sinh bằng `npm run images:fetch <regionId>`.
 import provinces from '../../data/provinces.json'
 import type { RegionContent, WebImage } from '../../types/content'
-import { isPublished } from '../content/repository'
+import { isPublished } from '../../lib/publishing'
 import { parseWebImages } from './parseWebImages'
 
 type Loader = () => Promise<unknown>

@@ -2,10 +2,10 @@ import { Suspense } from 'react'
 import { Outlet, useMatch } from 'react-router'
 import { ProgressProvider } from '../../features/progress/ProgressProvider'
 import { useDevice } from '../../lib/device'
-import { LoadingState } from '../ui/states'
-import { DesktopSiteLayout } from './site/DesktopSiteLayout'
-import { MobileSiteLayout } from './site/MobileSiteLayout'
-import { TabletSiteLayout } from './site/TabletSiteLayout'
+import { LoadingState } from '../../components/ui/states'
+import { DesktopSiteLayout } from './DesktopSiteLayout'
+import { MobileSiteLayout } from './MobileSiteLayout'
+import { TabletSiteLayout } from './TabletSiteLayout'
 
 const SITE_LAYOUT = { mobile: MobileSiteLayout, tablet: TabletSiteLayout, desktop: DesktopSiteLayout }
 

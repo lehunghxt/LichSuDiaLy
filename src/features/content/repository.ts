@@ -1,19 +1,12 @@
 import rawRegions from '../../data/regions.json'
-import type { ContentItem, ContentStatus, RegionContent, RegionMeta, RegionOutline, SectionId } from '../../types/content'
+import type { ContentItem, RegionContent, RegionMeta, RegionOutline, SectionId } from '../../types/content'
 import type { Quiz } from '../../types/quiz'
 import { parseRegionContent, parseRegionList } from './parse'
 import { parseOutline } from './parseOutline'
+import { isPublished } from '../../lib/publishing'
 import { loadersFromGlob } from './regionFiles'
 
-/** Bản production chỉ hiện nội dung đã được giáo viên duyệt */
-/** Bản xem thử: build PROD vẫn hiện nội dung nháp khi đặt VITE_SHOW_DRAFTS=true */
-export function showDrafts(): boolean {
-  return import.meta.env.VITE_SHOW_DRAFTS === 'true'
-}
-
-export function isPublished(status: ContentStatus): boolean {
-  return import.meta.env.PROD && !showDrafts() ? status === 'verified' : true
-}
+export { isPublished, showDrafts } from '../../lib/publishing'
 
 /** Quy ước id: "<regionId>__<slug>" để suy ra vùng mà không phải nạp mọi vùng */
 export function regionIdOf(id: string): string | null {

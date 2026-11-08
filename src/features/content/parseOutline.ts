@@ -1,6 +1,6 @@
 // Dàn ý vùng (src/data/regions/<regionId>/outline.json): phần → mục → itemIds
 import { SECTIONS, type OutlineSection, type OutlineTopic, type RegionOutline, type SectionId } from '../../types/content'
-import { ContentError, join, list, obj, oneOf, optStr, str, strList } from './parse'
+import { ContentError, join, list, obj, oneOf, optStr, str, strList } from '../../lib/validate'
 
 export function parseOutline(raw: unknown, regionId: string, path: string): RegionOutline {
   const seen = new Set<string>()

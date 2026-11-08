@@ -1,7 +1,7 @@
 // Parser cho thư viện ảnh nhúng: chỉ nhận ảnh trên Wikimedia Commons với giấy phép tự do,
 // để mọi ảnh hiện trên web đều được phép nhúng và ghi nguồn đầy đủ.
 import { SECTIONS, type WebImage } from '../../types/content'
-import { ContentError, STATUSES, join, list, num, obj, oneOf, optStr, str, strList, type Obj } from '../content/parse'
+import { ContentError, STATUSES, join, list, num, obj, oneOf, optStr, str, strList, type Obj } from '../../lib/validate'
 
 /** Public domain, CC0, CC BY, CC BY-SA. Không nhận NC, ND hay giấy phép khác */
 export const ALLOWED_LICENSE = /^(Public domain|CC0( 1\.0)?|CC BY(-SA)? \d\.\d( [A-Za-z-]+)?)$/
