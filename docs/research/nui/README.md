@@ -62,14 +62,14 @@ Ngày soạn: 2026-11-08.
 ### Mẫu Sơn
 
 - **Vùng:** Trung du và miền núi phía Bắc. **Tỉnh:** Lạng Sơn. **Độ cao / kích thước:** cao trung bình 800–1 000 m, hơn 80 ngọn núi.
-- Dãy núi ở Lạng Sơn; mùa đông có khi có băng tuyết.
+- Dãy núi ở Lạng Sơn; mùa đông đôi khi có tuyết rơi trên đỉnh (SGK tr. 22).
 - **Nguồn:** SGK LS&ĐL 4 (KNTT) tr. 20, 22; [Wikipedia: Mẫu Sơn](https://vi.wikipedia.org/wiki/M%E1%BA%ABu_S%C6%A1n)
 - **Ảnh:** Núi Mẫu Sơn. [File:Mẫu Sơn.jpg](https://commons.wikimedia.org/wiki/File%3AM%E1%BA%ABu_S%C6%A1n.jpg), Minh Chu, CC BY-SA 2.0, qua Wikimedia Commons.
 
 ### Tam Đảo
 
 - **Vùng:** Trung du và miền núi phía Bắc. **Tỉnh:** Phú Thọ, Thái Nguyên. **Độ cao / kích thước:** đỉnh cao nhất 1 597 m.
-- Dãy núi có ba đỉnh nổi bật; khu nghỉ mát và vườn quốc gia.
+- Dãy núi có ba đỉnh nổi bật; trên núi có khu nghỉ mát.
 - **Nguồn:** [Wikipedia: Tam Đảo](https://vi.wikipedia.org/wiki/Tam_%C4%90%E1%BA%A3o)
 - **Ảnh:** Dãy núi Tam Đảo. [File:Tam Dao mountain range.jpg](https://commons.wikimedia.org/wiki/File%3ATam_Dao_mountain_range.jpg), Viethavvh, Public domain, qua Wikimedia Commons.
 
@@ -104,7 +104,7 @@ Ngày soạn: 2026-11-08.
 ### Ngọc Linh
 
 - **Vùng:** Bắc Trung Bộ và Nam Trung Bộ. **Tỉnh:** Đà Nẵng, Quảng Ngãi, Gia Lai. **Độ cao / kích thước:** khoảng 2 600 m.
-- Khối núi cao nhất Tây Nguyên và Nam Trung Bộ; nơi trồng sâm Ngọc Linh.
+- Khối núi cao, nơi có sâm Ngọc Linh.
 - **Nguồn:** [Wikipedia: Khối núi Ngọc Linh](https://vi.wikipedia.org/wiki/Kh%E1%BB%91i_n%C3%BAi_Ng%E1%BB%8Dc_Linh)
 - **Ảnh:** chưa tìm được ảnh tự do đúng chủ thể trên Commons.
 
