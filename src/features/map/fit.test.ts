@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import L from 'leaflet'
 import type { Device } from '../../lib/device'
-import { MAP_MAX_BOUNDS, countryPadding, regionPadding } from './fit'
+import { MAP_MAX_BOUNDS, PROVINCE_MAX_ZOOM, countryPadding, provinceFit, regionPadding } from './fit'
 import { regionBounds, type AreaCollection, type RegionFeatureProps } from './geo'
 
 const legend = { left: 16, top: 16, width: 170, height: 40 }
@@ -52,6 +52,37 @@ describe('tablet', () => {
   test('a chosen region is zoomed in to the left of the floating side panel and above the tab bar', () => {
     // khung nổi 380 + lề 12 hai bên = 404
     expect(regionPadding('tablet', 1000, legend)).toEqual({ paddingTopLeft: [12, 100], paddingBottomRight: [404, 76] })
+  })
+})
+
+describe('a chosen province is zoomed in on every device', () => {
+  test('desktop: the panel is beside the map, so only leave room for the chips', () => {
+    expect(provinceFit('desktop', 500, legend)).toEqual({
+      paddingTopLeft: [12, 64],
+      paddingBottomRight: [12, 12],
+      maxZoom: PROVINCE_MAX_ZOOM,
+    })
+  })
+
+  test('mobile: above the half-open bottom sheet (no region callout to leave room for)', () => {
+    expect(provinceFit('mobile', 800, null)).toEqual({
+      paddingTopLeft: [12, 12],
+      paddingBottomRight: [12, 424],
+      maxZoom: PROVINCE_MAX_ZOOM,
+    })
+  })
+
+  test('tablet: to the left of the floating side panel and above the tab bar', () => {
+    expect(provinceFit('tablet', 1000, legend)).toEqual({
+      paddingTopLeft: [12, 64],
+      paddingBottomRight: [404, 76],
+      maxZoom: PROVINCE_MAX_ZOOM,
+    })
+  })
+
+  test('small provinces are not zoomed in so far that their surroundings disappear', () => {
+    expect(PROVINCE_MAX_ZOOM).toBeGreaterThanOrEqual(8)
+    expect(PROVINCE_MAX_ZOOM).toBeLessThanOrEqual(10)
   })
 })
 

@@ -51,13 +51,30 @@ export function countryPadding(device: Device, frameHeight: number, legend: Lege
 // Chỗ cho nhãn bong bóng tên vùng đặt phía trên vùng đang chọn
 const CALLOUT = 36
 
+/** Lề khi phóng vào một khu vực ở điện thoại, máy tính bảng: tránh khung thông tin (bottom sheet nửa màn hình,
+ *  khung nổi bên phải) và thanh tab; `top` là lề phía trên */
+function besidePanel(device: 'mobile' | 'tablet', frameHeight: number, top: number): CountryPadding {
+  if (device === 'tablet') return { paddingTopLeft: [EDGE, top], paddingBottomRight: [SIDE_PANEL + 2 * EDGE, TAB_BAR + EDGE] }
+  // Chừa thanh tab và bottom sheet đang mở nửa màn hình, để khu vực nằm gọn phía trên tấm
+  const bottom = Math.min(TAB_BAR + Math.round(frameHeight * HALF_SHEET), Math.round(frameHeight * MAX_BOTTOM_SHARE))
+  return { paddingTopLeft: [EDGE, top], paddingBottomRight: [EDGE, bottom] }
+}
+
 /** Điện thoại, máy tính bảng: phóng vào vùng đang chọn để em chạm được từng tỉnh, tránh phần khung thông tin che.
  *  Desktop: khung thông tin nằm cạnh bản đồ, giữ toàn quốc (null) */
 export function regionPadding(device: Device, frameHeight: number, legend: LegendBox | null): CountryPadding | null {
   if (device === 'desktop') return null
-  const top = (belowLegend(frameHeight, legend) ?? EDGE) + CALLOUT
-  if (device === 'tablet') return { paddingTopLeft: [EDGE, top], paddingBottomRight: [SIDE_PANEL + 2 * EDGE, TAB_BAR + EDGE] }
-  // Chừa thanh tab và bottom sheet đang mở nửa màn hình, để vùng nằm gọn phía trên tấm
-  const bottom = Math.min(TAB_BAR + Math.round(frameHeight * HALF_SHEET), Math.round(frameHeight * MAX_BOTTOM_SHARE))
-  return { paddingTopLeft: [EDGE, top], paddingBottomRight: [EDGE, bottom] }
+  return besidePanel(device, frameHeight, (belowLegend(frameHeight, legend) ?? EDGE) + CALLOUT)
+}
+
+/** Mức phóng tối đa khi chọn tỉnh: tỉnh nhỏ (Hà Nội, Huế…) vẫn thấy được các tỉnh xung quanh */
+export const PROVINCE_MAX_ZOOM = 9
+
+/** Chọn một tỉnh: mọi thiết bị đều phóng vào tỉnh đó. Tên tỉnh ghim ngay giữa tỉnh nên không cần chừa chỗ nhãn vùng */
+export function provinceFit(device: Device, frameHeight: number, legend: LegendBox | null): CountryPadding & { maxZoom: number } {
+  const padding =
+    device === 'desktop'
+      ? countryPadding(device, frameHeight, legend)
+      : besidePanel(device, frameHeight, belowLegend(frameHeight, legend) ?? EDGE)
+  return { ...padding, maxZoom: PROVINCE_MAX_ZOOM }
 }
