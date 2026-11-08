@@ -15,11 +15,13 @@ Bản xem thử: https://em-kham-pha-lsdl.vercel.app
 | Ôn tập | `/on-tap`, `/on-tap/:bài` | 4 bài trắc nghiệm (54 câu), một bài cho mỗi vùng. Có ba dạng câu: một đáp án, Đúng/Sai, Ghép đôi |
 | Tiến độ | `/tien-do` | Số mục đã xem, điểm cao nhất từng bài. Tiến độ lưu trên máy em |
 | Nguồn tham khảo | `/nguon-tham-khao` | Các trang SGK được dẫn |
-| Nguồn ảnh | `/nguon-anh` | Tác giả, giấy phép và trang gốc của mọi ảnh, gồm cả ảnh cây trồng |
+| Nguồn ảnh | `/nguon-anh` | Tác giả, giấy phép và trang gốc của mọi ảnh, gồm cả ảnh cây trồng; bảng video lễ hội và kênh đăng |
 
 **Cây trồng tiêu biểu** gồm hai nhóm: *Cây công nghiệp* và *Cây nông nghiệp*. Mỗi cây có một ảnh, bấm vào để xem lớn.
 - Ở thông tin vùng: chỉ có các cây SGK nêu, kèm số trang.
 - Ở thông tin tỉnh: có nhãn **"Ngoài SGK"** và link nguồn cho từng cây. Hiện có 32 tỉnh với 96 cặp tỉnh–cây. Hà Nội và TP. Hồ Chí Minh để trống vì nguồn không nêu rõ.
+
+**Lễ hội qua video** (ở thông tin tỉnh, nhãn **"Ngoài SGK"**): mỗi tỉnh có ít nhất một video lễ hội từ YouTube (35 video cho 34 tỉnh), của đài truyền hình và báo chí. Dưới mỗi video ghi tên video và kênh đăng; trình phát chỉ tải khi em bấm phát. Danh sách để duyệt: `docs/research/le-hoi-video.md`.
 
 Giao diện có ba bản riêng cho điện thoại, máy tính bảng và máy tính. Trên điện thoại, thông tin hiện trong bảng trượt từ dưới lên.
 
@@ -51,7 +53,7 @@ React 19, TypeScript (strict), Vite, Tailwind CSS v4, Leaflet / react-leaflet, R
 src/
   app/        khung trang, router, bố cục
   pages/      các trang
-  features/   content, images, map, produce, progress, quiz, sources
+  features/   content, images, map, produce, progress, quiz, sources, videos
   components/ thành phần giao diện dùng chung
   lib/        kiểm tra dữ liệu, quy tắc xuất bản, tỉnh
   data/       nội dung, ảnh, cây trồng, tỉnh, vùng (JSON)

@@ -35,7 +35,7 @@ function renderAt(path: string) {
 test('/nguon-anh lists every image with author, license and a link to the original page', async () => {
   renderAt('/nguon-anh')
   expect(await screen.findByRole('heading', { level: 1, name: 'Nguồn ảnh' })).toBeInTheDocument()
-  const table = await screen.findByRole('table')
+  const table = await screen.findByRole('table', { name: 'Ảnh' })
   const headers = within(table)
     .getAllByRole('columnheader')
     .map((h) => h.textContent)
@@ -53,10 +53,22 @@ test('/nguon-anh lists every image with author, license and a link to the origin
 
 test('/nguon-anh also credits the crop photos, marked "Cây trồng"', async () => {
   renderAt('/nguon-anh')
-  const table = await screen.findByRole('table')
+  const table = await screen.findByRole('table', { name: 'Ảnh' })
   const tea = (await within(table).findByText('Đồi chè ở tỉnh Thái Nguyên.')).closest('tr')!
   expect(tea).toHaveTextContent('Cây trồng')
   expect(within(tea).getByRole('link', { name: 'File:Tea plantation in Thai Nguyen.jpg' })).toBeInTheDocument()
+})
+
+test('/nguon-anh also lists every festival video with its YouTube channel', async () => {
+  renderAt('/nguon-anh')
+  const table = await screen.findByRole('table', { name: 'Video' })
+  const row = (await within(table).findByText('Lễ Khao lề thế lính Hoàng Sa')).closest('tr')!
+  expect(row).toHaveTextContent('Quảng Ngãi')
+  expect(within(row).getByRole('link', { name: 'VTV24' })).toHaveAttribute('href', 'https://www.youtube.com/@vtv24')
+  expect(within(row).getByRole('link', { name: /Thiêng liêng Lễ khao lề/ })).toHaveAttribute(
+    'href',
+    'https://www.youtube.com/watch?v=P5yh-S1ffMg',
+  )
 })
 
 test('footer links to the image credits page', async () => {

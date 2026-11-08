@@ -1,0 +1,471 @@
+[
+  {
+    "provinceId": "lai-chau",
+    "festival": "Lễ hội Then Kin Pang",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "gZlmWjEuo6k",
+      "title": "ẤN TƯỢNG LỄ HỘI THEN KIN PANG TẠI PHONG THỔ LAI CHÂU | VTV5",
+      "channel": "VTV5 - Tiếng dân tộc thiểu số",
+      "channelUrl": "https://www.youtube.com/@vtv5tiengdantocthieuso"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "dien-bien",
+    "festival": "Lễ hội Hoa Ban",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "OIbm0vgnXQ8",
+      "title": "Ngày hội hoa ban Điện Biên năm 2019 có gì hấp dẫn?",
+      "channel": "KÊNH VTC10",
+      "channelUrl": "https://www.youtube.com/@K%C3%8ANHVTC10"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "son-la",
+    "festival": "Lễ hội Hết Chá",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "u435gjR_bmg",
+      "title": "Độc đáo Lễ hội Hết Chá trên cao nguyên Mộc Châu",
+      "channel": "Báo Sơn La",
+      "channelUrl": "https://www.youtube.com/@baosonla3164"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "lao-cai",
+    "festival": "Lễ hội Gầu Tào",
+    "status": "draft",
+    "itemId": "trung-du-mien-nui-phia-bac__le-hoi-gau-tao",
+    "video": {
+      "provider": "youtube",
+      "id": "MxG_2gSOGic",
+      "title": "Khám phá di sản: Lễ hội Gầu Tào của người Mông (16/9/2023) | THLC",
+      "channel": "Báo và Phát thanh, Truyền hình tỉnh Lào Cai",
+      "channelUrl": "https://www.youtube.com/@truyenhinhlaocai"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "tuyen-quang",
+    "festival": "Lễ hội Lồng Tông",
+    "status": "draft",
+    "itemId": "trung-du-mien-nui-phia-bac__le-hoi-long-tong",
+    "video": {
+      "provider": "youtube",
+      "id": "i1Vixx9OO3A",
+      "title": "Lễ hội Lồng Tông truyền thống của đồng bào dân tộc Tày, tỉnh Tuyên Quang",
+      "channel": "Báo Nhân Dân",
+      "channelUrl": "https://www.youtube.com/@baonhandanmedia"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "cao-bang",
+    "festival": "Hội Nàng Hai",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "rfW3vT6Jgk8",
+      "title": "Độc đáo hội nàng Hai của người Tày ở Cao Bằng | Tiền Phong TV",
+      "channel": "Tiền Phong TV",
+      "channelUrl": "https://www.youtube.com/@baotienphong"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "thai-nguyen",
+    "festival": "Lễ hội Lồng Tồng ATK Phú Đình",
+    "status": "draft",
+    "itemId": "trung-du-mien-nui-phia-bac__le-hoi-long-tong",
+    "video": {
+      "provider": "youtube",
+      "id": "4oCJw7CSdro",
+      "title": "Khai mạc Lễ hội Lồng tồng Phú Đình 2026",
+      "channel": "Báo và Phát thanh Truyền hình Thái Nguyên",
+      "channelUrl": "https://www.youtube.com/@baovaptththainguyen"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "lang-son",
+    "festival": "Lễ hội Lồng Tồng",
+    "status": "draft",
+    "itemId": "trung-du-mien-nui-phia-bac__le-hoi-long-tong",
+    "video": {
+      "provider": "youtube",
+      "id": "9ol50dXqhfo",
+      "title": "TRẢI NGHIỆM LỄ HỘI LỒNG TỒNG Ở LẠNG SƠN",
+      "channel": "VTV3",
+      "channelUrl": "https://www.youtube.com/@VTV3GIAITRI"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "phu-tho",
+    "festival": "Lễ giỗ Tổ Hùng Vương",
+    "status": "draft",
+    "itemId": "trung-du-mien-nui-phia-bac__le-gio-to",
+    "video": {
+      "provider": "youtube",
+      "id": "hInyfqwqDf4",
+      "title": "Không khí chính hội ngày Giỗ tổ Hùng Vương | VTV24",
+      "channel": "VTV24",
+      "channelUrl": "https://www.youtube.com/@vtv24"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "ha-noi",
+    "festival": "Hội Gióng",
+    "status": "draft",
+    "itemId": "dong-bang-bac-bo__hoi-giong",
+    "video": {
+      "provider": "youtube",
+      "id": "781D-GtjkMg",
+      "title": "Hội Gióng rộn ràng sắc màu di sản | VTV4",
+      "channel": "VTV4",
+      "channelUrl": "https://www.youtube.com/@VTV4go"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "bac-ninh",
+    "festival": "Hội Lim",
+    "status": "draft",
+    "itemId": "dong-bang-bac-bo__hoi-lim",
+    "video": {
+      "provider": "youtube",
+      "id": "155RebrEZOA",
+      "title": "Nhiều hoạt động văn hóa đặc sắc tại lễ hội Lim, Bắc Ninh | Tin tức",
+      "channel": "HTV - Đài Hà Nội",
+      "channelUrl": "https://www.youtube.com/@daihanoi-htv"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "quang-ninh",
+    "festival": "Lễ hội Xuân Yên Tử",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "AzTr-W_QVG0",
+      "title": "Lễ hội Xuân Yên Tử năm 2026",
+      "channel": "Quảng Ninh TV",
+      "channelUrl": "https://www.youtube.com/@quangninhtv"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "hai-phong",
+    "festival": "Lễ hội Côn Sơn – Kiếp Bạc",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "SxZpDnFITw4",
+      "title": "Khai hội Côn Sơn, Kiếp Bạc mùa Thu năm 2026 - VNAMedia",
+      "channel": "VNAMEDIA - TRUNG TÂM NỘI DUNG SỐ VÀ TRUYỀN THÔNG",
+      "channelUrl": "https://www.youtube.com/@VNAMEDIADIGITALCENTRE"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "hung-yen",
+    "festival": "Lễ hội Chử Đồng Tử – Tiên Dung",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "zV2k2kTrv8Y",
+      "title": "Khai hội Chử Đồng Tử - Tiên Dung | VOV",
+      "channel": "Tư liệu VOVTV",
+      "channelUrl": "https://www.youtube.com/@tulieuTruyenhinhVOV"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "ninh-binh",
+    "festival": "Lễ hội Hoa Lư",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "P1m6tp3ZHac",
+      "title": "Lễ hội Hoa Lư năm 2026 lan tỏa giá trị di sản",
+      "channel": "NinhBinhTV",
+      "channelUrl": "https://www.youtube.com/@NinhBinhTV3"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "thanh-hoa",
+    "festival": "Lễ hội Lam Kinh",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "oOrymYMCwn0",
+      "title": "Khai mạc Lễ hội Lam Kinh năm 2026",
+      "channel": "Truyền hình Thanh Hóa",
+      "channelUrl": "https://www.youtube.com/@daiptththanhhoa"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "nghe-an",
+    "festival": "Lễ hội Làng Sen",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "BKxcUBNUgJM",
+      "title": "Khai mạc Lễ hội Làng Sen năm 2026",
+      "channel": "Nghệ An TV",
+      "channelUrl": "https://www.youtube.com/@truyenhinhnghean"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "ha-tinh",
+    "festival": "Lễ hội Đền Chợ Củi",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "vL7dz4ixwxY",
+      "title": "Miền văn hóa dân gian trong lễ hội Đền Chợ Củi",
+      "channel": "Truyền Hình Hà Tĩnh",
+      "channelUrl": "https://www.youtube.com/@bhttv2025"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "quang-tri",
+    "festival": "Lễ thượng cờ Thống nhất non sông",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "wVH7H2CMfYc",
+      "title": "Lễ thượng cờ thống nhất non sông tại Đôi bờ Hiền Lương - Bến Hải",
+      "channel": "Báo Nhân Dân",
+      "channelUrl": "https://www.youtube.com/@baonhandanmedia"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "hue",
+    "festival": "Festival Huế",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "jSP2POKu5eo",
+      "title": "Sôi động chuỗi sự kiện Lễ hội mùa Hạ – Festival Huế 2026",
+      "channel": "Báo và Phát thanh, Truyền hình Huế",
+      "channelUrl": "https://www.youtube.com/@thanhphohuetv"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "da-nang",
+    "festival": "Lễ hội Cầu Ngư",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "iU5WvuvAc0s",
+      "title": "Lễ hội Cầu ngư - Di sản văn hoá biểnI Việt Nam đa sắc",
+      "channel": "VTV3",
+      "channelUrl": "https://www.youtube.com/@VTV3GIAITRI"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "quang-ngai",
+    "festival": "Lễ Khao lề thế lính Hoàng Sa",
+    "status": "draft",
+    "itemId": "bac-trung-bo-va-nam-trung-bo__khao-le",
+    "video": {
+      "provider": "youtube",
+      "id": "P5yh-S1ffMg",
+      "title": "Thiêng liêng Lễ khao lề thế lính Hoàng Sa | VTV24",
+      "channel": "VTV24",
+      "channelUrl": "https://www.youtube.com/@vtv24"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "gia-lai",
+    "festival": "Festival Cồng chiêng",
+    "status": "draft",
+    "itemId": "bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng",
+    "video": {
+      "provider": "youtube",
+      "id": "UamCzy6aIwQ",
+      "title": "FESTIVAL CỒNG CHIÊNG GIA LAI - RỘN RÀNG TRƯỚC NGÀY KHAI HỘI | VTV5",
+      "channel": "VTV5",
+      "channelUrl": "https://www.youtube.com/@vtv5official"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "dak-lak",
+    "festival": "Lễ hội Đua voi",
+    "status": "draft",
+    "itemId": "bac-trung-bo-va-nam-trung-bo__dua-voi",
+    "video": {
+      "provider": "youtube",
+      "id": "4N_cPA7BRvk",
+      "title": "Độc đáo Lễ hội đua voi tại Đắk Lắk",
+      "channel": "Báo Nhân Dân",
+      "channelUrl": "https://www.youtube.com/@baonhandanmedia"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "khanh-hoa",
+    "festival": "Lễ hội Tháp Bà Pô Nagar",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "UZAO6llpa_k",
+      "title": "Khánh Hòa: Đặc sắc Lễ hội Tháp Bà Pô Nagar 2026",
+      "channel": "Thể Thao Văn Hóa",
+      "channelUrl": "https://www.youtube.com/@TheThaoVanHoaHub"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "khanh-hoa",
+    "festival": "Lễ hội Ka-tê",
+    "status": "draft",
+    "itemId": "bac-trung-bo-va-nam-trung-bo__ka-te",
+    "video": {
+      "provider": "youtube",
+      "id": "qFHD-75EcHE",
+      "title": "Đặc sắc lễ hội KATÊ của đồng bào Chăm ở Ninh Thuận",
+      "channel": "Trạm tin QPVN",
+      "channelUrl": "https://www.youtube.com/@tramtinQPVN247"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "lam-dong",
+    "festival": "Festival Hoa Đà Lạt",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "NFvBzWWi7fw",
+      "title": "Khai mạc Festival Hoa Đà Lạt lần thứ X",
+      "channel": "Tư liệu VOVTV",
+      "channelUrl": "https://www.youtube.com/@tulieuTruyenhinhVOV"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "ho-chi-minh",
+    "festival": "Lễ hội Nghinh Ông Cần Giờ",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "VHSIk-nElJU",
+      "title": "ĐẶC SẮC LỄ HỘI NGHINH ÔNG CẦN GIỜ| HTV TIN TỨC",
+      "channel": "HTV Tin Tức",
+      "channelUrl": "https://www.youtube.com/@HTVTinT%E1%BB%A9c"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "dong-nai",
+    "festival": "Lễ hội đua thuyền truyền thống",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "PnJNWCHLNDM",
+      "title": "Đồng Nai: Đua thuyền truyền thống mừng Đảng - mừng Xuân Quý Mão năm 2023",
+      "channel": "Thời Sự ĐNRTV",
+      "channelUrl": "https://www.youtube.com/@thoisunrtv4680"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "tay-ninh",
+    "festival": "Hội Xuân Núi Bà Đen",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "ketk6zp-iPA",
+      "title": "Lễ Hội Xuân Núi Bà Đen chính thức khai hội từ mùng 4 Tết | TayNinhTV",
+      "channel": "Tây Ninh TV",
+      "channelUrl": "https://www.youtube.com/@TayNinhTV1"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "dong-thap",
+    "festival": "Lễ hội Gò Tháp",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "pFCyYMbZkVU",
+      "title": "THDT - Nhộn nhịp Lễ hội Gò Tháp",
+      "channel": "Truyền Hình Đồng Tháp",
+      "channelUrl": "https://www.youtube.com/@DongThapTV"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "an-giang",
+    "festival": "Lễ hội Vía Bà Chúa Xứ núi Sam",
+    "status": "draft",
+    "itemId": "nam-bo__ba-chua-xu-nui-sam",
+    "video": {
+      "provider": "youtube",
+      "id": "XPSxprIFKRQ",
+      "title": "SỨC HÚT TỪ LỄ HỘI VÍA BÀ CHÚA XỨ NÚI SAM | KẾT NỐI MIỀN TÂY",
+      "channel": "VTV10 - Kết nối miền Tây",
+      "channelUrl": "https://www.youtube.com/@vtv10_ketnoimientay"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "vinh-long",
+    "festival": "Lễ hội Ok Om Bok",
+    "status": "draft",
+    "itemId": "nam-bo__ok-om-bok",
+    "video": {
+      "provider": "youtube",
+      "id": "pyvX1nrxCik",
+      "title": "Rộn ràng đêm hội Ok Om Bok tỉnh Trà Vinh năm 2024 | VTV24",
+      "channel": "VTV24",
+      "channelUrl": "https://www.youtube.com/@vtv24"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "can-tho",
+    "festival": "Lễ hội Oóc Om Bóc – Đua ghe Ngo",
+    "status": "draft",
+    "itemId": "nam-bo__dua-ghe-ngo",
+    "video": {
+      "provider": "youtube",
+      "id": "zm-y9WIntM0",
+      "title": "Sôi nổi Lễ hội Oóc Om Bóc - Đua ghe Ngo Sóc Trăng | Truyền hình Quốc hội Việt Nam",
+      "channel": "Thông tin Quốc hội",
+      "channelUrl": "https://www.youtube.com/@Thongtinquochoi"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  },
+  {
+    "provinceId": "ca-mau",
+    "festival": "Lễ hội Nghinh Ông Sông Đốc",
+    "status": "draft",
+    "video": {
+      "provider": "youtube",
+      "id": "rD9_YV14ELo",
+      "title": "Cà Mau Đất Và Người 26.3.2023 | Nét đẹp văn hóa Lễ hội Nghinh Ông",
+      "channel": "Báo và phát thanh, truyền hình Cà Mau",
+      "channelUrl": "https://www.youtube.com/@truyenhinhcamau69"
+    },
+    "checked": "2026-11-08: video còn, cho phép nhúng (oEmbed); kênh báo chí/truyền hình; tiêu đề nêu đúng lễ hội và địa phương"
+  }
+]

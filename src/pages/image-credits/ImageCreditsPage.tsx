@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { LoadingState } from '../../components/ui/states'
 import { imageLibrary } from '../../features/images'
 import { loadProduce } from '../../features/produce'
+import { loadFestivalVideos, type FestivalVideo } from '../../features/videos'
 import { provinceName } from '../../lib/provinces'
 import type { WebImage } from '../../types/content'
 
@@ -11,6 +12,17 @@ const link = 'text-primary underline decoration-dotted underline-offset-2 hover:
 /** Danh sách mọi ảnh nhúng đang dùng, ghi đủ tác giả, giấy phép và trang gốc */
 export default function ImageCreditsPage() {
   const [images, setImages] = useState<WebImage[] | null>(null)
+  const [videos, setVideos] = useState<FestivalVideo[]>([])
+  useEffect(() => {
+    let cancelled = false
+    loadFestivalVideos().then(
+      (v) => !cancelled && setVideos(v.all),
+      () => {},
+    )
+    return () => {
+      cancelled = true
+    }
+  }, [])
   useEffect(() => {
     let cancelled = false
     // ảnh cây trồng là phần thêm: tải lỗi thì vẫn hiện ảnh vùng/tỉnh
@@ -42,7 +54,7 @@ export default function ImageCreditsPage() {
         <p className="text-muted">Chưa có ảnh nào.</p>
       ) : (
         <div className="overflow-x-auto rounded-card bg-surface shadow-sm">
-          <table className="w-full text-left text-sm">
+          <table aria-label="Ảnh" className="w-full text-left text-sm">
             <thead className="bg-bg text-muted">
               <tr>
                 {['Ảnh', 'Tỉnh', 'Tác giả', 'Giấy phép', 'Trang gốc'].map((h) => (
@@ -101,6 +113,47 @@ export default function ImageCreditsPage() {
             </tbody>
           </table>
         </div>
+      )}
+      {videos.length > 0 && (
+        <>
+          <div>
+            <h2 className="text-2xl font-bold">Video</h2>
+            <p className="mt-1 max-w-3xl text-muted">
+              Video lễ hội được nhúng từ YouTube, do các đài truyền hình và báo chí đăng tải. Bản quyền thuộc về kênh đăng video.
+            </p>
+          </div>
+          <div className="overflow-x-auto rounded-card bg-surface shadow-sm">
+            <table aria-label="Video" className="w-full text-left text-sm">
+              <thead className="bg-bg text-muted">
+                <tr>
+                  {['Lễ hội', 'Tỉnh', 'Video', 'Kênh'].map((h) => (
+                    <th key={h} scope="col" className="px-4 py-3 font-semibold">
+                      {h}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {videos.map((v) => (
+                  <tr key={v.video.id} className="border-t border-line align-top">
+                    <td className="px-4 py-3">{v.festival}</td>
+                    <td className="px-4 py-3">{provinceName(v.provinceId)}</td>
+                    <td className="px-4 py-3">
+                      <a href={`https://www.youtube.com/watch?v=${v.video.id}`} {...external} className={link}>
+                        {v.video.title}
+                      </a>
+                    </td>
+                    <td className="px-4 py-3">
+                      <a href={v.video.channelUrl} {...external} className={link}>
+                        {v.video.channel}
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
       )}
     </div>
   )

@@ -258,6 +258,18 @@ test('region tab shows the SGK crops of the region; province tab shows the provi
   expect(within(provinceCrops).getAllByRole('link', { name: /^Nguồn: Wikipedia/ }).length).toBeGreaterThan(0)
 })
 
+test('province tab shows festival videos from YouTube, outside the SGK, credited to their channel', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+  const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
+  const card = within(panel).getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })
+  const videos = await within(card).findByRole('region', { name: 'Lễ hội qua video' })
+  expect(videos).toHaveTextContent('Ngoài SGK')
+  expect(videos).toHaveTextContent('Lễ giỗ Tổ Hùng Vương')
+  expect(within(videos).getByRole('button', { name: /^Phát video:/ })).toBeInTheDocument()
+  expect(within(videos).getByRole('link', { name: 'VTV24' })).toHaveAttribute('href', 'https://www.youtube.com/@vtv24')
+})
+
 test('"Về bản đồ Việt Nam" clears selection', async () => {
   const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   await userEvent.click(await screen.findByRole('button', { name: 'Về bản đồ Việt Nam' }))
