@@ -40,14 +40,18 @@ const COLUMNS = { 1: 'grid-cols-1', 2: 'grid-cols-2', 4: 'grid-cols-4' } as cons
 
 export function SectionTitle({ id, icon: Icon, title, subtitle }: { id: string; icon: LucideIcon; title: string; subtitle?: string }) {
   return (
-    <div className="mb-5 flex flex-wrap items-end gap-x-3 gap-y-1">
-      <h2 id={id} className="flex items-center gap-3 text-2xl font-bold">
-        <span className="flex size-10 items-center justify-center rounded-xl bg-primary-soft">
-          <Icon aria-hidden className="size-6 text-primary" />
-        </span>
-        {title}
-      </h2>
-      {subtitle && <p className="pb-1 text-muted">{subtitle}</p>}
+    // Cỡ chữ theo bề rộng khung chứa (container query): khung hẹp thì chữ nhỏ hơn để tiêu đề nằm gọn một dòng;
+    // vẫn phải xuống dòng thì chia đều hai dòng (text-balance), không để một chữ rớt lẻ
+    <div className="@container mb-5">
+      <div className="flex flex-wrap items-end gap-x-3 gap-y-1">
+        <h2 id={id} className="flex items-center gap-3 text-xl font-bold leading-tight @md:text-2xl">
+          <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary-soft">
+            <Icon aria-hidden className="size-6 text-primary" />
+          </span>
+          <span className="text-balance">{title}</span>
+        </h2>
+        {subtitle && <p className="pb-0.5 text-muted">{subtitle}</p>}
+      </div>
     </div>
   )
 }
