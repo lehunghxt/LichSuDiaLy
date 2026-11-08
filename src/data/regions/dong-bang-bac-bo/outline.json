@@ -33,6 +33,11 @@
           "id": "dat-phu-sa-va-canh-quan-dong-bang",
           "title": "Đất phù sa và cảnh quan đồng bằng",
           "itemIds": ["dong-bang-bac-bo__dat-sinh-vat", "dong-bang-bac-bo__thuan-loi-kho-khan", "dong-bang-bac-bo__bao-ve-thien-nhien"]
+        },
+        {
+          "id": "nui-tieu-bieu",
+          "title": "Núi tiêu biểu",
+          "itemIds": ["dong-bang-bac-bo__nui-ba-vi", "dong-bang-bac-bo__nui-yen-tu"]
         }
       ]
     },

@@ -321,5 +321,169 @@
       "lng": 106.15,
       "placeName": "Vườn quốc gia Phong Nha – Kẻ Bàng"
     }
+  },
+  {
+    "id": "bac-trung-bo-va-nam-trung-bo__day-bach-ma",
+    "title": "Dãy Bạch Mã",
+    "summary": "Dãy Bạch Mã như bức tường chắn gió mùa Đông Bắc thổi từ phía bắc xuống, chia khí hậu của vùng thành hai phía khác nhau.",
+    "highlights": ["Dãy núi là ranh giới tự nhiên giữa thành phố Huế và thành phố Đà Nẵng, nằm trong Vườn quốc gia Bạch Mã."],
+    "keyPoints": ["Dãy Bạch Mã chia khí hậu vùng thành hai phía khác nhau."],
+    "provinceId": "hue",
+    "images": [],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__khi-hau", "bac-trung-bo-va-nam-trung-bo__dia-hinh"],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 68,
+        "note": "tr. 68"
+      },
+      {
+        "title": "Wikipedia tiếng Việt: Dãy núi Bạch Mã",
+        "url": "https://vi.wikipedia.org/wiki/D%C3%A3y_n%C3%BAi_B%E1%BA%A1ch_M%C3%A3"
+      },
+      {
+        "title": "Wikidata: Dãy Bạch Mã (Q31644605), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q31644605",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 16.1667,
+      "lng": 107.8333,
+      "placeName": "Dãy Bạch Mã"
+    }
+  },
+  {
+    "id": "bac-trung-bo-va-nam-trung-bo__nui-ngu-binh",
+    "title": "Núi Ngự Bình",
+    "summary": "Cảnh quan Cố đô Huế đẹp với dòng sông Hương uốn lượn và núi Ngự Bình bốn mùa thông reo.",
+    "highlights": ["Núi Ngự Bình là hòn núi đất cao 103 m ở bờ sông Hương, cách trung tâm thành phố Huế không xa."],
+    "keyPoints": [],
+    "provinceId": "hue",
+    "images": [],
+    "relatedIds": ["bac-trung-bo-va-nam-trung-bo__co-do-hue"],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 19. Cố đô Huế",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 88,
+        "note": "tr. 88–89, Hình 1, 2, 3, 4, 5"
+      },
+      {
+        "title": "Wikipedia tiếng Việt: Núi Ngự Bình",
+        "url": "https://vi.wikipedia.org/wiki/N%C3%BAi_Ng%E1%BB%B1_B%C3%ACnh"
+      }
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "bac-trung-bo-va-nam-trung-bo__khoi-nui-ngoc-linh",
+    "title": "Khối núi Ngọc Linh",
+    "summary": "Khối núi Ngọc Linh thuộc thành phố Đà Nẵng, tỉnh Quảng Ngãi và tỉnh Gia Lai; đỉnh cao nhất cao khoảng 2 600 m.",
+    "highlights": ["Đây là nơi có cây sâm Ngọc Linh quý hiếm."],
+    "keyPoints": [],
+    "provinceId": "da-nang",
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Khối núi Ngọc Linh",
+        "url": "https://vi.wikipedia.org/wiki/Kh%E1%BB%91i_n%C3%BAi_Ng%E1%BB%8Dc_Linh"
+      },
+      {
+        "title": "Wikidata: Khối núi Ngọc Linh (Q7022474), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q7022474",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 15.0667,
+      "lng": 107.9833,
+      "placeName": "Khối núi Ngọc Linh"
+    }
+  },
+  {
+    "id": "bac-trung-bo-va-nam-trung-bo__ngu-hanh-son",
+    "title": "Ngũ Hành Sơn",
+    "summary": "Ngũ Hành Sơn ở thành phố Đà Nẵng là danh thắng gồm 6 ngọn núi đá vôi nhô lên trên bãi cát ven biển.",
+    "highlights": [],
+    "keyPoints": [],
+    "provinceId": "da-nang",
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Ngũ Hành Sơn",
+        "url": "https://vi.wikipedia.org/wiki/Ng%C5%A9_H%C3%A0nh_S%C6%A1n"
+      },
+      {
+        "title": "Wikidata: Ngũ Hành Sơn (Q6755207), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q6755207",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 16,
+      "lng": 108.26,
+      "placeName": "Ngũ Hành Sơn"
+    }
+  },
+  {
+    "id": "bac-trung-bo-va-nam-trung-bo__nui-chu-yang-sin",
+    "title": "Núi Chư Yang Sin",
+    "summary": "Chư Yang Sin là dãy núi ở tỉnh Đắk Lắk; đỉnh Chư Yang Sin cao 2 442 m, là đỉnh núi cao nhất tỉnh.",
+    "highlights": [],
+    "keyPoints": [],
+    "provinceId": "dak-lak",
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Dãy núi Chư Yang Sin",
+        "url": "https://vi.wikipedia.org/wiki/D%C3%A3y_n%C3%BAi_Ch%C6%B0_Yang_Sin"
+      },
+      {
+        "title": "Wikidata: Núi Chư Yang Sin (Q31615043), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q31615043",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 12.405,
+      "lng": 108.4258,
+      "placeName": "Núi Chư Yang Sin"
+    }
+  },
+  {
+    "id": "bac-trung-bo-va-nam-trung-bo__nui-langbiang",
+    "title": "Núi Langbiang",
+    "summary": "Núi Langbiang ở tỉnh Lâm Đồng, gần Đà Lạt, có hai đỉnh là núi Ông và núi Bà; núi Bà cao 2 167 m.",
+    "highlights": [],
+    "keyPoints": [],
+    "provinceId": "lam-dong",
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Núi Langbiang",
+        "url": "https://vi.wikipedia.org/wiki/N%C3%BAi_Langbiang"
+      },
+      {
+        "title": "Wikidata: Núi Langbiang (Q3217169), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q3217169",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 12.0472,
+      "lng": 108.441,
+      "placeName": "Núi Langbiang"
+    }
   }
 ]

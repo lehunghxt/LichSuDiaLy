@@ -422,5 +422,152 @@
       }
     ],
     "status": "draft"
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__day-hoang-lien-son",
+    "title": "Dãy Hoàng Liên Sơn",
+    "summary": "Hoàng Liên Sơn là dãy núi cao và đồ sộ nhất nước ta, đỉnh cao nhất là Phan-xi-păng (3 147 m).",
+    "highlights": ["Dãy núi nằm ở phía tây bắc Việt Nam, qua tỉnh Lào Cai và tỉnh Lai Châu."],
+    "keyPoints": ["Hoàng Liên Sơn là dãy núi cao và đồ sộ nhất nước ta."],
+    "provinceId": "lao-cai",
+    "images": [],
+    "relatedIds": ["trung-du-mien-nui-phia-bac__dinh-phan-xi-pang", "trung-du-mien-nui-phia-bac__dia-hinh"],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 20,
+        "note": "tr. 20–21"
+      },
+      {
+        "title": "Wikipedia tiếng Việt: Dãy núi Hoàng Liên Sơn",
+        "url": "https://vi.wikipedia.org/wiki/D%C3%A3y_n%C3%BAi_Ho%C3%A0ng_Li%C3%AAn_S%C6%A1n"
+      },
+      {
+        "title": "Wikidata: Dãy Hoàng Liên Sơn (Q3512306), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q3512306",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 22.3333,
+      "lng": 103.75,
+      "placeName": "Dãy Hoàng Liên Sơn"
+    }
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__nui-mau-son",
+    "title": "Núi Mẫu Sơn",
+    "summary": "Mẫu Sơn là dãy núi ở tỉnh Lạng Sơn. Vào các tháng mùa đông, đôi khi có tuyết rơi ở đỉnh núi Mẫu Sơn.",
+    "highlights": ["Độ cao trung bình của dãy núi từ 800 đến 1 000 m, với hơn 80 ngọn núi lớn nhỏ."],
+    "keyPoints": ["Đỉnh Mẫu Sơn là một trong những nơi đôi khi có tuyết rơi vào mùa đông."],
+    "provinceId": "lang-son",
+    "images": [],
+    "relatedIds": ["trung-du-mien-nui-phia-bac__khi-hau"],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 4. Thiên nhiên vùng Trung du và miền núi phía Bắc",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 22,
+        "note": "tr. 22"
+      },
+      {
+        "title": "Wikipedia tiếng Việt: Mẫu Sơn",
+        "url": "https://vi.wikipedia.org/wiki/M%E1%BA%ABu_S%C6%A1n"
+      },
+      {
+        "title": "Wikidata: Núi Mẫu Sơn (Q6922067), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q6922067",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 21.8771,
+      "lng": 107.0043,
+      "placeName": "Núi Mẫu Sơn"
+    }
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__nui-pu-si-lung",
+    "title": "Núi Pu Si Lung",
+    "summary": "Pu Si Lung là ngọn núi ở biên giới Việt Nam và Trung Quốc, thuộc tỉnh Lai Châu, cao 3 083 m.",
+    "highlights": ["Đây là một trong những đỉnh núi cao nhất nước ta."],
+    "keyPoints": [],
+    "provinceId": "lai-chau",
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Pu Si Lung",
+        "url": "https://vi.wikipedia.org/wiki/Pu_Si_Lung"
+      },
+      {
+        "title": "Wikidata: Núi Pu Si Lung (Q7188263), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q7188263",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 22.6333,
+      "lng": 102.7833,
+      "placeName": "Núi Pu Si Lung"
+    }
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__nui-tay-con-linh",
+    "title": "Núi Tây Côn Lĩnh",
+    "summary": "Tây Côn Lĩnh cao 2 431 m, là đỉnh núi cao nhất tỉnh Tuyên Quang và vùng Đông Bắc.",
+    "highlights": ["Núi thường được gọi là \"nóc nhà Đông Bắc\"."],
+    "keyPoints": [],
+    "provinceId": "tuyen-quang",
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Tây Côn Lĩnh",
+        "url": "https://vi.wikipedia.org/wiki/T%C3%A2y_C%C3%B4n_L%C4%A9nh"
+      },
+      {
+        "title": "Wikidata: Núi Tây Côn Lĩnh (Q10831041), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q10831041",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 22.8072,
+      "lng": 104.7872,
+      "placeName": "Núi Tây Côn Lĩnh"
+    }
+  },
+  {
+    "id": "trung-du-mien-nui-phia-bac__nui-tam-dao",
+    "title": "Dãy núi Tam Đảo",
+    "summary": "Dãy núi Tam Đảo có ba đỉnh nổi bật; đỉnh cao nhất cao 1 597 m, nằm ở ranh giới tỉnh Phú Thọ và tỉnh Thái Nguyên.",
+    "highlights": ["Trên núi có khu nghỉ mát Tam Đảo."],
+    "keyPoints": [],
+    "provinceId": "phu-tho",
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Tam Đảo",
+        "url": "https://vi.wikipedia.org/wiki/Tam_%C4%90%E1%BA%A3o"
+      },
+      {
+        "title": "Wikidata: Dãy núi Tam Đảo (Q2391091), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q2391091",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 21.5333,
+      "lng": 105.5833,
+      "placeName": "Dãy núi Tam Đảo"
+    }
   }
 ]

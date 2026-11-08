@@ -23,6 +23,8 @@ Bản xem thử: https://em-kham-pha-lsdl.vercel.app
 
 **Lễ hội qua video** (ở thông tin tỉnh, nhãn **"Ngoài SGK"**): mỗi tỉnh có ít nhất một video lễ hội từ YouTube (35 video cho 34 tỉnh), của đài truyền hình và báo chí. Dưới mỗi video ghi tên video và kênh đăng; trình phát chỉ tải khi em bấm phát. Danh sách để duyệt: `docs/research/le-hoi-video.md`.
 
+**Núi tiêu biểu** (phần Thiên nhiên của mỗi vùng): 17 núi, dãy núi có tọa độ trên bản đồ và ảnh; núi có trong SGK ghi số trang, núi ngoài SGK có nhãn "Ngoài SGK". Tư liệu: `docs/research/nui/README.md`.
+
 Giao diện có ba bản riêng cho điện thoại, máy tính bảng và máy tính. Trên điện thoại, thông tin hiện trong bảng trượt từ dưới lên.
 
 ## Chạy trên máy

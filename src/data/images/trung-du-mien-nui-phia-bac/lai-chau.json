@@ -71,5 +71,42 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lai_Ch%C3%A2u_City_Lake.jpg"
     },
     "status": "draft"
+  },
+  {
+    "id": "lai-chau__pusilung-summit",
+    "provider": "wikimedia-commons",
+    "provinceId": "lai-chau",
+    "section": "thien-nhien",
+    "itemIds": ["trung-du-mien-nui-phia-bac__nui-pu-si-lung"],
+    "alt": "Mốc đỉnh núi Pu Si Lung, bên cạnh là lá cờ Tổ quốc",
+    "caption": "Mốc đỉnh núi Pu Si Lung (tỉnh Lai Châu).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Pusilung_summit.jpg/960px-Pusilung_summit.jpg",
+      "width": 960,
+      "height": 1280,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Pusilung_summit.jpg/500px-Pusilung_summit.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Pusilung_summit.jpg/960px-Pusilung_summit.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Pusilung_summit.jpg",
+          "width": 1200
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Pusilung summit.jpg",
+      "author": "NKSTTSSHNVN",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:NKSTTSSHNVN",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pusilung_summit.jpg"
+    },
+    "status": "draft"
   }
 ]

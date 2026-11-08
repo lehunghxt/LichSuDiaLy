@@ -471,7 +471,15 @@ test('region panel shows the outline sections in doc order with their topics', a
     within(nature)
       .getAllByRole('button')
       .map((b) => b.dataset.topic),
-  ).toEqual(['vi-tri-dia-li-va-ban-do-vung', 'dia-hinh', 'khi-hau', 'song-ngoi', 'khoang-san', 'thien-nhien-va-canh-quan-tieu-bieu'])
+  ).toEqual([
+    'vi-tri-dia-li-va-ban-do-vung',
+    'dia-hinh',
+    'khi-hau',
+    'song-ngoi',
+    'khoang-san',
+    'thien-nhien-va-canh-quan-tieu-bieu',
+    'nui-tieu-bieu',
+  ])
   expect(screen.queryByText('Khám phá theo chủ đề')).not.toBeInTheDocument()
 })
 
@@ -497,7 +505,7 @@ test('coming-soon region shows its outline greyed and the image gallery', async 
   renderAt('/ban-do/nam-bo')
   const nav = await outlineNav()
   const buttons = within(nav).getAllByRole('button')
-  expect(buttons.length).toBe(30)
+  expect(buttons.length).toBe(31)
   for (const b of buttons) expect(b).toHaveTextContent('đang cập nhật')
   expect(await screen.findByRole('region', { name: 'Hình ảnh của vùng' })).toBeInTheDocument()
 })

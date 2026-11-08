@@ -283,5 +283,119 @@
       }
     ],
     "status": "draft"
+  },
+  {
+    "id": "nam-bo__nui-ba-den",
+    "title": "Núi Bà Đen",
+    "summary": "Núi Bà Đen (tỉnh Tây Ninh) cao 986 m, là đỉnh núi cao nhất Nam Bộ.",
+    "highlights": [],
+    "keyPoints": ["Núi Bà Đen là đỉnh núi cao nhất Nam Bộ."],
+    "provinceId": "tay-ninh",
+    "images": [],
+    "relatedIds": ["nam-bo__dia-hinh-dong-nam-bo"],
+    "sources": [
+      {
+        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
+        "page": 100,
+        "note": "tr. 100–101, Hình 2"
+      },
+      {
+        "title": "Wikipedia tiếng Việt: Núi Bà Đen",
+        "url": "https://vi.wikipedia.org/wiki/N%C3%BAi_B%C3%A0_%C4%90en"
+      },
+      {
+        "title": "Wikidata: Núi Bà Đen (Q4922113), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q4922113",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 11.3667,
+      "lng": 106.1667,
+      "placeName": "Núi Bà Đen"
+    }
+  },
+  {
+    "id": "nam-bo__nui-chua-chan",
+    "title": "Núi Chứa Chan",
+    "summary": "Núi Chứa Chan ở tỉnh Đồng Nai, cao khoảng 837 m, là ngọn núi cao thứ hai Nam Bộ, sau núi Bà Đen.",
+    "highlights": [],
+    "keyPoints": [],
+    "provinceId": "dong-nai",
+    "images": [],
+    "relatedIds": ["nam-bo__nui-ba-den"],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Núi Chứa Chan",
+        "url": "https://vi.wikipedia.org/wiki/N%C3%BAi_Ch%E1%BB%A9a_Chan"
+      },
+      {
+        "title": "Wikidata: Núi Chứa Chan (Q2092726), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q2092726",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 10.9386,
+      "lng": 107.3764,
+      "placeName": "Núi Chứa Chan"
+    }
+  },
+  {
+    "id": "nam-bo__nui-ba-ra",
+    "title": "Núi Bà Rá",
+    "summary": "Núi Bà Rá ở phường Phước Long, tỉnh Đồng Nai (trước đây thuộc tỉnh Bình Phước), là ngọn núi cao thứ ba Nam Bộ.",
+    "highlights": [],
+    "keyPoints": [],
+    "provinceId": "dong-nai",
+    "images": [],
+    "relatedIds": ["nam-bo__nui-ba-den"],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Núi Bà Rá",
+        "url": "https://vi.wikipedia.org/wiki/N%C3%BAi_B%C3%A0_R%C3%A1"
+      },
+      {
+        "title": "Wikidata: Núi Bà Rá (Q5004767), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q5004767",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 11.8171,
+      "lng": 106.9999,
+      "placeName": "Núi Bà Rá"
+    }
+  },
+  {
+    "id": "nam-bo__nui-sam",
+    "title": "Núi Sam",
+    "summary": "Núi Sam ở tỉnh An Giang, cao 284 m; núi gắn với Lễ hội Vía Bà Chúa Xứ núi Sam.",
+    "highlights": [],
+    "keyPoints": [],
+    "provinceId": "an-giang",
+    "images": [],
+    "relatedIds": ["nam-bo__ba-chua-xu-nui-sam"],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Núi Sam",
+        "url": "https://vi.wikipedia.org/wiki/N%C3%BAi_Sam"
+      },
+      {
+        "title": "Wikidata: Núi Sam (Q10802044), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q10802044",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 10.6767,
+      "lng": 105.0775,
+      "placeName": "Núi Sam"
+    }
   }
 ]

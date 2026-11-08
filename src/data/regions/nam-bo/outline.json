@@ -59,6 +59,11 @@
           "id": "thuan-loi-va-kho-khan",
           "title": "Thuận lợi và khó khăn",
           "itemIds": ["nam-bo__thuan-loi-kho-khan"]
+        },
+        {
+          "id": "nui-tieu-bieu",
+          "title": "Núi tiêu biểu",
+          "itemIds": ["nam-bo__nui-ba-den", "nam-bo__nui-chua-chan", "nam-bo__nui-ba-ra", "nam-bo__nui-sam"]
         }
       ]
     },

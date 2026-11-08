@@ -109,5 +109,42 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emperor_Khai_Dinh_in_Hue_(39543600561).jpg"
     },
     "status": "draft"
+  },
+  {
+    "id": "hue__nui-ngu-binh",
+    "provider": "wikimedia-commons",
+    "provinceId": "hue",
+    "section": "thien-nhien",
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__nui-ngu-binh"],
+    "alt": "Núi Ngự Bình nhìn từ trên cao, phía trước là nhà cửa",
+    "caption": "Núi Ngự Bình (thành phố Huế).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Nui_Ngu_Binh.jpg/960px-Nui_Ngu_Binh.jpg",
+      "width": 960,
+      "height": 641,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Nui_Ngu_Binh.jpg/500px-Nui_Ngu_Binh.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Nui_Ngu_Binh.jpg/960px-Nui_Ngu_Binh.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Nui_Ngu_Binh.jpg/1280px-Nui_Ngu_Binh.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Nui Ngu Binh.jpg",
+      "author": "Lưu Ly",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:L%C6%B0u_Ly",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nui_Ngu_Binh.jpg"
+    },
+    "status": "draft"
   }
 ]

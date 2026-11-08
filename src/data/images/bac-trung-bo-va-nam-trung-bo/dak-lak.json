@@ -108,5 +108,42 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Congchieng01.JPG"
     },
     "status": "draft"
+  },
+  {
+    "id": "dak-lak__dinh-chu-yang-sin",
+    "provider": "wikimedia-commons",
+    "provinceId": "dak-lak",
+    "section": "thien-nhien",
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__nui-chu-yang-sin"],
+    "alt": "Mốc đỉnh Chư Yang Sin ghi độ cao 2 442 m",
+    "caption": "Mốc đỉnh núi Chư Yang Sin (tỉnh Đắk Lắk).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%C4%90%E1%BB%89nh_Ch%C6%B0_Yang_Sin.jpg/960px-%C4%90%E1%BB%89nh_Ch%C6%B0_Yang_Sin.jpg",
+      "width": 960,
+      "height": 1279,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%C4%90%E1%BB%89nh_Ch%C6%B0_Yang_Sin.jpg/500px-%C4%90%E1%BB%89nh_Ch%C6%B0_Yang_Sin.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%C4%90%E1%BB%89nh_Ch%C6%B0_Yang_Sin.jpg/960px-%C4%90%E1%BB%89nh_Ch%C6%B0_Yang_Sin.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%C4%90%E1%BB%89nh_Ch%C6%B0_Yang_Sin.jpg/1280px-%C4%90%E1%BB%89nh_Ch%C6%B0_Yang_Sin.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Đỉnh Chư Yang Sin.jpg",
+      "author": "NKSTTSSHNVN",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:NKSTTSSHNVN",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%89nh_Ch%C6%B0_Yang_Sin.jpg"
+    },
+    "status": "draft"
   }
 ]

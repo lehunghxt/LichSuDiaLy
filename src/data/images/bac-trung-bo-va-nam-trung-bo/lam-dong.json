@@ -106,5 +106,41 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vietnam,_Mui_Ne_sand_dune.jpg"
     },
     "status": "draft"
+  },
+  {
+    "id": "lam-dong__lang-biang-au-mois-d-aout",
+    "provider": "wikimedia-commons",
+    "provinceId": "lam-dong",
+    "section": "thien-nhien",
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__nui-langbiang"],
+    "alt": "Đồi núi và hồ nước nhìn từ núi Langbiang",
+    "caption": "Phong cảnh nhìn từ núi Langbiang (tỉnh Lâm Đồng).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lang_biang_au_mois_d%27ao%C3%BBt.jpg/960px-Lang_biang_au_mois_d%27ao%C3%BBt.jpg",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lang_biang_au_mois_d%27ao%C3%BBt.jpg/500px-Lang_biang_au_mois_d%27ao%C3%BBt.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lang_biang_au_mois_d%27ao%C3%BBt.jpg/960px-Lang_biang_au_mois_d%27ao%C3%BBt.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lang_biang_au_mois_d%27ao%C3%BBt.jpg/1280px-Lang_biang_au_mois_d%27ao%C3%BBt.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Lang biang au mois d'août.jpg",
+      "author": "Liangu",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lang_biang_au_mois_d%27ao%C3%BBt.jpg"
+    },
+    "status": "draft"
   }
 ]

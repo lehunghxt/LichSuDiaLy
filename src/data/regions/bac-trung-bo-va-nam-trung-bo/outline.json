@@ -46,6 +46,19 @@
           "title": "Cảnh quan thiên nhiên",
           "hint": "(động Phong Nha, đèo Hải Vân)",
           "itemIds": ["bac-trung-bo-va-nam-trung-bo__rung", "bac-trung-bo-va-nam-trung-bo__phong-nha"]
+        },
+        {
+          "id": "nui-tieu-bieu",
+          "title": "Núi tiêu biểu",
+          "hint": "(dãy Trường Sơn ở mục riêng)",
+          "itemIds": [
+            "bac-trung-bo-va-nam-trung-bo__day-bach-ma",
+            "bac-trung-bo-va-nam-trung-bo__nui-ngu-binh",
+            "bac-trung-bo-va-nam-trung-bo__khoi-nui-ngoc-linh",
+            "bac-trung-bo-va-nam-trung-bo__ngu-hanh-son",
+            "bac-trung-bo-va-nam-trung-bo__nui-chu-yang-sin",
+            "bac-trung-bo-va-nam-trung-bo__nui-langbiang"
+          ]
         }
       ]
     },

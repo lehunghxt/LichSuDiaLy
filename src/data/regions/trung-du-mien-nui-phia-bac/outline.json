@@ -37,6 +37,18 @@
           "title": "Thiên nhiên và cảnh quan tiêu biểu",
           "hint": "(ruộng bậc thang, cao nguyên đá Đồng Văn, hồ Ba Bể)",
           "itemIds": ["trung-du-mien-nui-phia-bac__anh-huong-tu-nhien", "trung-du-mien-nui-phia-bac__phong-chong-thien-tai"]
+        },
+        {
+          "id": "nui-tieu-bieu",
+          "title": "Núi tiêu biểu",
+          "hint": "(Phan-xi-păng ở mục Địa hình)",
+          "itemIds": [
+            "trung-du-mien-nui-phia-bac__day-hoang-lien-son",
+            "trung-du-mien-nui-phia-bac__nui-mau-son",
+            "trung-du-mien-nui-phia-bac__nui-pu-si-lung",
+            "trung-du-mien-nui-phia-bac__nui-tay-con-linh",
+            "trung-du-mien-nui-phia-bac__nui-tam-dao"
+          ]
         }
       ]
     },

@@ -312,5 +312,60 @@
     "alt": "Đồi cát vàng gợn sóng",
     "caption": "Đồi cát Mũi Né (tỉnh Lâm Đồng, trước đây thuộc tỉnh Bình Thuận).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Dãy núi Bạch Mã, nhìn từ sân bay Đà Nẵng.JPG",
+    "provinceId": "da-nang",
+    "section": "thien-nhien",
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__day-bach-ma"
+    ],
+    "alt": "Dãy núi Bạch Mã nhìn từ sân đỗ máy bay",
+    "caption": "Dãy núi Bạch Mã nhìn từ sân bay Đà Nẵng (thành phố Đà Nẵng).",
+    "checked": "2026-11-08: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Nui Ngu Binh.jpg",
+    "provinceId": "hue",
+    "section": "thien-nhien",
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__nui-ngu-binh"
+    ],
+    "alt": "Núi Ngự Bình nhìn từ trên cao, phía trước là nhà cửa",
+    "caption": "Núi Ngự Bình (thành phố Huế).",
+    "checked": "2026-11-08: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Marble Mountains View 3.JPG",
+    "provinceId": "da-nang",
+    "section": "thien-nhien",
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__ngu-hanh-son"
+    ],
+    "alt": "Một ngọn núi đá vôi ở Ngũ Hành Sơn giữa khu dân cư",
+    "caption": "Một ngọn núi đá vôi ở Ngũ Hành Sơn (thành phố Đà Nẵng).",
+    "checked": "2026-11-08: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Đỉnh Chư Yang Sin.jpg",
+    "provinceId": "dak-lak",
+    "section": "thien-nhien",
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__nui-chu-yang-sin"
+    ],
+    "alt": "Mốc đỉnh Chư Yang Sin ghi độ cao 2 442 m",
+    "caption": "Mốc đỉnh núi Chư Yang Sin (tỉnh Đắk Lắk).",
+    "checked": "2026-11-08: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Lang biang au mois d'août.jpg",
+    "provinceId": "lam-dong",
+    "section": "thien-nhien",
+    "itemIds": [
+      "bac-trung-bo-va-nam-trung-bo__nui-langbiang"
+    ],
+    "alt": "Đồi núi và hồ nước nhìn từ núi Langbiang",
+    "caption": "Phong cảnh nhìn từ núi Langbiang (tỉnh Lâm Đồng).",
+    "checked": "2026-11-08: đã xem ảnh, đúng chủ thể"
   }
 ]

@@ -293,5 +293,42 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kem_Beach_aerial_view_Phu_Quoc_Island_Vietnam.jpg"
     },
     "status": "draft"
+  },
+  {
+    "id": "an-giang__le-mont-sam-vietnam-6589335173",
+    "provider": "wikimedia-commons",
+    "provinceId": "an-giang",
+    "section": "thien-nhien",
+    "itemIds": ["nam-bo__nui-sam"],
+    "alt": "Núi Sam nhìn từ con đường ven núi",
+    "caption": "Núi Sam, Châu Đốc (tỉnh An Giang).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Le_Mont_Sam_%28Vietnam%29_%286589335173%29.jpg/960px-Le_Mont_Sam_%28Vietnam%29_%286589335173%29.jpg",
+      "width": 960,
+      "height": 640,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Le_Mont_Sam_%28Vietnam%29_%286589335173%29.jpg/500px-Le_Mont_Sam_%28Vietnam%29_%286589335173%29.jpg",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Le_Mont_Sam_%28Vietnam%29_%286589335173%29.jpg/960px-Le_Mont_Sam_%28Vietnam%29_%286589335173%29.jpg",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Le_Mont_Sam_%28Vietnam%29_%286589335173%29.jpg/1280px-Le_Mont_Sam_%28Vietnam%29_%286589335173%29.jpg",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Le Mont Sam (Vietnam) (6589335173).jpg",
+      "author": "Jean-Pierre Dalbéra from Paris, France",
+      "authorUrl": "https://www.flickr.com/people/72746018@N00",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Mont_Sam_(Vietnam)_(6589335173).jpg"
+    },
+    "status": "draft"
   }
 ]

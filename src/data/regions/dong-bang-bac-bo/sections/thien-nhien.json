@@ -268,5 +268,59 @@
       }
     ],
     "status": "draft"
+  },
+  {
+    "id": "dong-bang-bac-bo__nui-ba-vi",
+    "title": "Núi Ba Vì",
+    "summary": "Núi Ba Vì ở thành phố Hà Nội; đỉnh núi cao 1 296 m với ba chóp nhọn, nhìn thấy từ rất xa.",
+    "highlights": ["Núi gắn với truyền thuyết Sơn Tinh – Thủy Tinh; Sơn Tinh còn được gọi là Tản Viên Sơn Thánh."],
+    "keyPoints": [],
+    "provinceId": "ha-noi",
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Dãy núi Ba Vì",
+        "url": "https://vi.wikipedia.org/wiki/D%C3%A3y_n%C3%BAi_Ba_V%C3%AC"
+      },
+      {
+        "title": "Wikidata: Núi Ba Vì (Q4837081), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q4837081",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 21.0583,
+      "lng": 105.3664,
+      "placeName": "Núi Ba Vì"
+    }
+  },
+  {
+    "id": "dong-bang-bac-bo__nui-yen-tu",
+    "title": "Núi Yên Tử",
+    "summary": "Yên Tử là dãy núi ở tỉnh Quảng Ninh, giáp tỉnh Bắc Ninh và thành phố Hải Phòng; ngọn núi cao nhất cao 1 068 m.",
+    "highlights": ["Yên Tử là nơi gắn với Thiền phái Trúc Lâm."],
+    "keyPoints": [],
+    "provinceId": "quang-ninh",
+    "images": [],
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia tiếng Việt: Yên Tử",
+        "url": "https://vi.wikipedia.org/wiki/Y%C3%AAn_T%E1%BB%AD"
+      },
+      {
+        "title": "Wikidata: Núi Yên Tử (Q10802059), toạ độ",
+        "url": "https://www.wikidata.org/wiki/Q10802059",
+        "note": "toạ độ (P625)"
+      }
+    ],
+    "status": "draft",
+    "location": {
+      "lat": 21.161,
+      "lng": 106.6975,
+      "placeName": "Núi Yên Tử"
+    }
   }
 ]

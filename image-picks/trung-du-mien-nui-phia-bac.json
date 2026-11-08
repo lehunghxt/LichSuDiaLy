@@ -82,7 +82,8 @@
     "provinceId": "lao-cai",
     "section": "thien-nhien",
     "itemIds": [
-      "trung-du-mien-nui-phia-bac__dia-hinh"
+      "trung-du-mien-nui-phia-bac__dia-hinh",
+      "trung-du-mien-nui-phia-bac__day-hoang-lien-son"
     ],
     "alt": "Đường mòn đá giữa rừng, phía sau là các đỉnh núi đá trong mây",
     "caption": "Dãy Hoàng Liên Sơn nhìn từ đường mòn lên đỉnh Phan-xi-păng (tỉnh Lào Cai).",
@@ -258,7 +259,8 @@
     "provinceId": "lang-son",
     "section": "thien-nhien",
     "itemIds": [
-      "trung-du-mien-nui-phia-bac__dia-hinh"
+      "trung-du-mien-nui-phia-bac__dia-hinh",
+      "trung-du-mien-nui-phia-bac__nui-mau-son"
     ],
     "alt": "Biển mây trắng phủ giữa các dãy núi",
     "caption": "Núi Mẫu Sơn (tỉnh Lạng Sơn).",
@@ -320,7 +322,8 @@
     "provinceId": "phu-tho",
     "section": "thien-nhien",
     "itemIds": [
-      "trung-du-mien-nui-phia-bac__dia-hinh"
+      "trung-du-mien-nui-phia-bac__dia-hinh",
+      "trung-du-mien-nui-phia-bac__nui-tam-dao"
     ],
     "alt": "Dãy núi phủ rừng xanh với nhiều đỉnh nhọn",
     "caption": "Dãy núi Tam Đảo (tỉnh Phú Thọ, trước đây thuộc tỉnh Vĩnh Phúc).",
@@ -475,5 +478,16 @@
     "alt": "Ngôi nhà sàn gỗ mái lá có cầu thang gỗ",
     "caption": "Nhà sàn của người Thái ở Mai Châu (tỉnh Phú Thọ, trước đây thuộc tỉnh Hòa Bình).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Pusilung summit.jpg",
+    "provinceId": "lai-chau",
+    "section": "thien-nhien",
+    "itemIds": [
+      "trung-du-mien-nui-phia-bac__nui-pu-si-lung"
+    ],
+    "alt": "Mốc đỉnh núi Pu Si Lung, bên cạnh là lá cờ Tổ quốc",
+    "caption": "Mốc đỉnh núi Pu Si Lung (tỉnh Lai Châu).",
+    "checked": "2026-11-08: đã xem ảnh, đúng chủ thể"
   }
 ]

@@ -114,7 +114,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "phu-tho",
     "section": "thien-nhien",
-    "itemIds": ["trung-du-mien-nui-phia-bac__dia-hinh"],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dia-hinh", "trung-du-mien-nui-phia-bac__nui-tam-dao"],
     "alt": "Dãy núi phủ rừng xanh với nhiều đỉnh nhọn",
     "caption": "Dãy núi Tam Đảo (tỉnh Phú Thọ, trước đây thuộc tỉnh Vĩnh Phúc).",
     "src": {

@@ -29,6 +29,23 @@ nên muốn duyệt mục ngoài SGK cần đổi quy tắc đó trong `src/feat
 | Nam Bộ | Ẩm thực Nam Bộ | `nam-bo__am-thuc` | Wikipedia: Bánh xèo |
 | Nam Bộ | Văn hóa miệt vườn | `nam-bo__van-hoa-miet-vuon` | Wikipedia: Vườn cây ăn trái |
 
+Ngày 2026-11-08 thêm mục "Núi tiêu biểu" cho mỗi vùng (tư liệu: `docs/research/nui/README.md`). Các núi ngoài SGK:
+
+| Vùng | Mục dàn ý | Mục nội dung (id) | Nguồn |
+|---|---|---|---|
+| Bắc Trung Bộ và Nam Trung Bộ | Núi tiêu biểu: Khối núi Ngọc Linh | `bac-trung-bo-va-nam-trung-bo__khoi-nui-ngoc-linh` | Wikipedia: Khối núi Ngọc Linh |
+| Bắc Trung Bộ và Nam Trung Bộ | Núi tiêu biểu: Ngũ Hành Sơn | `bac-trung-bo-va-nam-trung-bo__ngu-hanh-son` | Wikipedia: Ngũ Hành Sơn |
+| Bắc Trung Bộ và Nam Trung Bộ | Núi tiêu biểu: Núi Chư Yang Sin | `bac-trung-bo-va-nam-trung-bo__nui-chu-yang-sin` | Wikipedia: Dãy núi Chư Yang Sin |
+| Bắc Trung Bộ và Nam Trung Bộ | Núi tiêu biểu: Núi Langbiang | `bac-trung-bo-va-nam-trung-bo__nui-langbiang` | Wikipedia: Núi Langbiang |
+| Đồng bằng Bắc Bộ | Núi tiêu biểu: Núi Ba Vì | `dong-bang-bac-bo__nui-ba-vi` | Wikipedia: Dãy núi Ba Vì |
+| Đồng bằng Bắc Bộ | Núi tiêu biểu: Núi Yên Tử | `dong-bang-bac-bo__nui-yen-tu` | Wikipedia: Yên Tử |
+| Nam Bộ | Núi tiêu biểu: Núi Chứa Chan | `nam-bo__nui-chua-chan` | Wikipedia: Núi Chứa Chan |
+| Nam Bộ | Núi tiêu biểu: Núi Bà Rá | `nam-bo__nui-ba-ra` | Wikipedia: Núi Bà Rá |
+| Nam Bộ | Núi tiêu biểu: Núi Sam | `nam-bo__nui-sam` | Wikipedia: Núi Sam |
+| Trung du và miền núi phía Bắc | Núi tiêu biểu: Núi Pu Si Lung | `trung-du-mien-nui-phia-bac__nui-pu-si-lung` | Wikipedia: Pu Si Lung |
+| Trung du và miền núi phía Bắc | Núi tiêu biểu: Núi Tây Côn Lĩnh | `trung-du-mien-nui-phia-bac__nui-tay-con-linh` | Wikipedia: Tây Côn Lĩnh |
+| Trung du và miền núi phía Bắc | Núi tiêu biểu: Dãy núi Tam Đảo | `trung-du-mien-nui-phia-bac__nui-tam-dao` | Wikipedia: Tam Đảo |
+
 ## Mục dàn ý đã gộp vì SGK có nội dung ở mục khác
 
 - Bắc Trung Bộ và Nam Trung Bộ: "Nuôi trồng thủy sản" gộp vào "Đánh bắt hải sản", đổi tên thành "Đánh bắt và nuôi trồng hải sản" (SGK Bài 16 nói chung một dòng).

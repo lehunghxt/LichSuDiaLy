@@ -41,7 +41,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "lang-son",
     "section": "thien-nhien",
-    "itemIds": ["trung-du-mien-nui-phia-bac__dia-hinh"],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dia-hinh", "trung-du-mien-nui-phia-bac__nui-mau-son"],
     "alt": "Biển mây trắng phủ giữa các dãy núi",
     "caption": "Núi Mẫu Sơn (tỉnh Lạng Sơn).",
     "src": {

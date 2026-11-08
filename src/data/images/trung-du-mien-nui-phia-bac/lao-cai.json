@@ -262,7 +262,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "lao-cai",
     "section": "thien-nhien",
-    "itemIds": ["trung-du-mien-nui-phia-bac__dia-hinh"],
+    "itemIds": ["trung-du-mien-nui-phia-bac__dia-hinh", "trung-du-mien-nui-phia-bac__day-hoang-lien-son"],
     "alt": "Đường mòn đá giữa rừng, phía sau là các đỉnh núi đá trong mây",
     "caption": "Dãy Hoàng Liên Sơn nhìn từ đường mòn lên đỉnh Phan-xi-păng (tỉnh Lào Cai).",
     "src": {

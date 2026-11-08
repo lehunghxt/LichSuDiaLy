@@ -104,7 +104,9 @@
     "file": "File:Phong cảnh núi Yên Tử.jpg",
     "provinceId": "quang-ninh",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": [
+      "dong-bang-bac-bo__nui-yen-tu"
+    ],
     "alt": "Chùa trên đỉnh núi, xung quanh là mây núi",
     "caption": "Đỉnh núi Yên Tử (tỉnh Quảng Ninh).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
@@ -236,5 +238,16 @@
     "alt": "Bốn bức tranh dân gian treo trên tường",
     "caption": "Tranh dân gian ở làng Đông Hồ (tỉnh Bắc Ninh).",
     "checked": "2026-11-03: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Hanoi skyline with Ba Vi Mountain.jpg",
+    "provinceId": "ha-noi",
+    "section": "thien-nhien",
+    "itemIds": [
+      "dong-bang-bac-bo__nui-ba-vi"
+    ],
+    "alt": "Các tòa nhà Hà Nội lúc hoàng hôn, phía sau là núi Ba Vì",
+    "caption": "Núi Ba Vì nhìn từ Hà Nội lúc hoàng hôn (thành phố Hà Nội).",
+    "checked": "2026-11-08: đã xem ảnh, đúng chủ thể"
   }
 ]

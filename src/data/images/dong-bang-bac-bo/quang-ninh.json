@@ -76,7 +76,7 @@
     "provider": "wikimedia-commons",
     "provinceId": "quang-ninh",
     "section": "lich-su",
-    "itemIds": [],
+    "itemIds": ["dong-bang-bac-bo__nui-yen-tu"],
     "alt": "Chùa trên đỉnh núi, xung quanh là mây núi",
     "caption": "Đỉnh núi Yên Tử (tỉnh Quảng Ninh).",
     "src": {

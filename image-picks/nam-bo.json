@@ -21,7 +21,9 @@
     "file": "File:Bình Phước landscape.jpg",
     "provinceId": "dong-nai",
     "section": "thien-nhien",
-    "itemIds": [],
+    "itemIds": [
+      "nam-bo__nui-ba-ra"
+    ],
     "alt": "Đồi rừng và mặt hồ trải rộng nhìn từ trên núi cao",
     "caption": "Phong cảnh nhìn từ núi Bà Rá (tỉnh Đồng Nai).",
     "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
@@ -102,7 +104,8 @@
     "provinceId": "tay-ninh",
     "section": "thien-nhien",
     "itemIds": [
-      "nam-bo__dia-hinh-dong-nam-bo"
+      "nam-bo__dia-hinh-dong-nam-bo",
+      "nam-bo__nui-ba-den"
     ],
     "alt": "Thành phố nhiều cây xanh, phía xa là ngọn núi cao",
     "caption": "Thành phố Tây Ninh, phía xa là núi Bà Đen (tỉnh Tây Ninh).",
@@ -113,7 +116,8 @@
     "provinceId": "tay-ninh",
     "section": "thien-nhien",
     "itemIds": [
-      "nam-bo__dia-hinh-dong-nam-bo"
+      "nam-bo__dia-hinh-dong-nam-bo",
+      "nam-bo__nui-ba-den"
     ],
     "alt": "Các cabin cáp treo chạy dọc sườn núi nhiều cây",
     "caption": "Cáp treo lên các chùa trên núi Bà Đen (tỉnh Tây Ninh).",
@@ -392,5 +396,27 @@
     "alt": "Hàng tua-bin gió đứng trên biển lúc hoàng hôn",
     "caption": "Nhà máy điện gió Bạc Liêu (tỉnh Cà Mau).",
     "checked": "2026-11-04: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Chua Chan mount..JPG",
+    "provinceId": "dong-nai",
+    "section": "thien-nhien",
+    "itemIds": [
+      "nam-bo__nui-chua-chan"
+    ],
+    "alt": "Núi Chứa Chan phía sau cánh đồng lúa",
+    "caption": "Núi Chứa Chan (tỉnh Đồng Nai).",
+    "checked": "2026-11-08: đã xem ảnh, đúng chủ thể"
+  },
+  {
+    "file": "File:Le Mont Sam (Vietnam) (6589335173).jpg",
+    "provinceId": "an-giang",
+    "section": "thien-nhien",
+    "itemIds": [
+      "nam-bo__nui-sam"
+    ],
+    "alt": "Núi Sam nhìn từ con đường ven núi",
+    "caption": "Núi Sam, Châu Đốc (tỉnh An Giang).",
+    "checked": "2026-11-08: đã xem ảnh, đúng chủ thể"
   }
 ]

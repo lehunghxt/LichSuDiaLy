@@ -72,5 +72,79 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:My_Son_Sanctuary_Vietnam_04.jpg"
     },
     "status": "draft"
+  },
+  {
+    "id": "da-nang__day-nui-bach-ma-nhin-tu-san-bay-da-nang",
+    "provider": "wikimedia-commons",
+    "provinceId": "da-nang",
+    "section": "thien-nhien",
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__day-bach-ma"],
+    "alt": "Dãy núi Bạch Mã nhìn từ sân đỗ máy bay",
+    "caption": "Dãy núi Bạch Mã nhìn từ sân bay Đà Nẵng (thành phố Đà Nẵng).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/D%C3%A3y_n%C3%BAi_B%E1%BA%A1ch_M%C3%A3%2C_nh%C3%ACn_t%E1%BB%AB_s%C3%A2n_bay_%C4%90%C3%A0_N%E1%BA%B5ng.JPG/960px-D%C3%A3y_n%C3%BAi_B%E1%BA%A1ch_M%C3%A3%2C_nh%C3%ACn_t%E1%BB%AB_s%C3%A2n_bay_%C4%90%C3%A0_N%E1%BA%B5ng.JPG",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/D%C3%A3y_n%C3%BAi_B%E1%BA%A1ch_M%C3%A3%2C_nh%C3%ACn_t%E1%BB%AB_s%C3%A2n_bay_%C4%90%C3%A0_N%E1%BA%B5ng.JPG/500px-D%C3%A3y_n%C3%BAi_B%E1%BA%A1ch_M%C3%A3%2C_nh%C3%ACn_t%E1%BB%AB_s%C3%A2n_bay_%C4%90%C3%A0_N%E1%BA%B5ng.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/D%C3%A3y_n%C3%BAi_B%E1%BA%A1ch_M%C3%A3%2C_nh%C3%ACn_t%E1%BB%AB_s%C3%A2n_bay_%C4%90%C3%A0_N%E1%BA%B5ng.JPG/960px-D%C3%A3y_n%C3%BAi_B%E1%BA%A1ch_M%C3%A3%2C_nh%C3%ACn_t%E1%BB%AB_s%C3%A2n_bay_%C4%90%C3%A0_N%E1%BA%B5ng.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/D%C3%A3y_n%C3%BAi_B%E1%BA%A1ch_M%C3%A3%2C_nh%C3%ACn_t%E1%BB%AB_s%C3%A2n_bay_%C4%90%C3%A0_N%E1%BA%B5ng.JPG/1280px-D%C3%A3y_n%C3%BAi_B%E1%BA%A1ch_M%C3%A3%2C_nh%C3%ACn_t%E1%BB%AB_s%C3%A2n_bay_%C4%90%C3%A0_N%E1%BA%B5ng.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Dãy núi Bạch Mã, nhìn từ sân bay Đà Nẵng.JPG",
+      "author": "ASM~viwiki",
+      "authorUrl": "https://vi.wikipedia.org/wiki/User:ASM~viwiki",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:D%C3%A3y_n%C3%BAi_B%E1%BA%A1ch_M%C3%A3,_nh%C3%ACn_t%E1%BB%AB_s%C3%A2n_bay_%C4%90%C3%A0_N%E1%BA%B5ng.JPG"
+    },
+    "status": "draft"
+  },
+  {
+    "id": "da-nang__marble-mountains-view-3",
+    "provider": "wikimedia-commons",
+    "provinceId": "da-nang",
+    "section": "thien-nhien",
+    "itemIds": ["bac-trung-bo-va-nam-trung-bo__ngu-hanh-son"],
+    "alt": "Một ngọn núi đá vôi ở Ngũ Hành Sơn giữa khu dân cư",
+    "caption": "Một ngọn núi đá vôi ở Ngũ Hành Sơn (thành phố Đà Nẵng).",
+    "src": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Marble_Mountains_View_3.JPG/960px-Marble_Mountains_View_3.JPG",
+      "width": 960,
+      "height": 720,
+      "srcset": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Marble_Mountains_View_3.JPG/500px-Marble_Mountains_View_3.JPG",
+          "width": 500
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Marble_Mountains_View_3.JPG/960px-Marble_Mountains_View_3.JPG",
+          "width": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Marble_Mountains_View_3.JPG/1280px-Marble_Mountains_View_3.JPG",
+          "width": 1280
+        }
+      ]
+    },
+    "attribution": {
+      "title": "File:Marble Mountains View 3.JPG",
+      "author": "Dragfyre",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Dragfyre",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marble_Mountains_View_3.JPG"
+    },
+    "status": "draft"
   }
 ]
