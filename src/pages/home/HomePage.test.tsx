@@ -1,4 +1,4 @@
-import { render, screen, within } from '@testing-library/react'
+import { render, screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { createMemoryRouter, RouterProvider } from 'react-router'
 import { routes } from '../../app/router'
@@ -33,6 +33,22 @@ test('regions section: every region has content and links to the map', async () 
   expect(within(list).getByRole('link', { name: /Trung du và miền núi phía Bắc/ })).toHaveAttribute('href', `/ban-do/${TDMNPB}`)
   expect(within(list).getByRole('link', { name: /Nam Bộ/ })).toHaveAttribute('href', '/ban-do/nam-bo')
   expect(within(list).queryByText('Sắp ra mắt')).not.toBeInTheDocument()
+})
+
+test('every region card shows a cover photo of that region, credited, outside the card link', async () => {
+  renderHome()
+  const list = await screen.findByRole('list', { name: 'Bốn vùng đất của Tổ quốc' })
+  await waitFor(() => expect(list.querySelectorAll('img')).toHaveLength(4))
+  for (const card of within(list).getAllByRole('listitem')) {
+    const photo = card.querySelector('img')!
+    expect(photo.getAttribute('src')).toMatch(/^https:\/\/upload\.wikimedia\.org\//)
+    expect(photo).toHaveAttribute('referrerpolicy', 'no-referrer')
+    const commons = within(card).getByRole('link', { name: 'Wikimedia Commons' })
+    // Link ghi nguồn không được lồng trong link của thẻ
+    expect(commons.closest('a[href^="/ban-do/"]')).toBeNull()
+  }
+  // Tên link của thẻ vẫn là tên vùng (ảnh chỉ minh hoạ)
+  expect(within(list).getByRole('link', { name: /^Đồng bằng Bắc Bộ/ })).toHaveAttribute('href', '/ban-do/dong-bang-bac-bo')
 })
 
 test('home page lists the sections of the region outline (no old topic names)', async () => {

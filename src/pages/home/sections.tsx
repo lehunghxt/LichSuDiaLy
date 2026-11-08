@@ -18,10 +18,20 @@ import {
 } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router'
+import { ImageCredit } from '../../components/ui/ImageCredit'
+import { markIfComplete } from '../../components/ui/imageLoad'
 import { repository, SECTION_ICONS, SECTION_TILE } from '../../features/content'
+import { useRegionCovers } from '../../features/images'
 import { MiniVietnamMap } from '../../features/map'
 import { useProgress } from '../../features/progress'
-import { SECTION_LABELS, type ContentItem, type RegionContent, type RegionMeta, type RegionOutline } from '../../types/content'
+import {
+  SECTION_LABELS,
+  type ContentItem,
+  type RegionContent,
+  type RegionMeta,
+  type RegionOutline,
+  type WebImage,
+} from '../../types/content'
 
 const card = 'rounded-card bg-surface shadow-[0_8px_30px_rgb(15_23_42/0.08)]'
 
@@ -212,17 +222,23 @@ export function Journey({ layout }: { layout: 'column' | 'row' }) {
 
 export function RegionCards({ columns }: { columns: 1 | 2 | 4 }) {
   const { state } = useProgress()
+  const regions = repository.getRegions()
+  const covers = useRegionCovers(regions.map((r) => r.id))
   return (
     <ul aria-label="Bốn vùng đất của Tổ quốc" className={`grid gap-5 ${COLUMNS[columns]}`}>
-      {repository.getRegions().map((r) => {
+      {regions.map((r) => {
         const visited = state.visitedRegionIds.includes(r.id)
+        const cover = covers[r.id]
         const body = (
           <>
+            {/* Ảnh tiêu biểu của vùng; dải màu của vùng làm nền khi ảnh đang tải hoặc không có ảnh */}
             <span
-              aria-hidden
-              className="block h-24 rounded-t-card"
+              className="relative block h-40 overflow-hidden rounded-t-card"
               style={{ background: `linear-gradient(135deg, var(--color-${r.color}), #ffffff)` }}
-            />
+            >
+              {cover && <RegionCoverImage image={cover} sizes={`${Math.ceil(100 / columns)}vw`} />}
+              <span aria-hidden className="absolute inset-x-0 bottom-0 h-1.5" style={{ background: `var(--color-${r.color})` }} />
+            </span>
             <span className="flex flex-1 flex-col gap-2 p-5">
               <span className="text-lg font-bold leading-snug">{r.name}</span>
               {r.status === 'active' ? (
@@ -241,18 +257,43 @@ export function RegionCards({ columns }: { columns: 1 | 2 | 4 }) {
           </>
         )
         return (
-          <li key={r.id}>
+          <li key={r.id} className={`${card} flex flex-col transition hover:-translate-y-1 hover:shadow-lg`}>
             {r.status === 'active' ? (
-              <Link to={`/ban-do/${r.id}`} className={`${card} flex h-full flex-col transition hover:-translate-y-1 hover:shadow-lg`}>
+              <Link to={`/ban-do/${r.id}`} className="flex flex-1 flex-col rounded-card">
                 {body}
               </Link>
             ) : (
-              <div className={`${card} flex h-full flex-col opacity-80`}>{body}</div>
+              <div className="flex flex-1 flex-col opacity-80">{body}</div>
+            )}
+            {/* Ghi nguồn ảnh Commons (TASL), nằm ngoài link của thẻ vì có link riêng */}
+            {cover && (
+              <p className="-mt-2 line-clamp-2 px-5 pb-4 leading-tight">
+                <ImageCredit image={cover} />
+              </p>
             )}
           </li>
         )
       })}
     </ul>
+  )
+}
+
+/** Ảnh bìa vùng phủ kín khung, hiện dần khi tải xong. Chỉ minh hoạ (alt rỗng): tên link của thẻ là tên vùng */
+function RegionCoverImage({ image, sizes }: { image: WebImage; sizes: string }) {
+  const [loaded, setLoaded] = useState(false)
+  return (
+    <img
+      ref={markIfComplete(setLoaded)}
+      src={image.src.url}
+      srcSet={image.src.srcset.map((x) => `${x.url} ${x.width}w`).join(', ')}
+      sizes={sizes}
+      alt=""
+      loading="lazy"
+      decoding="async"
+      referrerPolicy="no-referrer"
+      onLoad={() => setLoaded(true)}
+      className={`absolute inset-0 size-full object-cover transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+    />
   )
 }
 
