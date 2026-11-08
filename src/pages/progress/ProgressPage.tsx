@@ -5,16 +5,46 @@ import { ConfirmDialog } from '../../components/ui/ConfirmDialog'
 import { repository } from '../../features/content'
 import { type QuizRecord, useProgress } from '../../features/progress'
 import type { ContentItem } from '../../types/content'
-import { GRID } from '../../components/ui/grid'
+import { GRID_FILL_XS } from '../../components/ui/grid'
 
-function Stat({ icon: Icon, label, value }: { icon: LucideIcon; label: string; value: string }) {
+interface StatProps {
+  icon: LucideIcon
+  label: string
+  /** Con số chính; null là chưa có (chưa làm bài nào) */
+  value: number | null
+  /** Tổng để so, viết nhỏ sau con số ("/4"); có tổng thì có thêm thanh tiến độ */
+  total?: number
+}
+
+/** Ô số liệu xếp dọc: biểu tượng, con số lớn, nhãn. Nhãn có cả bề ngang ô nên không bị bóp xuống nhiều dòng */
+function Stat({ icon: Icon, label, value, total }: StatProps) {
+  const percent = value !== null && total ? Math.round((value / total) * 100) : null
   return (
-    <li className="flex items-center gap-4 rounded-card bg-surface p-5 shadow-sm">
-      <Icon aria-hidden className="size-10 shrink-0 rounded-full bg-primary-soft p-2 text-primary" />
-      <div>
-        <p className="text-sm text-muted">{label}</p>
-        <p className="text-2xl font-bold">{value}</p>
-      </div>
+    <li className="flex flex-col gap-2 rounded-card bg-surface p-5 shadow-sm">
+      <span className="mb-1 grid size-11 place-items-center rounded-2xl bg-primary-soft">
+        <Icon aria-hidden className="size-6 text-primary" />
+      </span>
+      {value === null ? (
+        <span className="text-xl font-bold leading-9 text-muted">Chưa có</span>
+      ) : (
+        <span className="text-3xl font-extrabold leading-9">
+          {value}
+          {total !== undefined && <span className="text-lg font-bold text-muted">/{total}</span>}
+        </span>
+      )}
+      <p className="text-sm font-semibold leading-snug text-muted">{label}</p>
+      {percent !== null && (
+        <div
+          role="progressbar"
+          aria-label={label}
+          aria-valuenow={percent}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          className="mt-1 h-2 overflow-hidden rounded-full bg-line"
+        >
+          <div className="h-full rounded-full bg-gradient-to-r from-emerald-400 to-primary" style={{ width: `${percent}%` }} />
+        </div>
+      )}
     </li>
   )
 }
@@ -93,12 +123,12 @@ export default function ProgressPage() {
         </div>
       ) : (
         <>
-          <ul aria-label="Thống kê" className={`${GRID.xs} mt-6 gap-4`}>
-            <Stat icon={Map} label="Vùng đã khám phá" value={String(state.visitedRegionIds.length)} />
-            <Stat icon={Eye} label="Địa danh đã xem" value={String(state.viewedItemIds.length)} />
-            <Stat icon={BookOpenCheck} label="Bài đã hoàn thành" value={String(records.length)} />
-            <Stat icon={Star} label="Điểm gần nhất" value={last ? `${last.lastScore}/${last.total}` : '—'} />
-            <Stat icon={Trophy} label="Điểm cao nhất" value={top ? `${top.bestScore}/${top.total}` : '—'} />
+          <ul aria-label="Thống kê" className={`${GRID_FILL_XS} mt-6 gap-4`}>
+            <Stat icon={Map} label="Vùng đã khám phá" value={state.visitedRegionIds.length} total={repository.getRegions().length} />
+            <Stat icon={Eye} label="Địa danh đã xem" value={state.viewedItemIds.length} />
+            <Stat icon={BookOpenCheck} label="Bài đã hoàn thành" value={records.length} />
+            <Stat icon={Star} label="Điểm gần nhất" value={last?.lastScore ?? null} total={last?.total} />
+            <Stat icon={Trophy} label="Điểm cao nhất" value={top?.bestScore ?? null} total={top?.total} />
           </ul>
           <RecentItems ids={state.recentItemIds} />
           <button

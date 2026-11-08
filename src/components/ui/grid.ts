@@ -13,3 +13,7 @@ export const GRID = {
   /** ô ≥ 28rem: hai khối nội dung cạnh nhau khi khung đủ rộng */
   xl: 'grid grid-cols-[repeat(auto-fill,minmax(min(100%,28rem),1fr))]',
 } as const
+
+/** Như GRID.xs nhưng các ô giãn ra lấp đầy hàng (auto-fit): dùng cho một dãy ít ô cố định, ví dụ các ô số liệu,
+ *  để màn rộng không bỏ trống cột bên phải */
+export const GRID_FILL_XS = 'grid grid-cols-[repeat(auto-fit,minmax(min(100%,10rem),1fr))]'

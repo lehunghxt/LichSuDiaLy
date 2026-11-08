@@ -41,6 +41,27 @@ test('shows stats loaded from localStorage', () => {
   expect(within(stats).getByText('Điểm cao nhất').parentElement).toHaveTextContent('8/10')
 })
 
+test('regions show how many of all regions, with a progress bar', () => {
+  seed()
+  renderPage()
+  const stats = screen.getByRole('list', { name: 'Thống kê' })
+  const regions = within(stats).getByText('Vùng đã khám phá').closest('li')!
+  expect(regions).toHaveTextContent('1/4')
+  expect(within(regions).getByRole('progressbar', { name: 'Vùng đã khám phá' })).toHaveAttribute('aria-valuenow', '25')
+})
+
+test('before any quiz, the score cards say "Chưa có" instead of a dash', () => {
+  localStorage.setItem(
+    PROGRESS_KEY,
+    JSON.stringify({ version: 1, visitedRegionIds: ['nam-bo'], viewedItemIds: [], recentItemIds: [], quizzes: {} }),
+  )
+  renderPage()
+  const stats = screen.getByRole('list', { name: 'Thống kê' })
+  expect(within(stats).getByText('Điểm gần nhất').closest('li')).toHaveTextContent('Chưa có')
+  expect(within(stats).getByText('Điểm cao nhất').closest('li')).toHaveTextContent('Chưa có')
+  expect(stats).not.toHaveTextContent('—')
+})
+
 test('shows note that progress is stored only in this browser', () => {
   renderPage()
   expect(screen.getByText(/Tiến độ chỉ lưu trên trình duyệt này/)).toBeInTheDocument()
