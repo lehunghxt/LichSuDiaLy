@@ -25,6 +25,8 @@ Bản xem thử: https://em-kham-pha-lsdl.vercel.app
 
 **Núi tiêu biểu** (phần Thiên nhiên của mỗi vùng): 17 núi, dãy núi có tọa độ trên bản đồ và ảnh; núi có trong SGK ghi số trang, núi ngoài SGK có nhãn "Ngoài SGK". Tư liệu: `docs/research/nui/README.md`.
 
+Sau lần mở đầu tiên, service worker (`dist/sw.js`, sinh lúc build) lưu sẵn mã, phông chữ và bản đồ: lần sau mở nhanh hơn và vẫn dùng được khi mất mạng (trừ ảnh, video lấy từ Wikimedia, YouTube). Số liệu ở Trang chủ tính sẵn lúc build (`virtual:home-summary`), không phải tải nội dung của cả bốn vùng.
+
 Giao diện có ba bản riêng cho điện thoại, máy tính bảng và máy tính. Trên điện thoại, thông tin hiện trong bảng trượt từ dưới lên.
 
 ## Chạy trên máy
@@ -41,7 +43,7 @@ Các lệnh khác:
 |---|---|
 | `npm test` | Chạy toàn bộ test (Vitest + Testing Library) |
 | `npm run build` | Build ra `dist/` |
-| `npm run check:dist` | Kiểm tra `dist/`: có `index.html`, `_redirects`; chunk ban đầu < 150KB gzip; Leaflet không nằm trong chunk ban đầu; Trang chủ không tải khung bản đồ; ảnh trong `dist/images` ≤ 250KB |
+| `npm run check:dist` | Kiểm tra `dist/`: có `index.html`, `_redirects`, `_headers`, `sw.js` (mọi file nó lưu sẵn đều có trong bản build); chunk ban đầu < 150KB gzip; Leaflet không nằm trong chunk ban đầu; Trang chủ không tải khung bản đồ; ảnh trong `dist/images` ≤ 250KB |
 | `npm run images:fetch <vùng>` | Sinh thư viện ảnh của một vùng từ `image-picks/<vùng>.json` (tác giả, giấy phép lấy từ API Wikimedia Commons) |
 | `npm run images:fetch -- --produce` | Sinh ảnh cây trồng từ `image-picks/_nong-san.json` ra `src/data/produce/images.json` |
 | `npm run images:check [vùng]` | Kiểm tra link ảnh và link trang gốc còn sống |
@@ -49,7 +51,7 @@ Các lệnh khác:
 
 ## Công nghệ và cấu trúc
 
-React 19, TypeScript (strict), Vite, Tailwind CSS v4, Leaflet / react-leaflet, React Router 7, Vitest.
+React 19 (bật React Compiler qua Babel: memo tự động lúc build), TypeScript (strict), Vite, Tailwind CSS v4, Leaflet / react-leaflet, React Router 7, Vitest.
 
 ```
 src/
@@ -124,3 +126,4 @@ Các quy ước trên được test kiểm tra tự động. Xem thêm `docs/KIE
 | `docs/DECISIONS.md` | Các quyết định đã chốt |
 | `docs/DEPLOY.md` | Triển khai lên Vercel |
 | `docs/research/` | Tài liệu nghiên cứu (cây trồng…) |
+# LichSuDiaLy
