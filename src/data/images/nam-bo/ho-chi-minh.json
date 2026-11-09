@@ -33,7 +33,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cu_Chi_Tunnels_Vietnam_war_5.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ho-chi-minh__cu-chi-tunnel-3",
@@ -69,7 +69,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cu_Chi_Tunnel_3.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ho-chi-minh__hoc-vien-an-ninh-tham-quan-ben-nha-rong",
@@ -105,7 +105,7 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:H%E1%BB%8Dc_vi%C3%AAn_an_ninh_tham_quan_B%E1%BA%BFn_Nh%C3%A0_R%E1%BB%93ng.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ho-chi-minh__ben-thanh-market-2",
@@ -142,7 +142,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ben_Thanh_market_2.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ho-chi-minh__ben-thanh-market-2023-02",
@@ -179,7 +179,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ben_Thanh_Market,_2023_(02).jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ho-chi-minh__bai-truoc-vung-tau",
@@ -215,6 +215,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bai_Truoc_Vung_Tau.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

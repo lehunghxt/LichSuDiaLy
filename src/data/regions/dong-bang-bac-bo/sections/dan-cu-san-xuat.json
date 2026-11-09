@@ -26,13 +26,13 @@
     "relatedIds": ["dong-bang-bac-bo__nha-o", "dong-bang-bac-bo__lua-nuoc"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 41,
         "note": "tr. 41–42, Hình 1, 2"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__nha-o",
@@ -61,13 +61,13 @@
     "relatedIds": ["dong-bang-bac-bo__lang-que", "dong-bang-bac-bo__dan-cu"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 48,
         "note": "tr. 48, Hình 5, 6"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__lua-nuoc",
@@ -90,13 +90,13 @@
     "relatedIds": ["dong-bang-bac-bo__de-song-hong", "dong-bang-bac-bo__rau-mau", "dong-bang-bac-bo__dan-cu"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 43,
         "note": "tr. 43, Hình 3"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__rau-mau",
@@ -109,13 +109,13 @@
     "relatedIds": ["dong-bang-bac-bo__lua-nuoc", "dong-bang-bac-bo__chan-nuoi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 43,
         "note": "tr. 43"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__chan-nuoi",
@@ -128,13 +128,13 @@
     "relatedIds": ["dong-bang-bac-bo__rau-mau"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 43,
         "note": "tr. 43"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__nghe-thu-cong",
@@ -159,13 +159,13 @@
     "relatedIds": ["dong-bang-bac-bo__lang-que"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 44,
         "note": "tr. 44, Hình 4"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__tranh-dong-ho",
@@ -186,7 +186,7 @@
         "url": "https://vi.wikipedia.org/wiki/Tranh_%C4%90%C3%B4ng_H%E1%BB%93"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__lua-van-phuc",
@@ -207,6 +207,6 @@
         "url": "https://vi.wikipedia.org/wiki/L%C3%A0ng_l%E1%BB%A5a_V%E1%BA%A1n_Ph%C3%BAc"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   }
 ]

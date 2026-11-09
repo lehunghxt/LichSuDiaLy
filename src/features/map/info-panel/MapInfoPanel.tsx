@@ -88,9 +88,7 @@ export function MapInfoPanel(props: MapInfoPanelProps) {
       regionName={region.name}
       provinceId={provinceId}
       images={images}
-      onClear={onClearProvince}
       onOpen={onOpenItem}
-      onShowRegion={() => setRegionTabFor(provinceId)}
     />
   )
 
@@ -162,13 +160,13 @@ export function MapInfoPanel(props: MapInfoPanelProps) {
     <section aria-label={region.name} className={`${card} flex flex-col gap-6 in-data-sheet:gap-4`}>
       {provinceId ? (
         <>
-          {/* Nút về bản đồ thu thành nút tròn cùng hàng với tab, không chiếm riêng một dòng */}
+          {/* Nút lùi một bước (bỏ chọn tỉnh, về vùng) thu thành nút tròn cùng hàng với tab, không chiếm riêng một dòng */}
           <div className="flex items-center gap-2">
             <button
               type="button"
-              onClick={onBack}
-              aria-label="Về bản đồ Việt Nam"
-              title="Về bản đồ Việt Nam"
+              onClick={onClearProvince}
+              aria-label={`Bỏ chọn tỉnh, về vùng ${region.name}`}
+              title={`Về vùng ${region.name}`}
               className="grid size-11 shrink-0 place-items-center rounded-full bg-bg text-muted ring-1 ring-line hover:text-ink"
             >
               <ArrowLeft aria-hidden className="size-5" />

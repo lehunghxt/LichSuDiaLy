@@ -135,6 +135,23 @@ test('clicking a topic or a section calls onSelect(section, topicId)', async () 
   expect(onSelect).toHaveBeenLastCalledWith('dan-cu-san-xuat', null)
 })
 
+test('the end of a topic offers the next topic, then the next section; the very last topic offers nothing', async () => {
+  const { onSelect } = setup()
+  await userEvent.click(screen.getByRole('button', { name: /Mục tiếp theo\s*Khí hậu/ }))
+  expect(onSelect).toHaveBeenLastCalledWith('thien-nhien', 'khi-hau')
+})
+
+test('the last topic of a section offers the next section', async () => {
+  const { onSelect } = setup({ topicId: 'khi-hau' })
+  await userEvent.click(screen.getByRole('button', { name: /Phần tiếp theo\s*Dân cư và hoạt động sản xuất/ }))
+  expect(onSelect).toHaveBeenLastCalledWith('dan-cu-san-xuat', null)
+})
+
+test('the last topic of the last section has no next button', () => {
+  setup({ section: 'van-hoa', topicId: 'le-hoi', outline: { ...outline(), sections: outline().sections.slice(0, 3) } })
+  expect(screen.queryByRole('button', { name: /tiếp theo/ })).toBeNull()
+})
+
 test('detail shows summary, highlights, fun facts, key points and location', () => {
   setup()
   expect(screen.getByText('Tóm tắt 1.')).toBeInTheDocument()

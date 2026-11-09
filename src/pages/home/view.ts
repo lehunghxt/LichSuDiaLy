@@ -1,11 +1,9 @@
-import type { RegionContent, RegionMeta, RegionOutline } from '../../types/content'
+import type { RegionMeta } from '../../types/content'
+import type { HomeSummary } from '../../types/homeSummary'
 
 /** Dữ liệu Trang chủ, do HomePage chuẩn bị, mọi bố cục dùng chung */
 export interface HomeView {
-  /** Nội dung vùng đang mở (null khi đang tải) */
-  content: RegionContent | null
-  regionCount: number
-  /** Vùng đang có nội dung và dàn ý của nó (để hiện "Các phần khám phá") */
-  active: RegionMeta | undefined
-  outline: RegionOutline | null
+  regions: RegionMeta[]
+  /** Số liệu của cả bốn vùng, tính sẵn lúc build: Trang chủ không phải tải nội dung đầy đủ của từng vùng */
+  summary: HomeSummary
 }

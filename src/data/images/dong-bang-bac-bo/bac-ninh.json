@@ -34,7 +34,7 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quan_Ho-Ensemble.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-ninh__chuadau-toancanh",
@@ -70,7 +70,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:ChuaDau_ToanCanh.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-ninh__pentrajoj-en-vilago-dong-ho-01",
@@ -107,6 +107,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pentra%C4%B5oj_en_vila%C4%9Do_%C4%90%C3%B4ng_H%E1%BB%93_01.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

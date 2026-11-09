@@ -34,7 +34,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_village_flottant_(Chau_Doc,_Vietnam)_(6620578201).jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "an-giang__vietnam-chau-doc-floating-village",
@@ -71,7 +71,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vietnam,_Chau_Doc,_Floating_village.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "an-giang__rung-tram-tra-su",
@@ -108,7 +108,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:R%E1%BB%ABng_tr%C3%A0m_Tr%C3%A0_S%C6%B0.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "an-giang__tra-su-1",
@@ -145,7 +145,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tr%C3%A0_S%C6%B0_1.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "an-giang__mieu-ba-chua-xu-nui-sam",
@@ -182,7 +182,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mi%E1%BA%BFu_B%C3%A0_Ch%C3%BAa_X%E1%BB%A9_N%C3%BAi_Sam.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "an-giang__rice-field-at-chaudoc",
@@ -219,7 +219,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rice_field_at_ChauDoc.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "an-giang__bai-sao-phu-quoc-tuonglamphotos",
@@ -255,7 +255,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bai-sao-phu-quoc-tuonglamphotos.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "an-giang__kem-beach-aerial-view-phu-quoc-island-vietnam",
@@ -292,7 +292,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kem_Beach_aerial_view_Phu_Quoc_Island_Vietnam.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "an-giang__le-mont-sam-vietnam-6589335173",
@@ -329,6 +329,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Mont_Sam_(Vietnam)_(6589335173).jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

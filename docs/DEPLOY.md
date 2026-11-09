@@ -9,16 +9,16 @@ Trang là web tĩnh (SPA). Mọi đường dẫn không phải file phải trả
 - Bản xem thử (URL riêng):
 
   ```bash
-  npx vercel@latest deploy --yes --build-env VITE_SHOW_DRAFTS=true
+  npx vercel@latest deploy --yes
   ```
 
 - Lên trang chính:
 
   ```bash
-  npx vercel@latest deploy --prod --yes --build-env VITE_SHOW_DRAFTS=true
+  npx vercel@latest deploy --prod --yes
   ```
 
-- **Không dùng `vercel promote`.** Promote build lại mà không có `VITE_SHOW_DRAFTS`, nên nội dung nháp và ảnh nháp bị ẩn (các chủ đề hiện "0 mục").
+- Bản build chỉ hiện nội dung `verified`. Mục còn `draft` không lên trang (chủ đề không còn mục nào sẽ hiện "đang cập nhật").
 
 ## Host tĩnh khác (Netlify, Cloudflare Pages, …)
 

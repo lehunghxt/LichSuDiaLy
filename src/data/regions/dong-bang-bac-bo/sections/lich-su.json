@@ -28,13 +28,13 @@
     "relatedIds": ["dong-bang-bac-bo__doi-song-nguoi-viet-co", "dong-bang-bac-bo__song-hong"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 11. Sông Hồng và văn minh sông Hồng",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 11. Sông Hồng và văn minh sông Hồng",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 51,
         "note": "tr. 51, Hình 2, 3"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__doi-song-nguoi-viet-co",
@@ -59,13 +59,13 @@
     "relatedIds": ["dong-bang-bac-bo__van-minh-song-hong"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 11. Sông Hồng và văn minh sông Hồng",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 11. Sông Hồng và văn minh sông Hồng",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 52,
         "note": "tr. 52, Hình 4"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__gin-giu-song-hong",
@@ -94,13 +94,13 @@
     "relatedIds": ["dong-bang-bac-bo__song-hong"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 11. Sông Hồng và văn minh sông Hồng",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 11. Sông Hồng và văn minh sông Hồng",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 53,
         "note": "tr. 53, Hình 5, 6"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__thang-long-ten-goi",
@@ -122,7 +122,7 @@
         "lesson": 12,
         "figure": 2,
         "page": 55,
-        "caption": "Lược đồ thể hiện vị trí địa lí của Thăng Long – Hà Nội"
+        "caption": "Lược đồ thể hiện vị trí địa lý của Thăng Long – Hà Nội"
       },
       {
         "lesson": 12,
@@ -134,13 +134,13 @@
     "relatedIds": ["dong-bang-bac-bo__lich-su-thang-long", "dong-bang-bac-bo__ha-noi-ngay-nay"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 12. Thăng Long – Hà Nội",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 12. Thăng Long – Hà Nội",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 54,
         "note": "tr. 54–55, Hình 2, 3"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__lich-su-thang-long",
@@ -179,13 +179,13 @@
     "relatedIds": ["dong-bang-bac-bo__thang-long-ten-goi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 12. Thăng Long – Hà Nội",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 12. Thăng Long – Hà Nội",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 56,
         "note": "tr. 56–57, Hình 4, 5, 6"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__ha-noi-ngay-nay",
@@ -222,13 +222,13 @@
     "relatedIds": ["dong-bang-bac-bo__lich-su-thang-long", "dong-bang-bac-bo__van-mieu"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 12. Thăng Long – Hà Nội",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 12. Thăng Long – Hà Nội",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 58,
         "note": "tr. 58, Hình 8, 10, 11"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__van-mieu",
@@ -275,7 +275,7 @@
     "relatedIds": ["dong-bang-bac-bo__gin-giu-van-mieu", "dong-bang-bac-bo__ha-noi-ngay-nay"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 13. Văn Miếu – Quốc Tử Giám",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 13. Văn Miếu – Quốc Tử Giám",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 59,
         "note": "tr. 59–61, Hình 1, 2, 5"
@@ -286,7 +286,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__gin-giu-van-mieu",
@@ -316,12 +316,12 @@
     "relatedIds": ["dong-bang-bac-bo__van-mieu"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 13. Văn Miếu – Quốc Tử Giám",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 13. Văn Miếu – Quốc Tử Giám",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 61,
         "note": "tr. 61–62, Hình 6, 7"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   }
 ]

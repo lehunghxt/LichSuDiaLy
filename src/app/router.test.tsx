@@ -12,7 +12,7 @@ function renderAt(path: string) {
 
 test('renders home at /', async () => {
   renderAt('/')
-  expect(await screen.findByRole('heading', { level: 1, name: /Em khám phá Lịch sử và Địa lí Việt Nam/i })).toBeInTheDocument()
+  expect(await screen.findByRole('heading', { level: 1, name: /Em khám phá Lịch sử và Địa lý Việt Nam/i })).toBeInTheDocument()
 })
 
 test('header has 4 nav links', async () => {

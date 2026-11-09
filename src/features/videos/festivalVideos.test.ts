@@ -36,10 +36,11 @@ describe('the real data', () => {
   })
 })
 
-test('the production build hides draft videos unless drafts are shown', () => {
+test('the production build hides draft videos', () => {
+  // Dữ liệu thật đã duyệt hết: đặt lại một bản sao về nháp
+  const drafts = JSON.parse(JSON.stringify(raw).replaceAll('"verified"', '"draft"')) as typeof raw
   vi.stubEnv('PROD', true)
-  vi.stubEnv('VITE_SHOW_DRAFTS', 'false')
-  expect(parseFestivalVideos(raw).forProvince('quang-ngai')).toEqual([])
+  expect(parseFestivalVideos(drafts).forProvince('quang-ngai')).toEqual([])
 })
 
 describe('invalid data is rejected', () => {

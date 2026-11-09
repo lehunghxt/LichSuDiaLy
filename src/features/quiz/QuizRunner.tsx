@@ -1,5 +1,5 @@
 import { ArrowRight, CheckCircle2, Lightbulb, RotateCcw, Search, Trophy } from 'lucide-react'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import type { Quiz } from '../../types/quiz'
 import { isCorrect, score, type Answer } from './engine'
 import { correctAnswerLabel, QuestionView } from './registry'
@@ -10,11 +10,13 @@ const WRONG_TEXT = 'Em hãy cùng tìm hiểu lại nội dung này nhé!'
 interface QuizRunnerProps {
   quiz: Quiz
   onComplete(correct: number, total: number): void
+  /** Nút thêm ở màn kết quả khi còn câu sai (ví dụ link ôn lại vùng trên bản đồ) */
+  reviewAction?: ReactNode
 }
 
 type Phase = 'answering' | 'result' | 'review'
 
-export function QuizRunner({ quiz, onComplete }: QuizRunnerProps) {
+export function QuizRunner({ quiz, onComplete, reviewAction }: QuizRunnerProps) {
   const { questions } = quiz
   const [index, setIndex] = useState(0)
   const [answers, setAnswers] = useState<(Answer | undefined)[]>([])
@@ -74,6 +76,7 @@ export function QuizRunner({ quiz, onComplete }: QuizRunnerProps) {
                 Xem lại câu sai
               </button>
             )}
+            {wrong.length > 0 && reviewAction}
           </div>
         </div>
 

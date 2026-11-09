@@ -30,7 +30,7 @@ export default function VietnamMap(props: VietnamMapProps) {
 
   if (state.status === 'loading') return <LoadingState label="Đang tải bản đồ…" />
   if (state.status === 'error') {
-    return <ErrorState title="Chưa tải được bản đồ" description="Em vẫn có thể chọn vùng trong bảng các vùng địa lí." onRetry={retry} />
+    return <ErrorState title="Chưa tải được bản đồ" description="Em vẫn có thể chọn vùng trong bảng các vùng địa lý." onRetry={retry} />
   }
 
   const { data } = state
@@ -46,7 +46,7 @@ export default function VietnamMap(props: VietnamMapProps) {
         zoomControl={false}
         attributionControl={false}
         className="h-full w-full bg-sea"
-        aria-label="Bản đồ các vùng địa lí Việt Nam"
+        aria-label="Bản đồ các vùng địa lý Việt Nam"
       >
         {/* Đặt trước RegionsLayer: canh toàn quốc lúc mở trước, rồi mới phóng vào vùng đang chọn (màn xếp dọc) */}
         <FitCountry />
@@ -54,6 +54,7 @@ export default function VietnamMap(props: VietnamMapProps) {
           data={data.regions}
           regions={props.regions}
           selectedRegionId={props.selectedRegionId}
+          showCallout={props.selectedProvinceId === null}
           onSelectRegion={props.onSelectRegion}
         />
         {props.selectedRegionId && (

@@ -2,7 +2,7 @@
   {
     "provinceId": "lai-chau",
     "festival": "Lễ hội Then Kin Pang",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "gZlmWjEuo6k",
@@ -15,7 +15,7 @@
   {
     "provinceId": "dien-bien",
     "festival": "Lễ hội Hoa Ban",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "OIbm0vgnXQ8",
@@ -28,7 +28,7 @@
   {
     "provinceId": "son-la",
     "festival": "Lễ hội Hết Chá",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "u435gjR_bmg",
@@ -41,7 +41,7 @@
   {
     "provinceId": "lao-cai",
     "festival": "Lễ hội Gầu Tào",
-    "status": "draft",
+    "status": "verified",
     "itemId": "trung-du-mien-nui-phia-bac__le-hoi-gau-tao",
     "video": {
       "provider": "youtube",
@@ -55,7 +55,7 @@
   {
     "provinceId": "tuyen-quang",
     "festival": "Lễ hội Lồng Tông",
-    "status": "draft",
+    "status": "verified",
     "itemId": "trung-du-mien-nui-phia-bac__le-hoi-long-tong",
     "video": {
       "provider": "youtube",
@@ -69,7 +69,7 @@
   {
     "provinceId": "cao-bang",
     "festival": "Hội Nàng Hai",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "rfW3vT6Jgk8",
@@ -82,7 +82,7 @@
   {
     "provinceId": "thai-nguyen",
     "festival": "Lễ hội Lồng Tồng ATK Phú Đình",
-    "status": "draft",
+    "status": "verified",
     "itemId": "trung-du-mien-nui-phia-bac__le-hoi-long-tong",
     "video": {
       "provider": "youtube",
@@ -96,7 +96,7 @@
   {
     "provinceId": "lang-son",
     "festival": "Lễ hội Lồng Tồng",
-    "status": "draft",
+    "status": "verified",
     "itemId": "trung-du-mien-nui-phia-bac__le-hoi-long-tong",
     "video": {
       "provider": "youtube",
@@ -110,7 +110,7 @@
   {
     "provinceId": "phu-tho",
     "festival": "Lễ giỗ Tổ Hùng Vương",
-    "status": "draft",
+    "status": "verified",
     "itemId": "trung-du-mien-nui-phia-bac__le-gio-to",
     "video": {
       "provider": "youtube",
@@ -124,7 +124,7 @@
   {
     "provinceId": "ha-noi",
     "festival": "Hội Gióng",
-    "status": "draft",
+    "status": "verified",
     "itemId": "dong-bang-bac-bo__hoi-giong",
     "video": {
       "provider": "youtube",
@@ -138,7 +138,7 @@
   {
     "provinceId": "bac-ninh",
     "festival": "Hội Lim",
-    "status": "draft",
+    "status": "verified",
     "itemId": "dong-bang-bac-bo__hoi-lim",
     "video": {
       "provider": "youtube",
@@ -152,7 +152,7 @@
   {
     "provinceId": "quang-ninh",
     "festival": "Lễ hội Xuân Yên Tử",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "AzTr-W_QVG0",
@@ -165,7 +165,7 @@
   {
     "provinceId": "hai-phong",
     "festival": "Lễ hội Côn Sơn – Kiếp Bạc",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "SxZpDnFITw4",
@@ -178,7 +178,7 @@
   {
     "provinceId": "hung-yen",
     "festival": "Lễ hội Chử Đồng Tử – Tiên Dung",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "zV2k2kTrv8Y",
@@ -191,7 +191,7 @@
   {
     "provinceId": "ninh-binh",
     "festival": "Lễ hội Hoa Lư",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "P1m6tp3ZHac",
@@ -204,7 +204,7 @@
   {
     "provinceId": "thanh-hoa",
     "festival": "Lễ hội Lam Kinh",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "oOrymYMCwn0",
@@ -217,7 +217,7 @@
   {
     "provinceId": "nghe-an",
     "festival": "Lễ hội Làng Sen",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "BKxcUBNUgJM",
@@ -230,7 +230,7 @@
   {
     "provinceId": "ha-tinh",
     "festival": "Lễ hội Đền Chợ Củi",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "vL7dz4ixwxY",
@@ -243,7 +243,7 @@
   {
     "provinceId": "quang-tri",
     "festival": "Lễ thượng cờ Thống nhất non sông",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "wVH7H2CMfYc",
@@ -256,7 +256,7 @@
   {
     "provinceId": "hue",
     "festival": "Festival Huế",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "jSP2POKu5eo",
@@ -269,7 +269,7 @@
   {
     "provinceId": "da-nang",
     "festival": "Lễ hội Cầu Ngư",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "iU5WvuvAc0s",
@@ -282,7 +282,7 @@
   {
     "provinceId": "quang-ngai",
     "festival": "Lễ Khao lề thế lính Hoàng Sa",
-    "status": "draft",
+    "status": "verified",
     "itemId": "bac-trung-bo-va-nam-trung-bo__khao-le",
     "video": {
       "provider": "youtube",
@@ -296,7 +296,7 @@
   {
     "provinceId": "gia-lai",
     "festival": "Festival Cồng chiêng",
-    "status": "draft",
+    "status": "verified",
     "itemId": "bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng",
     "video": {
       "provider": "youtube",
@@ -310,7 +310,7 @@
   {
     "provinceId": "dak-lak",
     "festival": "Lễ hội Đua voi",
-    "status": "draft",
+    "status": "verified",
     "itemId": "bac-trung-bo-va-nam-trung-bo__dua-voi",
     "video": {
       "provider": "youtube",
@@ -324,7 +324,7 @@
   {
     "provinceId": "khanh-hoa",
     "festival": "Lễ hội Tháp Bà Pô Nagar",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "UZAO6llpa_k",
@@ -337,7 +337,7 @@
   {
     "provinceId": "khanh-hoa",
     "festival": "Lễ hội Ka-tê",
-    "status": "draft",
+    "status": "verified",
     "itemId": "bac-trung-bo-va-nam-trung-bo__ka-te",
     "video": {
       "provider": "youtube",
@@ -351,7 +351,7 @@
   {
     "provinceId": "lam-dong",
     "festival": "Festival Hoa Đà Lạt",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "NFvBzWWi7fw",
@@ -364,7 +364,7 @@
   {
     "provinceId": "ho-chi-minh",
     "festival": "Lễ hội Nghinh Ông Cần Giờ",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "VHSIk-nElJU",
@@ -377,7 +377,7 @@
   {
     "provinceId": "dong-nai",
     "festival": "Lễ hội đua thuyền truyền thống",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "PnJNWCHLNDM",
@@ -390,7 +390,7 @@
   {
     "provinceId": "tay-ninh",
     "festival": "Hội Xuân Núi Bà Đen",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "ketk6zp-iPA",
@@ -403,7 +403,7 @@
   {
     "provinceId": "dong-thap",
     "festival": "Lễ hội Gò Tháp",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "pFCyYMbZkVU",
@@ -416,7 +416,7 @@
   {
     "provinceId": "an-giang",
     "festival": "Lễ hội Vía Bà Chúa Xứ núi Sam",
-    "status": "draft",
+    "status": "verified",
     "itemId": "nam-bo__ba-chua-xu-nui-sam",
     "video": {
       "provider": "youtube",
@@ -430,7 +430,7 @@
   {
     "provinceId": "vinh-long",
     "festival": "Lễ hội Ok Om Bok",
-    "status": "draft",
+    "status": "verified",
     "itemId": "nam-bo__ok-om-bok",
     "video": {
       "provider": "youtube",
@@ -444,7 +444,7 @@
   {
     "provinceId": "can-tho",
     "festival": "Lễ hội Oóc Om Bóc – Đua ghe Ngo",
-    "status": "draft",
+    "status": "verified",
     "itemId": "nam-bo__dua-ghe-ngo",
     "video": {
       "provider": "youtube",
@@ -458,7 +458,7 @@
   {
     "provinceId": "ca-mau",
     "festival": "Lễ hội Nghinh Ông Sông Đốc",
-    "status": "draft",
+    "status": "verified",
     "video": {
       "provider": "youtube",
       "id": "rD9_YV14ELo",

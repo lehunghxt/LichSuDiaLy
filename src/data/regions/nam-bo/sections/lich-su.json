@@ -14,13 +14,13 @@
     "relatedIds": ["nam-bo__truong-dinh", "nam-bo__nguyen-thi-dinh"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 109,
         "note": "tr. 109"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__truong-dinh",
@@ -45,13 +45,13 @@
     "relatedIds": ["nam-bo__truyen-thong-yeu-nuoc"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 109,
         "note": "tr. 109, Hình 5"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__nguyen-thi-dinh",
@@ -75,13 +75,13 @@
     "relatedIds": ["nam-bo__truyen-thong-yeu-nuoc"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 110,
         "note": "tr. 110, Hình 6"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__tphcm-ten-goi",
@@ -105,13 +105,13 @@
         "lesson": 25,
         "figure": 2,
         "page": 112,
-        "caption": "Lược đồ thể hiện vị trí địa lí của Thành phố Hồ Chí Minh"
+        "caption": "Lược đồ thể hiện vị trí địa lý của Thành phố Hồ Chí Minh"
       }
     ],
     "relatedIds": ["nam-bo__su-kien-tphcm", "nam-bo__tphcm-ngay-nay"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 25. Thành phố Hồ Chí Minh",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 25. Thành phố Hồ Chí Minh",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 111,
         "note": "tr. 111–112, Hình 1, 2"
@@ -122,7 +122,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 10.7756,
       "lng": 106.7019,
@@ -159,13 +159,13 @@
     "relatedIds": ["nam-bo__tphcm-ten-goi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 25. Thành phố Hồ Chí Minh",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 25. Thành phố Hồ Chí Minh",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 113,
         "note": "tr. 113–114, Hình 3, 4"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__tphcm-ngay-nay",
@@ -202,13 +202,13 @@
     "relatedIds": ["nam-bo__cong-nghiep", "nam-bo__tphcm-ten-goi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 25. Thành phố Hồ Chí Minh",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 25. Thành phố Hồ Chí Minh",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 114,
         "note": "tr. 114–115, Hình 5, 7, 8"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__dia-dao",
@@ -233,7 +233,7 @@
         "lesson": 26,
         "figure": 1,
         "page": 117,
-        "caption": "Lược đồ thể hiện vị trí địa lí của Địa đạo Củ Chi"
+        "caption": "Lược đồ thể hiện vị trí địa lý của Địa đạo Củ Chi"
       },
       {
         "lesson": 26,
@@ -251,7 +251,7 @@
     "relatedIds": ["nam-bo__chuyen-dia-dao"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 26. Địa đạo Củ Chi",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 26. Địa đạo Củ Chi",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 117,
         "note": "tr. 117–118, Hình 1, 2, 3"
@@ -262,7 +262,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__chuyen-dia-dao",
@@ -281,12 +281,12 @@
     "relatedIds": ["nam-bo__dia-dao"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 26. Địa đạo Củ Chi",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 26. Địa đạo Củ Chi",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 118,
         "note": "tr. 118–119"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   }
 ]

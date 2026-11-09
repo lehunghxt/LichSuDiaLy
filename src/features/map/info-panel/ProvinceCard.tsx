@@ -1,4 +1,4 @@
-import { MapPin, X } from 'lucide-react'
+import { MapPin } from 'lucide-react'
 import { useMemo } from 'react'
 import { WebImageFigure } from '../../../components/ui/WebImageFigure'
 import { formedFrom, formerUnits, provinceName, provinceTitle } from '../../../lib/provinces'
@@ -16,18 +16,16 @@ export interface ProvinceCardProps {
   regionName: string
   images: WebImage[]
   provinceId: string
-  onClear(): void
   onOpen(item: ContentItem): void
-  /** Chuyển sang xem thông tin vùng (tab Vùng của panel) */
-  onShowRegion?(): void
 }
 
 // Danh sách tỉnh mới và các tỉnh cũ hợp nhất, theo Nghị quyết 202/2025/QH15 (báo Nhân Dân đăng toàn văn danh sách)
 const MERGER_SOURCE =
   'https://nhandan.vn/quoc-hoi-thong-qua-nghi-quyet-ve-sap-xep-don-vi-hanh-chinh-cap-tinh-ca-nuoc-con-34-tinh-thanh-post886206.html'
 
-/** Tỉnh đang chọn trên bản đồ: tên, vùng, các mục trong bài học gắn với tỉnh */
-export function ProvinceCard({ content, regionName, provinceId, images, onClear, onOpen, onShowRegion }: ProvinceCardProps) {
+/** Tỉnh đang chọn trên bản đồ: tên, vùng, các mục trong bài học gắn với tỉnh (đặt trước), rồi ảnh và phần ngoài SGK.
+ *  Bỏ chọn tỉnh và chuyển sang thông tin vùng nằm ở hàng nút phía trên (MapInfoPanel), thẻ không lặp lại */
+export function ProvinceCard({ content, regionName, provinceId, images, onOpen }: ProvinceCardProps) {
   const name = provinceName(provinceId) ?? provinceId
   const items = content?.items.filter((i) => i.provinceId === provinceId) ?? []
   const facts = provinceFacts(provinceId)
@@ -46,27 +44,8 @@ export function ProvinceCard({ content, regionName, provinceId, images, onClear,
         </span>
         <div className="min-w-0 flex-1">
           <h3 className="text-xl font-bold leading-tight">{title}</h3>
-          <p className="text-sm text-muted">
-            Thuộc vùng {regionName}
-            {onShowRegion && (
-              <>
-                {' · '}
-                <button type="button" onClick={onShowRegion} className="font-semibold text-primary underline-offset-2 hover:underline">
-                  Xem thông tin vùng
-                </button>
-              </>
-            )}
-          </p>
+          <p className="text-sm text-muted">Thuộc vùng {regionName}</p>
         </div>
-        <button
-          type="button"
-          onClick={onClear}
-          aria-label="Bỏ chọn tỉnh"
-          title="Bỏ chọn tỉnh"
-          className="flex size-9 shrink-0 items-center justify-center rounded-full text-muted hover:bg-amber-100 hover:text-ink"
-        >
-          <X aria-hidden className="size-5" />
-        </button>
       </div>
       <div data-testid="province-history" className="rounded-xl bg-white/70 p-3 text-sm">
         {former.length > 0 ? (
@@ -94,23 +73,8 @@ export function ProvinceCard({ content, regionName, provinceId, images, onClear,
           Theo Nghị quyết 202/2025/QH15 của Quốc hội
         </a>
       </div>
-      {photos.length > 0 && (
-        // Trong bottom sheet: dải ảnh vuốt ngang (thấy 2 ảnh, ló ảnh thứ 3) thay cho lưới nhiều hàng
-        <ul
-          aria-label={`Hình ảnh tỉnh ${name}`}
-          className="grid grid-cols-2 gap-3 in-data-sheet:-mx-4 in-data-sheet:flex in-data-sheet:snap-x in-data-sheet:snap-mandatory in-data-sheet:overflow-x-auto in-data-sheet:scroll-px-4 in-data-sheet:px-4 in-data-sheet:pb-1"
-        >
-          {photos.map((img) => (
-            <li key={img.id} className="in-data-sheet:w-[42%] in-data-sheet:shrink-0 in-data-sheet:snap-start">
-              <WebImageFigure image={img} showCaption clampCaption sizes="(min-width: 1024px) 15vw, 45vw" />
-            </li>
-          ))}
-        </ul>
-      )}
-      <ProvinceCrops provinceId={provinceId} />
-      <ProvinceFestivalVideos provinceId={provinceId} />
       {!content ? null : items.length === 0 && mentions.length === 0 && facts.length === 0 ? (
-        <p className="text-sm text-muted">Bài học chưa có địa danh nào của tỉnh này. Em xem các phần bên dưới nhé!</p>
+        <p className="text-sm text-muted">Bài học chưa có địa danh nào của tỉnh này. Em xem ảnh và phần tìm hiểu thêm bên dưới nhé!</p>
       ) : items.length === 0 ? null : (
         <>
           <p className="text-sm font-semibold">
@@ -134,6 +98,45 @@ export function ProvinceCard({ content, regionName, provinceId, images, onClear,
             })}
           </ul>
         </>
+      )}
+      {mentions.length > 0 && (
+        <>
+          <p className="text-sm font-semibold">Bài học còn nhắc tới tỉnh {name}:</p>
+          <ul aria-label={`Bài học nhắc tới tỉnh ${name}`} className="flex flex-col gap-2">
+            {mentions.map(({ item, sentences }) => {
+              const Icon = SECTION_ICONS[item.section]
+              return (
+                <li key={item.id} className="rounded-xl border border-amber-200 bg-white p-3 text-sm shadow-sm">
+                  {sentences.map((t) => (
+                    <p key={t}>{t}</p>
+                  ))}
+                  <button
+                    type="button"
+                    onClick={() => onOpen(item)}
+                    aria-label={`Xem mục ${item.title}`}
+                    className="mt-1.5 inline-flex min-h-9 items-center gap-1.5 font-semibold text-primary hover:underline"
+                  >
+                    <Icon aria-hidden className={`size-4 ${SECTION_TILE[item.section].icon}`} />
+                    {item.title}
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+        </>
+      )}
+      {photos.length > 0 && (
+        // Trong bottom sheet: dải ảnh vuốt ngang (thấy 2 ảnh, ló ảnh thứ 3) thay cho lưới nhiều hàng
+        <ul
+          aria-label={`Hình ảnh tỉnh ${name}`}
+          className="grid grid-cols-2 gap-3 in-data-sheet:-mx-4 in-data-sheet:flex in-data-sheet:snap-x in-data-sheet:snap-mandatory in-data-sheet:overflow-x-auto in-data-sheet:scroll-px-4 in-data-sheet:px-4 in-data-sheet:pb-1"
+        >
+          {photos.map((img) => (
+            <li key={img.id} className="in-data-sheet:w-[42%] in-data-sheet:shrink-0 in-data-sheet:snap-start">
+              <WebImageFigure image={img} showCaption clampCaption credit="compact" sizes="(min-width: 1024px) 15vw, 45vw" />
+            </li>
+          ))}
+        </ul>
       )}
       {facts.length > 0 && (
         <section
@@ -165,32 +168,8 @@ export function ProvinceCard({ content, regionName, provinceId, images, onClear,
           </ul>
         </section>
       )}
-      {mentions.length > 0 && (
-        <>
-          <p className="text-sm font-semibold">Bài học còn nhắc tới tỉnh {name}:</p>
-          <ul aria-label={`Bài học nhắc tới tỉnh ${name}`} className="flex flex-col gap-2">
-            {mentions.map(({ item, sentences }) => {
-              const Icon = SECTION_ICONS[item.section]
-              return (
-                <li key={item.id} className="rounded-xl border border-amber-200 bg-white p-3 text-sm shadow-sm">
-                  {sentences.map((t) => (
-                    <p key={t}>{t}</p>
-                  ))}
-                  <button
-                    type="button"
-                    onClick={() => onOpen(item)}
-                    aria-label={`Xem mục ${item.title}`}
-                    className="mt-1.5 inline-flex min-h-9 items-center gap-1.5 font-semibold text-primary hover:underline"
-                  >
-                    <Icon aria-hidden className={`size-4 ${SECTION_TILE[item.section].icon}`} />
-                    {item.title}
-                  </button>
-                </li>
-              )
-            })}
-          </ul>
-        </>
-      )}
+      <ProvinceCrops provinceId={provinceId} />
+      <ProvinceFestivalVideos provinceId={provinceId} />
     </section>
   )
 }

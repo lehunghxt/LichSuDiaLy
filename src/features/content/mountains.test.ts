@@ -41,12 +41,11 @@ test('every mountain has a sourced position on the map and a photo, except where
   }
 })
 
-test('mountains outside the SGK stay draft and cite Wikipedia', () => {
+test('mountains outside the SGK cite Wikipedia', () => {
   for (const regionId of REGIONS) {
     for (const id of topicOf(regionId)!.itemIds) {
       const item = items.get(id)!
       if (item.sources.some((s) => s.url === SGK_URL)) continue
-      expect(item.status, id).toBe('draft')
       expect(item.sources.some((s) => s.url.startsWith('https://vi.wikipedia.org/')), id).toBe(true)
     }
   }

@@ -1,7 +1,7 @@
 [
   {
     "id": "bac-trung-bo-va-nam-trung-bo__vi-tri-dia-li",
-    "title": "Vị trí địa lí",
+    "title": "Vị trí địa lý",
     "summary": "Vùng Bắc Trung Bộ và Nam Trung Bộ nằm ở giữa lãnh thổ nước ta, gồm Bắc Trung Bộ và Nam Trung Bộ. Vùng là cầu nối giữa phía bắc và phía nam đất nước.",
     "highlights": [
       "Vùng có vùng biển rộng, bờ biển kéo dài, nhiều đảo và quần đảo.",
@@ -13,13 +13,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__dia-hinh", "bac-trung-bo-va-nam-trung-bo__bien-dao"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 66,
         "note": "tr. 66"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__dia-hinh",
@@ -43,13 +43,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__truong-son", "bac-trung-bo-va-nam-trung-bo__dat"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 66,
         "note": "tr. 66–67, Hình 2"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__dat",
@@ -62,13 +62,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__dia-hinh", "bac-trung-bo-va-nam-trung-bo__cay-trong"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 68,
         "note": "tr. 68"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__truong-son",
@@ -88,13 +88,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__dia-hinh"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 65,
         "note": "tr. 65, Hình 1"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__khi-hau",
@@ -112,13 +112,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__thien-tai"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 68,
         "note": "tr. 68"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__thien-tai",
@@ -159,13 +159,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__khi-hau", "bac-trung-bo-va-nam-trung-bo__rung"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 70,
         "note": "tr. 70, Hình 7, 8, 9, 10"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__song-ngoi",
@@ -178,13 +178,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__thuy-dien"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 68,
         "note": "tr. 68"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__bien-dao",
@@ -208,13 +208,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__vi-tri-dia-li", "bac-trung-bo-va-nam-trung-bo__hai-san"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 66,
         "note": "tr. 66–67, Hình 3"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__bai-bien",
@@ -234,13 +234,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__du-lich"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 74,
         "note": "tr. 74, Hình 6"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__rung",
@@ -277,13 +277,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__thien-tai", "bac-trung-bo-va-nam-trung-bo__phong-nha"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 69,
         "note": "tr. 69, Hình 4, 5, 6"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__phong-nha",
@@ -304,7 +304,7 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__di-san-the-gioi", "bac-trung-bo-va-nam-trung-bo__rung"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 78,
         "note": "tr. 78–79, Hình 4"
@@ -315,7 +315,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 17.5333,
       "lng": 106.15,
@@ -333,7 +333,7 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__khi-hau", "bac-trung-bo-va-nam-trung-bo__dia-hinh"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 15. Thiên nhiên vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 68,
         "note": "tr. 68"
@@ -348,7 +348,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 16.1667,
       "lng": 107.8333,
@@ -366,7 +366,7 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__co-do-hue"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 19. Cố đô Huế",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 19. Cố đô Huế",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 88,
         "note": "tr. 88–89, Hình 1, 2, 3, 4, 5"
@@ -376,7 +376,7 @@
         "url": "https://vi.wikipedia.org/wiki/N%C3%BAi_Ng%E1%BB%B1_B%C3%ACnh"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__khoi-nui-ngoc-linh",
@@ -398,7 +398,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 15.0667,
       "lng": 107.9833,
@@ -425,7 +425,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 16,
       "lng": 108.26,
@@ -452,7 +452,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 12.405,
       "lng": 108.4258,
@@ -479,7 +479,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 12.0472,
       "lng": 108.441,

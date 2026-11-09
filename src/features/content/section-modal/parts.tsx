@@ -1,6 +1,6 @@
 // Các mảnh của khung xem bài, dùng chung cho mọi thiết bị. Không chứa lớp responsive (sm:/md:/lg:):
 // kiểu hiển thị khác nhau chọn qua prop, file bố cục của từng thiết bị quyết định dùng kiểu nào.
-import { X } from 'lucide-react'
+import { ArrowRight, X } from 'lucide-react'
 import type { Ref, RefObject } from 'react'
 import { EmptyState } from '../../../components/ui/states'
 import {
@@ -136,6 +136,36 @@ export function TopicContent({ view }: { view: SectionModalView }) {
           </div>
         ))
       )}
+      <NextTopic view={view} />
+    </div>
+  )
+}
+
+/** Nút đi tiếp ở cuối nội dung: mục sau trong phần, hết phần thì sang phần sau. Đang ở mục cuối cùng thì không có */
+function NextTopic({ view }: { view: SectionModalView }) {
+  const sections = view.outline.sections
+  const at = view.topics.findIndex((t) => t.id === view.topic?.id)
+  const nextTopic = at >= 0 ? view.topics[at + 1] : undefined
+  const nextSection = sections[sections.findIndex((s) => s.id === view.section) + 1]
+  const next = nextTopic
+    ? { kind: 'Mục tiếp theo', title: nextTopic.title, go: () => view.onSelect(view.section, nextTopic.id) }
+    : nextSection
+      ? { kind: 'Phần tiếp theo', title: SECTION_LABELS[nextSection.id], go: () => view.onSelect(nextSection.id, null) }
+      : null
+  if (!next) return null
+  return (
+    <div className="flex justify-end border-t border-line pt-6">
+      <button
+        type="button"
+        onClick={next.go}
+        className="inline-flex min-h-12 max-w-full items-center gap-3 rounded-full bg-primary px-6 py-2 text-left font-bold text-white shadow-md transition hover:bg-primary-dark"
+      >
+        <span className="min-w-0">
+          <span className="block text-xs font-semibold uppercase tracking-wide text-white/80">{next.kind}</span>
+          <span className="block leading-snug">{next.title}</span>
+        </span>
+        <ArrowRight aria-hidden className="size-5 shrink-0" />
+      </button>
     </div>
   )
 }

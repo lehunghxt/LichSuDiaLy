@@ -4,12 +4,12 @@ import type { HomeView } from './view'
 
 /** Máy tính bảng: lời chào và bản đồ xếp dọc; các bước một hàng; thẻ vùng 2 cột */
 export function TabletHome({ view }: { view: HomeView }) {
-  const { content, regionCount, active, outline } = view
+  const { regions, summary } = view
   return (
     <div className="flex flex-col gap-10 pb-6">
       <Hero
-        content={content}
-        regionCount={regionCount}
+        summary={summary}
+        regionCount={regions.length}
         layout="stacked"
         className="px-10 py-12"
         titleClassName="text-4xl"
@@ -17,12 +17,12 @@ export function TabletHome({ view }: { view: HomeView }) {
       />
       <Journey layout="row" />
       <section aria-labelledby="regions-title">
-        <SectionTitle id="regions-title" icon={MapIcon} title="Bốn vùng đất của Tổ quốc" subtitle="Theo SGK Lịch sử và Địa lí 4" />
+        <SectionTitle id="regions-title" icon={MapIcon} title="Bốn vùng đất của Tổ quốc" subtitle="Theo SGK Lịch sử và Địa lý 4" />
         <RegionCards columns={2} />
       </section>
-      <FunFacts content={content} />
-      <ProgressCard content={content} regionCount={regionCount} />
-      {active && outline && <ExploreSections region={active} outline={outline} content={content} columns={4} />}
+      <FunFacts summary={summary} regions={regions} />
+      <ProgressCard summary={summary} regionCount={regions.length} />
+      <ExploreSections regions={regions} summary={summary} columns={4} />
     </div>
   )
 }

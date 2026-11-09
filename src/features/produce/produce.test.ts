@@ -41,13 +41,13 @@ describe('the real data', () => {
   })
 })
 
-test('the production build hides draft crops unless drafts are shown', () => {
+test('the production build hides draft crops; development shows them', () => {
+  // Dữ liệu thật đã duyệt hết: đặt lại một bản sao về nháp
+  const drafts = JSON.parse(JSON.stringify(crops).replaceAll('"verified"', '"draft"')) as unknown
   vi.stubEnv('PROD', true)
-  vi.stubEnv('VITE_SHOW_DRAFTS', 'false')
-  const produce = parseProduce(crops, images)
-  expect(produce.forProvince('lai-chau')['cong-nghiep']).toEqual([])
-  vi.stubEnv('VITE_SHOW_DRAFTS', 'true')
-  expect(parseProduce(crops, images).forProvince('lai-chau')['cong-nghiep']).toHaveLength(1)
+  expect(parseProduce(drafts, images).forProvince('lai-chau')['cong-nghiep']).toEqual([])
+  vi.stubEnv('PROD', false)
+  expect(parseProduce(drafts, images).forProvince('lai-chau')['cong-nghiep']).toHaveLength(1)
 })
 
 describe('invalid data is rejected with the path of the problem', () => {

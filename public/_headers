@@ -1,0 +1,12 @@
+# Cache header cho Netlify / Cloudflare Pages (Vercel đọc vercel.json)
+# Tên file trong /assets có hash: đổi nội dung là đổi tên, nên giữ được mãi
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Dữ liệu bản đồ: giữ một ngày, sau đó vẫn dùng bản cũ trong lúc tải bản mới (tối đa một tuần)
+/maps/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# Service worker luôn hỏi lại máy chủ để nhận phiên bản mới
+/sw.js
+  Cache-Control: no-cache

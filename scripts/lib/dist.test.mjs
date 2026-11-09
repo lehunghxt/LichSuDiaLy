@@ -18,6 +18,8 @@ beforeEach(() => {
   dir = mkdtempSync(path.join(tmpdir(), 'dist-'))
   write('index.html', html('index-abc.js', ['vendor-1.js']))
   write('_redirects', '/* /index.html 200\n')
+  write('_headers', '/assets/*\n  Cache-Control: immutable\n')
+  write('sw.js', 'const BASE = "/"\nconst PRECACHE = ["/index.html","/assets/index-abc.js"]\n')
   write('assets/index-abc.js', 'console.log("app")')
   write('assets/vendor-1.js', 'export const x = 1')
 })
@@ -63,4 +65,12 @@ test('the home page must not load the map info panel (it only belongs to the map
   expect(checkDist(dir)).toEqual([])
   write('assets/inner-2.js', 'const t="Về bản đồ Việt Nam"')
   expect(checkDist(dir)).toContain('Trang chủ tải kèm khung thông tin bản đồ: inner-2.js')
+})
+
+test('the service worker must exist and only precache files that are in the build', () => {
+  write('sw.js', 'const BASE = "/"\nconst PRECACHE = ["/index.html","/assets/gone-123.js"]\n')
+  expect(checkDist(dir)).toEqual(['sw.js lưu sẵn file không có: /assets/gone-123.js'])
+  rmSync(path.join(dir, 'sw.js'))
+  rmSync(path.join(dir, '_headers'))
+  expect(checkDist(dir)).toEqual(['thiếu dist/_headers', 'thiếu dist/sw.js'])
 })

@@ -34,7 +34,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ly_Son3.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "quang-ngai__kontum-wooden-catholic-church",
@@ -71,7 +71,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kontum_wooden_catholic_church.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "quang-ngai__bahnarrong",
@@ -108,6 +108,6 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:BahnarRong.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

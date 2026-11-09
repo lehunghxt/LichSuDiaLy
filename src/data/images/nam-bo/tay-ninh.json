@@ -34,7 +34,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:T%C3%A2y_Ninh,_2023.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "tay-ninh__cap-treo-nui-ba-den",
@@ -70,7 +70,7 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:C%C3%A1p_treo_n%C3%BAi_B%C3%A0_%C4%90en.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "tay-ninh__quan-the-chua-thuong-o-nui-ba-den",
@@ -98,7 +98,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qu%E1%BA%A7n_th%E1%BB%83_ch%C3%B9a_Th%C6%B0%E1%BB%A3ng_%E1%BB%9F_n%C3%BAi_B%C3%A0_%C4%90en.png"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "tay-ninh__binh-thanh-tp-tan-an-long-an-vietnam-panoramio",
@@ -135,6 +135,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%C3%ACnh_Thanh,_tp._T%C3%A2n_An,_Long_An,_Vietnam_-_panoramio.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

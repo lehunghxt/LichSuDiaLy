@@ -11,21 +11,21 @@ test('groups items by source title across regions, sorted by lesson number, page
       items: [
         item('a__x', 'X', [
           {
-            title: 'SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Mười',
+            title: 'SGK Lịch sử và Địa lý 4 (KNTT), Bài 10. Mười',
             url: SGK,
             page: 47,
           },
         ]),
         item('a__y', 'Y', [
           {
-            title: 'SGK Lịch sử và Địa lí 4 (KNTT), Bài 2. Hai',
+            title: 'SGK Lịch sử và Địa lý 4 (KNTT), Bài 2. Hai',
             url: SGK,
             page: 9,
           },
         ]),
         item('a__z', 'Z', [
           {
-            title: 'SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Mười',
+            title: 'SGK Lịch sử và Địa lý 4 (KNTT), Bài 10. Mười',
             url: SGK,
             page: 46,
           },
@@ -38,7 +38,7 @@ test('groups items by source title across regions, sorted by lesson number, page
       items: [
         item('b__w', 'W', [
           {
-            title: 'SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Mười',
+            title: 'SGK Lịch sử và Địa lý 4 (KNTT), Bài 10. Mười',
             url: SGK,
             page: 47,
           },
@@ -46,7 +46,7 @@ test('groups items by source title across regions, sorted by lesson number, page
       ],
     },
   ])
-  expect(rows.map((r) => r.title)).toEqual(['SGK Lịch sử và Địa lí 4 (KNTT), Bài 2. Hai', 'SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Mười'])
+  expect(rows.map((r) => r.title)).toEqual(['SGK Lịch sử và Địa lý 4 (KNTT), Bài 2. Hai', 'SGK Lịch sử và Địa lý 4 (KNTT), Bài 10. Mười'])
   const ten = rows[1]!
   expect(ten.pages).toEqual([46, 47])
   expect(ten.regionNames).toEqual(['Vùng A', 'Vùng B'])
@@ -64,7 +64,7 @@ test('a source without lesson number sorts after SGK lessons; an item citing it 
           { title: 'Tài liệu khác', url: 'https://example.org' },
           { title: 'Tài liệu khác', url: 'https://example.org' },
           {
-            title: 'SGK Lịch sử và Địa lí 4 (KNTT), Bài 3. Ba',
+            title: 'SGK Lịch sử và Địa lý 4 (KNTT), Bài 3. Ba',
             url: SGK,
             page: 12,
           },
@@ -72,7 +72,7 @@ test('a source without lesson number sorts after SGK lessons; an item citing it 
       ],
     },
   ])
-  expect(rows.map((r) => r.title)).toEqual(['SGK Lịch sử và Địa lí 4 (KNTT), Bài 3. Ba', 'Tài liệu khác'])
+  expect(rows.map((r) => r.title)).toEqual(['SGK Lịch sử và Địa lý 4 (KNTT), Bài 3. Ba', 'Tài liệu khác'])
   expect(rows[1]!.items).toHaveLength(1)
   expect(rows[1]!.pages).toEqual([])
 })

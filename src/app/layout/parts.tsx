@@ -24,7 +24,7 @@ export function SiteLogo({
       </span>
       <span className={`font-bold leading-tight text-[#1e293b] ${compact ? 'text-base' : 'whitespace-nowrap text-lg'} ${titleClassName}`}>
         Em khám phá
-        <span className="block">Lịch sử và Địa lí Việt Nam</span>
+        <span className="block">Lịch sử và Địa lý Việt Nam</span>
       </span>
     </Link>
   )
@@ -84,7 +84,7 @@ export function SourceLinks({ onNavigate }: { onNavigate?(): void }) {
 export function SiteFooter() {
   return (
     <footer className="border-t border-line bg-surface px-4 py-5 text-center text-sm text-muted">
-      Nội dung học tập bám theo SGK Lịch sử và Địa lí 4. Tiến độ chỉ lưu trên trình duyệt này. <SourceLinks />
+      Nội dung học tập bám theo SGK Lịch sử và Địa lý 4. Tiến độ chỉ lưu trên trình duyệt này. <SourceLinks />
     </footer>
   )
 }

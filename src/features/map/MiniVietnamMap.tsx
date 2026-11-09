@@ -5,6 +5,12 @@ import type { RegionMeta } from '../../types/content'
 import { geoLoader, type AreaCollection, type RegionFeatureProps } from './geo'
 import { projectAreas } from './svgMap'
 
+// Nhãn hai quần đảo: Hoàng Sa ghi ngay dưới, Trường Sa ghi phía trên quần đảo (toạ độ gần đúng, chỉ để hiển thị)
+const ARCHIPELAGOS = [
+  { name: 'QĐ. Hoàng Sa', lng: 112.1, lat: 15.1 },
+  { name: 'QĐ. Trường Sa', lng: 114.5, lat: 12.2 },
+]
+
 export function MiniVietnamMap({ regions, className = '' }: { regions: RegionMeta[]; className?: string }) {
   const navigate = useNavigate()
   const [data, setData] = useState<AreaCollection<RegionFeatureProps> | null>(null)
@@ -37,6 +43,8 @@ export function MiniVietnamMap({ regions, className = '' }: { regions: RegionMet
             stroke="#fff"
             strokeWidth={hover === regionId ? 0.9 : 0.35}
             strokeLinejoin="round"
+            // Vẽ viền dưới phần tô: các đảo nhỏ của Hoàng Sa, Trường Sa giữ được màu vùng thay vì chỉ còn viền trắng
+            paintOrder="stroke"
             className="cursor-pointer transition-[stroke-width,filter] duration-200 hover:brightness-105"
             onMouseEnter={() => setHover(regionId)}
             onMouseLeave={() => setHover(null)}
@@ -44,6 +52,14 @@ export function MiniVietnamMap({ regions, className = '' }: { regions: RegionMet
           >
             <title>{m?.name}</title>
           </path>
+        )
+      })}
+      {ARCHIPELAGOS.map(({ name, lng, lat }) => {
+        const [x, y] = shape.project(lng, lat)
+        return (
+          <text key={name} x={x} y={y} textAnchor="middle" className="pointer-events-none fill-[#334155] text-[2.6px] font-semibold">
+            {name}
+          </text>
         )
       })}
     </svg>

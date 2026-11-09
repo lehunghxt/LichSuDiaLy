@@ -14,3 +14,10 @@ if (root) {
     </StrictMode>,
   )
 }
+
+// Service worker (dist/sw.js, sinh lúc build): lần sau mở nhanh hơn, mất mạng vẫn dùng được. Chỉ bản build
+if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`).catch(() => undefined)
+  })
+}

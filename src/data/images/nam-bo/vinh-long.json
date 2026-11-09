@@ -33,7 +33,7 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:CoconutPeel_@BinhDai_BenTre_Vietnam.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "vinh-long__20190924-coconut-opening-1",
@@ -70,7 +70,7 @@
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190924_coconut_opening-1.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "vinh-long__ao-ba-om",
@@ -107,7 +107,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ao_B%C3%A0_Om.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "vinh-long__chua-ang",
@@ -144,6 +144,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ch%C3%B9a_%C3%82ng.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

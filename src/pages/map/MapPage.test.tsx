@@ -87,11 +87,11 @@ function renderAt(path: string) {
   return router
 }
 
-const regionList = () => screen.getByRole('list', { name: 'Các vùng địa lí' })
+const regionList = () => screen.getByRole('list', { name: 'Các vùng địa lý' })
 
 test('RegionList shows all regions; coming_soon ones labelled "Sắp ra mắt"', async () => {
   renderAt('/ban-do')
-  await screen.findByRole('list', { name: 'Các vùng địa lí' })
+  await screen.findByRole('list', { name: 'Các vùng địa lý' })
   const buttons = within(regionList()).getAllByRole('button')
   expect(buttons).toHaveLength(4)
   expect(within(regionList()).getByRole('button', { name: /Nam Bộ/ })).toHaveTextContent('Sắp ra mắt')
@@ -105,7 +105,7 @@ test('without selection, panel invites the student to choose a region', async ()
 
 test('clicking region button navigates and panel shows region name, intro and its outline', async () => {
   const router = renderAt('/ban-do')
-  await screen.findByRole('list', { name: 'Các vùng địa lí' })
+  await screen.findByRole('list', { name: 'Các vùng địa lý' })
   await userEvent.click(within(regionList()).getByRole('button', { name: /Trung du và miền núi phía Bắc/ }))
   expect(router.state.location.pathname).toBe('/ban-do/trung-du-mien-nui-phia-bac')
   const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
@@ -199,8 +199,11 @@ test('selected province is shown prominently at the top of the panel', async () 
   const card = within(panel).getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })
   expect(within(card).getByRole('heading', { name: 'Tỉnh Phú Thọ' })).toBeInTheDocument()
   expect(card).toHaveTextContent('Thuộc vùng Trung du và miền núi phía Bắc')
-  await userEvent.click(within(card).getByRole('button', { name: 'Bỏ chọn tỉnh' }))
+  // một nút lùi duy nhất ở hàng tab: bỏ chọn tỉnh, về vùng (thẻ tỉnh không có nút đóng riêng)
+  expect(within(card).queryByRole('button', { name: /Bỏ chọn tỉnh/ })).toBeNull()
+  await userEvent.click(within(panel).getByRole('button', { name: 'Bỏ chọn tỉnh, về vùng Trung du và miền núi phía Bắc' }))
   expect(screen.queryByRole('region', { name: /Tỉnh đang xem/ })).not.toBeInTheDocument()
+  expect(within(panel).getByRole('navigation', { name: 'Dàn ý vùng' })).toBeInTheDocument()
 })
 
 test('with a province selected, province and region info are separate tabs; the region info is not repeated under the province', async () => {
@@ -233,13 +236,27 @@ test('with a province selected, province and region info are separate tabs; the 
   expect(within(panel).queryByRole('navigation', { name: 'Dàn ý vùng' })).toBeNull()
 })
 
-test('"Thuộc vùng …" in the province card switches to the region tab', async () => {
-  renderAt('/ban-do/trung-du-mien-nui-phia-bac')
+test('the selected province is kept in the URL: the link can be shared and Back returns to the previous province', async () => {
+  const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
   const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
   await userEvent.click(screen.getByRole('button', { name: 'polygon-phu-tho' }))
-  await userEvent.click(within(panel).getByRole('button', { name: /Xem thông tin vùng/ }))
-  expect(within(panel).getByRole('tab', { name: 'Cả vùng' })).toHaveAttribute('aria-selected', 'true')
-  expect(within(panel).getByRole('navigation', { name: 'Dàn ý vùng' })).toBeInTheDocument()
+  expect(router.state.location.search).toBe('?tinh=phu-tho')
+  await userEvent.click(screen.getByRole('button', { name: 'polygon-lai-chau' }))
+  expect(within(panel).getByRole('region', { name: 'Tỉnh đang xem: Lai Châu' })).toBeInTheDocument()
+  await act(() => router.navigate(-1))
+  expect(within(panel).getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })).toBeInTheDocument()
+})
+
+test('a province link opens that province', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac?tinh=phu-tho')
+  const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
+  expect(within(panel).getByRole('region', { name: 'Tỉnh đang xem: Phú Thọ' })).toBeInTheDocument()
+})
+
+test('a province of another region in the link is ignored', async () => {
+  renderAt('/ban-do/trung-du-mien-nui-phia-bac?tinh=can-tho')
+  const panel = await screen.findByRole('region', { name: 'Trung du và miền núi phía Bắc' })
+  expect(within(panel).queryByRole('region', { name: /Tỉnh đang xem/ })).toBeNull()
 })
 
 test('region tab shows the SGK crops of the region; province tab shows the province crops, outside the SGK, with sources', async () => {
@@ -283,7 +300,7 @@ test('unknown region id shows not found message with link back', async () => {
 
 test('without a region, the side panel shows one card per region (colour, name, number of provinces); a card opens its region', async () => {
   const router = renderAt('/ban-do')
-  expect(await screen.findByRole('heading', { name: 'Các vùng địa lí Việt Nam' })).toBeInTheDocument()
+  expect(await screen.findByRole('heading', { name: 'Các vùng địa lý Việt Nam' })).toBeInTheDocument()
   const cards = screen.getByRole('list', { name: 'Chọn vùng để khám phá' })
   expect(within(cards).getAllByRole('button')).toHaveLength(4)
   const tdmn = within(cards).getByRole('button', { name: /Trung du và miền núi phía Bắc/ })
@@ -436,7 +453,7 @@ test('compact nav is a single row of four equal tabs with short labels', async (
 
 test('region chips on the map are always shown (nothing to expand or collapse) and switch region', async () => {
   const router = renderAt('/ban-do/trung-du-mien-nui-phia-bac')
-  await screen.findByRole('list', { name: 'Các vùng địa lí' })
+  await screen.findByRole('list', { name: 'Các vùng địa lý' })
   expect(screen.queryByRole('button', { name: /Thu gọn|Mở bảng/ })).not.toBeInTheDocument()
   expect(within(regionList()).getByRole('button', { name: /Trung du/ })).toHaveAttribute('aria-pressed', 'true')
   // một hàng chip tròn riêng lẻ, vuốt ngang trên điện thoại; chip đang chọn tô màu của vùng
@@ -452,7 +469,7 @@ test('region chips on the map are always shown (nothing to expand or collapse) a
 
 test('region cards are only in the panel before a region is chosen', async () => {
   renderAt('/ban-do/trung-du-mien-nui-phia-bac')
-  await screen.findByRole('list', { name: 'Các vùng địa lí' })
+  await screen.findByRole('list', { name: 'Các vùng địa lý' })
   expect(screen.queryByRole('list', { name: 'Chọn vùng để khám phá' })).not.toBeInTheDocument()
 })
 
@@ -607,7 +624,7 @@ describe('phone layout (below 1024px)', () => {
 
   test('the map fills the screen, the main menu is a tab bar at the bottom, and there is no info panel until a region is chosen', async () => {
     renderAt('/ban-do')
-    await screen.findByRole('list', { name: 'Các vùng địa lí' })
+    await screen.findByRole('list', { name: 'Các vùng địa lý' })
     expect(screen.queryByRole('complementary', { name: 'Thông tin bản đồ' })).not.toBeInTheDocument()
     expect(document.querySelector('[data-map-frame]')!.className).toContain('h-dvh')
     const nav = screen.getByRole('navigation', { name: 'Điều hướng chính' })
@@ -618,7 +635,7 @@ describe('phone layout (below 1024px)', () => {
 
   test('choosing a region opens its info in a bottom sheet; "Về bản đồ Việt Nam" closes it', async () => {
     renderAt('/ban-do')
-    await screen.findByRole('list', { name: 'Các vùng địa lí' })
+    await screen.findByRole('list', { name: 'Các vùng địa lý' })
     await userEvent.click(within(regionList()).getByRole('button', { name: /Trung du/ }))
     const sheet = await screen.findByRole('complementary', { name: 'Thông tin bản đồ' })
     expect(sheet).toHaveAttribute('data-snap', 'half')
@@ -649,7 +666,7 @@ describe('tablet layout (768–1023px)', () => {
 
   test('full-screen map with the tab bar; no info panel until a region is chosen', async () => {
     renderAt('/ban-do')
-    await screen.findByRole('list', { name: 'Các vùng địa lí' })
+    await screen.findByRole('list', { name: 'Các vùng địa lý' })
     expect(screen.queryByRole('complementary', { name: 'Thông tin bản đồ' })).not.toBeInTheDocument()
     expect(screen.getByRole('navigation', { name: 'Điều hướng chính' }).className).toContain('bottom-0')
     expect(screen.queryByRole('link', { name: /^Em khám phá/ })).not.toBeInTheDocument()
@@ -666,4 +683,9 @@ describe('tablet layout (768–1023px)', () => {
     expect(router.state.location.pathname).toBe('/ban-do')
     expect(screen.queryByRole('complementary', { name: 'Thông tin bản đồ' })).not.toBeInTheDocument()
   })
+})
+
+test('the map shows the running line "Hoàng Sa, Trường Sa là của Việt Nam!" with or without a region', async () => {
+  renderAt('/ban-do')
+  expect(await screen.findByText('Hoàng Sa, Trường Sa là của Việt Nam!', { selector: 'p' })).toBeInTheDocument()
 })

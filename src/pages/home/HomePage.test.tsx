@@ -14,7 +14,7 @@ const TDMNPB = 'trung-du-mien-nui-phia-bac'
 
 test('hero has title and two calls to action', async () => {
   renderHome()
-  expect(await screen.findByRole('heading', { level: 1, name: /Em khám phá Lịch sử và Địa lí Việt Nam/ })).toBeInTheDocument()
+  expect(await screen.findByRole('heading', { level: 1, name: /Em khám phá Lịch sử và Địa lý Việt Nam/ })).toBeInTheDocument()
   expect(screen.getByRole('link', { name: /Bắt đầu khám phá/ })).toHaveAttribute('href', '/ban-do')
   expect(screen.getByRole('link', { name: /Chơi trắc nghiệm/ })).toHaveAttribute('href', '/on-tap')
 })
@@ -99,4 +99,29 @@ test('progress card offers to continue the most recent item', async () => {
   renderHome()
   const card = await screen.findByRole('region', { name: 'Tiến độ của em' })
   expect(await within(card).findByRole('link', { name: /Khu di tích Đền Hùng/ })).toHaveAttribute('href', `/dia-danh/${TDMNPB}__den-hung`)
+})
+
+test('hero numbers count all four regions, the same scope as "4 vùng đất"', async () => {
+  renderHome()
+  const hero = (await screen.findByRole('heading', { level: 1 })).closest('section')!
+  // 14 + 12 + 14 + 14 câu của bốn bài
+  expect(await within(hero).findByText('54')).toBeInTheDocument()
+  expect(within(hero).getByText('câu hỏi trắc nghiệm')).toBeInTheDocument()
+})
+
+test('"Em có biết?" names the region of each fact and moves on to another region', async () => {
+  renderHome()
+  const box = await screen.findByRole('region', { name: 'Em có biết?' })
+  expect(await within(box).findByText('Trung du và miền núi phía Bắc')).toBeInTheDocument()
+  await userEvent.click(within(box).getByRole('button', { name: 'Điều thú vị khác' }))
+  expect(within(box).queryByText('Trung du và miền núi phía Bắc')).toBeNull()
+})
+
+test('"Các phần khám phá" can switch to another region', async () => {
+  renderHome()
+  const group = await screen.findByRole('group', { name: 'Chọn vùng' })
+  expect(within(group).getAllByRole('button')).toHaveLength(4)
+  await userEvent.click(within(group).getByRole('button', { name: /Nam Bộ/ }))
+  const parts = await screen.findByRole('list', { name: 'Các phần khám phá' })
+  await waitFor(() => expect(within(parts).getByRole('link', { name: /Văn hóa/ })).toHaveAttribute('href', '/ban-do/nam-bo?phan=van-hoa'))
 })

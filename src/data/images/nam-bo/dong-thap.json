@@ -34,7 +34,7 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%93ng_c%E1%BB%8F_v%C3%A0_chim_n%C6%B0%E1%BB%9Bc.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-thap__anastomus-oscitans-tram-chim-2",
@@ -70,7 +70,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anastomus_oscitans_Tr%C3%A0m_Chim_2.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-thap__khu-choi-canh-vuon-quoc-gia-tram-chim-tam-nong-dong-thap-pan",
@@ -107,7 +107,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Khu_ch%C3%B2i_canh_vuon_quoc_gia_Tram_Chim,_Tam_Nong,_Dong_thap_-_panoramio.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-thap__vietnam-08-116-cai-be-floating-market-3185891184",
@@ -144,7 +144,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vietnam_08_-_116_-_Cai_Be_floating_market_(3185891184).jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-thap__vietnam-08-112-cai-be-floating-market-3185044019",
@@ -181,6 +181,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vietnam_08_-_112_-_Cai_Be_floating_market_(3185044019).jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

@@ -54,13 +54,11 @@ test('region without image files loads empty', async () => {
 
 test('drafts are hidden in PROD', async () => {
   vi.stubEnv('PROD', true)
-  vi.stubEnv('VITE_SHOW_DRAFTS', '')
   expect((await lib().loadRegion(R)).map((i) => i.id)).not.toContain('lao-cai__a')
 })
 
-test('drafts shown in PROD with VITE_SHOW_DRAFTS', async () => {
-  vi.stubEnv('PROD', true)
-  vi.stubEnv('VITE_SHOW_DRAFTS', 'true')
+test('drafts shown in development', async () => {
+  vi.stubEnv('PROD', false)
   expect((await lib().loadRegion(R)).map((i) => i.id)).toContain('lao-cai__a')
 })
 

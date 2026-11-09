@@ -34,7 +34,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trang_An_Landscape_Complex,_Ninh_Binh_Province,_Vietnam,_20240202_1447_5310.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ninh-binh__tam-coc-bich-dong-in-ninh-binh-province-2",
@@ -70,7 +70,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tam_C%E1%BB%91c-B%C3%ADch_%C4%90%E1%BB%99ng_in_Ninh_Binh_province_2.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ninh-binh__tomb-of-the-first-emperor-hoa-lu-ninh-binh-vietnam-20240203",
@@ -107,7 +107,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomb_of_the_First_Emperor,_Hoa_L%C6%B0,_Ninh_B%C3%ACnh,_Vietnam,_20240203_1515_5695.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ninh-binh__den-tran-nam-dinh",
@@ -144,6 +144,6 @@
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Den_Tran_Nam_Dinh.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

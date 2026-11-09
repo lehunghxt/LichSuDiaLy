@@ -13,7 +13,7 @@ export function RegionCards({ regions, onSelect }: { regions: RegionMeta[]; onSe
         </span>
         <div>
           <h2 id="region-cards-title" className="text-xl font-bold leading-tight">
-            Các vùng địa lí Việt Nam
+            Các vùng địa lý Việt Nam
           </h2>
           <p className="text-sm text-muted">Em bấm vào một vùng trên bản đồ hoặc chọn bên dưới để bắt đầu khám phá nhé!</p>
         </div>

@@ -20,18 +20,19 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     else setPersisted(safeSet(P.PROGRESS_KEY, JSON.stringify(state)))
   }, [state])
 
-  const value = useMemo<ProgressContextValue>(
+  // Các hàm ghi tiến độ chỉ gọi setState(s => …), không đọc state: tạo một lần, giữ nguyên danh tính.
+  // Nhờ vậy effect của trang nhận chúng làm phụ thuộc (MapPage, QuizPage) không chạy lại sau mỗi lần ghi tiến độ
+  const actions = useMemo<Omit<ProgressContextValue, 'state' | 'persisted'>>(
     () => ({
-      state,
-      persisted,
       markRegionVisited: (id) => setState((s) => P.markRegionVisited(s, id)),
       markItemViewed: (id) => setState((s) => P.markItemViewed(s, id)),
       markItemsViewed: (ids) => setState((s) => P.markItemsViewed(s, ids)),
       recordQuiz: (id, score, total) => setState((s) => P.recordQuiz(s, id, score, total, new Date())),
       reset: () => setState(P.INITIAL_PROGRESS),
     }),
-    [state, persisted],
+    [],
   )
+  const value = useMemo<ProgressContextValue>(() => ({ state, persisted, ...actions }), [state, persisted, actions])
 
   return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>
 }

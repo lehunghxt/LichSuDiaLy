@@ -34,7 +34,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%E1%BB%ADu_Long,_Bien_Hoa,_Dong_Nai,_Vietnam_-_panoramio_(1).jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-nai__buu-long-bien-hoa-dong-nai-vietnam-panoramio",
@@ -71,7 +71,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%E1%BB%ADu_Long,_Bien_Hoa,_Dong_Nai,_Vietnam_-_panoramio.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-nai__binh-phuoc-landscape",
@@ -108,7 +108,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc_landscape.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-nai__dong-nai-river-in-bien-hoa-15286968737",
@@ -145,7 +145,7 @@
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dong_Nai_River_in_Bien_Hoa_(15286968737).jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-nai__chua-chan-mount",
@@ -182,6 +182,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chua_Chan_mount..JPG"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

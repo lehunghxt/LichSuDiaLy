@@ -27,13 +27,14 @@ export function ProvincesLayer({ data, regionId, selectedProvinceId, onSelectPro
   const style = useCallback(
     (f?: GeoJSON.Feature<GeoJSON.Geometry, WithOffshore<ProvinceFeatureProps>>): PathOptions => {
       const selected = f?.properties.provinceId === selectedProvinceId
-      if (f?.properties.offshore) return { stroke: false, fillColor: '#f59e0b', fillOpacity: selected ? 0.55 : 0 }
+      // Tỉnh đang chọn: phủ trắng mờ cho sáng lên trên màu vùng (không pha thêm màu khác ra màu đục), viền đậm
+      if (f?.properties.offshore) return { stroke: false, fillColor: '#ffffff', fillOpacity: selected ? 0.6 : 0 }
       return {
         color: '#4c1d95',
-        weight: selected ? 2.5 : 0.8,
+        weight: selected ? 3 : 0.8,
         dashArray: selected ? undefined : '4 3',
-        fillColor: '#f59e0b',
-        fillOpacity: selected ? 0.55 : 0,
+        fillColor: '#ffffff',
+        fillOpacity: selected ? 0.6 : 0,
       }
     },
     [selectedProvinceId],
@@ -52,8 +53,7 @@ export function ProvincesLayer({ data, regionId, selectedProvinceId, onSelectPro
       return
     }
     if (before.regionId !== regionId || !before.provinceId) return
-    const zoomIn = regionPadding(device, frameHeight, legendBox(map))
-    if (zoomIn && filtered.features.length > 0) map.fitBounds(L.geoJSON(filtered).getBounds(), zoomIn)
+    if (filtered.features.length > 0) map.fitBounds(L.geoJSON(filtered).getBounds(), regionPadding(device, frameHeight, legendBox(map)))
     else fitCountry(map, device)
   }, [selectedProvinceId, regionId, filtered, map, device])
 

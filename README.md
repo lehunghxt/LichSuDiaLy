@@ -1,6 +1,6 @@
-# Em khám phá Lịch sử và Địa lí Việt Nam
+# Em khám phá Lịch sử và Địa lý Việt Nam
 
-Web học tập cho học sinh lớp 4, bám theo SGK Lịch sử và Địa lí 4 (Kết nối tri thức với cuộc sống). Em chọn vùng hoặc tỉnh trên bản đồ Việt Nam, xem nội dung theo dàn ý của sách (thiên nhiên, dân cư và sản xuất, văn hóa, lịch sử), xem ảnh minh họa, tìm hiểu cây trồng tiêu biểu và làm bài ôn tập.
+Web học tập cho học sinh lớp 4, bám theo SGK Lịch sử và Địa lý 4 (Kết nối tri thức với cuộc sống). Em chọn vùng hoặc tỉnh trên bản đồ Việt Nam, xem nội dung theo dàn ý của sách (thiên nhiên, dân cư và sản xuất, văn hóa, lịch sử), xem ảnh minh họa, tìm hiểu cây trồng tiêu biểu và làm bài ôn tập.
 
 Bản xem thử: https://em-kham-pha-lsdl.vercel.app
 
@@ -104,9 +104,7 @@ Các quy ước trên được test kiểm tra tự động. Xem thêm `docs/KIE
 
 ## Còn hạn chế
 
-- **Nội dung còn là bản nháp** (`status: "draft"`) và đang chờ giáo viên duyệt. Phần này gồm cả cây trồng của tỉnh (ngoài SGK).
-  - Bản build chỉ hiện nội dung nháp khi có `VITE_SHOW_DRAFTS=true`. Bản xem thử đang bật cờ này.
-  - Không có cờ này thì các chủ đề sẽ trống.
+- Toàn bộ nội dung hiện có đã duyệt (`status: "verified"`). Bản production chỉ hiện nội dung đã duyệt; nội dung mới thêm vào để `draft` thì chỉ hiện khi chạy dev.
 - Các mục dàn ý mà SGK không nói tới được liệt kê trong `docs/OUTLINE_GAPS.md`, chờ giáo viên quyết định.
 - Các ô ảnh còn trống (nhất là khoáng sản) ghi trong `docs/IMAGE_GAPS.md`.
 - Bộ câu hỏi trắc nghiệm đang cố định trong JSON. Chưa có tùy chọn lấy ngẫu nhiên N câu hay đảo thứ tự câu.

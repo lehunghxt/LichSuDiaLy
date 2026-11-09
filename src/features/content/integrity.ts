@@ -5,13 +5,13 @@ import type { ContentItem, RegionContent, RegionMeta, SourceRef } from '../../ty
 // Khung bao lãnh thổ Việt Nam, gồm cả quần đảo Hoàng Sa và Trường Sa
 const VN_BBOX = { minLat: 8.0, maxLat: 23.4, minLng: 102.1, maxLng: 117.9 }
 
-const citesSgk = (sources: SourceRef[], sgkUrl: string) => sources.some((s) => s.url === sgkUrl)
+// Nội dung đã duyệt phải có ít nhất một nguồn dẫn được: SGK, hoặc nguồn khác (Wikipedia, Wikidata…) với mục ngoài SGK
+const hasSource = (sources: SourceRef[]) => sources.some((s) => /^https?:\/\//.test(s.url ?? ''))
 
 export function checkIntegrity(
   contents: RegionContent[],
   regions: RegionMeta[],
   manifestIds: ReadonlySet<string>,
-  sgkUrl: string,
 ): string[] {
   const problems: string[] = []
   const seen = new Set<string>()
@@ -45,8 +45,8 @@ export function checkIntegrity(
           problems.push(`${item.id}: tọa độ nằm ngoài lãnh thổ Việt Nam (${lat}, ${lng})`)
         }
       }
-      if (item.status === 'verified' && !citesSgk(item.sources, sgkUrl)) {
-        problems.push(`${item.id}: đã duyệt nhưng chưa trích nguồn SGK`)
+      if (item.status === 'verified' && !hasSource(item.sources)) {
+        problems.push(`${item.id}: đã duyệt nhưng chưa có nguồn`)
       }
     }
 
@@ -55,8 +55,8 @@ export function checkIntegrity(
       if (!quiz.id.startsWith(prefix)) problems.push(`"${quiz.id}" phải bắt đầu bằng "${prefix}"`)
       for (const q of quiz.questions) {
         const where = `${quiz.id}/${q.id}`
-        if (q.status === 'verified' && !citesSgk(q.sources, sgkUrl)) {
-          problems.push(`${where}: đã duyệt nhưng chưa trích nguồn SGK`)
+        if (q.status === 'verified' && !hasSource(q.sources)) {
+          problems.push(`${where}: đã duyệt nhưng chưa có nguồn`)
         }
         if (q.type === 'map_locate') {
           for (const id of q.candidateItemIds) {

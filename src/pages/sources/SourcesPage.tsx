@@ -68,7 +68,7 @@ export default function SourcesPage() {
       <div>
         <h1 className="text-3xl font-bold">Nguồn tham khảo</h1>
         <p className="mt-1 max-w-3xl text-muted">
-          Nội dung trên trang được soạn lại bằng lời của các em từ sách giáo khoa Lịch sử và Địa lí 4 (Kết nối tri thức với cuộc sống). Bấm
+          Nội dung trên trang được soạn lại bằng lời của các em từ sách giáo khoa Lịch sử và Địa lý 4 (Kết nối tri thức với cuộc sống). Bấm
           vào tên bài hoặc số trang để mở đúng trang sách, bấm vào tên mục để đọc nội dung.
         </p>
       </div>

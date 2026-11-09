@@ -1,7 +1,7 @@
 [
   {
     "provinceId": "thanh-hoa",
-    "status": "draft",
+    "status": "verified",
     "facts": [
       {
         "text": "Thanh Hoá là tỉnh ven biển ở phía bắc vùng Bắc Trung Bộ: phía đông giáp Biển Đông, phía tây giáp nước Lào, phía nam giáp tỉnh Nghệ An.",
@@ -38,7 +38,7 @@
   },
   {
     "provinceId": "lam-dong",
-    "status": "draft",
+    "status": "verified",
     "facts": [
       {
         "text": "Năm 2025, tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận nhập thành tỉnh Lâm Đồng mới. Đây là tỉnh có diện tích lớn nhất cả nước, khoảng 24 233 km².",

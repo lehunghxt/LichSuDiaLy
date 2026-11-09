@@ -32,7 +32,7 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Da_Lat_train_station_02.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "lam-dong__da-lat-viet-nam",
@@ -68,7 +68,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Da_Lat_-_Viet_Nam.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "lam-dong__vietnam-mui-ne-sand-dune",
@@ -105,7 +105,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vietnam,_Mui_Ne_sand_dune.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "lam-dong__lang-biang-au-mois-d-aout",
@@ -141,6 +141,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lang_biang_au_mois_d%27ao%C3%BBt.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

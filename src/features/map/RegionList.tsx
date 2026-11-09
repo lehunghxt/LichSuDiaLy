@@ -26,9 +26,9 @@ export function RegionList({ regions, selectedId, onSelect }: RegionListProps) {
   }, [selectedId])
   return (
     <ul
-      aria-label="Các vùng địa lí"
-      // py để bóng của chip không bị cắt khi cuộn ngang
-      className="-my-2 flex max-w-full gap-2 overflow-x-auto py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      aria-label="Các vùng địa lý"
+      // py để bóng của chip không bị cắt khi cuộn ngang; mép phải mờ dần báo còn chip khuất (màn hẹp vuốt ngang)
+      className="-my-2 flex max-w-full gap-2 overflow-x-auto py-2 pr-6 [mask-image:linear-gradient(to_right,black_calc(100%-1.5rem),transparent)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
     >
       {regions.map((r) => {
         const selected = r.id === selectedId

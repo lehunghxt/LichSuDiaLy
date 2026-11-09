@@ -209,7 +209,7 @@
   "regions": [
     {
       "regionId": "trung-du-mien-nui-phia-bac",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "che",
@@ -225,7 +225,7 @@
     },
     {
       "regionId": "dong-bang-bac-bo",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "lua",
@@ -241,7 +241,7 @@
     },
     {
       "regionId": "bac-trung-bo-va-nam-trung-bo",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "ca-phe",
@@ -282,7 +282,7 @@
     },
     {
       "regionId": "nam-bo",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "lua",
@@ -340,7 +340,7 @@
   "provinces": [
     {
       "provinceId": "lai-chau",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "che",
@@ -374,7 +374,7 @@
     },
     {
       "provinceId": "dien-bien",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "che",
@@ -394,7 +394,7 @@
     },
     {
       "provinceId": "son-la",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "che",
@@ -428,7 +428,7 @@
     },
     {
       "provinceId": "lao-cai",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "che",
@@ -462,7 +462,7 @@
     },
     {
       "provinceId": "tuyen-quang",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "che",
@@ -489,7 +489,7 @@
     },
     {
       "provinceId": "cao-bang",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "che",
@@ -523,7 +523,7 @@
     },
     {
       "provinceId": "thai-nguyen",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "che",
@@ -550,7 +550,7 @@
     },
     {
       "provinceId": "lang-son",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "hoi",
@@ -577,7 +577,7 @@
     },
     {
       "provinceId": "phu-tho",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "che",
@@ -618,7 +618,7 @@
     },
     {
       "provinceId": "quang-ninh",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "che",
@@ -638,7 +638,7 @@
     },
     {
       "provinceId": "bac-ninh",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "vai",
@@ -658,7 +658,7 @@
     },
     {
       "provinceId": "hai-phong",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "thuoc-lao",
@@ -692,7 +692,7 @@
     },
     {
       "provinceId": "hung-yen",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "nhan",
@@ -712,7 +712,7 @@
     },
     {
       "provinceId": "ninh-binh",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "coi",
@@ -732,7 +732,7 @@
     },
     {
       "provinceId": "thanh-hoa",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "mia",
@@ -752,7 +752,7 @@
     },
     {
       "provinceId": "nghe-an",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "cam",
@@ -765,7 +765,7 @@
     },
     {
       "provinceId": "ha-tinh",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "lac",
@@ -799,7 +799,7 @@
     },
     {
       "provinceId": "quang-tri",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "ho-tieu",
@@ -826,7 +826,7 @@
     },
     {
       "provinceId": "hue",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "thanh-tra",
@@ -846,7 +846,7 @@
     },
     {
       "provinceId": "da-nang",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "que",
@@ -866,7 +866,7 @@
     },
     {
       "provinceId": "quang-ngai",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "mia",
@@ -900,7 +900,7 @@
     },
     {
       "provinceId": "gia-lai",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "ho-tieu",
@@ -927,7 +927,7 @@
     },
     {
       "provinceId": "dak-lak",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "ca-phe",
@@ -954,7 +954,7 @@
     },
     {
       "provinceId": "khanh-hoa",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "xoai",
@@ -988,7 +988,7 @@
     },
     {
       "provinceId": "lam-dong",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "che",
@@ -1015,7 +1015,7 @@
     },
     {
       "provinceId": "dong-nai",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "cao-su",
@@ -1042,7 +1042,7 @@
     },
     {
       "provinceId": "tay-ninh",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "mia",
@@ -1090,7 +1090,7 @@
     },
     {
       "provinceId": "dong-thap",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "xoai",
@@ -1124,7 +1124,7 @@
     },
     {
       "provinceId": "an-giang",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "lua",
@@ -1137,7 +1137,7 @@
     },
     {
       "provinceId": "vinh-long",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "dua",
@@ -1164,7 +1164,7 @@
     },
     {
       "provinceId": "can-tho",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "hanh",
@@ -1191,7 +1191,7 @@
     },
     {
       "provinceId": "ca-mau",
-      "status": "draft",
+      "status": "verified",
       "crops": [
         {
           "crop": "lua",

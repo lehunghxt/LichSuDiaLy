@@ -20,13 +20,13 @@ export default function QuizListPage() {
       <h1 className="text-3xl font-bold">Trắc nghiệm</h1>
       <p className="mt-2 text-muted">Chọn một bài để thử tài kiến thức của em nhé!</p>
       <div className="mt-6">
-        {status === 'loading' && <LoadingState label="Đang tải bài ôn tập…" />}
-        {status === 'error' && <ErrorState title="Chưa tải được bài ôn tập" onRetry={() => window.location.reload()} />}
+        {status === 'loading' && <LoadingState label="Đang tải bài trắc nghiệm…" />}
+        {status === 'error' && <ErrorState title="Chưa tải được bài trắc nghiệm" onRetry={() => window.location.reload()} />}
         {status === 'ready' && quizzes.length === 0 && (
-          <EmptyState title="Bài ôn tập đang được chuẩn bị" description="Thầy cô đang soạn câu hỏi, em quay lại sau nhé." />
+          <EmptyState title="Bài trắc nghiệm đang được chuẩn bị" description="Thầy cô đang soạn câu hỏi, em quay lại sau nhé." />
         )}
         {status === 'ready' && quizzes.length > 0 && (
-          <ul aria-label="Các bài ôn tập" className={`${GRID_FILL.md} gap-5`}>
+          <ul aria-label="Các bài trắc nghiệm" className={`${GRID_FILL.md} gap-5`}>
             {quizzes.map(({ quiz, region }) => (
               <QuizCard key={quiz.id} quiz={quiz} region={region} record={state.quizzes[quiz.id]} cover={covers[region.id]} />
             ))}
@@ -97,9 +97,9 @@ function QuizCard({ quiz, region, record, cover }: QuizCardProps) {
           </span>
         </span>
       </Link>
-      {/* Ghi nguồn ảnh Commons (TASL), nằm ngoài link của thẻ vì có link riêng */}
+      {/* Ghi nguồn ảnh Commons (TASL), nằm ngoài link của thẻ vì có link riêng; luôn cao đủ hai dòng để nút của các thẻ cùng hàng thẳng nhau */}
       {cover && (
-        <p className="-mt-2 line-clamp-2 px-5 pb-4 leading-tight">
+        <p className="-mt-2 line-clamp-2 min-h-[calc(2lh+1rem)] px-5 pb-4 text-xs leading-tight">
           <ImageCredit image={cover} />
         </p>
       )}

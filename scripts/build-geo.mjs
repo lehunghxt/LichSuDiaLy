@@ -52,7 +52,7 @@ const labels = {
   features: [
     { name: 'QĐ. Hoàng Sa (Việt Nam)', kind: 'archipelago', coordinates: offshoreCenter('da-nang', 110) },
     { name: 'QĐ. Trường Sa (Việt Nam)', kind: 'archipelago', coordinates: offshoreCenter('khanh-hoa', 111) },
-    // Vị trí đặt chữ "Biển Đông" (nhãn bản đồ, không phải dữ liệu địa lí)
+    // Vị trí đặt chữ "Biển Đông" (nhãn bản đồ, không phải dữ liệu địa lý)
     { name: 'Biển Đông', kind: 'sea', coordinates: [111.5, 14.5] },
   ].map(({ coordinates, ...properties }) => ({
     type: 'Feature',

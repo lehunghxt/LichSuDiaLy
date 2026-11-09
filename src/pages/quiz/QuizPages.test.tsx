@@ -91,11 +91,11 @@ test('draft questions excluded in PROD', async () => {
 
 test('quiz with 0 published questions shows EmptyState', async () => {
   renderAt('/on-tap/vung-b__on-tap-1')
-  expect(await screen.findByText('Bài ôn tập đang được chuẩn bị')).toBeInTheDocument()
+  expect(await screen.findByText('Bài trắc nghiệm đang được chuẩn bị')).toBeInTheDocument()
 })
 
 test('unknown quizId shows NotFound', async () => {
   renderAt('/on-tap/zzz')
-  expect(await screen.findByText('Không tìm thấy bài ôn tập')).toBeInTheDocument()
+  expect(await screen.findByText('Không tìm thấy bài trắc nghiệm')).toBeInTheDocument()
   expect(screen.getByRole('link', { name: 'Về danh sách bài' })).toHaveAttribute('href', '/on-tap')
 })

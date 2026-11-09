@@ -12,7 +12,7 @@
         "lesson": 7,
         "figure": 1,
         "page": 32,
-        "caption": "Lược đồ thể hiện vị trí địa lí của khu di tích Đền Hùng"
+        "caption": "Lược đồ thể hiện vị trí địa lý của khu di tích Đền Hùng"
       },
       {
         "lesson": 7,
@@ -30,7 +30,7 @@
     "relatedIds": ["trung-du-mien-nui-phia-bac__le-gio-to", "trung-du-mien-nui-phia-bac__truyen-thuyet-hung-vuong"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 7. Đền Hùng và lễ giỗ Tổ Hùng Vương",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 7. Đền Hùng và lễ giỗ Tổ Hùng Vương",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 32,
         "note": "tr. 32–33"
@@ -41,7 +41,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 21.3655,
       "lng": 105.3246,
@@ -78,13 +78,13 @@
     "relatedIds": ["trung-du-mien-nui-phia-bac__den-hung", "trung-du-mien-nui-phia-bac__truyen-thuyet-hung-vuong"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 7. Đền Hùng và lễ giỗ Tổ Hùng Vương",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 7. Đền Hùng và lễ giỗ Tổ Hùng Vương",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 32,
         "note": "tr. 32–34"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "trung-du-mien-nui-phia-bac__truyen-thuyet-hung-vuong",
@@ -108,12 +108,12 @@
     "relatedIds": ["trung-du-mien-nui-phia-bac__den-hung", "trung-du-mien-nui-phia-bac__le-gio-to"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 7. Đền Hùng và lễ giỗ Tổ Hùng Vương",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 7. Đền Hùng và lễ giỗ Tổ Hùng Vương",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 34,
         "note": "tr. 34"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   }
 ]

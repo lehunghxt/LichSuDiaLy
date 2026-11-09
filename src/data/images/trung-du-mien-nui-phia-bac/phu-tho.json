@@ -34,7 +34,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%81n_H%C3%B9ng,_%C4%91%E1%BB%81n_Th%C6%B0%E1%BB%A3ng.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "phu-tho__den-hung-den-ha",
@@ -71,7 +71,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%81n_H%C3%B9ng,_%C4%91%E1%BB%81n_H%E1%BA%A1.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "phu-tho__mausoleum-of-hung-king",
@@ -107,7 +107,7 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mausoleum_of_Hung_King.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "phu-tho__tam-dao-mountain-range",
@@ -143,7 +143,7 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tam_Dao_mountain_range.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "phu-tho__hoa-binh-dam-in-vietnam",
@@ -179,7 +179,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoa_Binh_Dam_in_Vietnam.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "phu-tho__mai-chau-4",
@@ -216,7 +216,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mai_Chau_4.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "phu-tho__zen-monastery-truc-lam-tay-thien",
@@ -252,7 +252,7 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zen_Monastery_Truc_Lam_Tay_Thien.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "phu-tho__a-thai-stilt-house-4115406064",
@@ -289,6 +289,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Thai_stilt_house_(4115406064).jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

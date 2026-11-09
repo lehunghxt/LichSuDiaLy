@@ -10,13 +10,13 @@
     "relatedIds": ["nam-bo__nha-o"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 103,
         "note": "tr. 103"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__nha-o",
@@ -42,13 +42,13 @@
     "relatedIds": ["nam-bo__van-tai-duong-song", "nam-bo__dan-cu"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 107,
         "note": "tr. 107–108, Hình 1, 2"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__van-tai-duong-song",
@@ -68,13 +68,13 @@
     "relatedIds": ["nam-bo__nha-o", "nam-bo__cho-noi", "nam-bo__song-ngoi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 24. Một số nét văn hoá và truyền thống yêu nước, cách mạng của đồng bào Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 108,
         "note": "tr. 108, Hình 4"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__trong-lua",
@@ -100,13 +100,13 @@
     "relatedIds": ["nam-bo__cay-an-qua", "nam-bo__dat"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 103,
         "note": "tr. 103–104, Hình 1, 2"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__cay-an-qua",
@@ -119,13 +119,13 @@
     "relatedIds": ["nam-bo__trong-lua", "nam-bo__cay-cong-nghiep"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 103,
         "note": "tr. 103–105"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__cay-cong-nghiep",
@@ -145,13 +145,13 @@
     "relatedIds": ["nam-bo__dat", "nam-bo__cay-an-qua"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 103,
         "note": "tr. 103, Hình 4"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__chan-nuoi",
@@ -164,13 +164,13 @@
     "relatedIds": ["nam-bo__trong-lua"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 103,
         "note": "tr. 103"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__thuy-san",
@@ -196,13 +196,13 @@
     "relatedIds": ["nam-bo__song-ngoi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 104,
         "note": "tr. 104, Hình 3, 5"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__cong-nghiep",
@@ -234,12 +234,12 @@
     "relatedIds": ["nam-bo__tphcm-ngay-nay"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 23. Dân cư và hoạt động sản xuất ở vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 105,
         "note": "tr. 105–106, Hình 4, 5, 6"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   }
 ]

@@ -33,7 +33,7 @@
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Halong_Bay_in_Vietnam.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "quang-ninh__bai-tu-long-bay-quang-ninh-vietnam-35892945123",
@@ -69,7 +69,7 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bai_Tu_Long_Bay_-_Quang_Ninh_-_Vietnam_(35892945123).jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "quang-ninh__phong-canh-nui-yen-tu",
@@ -106,7 +106,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phong_c%E1%BA%A3nh_n%C3%BAi_Y%C3%AAn_T%E1%BB%AD.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "quang-ninh__cua-van-floating-village",
@@ -143,6 +143,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cua_Van_Floating_Village.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

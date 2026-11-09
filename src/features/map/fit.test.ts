@@ -23,8 +23,9 @@ describe('desktop', () => {
     expect(countryPadding('desktop', 253, openLegend)).toEqual({ paddingTopLeft: [12, 12], paddingBottomRight: [12, 12] })
   })
 
-  test('choosing a region keeps the whole country in view (the panel is beside the map)', () => {
-    expect(regionPadding('desktop', 600, legend)).toBeNull()
+  test('a chosen region is zoomed in below the chips and callout (the panel is beside the map)', () => {
+    // chip: 16 + 40 + 8 = 64, nhãn vùng 36
+    expect(regionPadding('desktop', 600, legend)).toEqual({ paddingTopLeft: [12, 100], paddingBottomRight: [12, 12] })
   })
 })
 
@@ -56,10 +57,11 @@ describe('tablet', () => {
 })
 
 describe('a chosen province is zoomed in on every device', () => {
-  test('desktop: the panel is beside the map, so only leave room for the chips', () => {
+  test('desktop: room for the chips, plus a margin so the neighbouring provinces stay in view', () => {
+    // thêm 15% của 500 = 75 mỗi phía
     expect(provinceFit('desktop', 500, legend)).toEqual({
-      paddingTopLeft: [12, 64],
-      paddingBottomRight: [12, 12],
+      paddingTopLeft: [87, 139],
+      paddingBottomRight: [87, 87],
       maxZoom: PROVINCE_MAX_ZOOM,
     })
   })
@@ -96,6 +98,8 @@ describe('every region fits its zoom without hitting the pan limit', () => {
   const [[minLat, minLng], [maxLat, maxLng]] = MAP_MAX_BOUNDS
 
   const screens: [Device, number, number][] = [
+    ['desktop', 990, 900],
+    ['desktop', 853, 700],
     ['mobile', 390, 800],
     ['mobile', 360, 640],
     ['tablet', 820, 1100],
@@ -104,7 +108,7 @@ describe('every region fits its zoom without hitting the pan limit', () => {
   for (const [device, width, height] of screens) {
     for (const region of data.features.map((f) => f.properties.regionId)) {
       test(`${device} ${width}×${height}: ${region}`, () => {
-        const pad = regionPadding(device, height, legend)!
+        const pad = regionPadding(device, height, legend)
         const [[s, w], [n, e]] = regionBounds(data, region)!
         const [padL, padT] = pad.paddingTopLeft
         const [padR, padB] = pad.paddingBottomRight

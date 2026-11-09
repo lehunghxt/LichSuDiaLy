@@ -37,13 +37,13 @@
     ],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 78,
         "note": "tr. 78–80, Hình 2, 3, 6"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__my-son",
@@ -64,7 +64,7 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__ka-te", "bac-trung-bo-va-nam-trung-bo__di-san-the-gioi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 78,
         "note": "tr. 78, Hình 1"
@@ -75,7 +75,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 15.7632,
       "lng": 108.1244,
@@ -100,13 +100,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__ka-te", "bac-trung-bo-va-nam-trung-bo__khao-le"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 80,
         "note": "tr. 80, Hình 7"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__ka-te",
@@ -132,13 +132,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__my-son", "bac-trung-bo-va-nam-trung-bo__ruoc-ca-ong"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 81,
         "note": "tr. 81, Hình 8"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__khao-le",
@@ -164,13 +164,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__ruoc-ca-ong"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 81,
         "note": "tr. 81, Hình 9"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__dua-voi",
@@ -191,7 +191,7 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 82,
         "note": "tr. 82, Hình 10"
@@ -202,7 +202,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 12.8828,
       "lng": 107.7896,
@@ -237,13 +237,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__dan-cu"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 82,
         "note": "tr. 82–83, Hình 11, 12"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__bai-choi",
@@ -263,13 +263,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__di-san-the-gioi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 17. Một số nét văn hoá ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 79,
         "note": "tr. 79–80, Hình 5"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__khong-gian-cong-chieng",
@@ -295,13 +295,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng", "bac-trung-bo-va-nam-trung-bo__di-san-the-gioi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 21. Lễ hội Cồng chiêng Tây Nguyên",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 21. Lễ hội Cồng chiêng Tây Nguyên",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 96,
         "note": "tr. 96–97, Hình 1"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng",
@@ -331,13 +331,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__khong-gian-cong-chieng", "bac-trung-bo-va-nam-trung-bo__nghe-thu-cong"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 21. Lễ hội Cồng chiêng Tây Nguyên",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 21. Lễ hội Cồng chiêng Tây Nguyên",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 97,
         "note": "tr. 97–98, Hình 2, 3"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__vi-giam",
@@ -358,7 +358,7 @@
         "url": "https://vi.wikipedia.org/wiki/D%C3%A2n_ca_v%C3%AD%2C_gi%E1%BA%B7m_Ngh%E1%BB%87_T%C4%A9nh"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__ao-dai-non-la",
@@ -382,7 +382,7 @@
         "url": "https://vi.wikipedia.org/wiki/N%C3%B3n_l%C3%A1"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__am-thuc",
@@ -405,6 +405,6 @@
         "url": "https://vi.wikipedia.org/wiki/M%C3%AC_Qu%E1%BA%A3ng"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   }
 ]

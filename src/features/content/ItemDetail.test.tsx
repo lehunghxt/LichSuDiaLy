@@ -27,6 +27,6 @@ test('an item with no SGK source is marked "Ngoài SGK" next to its title', () =
 })
 
 test('an item citing the SGK has no such mark', () => {
-  show([{ title: 'SGK Lịch sử và Địa lí 4', url: SGK_URL, page: 108 }])
+  show([{ title: 'SGK Lịch sử và Địa lý 4', url: SGK_URL, page: 108 }])
   expect(screen.queryByText('Ngoài SGK')).not.toBeInTheDocument()
 })

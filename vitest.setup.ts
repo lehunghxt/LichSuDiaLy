@@ -6,7 +6,8 @@ import { installMatchMedia, setViewportWidth } from './src/test/viewport'
 installMatchMedia()
 
 // Trang được lazy-load; lần nạp đầu khi chạy cả bộ test có thể chậm hơn 1s mặc định
-configure({ asyncUtilTimeout: 3000 })
+// (có React Compiler, mỗi file còn qua Babel: lần chạy đầu sau khi xoá cache từng quá 3s)
+configure({ asyncUtilTimeout: 5000 })
 
 afterEach(() => {
   cleanup()

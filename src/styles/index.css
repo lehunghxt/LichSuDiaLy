@@ -32,9 +32,10 @@
   --animate-sheet-up: sheet-up 0.3s cubic-bezier(0.32, 0.72, 0, 1);
   --animate-drawer-in: drawer-in 0.3s cubic-bezier(0.32, 0.72, 0, 1);
   --animate-shimmer: shimmer 1.4s ease-in-out infinite;
+  --animate-marquee: marquee 24s linear infinite;
 }
 
-/* Màu từng vùng địa lí: khai báo ngoài @theme vì được đọc động
+/* Màu từng vùng địa lý: khai báo ngoài @theme vì được đọc động
    (regions.json → var(--color-<token>)), Tailwind không thấy để giữ lại */
 :root {
   --color-region-tdmnpb: #a78bfa;
@@ -191,6 +192,16 @@ div.leaflet-container {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Dòng chữ chạy: dải có hai nửa giống hệt nhau, trượt đúng một nửa rồi lặp lại nên không thấy chỗ nối */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 

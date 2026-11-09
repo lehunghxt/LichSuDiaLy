@@ -45,6 +45,20 @@ export function checkDist(distDir) {
   const indexFile = path.join(distDir, 'index.html')
   if (!existsSync(indexFile)) problems.push('thiếu dist/index.html')
   if (!existsSync(path.join(distDir, '_redirects'))) problems.push('thiếu dist/_redirects')
+  if (!existsSync(path.join(distDir, '_headers'))) problems.push('thiếu dist/_headers')
+
+  // Service worker: mọi file trong danh sách lưu sẵn phải có trong bản build, thiếu một file là cài đặt hỏng cả
+  const swFile = path.join(distDir, 'sw.js')
+  if (!existsSync(swFile)) problems.push('thiếu dist/sw.js')
+  else {
+    const sw = readFileSync(swFile, 'utf8')
+    const base = JSON.parse(sw.match(/const BASE = (".*?")/)?.[1] ?? '"/"')
+    const list = JSON.parse(sw.match(/const PRECACHE = (\[.*?\])\n/s)?.[1] ?? '[]')
+    if (list.length === 0) problems.push('sw.js không có danh sách lưu sẵn')
+    for (const url of list) {
+      if (!existsSync(path.join(distDir, url.slice(base.length)))) problems.push(`sw.js lưu sẵn file không có: ${url}`)
+    }
+  }
 
   if (existsSync(indexFile)) {
     let gzipBytes = 0

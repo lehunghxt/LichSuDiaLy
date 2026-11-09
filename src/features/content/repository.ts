@@ -6,7 +6,7 @@ import { parseOutline } from './parseOutline'
 import { isPublished } from '../../lib/publishing'
 import { loadersFromGlob } from './regionFiles'
 
-export { isPublished, showDrafts } from '../../lib/publishing'
+export { isPublished } from '../../lib/publishing'
 
 /** Quy ước id: "<regionId>__<slug>" để suy ra vùng mà không phải nạp mọi vùng */
 export function regionIdOf(id: string): string | null {

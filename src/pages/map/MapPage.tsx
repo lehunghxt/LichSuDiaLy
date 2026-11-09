@@ -1,6 +1,7 @@
 import { Suspense, useEffect, useState } from 'react'
 import { Link } from 'react-router'
 import { useNavigate, useParams, useSearchParams } from 'react-router'
+import { Marquee } from '../../components/ui/Marquee'
 import { LoadingState } from '../../components/ui/states'
 import {
   findTopic,
@@ -16,6 +17,7 @@ import {
 } from '../../features/content'
 import { useRegionImages } from '../../features/images'
 import { MapInfoPanel, placesOf, RegionList, VietnamMap } from '../../features/map'
+import { provinceRegionId } from '../../lib/provinces'
 import type { Snap } from '../../components/sheet/SnapSheet'
 import { useProgress } from '../../features/progress'
 import { ByDevice } from '../../components/layout/ByDevice'
@@ -24,17 +26,23 @@ import { DesktopMapLayout } from './MapLayout.desktop'
 import { MobileMapLayout } from './MapLayout.mobile'
 import { TabletMapLayout } from './MapLayout.tablet'
 
+const SOVEREIGNTY = 'Hoàng Sa, Trường Sa là của Việt Nam!'
+
 export default function MapPage() {
   const { regionId } = useParams()
   const navigate = useNavigate()
   const [params] = useSearchParams()
   const regions = repository.getRegions()
   const region = regions.find((r) => r.id === regionId) ?? null
-  const [provinceId, setProvinceId] = useState<string | null>(null)
   const content = useRegionContent(region?.status === 'active' ? region.id : undefined)
   const images = useRegionImages(region?.id)
   const outline = useRegionOutline(region?.id)
   const { markRegionVisited, markItemsViewed } = useProgress()
+
+  // Tỉnh đang xem nằm trong URL (?tinh=<id>): gửi link được, nút Back của trình duyệt về tỉnh trước đó.
+  // Chỉ nhận tỉnh thuộc vùng đang xem
+  const provinceParam = params.get('tinh')
+  const provinceId = provinceParam && region && provinceRegionId(provinceParam) === region.id ? provinceParam : null
 
   const sectionParam = params.get('phan')
   const section = isSection(sectionParam) ? sectionParam : null
@@ -57,14 +65,14 @@ export default function MapPage() {
   // Điện thoại: mức mở của bottom sheet thông tin vùng
   const [snap, setSnap] = useState<Snap>('half')
 
-  // Đổi vùng thì bỏ chọn tỉnh và mở lại bottom sheet ở mức nửa màn hình
+  // Đổi vùng (link mới không mang ?tinh nên tỉnh cũng bỏ chọn): mở lại bottom sheet ở mức nửa màn hình
   useEffect(() => {
-    setProvinceId(null)
     setSnap('half')
   }, [regionId])
   // Chọn tỉnh khi tấm đang thu gọn: mở lên để em thấy thẻ tỉnh
   const selectProvince = (id: string | null) => {
-    setProvinceId(id)
+    if (id === provinceId) return
+    navigate({ search: id ? `?${new URLSearchParams({ tinh: id }).toString()}` : '' })
     if (id) setSnap((s) => (s === 'peek' ? 'half' : s))
   }
 
@@ -79,17 +87,24 @@ export default function MapPage() {
   }, [shownKey, markItemsViewed])
 
   const selectRegion = (id: string) => navigate(`/ban-do/${id}`)
+  // Giữ tỉnh đang xem khi mở, đóng modal dàn ý
+  const keepProvince = (search: string) => {
+    if (!provinceId) return search
+    const next = new URLSearchParams(search)
+    next.set('tinh', provinceId)
+    return `?${next.toString()}`
+  }
   // Mở modal thêm một mục lịch sử (nút Back của trình duyệt đóng modal); đổi mục bên trong thì thay thế
   const openTopic = (s: SectionId, topicId: string | null, slug?: string | null) =>
     navigate(
-      { search: topicSearch(s, topicId ?? (outline ? (findTopic(outline, s, null)?.id ?? null) : null), slug) },
+      { search: keepProvince(topicSearch(s, topicId ?? (outline ? (findTopic(outline, s, null)?.id ?? null) : null), slug)) },
       { replace: modalOpen },
     )
   const openItem = (item: Pick<ContentItem, 'id' | 'section'>) => {
     const at = outline ? topicOfItem(outline, item.id) : null
     openTopic(at?.section ?? item.section, at?.topicId ?? null, itemSlug(item.id))
   }
-  const closeTopic = () => navigate({ search: '' }, { replace: true })
+  const closeTopic = () => navigate({ search: keepProvince('') }, { replace: true })
 
   const map = (
     <Suspense fallback={<LoadingState label="Đang tải bản đồ…" />}>
@@ -104,7 +119,13 @@ export default function MapPage() {
       />
     </Suspense>
   )
-  const chips = <RegionList regions={regions} selectedId={region?.id ?? null} onSelect={selectRegion} />
+  // Dải chip chọn vùng và dòng chữ chạy bên dưới; cả hai nằm trong khung chú giải nên khi canh bản đồ đều được chừa chỗ
+  const chips = (
+    <div className="flex w-full min-w-0 flex-col gap-2">
+      <RegionList regions={regions} selectedId={region?.id ?? null} onSelect={selectRegion} />
+      <Marquee text={SOVEREIGNTY} />
+    </div>
+  )
   const panel = (
     <>
       <MapInfoPanel
@@ -117,12 +138,12 @@ export default function MapPage() {
         outline={outline}
         provinceId={provinceId}
         onBack={() => navigate('/ban-do')}
-        onClearProvince={() => setProvinceId(null)}
+        onClearProvince={() => selectProvince(null)}
         onOpenTopic={openTopic}
         onOpenItem={openItem}
       />
       <p className="mt-auto text-center text-xs text-muted">
-        Nội dung bám theo SGK Lịch sử và Địa lí 4.{' '}
+        Nội dung bám theo SGK Lịch sử và Địa lý 4.{' '}
         <Link to="/nguon-tham-khao" className="font-semibold text-primary hover:underline">
           Nguồn tham khảo
         </Link>

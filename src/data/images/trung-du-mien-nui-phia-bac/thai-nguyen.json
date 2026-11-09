@@ -34,7 +34,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ba_Be_Lake_5.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "thai-nguyen__tea-hill-in-thai-nguyen",
@@ -70,7 +70,7 @@
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tea_hill_in_Thai_Nguyen.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "thai-nguyen__atk-dinh-hoa",
@@ -107,6 +107,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:ATK_DINH_HOA.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

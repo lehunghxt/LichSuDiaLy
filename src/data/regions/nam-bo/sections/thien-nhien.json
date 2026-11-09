@@ -1,7 +1,7 @@
 [
   {
     "id": "nam-bo__vi-tri-dia-li",
-    "title": "Vị trí địa lí",
+    "title": "Vị trí địa lý",
     "summary": "Vùng Nam Bộ nằm ở phía nam đất nước, gồm Đông Nam Bộ và Tây Nam Bộ (còn gọi là đồng bằng sông Cửu Long).",
     "highlights": [
       "Vùng Nam Bộ có vùng biển rộng lớn, nhiều tiềm năng.",
@@ -20,13 +20,13 @@
     "relatedIds": ["nam-bo__dia-hinh-dong-nam-bo", "nam-bo__dong-bang-cuu-long"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 99,
         "note": "tr. 99–100, Hình 1"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__dia-hinh-dong-nam-bo",
@@ -48,13 +48,13 @@
     "relatedIds": ["nam-bo__dong-bang-cuu-long"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 100,
         "note": "tr. 100–101, Hình 2"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__dong-bang-cuu-long",
@@ -77,13 +77,13 @@
     "relatedIds": ["nam-bo__dia-hinh-dong-nam-bo", "nam-bo__song-ngoi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 99,
         "note": "tr. 99–101, Hình 3"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__khi-hau",
@@ -99,13 +99,13 @@
     "relatedIds": ["nam-bo__thuan-loi-kho-khan"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 101,
         "note": "tr. 101"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__song-ngoi",
@@ -121,13 +121,13 @@
     "relatedIds": ["nam-bo__dong-bang-cuu-long", "nam-bo__van-tai-duong-song"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 101,
         "note": "tr. 101"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__dat",
@@ -143,13 +143,13 @@
     "relatedIds": ["nam-bo__cay-cong-nghiep", "nam-bo__trong-lua"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 101,
         "note": "tr. 101"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__thuan-loi-kho-khan",
@@ -187,13 +187,13 @@
     "relatedIds": ["nam-bo__khi-hau"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 102,
         "note": "tr. 102, Hình 4, 5, 6, 7"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__kenh-rach",
@@ -213,7 +213,7 @@
         "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_C%E1%BB%ADu_Long"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__rung-ngap-man",
@@ -234,7 +234,7 @@
         "url": "https://vi.wikipedia.org/wiki/R%E1%BB%ABng_ng%E1%BA%ADp_m%E1%BA%B7n_C%E1%BA%A7n_Gi%E1%BB%9D"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__rung-tram",
@@ -258,7 +258,7 @@
         "url": "https://vi.wikipedia.org/wiki/V%C6%B0%E1%BB%9Dn_qu%E1%BB%91c_gia_U_Minh_Th%C6%B0%E1%BB%A3ng"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__phu-quoc-con-dao",
@@ -282,7 +282,7 @@
         "url": "https://vi.wikipedia.org/wiki/C%C3%B4n_%C4%90%E1%BA%A3o"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "nam-bo__nui-ba-den",
@@ -295,7 +295,7 @@
     "relatedIds": ["nam-bo__dia-hinh-dong-nam-bo"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 22. Thiên nhiên vùng Nam Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 100,
         "note": "tr. 100–101, Hình 2"
@@ -310,7 +310,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 11.3667,
       "lng": 106.1667,
@@ -337,7 +337,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 10.9386,
       "lng": 107.3764,
@@ -364,7 +364,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 11.8171,
       "lng": 106.9999,
@@ -391,7 +391,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 10.6767,
       "lng": 105.0775,

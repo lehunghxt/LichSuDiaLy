@@ -33,7 +33,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Between_Son_La_and_Moc_Chau.png"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "son-la__son-la-dam-reservoir",
@@ -70,7 +70,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:S%C6%A1n_La_Dam_reservoir.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "son-la__son-la-province",
@@ -107,6 +107,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:S%C6%A1n_La_Province.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

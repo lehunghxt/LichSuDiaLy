@@ -33,7 +33,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ho_dynasty%27s_citadel,_Vietnam.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "thanh-hoa__bai-bien-sam-son",
@@ -71,7 +71,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%C3%A3i_bi%E1%BB%83n_S%E1%BA%A7m_S%C6%A1n.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "thanh-hoa__pu-luong-01",
@@ -107,6 +107,6 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pu_Luong_01.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

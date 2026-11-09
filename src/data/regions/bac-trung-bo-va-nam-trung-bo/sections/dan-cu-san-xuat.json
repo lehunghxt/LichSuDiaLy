@@ -33,13 +33,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__nha-o"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 72,
         "note": "tr. 72–73, Hình 3, 4, 5"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__cay-trong",
@@ -74,13 +74,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__dat", "bac-trung-bo-va-nam-trung-bo__chan-nuoi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 75,
         "note": "tr. 75–76, Hình 9, 10, 11"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__chan-nuoi",
@@ -93,13 +93,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__cay-trong"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 76,
         "note": "tr. 76"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__thuy-dien",
@@ -122,13 +122,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__song-ngoi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 76,
         "note": "tr. 76–77, Hình 12"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__hai-san",
@@ -148,13 +148,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__bien-dao", "bac-trung-bo-va-nam-trung-bo__lam-muoi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 72,
         "note": "tr. 72–74, Hình 1"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__lam-muoi",
@@ -174,13 +174,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__hai-san"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 74,
         "note": "tr. 74, Hình 8"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__du-lich",
@@ -200,13 +200,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__bai-bien", "bac-trung-bo-va-nam-trung-bo__giao-thong-bien"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 74,
         "note": "tr. 74, Hình 6"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__giao-thong-bien",
@@ -226,13 +226,13 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__du-lich"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 74,
         "note": "tr. 74, Hình 7"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "bac-trung-bo-va-nam-trung-bo__nghe-thu-cong",
@@ -245,12 +245,12 @@
     "relatedIds": ["bac-trung-bo-va-nam-trung-bo__dan-cu", "bac-trung-bo-va-nam-trung-bo__le-hoi-cong-chieng"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 16. Dân cư và hoạt động sản xuất ở vùng Bắc Trung Bộ và Nam Trung Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 73,
         "note": "tr. 73"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   }
 ]

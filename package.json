@@ -27,6 +27,8 @@
     "react-router": "^7.18.5"
   },
   "devDependencies": {
+    "@babel/core": "^8.1.0",
+    "@rolldown/plugin-babel": "^0.3.1",
     "@tailwindcss/vite": "^4.3.3",
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
@@ -37,6 +39,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "babel-plugin-react-compiler": "^1.0.0",
     "jsdom": "^28.1.0",
     "mapshaper": "^0.7.101",
     "oxlint": "^1.89.0",

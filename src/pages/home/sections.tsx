@@ -24,7 +24,8 @@ import { repository, SECTION_ICONS, SECTION_TILE } from '../../features/content'
 import { useRegionCovers } from '../../features/images'
 import { MiniVietnamMap } from '../../features/map'
 import { useProgress } from '../../features/progress'
-import { SECTION_LABELS, type ContentItem, type RegionContent, type RegionMeta, type RegionOutline } from '../../types/content'
+import { SECTION_LABELS, type RegionMeta } from '../../types/content'
+import type { HomeSummary } from '../../types/homeSummary'
 
 const card = 'rounded-card bg-surface shadow-[0_8px_30px_rgb(15_23_42/0.08)]'
 
@@ -49,15 +50,32 @@ export function SectionTitle({ id, icon: Icon, title, subtitle }: { id: string; 
   )
 }
 
-/** Huy hiệu nổi trên bản đồ thu nhỏ; nội dung lấy từ SGK (tr. 19, 20, 33) */
+/**
+ * Huy hiệu bên bản đồ thu nhỏ; nội dung lấy từ SGK (tr. 19, 20, 33). Cả ba đều ở miền Bắc nên trên bố cục split
+ * xếp dọc ở góc trên, ngay bên phải phần miền Bắc của bản đồ (không đặt cạnh biển đảo để em khỏi hiểu sai vị trí)
+ */
 const BADGES: { icon: LucideIcon; text: string; sub: string; className: string; delay: string }[] = [
-  { icon: MountainSnow, text: 'Phan-xi-păng', sub: '3 147 m, cao nhất Việt Nam', className: 'right-0 top-4', delay: '0s' },
-  { icon: Flag, text: 'Cột cờ Lũng Cú', sub: 'Nơi địa đầu Tổ quốc', className: 'right-0 top-[48%]', delay: '1.2s' },
-  { icon: Star, text: 'Giỗ Tổ Hùng Vương', sub: '10 tháng Ba âm lịch', className: '-left-2 top-[52%]', delay: '2.4s' },
+  { icon: Flag, text: 'Cột cờ Lũng Cú', sub: 'Nơi địa đầu Tổ quốc', className: 'right-0 top-0', delay: '0s' },
+  { icon: MountainSnow, text: 'Phan-xi-păng', sub: '3 147 m, cao nhất Việt Nam', className: 'right-0 top-[17%]', delay: '1.2s' },
+  { icon: Star, text: 'Giỗ Tổ Hùng Vương', sub: '10 tháng Ba âm lịch', className: 'right-0 top-[34%]', delay: '2.4s' },
 ]
 
+function Badge({ icon: Icon, text, sub }: { icon: LucideIcon; text: string; sub: string }) {
+  return (
+    <>
+      <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary-soft">
+        <Icon aria-hidden className="size-6 text-primary" />
+      </span>
+      <span className="text-sm leading-tight">
+        <span className="block font-bold">{text}</span>
+        <span className="text-muted">{sub}</span>
+      </span>
+    </>
+  )
+}
+
 interface HeroProps {
-  content: RegionContent | null
+  summary: HomeSummary
   regionCount: number
   /** split: chữ bên trái, bản đồ bên phải; stacked: bản đồ dưới chữ */
   layout: 'split' | 'stacked'
@@ -67,16 +85,12 @@ interface HeroProps {
   mapClassName: string
 }
 
-export function Hero({ content, regionCount, layout, className, titleClassName, mapClassName }: HeroProps) {
-  const questions = content?.quizzes.reduce((n, q) => n + q.questions.length, 0) ?? 0
+export function Hero({ summary, regionCount, layout, className, titleClassName, mapClassName }: HeroProps) {
+  // Số liệu tính trên cả bốn vùng, cùng phạm vi với "4 vùng đất"
   const stats = [
     { value: regionCount, label: 'vùng đất' },
-    ...(content
-      ? [
-          { value: content.items.length, label: 'mục khám phá' },
-          { value: questions, label: 'câu hỏi ôn tập' },
-        ]
-      : []),
+    { value: summary.regions.reduce((n, r) => n + r.items.length, 0), label: 'mục khám phá' },
+    { value: summary.regions.reduce((n, r) => n + r.questions, 0), label: 'câu hỏi trắc nghiệm' },
   ]
   return (
     <section
@@ -89,12 +103,12 @@ export function Hero({ content, regionCount, layout, className, titleClassName, 
         <div className="flex flex-col gap-6">
           <p className="inline-flex w-fit items-center gap-2 rounded-full bg-white/80 px-4 py-1.5 text-sm font-semibold text-primary shadow-sm">
             <Sparkles aria-hidden className="size-4 text-accent" />
-            Lịch sử và Địa lí lớp 4 · Theo SGK Kết nối tri thức với cuộc sống
+            Lịch sử và Địa lý lớp 4 · Theo SGK Kết nối tri thức với cuộc sống
           </p>
           <h1 className={`font-extrabold leading-tight text-[#1e293b] ${titleClassName}`}>
             Em khám phá{' '}
             <span className="block bg-gradient-to-r from-primary to-emerald-500 bg-clip-text text-transparent">
-              Lịch sử và Địa lí Việt Nam
+              Lịch sử và Địa lý Việt Nam
             </span>
           </h1>
           <p className="max-w-xl text-lg text-muted">
@@ -117,34 +131,41 @@ export function Hero({ content, regionCount, layout, className, titleClassName, 
               Chơi trắc nghiệm
             </Link>
           </div>
-          <ul className="flex flex-wrap gap-3">
+          <ul className={`grid gap-3 ${layout === 'split' ? 'w-fit grid-cols-[repeat(3,auto)]' : 'grid-cols-3'}`}>
             {stats.map((s) => (
-              <li key={s.label} className="rounded-2xl bg-white/80 px-5 py-3 shadow-sm">
+              <li key={s.label} className={`rounded-2xl bg-white/80 py-3 shadow-sm ${layout === 'split' ? 'px-4' : 'px-3'}`}>
                 <span className="block text-2xl font-extrabold text-primary">{s.value}</span>
-                <span className="text-sm font-semibold text-muted">{s.label}</span>
+                <span className={`block font-semibold leading-tight text-muted ${layout === 'split' ? 'text-sm' : 'text-xs'}`}>{s.label}</span>
               </li>
             ))}
           </ul>
         </div>
 
-        <div className={`relative mx-auto w-full max-w-xl ${mapClassName}`}>
-          <div aria-hidden className="absolute inset-8 rounded-full bg-sky-200/50 blur-2xl" />
-          <MiniVietnamMap regions={repository.getRegions()} className="relative mx-auto h-full drop-shadow-xl" />
-          {BADGES.map(({ icon: Icon, text, sub, className, delay }) => (
-            <div
-              key={text}
-              className={`animate-float absolute flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 shadow-lg ${className}`}
-              style={{ animationDelay: delay }}
-            >
-              <span className="flex size-10 items-center justify-center rounded-xl bg-primary-soft">
-                <Icon aria-hidden className="size-6 text-primary" />
-              </span>
-              <span className="text-sm leading-tight">
-                <span className="block font-bold">{text}</span>
-                <span className="text-muted">{sub}</span>
-              </span>
-            </div>
-          ))}
+        <div className="flex flex-col gap-4">
+          <div className={`relative mx-auto w-full max-w-xl ${mapClassName}`}>
+            <div aria-hidden className="absolute inset-8 rounded-full bg-sky-200/50 blur-2xl" />
+            <MiniVietnamMap regions={repository.getRegions()} className="relative mx-auto h-full drop-shadow-xl" />
+            {layout === 'split' &&
+              BADGES.map(({ className, delay, ...badge }) => (
+                <div
+                  key={badge.text}
+                  className={`animate-float absolute flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 shadow-lg ${className}`}
+                  style={{ animationDelay: delay }}
+                >
+                  <Badge {...badge} />
+                </div>
+              ))}
+          </div>
+          {/* Khung hẹp: huy hiệu xếp thành lưới dưới bản đồ, không đè lên bản đồ và lên nhau */}
+          {layout === 'stacked' && (
+            <ul className="grid grid-cols-[repeat(auto-fit,minmax(14rem,1fr))] gap-3">
+              {BADGES.map(({ icon, text, sub }) => (
+                <li key={text} className="flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 shadow-sm">
+                  <Badge icon={icon} text={text} sub={sub} />
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </section>
@@ -182,7 +203,7 @@ const STEPS: { icon: LucideIcon; title: string; text: string; tone: string }[] =
   },
   {
     icon: BookOpenCheck,
-    title: 'Ôn tập vui',
+    title: 'Trắc nghiệm vui',
     text: 'Trả lời câu hỏi, ghép đôi và xem lại câu sai để nhớ bài lâu hơn.',
     tone: 'bg-amber-100 text-amber-600',
   },
@@ -262,9 +283,9 @@ export function RegionCards({ columns }: { columns: 1 | 2 | 4 }) {
             ) : (
               <div className="flex flex-1 flex-col opacity-80">{body}</div>
             )}
-            {/* Ghi nguồn ảnh Commons (TASL), nằm ngoài link của thẻ vì có link riêng */}
+            {/* Ghi nguồn ảnh Commons (TASL), nằm ngoài link của thẻ vì có link riêng; luôn cao đủ hai dòng để nút của các thẻ cùng hàng thẳng nhau */}
             {cover && (
-              <p className="-mt-2 line-clamp-2 px-5 pb-4 leading-tight">
+              <p className="-mt-2 line-clamp-2 min-h-[calc(2lh+1rem)] px-5 pb-4 text-xs leading-tight">
                 <ImageCredit image={cover} />
               </p>
             )}
@@ -275,9 +296,23 @@ export function RegionCards({ columns }: { columns: 1 | 2 | 4 }) {
   )
 }
 
-export function FunFacts({ content }: { content: RegionContent | null }) {
+/** Xen kẽ các vùng (vùng 1, vùng 2, … rồi quay lại) để mỗi lần bấm "Điều thú vị khác" là một vùng khác */
+function interleave<T>(lists: T[][]): T[] {
+  const longest = Math.max(0, ...lists.map((l) => l.length))
+  return Array.from({ length: longest }, (_, i) => lists.flatMap((l) => (i < l.length ? [l[i]!] : []))).flat()
+}
+
+export function FunFacts({ summary, regions }: { summary: HomeSummary; regions: RegionMeta[] }) {
   const [index, setIndex] = useState(0)
-  const facts = (content?.items ?? []).flatMap((item) => (item.funFacts ?? []).map((fact) => ({ fact, item })))
+  const facts = interleave(
+    summary.regions.map((r) => {
+      const region = regions.find((m) => m.id === r.id)
+      return r.funFacts.flatMap(({ fact, itemId }) => {
+        const item = r.items.find((i) => i.id === itemId)
+        return region && item ? [{ fact, item, region }] : []
+      })
+    }),
+  )
   const current = facts.length > 0 ? facts[index % facts.length] : undefined
 
   return (
@@ -285,7 +320,7 @@ export function FunFacts({ content }: { content: RegionContent | null }) {
       aria-labelledby="fun-title"
       className="relative overflow-hidden rounded-card bg-gradient-to-br from-amber-100 to-orange-50 p-6 shadow-[0_8px_30px_rgb(15_23_42/0.08)]"
     >
-      <Lightbulb aria-hidden className="absolute -right-6 -top-6 size-40 rotate-12 text-amber-200" />
+      <Lightbulb aria-hidden className="absolute -right-8 -top-8 size-32 rotate-12 text-amber-200/70" />
       <h2 id="fun-title" className="relative flex items-center gap-3 text-2xl font-bold">
         <span className="flex size-10 items-center justify-center rounded-xl bg-white">
           <Lightbulb aria-hidden className="size-6 text-amber-500" />
@@ -293,11 +328,16 @@ export function FunFacts({ content }: { content: RegionContent | null }) {
         Em có biết?
       </h2>
       {current ? (
-        <div className="relative mt-5 flex flex-col gap-5">
-          <p key={index} data-testid="fun-fact" className="animate-fade-up min-h-24 text-2xl font-semibold leading-relaxed">
+        <div className="relative mt-5 flex flex-col gap-3">
+          {/* Ghi rõ vùng: câu trong SGK hay viết "vùng" mà không nêu tên */}
+          <p className="inline-flex w-fit items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-sm font-bold text-amber-800">
+            <span aria-hidden className="size-2.5 rounded-full" style={{ background: `var(--color-${current.region.color})` }} />
+            {current.region.name}
+          </p>
+          <p key={index} data-testid="fun-fact" className="animate-fade-up min-h-24 pr-10 text-2xl font-semibold leading-relaxed">
             {current.fact}
           </p>
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="mt-2 flex flex-wrap items-center gap-3">
             <button
               type="button"
               onClick={() => setIndex((i) => i + 1)}
@@ -325,13 +365,12 @@ export function FunFacts({ content }: { content: RegionContent | null }) {
   )
 }
 
-export function ProgressCard({ content, regionCount }: { content: RegionContent | null; regionCount: number }) {
+export function ProgressCard({ summary, regionCount }: { summary: HomeSummary; regionCount: number }) {
   const { state } = useProgress()
-  const recent: ContentItem | undefined = state.recentItemIds
-    .map((id) => content?.items.find((i) => i.id === id))
-    .find((i) => i !== undefined)
-  const itemTotal = content?.items.length ?? 0
-  const viewed = content ? state.viewedItemIds.filter((id) => content.items.some((i) => i.id === id)).length : state.viewedItemIds.length
+  const all = summary.regions.flatMap((r) => r.items)
+  const recent = state.recentItemIds.map((id) => all.find((i) => i.id === id)).find((i) => i !== undefined)
+  const itemTotal = all.length
+  const viewed = state.viewedItemIds.filter((id) => all.some((i) => i.id === id)).length
   const percent = itemTotal ? Math.round((viewed / itemTotal) * 100) : 0
 
   return (
@@ -372,7 +411,7 @@ export function ProgressCard({ content, regionCount }: { content: RegionContent 
         </li>
         <li className="rounded-2xl bg-bg p-4">
           <span className="block text-2xl font-extrabold text-primary">{Object.keys(state.quizzes).length}</span>
-          <span className="text-sm text-muted">bài ôn tập đã làm</span>
+          <span className="text-sm text-muted">bài trắc nghiệm đã làm</span>
         </li>
       </ul>
       {recent ? (
@@ -390,39 +429,58 @@ export function ProgressCard({ content, regionCount }: { content: RegionContent 
   )
 }
 
-/** Các phần của dàn ý vùng đang mở, mỗi phần một ô dẫn vào bản đồ */
-export function ExploreSections(props: { region: RegionMeta; outline: RegionOutline; content: RegionContent | null; columns: 2 | 4 }) {
-  const { region, outline, content, columns } = props
+/** Các phần của dàn ý một vùng, mỗi phần một ô dẫn vào bản đồ; em chọn vùng bằng hàng nút phía trên */
+export function ExploreSections(props: { regions: RegionMeta[]; summary: HomeSummary; columns: 2 | 4 }) {
+  const { regions, summary, columns } = props
+  const choices = regions.filter((r) => r.status === 'active')
+  const [regionId, setRegionId] = useState(choices[0]?.id)
+  const region = choices.find((r) => r.id === regionId)
+  const sections = summary.regions.find((r) => r.id === regionId)?.sections ?? []
+  if (!region) return null
   return (
     <section aria-labelledby="topics-title">
       <SectionTitle id="topics-title" icon={Search} title="Các phần khám phá" subtitle={region.name} />
-      <ul aria-label="Các phần khám phá" className={`grid gap-4 ${COLUMNS[columns]}`}>
-        {outline.sections.map((section) => {
-          const c = section.id
-          const Icon = SECTION_ICONS[c]
-          const style = SECTION_TILE[c]
-          const ids = new Set(content?.items.map((i) => i.id))
-          const filled = section.topics.filter((t) => t.itemIds.some((id) => ids.has(id))).length
-          return (
-            <li key={c}>
-              <Link
-                to={`/ban-do/${region.id}?phan=${c}`}
-                className={`group flex h-full flex-col items-center gap-3 rounded-card border-2 p-6 text-center font-bold shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${style.tile}`}
-              >
-                <span className="flex size-16 items-center justify-center rounded-full bg-white shadow-sm transition group-hover:scale-110">
-                  <Icon aria-hidden className={`size-9 ${style.icon}`} strokeWidth={1.75} />
-                </span>
-                <span data-label>{SECTION_LABELS[c]}</span>
-                {content && (
-                  <span className="text-sm font-semibold text-muted">
-                    {filled}/{section.topics.length} mục có nội dung
+      <div role="group" aria-label="Chọn vùng" className="-mt-1 mb-5 flex flex-wrap gap-2">
+        {choices.map((r) => (
+          <button
+            key={r.id}
+            type="button"
+            aria-pressed={r.id === regionId}
+            onClick={() => setRegionId(r.id)}
+            className={`inline-flex min-h-11 items-center gap-2 rounded-full border-2 px-4 font-semibold transition ${
+              r.id === regionId ? 'border-primary bg-primary text-white' : 'border-line bg-surface hover:border-primary/40'
+            }`}
+          >
+            <span aria-hidden className="size-3 rounded-full ring-2 ring-white" style={{ background: `var(--color-${r.color})` }} />
+            {r.shortName}
+          </button>
+        ))}
+      </div>
+      {sections.length > 0 && (
+        <ul aria-label="Các phần khám phá" className={`grid gap-4 ${COLUMNS[columns]}`}>
+          {sections.map((section) => {
+            const c = section.id
+            const Icon = SECTION_ICONS[c]
+            const style = SECTION_TILE[c]
+            return (
+              <li key={c}>
+                <Link
+                  to={`/ban-do/${region.id}?phan=${c}`}
+                  className={`group flex h-full flex-col items-center gap-3 rounded-card border-2 p-6 text-center font-bold shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${style.tile}`}
+                >
+                  <span className="flex size-16 items-center justify-center rounded-full bg-white shadow-sm transition group-hover:scale-110">
+                    <Icon aria-hidden className={`size-9 ${style.icon}`} strokeWidth={1.75} />
                   </span>
-                )}
-              </Link>
-            </li>
-          )
-        })}
-      </ul>
+                  <span data-label>{SECTION_LABELS[c]}</span>
+                  <span className="text-sm font-semibold text-muted">
+                    {section.filled}/{section.topics} mục có nội dung
+                  </span>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      )}
     </section>
   )
 }

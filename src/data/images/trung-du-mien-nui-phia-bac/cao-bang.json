@@ -33,7 +33,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ban_Gioc_-_Detian_Falls2.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "cao-bang__pac-bo",
@@ -70,7 +70,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:P%C3%A1c_B%C3%B3.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "cao-bang__coc-bo",
@@ -107,7 +107,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:C%E1%BB%91c_B%C3%B3.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "cao-bang__dong-nguom-ngao",
@@ -144,7 +144,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%99ng_Ng%C6%B0%E1%BB%9Dm_Ngao.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "cao-bang__lang-van-hoa-dan-toc-tay-dam-thuy-trung-khanh-cao-bang-vietn",
@@ -181,6 +181,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lang_van_hoa_Dan_toc_Tay,_Dam_Thuy,_Trung_khanh,_Cao_bang,_Vietnam_-_panoramio.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

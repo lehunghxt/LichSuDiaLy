@@ -54,7 +54,7 @@ export function CompactNav({ variant }: CompactNavProps) {
   }
   return (
     <div className="flex items-center gap-3">
-      <Link to="/" aria-label="Em khám phá Lịch sử và Địa lí Việt Nam – Trang chủ" className="shrink-0">
+      <Link to="/" aria-label="Em khám phá Lịch sử và Địa lý Việt Nam – Trang chủ" className="shrink-0">
         <span className="relative flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-300 to-emerald-400 shadow-md">
           <BookOpen aria-hidden className="size-7 text-white" />
           <MapIcon aria-hidden className="absolute -right-1 -top-1 size-5 rounded-md bg-sky-500 p-0.5 text-white" />

@@ -1,4 +1,4 @@
-import { ImageOff, Maximize2 } from 'lucide-react'
+import { ImageOff, Info, Maximize2 } from 'lucide-react'
 import { useRef, useState } from 'react'
 import type { WebImage } from '../../types/content'
 import { ImageCredit } from './ImageCredit'
@@ -14,6 +14,9 @@ interface WebImageFigureProps {
   showCaption?: boolean
   /** Chú thích tối đa 2 dòng (chỗ hẹp); bản đầy đủ có khi xem ảnh lớn. Dòng ghi nguồn luôn hiện đủ */
   clampCaption?: boolean
+  /** compact: ghi nguồn thu vào nút nhỏ "Nguồn ảnh", bấm mới mở (ảnh nhỏ xếp dày, ví dụ dải cây trồng).
+   *  Bản đầy đủ vẫn có khi xem ảnh lớn và ở trang Nguồn ảnh */
+  credit?: 'full' | 'compact'
   /** Tỉ lệ khung, mặc định 4 / 3 */
   aspect?: string
   className?: string
@@ -26,6 +29,7 @@ export function WebImageFigure({
   priority = false,
   showCaption = false,
   clampCaption = false,
+  credit = 'full',
   aspect = '4 / 3',
   className = '',
 }: WebImageFigureProps) {
@@ -80,7 +84,17 @@ export function WebImageFigure({
       </div>
       <figcaption className="flex flex-col gap-0.5 leading-snug">
         {showCaption && <span className={`text-sm ${clampCaption ? 'line-clamp-2' : ''}`}>{image.caption}</span>}
-        <ImageCredit image={image} />
+        {credit === 'full' ? (
+          <ImageCredit image={image} />
+        ) : (
+          <details className="group/credit text-xs text-muted">
+            <summary className="inline-flex min-h-6 cursor-pointer list-none items-center gap-1 rounded-full hover:text-ink [&::-webkit-details-marker]:hidden">
+              <Info aria-hidden className="size-3.5" />
+              Nguồn ảnh
+            </summary>
+            <ImageCredit image={image} />
+          </details>
+        )}
       </figcaption>
       {viewing && <ImageViewer image={image} onClose={closeViewer} />}
     </figure>

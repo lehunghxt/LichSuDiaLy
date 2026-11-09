@@ -13,6 +13,8 @@ interface RegionsLayerProps {
   data: AreaCollection<RegionFeatureProps>
   regions: RegionMeta[]
   selectedRegionId: string | null
+  /** false khi đang xem một tỉnh: ẩn nhãn tên vùng */
+  showCallout: boolean
   onSelectRegion(id: string): void
 }
 
@@ -33,7 +35,7 @@ function regionStyle(color: string, selected: boolean, dimmed: boolean, offshore
 
 type PathWithFeature<P> = L.Path & { feature?: GeoJSON.Feature<GeoJSON.Geometry, P> }
 
-export function RegionsLayer({ data, regions, selectedRegionId, onSelectRegion }: RegionsLayerProps) {
+export function RegionsLayer({ data, regions, selectedRegionId, showCallout, onSelectRegion }: RegionsLayerProps) {
   const map = useMap()
   const device = useDevice()
   const layerRef = useRef<GeoJSONLayer>(null)
@@ -56,17 +58,20 @@ export function RegionsLayer({ data, regions, selectedRegionId, onSelectRegion }
     [styleFor],
   )
 
-  // Theo hình mẫu: giữ toàn quốc, vùng đang chọn có nhãn bong bóng phía trên.
-  // Riêng màn xếp dọc (điện thoại, máy tính bảng) thì phóng vào vùng, vì ở cỡ toàn quốc các tỉnh quá nhỏ để chạm
+  // Chọn vùng: mọi thiết bị đều phóng vào vùng, để các tỉnh và ghim địa danh đủ lớn để chạm, không chồng lên nhau
   useEffect(() => {
-    const zoomIn = regionPadding(device, map.getContainer().clientHeight, legendBox(map))
     if (!selectedRegionId) {
-      if (zoomIn) fitCountry(map, device)
+      fitCountry(map, device)
       return
     }
     // Khung phóng tính cả quần đảo xa bờ: Hoàng Sa, Trường Sa luôn hiện cùng vùng của mình
-    const bounds = zoomIn && regionBounds(data, selectedRegionId)
-    if (zoomIn && bounds) map.fitBounds(bounds, zoomIn)
+    const bounds = regionBounds(data, selectedRegionId)
+    if (bounds) map.fitBounds(bounds, regionPadding(device, map.getContainer().clientHeight, legendBox(map)))
+  }, [selectedRegionId, map, data, device])
+
+  // Nhãn bong bóng tên vùng. Đang xem một tỉnh thì ẩn: bản đồ đã phóng sát tỉnh, nhãn sẽ nằm khuất sau dải chip
+  useEffect(() => {
+    if (!selectedRegionId || !showCallout) return
     let tooltip: L.Tooltip | null = null
     layerRef.current?.eachLayer((l) => {
       const props = (l as PathWithFeature<WithOffshore<RegionFeatureProps>>).feature?.properties
@@ -82,7 +87,7 @@ export function RegionsLayer({ data, regions, selectedRegionId, onSelectRegion }
     return () => {
       if (tooltip) map.closeTooltip(tooltip)
     }
-  }, [selectedRegionId, map, nameOf, data, device])
+  }, [selectedRegionId, showCallout, map, nameOf])
 
   const onEachFeature = (feature: GeoJSON.Feature<GeoJSON.Geometry, WithOffshore<RegionFeatureProps>>, layer: Layer) => {
     const { regionId: id, offshore } = feature.properties

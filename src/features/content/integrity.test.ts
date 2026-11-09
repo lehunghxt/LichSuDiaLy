@@ -1,6 +1,6 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import path from 'node:path'
-import { rawRegionContent, SGK_URL, type RawRegionContent } from '../../test/fixtures'
+import { rawRegionContent, type RawRegionContent } from '../../test/fixtures'
 import { checkIntegrity } from './integrity'
 import { assembleRegionRaw } from './regionFiles'
 import { parseRegionContent, parseRegionList } from './parse'
@@ -16,7 +16,7 @@ function fixture() {
 }
 
 function check(raw: RawRegionContent, manifestIds: string[] = []) {
-  return checkIntegrity([parseRegionContent(raw)], [parseRegionContent(raw).region], new Set(manifestIds), SGK_URL)
+  return checkIntegrity([parseRegionContent(raw)], [parseRegionContent(raw).region], new Set(manifestIds))
 }
 
 test('valid fixture has no problems', () => {
@@ -69,13 +69,15 @@ test('map_locate candidates must have location', () => {
   expect(check(raw)).toContainEqual(expect.stringContaining('"vung-a__khoang-san-1" chưa có tọa độ'))
 })
 
-test('verified items and questions have ≥1 source whose url is the SGK link', () => {
+test('verified items and questions have ≥1 linked source (SGK, or another source for content outside the SGK)', () => {
   const { raw } = fixture()
-  raw.items[0] = { ...raw.items[0]!, sources: [{ title: 'Báo', url: 'https://example.com', note: 'tr. 2' }] }
+  raw.items[0] = { ...raw.items[0]!, sources: [{ title: 'Ghi chép', url: 'ghi-chep-tay', note: 'tr. 2' }] }
   raw.quizzes[0]!.questions[0] = { ...raw.quizzes[0]!.questions[0]!, sources: [] }
   const problems = check(raw)
-  expect(problems).toContainEqual(expect.stringContaining('vung-a__dia-danh-1: đã duyệt nhưng chưa trích nguồn SGK'))
-  expect(problems).toContainEqual(expect.stringContaining('q1: đã duyệt nhưng chưa trích nguồn SGK'))
+  expect(problems).toContainEqual(expect.stringContaining('vung-a__dia-danh-1: đã duyệt nhưng chưa có nguồn'))
+  expect(problems).toContainEqual(expect.stringContaining('q1: đã duyệt nhưng chưa có nguồn'))
+  raw.items[0] = { ...raw.items[0]!, sources: [{ title: 'Wikipedia', url: 'https://vi.wikipedia.org/wiki/X' }] }
+  expect(check(raw)).not.toContainEqual(expect.stringContaining('vung-a__dia-danh-1: đã duyệt'))
 })
 
 test('every imageId exists in image-manifest.json', () => {
@@ -121,7 +123,7 @@ test('real data in src/data passes integrity check', () => {
     return parseRegionContent(assembleRegionRaw(meta, files))
   })
   expect(contents.length).toBeGreaterThan(0)
-  expect(checkIntegrity(contents, regions, manifestIds, SGK_URL)).toEqual([])
+  expect(checkIntegrity(contents, regions, manifestIds)).toEqual([])
 })
 
 test('real image library in src/data/images passes integrity check', () => {

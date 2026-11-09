@@ -37,12 +37,6 @@ test('isPublished hides draft in PROD', () => {
   expect(isPublished('verified')).toBe(true)
 })
 
-test('isPublished shows draft in PROD when VITE_SHOW_DRAFTS=true (bản xem thử)', () => {
-  vi.stubEnv('PROD', true)
-  vi.stubEnv('VITE_SHOW_DRAFTS', 'true')
-  expect(isPublished('draft')).toBe(true)
-})
-
 test('isPublished shows draft in development', () => {
   vi.stubEnv('PROD', false)
   expect(isPublished('draft')).toBe(true)

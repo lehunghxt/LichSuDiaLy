@@ -1,7 +1,7 @@
 [
   {
     "id": "dong-bang-bac-bo__vi-tri-dia-li",
-    "title": "Vị trí địa lí",
+    "title": "Vị trí địa lý",
     "summary": "Đồng bằng Bắc Bộ nằm ở phía bắc nước ta. Phía đông của vùng là biển rộng lớn, giàu tiềm năng.",
     "highlights": [
       "Vùng giáp vùng Trung du và miền núi phía Bắc, vùng Bắc Trung Bộ và Nam Trung Bộ.",
@@ -26,13 +26,13 @@
     "relatedIds": ["dong-bang-bac-bo__dia-hinh", "dong-bang-bac-bo__thuan-loi-kho-khan"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 36,
         "note": "tr. 36–37, Hình 1, 2"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__dia-hinh",
@@ -55,13 +55,13 @@
     "relatedIds": ["dong-bang-bac-bo__vi-tri-dia-li", "dong-bang-bac-bo__song-ngoi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 37,
         "note": "tr. 37, Hình 2"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__khi-hau",
@@ -78,13 +78,13 @@
     "relatedIds": ["dong-bang-bac-bo__thuan-loi-kho-khan"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 38,
         "note": "tr. 38–39"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__song-ngoi",
@@ -107,13 +107,13 @@
     "relatedIds": ["dong-bang-bac-bo__song-hong", "dong-bang-bac-bo__de-song-hong"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 38,
         "note": "tr. 38–39, Hình 3"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__song-hong",
@@ -136,13 +136,13 @@
     "relatedIds": ["dong-bang-bac-bo__song-ngoi", "dong-bang-bac-bo__van-minh-song-hong"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 11. Sông Hồng và văn minh sông Hồng",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 11. Sông Hồng và văn minh sông Hồng",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 50,
         "note": "tr. 50, Hình 1"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__de-song-hong",
@@ -166,13 +166,13 @@
     "relatedIds": ["dong-bang-bac-bo__song-ngoi", "dong-bang-bac-bo__lua-nuoc"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 9. Dân cư và hoạt động sản xuất ở vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 44,
         "note": "tr. 44–45, Hình 5"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__dat-sinh-vat",
@@ -201,13 +201,13 @@
     "relatedIds": ["dong-bang-bac-bo__bao-ve-thien-nhien"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 38,
         "note": "tr. 38–39, Hình 4, 5"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__thuan-loi-kho-khan",
@@ -224,13 +224,13 @@
     "relatedIds": ["dong-bang-bac-bo__khi-hau", "dong-bang-bac-bo__dia-hinh"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 39,
         "note": "tr. 39"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__bao-ve-thien-nhien",
@@ -261,13 +261,13 @@
     "relatedIds": ["dong-bang-bac-bo__dat-sinh-vat"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 8. Thiên nhiên vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 39,
         "note": "tr. 39–40, Hình 6, 7"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__nui-ba-vi",
@@ -289,7 +289,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 21.0583,
       "lng": 105.3664,
@@ -316,7 +316,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 21.161,
       "lng": 106.6975,

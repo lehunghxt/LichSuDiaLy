@@ -33,7 +33,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arriving_in_Nha_Trang_-_Vietnam.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "khanh-hoa__thap-ba-ponagar-panoramio",
@@ -70,7 +70,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Th%C3%A1p_B%C3%A0_PONAGAR_-_panoramio.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "khanh-hoa__po-klong-garai-00",
@@ -107,7 +107,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Po_Klong_Garai_00.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "khanh-hoa__vuon-nho-o-phan-rang-ninh-thuan",
@@ -144,6 +144,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:V%C6%B0%E1%BB%9Dn_Nho_%E1%BB%9F_Phan_Rang,_Ninh_Thu%E1%BA%ADn.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

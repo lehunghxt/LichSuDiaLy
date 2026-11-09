@@ -40,13 +40,13 @@
     "relatedIds": ["dong-bang-bac-bo__nha-o", "dong-bang-bac-bo__le-hoi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 46,
         "note": "tr. 46–47, Hình 1, 2, 3, 4"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__le-hoi",
@@ -70,13 +70,13 @@
     "relatedIds": ["dong-bang-bac-bo__hoi-lim", "dong-bang-bac-bo__lang-que"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 48,
         "note": "tr. 48–49, Hình 8"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__hoi-lim",
@@ -97,7 +97,7 @@
     "relatedIds": ["dong-bang-bac-bo__le-hoi"],
     "sources": [
       {
-        "title": "SGK Lịch sử và Địa lí 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
+        "title": "SGK Lịch sử và Địa lý 4 (KNTT), Bài 10. Một số nét văn hoá ở vùng Đồng bằng Bắc Bộ",
         "url": "https://taphuan.nxbgd.vn/tap-huan/doc-sach/sgk-lich-su-va-dia-li-4.4756030172",
         "page": 48,
         "note": "tr. 48–49, Hình 7"
@@ -113,7 +113,7 @@
         "note": "toạ độ (P625)"
       }
     ],
-    "status": "draft",
+    "status": "verified",
     "location": {
       "lat": 21.1428,
       "lng": 106.0203,
@@ -141,7 +141,7 @@
         "url": "https://vi.wikipedia.org/wiki/H%E1%BB%99i_Gi%C3%B3ng"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__le-hoi-chua-huong",
@@ -161,7 +161,7 @@
         "url": "https://vi.wikipedia.org/wiki/Ch%C3%B9a_H%C6%B0%C6%A1ng"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__ao-tu-than",
@@ -181,7 +181,7 @@
         "url": "https://vi.wikipedia.org/wiki/%C3%81o_t%E1%BB%A9_th%C3%A2n"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "dong-bang-bac-bo__am-thuc",
@@ -205,6 +205,6 @@
         "url": "https://vi.wikipedia.org/wiki/B%C3%A1nh_ch%C6%B0ng"
       }
     ],
-    "status": "draft"
+    "status": "verified"
   }
 ]

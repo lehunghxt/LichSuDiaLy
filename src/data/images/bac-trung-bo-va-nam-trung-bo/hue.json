@@ -34,7 +34,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hue_Vietnam_Citadel-of-Hu%E1%BA%BF-01.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "hue__hue-vietnam-thien-mu-temple-and-pagoda-01",
@@ -71,7 +71,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hue_Vietnam_Thien-Mu-Temple-and-Pagoda-01.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "hue__emperor-khai-dinh-in-hue-39543600561",
@@ -108,7 +108,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emperor_Khai_Dinh_in_Hue_(39543600561).jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "hue__nui-ngu-binh",
@@ -145,6 +145,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nui_Ngu_Binh.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]

@@ -34,7 +34,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Constellation_of_Literature_pavilion,_Temple_of_Literature,_Hanoi,_Vietnam,_20240123_0939_3103.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ha-noi__hanoi-turtle-tower-thap-rua-hoan-kiem-lake",
@@ -72,7 +72,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hanoi_-_Turtle_Tower_(Th%C3%A1p_R%C3%B9a),_Ho%C3%A0n_Ki%E1%BA%BFm_Lake.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ha-noi__one-pillar-pagoda-hanoi-vietnam-20240123-1122-3219",
@@ -109,7 +109,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:One_Pillar_Pagoda,_Hanoi,_Vietnam,_20240123_1122_3219.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ha-noi__central-sector-of-the-imperial-citadel-of-thang-long-hanoi",
@@ -145,7 +145,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Central_Sector_of_the_Imperial_Citadel_of_Thang_Long_-_Hanoi.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ha-noi__hanoi-vietnam-mausoleum-of-ho-chi-minh-03",
@@ -182,7 +182,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hanoi_Vietnam_Mausoleum-of-Ho-Chi-Minh-03.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ha-noi__co-loa-drums",
@@ -218,7 +218,7 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Co_Loa_drums.JPG"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ha-noi__bat-trang-ceramic-village1",
@@ -255,7 +255,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bat-Trang-Ceramic-Village1.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ha-noi__huong-pagoda-huong1550",
@@ -292,7 +292,7 @@
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huong_Pagoda_-_Huong1550.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   },
   {
     "id": "ha-noi__hanoi-skyline-with-ba-vi-mountain",
@@ -328,6 +328,6 @@
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hanoi_skyline_with_Ba_Vi_Mountain.jpg"
     },
-    "status": "draft"
+    "status": "verified"
   }
 ]
