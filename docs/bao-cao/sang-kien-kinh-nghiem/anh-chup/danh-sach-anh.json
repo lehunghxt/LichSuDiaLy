@@ -1,0 +1,1786 @@
+[
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "01-trang-chu",
+    "group": null,
+    "file": "dien-thoai/01-trang-chu/01-dau-trang.png",
+    "caption": "Trang chủ: lời chào, nút bắt đầu khám phá và số liệu tổng quát"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "01-trang-chu",
+    "group": null,
+    "file": "dien-thoai/01-trang-chu/02-toan-trang.png",
+    "caption": "Trang chủ (toàn trang): bốn vùng theo SGK, mỗi vùng một thẻ có ảnh bìa"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "02-ban-do-viet-nam",
+    "group": null,
+    "file": "dien-thoai/02-ban-do-viet-nam/01-ban-do-tong-quat.png",
+    "caption": "Bản đồ Việt Nam 34 tỉnh, thành phố, có quần đảo Hoàng Sa, Trường Sa và dòng chữ chủ quyền"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "02-ban-do-viet-nam",
+    "group": null,
+    "file": "dien-thoai/02-ban-do-viet-nam/02-danh-sach-vung.png",
+    "caption": "Khung thông tin trượt lên: danh sách 4 vùng để chọn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/01-ban-do-vung.png",
+    "caption": "Trung du và miền núi phía Bắc: bản đồ phóng tới vùng, các điểm địa danh màu đỏ và khung thông tin vùng"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/02-gioi-thieu-vung.png",
+    "caption": "Trung du và miền núi phía Bắc – khung thông tin: ảnh bìa, lời giới thiệu vùng"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/03-dan-y-thien-nhien-dan-cu.png",
+    "caption": "Trung du và miền núi phía Bắc – dàn ý theo SGK: Thiên nhiên; Dân cư và hoạt động sản xuất"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/04-dan-y-van-hoa-lich-su.png",
+    "caption": "Trung du và miền núi phía Bắc – dàn ý theo SGK: Văn hóa; Lịch sử và di tích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/05-dia-diem-tieu-bieu.png",
+    "caption": "Trung du và miền núi phía Bắc – một số địa điểm tiêu biểu, ảnh và hình ảnh của vùng"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/06-cay-trong-tieu-bieu.png",
+    "caption": "Trung du và miền núi phía Bắc – cây trồng tiêu biểu (cây công nghiệp, cây nông nghiệp) có ghi trang SGK"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/08-bai-hoc-1.png",
+    "caption": "Trung du và miền núi phía Bắc – cửa sổ bài học «Chợ phiên vùng cao»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/09-bai-hoc-1-cuon.png",
+    "caption": "Trung du và miền núi phía Bắc – bài học «Chợ phiên vùng cao» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/10-bai-hoc-2.png",
+    "caption": "Trung du và miền núi phía Bắc – cửa sổ bài học «Đền Hùng và lễ giỗ Tổ Hùng Vương»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/11-bai-hoc-2-cuon.png",
+    "caption": "Trung du và miền núi phía Bắc – bài học «Đền Hùng và lễ giỗ Tổ Hùng Vương» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/12-xem-anh-lon.png",
+    "caption": "Trung du và miền núi phía Bắc – xem ảnh lớn kèm chú thích tác giả, giấy phép"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/13-tinh-lao-cai.png",
+    "caption": "Trung du và miền núi phía Bắc – chọn tỉnh Lào Cai: tỉnh được tô đậm, khung hiện thẻ Tỉnh"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/14-tinh-lao-cai-cuon.png",
+    "caption": "Trung du và miền núi phía Bắc – thông tin tỉnh Lào Cai (cuộn xuống): địa danh, bài học nhắc tới tỉnh"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/15-tinh-lao-cai-cuoi.png",
+    "caption": "Trung du và miền núi phía Bắc – thông tin tỉnh Lào Cai (cuối): cây trồng, lễ hội qua video (Ngoài SGK) có nhãn và nguồn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/16-the-ca-vung.png",
+    "caption": "Trung du và miền núi phía Bắc – thẻ Cả vùng: xem thông tin vùng mà vẫn giữ tỉnh Lào Cai đang chọn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/17-trac-nghiem-cau-dau.png",
+    "caption": "Trung du và miền núi phía Bắc – bài trắc nghiệm «Khám phá Trung du và miền núi phía Bắc»: câu hỏi một đáp án, thanh tiến độ"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/18-tra-loi-dung.png",
+    "caption": "Trung du và miền núi phía Bắc – trả lời đúng: báo đúng ngay, có lời giải thích và trang SGK"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/19-tra-loi-sai.png",
+    "caption": "Trung du và miền núi phía Bắc – trả lời sai: hiện đáp án đúng và lời giải thích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/20-cau-dung-sai.png",
+    "caption": "Trung du và miền núi phía Bắc – câu hỏi Đúng / Sai"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/21-cau-ghep-doi.png",
+    "caption": "Trung du và miền núi phía Bắc – câu hỏi Ghép đôi"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/22-ghep-doi-ket-qua.png",
+    "caption": "Trung du và miền núi phía Bắc – Ghép đôi: kết quả sau khi bấm Kiểm tra"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/23-cau-chi-diem-ban-do.png",
+    "caption": "Trung du và miền núi phía Bắc – câu hỏi Chỉ điểm trên bản đồ: chọn điểm A, B hoặc C"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/24-chi-diem-ket-qua.png",
+    "caption": "Trung du và miền núi phía Bắc – Chỉ điểm trên bản đồ: kết quả và giải thích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/25-ket-qua-bai-lam.png",
+    "caption": "Trung du và miền núi phía Bắc – kết quả bài làm: số câu đúng, nút Chơi lại và Xem lại câu sai"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "dien-thoai/03-vung-trung-du-mien-nui-phia-bac/26-xem-lai-cau-sai.png",
+    "caption": "Trung du và miền núi phía Bắc – xem lại câu sai: đáp án đúng và giải thích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/01-ban-do-vung.png",
+    "caption": "Đồng bằng Bắc Bộ: bản đồ phóng tới vùng, các điểm địa danh màu đỏ và khung thông tin vùng"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/02-gioi-thieu-vung.png",
+    "caption": "Đồng bằng Bắc Bộ – khung thông tin: ảnh bìa, lời giới thiệu vùng"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/03-dan-y-thien-nhien-dan-cu.png",
+    "caption": "Đồng bằng Bắc Bộ – dàn ý theo SGK: Thiên nhiên; Dân cư và hoạt động sản xuất"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/04-dan-y-van-hoa-lich-su.png",
+    "caption": "Đồng bằng Bắc Bộ – dàn ý theo SGK: Văn hóa; Lịch sử và di tích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/05-dia-diem-tieu-bieu.png",
+    "caption": "Đồng bằng Bắc Bộ – một số địa điểm tiêu biểu, ảnh và hình ảnh của vùng"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/06-cay-trong-tieu-bieu.png",
+    "caption": "Đồng bằng Bắc Bộ – cây trồng tiêu biểu (cây công nghiệp, cây nông nghiệp) có ghi trang SGK"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/07-bam-diem-tren-ban-do.png",
+    "caption": "Đồng bằng Bắc Bộ – bấm vào một điểm đỏ trên bản đồ: hiện tên địa danh và đường dẫn tới bài học"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/08-bai-hoc-1.png",
+    "caption": "Đồng bằng Bắc Bộ – cửa sổ bài học «Hội Lim và dân ca Quan họ»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/09-bai-hoc-1-cuon.png",
+    "caption": "Đồng bằng Bắc Bộ – bài học «Hội Lim và dân ca Quan họ» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/10-bai-hoc-2.png",
+    "caption": "Đồng bằng Bắc Bộ – cửa sổ bài học «Văn Miếu – Quốc Tử Giám»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/11-bai-hoc-2-cuon.png",
+    "caption": "Đồng bằng Bắc Bộ – bài học «Văn Miếu – Quốc Tử Giám» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/12-xem-anh-lon.png",
+    "caption": "Đồng bằng Bắc Bộ – xem ảnh lớn kèm chú thích tác giả, giấy phép"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/13-tinh-ha-noi.png",
+    "caption": "Đồng bằng Bắc Bộ – chọn tỉnh Hà Nội: tỉnh được tô đậm, khung hiện thẻ Tỉnh"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/14-tinh-ha-noi-cuon.png",
+    "caption": "Đồng bằng Bắc Bộ – thông tin tỉnh Hà Nội (cuộn xuống): địa danh, bài học nhắc tới tỉnh"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/15-tinh-ha-noi-cuoi.png",
+    "caption": "Đồng bằng Bắc Bộ – thông tin tỉnh Hà Nội (cuối): cây trồng, lễ hội qua video (Ngoài SGK) có nhãn và nguồn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/16-the-ca-vung.png",
+    "caption": "Đồng bằng Bắc Bộ – thẻ Cả vùng: xem thông tin vùng mà vẫn giữ tỉnh Hà Nội đang chọn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/17-trac-nghiem-cau-dau.png",
+    "caption": "Đồng bằng Bắc Bộ – bài trắc nghiệm «Khám phá Đồng bằng Bắc Bộ»: câu hỏi một đáp án, thanh tiến độ"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/18-tra-loi-dung.png",
+    "caption": "Đồng bằng Bắc Bộ – trả lời đúng: báo đúng ngay, có lời giải thích và trang SGK"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/19-tra-loi-sai.png",
+    "caption": "Đồng bằng Bắc Bộ – trả lời sai: hiện đáp án đúng và lời giải thích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/20-cau-dung-sai.png",
+    "caption": "Đồng bằng Bắc Bộ – câu hỏi Đúng / Sai"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/21-cau-ghep-doi.png",
+    "caption": "Đồng bằng Bắc Bộ – câu hỏi Ghép đôi"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/22-ghep-doi-ket-qua.png",
+    "caption": "Đồng bằng Bắc Bộ – Ghép đôi: kết quả sau khi bấm Kiểm tra"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/25-ket-qua-bai-lam.png",
+    "caption": "Đồng bằng Bắc Bộ – kết quả bài làm: số câu đúng, nút Chơi lại và Xem lại câu sai"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "dien-thoai/04-vung-dong-bang-bac-bo/26-xem-lai-cau-sai.png",
+    "caption": "Đồng bằng Bắc Bộ – xem lại câu sai: đáp án đúng và giải thích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/01-ban-do-vung.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ: bản đồ phóng tới vùng, các điểm địa danh màu đỏ và khung thông tin vùng"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/02-gioi-thieu-vung.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – khung thông tin: ảnh bìa, lời giới thiệu vùng"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/03-dan-y-thien-nhien-dan-cu.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – dàn ý theo SGK: Thiên nhiên; Dân cư và hoạt động sản xuất"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/04-dan-y-van-hoa-lich-su.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – dàn ý theo SGK: Văn hóa; Lịch sử và di tích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/05-dia-diem-tieu-bieu.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – một số địa điểm tiêu biểu, ảnh và hình ảnh của vùng"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/06-cay-trong-tieu-bieu.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – cây trồng tiêu biểu (cây công nghiệp, cây nông nghiệp) có ghi trang SGK"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/07-bam-diem-tren-ban-do.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – bấm vào một điểm đỏ trên bản đồ: hiện tên địa danh và đường dẫn tới bài học"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/08-bai-hoc-1.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – cửa sổ bài học «Lễ hội Cầu ngư»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/09-bai-hoc-1-cuon.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – bài học «Lễ hội Cầu ngư» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/10-bai-hoc-2.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – cửa sổ bài học «Cố đô Huế»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/11-bai-hoc-2-cuon.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – bài học «Cố đô Huế» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/12-xem-anh-lon.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – xem ảnh lớn kèm chú thích tác giả, giấy phép"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/13-tinh-thanh-hoa.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – chọn tỉnh Thanh Hóa: tỉnh được tô đậm, khung hiện thẻ Tỉnh"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/14-tinh-thanh-hoa-cuon.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – thông tin tỉnh Thanh Hóa (cuộn xuống): địa danh, bài học nhắc tới tỉnh"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/15-tinh-thanh-hoa-cuoi.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – thông tin tỉnh Thanh Hóa (cuối): cây trồng, lễ hội qua video (Ngoài SGK) có nhãn và nguồn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/16-the-ca-vung.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – thẻ Cả vùng: xem thông tin vùng mà vẫn giữ tỉnh Thanh Hóa đang chọn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/17-trac-nghiem-cau-dau.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – bài trắc nghiệm «Khám phá Bắc Trung Bộ và Nam Trung Bộ»: câu hỏi một đáp án, thanh tiến độ"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/18-tra-loi-dung.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – trả lời đúng: báo đúng ngay, có lời giải thích và trang SGK"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/19-tra-loi-sai.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – trả lời sai: hiện đáp án đúng và lời giải thích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/20-cau-dung-sai.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – câu hỏi Đúng / Sai"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/21-cau-ghep-doi.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – câu hỏi Ghép đôi"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/22-ghep-doi-ket-qua.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – Ghép đôi: kết quả sau khi bấm Kiểm tra"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/23-cau-chi-diem-ban-do.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – câu hỏi Chỉ điểm trên bản đồ: chọn điểm A, B hoặc C"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/24-chi-diem-ket-qua.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – Chỉ điểm trên bản đồ: kết quả và giải thích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/25-ket-qua-bai-lam.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – kết quả bài làm: số câu đúng, nút Chơi lại và Xem lại câu sai"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "dien-thoai/05-vung-bac-trung-bo-va-nam-trung-bo/26-xem-lai-cau-sai.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – xem lại câu sai: đáp án đúng và giải thích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/01-ban-do-vung.png",
+    "caption": "Nam Bộ: bản đồ phóng tới vùng, các điểm địa danh màu đỏ và khung thông tin vùng"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/02-gioi-thieu-vung.png",
+    "caption": "Nam Bộ – khung thông tin: ảnh bìa, lời giới thiệu vùng"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/03-dan-y-thien-nhien-dan-cu.png",
+    "caption": "Nam Bộ – dàn ý theo SGK: Thiên nhiên; Dân cư và hoạt động sản xuất"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/04-dan-y-van-hoa-lich-su.png",
+    "caption": "Nam Bộ – dàn ý theo SGK: Văn hóa; Lịch sử và di tích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/05-dia-diem-tieu-bieu.png",
+    "caption": "Nam Bộ – một số địa điểm tiêu biểu, ảnh và hình ảnh của vùng"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/06-cay-trong-tieu-bieu.png",
+    "caption": "Nam Bộ – cây trồng tiêu biểu (cây công nghiệp, cây nông nghiệp) có ghi trang SGK"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/07-bam-diem-tren-ban-do.png",
+    "caption": "Nam Bộ – bấm vào một điểm đỏ trên bản đồ: hiện tên địa danh và đường dẫn tới bài học"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/08-bai-hoc-1.png",
+    "caption": "Nam Bộ – cửa sổ bài học «Chợ nổi Cái Răng»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/09-bai-hoc-1-cuon.png",
+    "caption": "Nam Bộ – bài học «Chợ nổi Cái Răng» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/10-bai-hoc-2.png",
+    "caption": "Nam Bộ – cửa sổ bài học «Địa đạo Củ Chi»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/11-bai-hoc-2-cuon.png",
+    "caption": "Nam Bộ – bài học «Địa đạo Củ Chi» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/12-xem-anh-lon.png",
+    "caption": "Nam Bộ – xem ảnh lớn kèm chú thích tác giả, giấy phép"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/13-tinh-can-tho.png",
+    "caption": "Nam Bộ – chọn tỉnh Cần Thơ: tỉnh được tô đậm, khung hiện thẻ Tỉnh"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/14-tinh-can-tho-cuon.png",
+    "caption": "Nam Bộ – thông tin tỉnh Cần Thơ (cuộn xuống): địa danh, bài học nhắc tới tỉnh"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/15-tinh-can-tho-cuoi.png",
+    "caption": "Nam Bộ – thông tin tỉnh Cần Thơ (cuối): cây trồng, lễ hội qua video (Ngoài SGK) có nhãn và nguồn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/16-the-ca-vung.png",
+    "caption": "Nam Bộ – thẻ Cả vùng: xem thông tin vùng mà vẫn giữ tỉnh Cần Thơ đang chọn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/17-trac-nghiem-cau-dau.png",
+    "caption": "Nam Bộ – bài trắc nghiệm «Khám phá Nam Bộ»: câu hỏi một đáp án, thanh tiến độ"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/18-tra-loi-dung.png",
+    "caption": "Nam Bộ – trả lời đúng: báo đúng ngay, có lời giải thích và trang SGK"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/19-tra-loi-sai.png",
+    "caption": "Nam Bộ – trả lời sai: hiện đáp án đúng và lời giải thích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/20-cau-dung-sai.png",
+    "caption": "Nam Bộ – câu hỏi Đúng / Sai"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/21-cau-ghep-doi.png",
+    "caption": "Nam Bộ – câu hỏi Ghép đôi"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/22-ghep-doi-ket-qua.png",
+    "caption": "Nam Bộ – Ghép đôi: kết quả sau khi bấm Kiểm tra"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/23-cau-chi-diem-ban-do.png",
+    "caption": "Nam Bộ – câu hỏi Chỉ điểm trên bản đồ: chọn điểm A, B hoặc C"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/24-chi-diem-ket-qua.png",
+    "caption": "Nam Bộ – Chỉ điểm trên bản đồ: kết quả và giải thích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/25-ket-qua-bai-lam.png",
+    "caption": "Nam Bộ – kết quả bài làm: số câu đúng, nút Chơi lại và Xem lại câu sai"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "dien-thoai/06-vung-nam-bo/26-xem-lai-cau-sai.png",
+    "caption": "Nam Bộ – xem lại câu sai: đáp án đúng và giải thích"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "07-trac-nghiem",
+    "group": null,
+    "file": "dien-thoai/07-trac-nghiem/01-danh-sach-bai.png",
+    "caption": "Danh sách bài trắc nghiệm sau khi làm: mỗi vùng một bài, ghi số câu và điểm cao nhất"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "08-tien-do-hoc-tap",
+    "group": null,
+    "file": "dien-thoai/08-tien-do-hoc-tap/01-khi-chua-hoc.png",
+    "caption": "Tiến độ khi em chưa học: lời mời bắt đầu khám phá bản đồ"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "08-tien-do-hoc-tap",
+    "group": null,
+    "file": "dien-thoai/08-tien-do-hoc-tap/02-sau-khi-hoc.png",
+    "caption": "Tiến độ học tập sau khi học: số mục đã xem theo vùng, điểm cao nhất từng bài"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "09-nguon-tham-khao",
+    "group": null,
+    "file": "dien-thoai/09-nguon-tham-khao/01-nguon-tham-khao.png",
+    "caption": "Nguồn tham khảo: các bài, trang SGK và nguồn ngoài được dẫn"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "10-nguon-anh",
+    "group": null,
+    "file": "dien-thoai/10-nguon-anh/01-nguon-anh.png",
+    "caption": "Nguồn ảnh: tác giả, giấy phép và trang gốc của mọi ảnh"
+  },
+  {
+    "device": "dien-thoai",
+    "deviceLabel": "Điện thoại",
+    "folder": "11-trang-loi",
+    "group": null,
+    "file": "dien-thoai/11-trang-loi/01-khong-tim-thay.png",
+    "caption": "Trang báo không tìm thấy khi gõ sai đường dẫn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "01-trang-chu",
+    "group": null,
+    "file": "may-tinh/01-trang-chu/01-dau-trang.png",
+    "caption": "Trang chủ: lời chào, nút bắt đầu khám phá và số liệu tổng quát"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "01-trang-chu",
+    "group": null,
+    "file": "may-tinh/01-trang-chu/02-toan-trang.png",
+    "caption": "Trang chủ (toàn trang): bốn vùng theo SGK, mỗi vùng một thẻ có ảnh bìa"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "02-ban-do-viet-nam",
+    "group": null,
+    "file": "may-tinh/02-ban-do-viet-nam/01-ban-do-tong-quat.png",
+    "caption": "Bản đồ Việt Nam 34 tỉnh, thành phố, có quần đảo Hoàng Sa, Trường Sa và dòng chữ chủ quyền"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "02-ban-do-viet-nam",
+    "group": null,
+    "file": "may-tinh/02-ban-do-viet-nam/02-danh-sach-vung.png",
+    "caption": "Khung bên phải: danh sách 4 vùng, mỗi vùng ghi số tỉnh, thành phố"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/01-ban-do-vung.png",
+    "caption": "Trung du và miền núi phía Bắc: bản đồ phóng tới vùng, các điểm địa danh màu đỏ và khung thông tin vùng"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/02-gioi-thieu-vung.png",
+    "caption": "Trung du và miền núi phía Bắc – khung thông tin: ảnh bìa, lời giới thiệu vùng"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/03-dan-y-thien-nhien-dan-cu.png",
+    "caption": "Trung du và miền núi phía Bắc – dàn ý theo SGK: Thiên nhiên; Dân cư và hoạt động sản xuất"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/04-dan-y-van-hoa-lich-su.png",
+    "caption": "Trung du và miền núi phía Bắc – dàn ý theo SGK: Văn hóa; Lịch sử và di tích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/05-dia-diem-tieu-bieu.png",
+    "caption": "Trung du và miền núi phía Bắc – một số địa điểm tiêu biểu, ảnh và hình ảnh của vùng"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/06-cay-trong-tieu-bieu.png",
+    "caption": "Trung du và miền núi phía Bắc – cây trồng tiêu biểu (cây công nghiệp, cây nông nghiệp) có ghi trang SGK"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/07-bam-diem-tren-ban-do.png",
+    "caption": "Trung du và miền núi phía Bắc – bấm vào một điểm đỏ trên bản đồ: hiện tên địa danh và đường dẫn tới bài học"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/08-bai-hoc-1.png",
+    "caption": "Trung du và miền núi phía Bắc – cửa sổ bài học «Chợ phiên vùng cao»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/09-bai-hoc-1-cuon.png",
+    "caption": "Trung du và miền núi phía Bắc – bài học «Chợ phiên vùng cao» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/10-bai-hoc-2.png",
+    "caption": "Trung du và miền núi phía Bắc – cửa sổ bài học «Đền Hùng và lễ giỗ Tổ Hùng Vương»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/11-bai-hoc-2-cuon.png",
+    "caption": "Trung du và miền núi phía Bắc – bài học «Đền Hùng và lễ giỗ Tổ Hùng Vương» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/12-xem-anh-lon.png",
+    "caption": "Trung du và miền núi phía Bắc – xem ảnh lớn kèm chú thích tác giả, giấy phép"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/13-tinh-lao-cai.png",
+    "caption": "Trung du và miền núi phía Bắc – chọn tỉnh Lào Cai: tỉnh được tô đậm, khung hiện thẻ Tỉnh"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/14-tinh-lao-cai-cuon.png",
+    "caption": "Trung du và miền núi phía Bắc – thông tin tỉnh Lào Cai (cuộn xuống): địa danh, bài học nhắc tới tỉnh"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/15-tinh-lao-cai-cuoi.png",
+    "caption": "Trung du và miền núi phía Bắc – thông tin tỉnh Lào Cai (cuối): cây trồng, lễ hội qua video (Ngoài SGK) có nhãn và nguồn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/16-the-ca-vung.png",
+    "caption": "Trung du và miền núi phía Bắc – thẻ Cả vùng: xem thông tin vùng mà vẫn giữ tỉnh Lào Cai đang chọn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/17-trac-nghiem-cau-dau.png",
+    "caption": "Trung du và miền núi phía Bắc – bài trắc nghiệm «Khám phá Trung du và miền núi phía Bắc»: câu hỏi một đáp án, thanh tiến độ"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/18-tra-loi-dung.png",
+    "caption": "Trung du và miền núi phía Bắc – trả lời đúng: báo đúng ngay, có lời giải thích và trang SGK"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/19-tra-loi-sai.png",
+    "caption": "Trung du và miền núi phía Bắc – trả lời sai: hiện đáp án đúng và lời giải thích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/20-cau-dung-sai.png",
+    "caption": "Trung du và miền núi phía Bắc – câu hỏi Đúng / Sai"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/21-cau-ghep-doi.png",
+    "caption": "Trung du và miền núi phía Bắc – câu hỏi Ghép đôi"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/22-ghep-doi-ket-qua.png",
+    "caption": "Trung du và miền núi phía Bắc – Ghép đôi: kết quả sau khi bấm Kiểm tra"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/23-cau-chi-diem-ban-do.png",
+    "caption": "Trung du và miền núi phía Bắc – câu hỏi Chỉ điểm trên bản đồ: chọn điểm A, B hoặc C"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/24-chi-diem-ket-qua.png",
+    "caption": "Trung du và miền núi phía Bắc – Chỉ điểm trên bản đồ: kết quả và giải thích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/25-ket-qua-bai-lam.png",
+    "caption": "Trung du và miền núi phía Bắc – kết quả bài làm: số câu đúng, nút Chơi lại và Xem lại câu sai"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "03-vung-trung-du-mien-nui-phia-bac",
+    "group": null,
+    "file": "may-tinh/03-vung-trung-du-mien-nui-phia-bac/26-xem-lai-cau-sai.png",
+    "caption": "Trung du và miền núi phía Bắc – xem lại câu sai: đáp án đúng và giải thích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/01-ban-do-vung.png",
+    "caption": "Đồng bằng Bắc Bộ: bản đồ phóng tới vùng, các điểm địa danh màu đỏ và khung thông tin vùng"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/02-gioi-thieu-vung.png",
+    "caption": "Đồng bằng Bắc Bộ – khung thông tin: ảnh bìa, lời giới thiệu vùng"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/03-dan-y-thien-nhien-dan-cu.png",
+    "caption": "Đồng bằng Bắc Bộ – dàn ý theo SGK: Thiên nhiên; Dân cư và hoạt động sản xuất"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/04-dan-y-van-hoa-lich-su.png",
+    "caption": "Đồng bằng Bắc Bộ – dàn ý theo SGK: Văn hóa; Lịch sử và di tích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/05-dia-diem-tieu-bieu.png",
+    "caption": "Đồng bằng Bắc Bộ – một số địa điểm tiêu biểu, ảnh và hình ảnh của vùng"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/06-cay-trong-tieu-bieu.png",
+    "caption": "Đồng bằng Bắc Bộ – cây trồng tiêu biểu (cây công nghiệp, cây nông nghiệp) có ghi trang SGK"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/07-bam-diem-tren-ban-do.png",
+    "caption": "Đồng bằng Bắc Bộ – bấm vào một điểm đỏ trên bản đồ: hiện tên địa danh và đường dẫn tới bài học"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/08-bai-hoc-1.png",
+    "caption": "Đồng bằng Bắc Bộ – cửa sổ bài học «Hội Lim và dân ca Quan họ»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/09-bai-hoc-1-cuon.png",
+    "caption": "Đồng bằng Bắc Bộ – bài học «Hội Lim và dân ca Quan họ» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/10-bai-hoc-2.png",
+    "caption": "Đồng bằng Bắc Bộ – cửa sổ bài học «Văn Miếu – Quốc Tử Giám»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/11-bai-hoc-2-cuon.png",
+    "caption": "Đồng bằng Bắc Bộ – bài học «Văn Miếu – Quốc Tử Giám» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/12-xem-anh-lon.png",
+    "caption": "Đồng bằng Bắc Bộ – xem ảnh lớn kèm chú thích tác giả, giấy phép"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/13-tinh-ha-noi.png",
+    "caption": "Đồng bằng Bắc Bộ – chọn tỉnh Hà Nội: tỉnh được tô đậm, khung hiện thẻ Tỉnh"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/14-tinh-ha-noi-cuon.png",
+    "caption": "Đồng bằng Bắc Bộ – thông tin tỉnh Hà Nội (cuộn xuống): địa danh, bài học nhắc tới tỉnh"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/15-tinh-ha-noi-cuoi.png",
+    "caption": "Đồng bằng Bắc Bộ – thông tin tỉnh Hà Nội (cuối): cây trồng, lễ hội qua video (Ngoài SGK) có nhãn và nguồn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/16-the-ca-vung.png",
+    "caption": "Đồng bằng Bắc Bộ – thẻ Cả vùng: xem thông tin vùng mà vẫn giữ tỉnh Hà Nội đang chọn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/17-trac-nghiem-cau-dau.png",
+    "caption": "Đồng bằng Bắc Bộ – bài trắc nghiệm «Khám phá Đồng bằng Bắc Bộ»: câu hỏi một đáp án, thanh tiến độ"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/18-tra-loi-dung.png",
+    "caption": "Đồng bằng Bắc Bộ – trả lời đúng: báo đúng ngay, có lời giải thích và trang SGK"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/19-tra-loi-sai.png",
+    "caption": "Đồng bằng Bắc Bộ – trả lời sai: hiện đáp án đúng và lời giải thích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/20-cau-dung-sai.png",
+    "caption": "Đồng bằng Bắc Bộ – câu hỏi Đúng / Sai"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/21-cau-ghep-doi.png",
+    "caption": "Đồng bằng Bắc Bộ – câu hỏi Ghép đôi"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/22-ghep-doi-ket-qua.png",
+    "caption": "Đồng bằng Bắc Bộ – Ghép đôi: kết quả sau khi bấm Kiểm tra"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/25-ket-qua-bai-lam.png",
+    "caption": "Đồng bằng Bắc Bộ – kết quả bài làm: số câu đúng, nút Chơi lại và Xem lại câu sai"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "04-vung-dong-bang-bac-bo",
+    "group": null,
+    "file": "may-tinh/04-vung-dong-bang-bac-bo/26-xem-lai-cau-sai.png",
+    "caption": "Đồng bằng Bắc Bộ – xem lại câu sai: đáp án đúng và giải thích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/01-ban-do-vung.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ: bản đồ phóng tới vùng, các điểm địa danh màu đỏ và khung thông tin vùng"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/02-gioi-thieu-vung.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – khung thông tin: ảnh bìa, lời giới thiệu vùng"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/03-dan-y-thien-nhien-dan-cu.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – dàn ý theo SGK: Thiên nhiên; Dân cư và hoạt động sản xuất"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/04-dan-y-van-hoa-lich-su.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – dàn ý theo SGK: Văn hóa; Lịch sử và di tích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/05-dia-diem-tieu-bieu.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – một số địa điểm tiêu biểu, ảnh và hình ảnh của vùng"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/06-cay-trong-tieu-bieu.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – cây trồng tiêu biểu (cây công nghiệp, cây nông nghiệp) có ghi trang SGK"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/07-bam-diem-tren-ban-do.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – bấm vào một điểm đỏ trên bản đồ: hiện tên địa danh và đường dẫn tới bài học"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/08-bai-hoc-1.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – cửa sổ bài học «Lễ hội Cầu ngư»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/09-bai-hoc-1-cuon.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – bài học «Lễ hội Cầu ngư» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/10-bai-hoc-2.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – cửa sổ bài học «Cố đô Huế»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/11-bai-hoc-2-cuon.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – bài học «Cố đô Huế» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/12-xem-anh-lon.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – xem ảnh lớn kèm chú thích tác giả, giấy phép"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/13-tinh-thanh-hoa.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – chọn tỉnh Thanh Hóa: tỉnh được tô đậm, khung hiện thẻ Tỉnh"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/14-tinh-thanh-hoa-cuon.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – thông tin tỉnh Thanh Hóa (cuộn xuống): địa danh, bài học nhắc tới tỉnh"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/15-tinh-thanh-hoa-cuoi.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – thông tin tỉnh Thanh Hóa (cuối): cây trồng, lễ hội qua video (Ngoài SGK) có nhãn và nguồn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/16-the-ca-vung.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – thẻ Cả vùng: xem thông tin vùng mà vẫn giữ tỉnh Thanh Hóa đang chọn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/17-trac-nghiem-cau-dau.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – bài trắc nghiệm «Khám phá Bắc Trung Bộ và Nam Trung Bộ»: câu hỏi một đáp án, thanh tiến độ"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/18-tra-loi-dung.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – trả lời đúng: báo đúng ngay, có lời giải thích và trang SGK"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/19-tra-loi-sai.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – trả lời sai: hiện đáp án đúng và lời giải thích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/20-cau-dung-sai.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – câu hỏi Đúng / Sai"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/21-cau-ghep-doi.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – câu hỏi Ghép đôi"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/22-ghep-doi-ket-qua.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – Ghép đôi: kết quả sau khi bấm Kiểm tra"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/23-cau-chi-diem-ban-do.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – câu hỏi Chỉ điểm trên bản đồ: chọn điểm A, B hoặc C"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/24-chi-diem-ket-qua.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – Chỉ điểm trên bản đồ: kết quả và giải thích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/25-ket-qua-bai-lam.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – kết quả bài làm: số câu đúng, nút Chơi lại và Xem lại câu sai"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "05-vung-bac-trung-bo-va-nam-trung-bo",
+    "group": null,
+    "file": "may-tinh/05-vung-bac-trung-bo-va-nam-trung-bo/26-xem-lai-cau-sai.png",
+    "caption": "Bắc Trung Bộ và Nam Trung Bộ – xem lại câu sai: đáp án đúng và giải thích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/01-ban-do-vung.png",
+    "caption": "Nam Bộ: bản đồ phóng tới vùng, các điểm địa danh màu đỏ và khung thông tin vùng"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/02-gioi-thieu-vung.png",
+    "caption": "Nam Bộ – khung thông tin: ảnh bìa, lời giới thiệu vùng"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/03-dan-y-thien-nhien-dan-cu.png",
+    "caption": "Nam Bộ – dàn ý theo SGK: Thiên nhiên; Dân cư và hoạt động sản xuất"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/04-dan-y-van-hoa-lich-su.png",
+    "caption": "Nam Bộ – dàn ý theo SGK: Văn hóa; Lịch sử và di tích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/05-dia-diem-tieu-bieu.png",
+    "caption": "Nam Bộ – một số địa điểm tiêu biểu, ảnh và hình ảnh của vùng"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/06-cay-trong-tieu-bieu.png",
+    "caption": "Nam Bộ – cây trồng tiêu biểu (cây công nghiệp, cây nông nghiệp) có ghi trang SGK"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/07-bam-diem-tren-ban-do.png",
+    "caption": "Nam Bộ – bấm vào một điểm đỏ trên bản đồ: hiện tên địa danh và đường dẫn tới bài học"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/08-bai-hoc-1.png",
+    "caption": "Nam Bộ – cửa sổ bài học «Chợ nổi Cái Răng»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/09-bai-hoc-1-cuon.png",
+    "caption": "Nam Bộ – bài học «Chợ nổi Cái Răng» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/10-bai-hoc-2.png",
+    "caption": "Nam Bộ – cửa sổ bài học «Địa đạo Củ Chi»: nội dung theo SGK, tỉnh, vị trí"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/11-bai-hoc-2-cuon.png",
+    "caption": "Nam Bộ – bài học «Địa đạo Củ Chi» (cuộn xuống): ảnh minh họa, trang SGK, nguồn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/12-xem-anh-lon.png",
+    "caption": "Nam Bộ – xem ảnh lớn kèm chú thích tác giả, giấy phép"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/13-tinh-can-tho.png",
+    "caption": "Nam Bộ – chọn tỉnh Cần Thơ: tỉnh được tô đậm, khung hiện thẻ Tỉnh"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/14-tinh-can-tho-cuon.png",
+    "caption": "Nam Bộ – thông tin tỉnh Cần Thơ (cuộn xuống): địa danh, bài học nhắc tới tỉnh"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/15-tinh-can-tho-cuoi.png",
+    "caption": "Nam Bộ – thông tin tỉnh Cần Thơ (cuối): cây trồng, lễ hội qua video (Ngoài SGK) có nhãn và nguồn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/16-the-ca-vung.png",
+    "caption": "Nam Bộ – thẻ Cả vùng: xem thông tin vùng mà vẫn giữ tỉnh Cần Thơ đang chọn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/17-trac-nghiem-cau-dau.png",
+    "caption": "Nam Bộ – bài trắc nghiệm «Khám phá Nam Bộ»: câu hỏi một đáp án, thanh tiến độ"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/18-tra-loi-dung.png",
+    "caption": "Nam Bộ – trả lời đúng: báo đúng ngay, có lời giải thích và trang SGK"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/19-tra-loi-sai.png",
+    "caption": "Nam Bộ – trả lời sai: hiện đáp án đúng và lời giải thích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/20-cau-dung-sai.png",
+    "caption": "Nam Bộ – câu hỏi Đúng / Sai"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/21-cau-ghep-doi.png",
+    "caption": "Nam Bộ – câu hỏi Ghép đôi"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/22-ghep-doi-ket-qua.png",
+    "caption": "Nam Bộ – Ghép đôi: kết quả sau khi bấm Kiểm tra"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/23-cau-chi-diem-ban-do.png",
+    "caption": "Nam Bộ – câu hỏi Chỉ điểm trên bản đồ: chọn điểm A, B hoặc C"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/24-chi-diem-ket-qua.png",
+    "caption": "Nam Bộ – Chỉ điểm trên bản đồ: kết quả và giải thích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/25-ket-qua-bai-lam.png",
+    "caption": "Nam Bộ – kết quả bài làm: số câu đúng, nút Chơi lại và Xem lại câu sai"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "06-vung-nam-bo",
+    "group": null,
+    "file": "may-tinh/06-vung-nam-bo/26-xem-lai-cau-sai.png",
+    "caption": "Nam Bộ – xem lại câu sai: đáp án đúng và giải thích"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "07-trac-nghiem",
+    "group": null,
+    "file": "may-tinh/07-trac-nghiem/01-danh-sach-bai.png",
+    "caption": "Danh sách bài trắc nghiệm sau khi làm: mỗi vùng một bài, ghi số câu và điểm cao nhất"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "08-tien-do-hoc-tap",
+    "group": null,
+    "file": "may-tinh/08-tien-do-hoc-tap/01-khi-chua-hoc.png",
+    "caption": "Tiến độ khi em chưa học: lời mời bắt đầu khám phá bản đồ"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "08-tien-do-hoc-tap",
+    "group": null,
+    "file": "may-tinh/08-tien-do-hoc-tap/02-sau-khi-hoc.png",
+    "caption": "Tiến độ học tập sau khi học: số mục đã xem theo vùng, điểm cao nhất từng bài"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "09-nguon-tham-khao",
+    "group": null,
+    "file": "may-tinh/09-nguon-tham-khao/01-nguon-tham-khao.png",
+    "caption": "Nguồn tham khảo: các bài, trang SGK và nguồn ngoài được dẫn"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "10-nguon-anh",
+    "group": null,
+    "file": "may-tinh/10-nguon-anh/01-nguon-anh.png",
+    "caption": "Nguồn ảnh: tác giả, giấy phép và trang gốc của mọi ảnh"
+  },
+  {
+    "device": "may-tinh",
+    "deviceLabel": "Máy tính",
+    "folder": "11-trang-loi",
+    "group": null,
+    "file": "may-tinh/11-trang-loi/01-khong-tim-thay.png",
+    "caption": "Trang báo không tìm thấy khi gõ sai đường dẫn"
+  }
+]
