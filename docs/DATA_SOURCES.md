@@ -73,7 +73,7 @@ Web chạy trên gói hosting miễn phí, nên ảnh minh hoạ tỉnh/vùng **
 | Giấy phép | **MIT**, © 2021 Thang Le Quoc (bản sao: `raw/geo/thanglequoc-v4.1.0/LICENSE`) |
 | Đơn vị hành chính | 34 tỉnh/thành theo sắp xếp năm 2025 (Nghị quyết 202/2025/QH15) |
 | Hệ toạ độ | WGS84 kinh độ/vĩ độ (EPSG:4326) |
-| Hoàng Sa, Trường Sa | Có: là các phần đảo thuộc Đà Nẵng (Hoàng Sa) và Khánh Hòa (Trường Sa). Bản v4.1.0 đã vá phần đảo bị thiếu ở nguồn gốc. Test `geo.test.ts` kiểm tra hai quần đảo không bị mất khi đơn giản hoá |
+| Hoàng Sa, Trường Sa | Có: là các phần đảo thuộc Đà Nẵng (Hoàng Sa) và Khánh Hòa (Trường Sa). Bản v4.1.0 đã vá phần đảo bị thiếu ở nguồn gốc. Test `tests/unit/features/map/geo.test.ts` kiểm tra hai quần đảo không bị mất khi đơn giản hoá |
 | Tỉnh → vùng | `src/data/provinces.json`. 9 tỉnh vùng Trung du và miền núi phía Bắc lấy từ SGK (Hình 3, tr. 25). **Các vùng còn lại chưa đối chiếu lược đồ SGK** (Chủ đề 3–5), cần kiểm tra trước khi mở các vùng đó |
 
 ### Quy trình dựng (`npm run geo`)

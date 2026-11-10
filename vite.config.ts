@@ -69,9 +69,30 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
-    setupFiles: ['./vitest.setup.ts'],
-    // Đủ chỗ cho asyncUtilTimeout 5s trong vitest.setup.ts
+    setupFiles: ['./tests/support/setup.ts'],
+    // Đủ chỗ cho asyncUtilTimeout 5s trong tests/support/setup.ts
     testTimeout: 10_000,
     css: false,
+    // tests/unit: hàm, hook, component riêng lẻ, script build (cây thư mục giống src/ và scripts/)
+    // tests/integration: cả ứng dụng (router + provider) với dữ liệu thật, đi qua nhiều trang
+    // tests/e2e (trình duyệt thật, trên bản build) chạy bằng Playwright: playwright.config.ts
+    projects: [
+      {
+        extends: true,
+        test: {
+          name: 'unit',
+          include: ['tests/unit/**/*.test.{ts,tsx,mjs}'],
+        },
+      },
+      {
+        extends: true,
+        test: {
+          name: 'integration',
+          include: ['tests/integration/**/*.test.{ts,tsx}'],
+          // Mỗi file nạp toàn bộ dữ liệu của các vùng: lâu hơn test đơn vị
+          testTimeout: 30_000,
+        },
+      },
+    ],
   },
 })

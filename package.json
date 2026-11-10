@@ -8,14 +8,17 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest run",
+    "test:unit": "vitest run --project unit",
+    "test:integration": "vitest run --project integration",
+    "test:e2e": "npm run build && playwright test",
     "typecheck": "tsc -b",
-    "lint": "oxlint src",
+    "lint": "oxlint src tests",
     "images": "node scripts/optimize-images.mjs",
     "geo": "node scripts/build-geo.mjs",
     "images:fetch": "node scripts/commons-fetch.mjs",
     "images:check": "node scripts/commons-check.mjs",
     "check:dist": "node scripts/check-dist.mjs",
-    "verify": "npm run typecheck && npm run lint && npm test && npm run build && npm run check:dist"
+    "verify": "npm run typecheck && npm run lint && npm test && npm run build && npm run check:dist && playwright test"
   },
   "dependencies": {
     "@fontsource/be-vietnam-pro": "^5.3.0",
@@ -28,6 +31,7 @@
   },
   "devDependencies": {
     "@babel/core": "^8.1.0",
+    "@playwright/test": "^1.65.0",
     "@rolldown/plugin-babel": "^0.3.1",
     "@tailwindcss/vite": "^4.3.3",
     "@testing-library/jest-dom": "^7.0.1",

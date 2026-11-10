@@ -34,14 +34,17 @@ Giao diện có ba bản riêng cho điện thoại, máy tính bảng và máy 
 ```bash
 npm install
 npm run dev        # http://localhost:5173
-npm run verify     # typecheck, lint, test, build, kiểm tra bản build
+npm run verify     # typecheck, lint, test, build, kiểm tra bản build, e2e
 ```
 
 Các lệnh khác:
 
 | Lệnh | Việc làm |
 |---|---|
-| `npm test` | Chạy toàn bộ test (Vitest + Testing Library) |
+| `npm test` | Chạy test unit + integration (Vitest + Testing Library) |
+| `npm run test:unit` | Chỉ test unit (`tests/unit/`, cây thư mục giống `src/`; test của script build ở `tests/unit/scripts/`) |
+| `npm run test:integration` | Chỉ test integration (`tests/integration/`): cả ứng dụng, router thật, dữ liệu thật; làm bài trắc nghiệm → Tiến độ → xoá tiến độ |
+| `npm run test:e2e` | Build rồi chạy e2e bằng Playwright (`tests/e2e/`) trên `vite preview`, Chrome desktop và Pixel 7: bản đồ Leaflet thật, lưu tiến độ qua lần tải lại, chạy offline nhờ service worker. Lần đầu cần `npx playwright install chromium` |
 | `npm run build` | Build ra `dist/` |
 | `npm run check:dist` | Kiểm tra `dist/`: có `index.html`, `_redirects`, `_headers`, `sw.js` (mọi file nó lưu sẵn đều có trong bản build); chunk ban đầu < 150KB gzip; Leaflet không nằm trong chunk ban đầu; Trang chủ không tải khung bản đồ; ảnh trong `dist/images` ≤ 250KB |
 | `npm run images:fetch <vùng>` | Sinh thư viện ảnh của một vùng từ `image-picks/<vùng>.json` (tác giả, giấy phép lấy từ API Wikimedia Commons) |

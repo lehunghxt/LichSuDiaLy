@@ -28,12 +28,12 @@ Tầng trên được dùng tầng dưới. Tầng dưới không bao giờ dùn
 
 | Quy tắc | Vì sao | Kiểm tra bởi |
 |---|---|---|
-| Phụ thuộc chỉ đi xuống (bảng trên) | Khối chung không bị buộc vào một tính năng; đổi tính năng không làm vỡ khối chung | `src/test/architecture.test.ts` |
-| Tính năng không phụ thuộc vòng tròn vào nhau | Sửa một bên không làm vỡ bên kia; vẫn tách và tải riêng được | `src/test/architecture.test.ts` |
-| Bên ngoài chỉ dùng tính năng qua `features/<x>/index.ts` | Bên trong tính năng sắp xếp lại thoải mái, chỉ cần giữ "cửa chính" | `src/test/architecture.test.ts` |
-| Lớp responsive (`sm:`, `md:`, `lg:`…) chỉ có trong file bố cục `*.mobile.tsx`/`*.tablet.tsx`/`*.desktop.tsx`/`*Layout.tsx` | Sửa giao diện một thiết bị không lan sang thiết bị khác. Component dùng chung đổi kiểu bằng prop hoặc container query (`@md:`) | `src/test/responsiveClasses.test.ts` |
+| Phụ thuộc chỉ đi xuống (bảng trên) | Khối chung không bị buộc vào một tính năng; đổi tính năng không làm vỡ khối chung | `tests/unit/architecture.test.ts` |
+| Tính năng không phụ thuộc vòng tròn vào nhau | Sửa một bên không làm vỡ bên kia; vẫn tách và tải riêng được | `tests/unit/architecture.test.ts` |
+| Bên ngoài chỉ dùng tính năng qua `features/<x>/index.ts` | Bên trong tính năng sắp xếp lại thoải mái, chỉ cần giữ "cửa chính" | `tests/unit/architecture.test.ts` |
+| Lớp responsive (`sm:`, `md:`, `lg:`…) chỉ có trong file bố cục `*.mobile.tsx`/`*.tablet.tsx`/`*.desktop.tsx`/`*Layout.tsx` | Sửa giao diện một thiết bị không lan sang thiết bị khác. Component dùng chung đổi kiểu bằng prop hoặc container query (`@md:`) | `tests/unit/responsiveClasses.test.ts` |
 | Chọn bố cục theo thiết bị bằng `<ByDevice mobile tablet desktop />` (`tablet` bỏ trống thì dùng `desktop`) | Một cách duy nhất, đổi ngay khi xoay máy | đọc code (chỉ `ByDevice` so sánh thiết bị) |
-| Lớp chồng dùng tên (`z-map-ui` < `z-overlay` < `z-nav` < `z-dialog` < `z-viewer`), không viết số `z-[…]` | Thêm lớp mới không đè sai thứ tự | `src/test/zLayers.test.ts` |
+| Lớp chồng dùng tên (`z-map-ui` < `z-overlay` < `z-nav` < `z-dialog` < `z-viewer`), không viết số `z-[…]` | Thêm lớp mới không đè sai thứ tự | `tests/unit/zLayers.test.ts` |
 | Trang chủ không tải code của trang bản đồ; Leaflet chỉ tải ở trang bản đồ; chunk ban đầu < 150KB gzip | Trang đầu mở nhanh trên điện thoại | `scripts/check-dist.mjs` (trong `npm run verify`) |
 
 Lưu ý về `index.ts`: `vite.config.ts` khai báo các file này "không có tác dụng phụ". Nhờ vậy khi chia chunk, Rollup đi thẳng tới file gốc thay vì gom cả tính năng vào một chunk. Đừng đặt code có tác dụng phụ (import CSS, đoạn chạy khi nạp module) vào `index.ts`.
@@ -51,7 +51,7 @@ Lưu ý về `index.ts`: `vite.config.ts` khai báo các file này "không có t
   - khung trang: `app/layout/SiteLayout.{mobile,tablet,desktop}.tsx`;
   - hộp xác nhận, xem ảnh: `components/ui/confirm-dialog/ConfirmDialog.{mobile,desktop}.tsx`, `components/ui/image-viewer/ImageViewer.{mobile,desktop}.tsx` (máy tính bảng dùng bản desktop).
 - Thiết bị nào giống thiết bị khác thì không cần file riêng: `ByDevice` cho máy tính bảng dùng bản desktop khi không có bản tablet.
-- Tên file theo màn hình, tên component bên trong theo thiết bị (`Home.mobile.tsx` xuất `MobileHome`). Test `src/test/responsiveClasses.test.ts` chặn kiểu tên cũ `MobileXxx.tsx`.
+- Tên file theo màn hình, tên component bên trong theo thiết bị (`Home.mobile.tsx` xuất `MobileHome`). Test `tests/unit/responsiveClasses.test.ts` chặn kiểu tên cũ `MobileXxx.tsx`.
 - File bố cục chỉ sắp đặt. Trạng thái và logic nằm ở component cha.
 - Trên điện thoại ưu tiên tấm trượt, dùng `components/sheet/`:
   - `BottomSheet`: dạng hộp thoại (khung xem bài, xác nhận, xem ảnh);
