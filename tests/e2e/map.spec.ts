@@ -13,6 +13,23 @@ test('the map draws the regions from /maps and selecting one opens its panel', a
   await expect(page.getByRole('region', { name: region.name })).toBeVisible()
 })
 
+test('neighbouring countries are drawn gray under Vietnam, named, and not clickable', async ({ page }) => {
+  await page.goto('/ban-do')
+  const map = page.locator('.leaflet-container')
+  const foreign = map.locator('.leaflet-neighbors-pane path')
+  await expect(foreign).toHaveCount(1)
+  // Ngăn đất nước ngoài nằm dưới ngăn vùng/tỉnh
+  const z = (pane: string) => map.locator(`.leaflet-${pane}-pane`).evaluate((el) => Number(getComputedStyle(el).zIndex))
+  expect(await z('neighbors')).toBeLessThan(await z('overlay'))
+  await expect(foreign).toHaveCSS('pointer-events', 'none')
+  for (const name of ['TRUNG QUỐC', 'LÀO', 'CAM-PU-CHIA']) await expect(map.getByText(name, { exact: true })).toBeVisible()
+
+  // Phóng vào một vùng: vẫn tô xám, nhưng ẩn tên nước để không đè nhãn tên vùng
+  await page.goto(`/ban-do/${regions[0]!.id}`)
+  await expect(foreign).toHaveCount(1)
+  await expect(map.getByText('TRUNG QUỐC', { exact: true })).toHaveCount(0)
+})
+
 test('zoom buttons change the map zoom', async ({ page }) => {
   await page.goto('/ban-do')
   const shape = page.locator('.leaflet-overlay-pane path').first()

@@ -22,6 +22,8 @@
   --color-surface: #ffffff;
   --color-line: #e2e8f0;
   --color-sea: #cfe8fa;
+  /* Đất nước ngoài trên bản đồ: xám, chỉ làm nền cho Việt Nam */
+  --color-foreign-land: #d1d5db;
 
   --radius-card: 1.25rem;
 
@@ -109,6 +111,12 @@ div.leaflet-container {
     0 0 3px #fff,
     0 0 3px #fff;
   pointer-events: none;
+}
+.map-label-country span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #6b7280;
 }
 .map-label-sea span {
   font-size: 1.6rem;

@@ -82,9 +82,25 @@ Web chạy trên gói hosting miễn phí, nên ảnh minh hoạ tỉnh/vùng **
 1. Ghép 34 file tỉnh, gắn `provinceId`, `name`, `regionId` từ `src/data/provinces.json` (báo lỗi nếu thiếu tỉnh).
 2. Đơn giản hoá 6% (`weighted keep-shapes`, giữ cả đảo nhỏ), làm tròn toạ độ 4 chữ số (~11 m).
 3. Xuất `public/maps/provinces.geojson` (~121 KB) và `public/maps/regions.geojson` (gộp theo vùng, ~61 KB).
-4. Xuất `public/maps/labels.geojson`: điểm đặt nhãn "Quần đảo Hoàng Sa", "Quần đảo Trường Sa" (tâm khung bao các phần đảo, tính từ dữ liệu) và chữ "Biển Đông" (vị trí đặt nhãn).
+4. Xuất `public/maps/labels.geojson`: điểm đặt nhãn "Quần đảo Hoàng Sa", "Quần đảo Trường Sa" (tâm khung bao các phần đảo, tính từ dữ liệu), chữ "Biển Đông" và tên ba nước TRUNG QUỐC, LÀO, CAM-PU-CHIA (vị trí đặt nhãn; tên nước chỉ hiện ở khung toàn quốc).
+5. Xuất `public/maps/neighbors.geojson` (~127 KB): đất nước ngoài, tô xám làm nền (xem mục dưới).
+
+### Đất nước ngoài (nền xám)
+
+| Mục | Giá trị |
+|---|---|
+| Nguồn | [Natural Earth](https://www.naturalearthdata.com/) v5.1.2, `ne_10m_admin_0_countries` (bản GeoJSON trên [nvkelso/natural-earth-vector](https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2/geojson)) |
+| Giấy phép | **Public domain**, không bắt buộc ghi nguồn (vẫn ghi ở chân bản đồ) |
+| File gốc trong repo | `raw/geo/natural-earth-v5.1.2/countries.geojson`: đã cắt theo khung kéo được của bản đồ (kinh độ 70–140, vĩ độ −30–45), chỉ giữ `ADM0_A3`, `NAME`. Lệnh: `mapshaper -i ne_10m_admin_0_countries.geojson -filter-fields ADM0_A3,NAME -clip bbox=70,-30,140,45 -o countries.geojson` |
+
+Cách dựng (`scripts/build-geo.mjs`, phần thuần ở `scripts/lib/neighbors.mjs`):
+1. **Hoàng Sa, Trường Sa:** bỏ mục "Spratly Is." (`PGA`), "Scarborough Reef" (`SCR`), và mọi đảo nhỏ (khung bao < 1°) của nước khác nằm trọn trong vùng biển hai quần đảo (Natural Earth gán một số đảo Hoàng Sa cho Trung Quốc, một đảo Trường Sa cho Malaysia). Dựng xong mà lớp xám còn đảo nào trong hai vùng này thì script **báo lỗi, dừng**; test `geo.test.ts` kiểm tra thêm không đảo nào của Việt Nam bị phủ xám.
+2. **Khớp biên giới:** hai nguồn vẽ biên giới lệch nhau. Lấp khe bằng phần Việt Nam theo Natural Earth mà không thuộc Việt Nam theo thanglequoc, chỉ những mảnh chạm đất Trung Quốc, Lào, Cam-pu-chia (bỏ mảnh dọc bờ biển). Gộp với đất Việt Nam, đơn giản hoá, rồi trừ đi đúng `regions.geojson` đã đơn giản hoá → đường biên lớp xám trùng khít đường biên vùng.
+3. Đơn giản hoá hai mức: trong khung kinh độ 98–122, vĩ độ 4–26 bước 1,2 km, bỏ đảo < 20 km²; ngoài khung bước 10 km, bỏ đảo < 300 km².
+4. Vẽ trong ngăn Leaflet riêng nằm dưới vùng/tỉnh, không bấm được. Tải lỗi thì bản đồ vẫn chạy, chỉ thiếu nền xám.
 
 ### Hạn chế đã biết
 
 - Dữ liệu cộng đồng, không phải bản đồ chính thức của cơ quan nhà nước; ranh giới đã được đơn giản hoá để hiển thị cho học sinh, không dùng cho mục đích pháp lí.
-- Bản đồ không dùng lớp nền (tile) trực tuyến; chỉ vẽ ranh giới tỉnh/vùng.
+- Bản đồ không dùng lớp nền (tile) trực tuyến; chỉ vẽ ranh giới tỉnh/vùng và đất nước ngoài (nền xám).
+- Đường bờ biển nước ngoài thô hơn bờ biển Việt Nam (Natural Earth 1:10 triệu, đơn giản hoá thêm); đảo nhỏ của nước ngoài bị lược bớt.

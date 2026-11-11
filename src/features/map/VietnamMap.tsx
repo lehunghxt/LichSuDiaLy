@@ -7,6 +7,7 @@ import type { RegionMeta } from '../../types/content'
 import { MAP_MAX_BOUNDS } from './fit'
 import { Labels } from './leaflet/Labels'
 import { Controls, FitCountry } from './leaflet/MapControls'
+import { NeighborsLayer } from './leaflet/NeighborsLayer'
 import { ProvincesLayer } from './leaflet/ProvincesLayer'
 import { RegionsLayer } from './leaflet/RegionsLayer'
 import { useMapData } from './leaflet/useMapData'
@@ -50,6 +51,7 @@ export default function VietnamMap(props: VietnamMapProps) {
       >
         {/* Đặt trước RegionsLayer: canh toàn quốc lúc mở trước, rồi mới phóng vào vùng đang chọn (màn xếp dọc) */}
         <FitCountry />
+        {data.neighbors && <NeighborsLayer data={data.neighbors} />}
         <RegionsLayer
           data={data.regions}
           regions={props.regions}
@@ -65,12 +67,12 @@ export default function VietnamMap(props: VietnamMapProps) {
             onSelectProvince={props.onSelectProvince}
           />
         )}
-        <Labels data={data.labels} />
+        <Labels data={data.labels} showCountries={props.selectedRegionId === null} />
         {props.selectedRegionId && <LocationMarkers places={props.places} onOpen={props.onOpenPlace} />}
         <Controls />
       </MapContainer>
       <p className="pointer-events-none absolute bottom-2 right-4 z-map-ui max-w-[60%] text-right text-xs text-muted">
-        Ranh giới: vietnamese-provinces-database (MIT), đã đơn giản hoá để hiển thị.
+        Ranh giới: vietnamese-provinces-database (MIT), Natural Earth; đã đơn giản hoá để hiển thị.
       </p>
     </div>
   )

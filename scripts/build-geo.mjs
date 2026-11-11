@@ -2,15 +2,19 @@
 //   raw/geo/thanglequoc-v4.1.0/provinces/*.geojson  +  src/data/provinces.json (tỉnh → vùng)
 //   → public/maps/provinces.geojson  (34 tỉnh, đã đơn giản hoá)
 //   → public/maps/regions.geojson    (gộp tỉnh theo vùng SGK)
-//   → public/maps/labels.geojson     (điểm đặt nhãn Hoàng Sa, Trường Sa, Biển Đông)
+//   → public/maps/labels.geojson     (điểm đặt nhãn Hoàng Sa, Trường Sa, Biển Đông, tên nước láng giềng)
+// Natural Earth v5.1.2 (public domain): raw/geo/natural-earth-v5.1.2/countries.geojson
+//   → public/maps/neighbors.geojson  (đất nước ngoài, tô xám làm nền; đã trừ đất Việt Nam)
 //
 // Chạy: npm run geo
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import mapshaper from 'mapshaper'
+import { archipelagoViolations, borderGaps, splitCountries } from './lib/neighbors.mjs'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
 const SRC_DIR = path.join(ROOT, 'raw/geo/thanglequoc-v4.1.0/provinces')
+const NE_FILE = path.join(ROOT, 'raw/geo/natural-earth-v5.1.2/countries.geojson')
 const OUT_DIR = path.join(ROOT, 'public/maps')
 const SIMPLIFY = '6%'
 const PRECISION = '0.0001'
@@ -54,6 +58,10 @@ const labels = {
     { name: 'QĐ. Trường Sa (Việt Nam)', kind: 'archipelago', coordinates: offshoreCenter('khanh-hoa', 111) },
     // Vị trí đặt chữ "Biển Đông" (nhãn bản đồ, không phải dữ liệu địa lý)
     { name: 'Biển Đông', kind: 'sea', coordinates: [111.5, 14.5] },
+    // Tên ba nước có chung biên giới đất liền, đặt giữa phần đất của nước đó trong khung nhìn toàn quốc
+    { name: 'TRUNG QUỐC', kind: 'country', coordinates: [110.3, 23.3] },
+    { name: 'LÀO', kind: 'country', coordinates: [103.4, 19.0] },
+    { name: 'CAM-PU-CHIA', kind: 'country', coordinates: [104.7, 12.9] },
   ].map(({ coordinates, ...properties }) => ({
     type: 'Feature',
     properties,
@@ -70,6 +78,38 @@ const out = { ...(await mapshaper.applyCommands(
   `-i provinces.json ${simplify} -clean -dissolve regionId -o regions.geojson precision=${PRECISION} format=geojson`,
   input,
 )) }
+
+// Đất nước ngoài: tô xám làm nền để thấy Việt Nam nằm giữa các nước láng giềng.
+// Đất các nước + khe biên giới + đất Việt Nam (để không còn khe) → gộp, đơn giản hoá → trừ đất Việt Nam ĐÃ đơn giản hoá
+// (regions.geojson). Như vậy đường biên của lớp xám trùng khít đường biên vùng, không hở, không chồng.
+// Đơn giản hoá hai mức: gần Việt Nam chi tiết hơn, xa (Ấn Độ, Úc, Nhật...) thô hơn cho file nhẹ.
+const NEAR_BOX = 'bbox=98,4,122,26'
+const ne = JSON.parse(await readFile(NE_FILE, 'utf8'))
+const { foreign, vietnam } = splitCountries(ne.features)
+const fc = (fs) => ({ type: 'FeatureCollection', features: fs })
+// mapshaper xuất GeometryCollection khi không có thuộc tính → đổi về FeatureCollection
+const asFeatures = (json) =>
+  json.features ?? json.geometries.map((geometry) => ({ type: 'Feature', properties: {}, geometry }))
+// Mỗi lần chạy một tập dữ liệu riêng: nạp chung (combine-files) làm mapshaper mất đất liền Trung Quốc khi gộp
+const run = async (cmd, files) =>
+  asFeatures(JSON.parse(Object.values(await mapshaper.applyCommands(`${cmd} -o out.json format=geojson`, files))[0]))
+const vnFull = features.map((f) => ({ ...f, properties: {} }))
+const gaps = await run('-i ne-vn.json -erase vn.json -explode', { 'ne-vn.json': fc(vietnam), 'vn.json': fc(vnFull) })
+const land = fc([...foreign, ...borderGaps(gaps, foreign), ...vnFull].map((f) => ({ ...f, properties: {} })))
+const near = await run(`-i land.json -dissolve2 -clip ${NEAR_BOX} -simplify interval=1200 keep-shapes -filter-islands min-area=20km2`, {
+  'land.json': land,
+})
+const far = await run(`-i land.json -dissolve2 -erase ${NEAR_BOX} -simplify interval=10000 keep-shapes -filter-islands min-area=300km2`, {
+  'land.json': land,
+})
+const neighbors = (await mapshaper.applyCommands(
+  `-i land.json -dissolve2 -erase vn.json -explode -filter-islands min-area=20km2 -dissolve -each 'kind="foreign"' ` +
+    `-o neighbors.geojson precision=${PRECISION} format=geojson`,
+  { 'land.json': fc([...near, ...far]), 'vn.json': JSON.parse(out['regions.geojson']) },
+))['neighbors.geojson']
+const violations = archipelagoViolations(JSON.parse(neighbors))
+if (violations.length) throw new Error(`Lớp đất nước ngoài có đảo nằm trong vùng quần đảo: ${violations.join(', ')}`)
+out['neighbors.geojson'] = neighbors
 
 await mkdir(OUT_DIR, { recursive: true })
 for (const [name, content] of Object.entries(out)) {

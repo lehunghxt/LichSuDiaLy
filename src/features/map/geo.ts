@@ -9,9 +9,12 @@ export interface ProvinceFeatureProps {
   name: string
   regionId: string
 }
+export interface NeighborFeatureProps {
+  kind: 'foreign'
+}
 export interface LabelFeatureProps {
   name: string
-  kind: 'archipelago' | 'sea'
+  kind: 'archipelago' | 'sea' | 'country'
 }
 
 export type AreaCollection<P> = FeatureCollection<Polygon | MultiPolygon, P>
@@ -50,13 +53,19 @@ function isLabelFeature(f: unknown): f is Feature<Point, LabelFeatureProps> {
     f.geometry.type === 'Point' &&
     isObj(f.properties) &&
     str(f.properties, 'name') &&
-    (f.properties.kind === 'archipelago' || f.properties.kind === 'sea')
+    (f.properties.kind === 'archipelago' || f.properties.kind === 'sea' || f.properties.kind === 'country')
   )
+}
+
+function isNeighborFeature(f: unknown): f is Feature<Polygon | MultiPolygon, NeighborFeatureProps> {
+  return isObj(f) && isArea(f.geometry) && isObj(f.properties) && f.properties.kind === 'foreign'
 }
 
 export const isRegionCollection = (raw: unknown): raw is AreaCollection<RegionFeatureProps> => isCollectionOf(raw, isRegionFeature)
 export const isProvinceCollection = (raw: unknown): raw is AreaCollection<ProvinceFeatureProps> => isCollectionOf(raw, isProvinceFeature)
 export const isLabelCollection = (raw: unknown): raw is LabelCollection => isCollectionOf(raw, isLabelFeature)
+export const isNeighborCollection = (raw: unknown): raw is AreaCollection<NeighborFeatureProps> =>
+  isCollectionOf(raw, isNeighborFeature)
 
 type Fetcher = (url: string) => Promise<Response>
 
@@ -83,6 +92,8 @@ export function createGeoLoader(fetcher: Fetcher, base = '/') {
     loadRegions: () => load('regions.geojson', isRegionCollection),
     loadProvinces: () => load('provinces.geojson', isProvinceCollection),
     loadLabels: () => load('labels.geojson', isLabelCollection),
+    /** Đất nước ngoài (tô xám làm nền) */
+    loadNeighbors: () => load('neighbors.geojson', isNeighborCollection),
   }
 }
 

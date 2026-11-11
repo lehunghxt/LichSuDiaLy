@@ -164,4 +164,10 @@ chụp ảnh toàn bộ tính năng ở trang web hiện tại ở giao điện 
 
 
 
- triển khai unittest, e2e test, intergrationtest cho dự án hiện tại cho tôi
+ triển khai unittest, e2e test, intergrationtest cho dự án hiện tại cho 
+ 
+
+ ở tính năng hiện tại, tôi muốn hiển thị thêm các quốc gia tiếp giáp với Việt nam
+ ví dụ trung quốc, lào, campuchia
+ các quốc gia này tô màu xám, cho tôi
+ phân tích xem có khả thi không

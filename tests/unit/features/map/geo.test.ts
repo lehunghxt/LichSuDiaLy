@@ -2,6 +2,8 @@ import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import {
   createGeoLoader,
+  isLabelCollection,
+  isNeighborCollection,
   isProvinceCollection,
   isRegionCollection,
   regionBounds,
@@ -101,6 +103,73 @@ test('provinces data keeps Hoàng Sa and Trường Sa islands', () => {
   }
   expect(offshore('da-nang')).toBeGreaterThan(0)
   expect(offshore('khanh-hoa')).toBeGreaterThan(0)
+})
+
+// Điểm nằm trong một vòng (tia ngang), đủ dùng cho dữ liệu thật
+const inRing = ([x, y]: [number, number], ring: number[][]) => {
+  let hit = false
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi = 0, yi = 0] = ring[i]!
+    const [xj = 0, yj = 0] = ring[j]!
+    if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) hit = !hit
+  }
+  return hit
+}
+const covers = (fc: AreaCollection<unknown>, pt: [number, number]) =>
+  fc.features.some((f) =>
+    (f.geometry.type === 'MultiPolygon' ? f.geometry.coordinates : [f.geometry.coordinates]).some(
+      ([outer, ...holes]) => outer !== undefined && inRing(pt, outer) && !holes.some((h) => inRing(pt, h)),
+    ),
+  )
+
+test('public/maps/neighbors.geojson covers China, Laos, Cambodia, Thailand and Hainan but no part of Vietnam', () => {
+  const neighbors = readJson('neighbors.geojson')
+  expect(isNeighborCollection(neighbors)).toBe(true)
+  if (!isNeighborCollection(neighbors)) return
+  const foreign: [number, number][] = [
+    [108, 23], // Quảng Tây, Trung Quốc
+    [102.6, 18], // Viêng Chăn, Lào
+    [104.9, 11.6], // Phnôm Pênh, Cam-pu-chia
+    [100.5, 13.8], // Băng Cốc, Thái Lan
+    [109.8, 19.2], // đảo Hải Nam
+  ]
+  for (const pt of foreign) expect(covers(neighbors, pt), `${pt}`).toBe(true)
+  const vietnam: [number, number][] = [
+    [105.85, 21.03], // Hà Nội
+    [106.7, 10.78], // TP Hồ Chí Minh
+    [103.97, 10.25], // Phú Quốc
+  ]
+  for (const pt of vietnam) expect(covers(neighbors, pt), `${pt}`).toBe(false)
+})
+
+test('the gray foreign layer has no island in Hoàng Sa or Trường Sa', () => {
+  const neighbors = readJson('neighbors.geojson') as AreaCollection<unknown>
+  const provinces = readJson('provinces.geojson') as AreaCollection<ProvinceFeatureProps>
+  // Mọi đảo xa bờ của Đà Nẵng (Hoàng Sa) và Khánh Hòa (Trường Sa): đỉnh của chúng không bị lớp xám phủ
+  const islandPoints = provinces.features
+    .filter((f) => ['da-nang', 'khanh-hoa'].includes(f.properties.provinceId))
+    .flatMap((f) => (f.geometry.type === 'MultiPolygon' ? f.geometry.coordinates : [f.geometry.coordinates]))
+    .filter((p) => Math.min(...(p[0] ?? []).map((c) => c[0] ?? 0)) > 110)
+    .flatMap((p) => p[0] ?? [])
+  expect(islandPoints.length).toBeGreaterThan(0)
+  expect(islandPoints.filter((c) => covers(neighbors, [c[0]!, c[1]!]))).toEqual([])
+  // Không có mảnh đất xám nào nằm hẳn trong vùng biển hai quần đảo
+  const inSea = neighbors.features
+    .flatMap((f) => (f.geometry.type === 'MultiPolygon' ? f.geometry.coordinates : [f.geometry.coordinates]))
+    .filter((p) => (p[0] ?? []).every(([x = 0, y = 0]) => x > 110.5 && x < 118 && y > 6.5 && y < 17.5 && !(x > 116.5 && y < 7.5)))
+  expect(inSea).toEqual([])
+})
+
+test('labels name the three neighbouring countries', () => {
+  const labels = readJson('labels.geojson')
+  expect(isLabelCollection(labels)).toBe(true)
+  if (isLabelCollection(labels)) {
+    expect(labels.features.filter((f) => f.properties.kind === 'country').map((f) => f.properties.name)).toEqual([
+      'TRUNG QUỐC',
+      'LÀO',
+      'CAM-PU-CHIA',
+    ])
+  }
 })
 
 const sq = (lng: number, lat: number, d = 0.1) => [
